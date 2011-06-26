@@ -1,0 +1,71 @@
+This program recovers JPG and Canon CR2 files from camera media (such
+as flashcards).
+
+WARNING
+
+This program relies on the fact that most photos are composed of
+contiguous sectors. If you tend to delete a lot of photos before a
+format, then you might not have very good success. But if you are like
+me: who reformats every time) then you fill get most of your pictures
+back.
+
+This program has only been tested with a 20d. Any success stories are
+welcome.
+
+
+INSTALLATION
+
+./configure 
+make
+make install
+
+
+HOW TO USE
+
+To run this program I recommend you first copy the contents of the
+card to a file in your machine. The easiest way is to use the dd
+command.
+
+Instructions:
+
+* Connect the camera or the flashcard to the computer.
+
+* Check what is the mount point for your camera or the flashcard. You
+  can use the mount command for this. For example in my computer the
+flashcard is mounted as device /dev/sdc1
+
+
+dmg@platinum recoverPhotos]$ mount
+[...]
+/dev/sdc1 on /media/EOS_DIGITAL type vfat ...
+[...]
+
+Now, use dd to copy the flashcard to a file. For example, this command
+copies the contents of my memory card to a file called /tmp/card.bytes
+(You might need to run this command as root).
+
+dd if=/dev/sdc1 of=/tmp/card.bytes
+
+Make sure the device name (in this case /dev/sdc1) is correct! 
+
+The resulting file should have the same size as the flashcard.
+
+
+./recoverPhotos /tmp/card.bytes
+
+and check the output. Hopefully you will have a bunch of photos in the
+current directory. Run the program without parameters to see all the
+options available.
+
+CANON USERS
+
+If you use a camera that uses the custom function "Add Decision Data"
+(CF18 in the D20), and you are 100% sure it was on when you took the
+photos, then make sure you specify the --canonADD option. The option
+is not critical (it is not part of the photo), but the data is there
+if you want to recover it.
+
+
+EPILOGUE
+
+Comments, patches or bugs, please email me at dmgerman a_t uvic dot ca

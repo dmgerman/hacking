@@ -1,0 +1,100 @@
+
+* Man Whitney
+
+x is 2010, y is 2011
+
+wilcox.test(x$amount,y$amount,conf.level=TRUE,alternative="greater")
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  x$amount and y$amount 
+W = 22484.5, p-value = 0.00697
+alternative hypothesis: true location shift is greater than 0 
+
+* > wilcox.test(x$amount,y$amount,conf.level=TRUE)
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  x$amount and y$amount 
+W = 22484.5, p-value = 0.01394
+alternative hypothesis: true location shift is not equal to 0 
+
+* But amounts are different
+
+sum(x$amount)
+[1] 5279700
+> sum(y$amount)
+[1] 5126543
+
+* But less grants
+
+> length(x$amount)
+[1] 195
+> length(y$amount)
+[1] 202
+
+
+* So less grants, more money. How did each of the participants do:
+
+summary(avg10)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.002841 0.003788 0.004735 0.005128 0.005872 0.023680 
+> summary(avg11)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.002926 0.003901 0.004877 0.005281 0.006047 0.024380 
+> 
+
+* So now the 2010 looks slightly harder than this years.
+
+
+wilcox.test(avg10,avg11)
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  avg10 and avg11 
+W = 15879, p-value = 0.004716
+alternative hypothesis: true location shift is not equal to 0 
+
+
+wilcox.test(avg10,avg11,alternative="less")
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  avg10 and avg11 
+W = 15879, p-value = 0.002358
+alternative hypothesis: true location shift is less than 0 
+
+
+*
+
+
+n<-read.csv("/home/dmg/git.dmg/hacking/nsercResults/2011/nserc2010.csv",sep=";")
+disc10<-n[n$Program == 'RGPIN',]
+n<-read.csv("/home/dmg/git.dmg/hacking/nsercResults/2011/nserc2011.csv",sep=";")
+disc11<-n[n$Program == 'RGPIN',]
+x<-data.frame(amount=sort(disc10$amount),year=2010)
+y<-data.frame(amount=sort(disc11$amount),year=2011)
+plot(as.numeric(rownames(x)) * 1.0/length(x$amount),x$amount)
+points(as.numeric(rownames(y)) *
+1.0/length(y$amount),y$amount,col="red")
+
+
+
+The main difference between last year and this year is that last year
+NSERC gave more larger grants than this year. 
+
+Other than that, there isn't really much difference (the amount per
+person was slightly less this year, but more as a percentage of the
+total amount allocated). There were also 7 more grants awarded this
+year than last year.
+
+So my reading of this is that the people most affected where the people
+in the top quantile, who would have received larger grants in 2010 than
+2011.
+
+This is also true for the bottom quantile (this year it was 14k, last
+year it was 15k, but 1k is really not that significant compared to the
+larger grants.
+
+
+

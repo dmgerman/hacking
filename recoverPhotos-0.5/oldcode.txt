@@ -1,0 +1,21 @@
+
+#ifdef asdfasd0
+      /* Did we find the JPEG */
+      if (recordId == 0x0111) { 
+	DEBUG_1("This is the record to find**********************\n");
+	offset +=6;
+
+	jpegLocation = Convert_Number_4_bytes(&data[offset]);
+	offset +=4;
+
+
+	DEBUG_3("JPEG Location %d 0x%x\n", jpegLocation, jpegLocation);
+	/* We don't want to keep reading, because there is another
+	   0x0111 record at the end that contains the raw data */
+	returnValue = TRUE;
+
+      } else {
+	/* advance pointer by skipping rest of record */
+	offset += 10;
+      }
+#endif

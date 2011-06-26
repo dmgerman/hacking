@@ -1,0 +1,50 @@
+    1.  9.0   [130]Inception (2010)                                      191,732
+    2.  8.8   [131]Star Wars: Episode V - The Empire Strikes Back (1980) 278,381
+    3.  8.8   [132]Star Wars: Episode IV - A New Hope (1977)             321,713
+    4.  8.7   [133]The Matrix (1999)                                     381,791
+    5.  8.5   [134]Terminator 2: Judgment Day (1991)                     238,128
+    6.  8.5   [135]Alien (1979)                                          180,809
+    7.  8.5   [136]WALL-E (2008)                                         182,946
+    8.  8.5   [137]A Clockwork Orange (1971)                             194,059
+    9.  8.5   [138]Aliens (1986)                                         170,567
+   10.  8.4   [139]Eternal Sunshine of the Spotless Mind (2004)          220,501
+   11.  8.4   [140]Metropolis (1927)                                      39,780
+   12.  8.4   [141]Back to the Future (1985)                             202,121
+   13.  8.4   [142]2001: A Space Odyssey (1968)                          160,688
+   14.  8.3   [143]Star Wars: Episode VI - Return of the Jedi (1983)     211,517
+   15.  8.3   [144]Blade Runner (1982)                                   185,881
+   16.  8.2   [145]Avatar (2009)                                         262,539
+   17.  8.2   [146]District 9 (2009)                                     152,437
+   18.  8.2   [147]Donnie Darko (2001)                                   211,163
+   19.  8.2   [148]The War Game (1965)                                     1,656
+   20.  8.2   [149]Ivan Vasilievich: Back to the Future (1973)             3,187
+   21.  8.1   [150]The Thing (1982)                                       78,891
+   22.  8.1   [151]The Terminator (1984)                                 180,079
+   23.  8.1   [152]Star Trek (2009)                                      134,624
+   24.  8.1   [153]Twelve Monkeys (1995)                                 170,254
+   25.  8.1   [154]V for Vendetta (2006)                                 225,215
+   26.  8.1   [155]King Kong (1933)                                       39,068
+   27.  8.1   [156]Stalker (1979)                                         21,422
+   28.  8.0   [157]Frankenstein (1931)                                    23,199
+   29.  8.0   [158]Nausicaä of the Valley of the Wind (1984)              20,394
+   30.  8.0   [159]Children of Men (2006)                                158,543
+   31.  8.0   [160]Bride of Frankenstein (1935)                           15,681
+   32.  8.0   [161]The Day the Earth Stood Still (1951)                   34,564
+   33.  8.0   [162]Planet of the Apes (1968)                              58,350
+   34.  8.0   [163]Invasion of the Body Snatchers (1956)                  14,665
+   35.  8.0   [164]Solaris (1972)                                         19,745
+   36.  8.0   [165]The Face of Another (1966)                              1,458
+   37.  8.0   [166]The Man from Earth (2007)                              32,826
+   38.  8.0   [167]Brazil (1985)                                          76,723
+   39.  8.0   [168]Young Frankenstein (1974)                              57,167
+   40.  8.0   [169]Kin-Dza-Dza (1986)                                      4,227
+   41.  8.0   [170]Moon (2009)                                            55,611
+   42.  7.9   [171]Iron Man (2008)                                       174,518
+   43.  7.9   [172]E.T.: The Extra-Terrestrial (1982)                    105,149
+   44.  7.9   [173]The Girl Who Leapt Through Time (2006)                  6,391
+   45.  7.9   [174]The Iron Giant (1999)                                  38,839
+   46.  7.9   [175]Jurassic Park (1993)                                  151,571
+   47.  7.8   [176]Serenity (2005)                                       106,802
+   48.  7.8   [177]Sexmission (1984)                                       3,526
+   49.  7.8   [178]Akira (1988)                                           40,003
+   50.  7.8   [179]Neon Genesis Evangelion: The End of Evangelion (1997) 6,000
