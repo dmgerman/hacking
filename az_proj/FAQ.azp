@@ -1,0 +1,100 @@
+AZ_PROJ.FAQ released with AZ_PROJ v1.1
+
+1. Is it possible to fill states/countries/islands with
+colors?
+
+	The short answer is possibly.
+
+	The .wdb files contain geographic information in the form of
+a series of points (given in lat/lon) which are joined by az_proj
+to make a map-line (also called wdb path). The wdb file consists
+of series of these map lines each of 30-500 points. Postscript
+can fill areas bound by such lines if they form a closed path.
+The original map-lines in the .wdb files are not closed loops.
+However Paul Anderson has edited the files into closed loops
+and are used in the *.wdb files now. I would need to decide
+on a colour scheme and a method of implementing it, if there
+was sufficient interest.
+
+The wdb pathes for the large lakes have all been edited by 
+hand, so that the lakes can be filled (with blue).
+
+	The maximum number of points in a postscript path is 
+somewhat less than 1500 (depending on what else is sitting in memory).
+Except for simple paths like state borders, most continents etc
+are made up of more that 1500 points.
+
+
+
+2)	Why do the bright colors on the display (like light
+blue for lakes) become darker on a color printer (like
+murky grey blue)?
+
+	This is because of the different conventions used for
+RGB on a display and a printer. Printers are linear devices. You
+give it G=0.25 and the print reflects 75% of the green (and 100%
+of everything else). A display doesn't absorb or reflect anything.
+Instead light comes from the screen, an amount which is non-linear
+in photons/grid voltage (or some control function). Since all
+phoshors are about the same as each other, there were no great
+compatibility problems between different TV screens and no-one
+really cared about the non-linearity. However you can't run a
+printer or display off the control signals designed for the other
+type of device, without doing the conversion (called a "gamma"
+correction). Postscript does not ask the device it is running
+on whether it is a printer or a display, so other subtle ruses
+have been devised in az_proj to handle the situation. We've
+assumed that the output is to a display. Postscript can ask
+the "product" it's running on, and the product will return
+a string (eg nothing, Deskjet550C). If the string matches a
+known printer (we know Deskjet550C, 1200C or Apple Phase IISDX),
+then we do the gamma correction.
+
+	If your printer is another color printer, then follow
+the instructions in az_proj.ps for detecting your printer
+(you'll have to duplicate a few lines and put in your string).
+Look for the string "gamma" in the code to locate the place to
+start changing things.
+
+3).	Can I spread my map over several piece of paper, and
+later tape/staple/glue them together to make a bigger map?
+
+	Yes. For further details, see the center_offset
+feature in az_ini.ps. You choose the center of the projection
+(your QTH), and make a map to fill one page. If you now want
+to make a 4 page map, divide the 1 page map into 4 quadrants,
+and find the lat/lon of the center of each quadrant. Now
+change the scale by a factor of 2, then make 4 maps. For 
+each map choose to offset the center of the page (not the 
+center of the projection) to the lat/lon of the center of the
+4 quadrants of the one page map. 
+
+4)
+Where's the .exe file?
+
+	Some of you ask me.
+
+	The answer is that there's _NO_ .exe file in the 
+AZ_PROJ package. The package consists of a set of files 
+which when sent to a Postscript printer will produce a 
+map of your choice. The files are all Postscript, which 
+is ascii and can be edited by a normal programming editor i.e.
+an ascii editor. You do not send *.exe files to printers.
+
+If you want to use these files to create maps on your 
+monitor, or to print to a non-Postscript printer, then 
+you need to find a Postscript Interpreter that
+will make allow you to do this. This interpreter will be
+different for different operating systems. Ghostscript (see
+elsewhere in this file) does a good job of this for
+DOS, Win, DVX, OS/2, Unix and this is what we used. There are
+other programs that do the same job, that I have not tested
+with AZ_PROJ.
+
+	So the answer is that _you_ have to supply the 
+.exe file (the Postscript interpreter) or else a Postscript 
+printer. (For information on getting Ghostscript, see the 
+README.AZP file or ghost.doc).
+
+	Joe NA3T
+	Mar 2000

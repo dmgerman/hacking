@@ -1,0 +1,310 @@
+%KC4DPC 10 METER BEACON LIST, Last update July 1996
+%SEND CORRECTIONS TO: Stanley Outlaw; Internet:stanley@wilmington.net
+%STANLEY OUTLAW / KC4DPC
+%PO BOX 5391
+%WILMINGTON, NC 28403
+%CORRECTIONS SHOULD INCLUDE DATE RECEIVED, FREQ., AND OLD FREQ.
+%IF YOU KNOW.  THIS WILL HELP ON LOGGING WITHOUT DUPLICATES.
+%REMARKS:  DATE IS THE DATE I LAST RECEIVED A REPORT ON A BEACON RECEPTION.
+%          EXAMPLE 9002 = YEAR WOULD BE 1990, 2ND MONTH.
+% % :REPORT FROM SYSOPS
+% * :BEING USED TO CHECK ANTENNA PERFORMANCE FOR A NEW 1O METER REPEATER.
+% C :CONTINUOUS
+% I :INTERMITTENT
+%
+%
+%ANTENNA:
+%DPL .DIPOLE        DTL .DELTA LOOP
+%INV .INVERTED VEE  OMN .OMNI-DIRECTIONAL  GP .GROUND PLANE
+%D :DEGREES       V :VERTICAL          VB .V-BEAM
+%Y :YAGI          B :BEAM              GMV.GROUND MOUNTED VERTICAL
+%
+%**********************************************
+% Notes by Joe NA3T:
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+% AZ_PROJ code is available at the
+% Azimuthal Equidistant Projection Map Server <- Key Words
+% currently (Sep '97) at http://www.appliedreasoning.com:1080/
+% If you don't find it there, do a Net Search for the above as
+% key words
+%
+% AZ_PROJ code is also available by ftp from these ftp sites
+%
+% ftp://nic.funet.fi/pub/ham/antenna/
+% or
+% ftp://oak.oakland.edu/pub/hamradio/dos/ham-utils/
+%
+%
+% The file will be called something like azprjxxx.zip or azprojxx.zip
+% where xxx/xx is the current version of AZ_PROJ (Sep 97is 11)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96,
+% mailto:mack@ncifcrf.gov (will probably have this account on a long time scale)
+% mailto:mack@appliedreasoning.com (current job, Sep 97)
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequencysingle_letter:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):commentignored by reading program (eg AZ_PROJ)
+%
+% 	where single_letter can be N,Z,+.- (for freq offsets in US TV stations)
+%                            or V,H (for polarisation)
+%
+%	eg 2m beacon
+%		beacon:144.170H:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC                      %usually 550-1630 kHz AM
+%		AM                      %usually 550-1630 kHz AM
+%		FM                      %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%**********************************************
+%beacon:28.010:EA3FHN:BARCELONA, Spain:9604
+beacon:28.125:KA5FYI:EM10DI:1:-1:AUSTIN, TEXAS:1W, SLOPING DPL:C%.9603
+%beacon:28.175:VE1VLF:CANADA:9506
+beacon:28.175:VE3TEN:FN25:10:-1:OTTAWA, CANADA (FN25):.10W, GP:C:9508
+%beacon:28.180:VE3IRE:CANADA:9607
+beacon:28.180:OD5TEN:KM74WK::-1:TRIPOLI LEBANON:I:9301
+beacon:28.180V:IK1BAK:JN33UT:20:-1:BORDIGHERA ITALY 5/20W V:.C%.9505
+beacon:28.183V:SV3AQR:KM07QS:4:-1:AMALIAS, GREECE.4W, GP:.9608
+beacon:28.185:ZS6PW:KG44DE:5:-1:PRETORIA, RSA 5W.C:9606
+%beacon:28.191:5B4ZL:CYPRUS:9002
+%beacon:28.191:VE6YF:EDMONTON, ALBERTA:10W, GP:C:9508
+beacon:28.195V:IY4M:JN54QK:20:-1:BOLOGNA, ITALY:20W, GP:C%.9608
+beacon:28.195:W2RTB:FN13ED:-1:-1:ROCHESTER, NY:9505
+beacon:28.195V:LU6DTS:GF15AC:5:-1:LA PLATA, ARGENTINA.5W, GP:.9607
+%beacon:28.197V:VE7MTY:PITT MEADOWS, BC, CANADA:.5W, GP:C:9606
+beacon:28.198:LU5FSY:FF98GS:5:-1:RAFEAL, ARGENTINA 5W:9605
+%beacon:28.199:KG5YB::8:-1:JACKSONVILLE, TX:8W,SLOPER:C%.9412
+beacon:28.200:W6WX:CM87:100:-1:STANFORD, CA (CM87):100,10,1, .1W, B:9411
+%beacon:28.200:OH2B:.HELSINKI, FINLAND:.9608
+beacon:28.200:YV5B:FK60NL::-1:.CARACAS, VENEZUELA9605
+beacon:28.200V:ZS6DN:KF44:100:-1:PRETORIA (KF44):.0.1-100, V:9606
+beacon:28.200V:LU4AA:GF05:0.1:-1:BUENSO AIRES (GF05):0.1, V:.9607
+beacon:28.202:ZS1J:KF15PF:0.5:-1:PLETTENBERG BAY, RSA .5W, 3EL Y:.9604
+%beacon:28.202:KE5GY:ARLINGTON, TX (KA50IC):5W, V:%.9011
+%beacon:28.203:ZS5VHF:DURBAN, RSA:10W, GP:9508
+beacon:28.203:KD6UVN:DM13CN:-1:-1:LAGUNA BEACH,CA 9512
+%beacon:28.204:WA4SZE:McCAYSVILLE, GA:.100W, V:C%.9602
+beacon:28.204V:DL0IGI:JN67KQ:100:-1:GERMANY  VDPL:C:9608
+beacon:28.205:ND9X:EN61CT:-1:-1:FOREST VIEW, IL:9601
+beacon:28.206V:KJ4X:EM84PW:2:-1:PICKENS, S.C.:2W, V:9508
+beacon:28.207V:W8FKL:EL87TB:10:-1:VENICE, FL:10W,V:.C:9508
+beacon:28.207.5V:KE4NL:EM94AE:10:-1:NINETY SIX, S.C.:.10W,GM V:.I%.
+beacon:28.208V:5Z4ERR:KI88MX:15:-1:KIAMBU, KENYA:15W, VEE:9301
+beacon:28.209V:NX2O:FM18:10:-1:ANNAPOLIS, MD :10W, GP:C:9508
+beacon:28.210:KC4DPC:FM14BF:3:-1:WILMINGTON, NC:3W, DPL:C%.9608
+beacon:28.210:KA0ZNY:EN41QM:-1:-1:DAVENPORT, IA9009
+beacon:28.210:N7SCQ:CM99ST:5:-1:PORTOLA, CA:5W, Antron 99:C:9603
+beacon:28.211:LA4TEN:JP20LG:250:-1:TELAVAAG NORWAY:250W ERP, Omni:9608
+%beacon:28.212:LU1UG:GRAL PICO, ARGENTINA:5W, GP :9508
+%beacon:28.212.5:EA6RCM:PALMA DE MALLORCA, SPAIN:.3W, GP:.9301
+beacon:28.213.5V:PT7BCN:HI06RF:5:-1:FORTAILEZA, BRAZIL.5W, GP:I:9301
+beacon:28.214.5:KB4SB:EL94FP:0.5:-1:SUGARLOAF KEY, FL: DPL:C%.9603
+beacon:28.215V:KA9SZX:EN50VD:1:-1:CHAMPAIGN, IL:V:.C%.9607
+%beacon:28.215:GB3RAL:SLOUGH, BERKSHIRE, UK:.20W, GP:C:9608
+%beacon:28.215:N3BUB:FN20FV:-1:-1:KRESGEVILLE, PA:9406
+beacon:28.215.5:W4MM:EM71VN:-1:-1:ALBANY GA:9109
+beacon:28.217V:WB9VMY:EM05:2:-1:CALUMET, OK (EM05) :2W, V:.C:9312
+beacon:28.218:VE2TWO:FO13:-1:-1:RADDISON, CANADA:9301
+beacon:28.218V:W8UR:EN75:5:-1:STRAITS OF MACKINAC, MI:C%.9607
+beacon:28.219:N2BJG:FN21WC:-1:-1:SUFFERN, NY:9512
+beacon:28.219V:PT8AA:FI60CA:5:-1:RIO BRANCO, BRAZIL GP:I:9508
+beacon:28.220V:5B4CY:KM64CA:26:-1:ZYYI, CYPRUS V:C:9606
+beacon:28.220V:KB9DJA:EM69RO:5:-1:MOORESVILLE, IN 30/5W, GP:.9606
+beacon:28.220V:LU4XS:FD65CA:2:-1:T. DEL FUEGO, ARGEN.2W,GP:.I:9411
+beacon:28.221:KK4UC:EM67DE:10:-1:DAWSON SPRINGS,KY10W:.9106
+beacon:28.221.5V:K5PF:FM05NR:8:-1:APEX, NC:8W,A-99 V:I:9607
+beacon:28.222V:W9UXO:EN62BG:10:-1:LAKE BLUFF, IL:10W, GP:C:9508
+%beacon:28.222:PT2IBM:BRAZIL:.5W, GP:.9009
+beacon:28.222V:HG5GEW:JN86NQ:10:-1:TAPOLCA, HUNGARY10W, GP:C:9605
+beacon:28.224H:WB6CHQ:DM06BU:25:-1:FRESNO, CA:25W, DPL:9109
+%beacon:28.225V:PY2AMI:SAO PAULO, BRAZIL:10W, GP:C:9508
+%beacon:28.225:KW7Y:.EVERETT, WA:4W, .V:.9508
+beacon:28.230H:ZL2MHF:RE78BU:1:-1:MT. CLIMIE, N.Z..1W, V DPL:.9508
+beacon:28.230H:N2ECB:FN20TQ:25:-1:SPRINGFIELD, NJ:.25W, Y:I%.9005
+beacon:28.231:KQ4TG:FM04WG:7:-1:LELAND, NC :7W, GP:C%.9608
+beacon:28.232H:W7JPI:DM41QP:4:-1:SONOITA, AZ:4W, 3EL Y:C:9410
+beacon:28.233V:KD4EC:EL96WV:5:-1:JUPITER, FL:5W, V:.C:9607
+%beacon:28.233:N2VMF:FREE HOLD, NJ :.9608
+beacon:28.234:N6TWX:EM73:10:-1:LAWRENCEVILLE,GA.(EM73):20W Double Zepp:I:9606
+%beacon:28.235:EA2ZRA:ZARAGOZA, SPAIN:I:9301
+%beacon:38.235:VE1CBZ:FREDERICTON, NB, CANADA:3W, V:9608
+beacon:28.237V:NV6A:DM12KT:5:-1:SAN DIEGO, CA:5W, V:.C:9508
+beacon:28.238V:LA5TEN:JO59JV:10:-1:OSLO, NORWAY:.10W, GP:C:9608
+beacon:28.239H:YO2X:KN05OS:2:-1:.TIMISOARA, ROMANIA.2W, DPL:9301
+%beacon:28.240:K8UZW:PARMA, OH(Parma Radio Club).16W, GP:C%.9508
+%beacon:28.240:VA3SBB:THUNDER BAY, ONTARIO:.9606
+beacon:28.240:AB8Z:EN91DJ:-1:-1:PARMA, OH:9604
+beacon:28.244V:KF9N:EM86RJ:5:-1:GRAY, TN:5W, V:.I%.9603
+beacon:28.244V:WA6APQ:DM03VU:30:-1:LONG BEACH, CA:30W, A-99 V:9605
+beacon:28.245V:KB0DJJ:EN21AH:10:-1:OMAHA, NE.10W, GP:9002
+%beacon:28.245:VE9BEA:CRABBE MTN., NB. CANADA:3 W, V :9608
+beacon:28.245.5H:K0VXU:EM28QT:100:-1:STILWELL, KS:.10/100W, 4 EL YAGI.I:9508
+beacon:28.246V:N8KHE:EN75SN:0.5:-1:MACKINAW CITY, MI:500 MW, V:C:9508
+%beacon:28.247.5.EA2HB:SAN SEBASTIAN, SPAIN:6W, GP:.9301
+beacon:28.250H:N4MW:FM17:4:-1:NEW KENT, VA (FM17):4W, DLP:C%.9603
+beacon:28.250:EA3JA:JN11bi:-1:-1:BARCELONA, SPAIN (JN11BI):.I:9607
+beacon:28.250V:WJ9Z:EN62BX:15:-1:ST. FRANCIS, WI:.15W, A-99 V:.C%.9608
+beacon:28.250:PI7BQC:JO22HK:2:-1:HAARLEM, NETHERLANDS:9301
+beacon:28.250V:S55ZRS:JN76MC:1:-1:MT. KUM, SLOVENIA:1W, GP:.9606
+beacon:28.250V:K0HTF:EN31EN:2.5:-1:DES MOINES, IA:2.5W, GP:.C%.9301
+beacon:28.250V:Z21ANB:KG47:8:-1:BULAWAYO, ZIMBABWE 8W, GP:C:9604
+beacon:28.250:NT9S:EM69NP:-1:-1:GREENECASTLE, IN9101
+%beacon:28.252:EA3AAA:SPAIN:.9606
+beacon:28.252V:WJ7X:EN34HQ:5:-1:PRIOR LAKE, MN:5W, V:.C:9301
+beacon:28.253V:OH2TEN:KP20AG:60:-1:VIHTI, FINLAND:60W, GP:9608
+beacon:28.254:WA4SLT:EL99GQ:20:-1:HASTINGS,FL:10-20W,V 12-14 Hrs.I%.9607
+beacon:28.256:KD4BFF:FM05OU:-1:-1:MORRISVILLE, NC:9608
+beacon:28.257:KM4Y:EL96UA:-1:-1:HOLLYWOOD, FL.I:9301
+beacon:28.257V:DK0TEN:JN57NP:40:-1:KONSTANZ, GERMANY40W, GP:C:9606
+beacon:28.259V:VK5WI:PF95GD:10:-1:ADELAIDE, AUSTRALIA.10W, GP:C:9508
+beacon:28.260:KB6SVK:DM03TW:15:-1:INGLEWOOD, CA15W:.9003
+beacon:28.260V:KA1NSV:FN41UP:80:-1:CAPE COD,MA:25/80W, RINGO(GP).C%.9607
+beacon:28.262V:VK2RSY:QF56MH:25:-1:SYDNEY, AUSTRALIA:25W, GP:C:9508
+beacon:28.265:LU1FHH:FF98:-1:-1:EL TREBOL, ARGENTINA (FF98):C:9608
+beacon:28.265V:K5MW:EM10DH:20:-1:AUSTIN,TEXAS:.20W,GP:C%.9607
+beacon:28.265V:VK6RWA:OF78WB:20:-1:PERTH, AUSTRALIA V:C:9301
+beacon:28.267V:LZ1TEB:KN12PO:1:-1:BULGARIA1W/100MW/10MW/1MW,V:9607
+beacon:28.267.5V:KB4UPI:EM63NM:20:-1:BIRMINGHAM, AL:20W,1/4V,Maybe QRT.C:9301
+beacon:28.268V:OH9TEN:KP36OI:20:-1:PIRTTIKOSKI, FINLAND.20W, GP:C:9607
+beacon:28.269V:VK8VF:PH57KP:40:-1:DARWIN, AUSTRALIA:40W, V:C:9301
+beacon:28.269V:WB4JHS:EL96GF:5:-1:KISSIMMEE, FL:5W, V:.I:9301 was EW96GF
+%beacon:28.270:VK4RTL:TOWNSVILLE, AUSTRALIA:9301
+beacon:28.270:N6KJW:CM98HM:-1:-1:SACRAMENTO, CA:.9001
+beacon:28.270V:KF4MS:EM87PS:5:-1:SAINT PETERSBURG, FL.5W, GP:C:9508
+beacon:28.271V:KD4UAI:FM05TL:5:-1:SMITHFIELD, NC:5W, V:.%:9601
+beacon:28.272H:WA9TPZ:EM79CS:0.1:-1:GREENFIELD, IN:100MW, DPL:9505
+beacon:28.273:N5DUH:EM32DK:-1:-1:SHREVEPORT, LA:9304
+%beacon:28.274:K4MF:.MIAMI, FL:.1W, GP:.9105
+beacon:28.275H:ZS1LA:KF05QK:20:-1:STILLBAY, RSA:.20W, Y:C:9301
+beacon:28.275:DA2JH:JO31TF:20:-1:LUEDENSCHEID, GER.20W:I:9301
+%beacon:28.275:AL7GQ:DENVER, CO:1W, LOOP:.C%.9110
+%beacon:28.275H:N8KUH:SOUTHGATE, MI:35W, INV:9012
+beacon:28.276:N0JAR:EN31LP:15:-1:NEWTON, IA:15W:C:9508
+beacon:28.276V:NS8V:EN73EW:5:-1:GRAND RAPIDS, MI:5W,V:C:9301
+beacon:28.278V:DF0AAB:JO54GH:10:-1:KIEL, GERMANY:10W, GP:C:9607
+%beacon:28.280:KA3UIU:ALBURTIS, PA:.5W:(CW Practice).9110
+%beacon:28.280:KB2BBW:RUTHERFORD, NJ:5W, V:9003
+beacon:28.280:I1M:JN33UT:-1:-1:ITALY:.9608
+beacon:28.280:NO6J:DM04NF:5:-1:THOUSAND OAKS, CA:5W, OMN:%:9301
+beacon:28.280.5V:KD4NOQ:EM55BE:-1:-1:MEMPHIS, TN.9508
+%beacon:28.282:VE2HOT:BEACONSFIELD, CANADA:5W, Y:.C%.9508
+beacon:28.282H:OK0EG:JO70WE:10:-1:HRADEC, KRALOVE:.10W, DPL:.C:9608
+beacon:28.282:LU2HDX:FF78RO:10:-1:CORDOBA, ARGENTINA.10W, V:I:9301
+beacon:28.283:WS2B:FN32EQ:-1:-1:POESTENKILL, NY9102
+beacon:28.284:W0ERE:EM36IW:-1:-1:HIGHLANDVILLE, MO:.9606
+beacon:28.284V:K8LKC:EN71EX:1:-1:THREE RIVERS, MI:1W,1/4 WAVE WHIP,V.C:9508
+beacon:28.284:VP8ADE:FC52WK:8:-1:ADELAIDE, IS.8W, Maybe QRT:I:9301
+beacon:28.284:KD7K:DN40AP:5:-1:WEST JORDON, UT.5W:9607
+beacon:28.284:KJ7AZ:DN61JS:5:-1:RAWLINS, WY:5W, AR-10:C%.9608
+beacon:28.284V:N2JNT:FM32DR:1:-1:TROY, NY:1W, GP:C%.9608
+%beacon:28.285:KB2YTW:BERGEN, NY:9605
+beacon:28.285V:KB7EFZ:CN85PN:1:-1:PORTLAND, OR.1W, GP:.9301
+beacon:28.285V:KK4M:DM26LC:5:-1:LAS VEGAS, NV .5W, V:9508
+beacon:28.285:KB7DQJ:CN87:-1:-1:PORT ORCHARD, WA (CN87):C:9309
+beacon:28.286:N3GPP:FN10UB:-1:-1:LANCASTER, PA:8912
+beacon:28.286V:N5AQM:DM43AH:2:-1:CHANDLER, AZ..2W, V:9508
+beacon:28.286H:KE2DI:FN13AC:5:-1:ROCHESTER, NY:5W, DPL:I:9604
+beacon:28.289H:WJ5O:EL17KR:2:-1:CORPUS CHRISTI, TX.2W, Y:9606
+beacon:28.290V:SK5TEN:JO89KK:5:-1:STRAEGNAES, SWEDEN.5W, GP:C:9608
+beacon:28.290.5V:KE4YVL:FN11UB:3:-1:SOPHIA, NC:3W, V:.C%.9607
+beacon:28.291:KB9NV:EM58AQ:5:-1:COLLINSVILLE, IL:5W, V:.C:9508
+%beacon:28.291.5:ZD8HF:ASCENSION ISLAND:9508
+beacon:28.292V:W3RGQ:FN11UB:-1:-1:BERWICK, PA:5W, V:.I:9301
+beacon:28.292:K7SK:CN87UJ:-1:-1:DES MOINES, WA:.9607
+%beacon:28.293:LU2FFV:SAN JORGE, ARGENTINA:5W, GP:I:9508
+beacon:28.294V:WC8E:EM79SD:10:-1:DEER PARK, OH10W, V:C:9508
+beacon:28.294:SK2TEN:JP95HB:5:-1:KRISTENBURG, SWEDEN.5W, V:9608
+beacon:28.295:KM4GS:EM57UA:-1:-1:GILBERTSVILLE, KY:.9103
+beacon:28.295V:KE0UL:DN70:5:-1:GREELEY, CO (DN70):.5W, V-OMNI:C:9508
+beacon:28.295:N7OGN:DN55RS:-1:-1:BILLINGS, MT:9103
+beacon:28.295V:W3VD:FM19NE:10:-1:LAUREL, MD:10W, V:C:9608
+beacon:28.297V:WA4DJS:EL96VC:30:-1:FT. LAUDERDALE, FL.30W, GP:9508
+%beacon:28.299:N8CGY:WEST BRANCH, MI:.5W, DPL:9002
+beacon:28.299:VE9MS:FN65:5:-1:FREDEREICTON, NB,CA(FN65):5W, LOOP:.C%.9608
+beacon:28.301V:PI7ETE:JO22QD:0.5:-1:AMERSFOORT, NETHERLANDS1/2W,V:9606
+%beacon:28.235:DF0THD:GERMANY:9110
+beacon:28.470:EA1BCN:JO55VO:-1:-1:Spain:.9607
+beacon:28.888:W6IRT:DM04TF:5:-1:NORTH HOLLYWOOD, CA.5W, GP:C%.9007
+%beacon:28.992:DF0ANN .GERMANY:NOW QRO TO .3 WATTS:9101
+%==========================================================================

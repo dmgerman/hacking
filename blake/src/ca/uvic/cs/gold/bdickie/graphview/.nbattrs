@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ConfigurationDialog.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="ConfigurationDialog"/>
+    </fileobject>
+    <fileobject name="GraphFrame.java">
+        <attr name="class_dependency_java.lang.Thread" stringvalue="GraphFrame.GraphInitThread"/>
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="GraphFrame"/>
+    </fileobject>
+    <fileobject name="GraphPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="GraphPanel"/>
+        <attr name="class_dependency_javax.swing.filechooser.FileFilter" stringvalue="GraphPanel.XMLFileFilter;GraphPanel.PNGFileFilter"/>
+    </fileobject>
+    <fileobject name="GraphsTabbedPane.java">
+        <attr name="class_dependency_com.infosys.closeandmaxtabbedpane.CloseAndMaxTabbedPane" stringvalue="GraphsTabbedPane"/>
+    </fileobject>
+    <fileobject name="LayerDepthDialog.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="LayerDepthDialog"/>
+    </fileobject>
+    <fileobject name="LoadingDialog.java">
+        <attr name="class_dependency_java.util.TimerTask" stringvalue="LoadingDialog.ChangeTimer"/>
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="LoadingDialog"/>
+    </fileobject>
+    <fileobject name="NewGraphViewWizard.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="NewGraphViewWizard"/>
+    </fileobject>
+</attributes>

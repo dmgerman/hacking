@@ -1,0 +1,135 @@
+%--------------------------------------
+%Beacon File for az_proj
+%	To add a beacon to the map, supply data in the form
+%		beacon:frequency Callsign Grid_locator Power Direction
+%	eg.	beacon:144.170 KH6HME BK29go 60 90 1
+% 	    if beam direction is -1 then repeater antenna is omnidirectional
+%	    the trailing '1' is an optional flag to print
+%           the text below the symbol rather than on top (default)
+%
+%	The beacon file (bea_w3ep.dat), is maintained by Emil Pocock, W3EP.
+%	Emil writes the `World above 50MHz' column in QST. Please send
+%	beacon updates to Emil and we will get them from him.
+%	Sorry, this file only has US beacons.
+%
+%	This is a modified W3EP format file in which text (eg "omni")
+%	have been replaced by numerical data in an attempt to have an
+% 	easy to parse, machine readable, format. I don't care what format
+%	is used as long as it is stable for the useful life of this program.
+%
+%
+%	beacon: is for a regular beacon
+%	BEACON: is for a beacon that you want to be
+%	specially marked (like your club's) beacon.
+%	The routines to make a beacon "special" are in az_proj.ps.
+%	If you make up a "special" routine that you like
+%	better than ours, send it along. We might like it better too.
+%
+%
+%This file can be used with a command like
+%C:>gs -q az_proj.ps -- az_proj.ps n_amer.wdb bea_w3ep.dat
+%
+beacon:144.054   WD4GSM    EM86          0.2     -1
+beacon:144.170   KH6HME    BK29go        60      270
+beacon:144.275   W4RFR     EM66           0.25   -1
+beacon:144.275   KD0DW     DN70lf       100      -1
+beacon:144.276   W2RTB     FN12ar        15      -1
+beacon:144.277   VE1SMU    GN03          10      270
+beacon:144.277   KA0EWQ    EN15          10      135
+beacon:144.277   VE2FUT    FN25wg        12      -1
+beacon:144.280   VA3TBX    EN58ij        20      135
+beacon:144.280   VE2FTR    FN08          60      180
+beacon:144.280   N4MW      EM55ac         4       -1
+beacon:144.282   WD4LWG    EL87          75      -1
+beacon:144.287   KB8JI     EN64we        0.4     157
+BEACON:144.289   KL7GLK    FM18          2       -1     1
+beacon:144.290   WA2UMX    FN23xc        20      -1
+beacon:144.290   VE1SMU    FN84          10      338
+beacon:144.290   K0HTF     EN31dx         1      -1
+beacon:144.292   W9IP      FN24kp        45       0
+beacon:144.294   WB0QIY    EN01rf        60      135
+beacon:144.295   WA8R      EM79qb        15      -1
+beacon:144.296   WD4KPD    FM15mm        20      -1
+beacon:144.296   W3VD      FM19ne        10      -1
+beacon:144.297   WB2CUS    EL98           0.5    -1
+beacon:222.053   K0HTF     EN31dx         2      -1
+beacon:222.055   VE1SMU    GN03          10      270
+beacon:222.055   N4MW      EM55ac         6      -1
+beacon:222.055   KL7GLK    FM18       0.025      -1
+beacon:222.057   WD4GSM    EM86       0.25       -1
+beacon:222.058   W2RTB     FN12ar        15      -1
+beacon:222.060   VE1SMU    FN84          10      -1
+beacon:222.280   VE2FTR    FN08          6      180
+beacon:432.002   K4EJQ     EM86          0.1     -1
+beacon:432.074   KH6HME    BK29go        35      270
+beacon:432.075   WD4GSM    EM86          0.6     360     1
+beacon:432.280   VE2FTR    FN08          38      180
+beacon:432.300   VE1SMU    GN03          10      270
+beacon:432.303   KW2T      FN13        0.25      -1
+beacon:432.305   W4RFR     EM65          10      -1
+beacon:432.306   W2RTB     FN12ar        15      -1
+beacon:432.309   WA4ZTK    EM85ar         0.9     45
+beacon:432.316   W3VD      FM19ne         7      -1
+beacon:432.317   WA4PGI    FM07bw         5      -1
+beacon:432.350   VE1SMU    FN84          10      225     1
+beacon:432.350   K0HTF     EN31dx         2       -1
+beacon:432.380   VE1SMU    FN84          15      225
+beacon:432.395   N4MW      EM55ac        10      90
+beacon:432.395   N4MW      EM55ac        10      270
+beacon:902.350   VE1SMU    GN03           7      270
+beacon:902.550   W3VD      FM19ne         7      -1
+beacon:902.990   KA8EDE    EM79xs        10      -1
+beacon:903.020   WD4GSM    EM86          10      -1
+beacon:903.075   K4EJQ     EM86           1      -1
+beacon:903.080   N3CX      FN20gp         5      -1
+beacon:903.090   K3SIW     EN52xb        30      90
+beacon:903.252   N4MW      EM55ac         1      -1
+beacon:926.520   VE1SMU    FN84           2      -1
+beacon:1295.998   VE1SMU    FN84          20      45
+beacon:1296.000   KH6HME    BK29go        17      270
+beacon:1296.006   K4EJQ     EM86           3      -1
+beacon:1296.046   W3VD      FM19ne        0.2     -1
+beacon:1296.055   W9YH      EN50          10       0
+beacon:1296.070   K3SIW     EN52xb        20      90
+beacon:1296.075   WD4GSM    EM86           5      -1
+beacon:1296.080   N3CX      FN20gp        10      -1
+beacon:1296.180   WD5AGO    EM26           3      -1
+beacon:1296.200   WA4PGI    FM07bw         5      -1
+beacon:1296.276   W2RTB     FN12ar        15      -1
+beacon:1296.310   N4MW      EM55ac         2      -1
+beacon:1296.350   VE1SMU    GN03           6      270
+beacon:1296.400   VE1SMU    FN84           5      270
+beacon:2304.020   K3SIW     EN52xb        10      270
+beacon:2304.030   N4MW      EM55ac         4      -1
+beacon:2304.035   N3CX      FN20gp         4      -1
+beacon:2304.047   K4EJQ     EM86           1      -1
+beacon:2304.175   W9ZIH     EN51nl         4      90
+beacon:2304.300   WQ5S      EM12pt      0.03      -1
+beacon:2312.000   VE1SMU    FN84           1      270
+beacon:3456.020   K3SIW     EN52xb       0.5      270
+beacon:3456.040   N4MW      EM55ac       0.1      -1
+beacon:3456.070   K4EJQ     EM86         1.5      -1
+beacon:3456.140   N3CX      FN20gp         5      -1
+beacon:3456.325   AA5C      EM13se     0.025      -1
+beacon:5759.950   K3SIW     EN52xb         5      270
+beacon:5760.040   N4MW      EM55ac        1.5     -1
+beacon:5760.070   K4EJQ     EM86           5      -1
+beacon:5760.300   AA5C      EM13se        0.5     -1
+beacon:10248.000   N6IZW     DM12lt       0.1    -1
+beacon:10256.000   WA6EJO    DM04hi        5      135
+beacon:10265.000   WB6DNX    DM13fr      0.025   -1
+beacon:10265.000   NW7O      DM25gv       0.1    -1
+beacon:10368.020   KK6TG     CM88qq       0.1    -1
+beacon:10368.045   K3SIW     EN52xb        3      270
+beacon:10368.045   K4EJQ     EM86         0.15   -1
+beacon:10368.120   N4MW      EM55ac       0.03   -1
+beacon:10368.270   AA5C      EM13se       0.025  -1
+beacon:10368.275   KS2D      FN20ok       2.5    -1
+beacon:10368.300   N6CA      DM03ts       3.5    -1
+beacon:10368.310   N6CA      DM03ms       5      -1
+beacon:10368.325   W6ASL     CM88wj       5      -1
+beacon:10368.350   NW7O      DM25gv      0.04    -1
+beacon:24192.047   KK6TG     CM88qq      0.03    -1
+beacon:24192.325   AA5C      EM13se     0.001    225
+%--------------------------------------
+%--------------------------------------bea_w3ep.dat

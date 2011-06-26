@@ -1,0 +1,55 @@
+%--------------------------------------
+%%Title: hf_conf.ps
+%%CreationDate:  3 Aug 96
+%
+% (C) 1994,5,6 Joseph Mack NA3T and Michael Katzmann NV3Z/VK2BEA/G4NYV
+%
+%--------------------------------------
+%
+% Most of the AZ_PROJ customisable variables are in az_ini.ps.
+% This is a relatively large file. If you routinely only vary a
+% small number of variables, they can be separated into a smaller
+% file which is read in after az_ini.ps, thus overwriting the
+% standard values in az_ini.ps. Alternatively, if you routinely
+% make several different maps, then a separate config file can be
+% made for each map.
+%
+% Thus an HF config file could have a large scale map,
+% lat/lon lines separated by 30 degrees, with rivers and
+% state borders turned off.
+%
+% A VHF config file would have a scale suitable for the
+% band, grid square and all geographic features turned on.
+%
+% A config file for a mountain top, will have a different QTH.
+%
+% a config file can be used with ghostscript
+% C:>gs az_ini.ps config.ps -- az_proj.ps world.wdb dxcc.dat
+%
+% or by making a big.ps file
+% C:>copy az_ini.ps+config.ps+az_proj.ps+world.wdb+dxcc.dat big.ps
+%
+%--------------------------------------
+% hf_config.ps - configuration file for AZ_PROJ.PS
+%
+/Title (My HF Map) def
+/lat_QTH 41.6 def /lon_QTH -72.7  def /QTH_name (ARRL HQ) def
+/map_scale_deg	2000	def
+/landscape	off	def
+/draw_alternate_lat_lon_spacing on def
+/draw_greyline	on	def
+/shade_night_time on 	def
+1996	/year	exch def % (int)
+03	/month 	exch def % (1..12)
+22 	/day	exch def % (1..31)
+0 	/hour 	exch def % (0..23)
+00 	/min 	exch def % (0..59)
+% recalculate UT
+min 60 div hour add /UT exch def
+
+/dxcc_labels_around_border	off def
+/draw_canadian_provinces	off def
+/draw_us_states			off def
+/draw_rivers			off def
+
+%--------------------------------------hf_conf.ps

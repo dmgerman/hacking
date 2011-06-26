@@ -1,0 +1,801 @@
+/usr/local/share/fossology/agents/licenses
+/usr/local/share/fossology/agents/licenses/Corporate
+/usr/local/share/fossology/agents/licenses/Corporate/Motorola.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Shared Source License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Reciprocal License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Reference License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Public License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA Software.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Public License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Limited Public License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Reciprocal License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Reference License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Limited Public License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Shared Source License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA Software
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA 2003.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Limited Reciprocal License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft Limited Reciprocal License
+/usr/local/share/fossology/agents/licenses/Corporate/Microsoft/Microsoft EULA 2003
+/usr/local/share/fossology/agents/licenses/Corporate/Intel
+/usr/local/share/fossology/agents/licenses/Corporate/Skype
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License variant 3
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License variant 2
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License variant 2.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Yahoo/Yahoo Toolbar License variant 3.meta
+/usr/local/share/fossology/agents/licenses/Corporate/IntelLong
+/usr/local/share/fossology/agents/licenses/Corporate/Intel reference
+/usr/local/share/fossology/agents/licenses/Corporate/RSA
+/usr/local/share/fossology/agents/licenses/Corporate/RSA/RSA-Security.meta
+/usr/local/share/fossology/agents/licenses/Corporate/RSA/RSA-Security
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Source Code.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Software License variant 1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Software License variant 1
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Source Code
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Software License
+/usr/local/share/fossology/agents/licenses/Corporate/Nvidia/Nvidia Software License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Intel reference.meta
+/usr/local/share/fossology/agents/licenses/Corporate/HP
+/usr/local/share/fossology/agents/licenses/Corporate/HP/HP-UX JRE
+/usr/local/share/fossology/agents/licenses/Corporate/HP/HP-UX Java.meta
+/usr/local/share/fossology/agents/licenses/Corporate/HP/Hewlett-Packard
+/usr/local/share/fossology/agents/licenses/Corporate/HP/Hewlett-Packard.meta
+/usr/local/share/fossology/agents/licenses/Corporate/HP/HP-UX JRE.meta
+/usr/local/share/fossology/agents/licenses/Corporate/HP/HP-UX Java
+/usr/local/share/fossology/agents/licenses/Corporate/NetComponents
+/usr/local/share/fossology/agents/licenses/Corporate/NetComponents/NetComponents.meta
+/usr/local/share/fossology/agents/licenses/Corporate/NetComponents/NetComponents
+/usr/local/share/fossology/agents/licenses/Corporate/CA
+/usr/local/share/fossology/agents/licenses/Corporate/CA/TOSL
+/usr/local/share/fossology/agents/licenses/Corporate/CA/TOSL/Computer Associates Trusted Open Source License v1.1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/CA/TOSL/Computer Associates Trusted Open Source License v1.1
+/usr/local/share/fossology/agents/licenses/Corporate/IBM
+/usr/local/share/fossology/agents/licenses/Corporate/IBM/IBM reciprocal.meta
+/usr/local/share/fossology/agents/licenses/Corporate/IBM/IBM reciprocal
+/usr/local/share/fossology/agents/licenses/Corporate/IBM/IBM JRE
+/usr/local/share/fossology/agents/licenses/Corporate/IBM/IBM JRE.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Nokia
+/usr/local/share/fossology/agents/licenses/Corporate/Nokia/Nokia Open Source License v1.0a
+/usr/local/share/fossology/agents/licenses/Corporate/Nokia/Nokia Open Source License v1.0a.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Intel.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v2.3
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Free with Copyright variant 1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License supplement.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v3.0 Supplement
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Free with Copyright variant 2.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v2.3 Attachment.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Contributor Agreement.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License J2SDK
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/CCDL
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Free with Copyright variant 2
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Bigelow&Holmes.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License supplement
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License TSA v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License TSA v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Free with Copyright variant 1
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Contributor Agreement
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Glassfish Software License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v3.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release Preamble
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Sun Public License
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release Preamble.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v2.3.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v3.0 Supplement.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Bigelow&Holmes
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v2.3 Attachment
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Sun Public License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Glassfish Software License
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release Attachment A-1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems Binary Code License J2SDK.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems variant 2.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems variant 2
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Contributor Agreement reference.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Community Source License v3.0
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Contributor Agreement reference
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems variant 1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Microsystems variant 1
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release Attachment A-1
+/usr/local/share/fossology/agents/licenses/Corporate/Sun/Sun Solaris Source Code License Foundation Release.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Lucent
+/usr/local/share/fossology/agents/licenses/Corporate/Lucent/Lucent Public License v1.02.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Lucent/Lucent Public License v1.02
+/usr/local/share/fossology/agents/licenses/Corporate/Lucent/Lucent Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Lucent/Lucent Public License v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/Helix
+/usr/local/share/fossology/agents/licenses/Corporate/Helix/Helix DNA Technology BinaryResearch Use License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Helix/Helix DNA Technology BinaryResearch Use License
+/usr/local/share/fossology/agents/licenses/Corporate/Motorola
+/usr/local/share/fossology/agents/licenses/Corporate/NCD
+/usr/local/share/fossology/agents/licenses/Corporate/NCD/Network Computing Devices 1993
+/usr/local/share/fossology/agents/licenses/Corporate/NCD/Network Computing Devices 1993.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Adobe
+/usr/local/share/fossology/agents/licenses/Corporate/Adobe/Adobe Flex 2.0.1 SDK EULA
+/usr/local/share/fossology/agents/licenses/Corporate/Adobe/Adobe Flex 2.0.1 SDK EULA.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Adobe/Adobe Product License Agreement
+/usr/local/share/fossology/agents/licenses/Corporate/Adobe/Adobe Product License Agreement.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Agere LT Modem Driver License
+/usr/local/share/fossology/agents/licenses/Corporate/MySQL
+/usr/local/share/fossology/agents/licenses/Corporate/MySQL/MySQL AB Exception.meta
+/usr/local/share/fossology/agents/licenses/Corporate/MySQL/MySQL AB Exception
+/usr/local/share/fossology/agents/licenses/Corporate/SGI
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/SGI CID v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/Free Software License B v1.1
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/SGI CID v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/Free Software License B v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/Free Software License B v1.1.meta
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/SGI GLX v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/Free Software License B v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/SGI/SGI GLX v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/Logica
+/usr/local/share/fossology/agents/licenses/Corporate/Logica/Logica Open Source License v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Logica/Logica Open Source License v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/Apple
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple iTunes License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Common Documentation License v1.0.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Squeak.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime Pro7 License Exhibit A.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime Pro7 License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime Pro7 License
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Squeak
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime License.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime License
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Quicktime Pro7 License Exhibit A
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple Common Documentation License v1.0
+/usr/local/share/fossology/agents/licenses/Corporate/Apple/Apple iTunes License
+/usr/local/share/fossology/agents/licenses/Corporate/ATI
+/usr/local/share/fossology/agents/licenses/Corporate/ATI/ATI Software EULA
+/usr/local/share/fossology/agents/licenses/Corporate/ATI/ATI Software EULA.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Skype.meta
+/usr/local/share/fossology/agents/licenses/Corporate/Agere LT Modem Driver License.meta
+/usr/local/share/fossology/agents/licenses/Free
+/usr/local/share/fossology/agents/licenses/Free/Free clause
+/usr/local/share/fossology/agents/licenses/Free/Free clause.meta
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 2.meta
+/usr/local/share/fossology/agents/licenses/Free/Free use no change clause
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 3
+/usr/local/share/fossology/agents/licenses/Free/Fair License.meta
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 4
+/usr/local/share/fossology/agents/licenses/Free/Free use no change clause.meta
+/usr/local/share/fossology/agents/licenses/Free/Fair License
+/usr/local/share/fossology/agents/licenses/Free/Free with files clause.meta
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 4.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 10.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 3
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 4
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 4.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 5.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 3.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/UC Regents free with copyright clause
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 10
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Unidex
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 11
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 11.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 9
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 9.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 8
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Unidex.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 1.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 5
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/UC Regents free with copyright clause.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 8.meta
+/usr/local/share/fossology/agents/licenses/Free/FreeWithCopyright/Free with copyright clause variant 1
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 3.meta
+/usr/local/share/fossology/agents/licenses/Free/Beerware
+/usr/local/share/fossology/agents/licenses/Free/Free clause variant 2
+/usr/local/share/fossology/agents/licenses/Free/Beerware.meta
+/usr/local/share/fossology/agents/licenses/Free/WTFPL
+/usr/local/share/fossology/agents/licenses/Free/Free with files clause
+/usr/local/share/fossology/agents/licenses/Free/WTFPL.meta
+/usr/local/share/fossology/agents/licenses/GPL
+/usr/local/share/fossology/agents/licenses/GPL/v1
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1 Preamble
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1 reference
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1 Preamble.meta
+/usr/local/share/fossology/agents/licenses/GPL/v1/GPL v1.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 3
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 Java Index Serialization Package variant
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 6.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/Sybase Open Watcom Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 7.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 6
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL from FSF reference 1
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 8.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/Sybase Open Watcom Public License v1.0
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 Java Index Serialization Package variant.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 9
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 2.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL from FSF reference 2
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 5.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 4.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 1
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/McKornik Jr. Public License
+/usr/local/share/fossology/agents/licenses/GPL/v2/Free with copyright clause.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/eCos
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 8
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 9.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/Free with copyright clause
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 Preamble.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 5
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL from FSF reference 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Public Source License v1.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Community Source Licensing.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Public Source License v1.0 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Public Source License v1.0
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Public Source License v1.0 reference
+/usr/local/share/fossology/agents/licenses/GPL/v2/RealNetworks/RealNetworks Community Source Licensing
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 4
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 Preamble
+/usr/local/share/fossology/agents/licenses/GPL/v2/eCos.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL from FSF reference 2.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 7
+/usr/local/share/fossology/agents/licenses/GPL/v2/McKornik Jr. Public License.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 2
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/v2/GPL v2 reference 3.meta
+/usr/local/share/fossology/agents/licenses/GPL/W3C
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium Documents 2002
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium 2001.meta
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium Software 2002
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium Documents 2002.meta
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium 2001
+/usr/local/share/fossology/agents/licenses/GPL/W3C/World Wide Web Consortium Software 2002.meta
+/usr/local/share/fossology/agents/licenses/GPL/GPL from FSF reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/GPL for Computer Programs of the Public Administration.meta
+/usr/local/share/fossology/agents/licenses/GPL/GPL Font Exception clause
+/usr/local/share/fossology/agents/licenses/GPL/Dual MPL GPL
+/usr/local/share/fossology/agents/licenses/GPL/GPL JavaScript Exception clause
+/usr/local/share/fossology/agents/licenses/GPL/CopyLeft reference
+/usr/local/share/fossology/agents/licenses/GPL/v3
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 Preamble.meta
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 reference 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 reference 1
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 reference 2.meta
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3.meta
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 reference 2
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3
+/usr/local/share/fossology/agents/licenses/GPL/v3/GPL v3 Preamble
+/usr/local/share/fossology/agents/licenses/GPL/LGPL
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0 reference
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 reference 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL GNU C Library variant
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v3.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL wxWindows Library Licence v3.0 variant.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL gettext library variant
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 Preamble.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 Preamble
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v3.0
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0 with exceptions.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL wxWindows Library Licence v3.0 variant
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 reference
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL GNU C Library variant.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL gettext library variant.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.1 reference 1
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/LGPL/LGPL v2.0 with exceptions
+/usr/local/share/fossology/agents/licenses/GPL/GPL from FSF reference
+/usr/local/share/fossology/agents/licenses/GPL/GFDL
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.1 reference 2
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.1 reference 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.2.meta
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.2 reference
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.1 reference 1
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.2 reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.1 reference 2.meta
+/usr/local/share/fossology/agents/licenses/GPL/GFDL/GNU Free Documentation License v1.2
+/usr/local/share/fossology/agents/licenses/GPL/Exception
+/usr/local/share/fossology/agents/licenses/GPL/Exception/GPL exception clause 1.meta
+/usr/local/share/fossology/agents/licenses/GPL/Exception/GPL exception clause 2.meta
+/usr/local/share/fossology/agents/licenses/GPL/Exception/GPL exception clause 2
+/usr/local/share/fossology/agents/licenses/GPL/Exception/GPL exception clause 1
+/usr/local/share/fossology/agents/licenses/GPL/GPL Font Exception clause.meta
+/usr/local/share/fossology/agents/licenses/GPL/CopyLeft reference.meta
+/usr/local/share/fossology/agents/licenses/GPL/GPL JavaScript Exception clause.meta
+/usr/local/share/fossology/agents/licenses/GPL/Dual MPL GPL.meta
+/usr/local/share/fossology/agents/licenses/GPL/Affero
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero GPL v3.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero Preamble v3.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero GPL v1.0
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero GPL v1.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero GPL v3.0
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero Preamble v3.0
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero Preamble v1.0.meta
+/usr/local/share/fossology/agents/licenses/GPL/Affero/Affero Preamble v1.0
+/usr/local/share/fossology/agents/licenses/GPL/GPL reference
+/usr/local/share/fossology/agents/licenses/GPL/GPL for Computer Programs of the Public Administration
+/usr/local/share/fossology/agents/licenses/GPL/GPL reference.meta
+/usr/local/share/fossology/agents/licenses/OpenPublicationLicense
+/usr/local/share/fossology/agents/licenses/OpenPublicationLicense/Open Publication License reference.meta
+/usr/local/share/fossology/agents/licenses/OpenPublicationLicense/Open Publication License reference
+/usr/local/share/fossology/agents/licenses/OpenPublicationLicense/Open Publication License v1.0
+/usr/local/share/fossology/agents/licenses/OpenPublicationLicense/Open Publication License v1.0.meta
+/usr/local/share/fossology/agents/licenses/CDDL
+/usr/local/share/fossology/agents/licenses/CDDL/CDDL v1.0.meta
+/usr/local/share/fossology/agents/licenses/CDDL/CDDL v1.0
+/usr/local/share/fossology/agents/licenses/MPL
+/usr/local/share/fossology/agents/licenses/MPL/Open Public License v1.0
+/usr/local/share/fossology/agents/licenses/MPL/Netizen Open Source License
+/usr/local/share/fossology/agents/licenses/MPL/Ricoh Source Code Public License
+/usr/local/share/fossology/agents/licenses/MPL/NPL v1.1
+/usr/local/share/fossology/agents/licenses/MPL/NPL v1.1.meta
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.1.meta
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.0.meta
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.0
+/usr/local/share/fossology/agents/licenses/MPL/Interbase
+/usr/local/share/fossology/agents/licenses/MPL/Open Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MPL/CUA Office Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MPL/NPL contributor clause with dual license
+/usr/local/share/fossology/agents/licenses/MPL/Dual MPL MIT
+/usr/local/share/fossology/agents/licenses/MPL/gSOAP Public License.meta
+/usr/local/share/fossology/agents/licenses/MPL/MPL contributor clause with dual license.meta
+/usr/local/share/fossology/agents/licenses/MPL/Dual MPL MIT.meta
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.1 reference.meta
+/usr/local/share/fossology/agents/licenses/MPL/gSOAP Public License
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.1 reference
+/usr/local/share/fossology/agents/licenses/MPL/MPL v1.1
+/usr/local/share/fossology/agents/licenses/MPL/NPL v1.1 reference.meta
+/usr/local/share/fossology/agents/licenses/MPL/NPL contributor clause with dual license.meta
+/usr/local/share/fossology/agents/licenses/MPL/CUA Office Public License v1.0
+/usr/local/share/fossology/agents/licenses/MPL/Netizen Open Source License.meta
+/usr/local/share/fossology/agents/licenses/MPL/Interbase.meta
+/usr/local/share/fossology/agents/licenses/MPL/SISSL
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1 reference 1
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1 reference 2
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1 reference 1.meta
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1.meta
+/usr/local/share/fossology/agents/licenses/MPL/SISSL/SISSL v1.1 reference 2.meta
+/usr/local/share/fossology/agents/licenses/MPL/Ricoh Source Code Public License.meta
+/usr/local/share/fossology/agents/licenses/MPL/NPL v1.1 reference
+/usr/local/share/fossology/agents/licenses/MPL/MPL contributor clause with dual license
+/usr/local/share/fossology/agents/licenses/APSL
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.1.meta
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.1
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v2.0
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.0
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.0.meta
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v2.0.meta
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.2
+/usr/local/share/fossology/agents/licenses/APSL/Apple Public Source License v1.2.meta
+/usr/local/share/fossology/agents/licenses/ICU
+/usr/local/share/fossology/agents/licenses/ICU/ICU v1.8.1 variant.meta
+/usr/local/share/fossology/agents/licenses/ICU/ICU v1.8.1 variant
+/usr/local/share/fossology/agents/licenses/ICU/ICU v1.8.1
+/usr/local/share/fossology/agents/licenses/ICU/ICU v1.8.1.meta
+/usr/local/share/fossology/agents/licenses/MIT
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle)
+/usr/local/share/fossology/agents/licenses/MIT/NCSA
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) no ads clause.meta
+/usr/local/share/fossology/agents/licenses/MIT/MITstyleWithGNUoption
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle).meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT CMU style.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (modern).meta
+/usr/local/share/fossology/agents/licenses/MIT/X.Net License
+/usr/local/share/fossology/agents/licenses/MIT/MIT Free with copyright clause
+/usr/local/share/fossology/agents/licenses/MIT/MIT (modern)
+/usr/local/share/fossology/agents/licenses/MIT/MIT Bigelow&Holmes Luxi font variant
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 2
+/usr/local/share/fossology/agents/licenses/MIT/MIT (modern) with sublicense.meta
+/usr/local/share/fossology/agents/licenses/MIT/CargMellon
+/usr/local/share/fossology/agents/licenses/MIT/MIT CMU style
+/usr/local/share/fossology/agents/licenses/MIT/X11
+/usr/local/share/fossology/agents/licenses/MIT/MIT (modern) with sublicense
+/usr/local/share/fossology/agents/licenses/MIT/Imlib2.meta
+/usr/local/share/fossology/agents/licenses/MIT/X.Net License.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT HP-DEC variant.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT Bigelow&Holmes Luxi font variant.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT MLton variant.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 3
+/usr/local/share/fossology/agents/licenses/MIT/Imlib2
+/usr/local/share/fossology/agents/licenses/MIT/MIT Unicode variant.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT New Jersey variant.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT HP-DEC variant
+/usr/local/share/fossology/agents/licenses/MIT/MIT Free with copyright clause.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT Unicode variant
+/usr/local/share/fossology/agents/licenses/MIT/JasPer.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 2.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 1
+/usr/local/share/fossology/agents/licenses/MIT/MIT New Jersey variant
+/usr/local/share/fossology/agents/licenses/MIT/MIT MLton variant
+/usr/local/share/fossology/agents/licenses/MIT/JasPer
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 1.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) with disclaimer 3.meta
+/usr/local/share/fossology/agents/licenses/MIT/X11.meta
+/usr/local/share/fossology/agents/licenses/MIT/MIT (oldstyle) no ads clause
+/usr/local/share/fossology/agents/licenses/MIT/NCSA.meta
+/usr/local/share/fossology/agents/licenses/Creative_Commons
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons Public Domain.meta
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons LGPL
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons LGPL.meta
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons GPL.meta
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons Public Domain
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons Public License.meta
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons Public License
+/usr/local/share/fossology/agents/licenses/Creative_Commons/Creative Commons GPL
+/usr/local/share/fossology/agents/licenses/OpenGroup
+/usr/local/share/fossology/agents/licenses/OpenGroup/Open Group Test Suite License.meta
+/usr/local/share/fossology/agents/licenses/OpenGroup/Open Group.meta
+/usr/local/share/fossology/agents/licenses/OpenGroup/Open Group
+/usr/local/share/fossology/agents/licenses/OpenGroup/Open Group Test Suite License
+/usr/local/share/fossology/agents/licenses/Adaptive
+/usr/local/share/fossology/agents/licenses/Adaptive/Adaptive v1.0
+/usr/local/share/fossology/agents/licenses/Adaptive/Adaptive v1.0 Appendix A.meta
+/usr/local/share/fossology/agents/licenses/Adaptive/Adaptive v1.0.meta
+/usr/local/share/fossology/agents/licenses/Adaptive/Adaptive v1.0 Appendix A
+/usr/local/share/fossology/agents/licenses/CPAL
+/usr/local/share/fossology/agents/licenses/CPAL/CPAL v1.0
+/usr/local/share/fossology/agents/licenses/CPAL/CPAL v1.0.meta
+/usr/local/share/fossology/agents/licenses/CPL
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v1.0
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v1.0 reference
+/usr/local/share/fossology/agents/licenses/CPL/IBM
+/usr/local/share/fossology/agents/licenses/CPL/IBM/IBM_PL
+/usr/local/share/fossology/agents/licenses/CPL/IBM/IBM_PL/IBM Public License v1.0
+/usr/local/share/fossology/agents/licenses/CPL/IBM/IBM_PL/IBM Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v0.5.meta
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v1.0 reference.meta
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v0.5 reference
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v0.5 reference.meta
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v0.5
+/usr/local/share/fossology/agents/licenses/CPL/Common Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/FreeType
+/usr/local/share/fossology/agents/licenses/FreeType/FreeType.meta
+/usr/local/share/fossology/agents/licenses/FreeType/FreeType reference
+/usr/local/share/fossology/agents/licenses/FreeType/FreeType reference.meta
+/usr/local/share/fossology/agents/licenses/FreeType/FreeType
+/usr/local/share/fossology/agents/licenses/RedHat
+/usr/local/share/fossology/agents/licenses/RedHat/Red Hat EULA
+/usr/local/share/fossology/agents/licenses/RedHat/Red Hat EULA.meta
+/usr/local/share/fossology/agents/licenses/RedHat/Red Hat reference.meta
+/usr/local/share/fossology/agents/licenses/RedHat/Red Hat reference
+/usr/local/share/fossology/agents/licenses/OpenGameLicense
+/usr/local/share/fossology/agents/licenses/OpenGameLicense/Open Game License.meta
+/usr/local/share/fossology/agents/licenses/OpenGameLicense/Open Game License
+/usr/local/share/fossology/agents/licenses/BSD
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Maia Mailguard License
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Cryptix.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Entessa Public License
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Zend
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Vovida Software License v1.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD variant.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Phorum.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0 reference
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0 reference.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v1.1.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0 reference 2
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v1.1
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0 reference 2.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v2.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v1.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Apache/Apache Software License v1.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Vovida Software License v1.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Academy of Motion Picture Arts and Sciences
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/CWI
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/SSLeay.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD new short.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD new.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Naumen Public License.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Academy of Motion Picture Arts and Sciences.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Phorum
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/CWI.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Maia Mailguard License.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Cryptix
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Entessa Public License.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD new
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Naumen Public License
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD variant
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/BSD new short
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/OpenPBS
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/Zend.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/OpenPBS.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/SSLeay
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/PHP
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/PHP/PHP v3.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.new/PHP/PHP v3.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/INRIA-OSL
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD Gov
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Boost Software License.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD Harvard
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD UCRegents variant 2.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD NRL
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Sleepycat.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD As-Is clause
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD old
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD As-Is clause.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Boost Software License
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/FreeBSD
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/OpenLDAP
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD UCRegents variant 2
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD UCRegents.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Zope
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Zope/Zope v1.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Zope/Zope v1.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Zope/Zope v2.0
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Zope/Zope v2.0.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Attribution Assurance License
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/FreeBSD.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Intel-OSL.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Jython.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Jython
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD old.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD Harvard.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Sleepycat short
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD zlib
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/OpenSSL.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/OpenSSL
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD Gov.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD UCRegents
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Sleepycat
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Attribution Assurance License.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/INRIA-OSL.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD NRL.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Intel-OSL
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/BSD zlib.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/OpenLDAP.meta
+/usr/local/share/fossology/agents/licenses/BSD/BSD.old/Sleepycat short.meta
+/usr/local/share/fossology/agents/licenses/FreeArtLicense
+/usr/local/share/fossology/agents/licenses/FreeArtLicense/Free Art License v1.2.meta
+/usr/local/share/fossology/agents/licenses/FreeArtLicense/Free Art License v1.2
+/usr/local/share/fossology/agents/licenses/MiscOSS
+/usr/local/share/fossology/agents/licenses/MiscOSS/Glide.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Motosoto Open Source License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Pine License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/C_Migemo License
+/usr/local/share/fossology/agents/licenses/MiscOSS/qmail License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.1.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Aladdin Free Public License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Copy clause
+/usr/local/share/fossology/agents/licenses/MiscOSS/Glide
+/usr/local/share/fossology/agents/licenses/MiscOSS/EU DataGrid Software License
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3a
+/usr/local/share/fossology/agents/licenses/MiscOSS/Scilab License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Pine License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Ruby.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3a.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Hacktivismo Enhanced-Source Software License Agreement.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/mecab-ipadic
+/usr/local/share/fossology/agents/licenses/MiscOSS/Bitstream.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.2.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/BitTorrent.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Catharon Open Source License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Vim
+/usr/local/share/fossology/agents/licenses/MiscOSS/zlib
+/usr/local/share/fossology/agents/licenses/MiscOSS/zlib/zLib
+/usr/local/share/fossology/agents/licenses/MiscOSS/zlib/InfoZip.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/zlib/zLib.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/zlib/InfoZip
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Motif Public End User License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Q Public License v1.0
+/usr/local/share/fossology/agents/licenses/MiscOSS/OpenContent License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Internet Software Consortium.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/MSNTP License
+/usr/local/share/fossology/agents/licenses/MiscOSS/TCL
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3c
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Services Gateway Initiative
+/usr/local/share/fossology/agents/licenses/MiscOSS/TCL.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Internet Software Consortium
+/usr/local/share/fossology/agents/licenses/MiscOSS/Vim.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.0
+/usr/local/share/fossology/agents/licenses/MiscOSS/Bitstream
+/usr/local/share/fossology/agents/licenses/MiscOSS/Jahia Community Source License
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Giftware
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.1
+/usr/local/share/fossology/agents/licenses/MiscOSS/Motosoto Open Source License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Services Gateway Initiative.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Catharon Open Source License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Condor
+/usr/local/share/fossology/agents/licenses/MiscOSS/Giftware.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/gnuplot
+/usr/local/share/fossology/agents/licenses/MiscOSS/Nethack General Public License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3a reference.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/qmail License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Hacktivismo Enhanced-Source Software License Agreement
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Directory License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Scilab License
+/usr/local/share/fossology/agents/licenses/MiscOSS/Frameworx Open License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Jabber Open Source License v1.0
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3c.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Jahia Community Source License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Aladdin Free Public License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Frameworx Open License v1.0
+/usr/local/share/fossology/agents/licenses/MiscOSS/Jabber Open Source License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/BitTorrent
+/usr/local/share/fossology/agents/licenses/MiscOSS/IJG.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Q Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Motif Public End User License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/iMatix.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/EU DataGrid Software License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/iMatix
+/usr/local/share/fossology/agents/licenses/MiscOSS/IJG
+/usr/local/share/fossology/agents/licenses/MiscOSS/MSNTP License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/BitTorrent reference.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/OpenContent License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/mecab-ipadic.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Ruby
+/usr/local/share/fossology/agents/licenses/MiscOSS/Nethack General Public License
+/usr/local/share/fossology/agents/licenses/MiscOSS/BitTorrent reference
+/usr/local/share/fossology/agents/licenses/MiscOSS/Condor.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/Copy clause.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.3a reference
+/usr/local/share/fossology/agents/licenses/MiscOSS/gnuplot.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/C_Migemo License.meta
+/usr/local/share/fossology/agents/licenses/MiscOSS/LaTeX Project Public License v1.2
+/usr/local/share/fossology/agents/licenses/MiscOSS/Open Directory License
+/usr/local/share/fossology/agents/licenses/Edu
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Edinburgh.meta
+/usr/local/share/fossology/agents/licenses/Edu/University of Utah Public License.meta
+/usr/local/share/fossology/agents/licenses/Edu/Educational Community License
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Edinburgh
+/usr/local/share/fossology/agents/licenses/Edu/CMU
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 2000
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 1998.meta
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 2000.meta
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 1998
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 1991.meta
+/usr/local/share/fossology/agents/licenses/Edu/CMU/Carnegie Mellon University 1991
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Cambridge.meta
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Cambridge
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Notre Dame
+/usr/local/share/fossology/agents/licenses/Edu/Educational Community License.meta
+/usr/local/share/fossology/agents/licenses/Edu/Univ of Notre Dame.meta
+/usr/local/share/fossology/agents/licenses/Edu/University of Utah Public License
+/usr/local/share/fossology/agents/licenses/IETF
+/usr/local/share/fossology/agents/licenses/IETF/IETF.meta
+/usr/local/share/fossology/agents/licenses/IETF/IETF
+/usr/local/share/fossology/agents/licenses/IETF/IETF variant.meta
+/usr/local/share/fossology/agents/licenses/IETF/IETF variant
+/usr/local/share/fossology/agents/licenses/Artistic
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v1.0.meta
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v1.0
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v1.0 short.meta
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v2.0beta4.meta
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v2.0
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v1.0 short
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v2.0.meta
+/usr/local/share/fossology/agents/licenses/Artistic/Artistic v2.0beta4
+/usr/local/share/fossology/agents/licenses/Historical
+/usr/local/share/fossology/agents/licenses/Historical/Historical free with copyright clause
+/usr/local/share/fossology/agents/licenses/Historical/Historical Permission Notice and Disclaimer.meta
+/usr/local/share/fossology/agents/licenses/Historical/Historical Permission Notice and Disclaimer
+/usr/local/share/fossology/agents/licenses/Historical/Historical free with copyright clause.meta
+/usr/local/share/fossology/agents/licenses/Adobe
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe AFM short.meta
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe.meta
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe AFM short
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe short.meta
+/usr/local/share/fossology/agents/licenses/Adobe/Adobe short
+/usr/local/share/fossology/agents/licenses/Gov
+/usr/local/share/fossology/agents/licenses/Gov/MITRE Collaborative Virtual Workspace License.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-B_V1-en
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-B_V1-fr
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-C_V1-en
+/usr/local/share/fossology/agents/licenses/Gov/MITRE Collaborative Virtual Workspace License
+/usr/local/share/fossology/agents/licenses/Gov/Standard ML of New Jersey
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V1-fr.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V1-fr
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V2-fr.meta
+/usr/local/share/fossology/agents/licenses/Gov/Government clause.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-C_V1-fr
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-C_V1-en.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V1.1-US
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-B_V1-fr.meta
+/usr/local/share/fossology/agents/licenses/Gov/NASA Open Source v1.3.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V2-fr
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V2-en
+/usr/local/share/fossology/agents/licenses/Gov/Standard ML of New Jersey.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-B_V1-en.meta
+/usr/local/share/fossology/agents/licenses/Gov/NASA Open Source v1.3
+/usr/local/share/fossology/agents/licenses/Gov/Government clause
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V1.1-US.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL-C_V1-fr.meta
+/usr/local/share/fossology/agents/licenses/Gov/CeCILL_V2-en.meta
+/usr/local/share/fossology/agents/licenses/FSF
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 4.meta
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 1
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 4
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 2.meta
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 1.meta
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 3.meta
+/usr/local/share/fossology/agents/licenses/FSF/FSF
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 3
+/usr/local/share/fossology/agents/licenses/FSF/FSF.meta
+/usr/local/share/fossology/agents/licenses/FSF/FSF variant 2
+/usr/local/share/fossology/agents/licenses/AFL
+/usr/local/share/fossology/agents/licenses/AFL/License Text Protection
+/usr/local/share/fossology/agents/licenses/AFL/License Text Protection.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v3.0.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.0 reference
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v3.0
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.0.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.0 reference.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v2.1
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v2.0.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v2.0
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.1
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v2.1.meta
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.0
+/usr/local/share/fossology/agents/licenses/AFL/OSL/Open Software License v1.1.meta
+/usr/local/share/fossology/agents/licenses/AFL/AFL
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v1.1.meta
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v1.1
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v3.0.meta
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v2.0.meta
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v1.2.meta
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v2.0
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v1.2
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v3.0
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v2.1
+/usr/local/share/fossology/agents/licenses/AFL/AFL/Academic Free License v2.1.meta
+/usr/local/share/fossology/agents/licenses/Python
+/usr/local/share/fossology/agents/licenses/Python/Python InfoSeek variant.meta
+/usr/local/share/fossology/agents/licenses/Python/Python BeOpen
+/usr/local/share/fossology/agents/licenses/Python/Python CNRI v1.6
+/usr/local/share/fossology/agents/licenses/Python/Python CNRI v1.6.meta
+/usr/local/share/fossology/agents/licenses/Python/PSF
+/usr/local/share/fossology/agents/licenses/Python/PSF/Python Software Foundation v2.2
+/usr/local/share/fossology/agents/licenses/Python/PSF/Python Software Foundation v2.2.meta
+/usr/local/share/fossology/agents/licenses/Python/PSF/Python Software Foundation v2.1.1.meta
+/usr/local/share/fossology/agents/licenses/Python/PSF/Python Software Foundation v2.1.1
+/usr/local/share/fossology/agents/licenses/Python/JPython.meta
+/usr/local/share/fossology/agents/licenses/Python/Python BeOpen.meta
+/usr/local/share/fossology/agents/licenses/Python/JPython
+/usr/local/share/fossology/agents/licenses/Python/Python InfoSeek variant
+/usr/local/share/fossology/agents/licenses/Python/Python CNRI v1.6.1
+/usr/local/share/fossology/agents/licenses/Python/Python CNRI v1.6.1.meta
+/usr/local/share/fossology/agents/licenses/OCLC
+/usr/local/share/fossology/agents/licenses/OCLC/OCLC Research Public License v2.0.meta
+/usr/local/share/fossology/agents/licenses/OCLC/OCLC Research Public License v1.0
+/usr/local/share/fossology/agents/licenses/OCLC/OCLC Research Public License v2.0
+/usr/local/share/fossology/agents/licenses/OCLC/OCLC Research Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/Aptana
+/usr/local/share/fossology/agents/licenses/Aptana/Aptana Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/Aptana/Aptana Public License v1.0
+/usr/local/share/fossology/agents/licenses/EPL
+/usr/local/share/fossology/agents/licenses/EPL/Eclipse Public License v1.0.meta
+/usr/local/share/fossology/agents/licenses/EPL/Eclipse Public License v1.0 reference.meta
+/usr/local/share/fossology/agents/licenses/EPL/Eclipse Public License v1.0
+/usr/local/share/fossology/agents/licenses/EPL/Eclipse Public License v1.0 reference
+/usr/local/share/fossology/agents/licenses/Eiffel
+/usr/local/share/fossology/agents/licenses/Eiffel/Eiffel Forum License v1
+/usr/local/share/fossology/agents/licenses/Eiffel/Eiffel Forum License v2
+/usr/local/share/fossology/agents/licenses/Eiffel/Eiffel Forum License v1.meta
+/usr/local/share/fossology/agents/licenses/Eiffel/Eiffel Forum License v2.meta
+/usr/local/share/fossology/agents/licenses/RPL
+/usr/local/share/fossology/agents/licenses/RPL/Reciprocal Public License v1.5.meta
+/usr/local/share/fossology/agents/licenses/RPL/Reciprocal Public License v1.1
+/usr/local/share/fossology/agents/licenses/RPL/Reciprocal Public License v1.1.meta
+/usr/local/share/fossology/agents/licenses/RPL/Reciprocal Public License v1.5
+/usr/local/share/fossology/agents/licenses/Mandriva
+/usr/local/share/fossology/agents/licenses/Mandriva/Mandriva.meta
+/usr/local/share/fossology/agents/licenses/Mandriva/Mandriva

@@ -1,0 +1,201 @@
+%--------------------------------------
+% File grid.dat
+% grid.dat formatted data file for az_proj v1.04
+% (C) Joseph Mack (C) 1996
+%
+% You need AZ_PROJ v1.04, or later, to run a this file
+% The format here is the "grid2" format of v1.03
+% The "grid" format of v1.00 is no longer used
+%
+% contains grids worked (4 character notation) by freq and propagation mode.
+% grid squares go from AA00 to RR99.
+% the "grid2" format of AZ_PROJv1.02 is designed
+% to supercede the "grid" format of v1.0
+%
+% The band to be displayed is selected in
+% the array "/bands_plotted" in az_ini.ps
+% the grid worked will be colored/marked according to the propagation mode used.
+% the propagation modes are primarily of interest to VHF'ers
+% The equivelent type of file for HF'ers would be the dxcc.dat file
+% where contacts with dxcc countries are plotted by band and mode (CW, ssb...)
+%
+% Note about data_modifiers
+% From v1.04 onwards, data_modifiers can be used to modify grid: and qso: lines
+% (data_modifiers are allowed on all lines but will be ignored on all other data types).
+% The purposed of this is to allow worked grid squares (or qso's)
+% of several different appearances on the same page.
+% Thus it is possible to mark the grid squares (or qso's) from
+% one station differently than squares worked from other station(s).
+% In earlier verions of AZ_PROJ it was possible to have two alternate
+% markings by using a grid: or a GRID: data type (giving two types
+% of marked grid squares). This was not a particularly extensible
+% scheme and and the data type (grid: or GRID:) gives no indication
+% of the appearance of the square.
+%
+% A normal worked grid square line starts
+% grid:
+% and gives a square filled with the color /worked_grid_square_color
+% (set in az_ini.ps, currently set to verylightblue)
+%
+% data_modifiers which fill grid squares
+% Note these colors fill the square and will obliterate a previously
+% drawn square (in the same place) worked by someone else.
+% Any previously drawn features will also be obliterated.
+% Thus grid squares drawn with these data_modifiers will
+% have to be read in before the .wdb files.
+%
+% grid-red: grid is filled with the color /grid-red_color
+% grid-green: grid is filled with the color /grid-green_color
+% grid-blue: grid is filled with the color /grid-blue_color
+%
+%
+% data_modifiers which do not fill grid squares.
+% These are all B&W (could be changed of course in az_ini.ps)
+% and hence are suitable for B&W printers.
+%
+% These data_modifiers draw sets of lines in the worked grid square.
+% Lines do not obliterate previous markings on the map (well you
+% can read between the lines).
+% Grid squares drawn with these data_modifiers can be read in
+% after the .wdb files.
+% The spacing of the lines is adjusted to give about the same
+% density of lines, no matter the shape of the box (aspect
+% varies from equator to poles) or the scale
+% It is possible to mark a particular square as being worked
+% by two different people.
+%
+% This pair allow marking by two different orthogonal sets of lines
+% grid-lon: grid is crossed with lines parallel to the longitude lines
+% grid-lat: grid is crossed with lines parallel to the latitude lines
+% Note in the azimuthal equidistant projection, the lat lines are
+% not parallel and the lon lines are not parallel. Thus two well
+% separated grid squares both marked by e.g -lon (or instead by -lat)
+% will not neccessarily be seen by the eye to be related.
+%
+% Another orthogonal pair (also see comments for grid-lon and grid-lat)
+% grid-left: grid is crossed by lines running NW to SE (i.e. lines leaning left)
+% grid-right: grid is crossed by lines running NE to SW (i.e. lines leaning right)
+%
+% Another orthogonal pair
+% grid-horz: grid is crossed by lines running horizontally in page space
+% grid-vert: grid is crossed by lines running vertically in page space
+% Note well separated grid squares with these data_modifiers will have
+% parallel lines and will appear to the eye to be related.
+%
+% An now for something completely different
+% grid-*: grid is crossed by lines radiating from the QTH
+% (ie the point at the center of the projection).
+% Note, at a distance of about more than 4 grid squares from the QTH
+% all lines within a worked grid appear parallel.
+% If many squares are worked by one station, then the
+% markings in all worked grid squares will radiate from one point.
+% Note this routine is very slow compared to the other methods of marking grid squares
+% It has to calculate radial lines for the whole page.
+%
+%
+% a typical grid.dat line is
+% grid-modifier:50:F2:FM19:comment field
+% where -
+% grid: symbol to show that following data is a worked grid
+% modifier: see above explanation
+% 50: band the grid was worked on
+% F2: propagation mode, F2, Es, EME, Au, Ms, TEP, or unknown ()
+% FM19 grid worked
+% comment field of anything at all (ignored for plotting)
+%
+% Ms and Au occupy the same space and an Es contact will overwrite an Au contact.
+% The reverse is not true. The Au symbol does not overwrite the Es color patch.
+% For any grid, list the Au contact after the Es contact.
+% White space is not allowed in the active fields.
+%
+% To show this file, set the center to ARRL HQ, scale to 100km/cm and run
+% gs -q az_ini.ps -- az_proj.ps grid.dat
+%
+grid-red:50::FN22:comment field NA3T
+grid-green:50::FN42:comment
+grid-red:50::FN24:comment field
+grid-green:50::FN11:comment field
+grid-blue:50::FN12:comment field
+grid-lon:50::FN31:comment field
+grid:50::FN32:comment field
+grid-lat:50::FN11:comment field
+grid-left:50::FN21:comment field
+grid-right:50::FN32:comment field
+grid-vert:50::GL34:comment field
+grid-vert:50::GM34:comment field
+grid-vert:50::GN34:comment field
+grid-vert:50::GO34:comment field
+grid-horz:50::GL34:comment field
+grid-horz:50::GM34:comment field
+grid-horz:50::GN34:comment field
+grid-horz:50::GO34:comment field
+grid-lon:50::FL34:comment field
+grid-lon:50::FM34:comment field
+grid-lon:50::FN34:comment field
+grid-lon:50::FO34:comment field
+grid-lat:50::FL34:comment field
+grid-lat:50::FM34:comment field
+grid-lat:50::FN34:comment field
+grid-lat:50::FO34:comment field
+grid-red:50::FO01:comment field
+grid-vert:50::EO34:comment field
+grid-vert:50::EN34:comment field
+grid-vert:50::EM34:comment field
+grid-vert:50::EL34:comment field
+grid-blue:50::DO34:comment field
+grid-blue:50::DN34:comment field
+grid-blue:50::DM34:comment field
+grid-*:50::FN39:comment field
+grid-*:50::FN38:comment field
+grid-*:50::FN37:comment field
+grid-*:50::FN36:comment field
+grid-*:50::FN35:comment field
+grid-*:50::FN34:comment field
+grid-*:50::FN33:comment field
+grid-*:50::FN32:comment field
+grid-*:50::FN31:comment field
+grid-*:50::FN30:comment field
+grid-green:50::FN93:comment field
+grid-green:50::FN83:comment field
+grid-green:50::FN73:comment field
+grid-green:50::FN63:comment field
+grid-green:50::FN53:comment field
+grid-green:50::FN43:comment field
+grid-green:50::FN33:comment field
+grid-green:50::FN33:comment field
+grid-green:50::FN23:comment field
+grid-green:50::FN13:comment field
+grid-green:50::FN03:comment field
+grid-right:50::FN99:comment field
+grid-right:50::FN88:comment field
+grid-right:50::FN77:comment field
+grid-right:50::FN66:comment field
+grid-right:50::FN55:comment field
+grid-right:50::FN44:comment field
+grid-right:50::FN33:comment field
+grid-right:50::FN22:comment field
+grid-right:50::FN11:comment field
+grid-right:50::DO34:comment field
+grid-right:50::EO34:comment field
+grid-right:50::FO34:comment field
+grid-right:50::GO34:comment field
+grid-left:50::DO34:comment field
+grid-left:50::EO34:comment field
+grid-left:50::FO34:comment field
+grid-left:50::GO34:comment field
+%grid-lon:50::DN34:comment field
+%grid-lon:50::EN34:comment field
+%grid-lon:50::FN34:comment field
+%grid-lon:50::GN34:comment field
+%grid-horz:50::DM34:comment field
+%grid-horz:50::EM34:comment field
+%grid-horz:50::FM34:comment field
+%grid-horz:50::GM34:comment field
+%grid-horz:50::DL34:comment field
+%grid-horz:50::EL34:comment field
+%grid-horz:50::FL34:comment field
+%grid-horz:50::GL34:comment field
+grid:432::FM19:NA3T, NV3Z, 10/94
+grid:50::FN30:comment field
+grid:50::FM17:comment field
+%%--------------------------------------grid2.dat

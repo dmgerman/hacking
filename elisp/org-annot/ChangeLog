@@ -1,0 +1,16 @@
+2009-02-24  dmg  <dmg@phosphorus>
+
+	* org-annotation-helper.el (bzg/org-annotation-helper): Applied patch
+	by David Moffat
+
+2008-09-25  dmg  <dmg@phosphorus>
+
+	* org-annotation-helper: Start it with -n (no wait) to avoid
+	waiting processes in the background
+
+2008-09-18  dmg  <dmg@phosphorus>
+
+	* org-annotation-helper.el:  Bumped version to 0.3b
+
+	* Added a clarification in the FAQ.
+

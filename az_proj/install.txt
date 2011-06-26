@@ -1,0 +1,28 @@
+
+INSTALLATION OF AZ_PROJ
+
+	This installation procedure assumes you are
+using a DOS machine and are using Ghostscript to output
+to your display and to a non-postscript printer. No 
+installation is neccessary for a Postscript printer.
+
+	1. Copy the AZ_PROJ zip file and the Ghostscript 
+zip files to the directory of your choice (eg az_proj). 
+
+	2. Run the install.bat file (contained in the 
+azprjxxx.zip file). This unzips the zip files and puts the 
+files into the correct subdirectories.
+
+	3. Check that Ghostscript works on your machine by
+running the test batch files suggested by the install program.
+One of these tests Ghostscript in graphics mode and the other 
+tests Ghostscript in text mode. Do not even think about trying 
+AZ_PROJ until Ghostscript can pass these two tests. 
+
+	3. Run the example .bat files contained in the AZ_PROJ package
+These will produce some standard maps centered on the ARRL HQ, in CT, USA.
+
+	4. If everything works so far, then you can customise the
+maps to your QTH, by editing az_ini.ps and various data files 
+to customise the maps for you.
+

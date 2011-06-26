@@ -1,0 +1,148 @@
+%--------------------------------------
+%Mountain file:
+%File of mountain top locations for az_proj v1.1.3 or later
+%new format for uniform location.
+%
+%(mountain file suggested by beta tester Paul Wade, N1BWT)
+%
+%This list is combined from information provided by
+%Paul N1BWT and Zack Lau KH6CP/1 (zlau@arrl.org)
+%and is of mountain tops and useful rover sites in New England, USA.
+%Presumably after installation,
+%this file would be called something like ne_usa.dat.
+%
+%If you have assembled a list of useful rover locations or mountain
+%tops and wouldn't mind it being distributed with updates to
+%az_proj, please send us your rover/mountain file. In the file
+%please include your name (so that everyone will know who sent it in)
+%and some information as to the locations described. Any other info, such as
+%"road closed from Sept - May, contact Ranger at ph#... for more info"
+%or "please close the gate as you leave" etc is very welcome.
+%(Mountain tops aren't the only good spots to operate from... -
+%I may have to change the designator "mountain" to something else :-)
+%
+%Mountains are located by 6 character grid square locators
+%which run from AA00aa to RR99xx.
+%The mountain symbol is put at the center of that square,
+%giving an error (at the equator) in positioning of less
+%than 2km in the E-W direction and less than 2km in the N-S direction.
+%If greater accuracy is required, then the general purpose
+%annot.dat file can provide locations to an arbitrary accuracy.
+%
+%use mountain: for default color (set black in az_ini.ps)
+%use MOUNTAIN: for specical color (set red in az_ini.ps)
+%
+%To add a mountain to the map, supply data in the form
+%
+%mountain:string_1:lat:lon:string_2:comment ignored by AZ_PROJ
+%or
+%mountain:string_1:gridlocator:string_2:comment ignored by AZ_PROJ
+%where
+%mountain - data type
+%string_1 - any or null string (blanks OK), will be written above mountain symbol
+%			possible use - Mountain name
+%location is gridsquare: or lat:lon:
+%string_2 - any or null string (blanks OK), will be written below mountain symbol
+%			possible use - Mountain elevation
+%comment  - ignored by AZ_PROJ, for your own purposes
+%
+% e.g.
+%MOUNTAIN:Mt. Washington:FN44ig:6288ft:difficult access in winter
+%mountain:Mt. Kearsarge:FN43bj::
+%mountain:Mt. FooBar:43.3:-72.2:never been here:Note location as lat:lon:
+%
+%--------------------------------------
+%
+MOUNTAIN:Mt. Washington:FN44ig::6288ft:
+%
+%Mt Kearsarge FN43BJ
+%Great spot for working South, but blocked by Summit to the North.
+%Summit is a short but slightly steep hike.  You can supposedly work
+%W2SZ halfway up.  Summit is usually very windy.
+MOUNTAIN:Mt. Kearsarge:FN43bj::
+%
+mountain:Mt. Wachusett:FN42bl::
+mountain:Mt. Monadnock:FN32wu::
+mountain:Burke Mt.:FN44bn::
+MOUNTAIN:Mt. Agamenticus:FN43pf::
+%
+%Mt Equinox VT FN33JC.
+%Great spot but tough on cars. It is occupied with limited multis in June/Sept.
+%KH6CP/1 shares the mountain with them then and is also there for the UHF
+%contest. Trees are a problem--particularly when hidden by heavy fog.
+%The inn/motel blocks shots to the East. In June, there is an auto race
+%which severely limits access. Manchester gets clogged with tourists
+%in the late summer/fall, possibly making driving tough for those in a hurry.
+mountain:Mt. Equinox:FN33jc::
+%
+mountain:Mt. Ascutney:FN33sk::
+mountain:Martha's Vineyard:FN41pi::
+%
+%Dennis Hill FN31JW Norfolk CT
+%LOS to Greylock. Wauchusett, K2RIW (FN30HT), and Mt Equinox
+%FN33JC are all workable on 10 GHz narrowband but not loud.
+%Slow down as you approach Norfolk to avoid speed trap.
+%There are steps to an observation area on top a stone building
+%to clear trees. You may need a GPS or accurate speedometer
+%to find the spot off Rt 272--don't expect any signs.
+mountain:Dennis Hill, CT:FN31jw::
+%
+MOUNTAIN:West Rock, CT:FN31mi::
+mountain:Woonsocket Hill, RI:FN41ex::
+mountain:Spruce Mtn, VT:FN34tf::
+%
+%Haystack FN32JA. A few miles up Rt 272. You can hike for about 10
+%minutes to get to a stone observation tower. Possible for someone
+%with handheld gear to cover 2 grids very easily from great spots.
+mountain:Haystack:FN32JA::
+%
+%Hammonasset Beach FN31RF
+%Nice spot to work South in the winter. Otherwise, you have to pay to get in.
+%Expect lots of visitors year round.Well marked--easy to find.
+mountain:Hammonasset Beach:FN31RF::
+%
+%Mohawk FN31IT.
+%Nice spot for working due North/South. Last Sept. the little fire
+%tower was trashed--missing steps and other important pieces.
+%Poor shot NE. K2RIW is real loud. Marked, but partly hidden by sharp turns.
+%Off Rt 4 about 4 miles past the rotary if you are heading west.
+mountain:Mohawk:FN31IT::
+%
+%Pack Manadnock FN42BU.
+%Overgrown with trees. You can walk to a picnic area to work South.
+%WB1FKF in FN42JK is in one of the clear directions.
+mountain:Pack Manadnock:FN42bu::
+%
+%
+%Grand Manadnock FN32WS 3165 ft Elevation
+%Scouting trip, July 24, 1994. About 1.5 hours to get to the summit.
+%Warm weather at start, 1439Z (10:39 AM). Actually got to the summit
+%at 1625Z despite spending about 15 minutes puzzling out the trail.
+%1451Z--reach Spruce Link. 1 hour, 13 minutes to get down from the summit.
+%Driving there (from Newington, CT) Rt 175 to 5/15 North.
+%Then I-91 North to exit 3 to get on Rt 9 East.
+%Take Rt 101 for roughly 12 miles. Big brown sign with yellow letters
+%on right marks the access road--Jaffrey. 2 hours to get there.
+%2 hrs 13 min to get to park gate. Distance 126.4 miles.
+%Leaving Rt 9 onto 91. Drive straight (exit ramp on right goes to 91 North).
+%Gate always open--can start hike at 4 AM and pay on the way out ($2.50).
+%RF conditions/propagation. Excellent views of most of New England.
+%LOS to most mountaintops (it blocks many paths!).
+%No radio towers or power at the summit, which is above the tree line.
+%Busy place, with lots of visitors on a clear day. 125,000 visitors a year.
+%Open winters for those interested.
+mountain:Grand Manadnock:FN32WS:3165 ft:
+%
+%Slide Mountain FN22TA/FN21TX
+%165.8 mile trip via Rt 175/72/I84/I87/28/47 3.5 hours about the same via
+%Rt 44/41/23/32/214/28/47 4.2 miles from Rt 28 to bridge 4.9 miles from
+%bridge on Rt 47 to entrance.
+%Summit 42 0.06N 74 23.10W (74.385/42.001) Close trees around need >10 foot
+%mast to clear marked by concrete blocks FN22TA.
+%Nice observation area toward the East 41 59.97N 74 23.05W (74.3842/41.9995)
+%FN21TX. 50 to 70 degrees magnetic--close mountains in the way,
+%70 to 180 degrees--clear--only distant mountains.
+%People climb this one in the winter, just like Grand Manadnock.
+mountain:Slide Mountain:FN22TA::
+%
+%--------------------------------------mountain.dat

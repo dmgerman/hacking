@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ConfigurationDialog.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="ConfigurationDialog"/>
+    </fileobject>
+    <fileobject name="ExplorerFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="ExplorerFrame"/>
+    </fileobject>
+    <fileobject name="FileSystemRenderer.java">
+        <attr name="class_dependency_javax.swing.tree.DefaultTreeCellRenderer" stringvalue="FileSystemRenderer"/>
+    </fileobject>
+    <fileobject name="FileViewPane.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="FileViewPane"/>
+        <attr name="class_dependency_javax.swing.event.ListSelectionListener" stringvalue="FileViewPane.InfoTableSelectionChanged"/>
+    </fileobject>
+    <fileobject name="FilesTabbedPane.java">
+        <attr name="class_dependency_com.infosys.closeandmaxtabbedpane.CloseAndMaxTabbedPane" stringvalue="FilesTabbedPane"/>
+        <attr name="class_dependency_com.infosys.closeandmaxtabbedpane.CloseListener" stringvalue="FilesTabbedPane.CloseWatcher"/>
+    </fileobject>
+    <fileobject name="MRSViewPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="MRSViewPanel"/>
+        <attr name="class_dependency_javax.swing.event.ListSelectionListener" stringvalue="MRSViewPanel.InfoTableSelectionChanged"/>
+    </fileobject>
+    <fileobject name="NonEditableTableModel.java">
+        <attr name="class_dependency_javax.swing.table.DefaultTableModel" stringvalue="NonEditableTableModel"/>
+    </fileobject>
+</attributes>

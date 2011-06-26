@@ -1,0 +1,128 @@
+Announcement: AZ_PROJ v1.04 Azimuthal Equidistant Postscript Mapping package
+available from the AZ_PROJ Map Server Website at
+
+http://www.xray.duke.edu:1080/
+
+or by ftp
+
+ftp://ftp.xray.duke.edu/pub/az_proj
+
+	The file is  azprj104.zip (approx 1.2M).
+
+	The new features are
+
+	1. Orthographic orientation option
+(The Orthographic projection puts South at the top of the
+page). Needed for people in the Southern Hemisphere (-:
+
+	2. ARRL grid square labelling style added. The ARRL
+style has much smaller labels for the grid squares and puts
+the letter square labels in the bottom left of the square.
+The grid square labelling style used in v1.00-v1.03 is
+now called az_proj style.
+
+	3. Several different options added for shading
+worked grid squares (different colors, different cross
+hatching methods) so that it's possible to mark grid
+squares worked by two (or more) different people. See
+the sample grid.dat file for more info. You can also use
+the same options for marking the grids at the ends of a
+qso (see qso.dat for examples).
+
+	4. Plotting TV stations for North America (NA)
+and Europe. A full list of NA stations broadcast
+stations (MW, FM, TV) in machine readable format has been
+produced by Colin K4SSO. A separate file consisting of
+only the NA Channel 2 stations (55.25MHz useful as 6m
+propagation markers) has been added. A list of European
+TV stations (from Geoff Brown and Emil W3EP) has been
+converted to machine readable format, for 6m propagation
+markers.
+
+	5. DAT file formats are still changing (sorry).
+Anything which is a transmitter (TV station, rover, beacon,
+repeater) all have the same format. The only thing which
+changes is the symbol displayed. Please note the changes
+detailed in each .DAT file (at most you will have to add
+an extra colon or two to your old files if you want to update
+them).
+
+	6. GRID2.DAT file format of v1.03 is now standard
+(and called the GRID format, with no 2). The old format from
+v1.00 which had been used in parallel, has been
+dropped.
+
+	7. An install.bat file has been added to install
+AZ_PROJ and Ghoscript onto a DOS machine with a VGA or
+SVGA monitor. Sample batch files for testing both Ghostscript
+and AZ_PROJ are included.
+
+
+	8. Easier method for choosing when to draw grid square
+borders and compass (in az_ini.ps). (Also clearer explanation
+of what's happening, I hope).
+
+	9. Display of USA by call areas (0..9) rather than
+(or as well as) by states.
+
+	10. Labelling feature. The center of the line on which
+the label sits, is at the lat/lon (cf annotations where a blob
+is at the lat/lon). This feature can be used for labelling
+continents, countries... The size of the characters can be
+chosen differently for each entry, and the size chosen scales
+with the map scale. You can try this feature out, by labelling
+the US call areas with the file us_call.dat when the numbers
+0..9 will be drawn in each call area. The borders of the call
+areas can be drawn by turning on /draw_USA_call_areas in
+az_ini.ps.
+
+
+
+
+	Joe NA3T
+	mack@ncifcrf.gov
+	mack@xray.duke.edu
+
+	and
+
+	Michael NV3Z
+
+
+---------------------
+
+General blurb about AZ_PROJ
+
+	AZ_PROJ is a collection of postscript files and data
+files for generating azimuthal equidistance projections of the earth
+from (almost) any point on earth. It can plot color maps of the
+surface of the earth on any scale, draw and/or label grid squares,
+show worked grid squares on a band(s) of your choice, dxcc
+countries (and countries worked an a particular mode, eg CW/SSB),
+mountain tops, rovers, repeaters, beacons and can use NMEA input
+from a GPS receiver to center the map.
+
+	AZ_PROJ can be run on ANY computer (Mac, PC/DOS/Win/DVX, Unix)
+and output to a postscript device (printer, ghostscript runing on a
+unix or DOS machine with a  ghostscript compatible printer, eg
+HPcolor inkjets). Ghostscript will also allow display of the maps
+on screens.
+
+	Although a rudimentary understanding of postscript will
+help in running AZ_PROJ, sample .bat files are supplied to make
+initial maps and it should be possible to make simple changes to
+the az_ini.ps and *.bat files to get the maps you want.
+
+	To display the maps on a screen or to use a
+non-postscript printer, you should first obtain ghostscript
+(available for PC (DOS, Win, DesqViewX) or Unix) from your
+favorite ftp site (try ftp.cs.wisc.edu/pub/ghost)
+
+	The AZ_PROJ files are GNU copylefted.
+
+	Joe Mack NA3T, mack@ncifcrf.gov, mack@xray.duke.edu
+
+	and
+
+	Michael Katzmann NV3Z, michael@baa01285.slip.digex.net
+
+	Jan 97

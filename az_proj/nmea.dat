@@ -1,0 +1,70 @@
+%--------------------------------------
+% nmea.dat file for az_proj
+% File for NMEA (National Marine Electronics Assoc) 0183 standard codes
+%
+% allows entering of QTH lat/lon co-ordinates from external devices
+% such as GPS receivers, rather than having to enter the data
+% into az_ini.ps with an editor.
+% This feature was suggested by Paul N1BWT for use by moutain toppers.
+%
+% only GLL (Geog Lat/Lon)
+% and BWC (bearing to waypoint along Great Circle) are implemented
+%
+% The file consists of any number of lines of NMEA codes which could
+% in principle be captured from a GPS receiver on the serial port
+% by a program like kermit.
+%
+% For those of you who have azimuth indicators, wind speed and
+% direction indicators, thermometers, hygrometers, etc, hooked
+% up to your computer, so that they can output a line of data to
+% a file, then presumably this information can be drawn with az_proj as well.
+%
+% I don't have a GPS receiver to test this.
+% I got the specs from Paul Wade N1BWT, who
+% sent me an article by Wayne Simpson (wms@spin.ho.att.com)
+% and from Mike Owen W9IP. Thanks to Jim KC7MJ for a lead to a WWW site
+% Let me know if it works (or doesn't work) -JM
+%
+% The full NMEA specs are available from
+% NMEA, PO Box 50040, Mobile, AL, 36605, USA, (205)-473-1793.
+% (This is more than you'll ever want to know, 
+% instead read Wayne Simpson's article, simpson.doc 
+% included with this package by kind permission of Wayne.)
+%
+% The NMEA device will send 4800,N,1 packets down your serial line
+% which you can capture with some program like kermit. You'll get
+% (I think) 1-5 lines repeated about every 2 secs.
+% Possible lines as they will come down your serial line
+% (#'s are digits that I haven't figured out what they do,
+% - I don't parse them)
+% the data line is recognised by the string ($GP) at the start
+% of the line and a comma anywhere else in the line
+%
+% If you're going to be using nmea data, then be careful
+% if you have center_offset on. Az_proj calculates the
+% bearing/distance from the QTH to the new center and
+% then translates the map by this amount for all subsequent
+% calculations. If you then read in the nmea.dat file
+% changing the QTH, the actual (offset) center will be displaced
+% by the distance between the QTH in az_ini.ps and in nmea.dat.
+% If this distance is small on the scale of the map, then you
+% probably will not notice anything. If the distance is large
+% then the projection will still be correct (from the nmea.dat QTH)
+% but the center of the map won't be where you asked it to be.
+%
+% The lat/lon of the QTH in az_ini.ps is overwritten by the nmea.dat data
+% However the QTH_name is not (it's written out onto the Title
+% before this file is read). So change it manually yourself
+% to something like (mountain top).
+%
+% The time (hour/min) in az_ini.ps is overwritten by BWC,
+% giving the correct lon for the sun.
+% However there is no date info from GPS
+% and the date is not overwritten.
+% the date must be entered in az_ini.ps
+% to give the correct latitude for the sun
+%
+$GPGLL,4130.34,N,7135.42,W
+$GPBOD,120,T, 125,M,####,####
+$GPBWC,235959,4359.00,N,7459.00,W,175,T,185,M,252.5,N,####
+%--------------------------------------nmea.dat

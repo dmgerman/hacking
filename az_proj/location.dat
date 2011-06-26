@@ -1,0 +1,54 @@
+%--------------------------------------
+% location.dat file for az_proj
+%
+% allows entering of QTH lat/lon co-ordinates from external devices 
+% such as GPS receivers, rather than having to enter the data
+% into az_ini.ps with an editor. 
+% This feature was suggested by Paul N1BWT for use by moutain toppers.
+%
+% The file consists of any number of lines of any sort of data in any format
+% (such as NMEA codes from the GPS receiver on the serial port, giving
+% lat, lon, altitude, time) 
+% followed by suitable postscript routines to parse the data into 
+% az_proj variables. 
+% In this version of the file, two reals (lat, lon) are entered 
+% (pushed on the stack in Postscript speak) then they are popped off
+% the stack into the variables lon_QTH, lat_QTH.
+%
+% When I find out the real NMEA specs I will rewrite the routines to
+% parse the NMEA codes.
+% For those of you who have azimuth indicators, wind speed and 
+% direction indicators, thermometers, hygrometers, etc, hooked
+% up to your computer, so that they can output a line of data to 
+% a file, then presumably this information can be drawn with az_proj as well.
+%
+% method of use:
+% a) turn /use_automatic_option "off" (in az_ini.ps). 
+% This prevents the "option" routines in az_proj.ps from 
+% overwriting the values of the variables calculated here.
+% b) use a command line like
+%
+% C:\gs261>gs az_ini.ps location.dat -- az_proj.ps n_amer.wdb mountain.dat rover.dat > error.out
+%
+% the routines in the location.dat file overwrite the QTH data declared
+% in az_ini.ps. You can add anything at all in this file to change the
+% values of previously declared values - it doesn't have to be just
+% location information.
+%
+% the file consists of 2 parts
+% 1 - NMEA codes, giving lat/lon, speed, altitude, time etc info.
+% Presumably this information will come via some utility program
+% which will be run as part of a batch file which runs az_proj.
+%
+% Here's a mockup of the NEMA information, from the hypothetical utility.
+%
+42.0	%latitude of QTH
+-75.0	%longitude of QTH
+%
+% 2 - routines to parse the NMEA coded information
+%
+/lon_QTH exch def
+/lat_QTH exch def
+% end
+%--------------------------------------
+%--------------------------------------location.dat

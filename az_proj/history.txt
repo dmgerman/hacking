@@ -1,0 +1,302 @@
+AZ_PROJ History
+
+v1.1.6 
+Fixed TV stations so that names of multiple stations at the same site
+would be listed under each other (thanks to W1QA for prompting this).
+
+Added US counties. Thanks to the people at the US Census for help
+here and to Pete KS4XG of PVRCNC for prompting this.
+
+n_amer.wdb v1.07 9 Jun 00. Made L. Ontario into closed loop.
+
+v1.1.4 5 Jun 00 
+bug fix, not all *.dat files were being read correctly.
+
+v1.1.3 Jun 00 - allow input of lat/lon in any of the following formats
+		lat:lon
+		lat,lon
+		gridlocator
+
+gridlocators are changed to uppercase, and NSEWnsew suffixes on lat/lon can be used
+instead of +/- signs. Only decimal lat/lon is allowed.
+
+thus these lines are all equivalent
+
+qra:50:NA3T qra 6m:FM05lw:comment
+qra:50:NA3T qra 6m:FM05LW:comment
+qra:50:NA3T qra 6m:35.94N,79.03W:comment
+qra:50:NA3T qra 6m:35.94n:-79.03:comment
+qra:50:NA3T qra 6m:35.94,-79.03:comment
+
+This has been implemented for
+qth,city,AM/BC/TV/FM,rover,mountain,repeater,beacon,label,annotation 
+
+This has not been implemented for anything that has a 4char 
+gridsquare to indicate an area (eg to be filled)
+(this includes worked grids, qso...) 
+
+v1.1.2 May 00 - (code not released)
+added extra positions (eg below-right) for station_strings identifiers
+for repeaters and other transmitters.
+
+Added a dictionary so that multiple transmitters at one spot (read commercial TV stations)
+will have their station identifiers (callsign/channel/freq) printed as a list below
+the station symbol, rather than on top of each other. (Thanks to W1QA and VE2DC for suggestion).
+(Code demo only - not finished till v1.1.3)
+
+strings from these will not overwrite, but will be stacked according to the symbol_string_locations
+in az_ini.ps for each symbol. Thus if 5TV stations and a beacon are plotted (in that order) all
+at the same location then 5 consecutive TV station symbols will overwrite each other, but the
+identifying strings will be stacked below each other. Next the beacon symbol will be drawn at
+the location and the beacon strings will be drawn as if 5 beacons had just been plotted.
+
+This has been implemented for
+AM/BC/TV/FM,rover,mountain,repeater,beacon,label
+
+This has not been implemented for
+annotation,city or anything that has a 4char gridsquare to indicate an area (eg to be filled)
+(this includes worked grids, qso...) 
+
+v1.1.1 Apr 00 - population centers. Code on website, but source code not released.
+
+v1.1 Mar 00
+beta11:
+fixed logic for compasses and distances_circles, so that can turn both off with
+/distance_circles (none) def , rather than having to turn both off separately.
+
+added /ignore_bands so that can plot etopo5 and qra-density filled grids, no matter
+what band is chosen for plotting (these data types have a frequency parameter in the
+line, so that you can select data by freq).
+
+changed "qra_density" to "density" in all files
+
+beta10:
+added elevation data 5min resolution
+
+beta9: 
+changed to unix carriage control (saves me rebooting into DOS)
+
+also bug fix for beta8, 
+images for different papersize (A3,4,5, halfletter,letter,ledger) are now rendered
+in a box of the correct size in the webpage (the file you downloaded was the correct size). 
+can now turn off political states (eg states in USA, Australia; provinces in Canada). 
+The MO-AR state border in USA has been returned after and absence of 18-30 months. 
+There are some bugs that are a bit hard to track down. If I make a map from my QTH (FM05lw) on
+a Linux 2.0.36/libc5 machine, at a scale of 2250km/cm, plotting only eurasia and oceania (in 
+any order), then gs261 will crash. If I change any of these (move my QTH by a few 100m, change
+the scale to 2251km/cm, use another version of gs, or run the program on a Linux 2.2.x/glibc-2.1 
+machine), then everything is fine. I would expect there will be other anomolies to be found.
+
+beta8: 
+draws maps from the antipodes, with the local continent superimposed on the antipodes
+(special request of w3ep). The local continent is drawn by a .pod file (eg n_amer.pod, 
+a file derived from n_amer.wdb file, by adding 180 deg to the longitude and inverting
+the latitude - only the country borders are included).
+
+
+beta7: 
+Draws new borders in Europe (new from ca. 1990). 
+Print files can be e-mailed to you (webpage server code).
+
+beta6: 
+Plots density of 6m operators/gridsquare. 
+Border between E- and W-Germany removed (by popular request) (Bosnia etc to be fixed later). 
+Border between California and Nevada restored (for the 2nd time).
+
+beta5: 
+Can use gridlocator or lat/lon to descibe location. 
+Fixed bug in routine that places a "+" at center of map. 
+Added call areas for VE,VK,ZL. 
+Bit-rot fixed in rover and mountain routines.
+
+beta4: 
+Added MF/LF beacons and 6m QRA list. 
+Fixed bug in distance circle labelling routine.
+
+
+beta3: 
+Bug fix in greyline code that gave sunset/rise lines for 12 days later. 
+A cross has been added at the QTH, for people who don't include a compass. 
+
+beta2: 
+An option to _not_ plot high resolution data for maps covering large 
+areas of the earth. This speeds up large scale maps by a factor of 2.
+
+beta1: 
+minor upgrade from v1.04 allowing plotting of city names on the map.
+This is to help decorate small scale maps (for UHF users) in areas with little
+ohter information (coast lines, rivers or lakes). I did this
+after spending a a weekend on top of a mountain in EM85 operating
+on 432 and 1296MHz with a very boring map that had only gridsquares on it.
+
+
+Changed name of next version 1.1 rather than 1.05, to make name
+more compatible with DOS8.3 filenames.
+
+(Feb 00, I've lost track of what I did and when here). Somewhere
+in the 1.1beta series I did
+
+Can use gridlocator or lat/lon to descibe location.
+
+Added call areas for VE,VK,ZL.
+
+MF/LF beacons
+
+6m QRA list (call signs of 6m operators by gridsquare
+- this is not particularly useful as the QTH is described by only
+the 4char gridlocator and all the operators in the gridsquare
+have their call sign plotted on top of each other. Now if they
+used their 6char grid locator, then each operator would have his
+own dot).
+
+Density of operators,contacts/gridsquare (for 6m qra list and for contents logs).
+
+Enable plotting of the density of US hams. This required plotting of a box from 
+a 6char gridlocator.
+
+Fixed broken code for various grid: dat files
+
+v1.04 Nov 96
+
+	1. Orthographic orientation option (South at the top of
+the page). Needed for people in the Southern Hemisphere (-:
+
+	2. ARRL grid square labelling style added. The ARRL
+style has much smaller labels for the grid squares and puts the
+letter square labels in the bottom left of the square. The grid
+square labelling style used in v1.00-v1.03 is now called az_proj
+style.
+
+	3. Several different options added for shading worked
+grid squares (different colors, different cross hatching
+methods) so that it's possible to mark grid squares worked by
+two (or more) different people. See the sample grid.dat file for
+more info. You can also use the same options for marking the
+grids at the ends of a qso (see qso.dat for examples). Only one
+type of grid data line now used.
+
+	4. Plotting broadcast stations. A list of USA
+(and some Mexican and Canadian stations) stations (MW, FM, TV)
+in machine readable format has been produced by Colin K4SSO
+(aa0yt@mo.net, http://walden.mo.net/~aa0yt). Further lists
+are expected (e.g. Australia). A separate file consisting
+of only the North American Channel 2 stations (55.25MHz
+useful as 6m propagation markers) has been added. A list of
+European TV stations (from Geoff Brown and Emil W3EP) has been
+converted to machine readable format, for 6m propagation
+markers.
+
+	5. DAT file formats are still changing (sorry).
+Anything which is a transmitter (TV station, rover, beacon,
+repeater) all have the same format. The only thing which changes
+is the symbol displayed. Please note the changes detailed in
+each .DAT file (at most you will have to add an extra colon or
+two to your old files if you want to update them).
+
+	6. GRID.DAT file format of v1.03 (there called grid2) is
+now standard (now called grid: format). The old format
+from v1.00 has been dropped.
+
+	7. An install.bat file has been added to install AZ_PROJ
+and Ghoscript onto a DOS machine with a VGA or SVGA monitor.
+Sample batch files for testing both Ghostscript and AZ_PROJ are
+included.
+
+	8. Easier method for choosing when to draw grid square
+borders and compass (in az_ini.ps). (Also clearer explanation
+of what's happening, I hope).
+
+	9. Display of USA by call areas (0..9) rather than
+(or as well as) by states.
+
+	10. Labelling feature. The center of the line on which
+the label sits, is at the lat/lon (cf annotations where a blob
+is at the lat/lon). This feature can be used for labelling
+continents, countries... The size of the characters can be
+chosen differently for each entry, and the size chosen scales
+with the map scale. You can try this feature out, by labelling
+the US call areas with the file us_call.dat when the numbers
+0..9 will be drawn in each call area. The borders of the call
+areas can be drawn by turning on /draw_USA_call_areas in
+az_ini.ps.
+
+	11. Can convert output from the contest logging program
+CT to AZ_PROJ format.
+
+
+v1.03 27 Aug 96
+
+	Fixed main bug in v1.0.
+
+	Added features:
+
+	1. qso.dat file. Draws great circle route between
+	two QTH's anywhere on earth. For plotting contacts
+	during propagation openings (eg Es), to show
+	center of Es cloud.
+
+	2. comment fields added to grid2.dat, qso.dat
+
+	3. .wdb files edited so that consecutive paths have
+	different path descriptor numbers. Paths now have about
+	1000 points or less. THese modifications simplify the code
+	which reads the .wdb files.
+
+	4. dxcc country names/callsigns can now be drawn around the
+	circumference of the map
+
+
+	5. Greylines can be drawn for sunset and sunrise at
+	your QTH for any date(s).
+
+	6. In the personal .dat files (mountain, rover, grid...)
+	a comment field, ignored by az_proj, has been added.
+
+	7. Config files added. You can use a small preconfigured
+	file to make a map, in which only a small number of options
+	is ever changed. Thus you can have a config file for HF,
+	or VHF (or each VHF band, with a different scale).
+	For examples, see hf_conf.ps and vhf_conf.ps
+
+
+
+v1.01,1.02 Jun 96 - not publically released
+
+	grid2.dat file: enables selecting worked grid squares
+	by propagation mode (designed to supercede grid.dat file).
+
+	Greyline routine improved so that the nightime part of the
+	earth can be shaded.
+Map Server at http://www.xray.duke.edu:1080/ - Apr 96
+
+	Machine kindly provided by my work. A node that doesn't get
+	much use, mine :-), is being used.
+
+
+
+V1.0 released Jul 95
+
+	Quickly found to have a bug when running in postscript
+	mode (sending to printer, or using ghostscript
+	feeding one big concatenated file). If a grid.dat
+	file was sent to the printer before the .wdb files
+	the printer would lock up. Funny that was working
+	only a few weeks before ;-). Ran fine if using
+	ghostscript with command line parameters
+
+
+
+V0.9a, 0.9b (beta)
+
+	released at VHF conferences in Memphis TN, Jul 94, and
+	Vernon CT, Aug 94, for non distribution.
+
+
+	Joe Mack NA3T, mack@ncifcrf.gov
+
+	and
+
+	Michael Katzmann NV3Z, michaelk@ieee.org
+
+	Sept 98
+

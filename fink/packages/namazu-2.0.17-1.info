@@ -1,0 +1,26 @@
+Package: namazu
+Version: 2.0.17
+Revision: 1
+Depends:  file-mmagic-pm (>=1.27), libiconv
+BuildDepends: libiconv, libiconv-dev
+Source: http://www.namazu.org/stable/namazu-%v.tar.gz
+Source-MD5: 83a62ae5f8a915dcc2745de1950e4a96
+SetCPPFLAGS: -no-cpp-precomp
+ConfigureParams: --mandir=%p/share/man
+InstallScript: <<
+ make install DESTDIR=%d
+<<
+DocFiles: AUTHORS COPYING ChangeLog INSTALL NEWS README TODO 
+License: GPL
+Description: Full text search engine
+DescDetail: <<
+Namazu is a full-text search engine intended for easy
+use. Not only does it work as a small or medium scale Web
+search engine, but also as a personal search system for
+email or other files.
+<<
+DescPackaging: <<
+This is a simple build of numazu without any support for Kanji.
+<<
+Homepage: http://www.namazu.org/index.html.en
+Maintainer: Daniel German <dmg@uvic.ca>

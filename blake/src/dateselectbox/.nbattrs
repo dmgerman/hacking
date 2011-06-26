@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="DateButton.java">
+        <attr name="class_dependency_javax.swing.JButton" stringvalue="DateButton"/>
+    </fileobject>
+    <fileobject name="DateChooser.java">
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="DateChooser"/>
+        <attr name="class_dependency_java.awt.event.FocusListener" stringvalue="DateChooser"/>
+        <attr name="class_dependency_java.awt.event.ItemListener" stringvalue="DateChooser"/>
+        <attr name="class_dependency_java.awt.event.KeyListener" stringvalue="DateChooser"/>
+        <attr name="class_dependency_java.awt.event.MouseListener" stringvalue="DateChooser"/>
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="DateChooser"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DateChooser.FocusablePanel"/>
+    </fileobject>
+    <fileobject name="Demo.java">
+        <attr name="class_dependency_java.beans.PropertyChangeListener" stringvalue="Demo"/>
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="Demo"/>
+    </fileobject>
+</attributes>

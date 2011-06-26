@@ -1,0 +1,18 @@
+* Process time zero
+
+** We need to checkout the repository
+
+** Then run ccfinder 
+
+** Store all the data that we can
+
+
+* So far: I am able to run ccfinder. April 17.
+* TODO recover the file names for each of the preprocessed files
+* TODO extract from each file the parsing data
+* LCMS
+
+
+ ~/w/hacking/ccfinder/processAllHistory.pl --getAllFiles --repo=file:///home/dmg/mirror/svn.lcms/trunk/lcms --coDir=/tmp/lcms lcms 
+
+

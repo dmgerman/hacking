@@ -1,0 +1,164 @@
+% maj_city.dat
+% This file needs AZ_PROJ v1.1
+% This is a subset of wrldcity.dat ...
+% a list of ca 600 cities that I found somewhere.
+% The original file had a date of 26 Feb 89
+% I have no idea who holds the copyright.
+% My thanks go to the original compiler of this data.
+% My apologies for not knowing who you are
+% or being able to give you your due credit.
+% Joe NA3T, Dec 97
+%
+% Spelling mistakes corrected ... eg Auckland, Winnipeg
+% Dar es Salaam, Dumont d'Urville, Arkhangelsk, Casablanca
+% Lat/Long's re-checked using Times World Atlas
+% sorted into alphabetical order
+% Mark G4KGA, Sept 98
+%
+% data format for this file
+% city:name:lat:lon:scaling factor for font size:comment
+%
+%%%city:Addis Ababa:9.05:38.70:1:Comment ignored by AZ_PROJ
+%%%city:Adelaide:-34.93:138.60:1:Comment ignored by AZ_PROJ
+%%%city:Aden:12.78:45.05:1:Comment ignored by AZ_PROJ
+%%%city:Algiers:36.83:3.00:1:Comment ignored by AZ_PROJ 
+%%%city:Alice Springs:-23.70:133.87:1:Comment ignored by AZ_PROJ
+city:Amsterdam:52.35:4.90:1:Comment ignored by AZ_PROJ
+city:Anchorage:61.17:-150.00:1:Comment ignored by AZ_PROJ
+%%%city:Ankara:39.92:32.83:1:Comment ignored by AZ_PROJ
+%%%city:Arkhangelsk:64.53:40.67:1:Comment ignored by AZ_PROJ
+%%%city:Arsuk:61.25:-48.50:1:Comment ignored by AZ_PROJ
+%%%city:Athens:38.00:23.73:1:Comment ignored by AZ_PROJ
+%%%city:Auckland:-36.92:174.78:1:Comment ignored by AZ_PROJ
+%%%city:Baghdad:33.33:44.43:1:Comment ignored by AZ_PROJ
+%%%city:Bangkok:13.73:100.50:1:Comment ignored by AZ_PROJ
+%%%city:Barcelona:41.42:2.17:1:Comment ignored by AZ_PROJ
+%%%city:Beijing:39.92:116.43:1:Comment ignored by AZ_PROJ
+%%%city:Beirut:33.87:35.50:1:Comment ignored by AZ_PROJ
+%%%city:Berlin:52.53:13.42:1:Comment ignored by AZ_PROJ
+%%%city:Bogota:4.63:-74.08:1:Comment ignored by AZ_PROJ
+%%%city:Bombay:18.93:72.85:1:Comment ignored by AZ_PROJ
+%%%city:Boston:42.33:-71.08:1:Comment ignored by AZ_PROJ
+%%%city:Brasilia:-15.75:-47.95:1:Comment ignored by AZ_PROJ
+%%%city:Bucharest:44.42:26.12:1:Comment ignored by AZ_PROJ
+%%%city:Cairo:30.05:31.25:1:Comment ignored by AZ_PROJ
+%%%city:Calgary:51.08:-114.08:1:Comment ignored by AZ_PROJ
+%%%city:Canberra:-35.30:149.13:1:Comment ignored by AZ_PROJ
+city:Cape Town:-33.93:18.47:1:Comment ignored by AZ_PROJ
+%%%city:Casablanca:33.65:-7.58:1:Comment ignored by AZ_PROJ
+%%%city:Casey:-66.28:110.53:1:Comment ignored by AZ_PROJ
+%%%city:Chicago:41.83:-87.75:1:Comment ignored by AZ_PROJ
+%%%city:Churchill:58.75:-94.00:1:Comment ignored by AZ_PROJ
+%%%city:Colombo:6.92:79.87:1:Comment ignored by AZ_PROJ
+%%%city:Copenhagen:55.72:12.57:1:Comment ignored by AZ_PROJ
+%%%city:Dar es Salaam:-6.85:39.30:1:Comment ignored by AZ_PROJ
+%%%city:Darwin:-12.38:130.73:1:Comment ignored by AZ_PROJ
+%%%city:Davis:-68.58:77.97:1:Comment ignored by AZ_PROJ
+%%%city:Denver:39.75:-105.00:1:Comment ignored by AZ_PROJ
+%%%city:Dhaka:23.70:90.37:1:Comment ignored by AZ_PROJ
+%%%city:Dublin:53.33:-6.25:1:Comment ignored by AZ_PROJ
+%%%city:Dumont d'Urville:-66.67:140.02:1:Comment ignored by AZ_PROJ
+%%%city:Edinburgh:55.95:-3.22:1:Comment ignored by AZ_PROJ
+%%%city:Edmonton:53.57:-113.42:1:Comment ignored by AZ_PROJ
+%%%city:Fairbanks:64.83:-147.83:1:Comment ignored by AZ_PROJ
+%%%city:Galapagos Is:-0.93:-90.98:1:Comment ignored by AZ_PROJ
+%%%city:Gibraltar:36.15:-5.35:1:Comment ignored by AZ_PROJ
+%%%city:Guangzhou:23.13:113.33:1:Comment ignored by AZ_PROJ
+%%%city:Halifax:44.63:-63.58:1:Comment ignored by AZ_PROJ
+%%%city:Hamilton:32.30:-64.80:1:Comment ignored by AZ_PROJ
+%%%city:Hanoi:21.02:105.87:1:Comment ignored by AZ_PROJ
+%%%city:Havana:23.12:-82.42:1:Comment ignored by AZ_PROJ
+%%%city:Heard:-53.12:73.33:1:Comment ignored by AZ_PROJ
+%%%city:Helsinki:60.13:25.00:1:Comment ignored by AZ_PROJ
+%%%city:Hobart:-42.90:147.30:1:Comment ignored by AZ_PROJ
+city:Honolulu:21.32:-157.83:1:Comment ignored by AZ_PROJ
+%%%city:Houston:29.75:-95.42:1:Comment ignored by AZ_PROJ
+%%%city:Jerusalem:31.78:35.22:1:Comment ignored by AZ_PROJ
+%%%city:Kampala:0.32:32.58:1:Comment ignored by AZ_PROJ
+%%%city:Kathmandu:27.70:85.32:1:Comment ignored by AZ_PROJ
+%%%city:Khartoum:15.55:32.53:1:Comment ignored by AZ_PROJ
+%%%city:Kiev:50.42:30.50:1:Comment ignored by AZ_PROJ
+%%%city:Kinshasa:-4.30:15.30:1:Comment ignored by AZ_PROJ
+%%%city:Kyzyl:51.75:94.47:1:Comment ignored by AZ_PROJ
+%%%city:Lagos:6.45:3.47:1:Comment ignored by AZ_PROJ
+%%%city:Lima:-12.10:-77.05:1:Comment ignored by AZ_PROJ
+%%%city:Lisbon:38.73:-9.13:1:Comment ignored by AZ_PROJ
+%%%city:London:51.50:-0.17:1:Comment ignored by AZ_PROJ
+%%%city:Los Angeles:34.00:-118.25:1:Comment ignored by AZ_PROJ
+%%%city:Macquarie:-54.50:158.93:1:Comment ignored by AZ_PROJ
+%%%city:Madras:13.08:80.30:1:Comment ignored by AZ_PROJ
+%%%city:Madrid:40.42:-3.72:1:Comment ignored by AZ_PROJ
+%%%city:Mag Pole:77.42:-100.96:1:Comment ignored by AZ_PROJ 
+%%%city:Managua:12.10:-86.30:1:Comment ignored by AZ_PROJ
+%%%city:Mandalay:21.95:96.07:1:Comment ignored by AZ_PROJ
+%%%city:Manila:14.62:120.97:1:Comment ignored by AZ_PROJ
+%%%city:Mawson:-67.60:62.87:1:Comment ignored by AZ_PROJ
+%%%city:Mecca:21.43:39.82:1:Comment ignored by AZ_PROJ
+%%%city:Melbourne:-37.75:144.97:1:Comment ignored by AZ_PROJ
+%%%city:Mexico City:19.42:-99.17:1:Comment ignored by AZ_PROJ
+%%%city:Miami:25.75:-80.25:1:Comment ignored by AZ_PROJ
+%%%city:Mirnyy:-66.55:93.02:1:Comment ignored by AZ_PROJ
+%%%city:Mogadishu:2.03:45.35:1:Comment ignored by AZ_PROJ
+%%%city:Montevideo:-34.92:-56.17:1:Comment ignored by AZ_PROJ
+%%%city:Montreal:45.50:-73.60:1:Comment ignored by AZ_PROJ
+%%%city:Moscow:55.75:37.70:1:Comment ignored by AZ_PROJ
+%%%city:Murmansk:68.98:33.13:1:Comment ignored by AZ_PROJ
+%%%city:Nairobi:-1.28:36.83:1:Comment ignored by AZ_PROJ
+%%%city:New Delhi:28.62:77.22:1:Comment ignored by AZ_PROJ
+%%%city:New Orleans:30.00:-90.05:1:Comment ignored by AZ_PROJ
+%%%city:New York:40.76:-73.96:1:Comment ignored by AZ_PROJ 
+%%%city:Nuuk:64.25:-51.58:1:Comment ignored by AZ_PROJ
+%%%city:Omsk:55.00:73.37:1:Comment ignored by AZ_PROJ
+%%%city:Osaka:34.66:135.50:1:Comment ignored by AZ_PROJ
+%%%city:Oslo:59.93:10.75:1:Comment ignored by AZ_PROJ
+city:Ottawa:45.42:-75.72:1:Comment ignored by AZ_PROJ
+%%%city:Panama:8.95:-79.50:1:Comment ignored by AZ_PROJ
+%%%city:Papeete:-17.53:-149.57:1:Comment ignored by AZ_PROJ
+%%%city:Paris:48.87:2.33:1:Comment ignored by AZ_PROJ
+%%%city:Perth:-31.97:115.82:1:Comment ignored by AZ_PROJ
+%%%city:Pitcairn Is:-25.07:-130.10:1:Comment ignored by AZ_PROJ
+%%%city:Porto Alegre:-30.016:-51.217:1:Comment ignored by AZ_PROJ
+%%%city:Port Hedland:-20.40:118.60:1:Comment ignored by AZ_PROJ
+%%%city:Port Moresby:-9.50:147.12:1:Comment ignored by AZ_PROJ
+%%%city:Quebec:46.83:-71.25:1:Comment ignored by AZ_PROJ
+%%%city:Reykjavik:64.15:-21.97:1:Comment ignored by AZ_PROJ
+%%%city:Riga:56.88:24.13:1:Comment ignored by AZ_PROJ
+%%%city:Rio de Janeiro:-22.88:-43.28:1:Comment ignored by AZ_PROJ
+%%%city:Riyadh:24.65:46.77:1:Comment ignored by AZ_PROJ
+%%%city:Rome:41.88:12.50:1:Comment ignored by AZ_PROJ
+%%%city:Saigon:10.77:106.72:1:Comment ignored by AZ_PROJ
+%%%city:St Louis:38.67:-90.25:1:Comment ignored by AZ_PROJ
+%%%city:Saipan:15.20:145.72:1:Comment ignored by AZ_PROJ
+%%%city:Salt Lake City:40.75:-111.92:1:Comment ignored by AZ_PROJ
+city:San Francisco:37.75:-122.45:1:Comment ignored by AZ_PROJ
+%%%city:Santiago:-33.50:-70.67:1:Comment ignored by AZ_PROJ
+%%%city:Saskatoon:52.17:-106.67:1:Comment ignored by AZ_PROJ
+%%%city:Sault Ste Marie:46.53:-82.33:1:Comment ignored by AZ_PROJ
+%%%city:Scott-Amundsen:-89.99:0.01:1:Comment ignored by AZ_PROJ
+%%%city:Seattle:47.58:-122.33:1:Comment ignored by AZ_PROJ
+%%%city:Seoul:37.50:127.00:1:Comment ignored by AZ_PROJ
+%%%city:Shanghai:31.10:121.37:1:Comment ignored by AZ_PROJ
+city:Singapore:1.28:103.83:1:Comment ignored by AZ_PROJ
+%%%city:Stanley:-51.75:-57.93:1:Comment ignored by AZ_PROJ
+%%%city:Stockholm:59.33:18.08:1:Comment ignored by AZ_PROJ
+%%%city:Suva:-18.13:178.42:1:Comment ignored by AZ_PROJ
+city:Singapore:1.28:103.83:1:Comment ignored by AZ_PROJ
+city:Sydney:-33.92:151.17:1:Comment ignored by AZ_PROJ
+%%%city:Timbuktu:16.82:-2.98:1:Comment ignored by AZ_PROJ
+city:Tokyo:35.67:139.75:1:Comment ignored by AZ_PROJ
+%%%city:Tripoli:32.90:13.18:1:Comment ignored by AZ_PROJ
+%%%city:Ulan Bator:47.90:106.87:1:Comment ignored by AZ_PROJ
+%%%city:Vancouver:49.22:-123.10:1:Comment ignored by AZ_PROJ
+city:Victoria:48.42:-123.37:1:Comment ignored by AZ_PROJ
+%%%city:Vienna:48.22:16.37:1:Comment ignored by AZ_PROJ
+%%%city:Vladivostok:43.15:131.88:1:Comment ignored by AZ_PROJ
+%%%city:Washington:38.92:-77.00:1:Comment ignored by AZ_PROJ
+%%%city:Wellington:-41.28:174.78:1:Comment ignored by AZ_PROJ
+%%%city:Winnipeg:49.88:-97.17:1:Comment ignored by AZ_PROJ
+%%%city:Yakutsk:62.17:129.83:1:Comment ignored by AZ_PROJ
+%%%city:Whitehorse:60.6831:-135.08:1:Comment ignored by AZ_PROJ
+%%%city:Dumont d'Urville:-66.67:140.02:1:Comment ignored by AZ_PROJ
+city:Saipan:15.20:145.72:1:Comment ignored by AZ_PROJ
+city:Auckland:-36.92:174.78:1:Comment ignored by AZ_PROJ
+city:Mumbai:18.93:72.85:1:Comment ignored by AZ_PROJ
+%-------------------------city_maj.dat----------------------

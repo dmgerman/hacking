@@ -1,0 +1,134 @@
+** Where is the documentation?
+
+It's in the header comment of org-annotation-helper.el.
+
+** What are the steps I need to follow to install org-annotation-helper?
+
+In a nutshell, you should:
+
+Step 1. Install the elisp script (you do this in emacs)
+
+Step 2. Add the bookmarklets (you do this in your browser)
+
+Step 3. Configure the browser to handle the annotation:// and
+        remember:// URL protocol (you do this in your browser)
+Step 4. Test
+
+See org-annotation-helper.el for detailed instructions.
+
+
+** Is there an easy way to add the bookmarklets to my browser?
+
+Just drag the following links to your bookmarks toolbar:
+
+#+HTML: <a href="javascript:location.href='remember://' + location.href + '::remember::' + escape(document.title) + '::remember::' + escape(window.getSelection())">Remember</a>
+Use remember to start a remember buffer in emacs, with a link
+to the current page, and the highlighted text. See the documentation
+for more details.
+
+
+#+HTML: <a href="javascript:location.href='annotation://' + location.href + '::remember::' + escape(document.title)">Annotation</a>
+Use annotation to store a link to the current page on the
+kill ring, where it can be retrieved using yank or using
+org-insert-link.
+
+** Why is Remember so slow?
+
+Emacs will take some time to process your links if you highlight a
+very large region of text (it has to hexdecode the entire
+region). Note also that the size of the region you highlight is
+limited by the maximum size of the command line in your shell:
+anything more will be truncated.
+
+** I click on the bookmarklet and nothing happens. Now what?
+
+You need to debug the problem incrementally. Let us assume
+your org-annotation-helper script is located at
+/home/dmg/bin/org-annotation-helper and that /home/dmg/bin
+is included in your $PATH.
+
+**** @<b>First@</b>:
+
+Make sure that the emacs server is started: add (server-mode) in
+  your .emacs  and restart emacs or start it interactively with M-x server-mode <RET>  
+
+Try to execute, from the command line:
+
+#+BEGIN_EXAMPLE
+/home/dmg/bin/org-annotation-helper 'remember://http%3A//orgmode.org/::remember::Org-Mode%20Homepage::remember::Notes'
+#+END_EXAMPLE
+and 
+#+BEGIN_EXAMPLE
+/home/dmg/bin/org-annotation-helper 'annotation://http%3A//orgmode.org/::remember::Org-Mode%20Homepage'
+#+END_EXAMPLE
+
+
+This should start remember in emacs (in the first case) or add the
+link to the kill ring of emacs (in the second case). If emacs does not
+respond, check that the server is running:
+
+#+BEGIN_EXAMPLE
+emacsclient .emacs
+#+END_EXAMPLE
+
+That way you will know if the problem lies in emacs or in the
+org-annotation-helper script.
+
+@<b>Do not proceed until org-annotation-helper works.@</b>
+
+**** @<b>Second@</b>:
+
+Try to follow the following URLs in your browser:
+
+#+HTML: <a href="remember://http://orgmode.org/::remember::Org-Mode Homepage">remember://http://orgmode.org/::remember::Org-Mode Homepage</a>
+
+and
+
+#+HTML: <a href="annotation://http://orgmode.org/::remember::Org-Mode Homepage">annotation://http://orgmode.org/::remember::Org-Mode Homepage</a><br>
+
+The first link should bring up a *Remember* buffer in emacs with a link
+to the orgmode home page. The second should squirrel the link away so
+you can retrieve it in an org mode buffer in emacs with M-x org-insert-link
+(usually bound to C-c C-l).
+
+If there are problems, try uncommenting the following line in org-annotation-helper:
+
+#+BEGIN_EXAMPLE
+ #echo $1 >> /tmp/remember.out
+#+END_EXAMPLE
+
+and checking out the /tmp/remember.out file: clicking one of the links should add to the file
+a line like this:
+
+#+BEGIN_EXAMPLE
+remember://http://orgmode.org/::remember::Org-Mode Homepage
+#+END_EXAMPLE
+
+or like this:
+
+#+BEGIN_EXAMPLE
+annotation://http://orgmode.org/::remember::Org-Mode Homepage
+#+END_EXAMPLE
+
+If that is not the case, the browser setup is incorrect or incomplete.
+Make sure that your browser is properly configured to handle the
+"remember://" and "annotate://" protocol.  Refer to the documentation
+for the details (see FAQ#0 above).
+
+@<b>Do not proceed until these links work as expected.@</b>
+
+**** @<b>Third@</b>:
+
+It still does not work. Seek help in the org-mode mailing list and Cc: me. 
+
+** When using remember, I lose the formatting of the selected text.
+
+org-annotation-helper does not preserve formatting. Text is
+copied and pasted as a long string. Use M-q to "fill" the region.
+
+
+
+#+TITLE: org-annotation-helper FAQ
+#+AUTHOR: Daniel German
+#+EMAIL: dmg at uvic dot ca
+

@@ -1,0 +1,49 @@
+%--------------------------------------
+%Rover file for az_proj v1.00-1.03:
+%
+%Rovers are located by 6 character grid square locators,
+%which run from AA00aa to RR99xx.
+%The Rover symbol is put at the center of that square,
+%giving an error (at the equator) in positioning of less
+%than 2km in the E-W direction and less than 2km in the N-S direction.
+%If greater accuracy is required, then the general purpose
+%annot.dat file can provide locations to an arbitrary accuracy.
+%
+%The rover.dat format is the standard transmitter type,
+%with a VW beetle as the symbol
+%transmitter power and beamheading are ignored.
+%The band/freq must match with /bands_plotted in az_ini.ps or the line will be ignored.
+%
+%
+%To add a rover to the map, supply data in the form
+%
+%rover:freq (number):string_1(sugest callsign):grid_locator:power(-1 for default):beam heading(-1 for default);string_2:comment ignored by AZ_PROJ
+%
+%where
+%rover    - data type
+%freq	- number (eg 10 can be 10m, 10MHz, 10cm, 10GHz, see /bands_plotted in az_ini.ps)
+%string_1 - any or null string (blanks OK), will be written on left of rover symbol
+%                possible use - call sign
+%string_2 - any or null string (blanks OK), will be written on right of rover symbol
+%                possible use - name of location
+%power/beam_heading are ignored for rover - use -1
+%comment  - ignored by AZ_PROJ, for your own purposes
+%
+%
+%Note: So that a rover can be plotted as being on a mountain,
+%the mountain strings are drawn above and below the mountain symbol,
+%while the rover strings are to the left and right.
+%
+%Example rover.dat entries -
+%rover:10:N1BWT 10GHz:fn34uj:-1:-1:Cabot Plains Cemetery:Dead Center of Cabot Plains
+%
+%another example on Mt. Kearsarge.
+%rover:10:KH6CP/1:FN43bj:-1:-1:only saturday
+%
+%Note: there is no ROVER type, only rover
+%
+rover:10:N1BWT 10GHz:fn34uj:-1:-1:Cabot Plains Cemetery:comment string
+rover:10:KH6CP/1:FN43:-1:-1:only saturday:
+rover:432:NA3T:39.42:-77.42:-1:-1:you wish:location as lat:lon:
+%--------------------------------------
+%--------------------------------------rover.dat

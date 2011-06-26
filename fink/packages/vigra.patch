@@ -1,0 +1,35 @@
+diff -ru vigra1.5.0-orig/Makefile.in vigra1.5.0/Makefile.in
+--- vigra1.5.0-orig/Makefile.in	2006-08-24 05:02:18.000000000 -0700
++++ vigra1.5.0/Makefile.in	2007-02-11 17:31:13.000000000 -0800
+@@ -10,26 +10,26 @@
+ install-exec:
+ 	@cd src ; $(MAKE) install ; cd ..
+ 	$(INSTALL) -d $(bindir)
+-	$(INSTALL) --mode=755 $(vigra_builddir)/config/vigra-config $(bindir)
++	$(INSTALL) -m 755 $(vigra_builddir)/config/vigra-config $(bindir)
+ 
+ install-includes:
+ 	if test "$(includedir)" != "$(vigra_srcdir)/include" ; then \
+           $(INSTALL) -d $(includedir)/vigra ; \
+-          $(INSTALL) --mode=644 $(vigra_srcdir)/include/vigra/*.hxx $(includedir)/vigra ; \
++          $(INSTALL) -m 644 $(vigra_srcdir)/include/vigra/*.hxx $(includedir)/vigra ; \
+         fi
+ install-headers: install-includes
+ 
+ install-docs:
+ 	$(INSTALL) -d $(docdir)
+-	$(INSTALL) --mode=644 $(vigra_srcdir)/LICENSE.txt $(docdir)
++	$(INSTALL) -m 644 $(vigra_srcdir)/LICENSE.txt $(docdir)
+ 	if test "$(docdir)" != "$(vigra_srcdir)/doc/vigra" ; then \
+-          $(INSTALL) --mode=644 \
++          $(INSTALL) -m 644 \
+             $(vigra_srcdir)/doc/vigra/*.html \
+             $(vigra_srcdir)/doc/vigra/classvigra*.png $(vigra_srcdir)/doc/vigra/form*.png \
+             $(vigra_srcdir)/doc/vigra/doxygen.png $(vigra_srcdir)/doc/vigra/doxygen.css \
+             $(docdir) ; \
+           $(INSTALL) -d $(docdir)/documents ; \
+-          $(INSTALL) --mode=644 \
++          $(INSTALL) -m 644 \
+             $(vigra_srcdir)/doc/vigra/documents/*.ps \
+             $(vigra_srcdir)/doc/vigra/documents/*.gif \
+             $(docdir)/documents ; \

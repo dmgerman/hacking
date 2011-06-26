@@ -1,0 +1,210 @@
+%norcal2.dat--------------------------------------
+%Repeater File for az_proj v1.04
+%
+% File compiled by Mike Norton KF6NCY
+%
+% norcal2.txt is all data available including QTH and any Internet information
+%
+% email: kf6ncy@qsl.net  Web: http://www.qsl.net/kf6ncy
+%
+%t--------------------------------------
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96, mack@ncifcrf.gov
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequency:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment ignored by reading program (eg AZ_PROJ)
+%	eg 2m beacon
+%		beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC			%usually 550-1630 kHz AM
+%		AM			%usually 550-1630 kHz AM
+%		FM             %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%Special Notes for Repeater files:
+%	A repeater file has the same format as a beacon file,
+%	except that the lines start with repeater:
+%	and "+/-" are allowed in the repeater frequency string.
+%
+%	The ARRL is not allowed to release the contents of
+%	their repeater directory, because of a non-release
+%	clause required by most repeater coordinators
+%	before parting with their valuable lists. Apparently
+%	the callsign and frequency of repeaters is regarded
+%	as valuable and proprietary by many people. If you
+%	are able to pry your local repeater coordinator's fingers
+%	off his list then you can put repeaters on your own map.
+%
+repeater:145.110+:KD6MTU:CN80TN:-1:-1:
+repeater:145.130+:K7WWA:CM89HK:-1:-1:Mendocino County AP
+repeater:145.130+:WB6HEV:CM98IP:-1:-1:
+repeater:145.130+:WB6TIA:DM06CS:-1:-1:ACES
+repeater:145.150+:N6HAZ:CN90JF:-1:-1:
+%repeater:145.150+:N6ICW::-1:-1:
+%repeater:145.150+:WA6JWB::-1:-1:
+%repeater:145.170+:WB6MFV::-1:-1:CARS Linked repeater linking NV to Colinga
+repeater:145.190+:K6IS:CM98HP:-1:-1:
+repeater:145.190-:KD6LC:CM98CK:-1:-1:
+repeater:145.210-:WA6SEK:CM97IX:-1:-1:
+repeater:145.230-:KC6MHT:CM98GN:-1:-1:CSUS ARC
+repeater:145.230-:N6MTS:DM06ES:-1:-1:
+repeater:145.250-:KG6XX:CM98IO:-1:-1:River City ARCS
+repeater:145.270-:KD6MTF:CM99MA:-1:-1:Placer County SAR
+%repeater:145.290:::-1:-1:
+repeater:145.310+:KI6ND:CM99BS:-1:-1:
+repeater:145.310-:AA6PM:CM98TG:-1:-1:Bar 20 Repeater Group
+repeater:145.330+:K6POU:CM87XV:-1:-1:
+repeater:145.350-:AB6CR:CM97CQ:-1:-1:Livermore RACES
+repeater:145.350-:WA6YGD:CM88PL:-1:-1:Radio Society of Marin COunty
+repeater:145.350-:W6QWN:CN80TN:-1:-1:
+repeater:145.390+:WD6EJF:CM97LQ:-1:-1:STANISLAUS AMATEUR RADIO ASSN
+repeater:145.430+:K6ARR:CM98LV:-1:-1:Sierra Foothills ARC
+repeater:145.430-:KC6UCN:DM06FU:-1:-1:CARP
+repeater:145.450+:W6SYY:CN80VE:-1:-1:
+repeater:145.470-:K6JE:CM96EP:-1:-1:Fremont Peak ARC
+repeater:145.470-:WB6MCG:DM06FS:-1:-1:
+repeater:146.085+:WD6AXM:CM99DE:-1:-1:Yuba-Sutter ARC
+repeater:146.115+:N6YYK:CM99LC:-1:-1:
+repeater:146.115+:N6HUH:CM97UX:-1:-1:
+repeater:146.355+:WA6OYF:CM97MP:-1:-1:Stanislaus ARES
+repeater:146.355+:KI6TE:CM98LV:-1:-1:
+%repeater:146.625-:WB4YJT::-1:-1:CDF VIP-NYP
+repeater:146.640-:WB6ALS:DM09CM:-1:-1:Placer County SAR
+repeater:146.640-:WA6IEO:CN80TN:-1:-1:Tin Cup Radio Group
+repeater:146.670-:KJ6RA:CN81UH:-1:-1:
+repeater:146.670-:K7NEY:CM98MP:-1:-1:
+repeater:146.700+:KD6FW:CM96XX:-1:-1:
+repeater:146.730-:W6YEP:DM06CT:-1:-1:
+repeater:146.745-:W6PPM:CM97SI:-1:-1:
+repeater:146.760-:W6QWN:CN80TN:-1:-1:
+repeater:146.760-:N6JSL:CM98KU:-1:-1:
+repeater:146.775-:KA6JJW:CM89NA:-1:-1:
+repeater:146.790-:K6ZZA:CN81QR:-1:-1:Siskiyou ARC
+repeater:146.790-:W6HIR:CM98IP:-1:-1:RADIO AMATEUR MOBILE SOCIETY INC
+repeater:146.790-:KE6VFU:DM06DT:-1:-1:CENTRAL CALIFORNIA AMATEUR COMMUNICATIONS IN
+repeater:146.805-:KA6GWY:CM98RS:-1:-1:
+repeater:146.820-:WD6HDY:CM89CK:-1:-1:Mendocino Coast ARA
+repeater:146.820-:KC6MUS:CM99EF:-1:-1:
+repeater:146.820-:KE6JZ:DM06DU:-1:-1:
+repeater:146.820-:WD6HDY:CM89CK:-1:-1:Mendocino COast ARA
+repeater:146.820-:W6OMR:CN81UH:-1:-1:Shasta RC
+repeater:146.835-:K6ARC:CM98QJ:-1:-1:Amador County ARC
+repeater:146.835-:K6JKC:CN90PL:-1:-1:
+repeater:146.850-:W6RHC:CM99DR:100:-1:Golden Empire ARS
+repeater:146.850-:K6OGX:DM06IH:-1:-1:
+repeater:146.865-:WA6BTH:CM98QO:-1:-1:W.A.L.A.
+repeater:146.880-:WA6TCG:CM97IX:-1:-1:Central Valley VHF FM Club
+repeater:146.910-:WB6TMS:CM88QF:-1:-1:Sonoma Mountain RC
+repeater:146.910-:A6AK:CM98GN:-1:-1:Sacramento ARC
+repeater:146.940-:W6ECE:CM99ES:-1:-1:Cohasset ARA
+repeater:146.940-:W6TO:DM06CT:-1:-1:Fresno ARC
+repeater:146.985-:AB6OP:CM98GL:-1:-1:
+repeater:147.045+:N6NMZ:CM99MA:-1:-1:N6NMZ System
+repeater:147.060+:W6CX:CM87XW:-1:-1:Mount Diablo ARC
+repeater:147.090+:WB6ASU:CM98JE:-1:-1:
+repeater:147.105+:K6BIQ:CM89VM:-1:-1:
+repeater:147.105+:W7POR:DM06CT:-1:-1:
+repeater:147.105+:AA6ZI:CM98HA:-1:-1:
+repeater:147.150+:WB6QDN:DM06CT:-1:-1:
+repeater:147.165+:W6SF:CM97JW:-1:-1:Stockton ARC
+repeater:147.180+:WA6ZQH:CM87XX:-1:-1:MT ST HELENA AMATEUR RADIO SOC
+repeater:147.180+:W6WGZ:CM96WW:-1:-1:Madera County ARC
+repeater:147.195+:N6ICW:CM98GN:-1:-1:
+repeater:147.210+:W6BWK:CM98IA:-1:-1:Delta ARC
+repeater:147.255+:WA6PIC:CM97QI:-1:-1:
+repeater:147.285+:W6ZUZ:CM99LF:-1:-1:
+%repeater:147.300+:K6NP::-1:-1:Linked Repeater for N. Cal.  Net Mon @ 20:00
+%repeater:147.300+:K6NP::-1:-1:Pioneer Repeater Network
+%%repeater:147.315:::-1:-1:
+repeater:147.315+:KD6PDD:CM98KW:-1:-1:HPF ARCS
+repeater:147.370-:N6TZG:CN90JF:-1:-1:
+repeater:147.390+:WA6NIF:DM06CT:-1:-1:
+%repeater:147.675-::DM06ER:-1:-1:CARP
+repeater:147.945-:W6FEJ:CM98UA:-1:-1:Tuolumne RA
+repeater:147.975-:KB6EME:CM99ES:-1:-1:
+%--------------------------------------
+%--------------------------------------repeater.dat
+%This list was compiled by Mike Norton KF6NCY
+%email: kf6ncy@qsl.net Web: http://www.qsl.net/kf6ncy

@@ -1,0 +1,43 @@
+
+SETTING UP GHOSTSCRIPT
+
+	For MSDOS machines, Ghostscript is available in 3 flavors, MSDOS
+for 386 machines (fastest), Windows and DesqView X. Ghostscript is
+freely available (with the GNU License) from ftp.cs.wisc.edu:/pub/ghost,
+and from the GNU servers everywhere. The current (Jul '94) price for
+Ghostscript on PC diskettes is U.S. $48 (incl S&H), payable by check
+or money order to Aladdin Enterprises and mailed to:
+		203 Santa Margarita Ave.
+		Menlo Park, CA 94025
+
+	The simplified procedure for installing the 386 version is -
+
+1) Copy gs261386.zip, gs261ini.zip, az_proj.zip to a convenient directory,
+say C:\gs261, then run pkunzip
+
+	c:\gs261>pkunzip *
+
+	producing a directory with about 7.5M of files. For ghostscript,
+these will include the executable gs386.exe, the DOS extender dos4gw.exe,
+various files used for gs261 startup and some .doc files. Some of the .ps
+files are test images. They are alphabet.ps, cheq.ps, chess.ps, colorcir.ps,
+escher.ps, golfer.ps, snowflak.ps, tiger.ps. Test one of them out
+on your VGA display by
+
+	c:\gs261>gs386 -q -- tiger.ps
+
+	If the output has text, ghostscript will complain that the
+required font files are missing and that it has substituted the font
+"ugly", which comes with gs261ini.zip. Nicer fonts are available from
+Aladdin with the Ghostscipt package and even nicer fonts are available
+from Adobe.
+
+	Next create a file to send to your printer. For a HP Color Desk
+Jet 500 the instruction is
+
+	c:\gs261>gs386 -q -sDEVICE=cdj550 -sOutputFile=tiger.cdj -- tiger.ps
+
+	After several minutes and some disk activity an output file
+tiger.cdj (about 1M) will be produced, which can be sent to the printer.
+
+

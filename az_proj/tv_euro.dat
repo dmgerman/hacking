@@ -1,0 +1,341 @@
+%tv_euro.dat--------------------------------
+% European TV stations
+% merged from Emil Pocock,W3EP and equinox@itl.net (Geoff Brown)
+%
+%Where are discrepencies in these two lists, I've left both entries
+%commented out and made a guess as to the correct entry
+%Joe NA3T mack@ncifcrf.gov Oct 96
+%
+%--------------------------------
+%Notes for AZ_PROJ
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96, mack@ncifcrf.gov
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequency:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment ignored by reading program (eg AZ_PROJ)
+%	eg 2m beacon
+%		beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC			%usually 550-1630 kHz AM
+%		AM			%usually 550-1630 kHz AM
+%		FM             %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%--------------------------------
+%
+%
+%American and European VHF TV channel/frequencies
+%
+%          American  W.Europe  E.Europe  French    Irish     Irish
+%Channel   Video     Video     Video     Video     Ch        Video
+%1         --        --        49.75     --
+%2         55.25     48.25     59.25     55.75     B         53.75
+%3         61.25     55.25     77.25     60.50     C         61.75
+%4         67.25     62.25     85.25     63.75     D         175.25
+%5         77.25    175.25     93.25    176.00     E         183.75
+%6         83.25    182.25    175.25    184.00     F         191.25
+%7        175.25    189.25    183.25    192.00     G         199.25
+%8        181.25    196.25    191.25    200.00     H         207.25
+%9        187.25    203.25    199.25    208.00     I         215.25
+%10       193.25    210.25    207.25    216.00     J         223.25
+%11       199.25    217.25    215.25    --
+%12       204.25    224.25    223.25    --
+%13       211.25    --        ----      --
+%
+%
+%United Kingdom has no VHF television stations.
+%
+%
+%TV:Video:call/ch:Grid:Pwr(W):-1:Location:comment field ignored by AZ_PROJ
+%TV:48.2396:/DL:JN39:100000:-1:-1:comment
+%TV:48.240:/E2:JN39:100000:-1:Saarbrucken,Germany:comment
+TV:48.2396:/DL:JN39:100000:-1:Saarbrucken,Germany:comment
+%Is this next one really in the same grid square 8kc away?
+%TV:48.2474:/E2:JN39:100000:-1:Biedenkopf,Germany:comment
+%TV:48.2396:/SM:JO79:60000:-1:-1:comment
+%TV:48.240:/E2:JO79:60000:-1:Orebro,Sweden:comment
+TV:48.240:/SM:JO79:60000:-1:Orebro,Sweden:comment
+%TV:48.2414:/CT:IM59:-1:-1:-1:unknown power
+TV:48.2422H:/E2:IN51:67000:-1:Muro,Portugal:comment
+%TV:48.2422:/E2:IN51:67000:-1:Muro,Portugal:comment
+%TV:48.25H:/E2:IN51:67000:-1:Muro,Portugal:comment
+TV:48.246:/E2:JP21:48000:-1:Gulen,Norway:comment
+TV:48.2461:/LA:JP20:30000:-1:-1:comment
+%TV:48.247:/E2:JN39:100000:-1:Biedenkopf,Germany:comment
+%TV:48.2474:/DL:JO40:100000:-1:-1:comment
+TV:48.2487:/LA:KP59:30000:-1:-1:comment
+TV:48.249:/E2:KQ50:90000:-1:Varanger,Norway:comment
+%TV:48.2500:/HB9:JN36:50000:-1:-1:comment
+%TV:48.250:/E2:JN36:47000:-1:Bantiger,Switzerl.:comment
+TV:48.250:/HB9:JN36:47000:-1:Bantiger,Switzerl.:comment
+TV:48.250:/E2:KP04:60000:-1:Vannas,Sweden:comment
+%These both can't be in JN78 on same freq
+%TV:48.2500:/OE:JN78:60000:-1:-1:comment
+%TV:49.750:/R1:JN78:60000:-1:St Polten,Austria:comment
+TV:49.750?:/R1:JN78:60000:-1:St Polten,Austria:comment
+TV:48.2500:/SM:JP93:60000:-1:-1:comment
+TV:48.2502H:/E2:IN80:250000:-1:Navacerrada,Spain:comment
+%TV:48.2502:/E2:IN80:250000:-1:Navacerrada,Spain:comment
+%TV:48.25H:/E2:IN80:250000:-1:Navacerrada,Madrid,Spain:comment
+TV:48.2519H:/E2:IN52:40000:-1:Santiago de Compostela,Spain:comment
+%TV:48.25H:/E2:IN52:40000:-1:Santiago de Compostela,Spain:comment
+%TV:48.2519:/E2:IN52:40000:-1:Santiago de Compostela,Spain:comment
+TV:48.2528:/LA:JO38:60000:-1:Greipstad,Norway:
+%TV:48.2528:/LA:JO38:60000:-1:-1:one of these has the wrong grid square
+%TV:48.253:/E2:JO48:60000:-1:Greipstad,Norway:comment
+TV:48.2565:/E2:JP53:100000:-1:Melhus,Norway:comment
+%TV:48.2565:/LA:JP53:100000:-1:-1:comment
+%TV:48.257:/E2:JP53:100000:-1:Melhus,Norway:comment
+TV:48.2604:/LA:JP77:80000:-1:Steigen,Norway:comment
+%TV:48.260:/E2:JP77:80000:-1:Steigen,Norway:comment
+%TV:48.2604:/LA:JP77:60000:-1:-1:comment
+%TV:48.2604:/DL:JN57:100000:-1:-1:comment
+%TV:48.261:/E2:JN57:100000:-1:Grunten-Allgau,Germany:comment
+TV:48.2604:/E2:JN57:100000:-1:Grunten-Allgau,Germany:comment
+TV:49.7396:/OK:JO70:150000:-1:Prague,Czech Repub.:comment
+%TV:49.739:/R1:JO70:150000:-1:Prague,Czech Repub.:comment
+%TV:49.7396:/OK:JO70:150000:-1:-1:comment
+%TV:49.7396:/HG:JN97:150000:-1:-1:comment
+%TV:49.740:/R1:JN97:150000:-1:Budapest,Hungary:comment
+TV:49.7396:/HG:JN97:150000:-1:Budapest,Hungary:comment
+TV:49.7396:/UB5:KN29:150000:-1:-1:comment
+TV:49.7396:/UB5:KN74:50000:-1:-1:comment
+TV:49.7396:/UA3:KO89:35000:-1:-1:comment
+TV:49.7396:/UB5:KO62:35000:-1:-1:comment
+%TV:53.7396:/I5:JN53:34000:-1:-1:comment
+TV:49.740:/R1:KO20:40000:-1:Lviv,Ukraine:comment
+TV:49.740:/R1:KO88:35000:-1:Cherepovets,Russia:comment
+TV:49.740:/R1:KN65:25000:-1:Simferpol,Ukraine:comment
+TV:49.7409:/UA1:KP78:10000:-1:Lovozero,Russia:comment
+%TV:49.7409:/UA1:KP78:10000:-1:-1:comment
+%TV:49.741:/R1:KP78:10000:-1:Lovozero,Russia:comment
+%TV:49.744:/R1:JN86:50000:-1:Nagykanizsa,Hungary:comment
+%TV:49.7448:/HG:JN86:50000:-1:-1:comment
+TV:49.7448:/HG:JN86:50000:-1:Nagykanizsa,Hungary:comment
+TV:49.7476:/UA3:KO85:240000:-1:Moscow,Russia:comment
+%TV:49.748:/R1:KO85:240000:-1:Moscow,Russia:comment
+%TV:49.7476:/UA3:KO85:240000:-1:-1:comment
+TV:49.749:/R1:JO73:120000:-1:Szczecin,Poland:comment
+TV:49.7500:/UA3:KO59:240000:-1:St Petersburg,Russia:comment
+%TV:49.750:/R1:KO59:240000:-1:St Petersburg,Russia:comment
+%TV:49.7500:/UA3:KO59:240000:-1:-1:comment
+TV:49.7500:/UC2:KO33:150000:-1:Minsk,Belarus:comment
+%TV:49.750:/R1:KO33:150000:-1:Minsk,Belarus:comment
+%TV:49.7500:/UC2:KO33:150000:-1:-1:comment
+TV:49.750:/R1:KN68:5000:-1:Kryvyj Rig,Ukraine:comment
+TV:49.7500:/UA6:KN95:50000:-1:Krasnodar,Russia:comment
+%TV:49.750:/R1:KN95:50000:-1:Krasnodar,Russia:comment
+%TV:49.7500:/UA6:KN95:50000:-1:-1:comment
+TV:49.7500:/UA1:KP75:10000:-1:Kuzema,Russia:comment
+%TV:49.750:/R1:KP75:10000:-1:Kuzema,Russia:comment
+%TV:49.7500:/UA1:KP75:10000:-1:-1:comment
+TV:49.7500:/UB5:KN67:35000:-1:-1:are these two the same station?
+TV:49.7500:/UA6:KN93:35000:-1:-1:comment
+%TV:49.7513:/SP:JO93:100000:-1:-1:comment
+%TV:49.7578:/UA3:KO56:90000:-1:-1:comment
+%TV:49.7578:/UA1:KP63:10000:-1:-1:comment
+%TV:49.758:/R1:KP63:10000:-1:Sukkozero,Russia:comment
+TV:49.7578:/R1:KP63:10000:-1:Sukkozero,Russia:comment
+TV:49.7604:/UA3:KO92:35000:-1:Ungtcha,Russia:comment
+%TV:49.760:/R1:KO92:35000:-1:Ungtcha,Russia:comment
+%TV:49.7604:/UA3:KO91:35000:-1:-1:comment
+TV:49.7604:/UQ2:KO06:50000:-1:-1:comment
+TV:49.7604:/UC2:KO41:50000:-1:-1:comment
+TV:49.7604:/UB5:KN79:35000:-1:-1:comment
+TV:49.761:/R1:KO17:40000:-1:Kuldiga,Latvia:comment
+TV:49.761:/R1:JN99:100000:-1:Ostrava,Czech Rep.:comment
+%
+TV:53.7578H:/B:IO52:100000:-1:Maghera,Limerick,Ireland:comment
+%TV:53.75H:/B:IO52:100000:-1:Maghera,Limerick,Ireland:comment
+%TV:53.7578:/EI:IO52:100000:-1:-1:comment
+TV:53.7604:/IT9:JM67:35000:-1:-1:comment
+TV:53.7604:/I7:JN81:34000:-1:-1:comment
+TV:53.7604:/I3:JN65:1600000:-1:-1:comment
+%
+%TV:55.25H:/E3:-1:50000:-1:Gamoniteiro,Spain:bad location
+TV:55.25H:/E3:IL18:350000:-1:Tenerife,Canary Is:comment
+TV:55.25H:/E3:IM98:60000:-1:Aitana Alicante,Spain:comment
+TV:55.25V:/E3:HP85:90000:-1:Stykkisholmur,Iceland:comment
+%TV:55.2500:/CT:IN51:60000:-1:-1:comment
+%TV:55.25H:/E3:IN50:60000:-1:Lousa,Portugal:comment
+TV:55.2500H:/CT:IN50:60000:-1:Lousa,Portugal:comment
+%
+TV:62.75V:/E4:HP94:300000:-1:Skalafell,Iceland:comment
+TV:62.75V:/E4:IP25:80000:-1:Gagnheidi,Iceland:comment
+TV:62.75H:/E4:IM79:120000:-1:Guadalcanal,Spain:comment
+%TV:62.75H:/E4:IN52:112000:-1:Santiago de Compostela,Spain:same grid square as a 48MHz station (less useful so commented out)
+%TV:62.75H:/E4:-1:60000:-1:Sollube,Spain:bad location
+%
+TV:193.25H:/A10:FM72:17000:-1:Hamilton,Bermuda:comment
+TV:189.25H:/E7:HM58:150000:-1:Pico da Barrosa,Azores:comment
+TV:203.25H:/E9:HM68:100000:-1:Santa Barbara,Azores:comment
+TV:182.25V:/E6:IP05:490000:-1:Vadlaheidi,Iceland:comment
+%TV:189.25V:/E7:-1:1100000:-1:Hafell,Iceland:comment
+TV:175.25?:/D:IO51:-1:-1:Mullaghanish,Cork,Ireland:comment
+TV:183.75H:/E:IO52:100000:-1:Maghera,Limerick,Ireland:comment
+TV:183.75H:/E:IO63:100000:-1:Kippure,Dublin,Ireland:comment
+TV:191.25V:/F:IO62:100000:-1:Mt Leinster,Wexford,Ireland:comment
+TV:199.25V:/G:IO51:100000:-1:Mullaghanish,Cork,Ireland:comment
+TV:199.25H:/G:IO64:100000:-1:Truskmore,Sligo,Ireland:comment
+TV:207.25H:/H:IO52:100000:-1:Maghera,Limerick,Ireland:comment
+TV:207.25H:/H:IO63:100000:-1:Kippure,Dublin,Ireland:comment
+TV:215.25H:/I:IO64:100000:-1:Truskmore,Sligo,Ireland:comment
+TV:215.25V:/I:IO62:100000:-1:Mt Leinster,Wexford,Ireland:comment
+TV:176.00:/5:JN03:100000:-1:Toulouse,France:comment
+TV:175.00:/5V:JN08:200000:-1:Le Mans,France:comment
+TV:184.00:/6V:IN96:405000:-1:Niort,France:comment
+TV:192.00:/7:IN98:200000:-1:Rennes,France:comment
+TV:200.00:/8:IN94:50000:-1:Bordeaux,France:comment
+TV:208.00:/9:IN99:198000:-1:Caen,France:comment
+TV:208.00:/9V:IN97:300000:-1:Nantes,France:comment
+TV:216.00:/10:JN05:260000:-1:Limoges,France:comment
+TV:175.25H:/E5:JN00:50000:-1:Ares,Spain:comment
+TV:189.25H:/E7:IM86?:150000:-1:Sierra de Lujar Motril?,Spain:comment
+TV:203.25V:/E9:IN90:53000:-1:Camarena de la Sierra,Spain:comment
+TV:203.25H:/E9:IN69:63000:-1:El Cabaco,Spain:comment
+TV:203.25H:/E9:IM89?:60000:-1:La Mancha,Spain:comment
+TV:189.25H:/E7:IN58:100000:-1:Lisbon,Portugal:comment
+TV:196.25H:/E8:IN50:100000:-1:Porto,Portugal:comment
+TV:175.25H:/E5:IM12:100000:-1:Funchal,Madeira:comment
+TV:182.25H:/E6:IM12:20000:-1:Madeira:comment
+TV:196.25H:/E8:IM12:100000:-1:Madeira:comment
+%TV:163.25H:/4:-1:120000:-1:Zerhoun,Morocco:comment
+TV:171.25H:/5:IM74:267000:-1:Oujda,Morocco:comment
+%TV:171.25H:/5:-1:150000:-1:Boukhouali,Morocco:comment
+TV:187.25H:/7:IM64:180000:-1:Rabat,Morocco:comment
+%TV:192.25H:/8:-1:90000:-1:Tazerkount,Morocco:bad location
+TV:211.25H:/10:IM64:180000:-1:Casablanca,Morocco:comment
+TV:211.25H:/10:IM75:267000:-1:Bouarfa,Morocco:comment
+TV:211.25H:/10:IM64:267000:-1:Ourzazate,Morocco:comment
+%%
+%%
+%% list (commented out) from equinox@itl.net (Geoff Brown) (merged into above list)
+%%
+%TV:48.2396:/DL:JN39:100000:-1:-1:comment
+%TV:48.2396:/SM:JO79:60000:-1:-1:comment
+%TV:48.2414:/CT:IM59:-1:-1:-1:comment
+%TV:48.2422:/CT:IN51:67000:-1:-1:comment
+%TV:48.2461:/LA:JP20:30000:-1:-1:comment
+%TV:48.2474:/DL:JO40:100000:-1:-1:comment
+%TV:48.2487:/LA:KP59:30000:-1:-1:comment
+%TV:48.2500:/HB9:JN36:50000:-1:-1:comment
+%TV:48.2502:/EA:IN80:250000:-1:-1:comment
+%TV:48.2500:/OE:JN78:60000:-1:-1:comment
+%TV:48.2500:/SM:JP93:60000:-1:-1:comment
+%TV:48.2519:/EA:IN52:40000:-1:-1:comment
+%TV:48.2528:/LA:JO38:60000:-1:-1:comment
+%TV:48.2565:/LA:JP53:100000:-1:-1:comment
+%TV:48.2604:/DL:JN57:100000:-1:-1:comment
+%TV:48.2604:/LA:JP77:60000:-1:-1:comment
+%TV:49.7396:/HG:JN97:150000:-1:-1:comment
+%TV:49.7396:/UB5:KN29:150000:-1:-1:comment
+%TV:49.7396:/OK:JO70:150000:-1:-1:comment
+%TV:49.7396:/UB5:KN74:50000:-1:-1:comment
+%TV:49.7396:/UA3:KO89:35000:-1:-1:comment
+%TV:49.7396:/UB5:KO62:35000:-1:-1:comment
+%TV:49.7409:/UA1:KP78:10000:-1:-1:comment
+%TV:49.7448:/HG:JN86:50000:-1:-1:comment
+%TV:49.7476:/UA3:KO85:240000:-1:-1:comment
+%TV:49.7500:/UA6:KN95:50000:-1:-1:comment
+%TV:49.7500:/UB5:KN67:35000:-1:-1:comment
+%TV:49.7500:/UA1:KP75:10000:-1:-1:comment
+%TV:49.7500:/UA3:KO59:240000:-1:-1:comment
+%TV:49.7500:/UC2:KO33:150000:-1:-1:comment
+%TV:49.7500:/UA6:KN93:35000:-1:-1:comment
+%TV:49.7513:/SP:JO93:100000:-1:-1:comment
+%TV:49.7578:/UA3:KO56:90000:-1:-1:comment
+%TV:49.7578:/UA1:KP63:10000:-1:-1:comment
+%TV:49.7604:/UQ2:KO06:50000:-1:-1:comment
+%TV:49.7604:/UC2:KO41:50000:-1:-1:comment
+%TV:49.7604:/UB5:KN79:35000:-1:-1:comment
+%TV:49.7604:/UA3:KO91:35000:-1:-1:comment
+%TV:53.7396:/I5:JN53:34000:-1:-1:comment
+%TV:53.7604:/IT9:JM67:35000:-1:-1:comment
+%TV:53.7604:/I7:JN81:34000:-1:-1:comment
+%TV:53.7604:/I3:JN65:1600000:-1:-1:comment
+%TV:53.7578:/EI:IO52:100000:-1:-1:comment
+%TV:55.2500:/CT:IN51:60000:-1:-1:comment
+%--------------------------------tv_euro.dat

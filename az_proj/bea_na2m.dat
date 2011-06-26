@@ -1,0 +1,164 @@
+%bea_na.dat--------------------------------------
+%Beacon File for AZ_PROJ v1.04
+%requires v1.04 (or greater) of AZ_PROJ
+%
+%
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96, mack@ncifcrf.gov
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequency:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment ignored by reading program (eg AZ_PROJ)
+%	eg 2m beacon
+%		beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC			%usually 550-1630 kHz AM
+%		AM			%usually 550-1630 kHz AM
+%		FM             %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%--------------------------------------
+%
+% Special Notes about beacons
+%
+%
+% Ham beacons, are relatively low power, ie 1mW < P < 100W
+% AZ_PROJ draws one circle for each bm (bell miliwatt),
+%0 circle for 1mw
+%4 circles for 10W (also for 99W)
+%4 circles for 99W (also for 99W)
+%5 circles for 100W
+%
+% For TV stations which are high power, ie 1000W < P <100,000W (generally)
+% one circle for each bW (bell W)
+%0 circle for 1W
+%3 circles for 1000W
+%3 circles for 9999W
+%4 circles for 10000W
+%
+% If a ham beacon and a TV station are plotted on the same map
+% then a 10W ham beacon, will have the same size as a 10KW TV station
+% To differentiate the two symbols, a thicker black complete circle is drawn
+% at the 1W level for both symbols. For a beacon, the 1W circle is the 3rd circle
+% For a TV station the 1W circle is the inner most circle.
+% This isn't a great solution. Other suggestions are welcome.
+%
+%--------------------------------------
+%
+%	The beacon file (bea_w3ep.dat), is maintained by Emil Pocock, W3EP.
+%	Emil writes the `World above 50MHz' column in QST. Please send
+%	beacon updates to Emil and we will get them from him.
+%	Sorry, this file only has US beacons.
+%
+%	This is a modified W3EP format file in which text fields (eg "omni")
+%	have been replaced by numerical data in an attempt to have an
+% 	easy to parse, machine readable, format. I don't care what format
+%	is used as long as it is stable for the useful life of this program.
+%
+beacon:144.054:WD4GSM:EM86:0.2:-1:
+beacon:144.170:KH6HME:BK29go:60:270:
+beacon:144.275:W4RFR:EM66:0.25:-1:
+beacon:144.275:KD0DW:DN70lf:100:-1:
+beacon:144.276:W2RTB:FN12ar:15:-1:
+beacon:144.277:VE1SMU:GN03:10:270:
+beacon:144.277:KA0EWQ:EN15:10:135:
+beacon:144.277:VE2FUT:FN25wg:12:-1:
+beacon:144.280:VA3TBX:EN58ij:20:135:
+beacon:144.282H:W1RJA/B:FN41cj:60:60:http://www.qsl.net/vhfnews/2mbeacon.html
+beacon:144.280:VE2FTR:FN08:60:180:
+beacon:144.280:N4MW:EM55ac:4:-1:
+beacon:144.282:WD4LWG:EL87:75:-1:
+beacon:144.287:KB8JI:EN64we:0.4:157:
+beacon:144.289:KL7GLK:FM18:2:-1:1:
+beacon:144.290:WA2UMX:FN23xc:20:-1:
+beacon:144.290:VE1SMU:FN84:10:338:
+beacon:144.290:K0HTF:EN31dx:1:-1:
+beacon:144.292:W9IP:FN24kp:45:0:
+beacon:144.294:WB0QIY:EN01rf:60:135:
+beacon:144.295:WA8R:EM79qb:15:-1:
+beacon:144.296:WD4KPD:FM15mm:20:-1:
+beacon:144.296:W3VD:FM19ne:10:-1:
+beacon:144.297:WB2CUS:EL98:0.5:-1:
+%bea_na.dat--------------------------------------

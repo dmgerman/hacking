@@ -1,0 +1,192 @@
+
+callgraph.pl,97
+sub parse_Token_Locationparse_Token_Location45,964
+sub parse_Token_Lenparse_Token_Len56,1212
+
+ccpretyprint.pl,865
+sub Print_TokensPrint_Tokens110,1905
+sub Load_TokensLoad_Tokens122,2103
+sub Load_Token_FileLoad_Token_File133,2294
+sub PrintOptionsPrintOptions155,2957
+option: -b %d // minimumCloneLengthoption168,3279
+option: -s %d // shapingLeveloption169,3315
+option: -u %d // useParameterUnificationoption170,3345
+option: -t %d // minimumTokenSetSizeoption171,3386
+preprocess_script: %spreprocess_script172,3423
+sub PrintFilesPrintFiles178,3566
+sub PrintClonesPrintClones192,3768
+sub PrintClonesPrettyPrintClonesPretty207,4139
+sub FilterClonesFilterClones248,5448
+sub Translate_TokenTranslate_Token332,7862
+sub Translate_Token_LineTranslate_Token_Line348,8208
+sub GetClonesGetClones363,8526
+sub GetFilesGetFiles391,9027
+sub GetStringGetString423,9677
+sub PrintFieldsPrintFields438,9990
+sub Hunk_Translate_LineHunk_Translate_Line452,10188
+
+computeMD5s.pl,0
+
+create_callgraph.pl,0
+
+detectChanges.pl,39
+sub Detect_ChangesDetect_Changes8,42
+
+insertCloneSets.pl,0
+
+processAllHistory.pl,168
+sub Get_Files_In_MRGet_Files_In_MR100,2075
+sub Copy_CCFinder_FilesCopy_CCFinder_Files114,2428
+sub Copy_FileCopy_File136,2982
+sub Do_CCFinderDo_CCFinder166,3735
+
+processAllHistorySimple.pl,111
+sub Get_Files_In_MRGet_Files_In_MR74,1607
+sub Copy_FilesCopy_Files88,1971
+sub Copy_FileCopy_File110,2463
+
+rip.pl,0
+
+test_ccfinder.pl,25
+package main;main10,87
+
+whatClonesChanged.pl,280
+sub what_Clones_Changedwhat_Clones_Changed38,694
+sub Insert_Clone_OperationInsert_Clone_Operation96,2251
+sub Find_Previous_RevisionFind_Previous_Revision106,2532
+sub Load_Files_Changed_in_MRLoad_Files_Changed_in_MR128,2938
+sub Load_Clones_in_MRLoad_Clones_in_MR145,3243
+
+ccdiff.pm,888
+package ccdiff;ccdiff3,17
+sub new new8,62
+sub doDiffdoDiff19,241
+sub savesave36,570
+sub Hunk_Locations_Print Hunk_Locations_Print44,732
+sub Hunk_Locations_ExtractHunk_Locations_Extract120,2451
+sub extract_Hunk_Locationextract_Hunk_Location172,3914
+sub region_Changed_Beforeregion_Changed_Before196,4395
+sub region_Changed_Type_Afterregion_Changed_Type_After241,5503
+sub region_Changed_Afterregion_Changed_After295,6912
+sub line_Translateline_Translate340,8015
+sub line_Translate_Invline_Translate_Inv380,9023
+package hunk;hunk420,10033
+sub new new422,10048
+sub line_Beforeline_Before438,10387
+sub end_Beforeend_Before444,10463
+sub end_Afterend_After450,10560
+sub region_Beforeregion_Before456,10654
+sub deltadelta462,10750
+sub region_Afterregion_After468,10815
+sub printprint474,10909
+package diffTest;diffTest487,11208
+sub testtest489,11227
+
+ccfinder.pm,803
+package ccfinder;ccfinder4,18
+sub newnew12,116
+sub set_Files_Listset_Files_List26,467
+sub load_Fileload_File33,594
+sub iterate_Filesiterate_Files40,746
+sub get_Clones_Sets_Selectedget_Clones_Sets_Selected49,916
+sub iterate_Clones_In_Setiterate_Clones_In_Set57,1097
+sub print_Clones_Set_Selectedprint_Clones_Set_Selected64,1246
+sub extract_Clones_Set_Selectedextract_Clones_Set_Selected71,1403
+sub extract_Clones_Abstract_Set_Selectedextract_Clones_Abstract_Set_Selected78,1548
+sub extract_Clones_In_Filesextract_Clones_In_Files87,1713
+sub executeexecute103,1969
+sub get_ccdata_rawget_ccdata_raw154,3283
+sub create_List_Filescreate_List_Files174,3553
+sub printprint202,4028
+sub extract_Clonesextract_Clones212,4200
+sub print_Clones_Selectedprint_Clones_Selected222,4350
+
+ccparse.pm,1886
+package ccparse;ccparse1,0
+sub new new7,45
+sub loadload20,275
+sub iterate_Filesiterate_Files32,515
+sub print_Clones_Set_Selectedprint_Clones_Set_Selected45,773
+sub extract_Clones_Set_Selectedextract_Clones_Set_Selected55,1088
+sub extract_Clones_Abstract_Set_Selectedextract_Clones_Abstract_Set_Selected63,1288
+sub iterate_Clones_In_Setiterate_Clones_In_Set73,1476
+sub load_Token_Filesload_Token_Files90,1806
+sub load_Token_Fileload_Token_File102,2024
+sub printprint117,2350
+sub extract_Cloneextract_Clone133,2683
+sub extract_Clone_Abstractextract_Clone_Abstract140,2761
+sub iterate_Clonesiterate_Clones169,3552
+sub iterate_Clones_Selectediterate_Clones_Selected183,3835
+sub abcabc209,4350
+sub print_Filesprint_Files215,4402
+sub print_Optionsprint_Options234,4870
+option: -b %d // minimumCloneLengthoption247,5192
+option: -s %d // shapingLeveloption248,5228
+option: -u %d // useParameterUnificationoption249,5258
+option: -t %d // minimumTokenSetSizeoption250,5299
+preprocess_script: %spreprocess_script251,5336
+sub parseparse258,5480
+sub create_Clonescreate_Clones270,5643
+sub count_Clonescount_Clones311,6658
+sub get_Cloneget_Clone320,6761
+sub get_Token_Line_Col_Byteget_Token_Line_Col_Byte334,7010
+sub translate_Filenametranslate_Filename343,7167
+sub print_Clone_Pairsprint_Clone_Pairs359,7618
+sub extract_Clonesextract_Clones376,8034
+sub extract_Clones_Abstractextract_Clones_Abstract386,8177
+sub print_Clonesprint_Clones398,8340
+sub print_Clones_Selectedprint_Clones_Selected425,8858
+sub get_Clones_Sets_Selectedget_Clones_Sets_Selected448,9292
+sub get_Clone_Countget_Clone_Count475,9821
+sub parse_Clone_Pairsparse_Clone_Pairs483,9936
+sub parse_Filesparse_Files513,10564
+sub parse_Headerparse_Header535,11068
+sub parse_Stringparse_String556,11618
+sub print_Clones_w_Linesprint_Clones_w_Lines574,11983
+
+cctoken.pm,257
+package cctoken;cctoken6,31
+sub new new9,50
+sub get_Lineget_Line33,578
+sub get_Columnget_Column40,645
+sub get_Contentget_Content47,716
+sub get_Valueget_Value53,788
+sub get_Typeget_Type59,856
+sub get_Byteget_Byte65,922
+sub printprint71,988
+
+cctokens.pm,440
+package cctokens;cctokens6,52
+sub new new10,87
+sub parse_Token_Locationparse_Token_Location20,228
+sub parse_Token_Lenparse_Token_Len31,483
+sub load_Token_Fileload_Token_File52,947
+sub token_Translatetoken_Translate97,2158
+sub token_Sequencetoken_Sequence119,2580
+sub token_Sequence_Abstracttoken_Sequence_Abstract138,3079
+sub extract_Declarationsextract_Declarations157,3593
+sub find_Declarationfind_Declaration197,4368
+
+clone.pm,500
+package clone;clone3,17
+sub new new5,33
+sub printprint31,725
+sub lineslines51,1109
+sub loadload59,1204
+sub token_begintoken_begin89,1769
+sub tokenstokens97,1844
+sub fileIdxfileIdx103,1932
+sub filenamefilename110,2004
+sub setIdsetId117,2078
+sub from_Tokenfrom_Token124,2151
+sub clean_FileNameclean_FileName131,2228
+sub clone_Dataclone_Data138,2313
+sub generate_FileNamegenerate_FileName147,2448
+sub save save159,2652
+sub extractextract173,2994
+sub equalequal197,3557
+
+support.pm,22
+sub inListinList4,3
+
+testDiff.pm,0

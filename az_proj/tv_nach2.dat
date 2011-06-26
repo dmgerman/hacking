@@ -1,0 +1,536 @@
+%tv_nach2.dat--------------------------------
+%List of North American Channel 2 TV stations.
+% Includes all of USA, and all of Canada and Mexico that the FCC was
+% interested in (the ones along the US border)
+%
+%
+%      List from FCC databases
+%  compiled by Colin Wright, K4SSO
+%           aa0yt@mo.net
+%    http://walden.mo.net/~aa0yt
+%
+%--------------------------------
+% Notes by Joe NA3T:
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96, mack@ncifcrf.gov
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequency:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment ignored by reading program (eg AZ_PROJ)
+%	eg 2m beacon
+%		beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC			%usually 550-1630 kHz AM
+%		AM			%usually 550-1630 kHz AM
+%		FM             %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%
+%--------------------------------
+%
+% 1. Frequency
+%
+% North American Channel frequencies (video carrier)
+% have a nominal value (e.g. Ch 2 - 55.25MHz).
+% The frequency is accurately controlled (by something like a Rubidium clock).
+% The frequencies are listed in the FCC database
+% with the following modifiers -
+%
+% - actual freq is exactly 10kHz lower than nominal 	(AZ_PROJ color red)
+% Z actual freq is exactly nominal (Zero offset)       (AZ_PROJ color black)
+% + actual freq is exactly 10kHz higher than nominal   (AZ_PROJ color blue)
+% N actual freq is Nominal freq, but is not accurately controlled. (AZ_PROJ color grey)
+%
+% Thus a station with a stated freq of 55.25+MHz
+% is really transmitting at 55.26MHz.
+% (pretty simple scheme huh? This legal fiction is easily
+% extendable - e.g. the output of my PA is 1500+W :-).
+%
+% Since these frequencies are easily differentiated by
+% receivers in use by hams, the AZ_PROJ code draws
+% different colored symbols for -,+,Z,N
+% (default colors are set in az_ini.ps to red,blue,black,grey)
+%
+% Since the +/-/Z/N nomenclature may seem a little obtuse to
+% people from locations where the frequency is the
+% frequency, you could use your editor to change
+% 55.25+ -> 55.260
+% 55.25Z -> 55.250
+% 55.25- -> 55.240
+%
+% Then the correct frequency will be displayed and the symbol
+% will have the default of green (set in az_ini.ps)
+%
+% 2. Low Power Stations (N and others)
+%
+% The N stations are all low power repeaters/translators (<100W)
+% intended for local coverage.
+% They are not as useful for propagation testing as the 100KW stations.
+% In this file, the N stations are commented to reduce clutter.
+% If you want to plot them, you can uncomment them, or copy them
+% into another file and plot them separately.
+%
+% 3. Station Names
+%
+% Some stations have callsigns like KXYZ-TV or WABC-FM.
+% The "TV" and "FM" part of the string only clutters an already
+% dense map and has been edited out.
+%
+% The TV channel has been appended to the callsign
+% (for the benefit of those using TV sets) e.g. KXYZ/02
+%
+% 4. TV station symbol
+%
+% Two symbols are available: A non-directional tower (one
+% tower section for each 10^nW of power) or nested circles
+% (one circle for each 10^nW of power). The nested circles
+% become a fan for directional stations. The symbol type
+% is selected in az_ini.ps
+%
+% Eg for a tower (minimum of one section of tower)
+% 1W->1 section
+% 10W->1 section
+% 100W -> 2 sections
+% 1000W -> 2 sections
+% 9999W _> 3 sections
+% 10000W -> 4 sections
+%
+%
+% Here's the list from K4SSO
+%
+%
+%low power stations
+TV:55.25-:NEW-T/02:DM12NS:81:230:SAN DIEGO,CA,US:comment ignored by AZ_PROJ
+TV:55.25-:K02PC/02:DN34EL:83:67.5:CHALLIS,ID,US:comment
+TV:55.25-:W02BP/02:EM88WC:18:-1:MOUNT STERLING,KY,US:comment
+TV:55.25-:W02CH/02:FM17TK:60:65:RICHMOND,VA,US:comment
+TV:55.25-:CFON/02:DO51EI:710:-1:OYEN,AB,CA:comment
+TV:55.25-:NEW-T/02:EL16JJ:36:120:RIO GRANDE CITY,TX,US:comment
+TV:55.25-:NEW-T/02:EL16JJ:36:120:RIO GRANDE CITY,TX,US:comment
+TV:55.25-:NEW-T/02:EL16JJ:36:120:RIO GRANDE CITY,TX,US:comment
+TV:55.25-:NEW-T/02:EL16JJ:36:120:RIO GRANDE CITY,TX,US:comment
+TV:55.25-:K02MQ/02:EM00MC:492:225:KERRVILLE,TX,US:comment
+TV:55.25-:NEW-T/02:EL08WL:59:-1:CARRIZO SPRINGS,TX,US:comment
+TV:55.25-:K02OH/02:DM06VR:141:0:FRESNO,CA,US:comment
+TV:55.25-:K02OA/02:CM99UX:25:190:CHICO,CA,US:comment
+% regular power
+TV:55.25-:XHCH/02:DL78AP:5440:-1:CHIHUAHUA,CH,MX:comment
+TV:55.25-:WLBZ/02:FN64IR:51300:-1:BANGOR,ME,US:comment
+TV:55.25-:KUTV/02:DN40CO:32400:-1:SALT LAKE CITY,UT,US:comment
+TV:55.25-:WDIQ/02:EM71EN:100000:-1:DOZIER,AL,US:comment
+TV:55.25-:KETS/02:EM44CL:100000:-1:LITTLE ROCK,AR,US:comment
+TV:55.25-:KTUU/02:BP51WK:100000:-1:ANCHORAGE,AK,US:comment
+TV:55.25-:KQTV/02:EM39JS:100000:-1:ST.JOSEPH,MO,US:comment
+TV:55.25-:KQTV/02:EM29NK:100000:-1:ST.JOSEPH,MO,US:comment
+TV:55.25-:KNOP/02:EN01IE:100000:-1:NORTH PLATTE,NE,US:comment
+TV:55.25-:KTVQ/02:DN65FS:100000:-1:BILLINGS,MT,US:comment
+TV:55.25-:WFMY/02:FM05WU:100000:-1:GREENSBORO,NC,US:comment
+TV:55.25-:KDKA/02:FN00AL:100000:-1:PITTSBURGH,PA,US:comment
+TV:55.25-:WKRN/02:EM76JB:100000:-1:NASHVILLE,TN,US:comment
+TV:55.25-:KPRC/02:EL29RN:100000:-1:HOUSTON,TX,US:comment
+TV:55.25-:KMID/02:DM92DC:100000:-1:MIDLAND,TX,US:comment
+TV:55.25-:KREM/02:DN17PO:85100:-1:SPOKANE,WA,US:comment
+TV:55.25-:CKND/02:EO00BG:100000:-1:MINNEDOSA,MB,CA:comment
+TV:55.25-:CHBX/02:EN86EO:100000:-1:SAULT STE MARIE,ON,CA:comment
+TV:55.25-:CKCO/02:EN94NW:100000:-1:WIARTON,ON,CA:comment
+TV:55.25-:CBGA/02:FN78BD:100000:-1:CARLETON,QU,CA:comment
+TV:55.25-:WKTV/02:FN33LC:34700:-1:UTICA,NY,US:comment
+TV:55.25-:KOTI/02:CN92TC:35500:-1:KLAMATH FALLS,OR,US:comment
+TV:55.25-:KOTI/02:CN92TC:85100:-1:KLAMATH FALLS,OR,US:comment
+%one of these next two is wrong
+%TV:55.25-:WESH/02:EL98PW:100000:-1:DAYTONA BEACH,FL,US:comment
+TV:55.25-:WESH/02:EL98NU:100000:-1:DAYTONA BEACH,FL,US:comment
+TV:55.25-:WBBM/02:EN61TV:35500:-1:CHICAGO,IL,US:comment
+%low power +offset stations
+TV:55.25+:K02PD/02:EN26JV:27:-1:FARGO,ND,US:comment
+TV:55.25+:W02CB/02:EL96VH:79:0:NAPLES,FL,US:comment
+TV:55.25+:W02CB/02:EL96VH:227:0:NAPLES,FL,US:comment
+TV:55.25+:K02NO/02:DN32UO:87:120:RUPERT,ID,US:comment
+TV:55.25+:W02CE/02:EM81CE:18:-1:CAMILLA,GA,US:comment
+TV:55.25+:K02NQ/02:EM48DW:143:0:COLUMBIA,MO,US:comment
+TV:55.25+:K02OC/02:EM31IP:58:0:NACOGDOCHES,TX,US:comment
+TV:55.25+:K02MX/02:EL19FK:37:-1:SAN ANTONIO,TX,US:comment
+TV:55.25+:NEW-T/02:EL09VF:52:-1:UVALDE,TX,US:comment
+TV:55.25+:XEFA/02:DM51LH:874:-1:NOGALES,SO,MX:comment
+TV:55.25+:K02PE/02:DM53DX:6:265:CARRIZO,AZ,US:comment
+TV:55.25+:K02PF/02:DM54FB:1:90:CIBIQUE,AZ,US:comment
+TV:55.25+:CBHT9/02:FN74MI:609:-1:CALEDONIA,NS,CA:comment
+TV:55.25+:WDRL-LP/02:FM07NG:62:0,335:LYNCHBURG,VA,US:comment
+TV:55.25+:CBCH/02:CO74HK:256:-1:HOUSTON,BC,CA:comment
+% regular power
+TV:55.25+:CJCH/02:FN94FW:1500:-1:SHEET HARBOUR,NS,CA:comment
+TV:55.25+:WMAB/02:EM53NI:100000:-1:MISSISSIPPI STATE,MS,US:comment
+TV:55.25+:KXMA/02:DN96KR:100000:-1:DICKINSON,ND,US:comment
+TV:55.25+:KASA/02:DM75FF:28200:-1:SANTA FE,NM,US:comment
+TV:55.25+:WKAQ/02:FK78AC:55000:-1:SAN JUAN,PR,US:comment
+TV:55.25+:WCBD/02:FM02UW:100000:-1:CHARLESTON,SC,US:comment
+TV:55.25+:KUSD/02:EN23JB:100000:-1:VERMILLION,SD,US:comment
+TV:55.25+:KTWO/02:DN72ER:100000:-1:CASPER,WY,US:comment
+TV:55.25+:WSJK/02:EM86OJ:100000:-1:SNEEDVILLE,TN,US:comment
+TV:55.25+:NEW/02:EM10HD:100000:-1:FREDERICKSBURG,TX,US:comment
+TV:55.25+:KACV/02:DM95VI:100000:-1:AMARILLO,TX,US:comment
+TV:55.25+:WBAY/02:EN64AJ:100000:-1:GREEN BAY,WI,US:comment
+TV:55.25+:CFAC/02:DO31DB:100000:-1:CALGARY,AB,CA:comment
+TV:55.25+:CBUT/02:CN99LI:100000:-1:VANCOUVER,BC,CA:comment
+TV:55.25+:CIII/02:FN15OB:100000:-1:BANCROFT,ON,CA:comment
+TV:55.25+:CFCL/02:EN99EJ:4600:-1:KAPUSKASING,ON,CA:comment
+TV:55.25+:CBWFT7/02:EN39GS:6800:-1:KENORA,ON,CA:comment
+TV:55.25+:CFGC/02:FN06QH:3400:-1:NORTH BAY,ON,CA:comment
+TV:55.25+:CFAP/02:FN46OT:33900:-1:QUEBEC,QU,CA:comment
+TV:55.25+:CBCPTV2/02:DN59SP:6750:-1:CYPRESS HILLS,SA,CA:comment
+TV:55.25+:CBGAT22/02:FN88FX:4200:-1:RIVIERE-AU-RENARD,QU,CA:comment
+TV:55.25+:CFAP/02:FN46OT:98000:-1:QUEBEC,QU,CA:comment
+TV:55.25+:KATN/02:BP64UU:28200:-1:FAIRBANKS,AK,US:comment
+TV:55.25+:XHIA/02:DL85RM:13500:-1:TORREON,CI,MX:comment
+TV:55.25+:XEFB/02:EL05DQ:100000:-1:MONTERREY,NL,MX:comment
+TV:55.25+:XHCR/02:EL15SV:3600:-1:MATAMOROS,TA,MX:comment
+TV:55.25+:KTVU/02:CM97FS:100000:-1:OAKLAND,CA,US:comment
+TV:55.25+:KJRH/02:EM26UA:100000:-1:TULSA,OK,US:comment
+TV:55.25+:KHON/02:BL11WH:100000:-1:HONOLULU,HI,US:comment
+TV:55.25+:WGBH/02:FN42OH:87100:-1:BOSTON,MA,US:comment
+TV:55.25+:WTWO/02:EM69QF:100000:-1:TERRE HAUTE,IN,US:comment
+TV:55.25+:WMAR/02:FM29HI:100000:-1:BALTIMORE,MD,US:comment
+%TV:55.25+:NEW/02:FM29JG:100000:-1:BALTIMORE,MD,US:comment
+TV:55.25+:WJBK/02:EN82OL:100000:-1:DETROIT,MI,US:comment
+%low power zero offset stations
+TV:55.25Z:W02BT/02:EM66KF:33:0:SHARON,TN,US:comment
+TV:55.25Z:K02OC/02:EM31IP:63:150:NACOGDOCHES,TX,US:comment
+TV:55.25Z:W02CJ/02:FN33ME:5:-1:MANCHESTER,VT,US:comment
+TV:55.25Z:KJWY/02:DN53JL:178:-1:JACKSON,WY,US:comment
+TV:55.25Z:CBRT12/02:DN39PE:9:-1:CARDSTON,AB,CA:comment
+TV:55.25Z:W02CI/02:EM80BU:18:-1:CAIRO/THOMASVILLE,GA,US:comment
+TV:55.25Z:CKRT/02:FN67HM:10:-1:DEGELIS,QU,CA:comment
+TV:55.25Z:CBVT3/02:FN55KN:5:-1:LAC-MEGANTIC,QU,CA:comment
+TV:55.25Z:K02MM/02:EN26BH:99:166:FERGUS FALLS,MN,US:comment
+TV:55.25Z:K02OE/02:DM85CG:4:132:CONCHAS DAM,NM,US:comment
+TV:55.25Z:CBVT1/02:FN56IC:5:-1:ST-GEORGE-BEAUCE,QU,CA:comment
+TV:55.25Z:W02BV/02:EM73KL:107:0:BIRMINGHAM,AL,US:comment
+TV:55.25Z:W02CF/02:EN55VV:29:105:MINOCQUA,WI,US:comment
+%regular power zero offset stations
+TV:55.25Z:KGFE/02:EN18XD:100000:0:GRAND FORKS,ND,US:comment
+TV:55.25Z:KDTN/02:EM22LO:100000:-1:DENTON,TX,US:comment
+TV:55.25Z:CKCW/02:FN85JU:100000:-1:MONCTON,NB,CA:comment
+TV:55.25Z:CFCL/02:FN08SD:70000:-1:KEARNS,ON,CA:comment
+TV:55.25Z:CKPR/02:EN58NM:56000:-1:THUNDER BAY,ON,CA:comment
+TV:55.25Z:CBFT/02:FN35TM:100000:-1:MONTREAL,QU,CA:comment
+TV:55.25Z:CJBR/02:FN68KH:100000:-1:RIMOUSKI,QU,CA:comment
+TV:55.25Z:CKCK/02:DO80GK:100000:-1:REGINA,SA,CA:comment
+TV:55.25Z:CHBC/02:DN09SX:3700:-1:KELOWNA,BC,CA:comment
+TV:55.25Z:XEPM/02:DM71FQ:9450:-1:CIUDAD JUAREZ,CH,MX:comment
+TV:55.25Z:XEFE/02:EL07SL:21400:-1:NUEVO LAREDO,TA,MX:comment
+TV:55.25Z:KNAZ/02:DM44SX:100000:-1:FLAGSTAFF,AZ,US:comment
+TV:55.25Z:WDTN/02:EM89DR:100000:-1:DAYTON,OH,US:comment
+TV:55.25Z:KATU/02:CN95IM:100000:-1:PORTLAND,OR,US:comment
+TV:55.25Z:WGRZ/02:FN12GR:100000:-1:BUFFALO,NY,US:comment
+TV:55.25Z:KTVN/02:DM09UG:89100:0:RENO,NV,US:comment
+TV:55.25Z:WCBS/02:FN30AR:21400:-1:NEW YORK,NY,US:comment
+TV:55.25Z:KATU/02:CN95IM:100000:-1:PORTLAND,OR,US:comment
+TV:55.25Z:KHBC/02:BK29MR:2290:0:HILO,HI,US:comment
+TV:55.25Z:KGAN/02:EN42WH:100000:-1:CEDAR RAPIDS,IA,US:comment
+TV:55.25Z:KCBS/02:DM14AF:36300:-1:LOS ANGELES,CA,US:comment
+TV:55.25Z:KWGN/02:DM79OR:100000:-1:DENVER,CO,US:comment
+TV:55.25Z:WPBT/02:FL05CX:100000:-1:MIAMI,FL,US:comment
+TV:55.25Z:WSB/02:EM83ES:100000:-1:ATLANTA,GA,US:comment
+TV:55.25Z:KSNC/02:EM18JK:100000:-1:GREAT BEND,KS,US:comment
+TV:55.25Z:WBRZ/02:EM40OH:100000:-1:BATON ROUGE,LA,US:comment
+TV:55.25Z:WUND/02:FM25EV:100000:-1:COLUMBIA,NC,US:comment
+TV:55.25Z:KTVI/02:EM58EM:100000:-1:ST.LOUIS,MO,US:comment
+TV:55.25Z:KBCI/02:DN23BS:64600:-1:BOISE,ID,US:comment
+%low power nominal (ie not tightly controlled) freq stations
+TV:55.25N:K02OF/02:DN55LP:54:290:BOZEMAN,MT,US:comment
+TV:55.25N:K02AO/02:DN28NU:61:70:EUREKA,MT,US:comment
+TV:55.25N:K02OL/02:DN37SD:20:0:SEELEY LAKE,MT,US:comment
+TV:55.25N:W02AG/02:EM95IE:65:322.5:BREVARD,NC,US:comment
+TV:55.25N:W02AT/02:EM95DW:32:180:BURNSVILLE,NC,US:comment
+TV:55.25N:W02AH/02:EM95GU:51:170:MARS HILL,NC,US:comment
+TV:55.25N:W02AF/02:EM85OI:56:0:SYLVA,NC,US:comment
+TV:55.25N:K02DD/02:EN16IV:496:20:JAMESTOWN,ND,US:comment
+TV:55.25N:K02FR/02:EN16DI:8:0:LA MOURE,ND,US:comment
+TV:55.25N:K02GA/02:EN16UK:33:0:LISBON,ND,US:comment
+TV:55.25N:K02FO/02:EN16XW:7:0:VALLEY CITY,ND,US:comment
+TV:55.25N:K02NY/02:DN82MT:136:0:CHADRON,NE,US:comment
+TV:55.25N:K02LF/02:EN12FT:7:0:LYNCH,NE,US:comment
+TV:55.25N:K02JR/02:DN92UV:6:0:MERRIMAN,NE,US:comment
+TV:55.25N:K02HJ/02:EN11LO:32:0:ORD,NE,US:comment
+TV:55.25N:K02NT/02:DN81TU:40:0:SCOTTSBLUFF,NE,US:comment
+TV:55.25N:K02BD/02:EN12AP:830:0:VERDIGRE,NE,US:comment
+TV:55.25N:K02HU/02:DM76EE:3:0:ABIQUIU,NM,US:comment
+TV:55.25N:K02DE/02:DM63LH:3:0:ALMA,NM,US:comment
+TV:55.25N:K02JK/02:DM62LF:190:152:ANIMAS,NM,US:comment
+TV:55.25N:K02KG/02:DM62IW:83:81:CLIFF,GILA,NM,US:comment
+TV:55.25N:K02IP/02:DM62SW:6:0:HILLSBORO,NM,US:comment
+TV:55.25N:K02KP/02:DM62IH:42:43:LORDSBURG,NM,US:comment
+TV:55.25N:K02KR/02:DM73VD:33:230:MESCALERO,NM,US:comment
+TV:55.25N:K02KQ/02:DM73UE:44:115:MESCALERO APACHE IND,NM,US:comment
+TV:55.25N:K02FP/02:DM76UF:4:145:PENASCO,NM,US:comment
+TV:55.25N:K02GB/02:DM64GH:8:80:QUEMADO,NM,US:comment
+TV:55.25N:K02IG/02:DM61LV:30:0:RODEO,NM,US:comment
+TV:55.25N:K02ES/02:DM62CU:104:210:SILVER CITY,NM,US:comment
+TV:55.25N:K02EY/02:DM65IC:12:240:ZUNI,NM,US:comment
+TV:55.25N:K02KF/02:DM27PJ:32:101:ALAMO,NV,US:comment
+TV:55.25N:K02JM/02:DM26JW:44:144:BEATTY,NV,US:comment
+TV:55.25N:K02OK/02:DN20IO:9:130:BEOWAWE,NV,US:comment
+TV:55.25N:K02JO/02:DM37GO:4:230:CALIENTE,NV,US:comment
+TV:55.25N:K02FM/02:DM25RV:4:141:GOODSPRINGS,NV,US:comment
+TV:55.25N:K02IE/02:DM26XP:101:350:MERCURY,NV,US:comment
+TV:55.25N:K02FN/02:DM36AT:4:120:MESQUITE,NV,US:comment
+TV:55.25N:K02FJ/02:DM36GQ:44:157:OVERTON,NV,US:comment
+TV:55.25N:K02KS/02:DN21OA:13:261:RYNDON,NV,US:comment
+TV:55.25N:K02II/02:DM35LL:3:180:SEARCHLIGHT,NV,US:comment
+TV:55.25N:K02EG/02:DM37CX:58:96:URSINE,NV,US:comment
+TV:55.25N:K02MU/02:EM05RJ:48:90:ELK CITY,OK,US:comment
+TV:55.25N:K02DN/02:CN82AM:76:30:AGNESS,OR,US:comment
+TV:55.25N:K02EK/02:CN82MF:4:290:APPLEGATE VALLEY,OR,US:comment
+TV:55.25N:K02JF/02:CN92GN:46:175:BUTTE FALLS,OR,US:comment
+TV:55.25N:K02CG/02:CN82PV:5:310:CANYONVILLE,OR,US:comment
+TV:55.25N:K02DV/02:CN82UD:4:65:CAVE JUNCTION,OR,US:comment
+TV:55.25N:K02GL/02:CN93KR:8:0:DORENA,OR,US:comment
+TV:55.25N:K02HE/02:CN83SP:24:305:ELKTON,OR,US:comment
+TV:55.25N:K02AU/02:CN83MI:950:0:GLIDE,OR,US:comment
+TV:55.25N:K02FT/02:CN82MK:45:0:GOLD HILL,OR,US:comment
+TV:55.25N:K02IC/02:CN92LI:44:0:JACKSONVILLE,OR,US:comment
+TV:55.25N:K02JL/02:CN93RP:5:0:LA PINE,OR,US:comment
+TV:55.25N:K02GO/02:CN83CA:22:145:MYRTLE POINT,OR,US:comment
+TV:55.25N:K02CY/02:CN93FR:1:0:OAKRIDGE,OR,US:comment
+TV:55.25N:K02JG/02:CN92HR:90:75:PROSPECT,OR,US:comment
+TV:55.25N:K02NW/02:CN83BQ:40:0:REEDSPORT,OR,US:comment
+TV:55.25N:K02DB/02:CN83VP:73:0:SCOTTSBURG,OR,US:comment
+TV:55.25N:K02EI/02:CN93MB:13:0:SILVER LAKE,OR,US:comment
+TV:55.25N:K02IQ/02:CN82EJ:80:345:SQUAW VALLEY,OR,US:comment
+TV:55.25N:K02JJ/02:CN82PE:72:20:WILLIAMS,OR,US:comment
+TV:55.25N:K02GM/02:EM01QC:69:28:BRADY,TX,US:comment
+TV:55.25N:W02BA/02:EM93RW:9:155:BATESBURG,SC,US:comment
+TV:55.25N:K02GT/02:CN82QR:10:5:WINDY CREEK,OR,US:comment
+TV:55.25N:K02EQ/02:EM23TP:904:78:PARIS,TX,US:comment
+TV:55.25N:NEW-T/02:EL16JJ:58:110:RIO GRANDE CITY,TX,US:comment
+TV:55.25N:NEW-T/02:EL16JJ:58:290:RIO GRANDE CITY,TX,US:comment
+TV:55.25N:NEW-T/02:EL16LJ:61:110:RIO GRANDE CITY,TX,US:comment
+TV:55.25N:NEW-T/02:EL16JJ:58:290:RIO GRANDE CITY,TX,US:comment
+TV:55.25N:K02FA/02:DM48AE:2:0:ANTIMONY,UT,US:comment
+TV:55.25N:K02NU/02:DM37MQ:57:0:CEDAR CITY,UT,US:comment
+TV:55.25N:K02NU/02:DM37MP:58:0:CEDAR CITY,UT,US:comment
+TV:55.25N:K02OT/02:DM59JO:2:115:EAST PRICE,UT,US:comment
+TV:55.25N:K02FQ/02:DM47UW:7:147:ESCALANTE,UT,US:comment
+TV:55.25N:K02BU/02:DM58CX:900:75:GREEN RIVER,UT,US:comment
+TV:55.25N:K02BI/02:DM47GB:910:220:KANAB,UT,US:comment
+TV:55.25N:K02KN/02:DM37OL:25:0:KANARRAVILLE,UT,US:comment
+TV:55.25N:K02HP/02:DN50RW:87:290:MANILA,UT,US:comment
+TV:55.25N:K02BQ/02:DM48CM:920:0:MARYSVALE,UT,US:comment
+TV:55.25N:K02BY/02:DM38NI:6:133:MINERSVILLE,UT,US:comment
+TV:55.25N:K02CL/02:DM37VR:62:0:MODENA,UT,US:comment
+TV:55.25N:K02OI/02:DM57PG:17:295:MONTEZUMA CREEK-ANET,UT,US:comment
+TV:55.25N:K02EN/02:DM47HG:3:0:ORDERVILLE,UT,US:comment
+TV:55.25N:K02BN/02:DM47FT:850:0:PANGUITCH,UT,US:comment
+TV:55.25N:K02AV/02:DM37SB:56:0:ST.GEORGE,UT,US:comment
+TV:55.25N:K02BO/02:DM48SG:890:82:TEASDALE,TORREY,UT,US:comment
+TV:55.25N:K02ON/02:DM57IU:6:180:TICABOO,UT,US:comment
+TV:55.25N:K02IF/02:DM47AR:58:160:TROPIC,UT,US:comment
+TV:55.25N:K02AW/02:DM37OF:970:140:VIRGIN,UT,US:comment
+TV:55.25N:K02LE/02:CN96AR:52:0:ASHFORD,WA,US:comment
+TV:55.25N:K02FE/02:CN96BL:2:336:GLENOMA,WA,US:comment
+TV:55.25N:K02FZ/02:DN08DN:5:140:MAZAMA,WA,US:comment
+TV:55.25N:K02MO/02:DN08QX:7:0:OROVILLE,WA,US:comment
+TV:55.25N:K02LH/02:DN54TV:46:0:CLARKS FORK,WY,US:comment
+TV:55.25N:K02GE/02:DN52DH:13:130:LA BARGE,WY,US:comment
+TV:55.25N:K02LG/02:DN54SF:46:0:SOUTH FORK,WY,US:comment
+TV:55.25N:K02EO/02:CN97FN:19:152:SEATTLE,WA,US:comment
+TV:55.25N:CJFB/02:DN69WE:5:-1:VAL MARIE,SA,CA:comment
+TV:55.25N:K02KB/02:BP46HN:18:90:ALLAKAKET,AK,US:comment
+TV:55.25N:K02JI/02:CO37HM:10:150:ANGOON,AK,US:comment
+TV:55.25N:K02KY/02:BP01SN:43:90:ANIAK,AK,US:comment
+TV:55.25N:K02JY/02:BP02CP:18:270:ANVIK,AK,US:comment
+TV:55.25N:K02KK/02:BP63KJ:42:250:CANTWELL,AK,US:comment
+TV:55.25N:K02LO/02:AP80DD:43:40:CHEFORNAK,AK,US:comment
+TV:55.25N:K02KX/02:AP71TM:43:271:CHEVAK,AK,US:comment
+TV:55.25N:K02KX/02:AP71TM:45:240:CHEVAK,AK,US:comment
+TV:55.25N:K02LK/02:BO16EH:43:150:CHIGNIK,AK,US:comment
+TV:55.25N:K02MR/02:BO16JG:43:260:CHIGNIK LAKE,AK,US:comment
+TV:55.25N:K02KT/02:BP50UL:72:265:COOPER LANDING,AK,US:comment
+TV:55.25N:K02GU/02:BO19FB:334:0:DILLINGHAM,AK,US:comment
+TV:55.25N:K02HQ/02:BP76ON:33:250:FORT YUKON,AK,US:comment
+TV:55.25N:K02ML/02:CO45UI:428:136:GRAVINA ISLAND,AK,US:comment
+TV:55.25N:K02LW/02:CO28UK:43:300:GUSTAVUS,AK,US:comment
+TV:55.25N:K02IB/02:BO49UK:318:-1:HOMER,AK,US:comment
+TV:55.25N:K02KC/02:BP36DB:18:10:HUGHES,AK,US:comment
+TV:55.25N:K02JW/02:CO45JE:36:332:HYDABURG,AK,US:comment
+TV:55.25N:K02MJ/02:CO55AV:43:180:HYDER,AK,US:comment
+TV:55.25N:K02IT/02:CO36XX:19:215:KAKE,AK,US:comment
+TV:55.25N:K02KA/02:BP14IH:18:180:KALTAG,AK,US:comment
+TV:55.25N:K02LZ/02:AP90GV:43:100:KASIGLUK,AK,US:comment
+TV:55.25N:K02KZ/02:BP26KV:44:350:KOBUK,AK,US:comment
+TV:55.25N:K02MB/02:AP94NW:43:230:KOYUK,AK,US:comment
+TV:55.25N:K02MC/02:CO36TH:43:270:LABOUCHERE BAY,AK,US:comment
+TV:55.25N:K02MN/02:BO29KC:43:200:LEVELOCK,AK,US:comment
+TV:55.25N:K02KV/02:AP91BV:44:140:MARSHALL,AK,US:comment
+TV:55.25N:K02JE/02:BP22SW:18:315:MCGRATH,AK,US:comment
+TV:55.25N:K02MW/02:CO29AL:50:170:MOSQUITO LAKE,AK,US:comment
+TV:55.25N:K02MZ/02:AP90XQ:43:240:NAPASKIAK,AK,US:comment
+TV:55.25N:K02LN/02:AP80HW:43:170:NEWTOK,AK,US:comment
+TV:55.25N:K02LJ/02:BO39KX:42:200:NONDALTON,AK,US:comment
+TV:55.25N:K02LB/02:BP92WX:49:330:NORTHWAY,AK,US:comment
+TV:55.25N:K02KW/02:BP14BR:43:0:NULATO,AK,US:comment
+TV:55.25N:K02MA/02:BO47GW:43:210:OUZINKIE,AK,US:comment
+TV:55.25N:K02LI/02:BO17SN:42:355:PILOT POINT,AK,US:comment
+TV:55.25N:K02LV/02:AP82PA:43:300:PITKAS POINT,AK,US:comment
+TV:55.25N:K02LX/02:BO07GX:43:95:PORT MOLLER,AK,US:comment
+TV:55.25N:K02LA/02:BP11QS:43:140:RED DEVIL,AK,US:comment
+TV:55.25N:K02LA/02:BP11QS:46:140:RED DEVIL,AK,US:comment
+TV:55.25N:K02LS/02:AP71SU:43:230:SCAMMON BAY,AK,US:comment
+TV:55.25N:K02LS/02:AP71SU:45:230:SCAMMON BAY,AK,US:comment
+TV:55.25N:K02JU/02:BP06AO:18:210:SELAWIK,AK,US:comment
+TV:55.25N:K02LM/02:AP94OE:42:145:SHAKTOOLIK,AK,US:comment
+TV:55.25N:K02LP/02:AP93AL:42:80:ST.MICHAEL,AK,US:comment
+TV:55.25N:K02JZ/02:BP21HS:18:22:STONY RIVER,AK,US:comment
+TV:55.25N:K02KM/02:BP45AE:18:90:TANANA,AK,US:comment
+TV:55.25N:K02HO/02:AO73GV:2000:0:UNALASKA,AK,US:comment
+TV:55.25N:K02KE/02:BP77FA:18:100:VENETIE,AK,US:comment
+TV:55.25N:K02LT/02:AP65AN:43:330:WALES,AK,US:comment
+TV:55.25N:K02LT/02:AP65BO:45:165:WALES,AK,US:comment
+TV:55.25N:K02IM/02:BP60IS:19:240:WHITTIER,AK,US:comment
+TV:55.25N:K02ME/02:BO47GR:43:250:WOMENS BAY,AK,US:comment
+TV:55.25N:K02ID/02:CO09UN:33:315:YAKUTAT,AK,US:comment
+TV:55.25N:K02HR/02:DM35GF:115:170:BULLHEAD CITY,AZ,US:comment
+TV:55.25N:K02BW/02:DM42MF:822:11.4:CASAS ADOBES,AZ,US:comment
+TV:55.25N:K02PA/02:DM53CV:6:35:CEDAR CREEK,AZ,US:comment
+TV:55.25N:K02MT/02:DM34CC:39:5:PARKER,AZ,US:comment
+TV:55.25N:K02FV/02:DM52PV:32:0:YORK,AZ,US:comment
+TV:55.25N:K02JX/02:DM08PE:4:0:BRIDGEPORT,CA,US:comment
+TV:55.25N:K02CN/02:CN91DF:40:351:DUNSMUIR,CA,US:comment
+TV:55.25N:K02HC/02:CN91LL:32:0:ETNA-FORT JONES,CA,US:comment
+TV:55.25N:K02BZ/02:CN80OL:31:21:HAYFORK,CA,US:comment
+TV:55.25N:K02JP/02:DM05KR:2:45:HERITAGE RANCH,CA,US:comment
+TV:55.25N:K02FF/02:CN90EU:14:0:LAKEHEAD,CA,US:comment
+TV:55.25N:K02GV/02:CN90XT:41:0:MONTGOMERY CREEK,ETC,CA,US:comment
+TV:55.25N:K02HY/02:DM15TP:37:240:RIDGECREST,CA,US:comment
+TV:55.25N:K02OD/02:CN80AA:3:0:SHELTER COVE,CA,US:comment
+TV:55.25N:K02DC/02:CM96RF:44:306.5:SYCAMORE,CA,US:comment
+TV:55.25N:K02KH/02:CN90IX:35:25:TRINITY CENTER,CA,US:comment
+TV:55.25N:K02EE/02:CN90LR:15:0:WEAVERVILLE,CA,US:comment
+TV:55.25N:K02OO/02:CN80XH:6:13:WEOTT,CA,US:comment
+TV:55.25N:K02AC/02:DM87HJ:910:308:AGUILAR,CO,US:comment
+TV:55.25N:K02HM/02:DM67RB:7:0:ALLISON-ARBOLES,CO,US:comment
+TV:55.25N:K02GX/02:DM79AI:14:0:ALMA,CO,US:comment
+TV:55.25N:K02FW/02:DM79KD:10:195:ASHCROFT,CO,US:comment
+TV:55.25N:K02FX/02:DM79IW:3:165:BOND-MC COY,CO,US:comment
+TV:55.25N:K02EA/02:DM77KB:3:0:CHROMO,CO,US:comment
+TV:55.25N:K02OP/02:DM69XF:2:190:COLLBRAN,CO,US:comment
+TV:55.25N:K02CB/02:DN60TN:17:220:CRAIG,CO,US:comment
+TV:55.25N:K02CK/02:DM78OS:5:104:CRIPPLE CREEK,CO,US:comment
+TV:55.25N:K02KJ/02:DM77CQ:55:283:DEL NORTE,CO,US:comment
+TV:55.25N:K02GJ/02:DM68BR:31:-1:DELTA,CO,US:comment
+TV:55.25N:K02OG/02:DM67GL:40:14:DOLORES,CO,US:comment
+TV:55.25N:K02JD/02:DM69SO:11:0:EAST ELK CREEK,CO,US:comment
+TV:55.25N:K02CQ/02:DN70LO:11:20:ELK RIVER VALLEY,CO,US:comment
+TV:55.25N:K02IK/02:DM68PG:5:0:GATEVIEW,CO,US:comment
+TV:55.25N:K02HW/02:DM69XK:57:315:GRAND VALLEY,CO,US:comment
+TV:55.25N:K02LY/02:DM78KM:40:330:GUNNISON,CO,US:comment
+TV:55.25N:K02OU/02:DM67IG:2:90:ISMAY,CO,US:comment
+TV:55.25N:K02GH/02:DM78JR:4:0:JACKS CABIN,CO,US:comment
+TV:55.25N:K02BL/02:DM79FO:920:0:MINTURN,CO,US:comment
+TV:55.25N:K02DY/02:DN70LG:3:355:OAK CREEK,CO,US:comment
+TV:55.25N:K02IL/02:DM67MG:60:77:PAGOSA SPRINGS,CO,US:comment
+TV:55.25N:K02GC/02:DM68HG:143:0:PARADOX,CO,US:comment
+TV:55.25N:K02IO/02:DM69OF:85:200:REDSTONE,CO,US:comment
+TV:55.25N:K02GG/02:DM69UM:27:0:RIFLE,CO,US:comment
+TV:55.25N:K02KL/02:DM69EL:22:0:ROAN CREEK,CO,US:comment
+TV:55.25N:K02JH/02:DM78CR:9:0:SALIDA,CO,US:comment
+TV:55.25N:K02KI/02:DM77RE:5:0:SAN LUIS,CO,US:comment
+TV:55.25N:K02NV/02:DM78EJ:2:0:SARGENTS,CO,US:comment
+TV:55.25N:K02NV/02:DM78EJ:2:0:SARGENTS,CO,US:comment
+TV:55.25N:K02HI/02:DM79KF:16:320:SNOWMASS-AT-ASPEN,CO,US:comment
+TV:55.25N:K02IJ/02:DM68SW:9:0:SOMERSET,CO,US:comment
+TV:55.25N:K02EX/02:DM77HQ:24:312:SOUTH FORK,CO,US:comment
+TV:55.25N:K02KD/02:DN53LS:57:295:DRIGGS,ID,US:comment
+TV:55.25N:K02CE/02:DN35WI:120:0:NORTH FORK,ID,US:comment
+TV:55.25N:K02JS/02:DN24JX:4:308:OXBOW DAM,ID,US:comment
+TV:55.25N:K02HX/02:DM67NK:2:285:UPPER PIEDRA,CO,US:comment
+TV:55.25N:K02ET/02:DM67SI:38:0:VALLECITO,CO,US:comment
+TV:55.25N:K02HD/02:EM29HQ:7:-1:BLUE RAPIDS,KS,US:comment
+TV:55.25N:K02OS/02:DM67DH:2:90:WEBER CANYON,CO,US:comment
+TV:55.25N:W02AZ/02:FN57MB:3:275:ALLAGASH,ME,US:comment
+TV:55.25N:W02AU/02:FN67KE:2:292:ST.FRANCIS,ME,US:comment
+TV:55.25N:K02HG/02:EN37DT:41:300:NORTHOME,MN,US:comment
+TV:55.25N:W02BB/02:FN57NC:3:0:ALLAGASH,ME,US:comment
+%--------------------------------tv_nach2.dat

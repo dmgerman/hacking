@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="Evolution.java">
+        <attr name="class_dependency_ca.uvic.cs.gold.bdickie.db.DBOption" stringvalue="Evolution"/>
+    </fileobject>
+    <fileobject name="EvolutionConfigPanel.java">
+        <attr name="class_dependency_ca.uvic.cs.gold.bdickie.db.DBConfigPanel" stringvalue="EvolutionConfigPanel"/>
+    </fileobject>
+    <fileobject name="EvolutionConnection.java">
+        <attr name="class_dependency_ca.uvic.cs.gold.bdickie.db.JDBCConnection" stringvalue="EvolutionConnection"/>
+    </fileobject>
+</attributes>

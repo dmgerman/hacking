@@ -1,0 +1,31 @@
+* Welcome to org-annotation-helper
+
+This package will allow you to invoke remember within emacs with an
+org link to the current URL, including its title, and the currently
+highlighted text.
+
+It works by creating a javascript "boorkmarklet" that gets added to
+the bookmarks bar of your Web browser (such as Firefox). The
+bookmarket converts your current URL, its title and hightlighted text
+into another URI that starts with remember:// (invoke remember) or
+annotation:// (create an org-link to the current document).
+
+These two new protocols (remember:// and annotation://) are "handled"
+by an external application, in this case a small shell script called
+org-annotation-helper. org-annotation-helper invokes emacsclient to
+communicate with your running emacs.
+
+It might sound cumbersome, but once the installation is completed all
+pieces work seamlessly. You click on the bookmarklet and you emacs
+reacts to your request either by creating a remember buffer, or by
+storing the current URL as an org-link.
+
+
+* Installation instructions
+
+They are self contained in the org-annotation-helper.el file. See its
+header. See org-annotation-helper-faq.html for additional information.
+
+
+
+

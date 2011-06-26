@@ -1,0 +1,50 @@
+%--------------------------------------
+% File grid2.dat
+% grid2.dat formatted data file for az_proj v1.02
+% (C) Joseph Mack (C) 1996
+%
+% You need AZ_PROJv1.02, or later, to run a "grid2" file
+%
+% contains grids worked (4 character notation) by freq and propagation mode.
+% grid squares go from AA00 to RR99.
+% the "grid2" format of AZ_PROJv1.02 is designed to supercede the "grid" format of v1.0
+%
+% The band to be displayed is selected in
+% the array "/bands_plotted" in az_ini.ps
+% the grid worked will be colored/marked according to the propagation mode used.
+% the propagation modes are primarily of interest to VHF'ers
+% The equivelent type of file for HF'ers would be the dxcc.dat file
+% where contacts with dxcc countries are plotted by band and mode (CW, ssb...)
+%
+% a typical grid2.dat line is
+% grid2:50:F2:FM19:comment field
+% where -
+% grid2: symbol to show that following data is a worked grid
+% 50: band the grid was worked on
+% F2: propagation mode, F2, Es, EME, Au, Ms, TEP, or unknown ()
+% FM19 grid worked
+% comment field of anything at all (ignored for plotting)
+%
+% Ms and Au occupy the same space and an Es contact will overwrite an Au contact.
+% The reverse is not true. The Au symbol does not overwrite the Es color patch.
+% For any grid, list the Au contact after the Es contact.
+% White space is not allowed in the active fields.
+%
+% This file can be used with a command like
+% gs -q az_ini.ps vhf_conf.ps -- az_proj.ps n_amer.wdb grid2.dat
+%
+grid2:50:Au:FN22:comment field NA3T
+grid2:50::FN42:comment
+grid2:50:F2:FN21:comment field
+grid2:50:Es:FN00:comment field
+grid2:50:Au:FN00:comment field
+grid2:50:EME:FN00:comment field
+grid2:50:F2:FN00:comment field
+grid2:50:Ms:FN00:comment field
+grid2:50:Au:FM09:comment field
+grid2:50:Ms:FN32:comment field
+grid2:50:EME:FN31:comment field
+grid2:432:EME:FM19:NA3T, NV3Z, 10/94
+grid2:50:TEP:FN30:comment field
+grid2:50:TEP:FM17:comment field
+%--------------------------------------grid2.dat

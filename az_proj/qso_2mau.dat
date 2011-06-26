@@ -1,0 +1,71 @@
+%--------------------------------------
+% File qso-2mau.dat
+% Format (C) 1996 Joseph Mack
+% requires AZ_PROJ v1.04
+%
+% draws great circle line between two stations,
+% neither of which is at the center of the map.
+% useful for plotting contacts after a big opening
+% when qso data from many pairs of stations can be plotted.
+% Eg following an Es, Au, or high pressure tropo opening.
+%
+%
+%QSO format
+% qso-modifier:144:NA3T:IO51:NV3Z:JN54:comment field ignored by AZ_PROJ
+% or
+% qso:50::FM19::CM20:
+% where
+% qso: data type for line, modifier which draws the grid square of the qth (see below)
+% 144: band in /bands_plotted format (int, real, see az_ini.ps)
+% NA3T: callsign of first station (optional, null otherwise)
+% IO51: 4 char grid locator of first station (_not_ 6char)
+% NV3Z: callsign of second station (optional, null otherwise)
+% FN00: 4 char grid locator of second station (_not_ 6char)
+% comment field (anything you like).
+%
+% Grid Square emphasis:
+% The original code for the "qso:" data type drew the great circle
+% path between the centers of the grid squares at each end of the path.
+% With v1.04 it is also possible to fill/hatch the grid square at
+% one or both ends of the path for additional emphasis.
+% You might want to fill the grid square if one station 
+% contacts many stations.
+% You also might just like grid squares drawn at each 
+% end just because you like it.
+%
+% To turn on the drawing of grid squares -
+% If the first letter of the grid locator is upper case (eg IO51),
+% then the grid square will be drawn, using the data_modifier to
+% fill/shade/hatch the grid square.
+% If the first letter of the grid locate is lower case (eg iO51 or io51)
+% then the grid square will _not_ be drawn and the qso path with just be
+% a line, of color qso_color (set in az_ini.ps).
+%
+% Note you may have to be careful in the order you plot your
+% qso paths. Solid filled (colored) grid squares will draw
+% over previously drawn parts of the map.
+%
+%
+% This file plots the 2m Aurora contacts on 2m 13-14Mar 1989,
+% from Fig7.21 Radio Auroras, Charlie Newton, G2FKZ, RSGB Pub.1991
+% Use with scale=200km/cm, centered at Stockholm. 59N, 18E
+%
+qso-left:144:NA3T:iO51:NV3Z:JN54:comment field
+qso-left:144::iO63::JN54:comment field
+qso-left:144::iO84::JN54:comment field
+qso-left:144::iO92::JN54:comment field
+qso-red:144::IO81::kN04:comment field
+qso-red:144::IO81::kN15:comment field
+qso-red:144::IO81::kO51:comment field
+qso-green:144::JO55::KN89:comment field
+qso-green:144::JO55::KN67:comment field
+qso-red:144::jO47::KN77:comment field
+qso-red:144::JO45::KN77:comment field
+qso-red:144::JO45::kN79:comment field
+qso-right:144::JO44::kO78:comment field
+qso-right:144::JO44::kN76:comment field
+qso-green:144::IO64::JN58:comment field
+qso-blue:144::IO90::KN46:comment field
+qso-lon:144::IO91::KN18:comment field
+%--------------------------------------
+%--------------------------------------qso-2mau.dat

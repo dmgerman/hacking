@@ -1,0 +1,345 @@
+%bea_6m.dat----------------------------------
+%This is the World 6m beacon list from "M. Harrison"  <poa01@cc.keele.ac.uk>
+%modified by Joe NA3T for az_proj, Jun 95
+%modified for v1.04, Oct 96
+%
+%
+%
+% This file is readable by AZ_PROJ v1.04 (or greater)
+%
+% Each line in this file represents a transmitter.
+% The file format was devised for AZ_PROJ, a program which draws maps
+% for amateur radio operators. A line of this file will be plotted
+% by AZ_PROJ as a symbol on a map.
+%
+% It is hoped that this machine readable transmitter file
+% format is a generally useful format for beacons, repeaters, rovers,
+% TV stations, FM stations, AM broadcast stations, airport radars ...),
+% for people who maintain and use databases for transmitters.
+%
+% The line format for transmitters and it's specifications
+% are hereby released into the public domain.
+% Suggestions for changes in the format are welcome.
+%
+% Joseph Mack NA3T Nov 96, mack@ncifcrf.gov
+%
+%	To add a transmitter to the file, supply data in the form
+%		transmitter_type:frequency:string_1(suggested use, callsign):6 character grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment ignored by reading program (eg AZ_PROJ)
+%	eg 2m beacon
+%		beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+%	eg. rover operating a weekend 10GHz contest from Mt Ascutney
+%		rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+% 	eg TV station North America channel 2, used as a 6m propagation marker
+%		TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+%
+%	transmitter_type is
+%		beacon
+%		repeater
+%		rover
+%		TV
+%		BC			%usually 550-1630 kHz AM
+%		AM			%usually 550-1630 kHz AM
+%		FM             %North America is 88-108MHz
+%
+%		beacon and repeater is plotted as a nested set of circles
+%		(or if directional, a fan 70 deg wide).
+%		The number of circles indicate the power level.
+%		Rover is plotted as a VW beetle.
+%		Power and beam_heading info info are ignored.
+%		High power commercial stations used as propagation markers or
+%		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+%		by AZ_PROJ (at least yet). They can be plotted as either
+%		a non-directional tower (one section for each factor of 10
+%		increase in power) or by nested circles (see az_ini.ps).
+%
+%	frequency is
+%		int or a real. The units are not specified here and
+%		instead are known by the program using the file.
+%		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+%
+%		In AZ_PROJ the frequency entry is matched with entries in the
+%		array /bands_plotted. If a match is found the entry is plotted
+%		on the map, otherwise the entry is skipped. If the entry is a real
+%		eg 55.25, then the int resulting from truncation (in this case 55)
+%		is matched against the entries in /bands_plotted. If a real
+%		the last digit in the frequency can instead be an arbitrary char
+%		which is plotted on the map (eg 55.250H for horizontal polarisation).
+%		Some chars have special meaning eg +,-,N,Z for TV stations
+%		(see file TVxxx.dat for further details), or +/- for repeaters
+%		(see file repxxx.dat for further details).
+%
+%	power
+%		if -1, then power unknown. Will be plotted as minimal power
+%		(set in az_proj.ps).
+%
+%	beam_heading is
+%		1. -1 if omnidirectional
+%		2. int (0..360) if one main lobe is radiated
+%		or
+%		3. comma separated list of int eg 60,180,300 if multilobed radiator
+%		or 45,225 if dipole facing NE/SW
+%
+%		It is also possible to draw a multilobed radiator by putting
+%		several lines identical except for the beam_heading.
+%
+%
+% File Names:
+%		AZ_PROJ uses 8.3 DOS file names for transmitter files.
+%		The extension is .dat
+%		Where possible, the file name is
+% 		transmitter_type - country/location - subclass
+%		eg tv_nach2.dat for TV stations in North America on channel 2
+%		eg bea_na.dat for all VHF beacons in North America
+%
+%
+% New Transmitter Types:
+%		It is relatively easily to add code for new transmitter types
+%		to AZ_PROJ. If a map was needed of Automatic Packet Reporting
+%		System (APRS) nodes in a meteor scatter event or of packet stations,
+%		in a traffic network, then I would only need a list of APRS
+%		nodes and a few suggestions for a symbol.
+%
+%----------------------------------
+%
+%Special notes for beacons:
+%	Modulation type (A1, A3, F1) where known is appended to the callsign
+%
+% Ham beacons, are relatively low power, ie 1mW < P < 100W
+% AZ_PROJ draws one circle for each bm (bell miliwatt),
+%0 circle for 1mw
+%4 circles for 10W (also for 99W)
+%4 circles for 99W (also for 99W)
+%5 circles for 100W
+%
+% For TV stations which are high power, ie 1000W < P <100,000W (generally)
+% one circle for each bW (bell W)
+%0 circle for 1W
+%3 circles for 1000W
+%3 circles for 9999W
+%4 circles for 10000W
+%
+% If a ham beacon and a TV station are plotted on the same map
+% then a 10W ham beacon, will have the same size as a 10KW TV station
+% To differentiate the two symbols, a thicker black complete circle is drawn
+% at the 1W level for both symbols. For a beacon, the 1W circle is the 3rd circle
+% For a TV station the 1W circle is the inner most circle.
+% This isn't a great solution. Other suggestions are welcome.
+%
+%--------------------------------------
+%
+% Notes about this beacon list - Joe
+%
+% The format for the 6m beacon data has been changed to a machine readable
+% form of the format used by Emil W3EP.
+% Unused information in the original file, that is not used
+% here has been moved to the right hand side of the line
+% (where it is ignored by az_proj.ps).
+% Beacons without grid square locators, or which aren't obviously
+% operational are commented out.
+%
+%--------------------------------------
+%
+%Notes from M Harrison:
+%There follows my revised 50MHz beacon list, incorporating information
+%from everyone who was kind enough to send in information in response to
+%my request, especially Bob W3OTC, who put the results of his recent
+%'census' of W/VE beacons at my disposal. In compiling the list I have
+%done my best to eliminate dead wood, but there are still a great many
+%more queries than I would wish as I did not want to delete anything
+%unless I was convinced the beacon was dead. Some NON-OP beacons have
+%been left in because information suggested that they might return.
+%
+%I will try to keep this list up to date, so any additions, corrections o
+%or deletions will always be appreciated.
+%Last revision 16 August 1994
+%
+%                               50MHz Beacons
+%
+beacon:50.000:GB3BUX/F1:IO93BF:20:-1:0	24	Buxton		Turnstile		/F1		360
+beacon:50.003:7Q7SIX:KH75:-1:-1:0		24
+beacon:50.008:DX1HB:PK04:20:-1:0		24	Manila		J Pole					360
+beacon:50.010:SV9SIX/F1:KM25NH:30:-1:0	24	Iraklio		Vert. Dip.	/F1		360
+beacon:50.011:VP2EA:FK88:-1:-1:0		24
+beacon:50.011:JA2IGY:PM84JK:10:-1:0	24   Mie			1/4 GP				360
+beacon:50.013:S55ZRS/A1:JN76MC:10:-1:0	24   Mt Kum		5-el Yagi		/A1
+beacon:50.013:JD1ADP:QL17:1:-1:0		24   Chichi-jima	Dipole
+beacon:50.013:CU3URA:HM68:5:-1:0		24   Terceira							360
+beacon:50.014:9M6SMC:OJ85AX:-1:-1:0	24   Sabah
+beacon:50.015:SZ2DH/A1:KM27:5:-1:0		24   Athens		5-el Yagi		/A1
+beacon:50.017:JA6YBR:PM51RT:50:-1:0	24   Miyazaki		Turnstile				360
+beacon:50.018:V51VHF:JG87:50:-1:0		24   Kyushu		1/2 GP				360
+beacon:50.019:P29BPL:QI30:30:-1:0		24? Port Moresby	Dipole
+beacon:50.020:GB3SIX/F1:IO73TJ:25:315:0	Temp Non-Op Anglesey 5-el Yagi	/F1		315
+beacon:50.021:FR5SIX:LG78:2:-1:0		24				halo
+beacon:50.021:OZ7IGY/A1:JO55VO:20:-1:0	24	Toelloese		Turnstile		/A1		360
+beacon:50.022:ZS6PW/A1:KG44DG:30:337:0	07-2100z	Pretoria	5-el Yagi		/A1		337
+beacon:50.022:4N0SIX:KN04FU:1:-1:0		24	Nr Belgrade							360
+beacon:50.023:LX0SIX:JN39BF:5:0,180:0		24	Bourscheid	Horiz Dip				N/S
+beacon:50.025:9H1SIX/A1:JM75FV:7:-1:0	24	Attard, Malta	5/8 GP		/A1		360
+beacon:50.025:YV4AB:FK50:15:-1:0		24	Valensia		Ringo
+beacon:50.025:ZP5AA:GG14:5:-1:0		24	Asuncion		GP					360
+beacon:50.025:OH1SIX:KP11QU:50:-1:0	24	Ikaalmen		X-Dipoles				360
+beacon:50.025:6Y5RC:FK17MX:40:-1:0		OP?	Kingston		3-el Yagi
+beacon:50.026:JA7ZMA:QM07:50:180:0		24	Fukushima		6-el Yagi				180
+beacon:50.028:XE2UZL/A1:DM10:-1:-1:0	24							/A1
+beacon:50.028:SR6SIX/F1:JO81HH:-1:-1:0	24				GP			/F1		360
+beacon:50.030:CT0WW/F1:IN61GE:40:45,225:0	24	Joao da Pesq.	Dipole	/F1		45/225o
+beacon:50.032:ZD8VHF:II22TB:50:-1:0	24	Ascension I.	Dipole
+beacon:50.033:LU8YYO:FF50:5:-1:0		24	Cordoba		1/2 Vert
+beacon:50.035:ZB2VHF/F1:IM76HE:35:-1:0	Summer Gibraltar	5-el Yagi		/F1		varies
+beacon:50.037:ES0SIX/A1:KO18PG:15:90:0	24	Nr Haapsalu	Horiz Dip.	/A1		E/W
+beacon:50.037:ES0SIX/A1:KO18PG:15:270:0	24	Nr Haapsalu	Horiz Dip.	/A1		E/W
+beacon:50.039:FY7THF/F1:GJ35:100:-1:0	24	Kourou		GP			/F1		360
+beacon:50.040:VO1ZA/F1:GN37:10:-1:0	24	St Johns		1/4 Vert		/F1		360
+beacon:50.040:CX8BE:G/F15:-1:-1:0		NON-OP?	Montevideo 8	4-el
+beacon:50.040:SV1SIX/A1:KM17UX:25:-1:0	24	Nr Athens		Turnstile		/A1		360
+beacon:50.042:GB3MCB/F1:IO70OJ:40:90,270:0	24	St Austell	Dipole		/F1		E/W
+beacon:50.043:ZL3MHF:RE66:20:-1:0		24	Christchurch	Vertical
+beacon:50.045:OX3VHF/F1:GP60QR:15:-1:0	24	Julianehaab	GP			/F1		360
+beacon:50.046:VK8RAS:PG66:15:-1:0		24	Alice Springs	X-Dipoles				360
+beacon:50.047:4N1SIX/F1:KN04OO:-1:-1:0	24	Nr Belgrade				/F1
+beacon:50.048:JA7YYL:QM08OW:10:-1:0	24				GP					360
+beacon:50.050:GB3NHQ/F1:IO91VQ:15:-1:0	24	Potters Bar	X-Dipoles		/F1		360
+beacon:50.050:FO5DR:BH52:50:-1:0		OP?	Mahina		Dipole
+beacon:50.050:ZS6DN/A3:KG44DE:100:135:0	24 EXP Nr Pretoria	4-el Yagi		A3		SE low
+beacon:50.051:LA7SIX:JP99LO:30:190:0	24	Tromso		4-el Yagi				190o
+beacon:50.052:PA3FYM:JO22NC:9:0,180:0	workday	Grouw	Horiz Dip.			N/S
+beacon:50.052:Z21SIX:KH52MK:3:-1:0		18/24hrs			4-el Yagi
+beacon:50.054:VK3SIX:QF02:25:315:0		24?				4-el Yagi				315
+beacon:50.054:OZ6VHF/A1:JO57EI:50:-1:0	24	Oestervraa	Turnstile		/A1		360
+beacon:50.055:ZS6DN/A3:KG44DE:100:135:0	24 EXP Nr Pretoria	4-el Yagi		/A3		SE hi
+beacon:50.057:VK8VF:PH57:20:-1:0		24	Darwin		1/4 Vert.				360
+beacon:50.057:TF3SIX/F1:HP94CC:50:-1:0	24				5/8 Vert.		/F1		360
+beacon:50.059:VE3UBL/A1:FN03KW:10:-1:0	24	Brougham		Turnstile		/A1		360
+beacon:50.060:GB3RMK/F1:IO77UU:40:0,180:0	24	Nr Inverness	Dipole		/F1		N/S
+beacon:50.060:W5VAS/A1:EM40XA:25:-1:0	24	Slidell LA	Squalo	/A1
+beacon:50.060:K4TQR/A1:EM63OM:4:135,315:0	24	Birmingham AL	Dipole	/A1		NW/SE
+beacon:50.060:K1NFE/F1:FN31:15:-1:0	24	Burlington CT	Turnstile		/F1		360
+beacon:50.061:KH6HME:BK29:20:-1:0		24	Pahoa HI		Quad
+beacon:50.061:WB0RMO/A1:EN10:25:-1:0	24	Fairbury IH	Squalo		/A1
+beacon:50.062:WA8R:EM79:11:-1:0		24	Lawrenceberg IN loop
+beacon:50.062:PY2AA:GG66:25:-1:0		24	Sao Paulo		GP					360
+%beacon:50.062:GB3NGI/F1:IO65PA:20:140:0	24	Garvagh		Dipole		/F1		140/320
+%beacon:50.062:GB3NGI/F1:IO65PA:20:320:0	24	Garvagh		Dipole		/F1		140/320
+beacon:50.062:GB3NGI/F1:IO65PA:20:140,320:0	24	Garvagh		Dipole		/F1		140/320
+beacon:50.063:KB6BKN/A1:CM88:3:90:0	INT	Novato CA		3-el			/A1		E
+beacon:50.064:KH6HI:BL01:80:-1:0		24	Honolulu		Turnstile				360
+beacon:50.064:GB3LER/F1:IP90JD:30:0,180:0	24	Lerwick		Horiz.Dip.	/F1		N/S
+beacon:50.065:GB3IOJ/F1:IN89WE:10:-1:0	24	Jersey		Vertical		/F1		360
+beacon:50.065:W3VD/A1:FM19NE:7:-1:0	24	Mt Airy MD	Squalo		/A1
+beacon:50.066:WA1OJB/A1:FN54:10:75:0	24?	Bowdoinham ME	2-el Vert		/A1	on EU
+beacon:50.065:W0IJR:DM79:20:-1:0		SHARED Aurora CO	2-ring halo
+%beacon:50.065:KA0CDN:DM79:-1:-1:0		SHARED Aurora CO
+beacon:50.066:VK6RPH:QF78:10:-1:0		24	Perth								360
+beacon:50.067:OH9SIX/A1:KP36OI:35:-1:0	24	Pirttikoski	2xTurnstile	/A1		360
+beacon:50.067:W4RFR/A1:EM66WA:2:-1:0	24	Fairview TN				/A1
+beacon:50.067:WZ8D/A1:EM79UG:10:-1:1	IRREG Nr Dayton OH	6-el		/A1
+beacon:50.067:N7DB/A1:CN85RM:5:-1:0	INT	Boring OR		halo			/A1		360
+beacon:50.067:KD4LP/A1:EM86TL:75:-1:0	24	Holston Mtn TN	GP		/A1		360
+beacon:50.069:K6FV/A1:CM87UL:100:-1:0	24	Woodside CA	varies	/A1
+beacon:50.068:W7US/A1:DM42PJ:50:90:0	24	Mt Lemmon AZ	3-el		/A1		E
+beacon:50.070:K0HTF/A1:EN31DX:2:-1:0	INT	Des Moines IA	Inv. Vee		/A1
+beacon:50.070:EA3VHF/A1:JN01:0.25:315:0	24	Lerida		5-el Yagi		/A1		315
+beacon:50.071:WB5LUA/A1:EM12SJ:1.5:-1:0	24	McKinney TX	Halo			/A1		360
+beacon:50.071:W0VD:EM27VD:10:-1:0		24?	Joplin MO		1/4 vert.		/A1		360
+beacon:50.071:LU1DMA:GF05KJ:25:-1:0	24	Buenos Aires
+beacon:50.072:KS2ST:FM29VX:10:-1:0		24	Beechwood NJ	1/4 vert.		/A1		360
+beacon:50.072:KW2T:FN13JB:0.5:-1:0		24	Palmyra NY	Squalo		/F1
+beacon:50.073:WB4WTC/A1:FM06BQ:10:-1:0	24	Martinsville VA 2 Loops		/A1
+beacon:50.073:N5EAB:EM10:-1:-1:0		24?	TX
+beacon:50.073:VE9MS/A1:FN65:5:-1:0		24	Fredericton NB	Quad Loop		/A1
+beacon:50.074:ES6SIX/A1:KM37MT:-1:-1:0	24							/A1
+beacon:50.074:VS6SIX:OL72:10:-1:0		24	Mt Matilda	GP					360
+beacon:50.074:NN7K/A1:DM09CN:1:-1:0	TEMP INT	Sparks NV	Vert. Dip.	/A1		360
+beacon:50.075:KP4EKG:FK68:10:-1:0		OP?				6-el
+beacon:50.075:K7IHZ:DM43BM:20:-1:0		TEMP NON-OP Mesaq AZ Squalo
+beacon:50.075:NL7XM:FN20:10:-1:0		OP?	Staten I NY	Vertical				360
+beacon:50.075:EA8SIX:IL28:-1:-1:0		24
+beacon:50.076:KL7GLK:FM18:4:-1:1		24	Ridge MD		Turnstile				360
+beacon:50.076:W6SKC/A1:DM41ML:10:-1:0	24	Nogales AZ	Halo		/A1
+beacon:50.077:N0LL/A1:EM09OW:21:-1:0	24	Smith Center KS 2 haloes	/A1		360
+beacon:50.077:WB2CUS/A1:EL98:1:-1:0	24	Orlando FL	Sq. loop		/A1
+beacon:50.078:OD5SIX:KM74:8:-1:0		24				1/4 vert.				360
+beacon:50.079:TI2NA:EJ79:20:-1:0		24	San Jose		Dipole
+beacon:50.079:JX7DFA:IQ60:10:-1:0		IRREG Jan Mayen	loop
+beacon:50.080:SK6SIX/A1:JO57TQ:10:-1:0	24	Hoenoe		Vert. Dip.	/A1		360
+beacon:50.080:WB4OOJ:EL87SU:10:-1:0	NON-OP Tampa FL	Vertical				360
+beacon:50.082:HC8SIX:EI59:4:-1:0		24	Galapagos Is	5/8 Vert.				360
+beacon:50.087:YU1SIX:KN03KN:15:-1:0	24				Dipole
+beacon:50.089:VE2TWO/A1:FO13:18:-1:0	24	Radisson		H.Fold Dip.	/A1
+beacon:50.092:HC2FG:FI07:10:-1:0		24	Guayaquil		Vertical				360
+beacon:50.101:V51E/A1:JG89:-1:-1:0		keyer Outjo					/A1
+beacon:50.417:FC1FNH:IN96LD:10:-1:0	keyer										360
+beacon:50.480:JH8ZND:QN02:10:-1:0		24?				Discone				360
+beacon:50.490:JG1ZGW/A1:PM95VP:10:-1:0	24	Tokyo		Dipole		/A1
+beacon:50.499:5B4CY/F1:KM64PT:20:-1:0	24	Zyyi			GP		/F1		360
+beacon:51.022:ZL1UHF:RF73:25:-1:0		24	West Auckland	Vertical				360
+beacon:51.030:ZL2MHB/A1:RF80:10:-1:0	24	Hastings		1/2 Vert.		/A1/rtty 	360
+beacon:52.320:VK6RTT:QG89:25:-1:0		24	Wickham		J-Pole				360
+beacon:52.347:VK4ABP:QG26:10:-1:0		24	Longreach		1/4 Vert.				360
+beacon:52.420:VK2RSY:QF56:25:-1:0		24	Sydney		Turnstile				360
+beacon:52.425:VK2RGB:QF59:5:-1:0		24	Gunnedah							360
+beacon:52.441:VK4RTL:QH30:10:-1:0		24	Townsville	1/4 GP				360
+beacon:52.445:VK4RIK:QH23:10:-1:0		24				Dipole
+beacon:52.450:VK5VF:PF95:10:-1:0		24	Mt Lofty		Turnstile				360
+beacon:52.510:ZL2MHF:RE78:4:-1:0		24	Mt Climie		Dipole
+% 50.002	PJ2SIX	FK52KG	22		0				U/C1995?
+% 50.004	VE8KM	DP79				0		?
+% 50.005	ZS2SIX	KF25XD	25	N/S	0		NON-OP?	Port Elizabeth	Dipole		/F1	N/S
+% 50.008	XE2HWB	DL44				0		NON-OP?
+% 50.009	HI0VHF					0		NON-OP?
+% 50.015	PJ4B	FK52TF	10	-1	0		NON-OP?	Bonaire		5/8 Vert.			360
+% 50.019	CX1CCC	G/F15		5	-1	0		NON-OP?					GP					360
+% 50.023	HH2PR					0		NON-OP?
+% 50.030	XE3VV	EL50EX	5	-1	0		OP?						GP					360
+% 50.042	YB0ZZ					0		U/C
+% 50.044	JR6YAG	PL36	20	-1	0		OP?		Okinawa		5/8 GP				360
+% 50.045	YV5ZZ	FK60				0		NON-OP?	Caracas
+% 50.047	JD1BFI			3		0		2100-1000z	Ogasanasa		Delta
+% 50.050	VE7SIX	DN09	130		0		NON-OP		Kaleden		Quad
+% 50.056	EH3CUU	JN12FE		-1	0		OP?									/A1
+% 50.057	VK7RNW	QE38	20	-1	0		OP?						X-Dipoles
+% 50.058	VK4RGG				-1	0		OP?		Nerang
+% 50.060	WA8ONQ	EM79		2	-1	0		NON-OP?	Cincinnati OH	Turnstile			360
+% 50.060	PY1AA				-1	0		OP?
+% 50.065	WD7Z	DM75	75	-1	0		NON-OP		Yucca NM		Squalo
+% 50.065	NB3O/1	FN41	100	-1	0		NON-OP		RI			4-el Yagi
+% 50.067	WB8IGY	EM79		2	-1	0		NON-OP?	Loveland OH		5/8					360
+% 50.069	W0BJ	DN91		5	-1	0		NON-OP		North Platte NE	Turnstile		/A1	360
+% 50.069	W4HHK	EM55HA	1	-1	0		NON-OP		TN			Slope Dip.
+% 50.070	WB4GJG	FM06		1	-1	0		NON-OP?	Danville VA		Dipole
+% 50.070	W2CAP/1				0
+% 50.070	KM4ME	EM64VV	10	-1	0		NON-OP?	Harvest TN		GP					360
+% 50.070	WB0CGH	EM13	1.5	-1	0		NON-OP?	Corinth TX		Halo
+% 50.070	WA7ECY	CN85SM	10	-1	0		NON-OP		Troutdale OR	Squalo
+% 50.070	KB4UPI	EM63		1	-1	0		NON-OP		Birmingham AL	Dipole
+% 50.070	N4LTA	EM94AX	10	-1	0		NON-OP?	Spartanburg SC	1/2 halo
+% 50.072	VE1CCP	FN76		-1	0		OP?
+% 50.074	WB5DSH	EM15FL	30	-1	0		NON-OP?	Oklahoma C OK	Halo
+% 50.075	JY2SIX				-1	0		24		Aman
+% 50.075	PY2AMI	GG67	10	-1	0		OP?		Sao Paulo		GP
+% 50.077	VK4BRG	QG48		1	-1	0		NON-OP?					Turnstile			360
+% 50.077	VE3DRL	FN03		-1	0		OP?		Toronto
+% 50.078	W8UR	EN75		2	-1	0		OP?		Mackinaw C MI
+% 50.078	PT7BCN	HI06RF	5	-1	0		OP?		Fortaleza		GP					360
+% 50.083	LU1DMA	GF05	25	-1	0		OP?		Antonio
+% 50.084	3D2FJ			20	-1	0		24						2-el Yagi NNE
+% 50.086	VE2STL	FN46	1.5	-1	0		OP?		Val Belair PQ	Vert. Dip			360
+% 50.086	VP2MO	FK86	10	-1	0		OP?						6-el Yagi
+% 50.086	LU1MA	FF57		8	-1	0		OP?		Mendoza		1/4 Vert.			360
+% 50.088	VE1SIX	FN65	50	75	0		OP?		Brunswick		4-el	on			EU
+% 50.090	TR8CA	JJ40		-1	0		OP?
+% 50.094	TU2VHF	EJ76		-1	0		OP?
+% 50.096	HD1QRC	EI79		-1	0		OP?
+% 50.098	LU2FMO	FF97		4	-1	0		OP?		Rosario		3-el Yagi
+% 50.100	VP5D	FL31	10	-1	0		OP?						GP					360
+% 50.100	FT5ZB	MF82	10	-1	0		OP?		Amsterdam I
+% 50.200	VK0AQ	OC53MM	50	0	0		OP?		Casey Base		3-el Yagi to VK5/F1	North
+% 50.315	FX4SIX	JN06CQ	25	-1	0		OP?		Neuville		Turnstile		/A1	360
+% 50.904	ZS1STB	KF05	20	-1	0		NON-OP		Still Bay		4-el Yagi N	/F1
+% 50.950	ZS6SIX	KG33XX	10	-1	0		OP?						3-el Yagi
+% 52.326	VK2RHV	QF57	10	-1	0		OP?		Newcastle		Vert Dip.			360
+% 52.330	VK3RGL	QF22	20	-1	0		OP?		Geelong		X-Dipoles			360
+% 52.370	VK7RST	QE37	16	-1	0		OP?		Hobart			Dipole
+% 52.470	VK7RNT	QE38	10	-1	0		OP?		Launceston							360
+%----------------------------------bea_6m.dat

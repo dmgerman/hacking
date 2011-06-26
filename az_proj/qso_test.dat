@@ -1,0 +1,147 @@
+%--------------------------------------
+% File qso_test.dat, draws qso paths between points in different octants.
+% Format (C) 1996 Joseph Mack, requires AZ_PROJ v1.02
+%
+% qso: format
+% draws great circle line between two stations,
+% neither of which is at the center of the map.
+% useful for plotting contacts after a big opening
+% when qso data from many pairs of stations can be plotted.
+% Eg following an Es, Au, or high pressure opening.
+%
+% typical entry
+% qso:50:w3abc:EM85:n2xy:FN00:comment field (ignored by AZ_PROJ)(can be null)
+% or
+% qso:50::FM19::CM20:
+% where
+% qso: data type for line
+% 50: band in /bands_plotted format (az_ini.ps)
+% w3abc: callsign of first station (optional, null otherwise)
+% EM85: 4 char grid locator of first station
+% n2xy: callsign of send station (optional, null otherwise)
+% FN00: 4 char grid locator of second station
+% comment field (anything you like)
+%
+% try this file at scale=2000km/cm from your favorite location
+% it exercises paths to and from (hopefully) all quadrants.
+%
+% the qso_path routines in AZ_PROJ will skip any line here
+% which consists of two points exactly opposite each other on the earths surface.
+% there is no unique path for this qso.
+%
+qso:144::AD00::AM00:test line to check if bands_plotted is working
+qso:50::AD00::AM00:comment field
+qso:50::AD00::AM00:comment field
+qso:50::AD00::BM00:comment field
+qso:50::AD00::CM00:comment field
+qso:50::AD00::DM00:comment field
+qso:50::AD00::EM00:comment field
+qso:50::AD00::FM00:comment field
+qso:50::AD00::GM00:comment field
+qso:50::AD00::HM00:comment field
+qso:50::AD00::iM00:comment field
+qso:50::AD00::jM00:comment field
+qso:50::AD00::kM00:comment field
+qso:50::AD00::lM00:comment field
+qso:50::AD00::mM00:comment field
+qso:50::AD00::nM00:comment field
+qso:50::AD00::oM00:comment field
+qso:50::AD00::pM00:comment field
+qso:50::AD00::qM00:comment field
+qso:50::AD00::rM00:comment field
+qso:50::AD00::sM00:comment field
+qso:50::GC00::AM00:comment field
+qso:50::GC00::BM00:comment field
+qso:50::GC00::CM00:comment field
+qso:50::GC00::DM00:comment field
+qso:50::GC00::EM00:comment field
+qso:50::GC00::FM00:comment field
+qso:50::GC00::GM00:comment field
+qso:50::GC00::HM00:comment field
+qso:50::GC00::iM00:comment field
+qso:50::GC00::jM00:comment field
+qso:50::GC00::kM00:comment field
+qso:50::GC00::lM00:comment field
+qso:50::GC00::mM00:comment field
+qso:50::GC00::nM00:comment field
+qso:50::GC00::oM00:comment field
+qso:50::GC00::pM00:comment field
+qso:50::GC00::qM00:comment field
+qso:50::GC00::rM00:comment field
+qso:50::GC00::sM00:comment field
+qso:50::GP00::MB00:comment field
+qso:50::GP00::MC00:comment field
+qso:50::GP00::MD00:comment field
+qso:50::GP00::ME00:comment field
+qso:50::GP00::MF00:comment field
+qso:50::GP00::MG00:comment field
+qso:50::GP00::MH00:comment field
+qso:50::GP00::Mi00:comment field
+qso:50::GP00::Mj00:comment field
+qso:50::GP00::Mk00:comment field
+qso:50::GP00::Ml00:comment field
+qso:50::GP00::Mm00:comment field
+qso:50::GP00::Mn00:comment field
+qso:50::GP00::Mo00:comment field
+qso:50::GP00::Mp00:comment field
+qso:50::GP00::Mq00:comment field
+qso:50::GP00::Mr00:comment field
+qso:50::GP00::Ms00:comment field
+qso:50::GP00::DA11:comment field
+qso:50::GP00::DB00:comment field
+qso:50::GP00::DC00:comment field
+qso:50::GP00::DD00:comment field
+qso:50::GP00::DE00:comment field
+qso:50::GP00::DF00:comment field
+qso:50::GP00::DG00:comment field
+qso:50::GP00::DH00:comment field
+qso:50::GP00::Di00:comment field
+qso:50::GP00::Dj00:comment field
+qso:50::GP00::Dk00:comment field
+qso:50::GP00::Dl00:comment field
+qso:50::GP00::Dm00:comment field
+qso:50::GP00::Dn00:comment field
+qso:50::GP00::Do00:comment field
+qso:50::GP00::Dp00:comment field
+qso:50::GP00::Dq00:comment field
+qso:50::GP00::Dr00:comment field
+qso:50::MK00::CA00:comment field
+qso:50::MK00::CB00:comment field
+qso:50::MK00::CC00:comment field
+qso:50::MK00::CD00:comment field
+qso:50::MK00::CE00:comment field
+qso:50::MK00::CF00:comment field
+qso:50::MK00::CG00:comment field
+qso:50::MK00::CH00:comment field
+qso:50::MK00::Ci00:comment field
+qso:50::MK00::Cj00:comment field
+qso:50::MK00::Ck00:comment field
+qso:50::MK00::Cl00:comment field
+qso:50::MK00::Cm00:comment field
+qso:50::MK00::Cn00:comment field
+qso:50::MK00::Co00:comment field
+qso:50::MK00::Cp00:comment field
+qso:50::MK00::Cq00:comment field
+qso:50::MK00::Cr00:comment field
+qso:50::MK00::Cs00:comment field
+qso:50::MK00::Ct00:comment field
+qso:50::MK00::LA11:comment field
+qso:50::MK00::LB00:comment field
+qso:50::MK00::LC00:comment field
+qso:50::MK00::LD00:comment field
+qso:50::MK00::LE00:comment field
+qso:50::MK00::LF00:comment field
+qso:50::MK00::LG00:comment field
+qso:50::MK00::LH00:comment field
+qso:50::MK00::Li00:comment field
+qso:50::MK00::Lj00:comment field
+qso:50::MK00::Lk00:comment field
+qso:50::MK00::Ll00:comment field
+qso:50::MK00::Lm00:comment field
+qso:50::MK00::Ln00:comment field
+qso:50::MK00::Lo00:comment field
+qso:50::MK00::Lp00:comment field
+qso:50::MK00::Lq00:comment field
+qso:50::MK00::Lr00:comment field
+%--------------------------------------
+%--------------------------------------qso_test.dat

@@ -1,0 +1,58 @@
+%--------------------------------------
+%%Title: vhf_conf.ps
+%%CreationDate:  3 Aug 96
+%
+% (C) 1994,5,6 Joseph Mack NA3T and Michael Katzmann NV3Z/VK2BEA/G4NYV
+%
+%--------------------------------------
+%
+% Most of the AZ_PROJ customisable variables are in az_ini.ps.
+% This is a relatively large file. If you routinely only vary a
+% small number of variables, they can be separated into a smaller
+% file which is read in after az_ini.ps, thus overwriting the
+% standard values in az_ini.ps. Alternatively, if you routinely
+% make several different maps, then a separate config file can be
+% made for each map.
+%
+% Thus an HF config file could have a large scale map,
+% lat/lon lines separated by 30 degrees, with rivers and
+% state borders turned off.
+%
+% A VHF config file would have a scale suitable for the
+% band, grid square and all geographic features turned on.
+%
+% A config file for a mountain top, will have a different QTH.
+%
+% a config file can be used with ghostscript
+% C:>gs az_ini.ps config.ps -- az_proj.ps world.wdb dxcc.dat
+%
+% or by making a big.ps file
+% C:>copy az_ini.ps+config.ps+az_proj.ps+world.wdb+dxcc.dat big.ps
+%
+%
+%--------------------------------------
+% vhf_config.ps - configuration file for AZ_PROJ.PS
+%
+/Title (My 2m Map) def
+/lat_QTH 41.6 def /lon_QTH -72.7 def /QTH_name (ARRL HQ) def
+/center_offset	off	def
+/lat_center		40.0  	def
+/lon_center		-95.0	def
+/map_scale_deg	100	def
+/draw_letter_square_borders	on	def
+/draw_letter_square_labels	on	def
+/draw_number_square_borders	on	def
+/draw_number_square_labels	on	def
+/grid_locator_number_squares_northern_limit	1 def
+/grid_locator_number_squares_southern_limit	1 def
+/grid_locator_number_squares_eastern_limit	1 def
+/grid_locator_number_squares_western_limit	1 def
+/draw_compass_circumference	on	def	%(on/off) draw compass circumference
+/bands_plotted
+[
+%50
+144
+%432
+%1296
+] def
+%--------------------------------------vhf_conf.ps

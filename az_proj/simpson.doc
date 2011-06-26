@@ -1,0 +1,472 @@
+--
+
+Following is Wayne Simpson's article on NMEA-0183
+
+_______________________________________________________________________
+M. Burc Oral                           |                               |
+Earth Resources Laboratory             |      voice: (617) 253-2471    |
+Massachusetts Institute of Technology  |      fax:   (617) 253-6385    |
+42 Carleton St.   E34-356A,            |   internet: oral@gps.mit.edu  |
+Cambridge, MA 02142, USA               |                               |
+                                       |  anonymous ftp: gps.mit.edu   |
+             web address -->   http://www-erl.mit.edu/gps/gpshome.html |
+-----------------------------------------------------------------------
+
+
+******************
+
+Wayne Simpson   wms@spin.ho.att.com
+
+
+
+          UNDERSTANDING MARINE ELECTRONICS INTERFACING:
+                    the Promise, the Problems
+
+                by Wayne Simpson, Technical Editor
+              International  Catalina 27 Association
+
+     The  coming of the microprocessor to marine electronics  has
+brought with it a promise and a curse. The promise is that two or
+more  devices can share information and so become  more  valuable
+and convenient to use. The curse is that not all marine  hardware
+is compatible. To make matters worse, marine electronics manufac-
+turers  often make it difficult for the consumer to tell  whether
+any two devices will work together until bought and wired togeth-
+er. Sometimes the result is a happy event. At other times, it can
+be an exercise in frustration.
+     An  interface is the boundary at which two independent  sys-
+tems  communicate  and interact. When you  connect  an  interface
+cable  from  your loran to your autopilot, the wire is  like  the
+string between two cans in a play telephone. The wire carries the
+conversation,  but it is the interfaces at each end that  do  the
+talking.  If  the  two devices speak the same  language  and  can
+understand the same words, then they can communicate.  Otherwise,
+they can't. There is a standard for communications in the  marine
+electronics  industry, and most manufacturers claim to  abide  by
+it, at least in part. Unfortunately this is not always enough.
+
+
+            NMEA 0183: The Marine Interface Standard
+
+     In  1980, a group of professionals from the industry met  to
+develop  a standard "language" for marine interfaces. The  result
+was  the   National Marine Electronics  Association  (NMEA)  0180
+standard.  It  addressed one problem, that of making  lorans  and
+autopilots work together, and it was a success. In the  following
+years this standard, revised, broadened, then totally revamped to
+take  into  account the wide range of  electronics  appearing  on
+boats,  led to the current NMEA 0183 standard used on almost  all
+equipment today.
+     The  NMEA 0183 standard calls for data communication in  the
+form of coded "sentences." Each sentence begins with the  charac-
+ter "$" and ends with a carriage return and line feed (<CR><LF>).
+These  last two characters are "control" characters and  are  not
+normally  printed  (for this reason they  are  customarily  shown
+enclosed  in  brackets). Between the beginning and  end  of  each
+sentence  are "fields" of data, each field separated by a  comma.
+The  first  field in any sentence (field 0) begins with  the  two
+letter talker mnemonic code ("talkers" are devices that send  out
+information,  "listeners"  take  it in)  followed  by  the  three
+letter code for the sentence. Data follows in the standard format
+for that sentence. Here's an example:
+
+      field #:    0     1     2   3      4
+     sentence: $LCGLL,4001.74,N,07409.43,W<CR><LF>
+
+     What is being said here? Lets look at it field by field. The
+sentence  begins  with the start character "$."  Next  comes  the
+talker identifier and sentence format code. LC stands for  Loran-
+C,  GLL  for present position in Lat/Lon. Field  1  contains  the
+set's  current  latitude. Field 2 is either N or S for  North  or
+South. Field 3 is the set's current longitude. Field 4 is W or  E
+for  West  or East. Thus, this sentence  reads  "Loran-C  present
+position  in Lat/Lon: 40 degrees 1.74 minutes North,  74  degrees
+9.43  minutes  West." A carriage return and line feed  close  the
+sentence.  The GLL sentence is always displayed in  this  format.
+Each  type of sentence, and there are many, has its own  specific
+standard  format  (for a brief catalog of formats,  see  sidebar:
+Deciphering the Code).
+     Standard  sentences, each in a standard format. This is  how
+NMEA  0183 is intended to work. But compliance with the  standard
+is  voluntary. It is up to the manufacturers to decide  how  they
+will implement the standard, and to what extent they will  comply
+with  it. Because the standard is so broad, there is  often  more
+than one way to express the same information, and this can  cause
+problems.  There  are many different sentences, and  few  if  any
+talker  devices say them all, or adhere strictly to the  standard
+format of those they do. Does your autopilot need information  in
+a form that your loran isn't sending out? How can you tell?
+     Don't  count on there being an adequate explanation  in  the
+manuals,  because often it isn't there. The owners manual for  my
+loran  describes  the workings of the interface  this  way.  "The
+extra connector on the rear panel is a serial data output  inter-
+face which can provide loran data to an autopilot, track plotter,
+or  fishfinder.  The serial data is in NMEA 0183  format  and  is
+transmitted  continuously." That's it; the manual makes no  other
+mention of the interface anywhere.  Other manuals I have seen are
+about  as  descriptive.  In a follow-up bulletin  nearly  a  year
+after  I  bought it the manufacturer of my loran  mentioned  what
+sentences the data output sent (there were four) and what the pin
+assignments  for  the  output connector were.  This  section  was
+labeled "for techies only." These interfaces are touted in adver-
+tising copy, but it's clear the manufacturers don't really expect
+you to use them.  In the end, you probably will have to call  the
+manufacturer for a proper explanation of their interface, and ask
+specifically  whether  they have tested the devices you  have  in
+mind for compatibility.
+     So far we've discussed only software incompatibilities,  but
+there can be physical ones, too. NMEA 0183 specifies no  standard
+connector,  and  no two manufacturers seem to use the  same  one.
+Usually, the owner will have to buy plugs from the  manufacturers
+and make his own cable.
+
+
+                         A Case History
+
+     Two years ago, when I bought my West Marine Vector I  loran,
+I  had no intentions of ever using the interface. Why  would  you
+want to interface your electronics, anyway? Here's one example. A
+loran can tell you where you are, what direction to steer to  get
+to  your destination, and how far off your intended course  track
+you are. By itself, however, it can't steer the boat. An  autopi-
+lot  can steer, but on its  own can't compensate for currents  or
+leeway.  An  autopilot interfaced with a loran can do  all  these
+things,  and then some. Here's another example. The more you  use
+the  magic  box, the more you realize the  information  it  gives
+should  be displayed in the cockpit, where the helmsman can  have
+instant access to it. But the cockpit can be a harsh location for
+electronics  and  most lorans aren't truly  waterproof.  A  loran
+"repeater,"  which echoes steering information on a  remote  dis-
+play,  can  provide useful steering information  in  the  cockpit
+while  leaving the loran below in the nav station, safe from  sun
+and spray.
+     An  integrated pilot/navigator system would have been  nice,
+but  LEGACY, our 1977 Catalina 27, already had an  autopilot,  an
+old  style  Autohelm 800. It worked perfectly well and  I  wasn't
+going  to replace it just to have one with an interface. A  loran
+repeater  would  be handy too, but those  available  commercially
+cost as much as a second loran. I toyed with the idea of building
+a repeater but in the end dismissed the whole thing as not  being
+worth the time, effort, or cost.
+     Two  things happened last summer that changed my opinion  on
+interfacing. First, the old Autohelm failed, and the cost to  fix
+it was almost as much as a new digital autopilot. I went for  the
+new pilot,  settling on a Navico Tillerpilot 5000 largely because
+Autohelm  had  changed their mounting dimensions and  would  have
+required  me to change my setup. Navico's dimensions were  always
+very  close the old Autohelm's, and would fit  without  modifica-
+tions.
+     The  new  pilot worked well all by itself, but  an  item  on
+Navico's  option list caught my eye. It was a digital  hand  pro-
+grammer  that made the TP5000 a much better pilot.  It  displayed
+present  heading  from  the pilot's  internal  fluxgate  compass,
+allowed you to make course changes in degrees rather than  beeps,
+had an off-course alarm and let you program the pilot's  response
+parameters  to better tune them to the boat and conditions.  Also
+at  the time, if you bought a pilot and programmer and  sent  the
+receipts  to Navico, they would send you the loran interface  box
+(which normally cost's $150 at discount) for free.
+     Second,  while  at a marine warehouse sale, I came across  a
+KVH model LRX+ loran repeater. It was complete with the  warranty
+card and instruction booklet. Its  price was $100, 1/3 the  usual
+discount price. It was NMEA 0183 compatible, and so was my loran.
+It even had a sheet with a listing of all the lorans the LRX+ had
+successfully interfaced with. The Vector was there, right at  the
+bottom of the list. Why not?
+     I  took it down to my boat, hooked it up to the NMEA  inter-
+face  on  the back of my loran, programmed a course to  a  nearby
+buoy,  and waited for the repeater's display to come to life.  It
+did,  and showed a bearing that was 12 degrees off! Something  in
+the back of my mind reminded me that the magnetic variation in my
+area  was 12 degrees. The repeater was displaying bearing in  de-
+grees  true  rather than magnetic. Every time I wanted to  get  a
+steering course off the display, I would have to do a calculation
+in my head. The "curse" had visited me.
+     I  was now in the position of having to figure out what  the
+problem  was  with the repeater. I had no knowledge of  the  NMEA
+standard or how it worked, so I called KVH. They said that  what-
+ever the loran was sending out over the interface was reported on
+the display. I called West Marine to find out what the Vector was
+sending  out. They told me that both true and  magnetic  bearings
+were  sent, and that it was up to the repeater  to  differentiate
+between  them.  I asked KVH for more help, and  they  offered  to
+upgrade the repeater's software to a newer version at no  charge.
+I sent the repeater off to KVH Industries in Middletown, RI.
+     While the repeater was away, I took a sample of the Vector's
+data output using my PC. The procedure is described in the  side-
+bar: Listening In, Speaking Out. Here's what I got:
+
+      $LCGLL,4004.22,N,07409.78,W
+      $LCBWC,,4001.80,N,07403.66,W,117,T,129,M,005.2,N,011
+      $LCAPA,V,A,1.00,R,N,V,V,117,T,011
+      $LCVTG,,,271,M,02.3,N,,
+
+     The  pattern  of four sentences repeated  itself  every  two
+seconds. Close inspection of this string revealed the problem. In
+order  to work with a wide variety of lorans, the KVH  repeater's
+program  accepts  data from several different sentences,  two  of
+which,  BWC  (bearing  to waypoint along great  circle)  and  APA
+(autopilot format A), appear in the above sample. Look closely at
+the  APA  sentence. Data fields 8 and 9 display the  bearing  and
+whether  it  represents degrees true or  magnetic.  The  standard
+format for APA is degrees magnetic, in this example it is degrees
+true. There was a bug in the Vector's software.
+     Why  couldn't the repeater see that the bearing was  in  de-
+grees  true and disregard it? Most of these programs  are  "comma
+counters."  They  recognise a sentence of interest from  the  ad-
+dress,  then  count commas until they get to the field  in  which
+they expect to find data they need. They don't look at the fields
+telling whether the information is true, magnetic, east, or west.
+     The  people at KVH felt confident that the software  upgrade
+would  cure  this condition but when the repeater came  back,  my
+problem  was  still there. I called West. The problem  was  their
+doing in the first place, maybe they would fix it.  Unfortunately
+for  me,  the  Vector I was made obsolete by the  Vector  II  the
+previous  year.  West planned no more software upgrades  for  the
+Vector  I,  and it would be prohibitively expensive for  them  to
+rewrite the software in response to this one complaint. I  could,
+perhaps,  install  the Vector II software (which  corrected  this
+bug) but then I would lose some of the features the Vector I  had
+that the Vector II lacked. I decided it wasn't worth it.
+     There was still some confusion over exactly what data fields
+the repeater was looking at. To find out, I wrote a loran simula-
+tor  program for my computer (see sidebar). I coded the  data  in
+each  of the three fields that displayed bearing, giving  each  a
+different  value,  and was able to prove that  the  repeater  was
+looking at the APA sentence for its  bearing to display.
+     Once again, I called KVH. Rob Solomon, one of KVH's  techni-
+cal  people  who had stayed with me throughout this  ordeal,  was
+certain  the  new software didn't look at APA  for  bearing.   He
+wanted  to look further into the problem, but was unsure when  he
+would  be able to find the time to do so. It was early  February,
+war  had just broken out in the Persian Gulf and KVH was  in  the
+midst  of  delivering 15,000 of its  DataScopes to  Desert  Storm
+personnel. He promised to look at the LRX+'s software when things
+quieted  down. Oddly enough, he called back in an hour  with  the
+LRX+'s  program listing in hand. He told me absolutely  that  the
+new software did not look at APA for bearing. Back to the drawing
+board...
+     I went home that night and ran my simulator again. There was
+no  mistake.  I wrote a letter to Rob at KVH. In  it  I  included
+everything  I  knew about the problem, a sample of  the  Vector's
+data output, the listing of my simulator program, and the version
+number  of the software EPROM ("Erasable Programmable  Read  Only
+Memory,"  the  chip which stores the software)  installed  in  my
+repeater.  I  sent it off by FAX the following day.  A  few  days
+later,  I called Rob to see if he had gotten the letter. He  had,
+but  had not yet read it. When he did, he saw that I hadn't  been
+given the software he asked for. He sent a new EPROM chip in  the
+mail (the right one, this time)  for me to put in myself. I  did,
+and it worked as promised. My problem was solved, but only  after
+five months had passed and I had spent many hours on testing  and
+investigation.
+     I had better luck regarding the autopilot. Late last summer,
+wisened by my experience with the repeater (I had just begun  the
+process  of sorting out its  troubles), I called West Marine  and
+spoke  to  Dave  Wells, their technical support  person  for  the
+Vector. I was determined to find out whether the  loran/autopilot
+interface  would work before I bought it. He told me  the  Vector
+and the Navico pilot were compatible. He had tested them himself.
+I bought the programmer and sent away for the junction box.  When
+it arrived, the manual informed me that my pilot would require  a
+software upgrade from the factory in order to work properly  with
+my loran (sound familiar?). It was by then late fall and I  would
+not be needing the pilot for months, so I sent it off to Navico's
+Largo,  FL plant. When it came back, I hooked the  loran,  pilot,
+programmer  and  junction box together in my study  to  see  what
+would  happen.  The system worked as advertised. This  time,  the
+"promise" was fulfilled.
+
+
+                 Conclusions and Recommendations
+
+     My story has a happy ending. Come spring, I will be install-
+ing my new toys and enjoying them all summer. Others who try this
+may  not be so fortunate. The NMEA system can work, but there  is
+no  guarantee  in any particular case that it will.  My  repeater
+adventure  shows what sort of problems you can have, and to  what
+lengths you may have to go in order to solve them.
+     My  recommendations are these: Do your homework  before  you
+buy. If you are buying from a supplier who will do the  installa-
+tion for you, make sure he will guarantee the satisfactory opera-
+tion of the interface. If you will do the installation  yourself,
+try  to arrange for a full credit return in the event the  inter-
+faces  prove to be incompatible. Call the manufacturers  and  ask
+questions. Take the time to understand what the NMEA 0183  stand-
+ard is and how it works.
+     If  you find that you've been stuck anyway all is  not  com-
+pletely lost. A company called Maricom Electronics, at 2911 River
+Drive, Thunderbolt, GA 31404 (phone (912) 354-4542) markets  what
+it  calls  a "Universal Marine Interface." For just  under  $400,
+this box claims to take data in any format that any talker  might
+emit and put it into a form any listener will understand. In  the
+absence of less extreme solutions, this may be worth trying.
+
+
+     Have  a problem to solve, or a solution to share? Send  your
+comments and queries to the address above. If you require a quick
+answer,  please include a self addressed, stamped envelope.  Your
+submissions on computer disk (IBM format, any size) will make  my
+job  easier, but your paper submissions are, as always,  welcomed
+and appreciated. Until next time...
+
+SIDEBAR A:
+                 NMEA 0183: DECIPHERING THE CODE
+
+     The  "language" of NMEA 0183 is extensive but not  difficult
+to  understand.  The  ground rules are  these:  maximum  sentence
+length is 80 characters including the starting "$," the terminat-
+ing  <CR><LF>, and everything in between. Minimum number of  data
+fields is two, including the address field (talker identifier and
+sentence format). If data for any field is unavailable, a  "null"
+field,  two commas with nothing between them (",,") can  be  sent
+instead.
+     Here  is a sampling of two letter talker  identifier  codes.
+There are others, for everything from satellite communications to
+atomic  clocks,  but these are some of the most familiar  to  the
+recreational  sailor.
+
+  LC   Loran-C
+  GP   GPS
+  TR   Transit SATNAV
+  AP   Autopilot (magnetic)
+  HC   Magnetic heading compass
+  RA   Radar
+  SD   Depth sounder
+  VW   Mechanical speed log
+
+     Now  for  some of the more common sentences  that  might  be
+spoken  by  your LORAN, SATNAV, or GPS. This is  not  a  complete
+listing,  but  should  illustrate how the system  works.  In  the
+following  examples,  the character "#" will denote  some  number
+(0-9). Remember that each of these sentences would be preceded by
+the  start character "$" and the two letter talker ID. Each  also
+would be followed by the sentence terminator, <CR><LF>.
+
+Geographic Location in Lat/Lon
+  field #:  0   1      2  3       4
+ sentence: GLL,####.##,N,#####.##,W
+1, Lat (deg, min, hundredths); 2, North or South; 3, Lon; 4, West
+or East.
+
+Geographic Location in Time Differences
+  field #:  0   1       2       3       4       5
+ sentence: GTD,#####.#,#####.#,#####.#,#####.#,#####.#
+1-5, TD's for secondaries 1 through 5, respectively.
+
+Bearing to Dest wpt from Origin wpt
+  field #:  0   1  2  3  4  5    6
+ sentence: BOD,###,T,###,M,####,####
+1-2, brg,True; 3-4, brg, Mag; 5, dest wpt; 6, org wpt.
+
+Vector Track and Speed Over Ground (SOG)
+  field #:  0   1  2  3  4  5   6  7   8
+ sentence: VTG,###,T,###,M,##.#,N,##.#,K
+1-2,  brg,  True; 3-4, brg, Mag; 5-6, speed, kNots;  7-8,  speed,
+Kilometers/hr.
+
+Cross Track Error
+  field #:  0  1 2  3   4 5
+ sentence: XTE,A,A,#.##,L,N
+1, blink/SNR (A=valid, V=invalid); 2, cycle lock (A/V); 3-5, dist
+off, Left or Right, Nautical miles or Kilometers.
+
+Autopilot (format A)
+  field #:  0  1 2  3   4 5 6 7  8  9  10
+ sentence: APA,A,A,#.##,L,N,A,A,###,M,####
+1,  blink/SNR (A/V); 2 cycle lock (A/V); 3-5, dist off,  Left  or
+Right, Nautical miles or Kilometers; 6-7, arrival circle, arrival
+perpendicular (A/V); 8-9, brg, Magnetic; 10, dest wpt.
+
+Bearing to Waypoint along Great Circle
+ fld:  0   1      2      3  4       5  6  7  8  9  10  11  12
+ sen: BWC,HHMMSS,####.##,N,#####.##,W,###,T,###,M,###.#,N,####
+1, Hours, Minutes, Seconds of universal time code; 2-3, Lat, N/S;
+4-5,  Lon,  W/E;  6-7, brg, True; 8-9, brg,  Mag;  10-12,  range,
+Nautical miles or Kilometers, dest wpt.
+
+BWR:  Bearing  to Waypoint, Rhumbline, BPI: Bearing to  Point  of
+Interest, all follow data field format of BWC.
+
+     For  a full explanation of the NMEA 0183 standard,  you  can
+write  or call the NMEA. For a fee, they will send you the  their
+36 page booklet "NMEA 0183 Standard for Interfacing Marine  Elec-
+tronic  Navigational  Devices." The address is:  National  Marine
+Electronics  Association, PO Box 50040, Mobile, AL  36605.  Phone
+(205) 473-1793.
+
+
+Sidebar B:
+                   LISTENING IN, SPEAKING OUT:
+     Using your Home Computer to Monitor NMEA Communications
+
+     The data that comes out of your loran or other NMEA equipped
+gear  is in the same format as that from your personal  computer.
+It is possible, and very easy to take a look at what your talkers
+are  saying,  and to speak to your listeners in a form  they  can
+understand.
+     To listen in, you need a PC equipped with a serial  (RS-232)
+interface and modem program (such as HAYES SmartCom or CTRM).  If
+your  program has a data capture feature, you can read data  from
+the line into a file for later use.
+     To  make the connection, connect the NMEA signal line  (line
+A,  output, etc) to the RS-232 "receive data" line (#2 on  9  pin
+or  #3 on 25 pin connectors), and the NMEA ground line  (line  B,
+return, etc) to the RS-232 "signal ground" (#5 on 9 pin or #7  on
+25 pin connectors).
+     The  statistics for NMEA 0183 are as follows: 4800  baud,  8
+data  bits,  1 stop bit, no parity. Set your  modem  program  for
+these  parameters. Switch on your loran (or other talker),  start
+the modem program, and the data should come pouring in.
+     One  note  of caution regarding  radionavigation  receivers:
+they are very sensitive to the kind of RF interference computers,
+fluorescent  lights, TV's and other such things cause.  Your  re-
+ceiver may not be able to lock on to its  transmitters with these
+things operating nearby, and you may have to set up the  receiver
+in  another room and connect it with a long cable for it to  work
+properly.
+     Speaking to your listeners is only slightly more  complicat-
+ed.  You need to send the data strings over and over again  at  a
+repetition  rate  of once every few seconds (but no  faster  than
+once  every second). For this, I wrote a short simulator  program
+in BASIC that does the job, and allows me to program in the  text
+I want to send. The connection is different, also. This time  you
+will  have  to connect the NMEA signal line to  RS-232  "transmit
+data"  (#3 on 9 pin or #2 on 25 pin connectors), and NMEA  ground
+to  RS-232 signal ground (as before). In addition,  you  probably
+will have to bring the RS-232 "data set ready" (DSR) terminal  to
+a  low  voltage. You can do this by inserting  a  jumper  between
+"data  terminal  ready" (DTR, normally #4 on 9 pin or #20  on  25
+pin) and DSR (#6 on 9 or 25 pin setups).
+     Here is the text of my NMEA 0183 simulator program:
+
+5   REM LORAN SIMULATOR PROGRAM - Wayne Simpson, 1991
+10  OPEN "com2:4800,n,8,1,RS" FOR OUTPUT AS#1
+15  REM setup RS-232 to parameters and disable request to send
+100 A$="$LCGLL,4004.22,N,07409.78,W"
+110 B$="$LCBWC,,4001.80,N,07403.66,W,100,T,200,M,005.2,N,011"
+120 C$="$LCAPA,V,A,0.25,R,N,V,V,300,T,011"
+130 D$="$LCVTG,,,268,M,02.1,N,,"
+140 E$=""
+200 PRINT A$    'print GLL statement to screen
+205 PRINT#1,A$  'send GLL over interface
+210 PRINT B$    'BWC to screen
+215 PRINT#1,B$  'BWC to interface
+220 PRINT C$    'APA to screen
+225 PRINT#1,C$  'APA to interface
+230 PRINT D$    'VTG to scren
+235 PRINT#1,D$  'VTG to interface
+240 PRINT E$    'empty line to screen
+245 PRINT#1,E$  'empty line to interface
+300 FOR I=1 TO 12000
+310 NEXT
+320 GOTO 200
+330 REM line 300 provides the 2 second rep rate
+340 REM line 320 repeats the transmission over and over
+350 REM use ctrl-brk keystroke to terminate transmission
+
+     Load  this program into your computer, substitute  into  the
+A$-E$  variables whatever it is you want to say, and run it.  You
+are  now speaking NMEA, and can do a fair job of  troubleshooting
+interface problems this way.
+

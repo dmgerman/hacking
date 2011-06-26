@@ -1,0 +1,32 @@
+%Controld.ps (C) Joseph Mack NA3T and Michael Katzman NV3Z, 1996
+% This file contains the ^D (the \004 or unix EOF) character
+%
+% Summary: concatenate controld.ps at the end of your Postscript files, 
+% when sending to a real Postscript printer.
+%
+% Explanation: A postscript file, when sent to a real Postscript printer
+% must be terminated by ^D to let the printer know that the
+% end of data has been reached and it can start calculating/printing.
+% If this char is not sent, then the printer will sit there till it
+% times out (could be a while).
+%
+% To print AZ_PROJ on a real Postscript printer,
+% you concatenate all the files you want printed,
+% with the controld.ps as the last file using an instruction like
+%
+% C:> copy az_ini.ps+az_proj.ps+grid.dat+n_amer.wdb+controld.ps big.ps
+%
+% You can then print big.ps on your real Postscript printer
+%
+% If you are sending big.ps to ghostcript, you do not need controld.ps
+% If you have usd ghostscript in what I call postscript mode
+% eg
+%
+% C:> type big.ps | gs - > c:\temp\error.out
+%
+% then the operating system will already have put an EOF 
+% appropriate for the machine onto big.ps and you won't have
+% to do anything special (ie controld.ps is not needed as
+% part of big.ps).
+%
+

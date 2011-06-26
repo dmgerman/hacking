@@ -1,0 +1,502 @@
+%dxcc.dat-v2.0--------------------------------------
+% Call/zone file (dxcc.dat) for az_proj:
+%	The ARRL list of dxcc call zones in machine readable
+%	form is maintained by Bill Brelsford, K2DI.
+% 	This listing here is a modified version of the Bill's file
+%	which allows sorting of dxcc countries by band and modes worked.
+%
+%---------Notes from Bill-----------------------------
+%
+%From: wmb@joplin.att.com
+%Date: Sun, 21 Apr 1996 19:31:27 EDT
+%To: bowen@cs.Buffalo.EDU
+%Subject: please archive dxcc-k2di (04/96 version) .. tnx & 73
+%
+%The current ARRL DXCC country list (04/96 version) follows.
+%Changes include the new countries Scarborough Reef (BS7)
+%and Pratas Is (BV9).
+%
+%This list is available via
+%	- occasional Usenet posting to rec.radio.info and
+%		rec.radio.amateur.misc.
+%	- ftp from ftp.cs.buffalo.edu (as pub/ham-radio/dxcc-k2di) and
+%		other Amateur Radio archive sites.
+%	- email from the ARRL Information Service -- send a message
+%		containing the line "send dxcck2di.txt" to info@arrl.org.
+%
+%Much of the information was provided by Ron McConnell, W2IOL.
+%His detailed geographical listing is also available via ftp from
+%ftp.cs.buffalo.edu, and from info@arrl.org.
+%
+%The colon-separated fields are:
+%	1. primary amateur prefix
+%		- "*" suffix for deleted countries
+%		- "@" suffix for likely new countries
+%	2. country name
+%	3. continent(s)
+%	4. ITU zone(s)
+%	5. CQ zone(s)
+%	6. time zone (hours from UTC)
+%	7. latitude
+%	8. longitude
+%	9. ITU prefix allocation(s) ("~" suffix for unofficial)
+%	10. other amateur prefixes
+%
+%Please mail corrections and suggestions to me.
+%
+%Bill Brelsford, K2DI
+%AT&T, Basking Ridge NJ, USA
+%wmb@att.com
+%
+%---------File format-----------------------------
+% Each line starts with either "dxcc:" or "DXCC:".
+% This allows countries to be sorted
+% into two arbitary groups of user choosing.
+% For "dxcc:" the country will be displayed in default mode
+%  (see /dxcc_special_country), currently set to green/helvetica
+% For "DXCC:" the country will be displayed in "special" mode
+%  (see /dxcc_special_country_2), currently set to red/helvetica-italic
+% You choose which countries are default and special, and the criteria.
+% Possibilities are countries
+% - not worked and worked (make a dxcc_qsl.dat file).
+% - in a contest and not in a contest (make a dxcc_con.dat file).
+% - that do/do not qsl via the bureau (make a dxcc_bur.dat file).
+% -
+%
+% Band/Modes plotted
+%
+% (Note Apr 98, I thought this would be a very useful feature.
+% As far as I can tell in the 4 years this program has been out
+% no one has used it. So I'm not putting a whole lot of effort into
+% it anymore, at least until I take up HF)
+%
+% (see az_ini.ps for the variables dxcc_modes_plotted, dxcc_bands_plotted.)
+% Following dxcc: an optional (band mode) pair (in parens)
+% can be inserted, eg the normal (diplayed in red) line might be
+%
+% dxcc:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+%
+% If you work Monaco on 20 CW you could change the line to
+%
+% dxcc:20 CW:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+%
+% This change will have no effect on the output produced when
+% using the dxcc.dat file, unless you activate the variables
+% dxcc_modes_plotted, dxcc_bands_plotted in the az_ini.ps file
+% By uncommenting 20 and CW. In this case only countries which
+% have been worked on 20 CW will be displayed. If the line is
+% changed to -
+%
+% DXCC:20 CW:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+% or
+% DXCC:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+%
+% then it will be displayed in green.
+%
+% This feature allows countries to be displayed by band and/or mode.
+% If you've worked the same country several ways, then a line
+% should be entered for each band/mode pair. eg.
+%
+% dxcc:40 SSB:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+% dxcc:20 CW:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+% dxcc:20 SSB:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+%
+%; If the country doesn't qualify it will be displayed in
+% dxcc_country method (here black, helvetica).
+% If the line starts with DXCC: the band/mode info will be
+% ignored and the country will be displayed in dxcc_special_country_2 mode.
+%
+%
+%
+%----------------------------------------------
+% These next 4 entries are part of Bill's list but aren't parsable by AZ_PROJ
+%dxcc::(ICAO):::::::4Y:
+%dxcc::(WMO):::::::C7:
+%dxcc:~~*:Blenheim Reef:Af:41:39:+5:7S:72E::
+%dxcc:~~*:Geyser Reef:Af:53:39:+3:12S:46E::
+%----------------------------------------------
+dxcc:1A:SMO Malta:Eu:28:15:+1:42N:13E:1A~:
+%dxcc:1M*:Minerva Reef:Oc:62:32:-12:24S:179W::
+dxcc:1S:Spratly Is:As:50:26:+7:9N:112E:1S~:9M0
+dxcc:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+dxcc:3B6:Agalega & St Brandon:Af:53:39:+4:10S:57E::3B7
+dxcc:3B8:Mauritius:Af:53:39:+4:20S:58E:3B:
+dxcc:3B9:Rodriguez Is:Af:53:39:+4:20S:63E::
+dxcc:3C:Equatorial Guinea:Af:47:36:-1:4N:9E:3C:
+dxcc:3C0:Pagalu:Af:52:36:-1:1S:6E::
+dxcc:3D2:Conway Reef:Oc:56:32:+12:22S:175E::
+dxcc:3D2:Fiji:Oc:56:32:+12:18S:178E:3DN-3DZ:
+dxcc:3D2:Rotuma:Oc:56:32:+12:13S:177E::
+dxcc:3DA:Swaziland:Af:57:38:+2:26S:31E:3DA-3DM:3D6
+dxcc:3V:Tunisia:Af:37:33:+1:37N:10E:3V,TS:
+dxcc:3W:Vietnam:As:49:26:+7:11N:107E:3W,XV:
+dxcc:3X:Guinea:Af:46:35:+0:10N:14W:3X:
+dxcc:3Y:Bouvet:Af:67:38:+0:54S:3E::
+dxcc:3Y:Peter I:An:72:12:-6:69S:91W::
+dxcc:4J:Azerbaijan:As:29:21:+4:40N:50E:4J-4K:UD
+dxcc:4L:Georgia:As:29:21:+4:42N:45E:4L:UF
+dxcc:4S:Sri Lanka:As:41:22:+5.5:7N:80E:4P-4S:
+dxcc:4U:ITU Geneva:Eu:28:14:+1:46N:6E::
+dxcc:4U:UN HQ:NA:08:05:-5:41N:74W:4U:
+%dxcc:4W*:Yemen Arab Rep:As:39:21:+3:15N:44E::
+dxcc:4X:Israel:As:39:20:+2:32N:35E:4X,4Z:
+dxcc:5A:Libya:Af:38:34:+2:33N:13E:5A:
+dxcc:5B:Cyprus:As:39:20:+3:35N:33E:5B,C4,H2,P3:
+dxcc:5H:Tanzania:Af:53:37:+3:7S:39E:5H-5I:
+dxcc:5N:Nigeria:Af:46:35:+1:6N:3E:5N-5O:
+dxcc:5R:Madagascar:Af:53:39:+3:19S:48E:5R-5S,6X:
+dxcc:5T:Mauritania:Af:46:35:-1:18N:16W:5T:
+dxcc:5U:Niger:Af:46:35:+1:14N:2W:5U:
+dxcc:5V:Togo:Af:46:35:+0:6N:1E:5V:
+dxcc:5W:Western Samoa:Oc:62:32:-11:14S:172W:5W:
+dxcc:5X:Uganda:Af:48:37:+3:0N:33E:5X:
+dxcc:5Z:Kenya:Af:48:37:+3:2S:37E:5Y-5Z:
+dxcc:6W:Senegal:Af:46:35:+0:15N:18W:6V-6W:
+dxcc:6Y:Jamaica:NA:11:08:-5:18N:77W:6Y:
+dxcc:7O:Yemen:As:39:21:+3:13N:45E:7O:
+%dxcc:7O*:PDR Yemen:As:39:21:+3:13N:45E::
+dxcc:7P:Lesotho:Af:57:38:+2:29S:27E:7P:
+dxcc:7Q:Malawi:Af:53:37:+2:14S:34E:7Q:
+dxcc:7X:Algeria:Af:37:33:+0:37N:3E:7R,7T-7Y:
+dxcc:8P:Barbados:NA:11:08:-4:13N:60W:8P:
+dxcc:8Q:Maldives:As,Af:41:22:+5:4N:73E:8Q:
+dxcc:8R:Guyana:SA:12:09:-3.75:6N:58W:8R:
+%dxcc:8Z4*:S Arabia/Iraq NZ:As:39:21:+3:29N:46E::
+%dxcc:8Z5*:Kuwait/S Arabia NZ:As:39:21:+3:29N:48E::9K3
+dxcc:9A:Croatia:Eu:28:15:+1:46N:16E:9A:
+dxcc:9G:Ghana:Af:46:35:+0:5N:0W:9G:
+dxcc:9H:Malta:Eu:28:15:+1:36N:15E:9H:
+dxcc:9J:Zambia:Af:53:36:+2:15S:28E:9I-9J:
+dxcc:9K:Kuwait:As:39:21:+3:29N:48E:9K:
+dxcc:9L:Sierra Leone:Af:46:35:+0:9N:13W:9L:
+dxcc:9M2:Malaysia:As:54:28:+7.5:3N:102E:9M,9W:9M4
+dxcc:9M6:East Malaysia:Oc:54:28:+8:2N:110E::9M8
+dxcc:9N:Nepal:As:42:22:+5.75:28N:85E:9N:
+dxcc:9Q:Zaire:Af:52:36:+1:4S:15E:9O-9T:
+%dxcc:9S4*:Saar:Eu:28:14:+1:49N:7E::
+dxcc:9U:Burundi:Af:52:36:+3:3S:29E:9U:
+%dxcc:9U5*:Ruanda-Urundi:Af:52:36:+3:3S:30E::
+dxcc:9V:Singapore:As:54:28:+7.5:1N:104E:9V,S6:
+dxcc:9X:Rwanda:Af:52:36:+3:2S:30E:9X:
+dxcc:9Y:Trinidad & Tobago:SA:11:09:-4:11N:62W:9Y-9Z:
+%dxcc:A1*:Abu Ail, Jabal at Tair:As:39:21:+2:14N:43E::J2/A
+dxcc:A2:Botswana:Af:57:38:+2:25S:26E:8O,A2:
+dxcc:A3:Tonga:Oc:62:32:+13:21S:175W:A3:
+dxcc:A4:Oman:As:39:21:+4:24N:59E:A4:
+dxcc:A5:Bhutan:As:41:22:+5.5:28N:90E:A5:
+dxcc:A6:United Arab Emirates:As:39:21:+4:24N:54E:A6:
+dxcc:A7:Qatar:As:39:21:+4:25N:52E:A7:
+dxcc:A9:Bahrain:As:39:21:+4:26N:51E:A9:
+%dxcc:AC3*:Sikkim:As:41:22:+5.5:27N:89E::
+%dxcc:AC4*:Tibet:As:41:23:+6:30N:92E::
+dxcc:AP:Pakistan:As:41:21:+5:34N:73E:6P-6S,AP-AS:
+dxcc:BS7:Scarborough Reef:As:50:27:+8:15N:118E::
+dxcc:BV:Taiwan:As:44:24:+8:25N:122E::
+dxcc:BV9:Pratas Is:As:44:24:+8:21N:116E::
+dxcc:BY:China:As:33,42-44:23,24:+8:40N:116E:3H-3U,BA-BZ,XS:
+dxcc:C2:Nauru:Oc:65:31:+11.5:1S:167E:C2:
+dxcc:C3:Andorra:Eu:27:14:+1:43N:2E:C3:
+dxcc:C5:Gambia:Af:46:35:+0:13N:17W:C5:
+dxcc:C6:Bahamas:NA:11:08:-5:25N:77W:C6:
+dxcc:C9:Mozambique:Af:53:37:+2:26S:33E:C8-C9:
+%dxcc:C9*:Manchuria:As:33:24:+8.5:46N:127E::
+dxcc:CE:Chile:SA:14,16:12:-4:33S:71W:3G,CA-CE,XQ-XR:
+dxcc:CE0X:San Felix:SA:14:12:-5:26S:80W::
+dxcc:CE0Y:Easter Is:SA:63:12:-7:27S:109W::
+dxcc:CE0Z:Juan Fernandez:SA:14:12:-4:34S:79W::
+dxcc:CE9:Antarctica:An:67,69-74:12,13,29,30,32,38,39:+0:90S:0W::3Y,4K1,8J1,AT0,DP0,FT_Y,KC4,LU_Z,OR4,R1AN,VK0,VP8,ZL5,ZS7,ZX0
+dxcc:CN:Morocco:Af:37:33:+0:34N:7W:5C-5G,CN:
+%dxcc:CN2*:Tangier:Af:37:33:+0:36N:8W::
+dxcc:CO:Cuba:NA:11:08:-5:23N:82W:CL-CM,CO,T4:
+dxcc:CP:Bolivia:SA:12,14:10:-4:17S:68W:CP:
+%dxcc:CR8*:Damao, Diu:As:41:22:+5.5:21N:71E::
+%dxcc:CR8*:Goa:As:41:22:+5.5:16N:74E::
+%dxcc:CR8*:Portuguese Timor:Oc:54:28:+8:9S:126E::
+dxcc:CT:Portugal:Eu:37:14:+1:39N:9W:CQ-CU,XX:
+dxcc:CT3:Madeira Is:Af:36:33:-1:33N:17W::
+dxcc:CU:Azores:Eu:36:14:-1:38N:26W::CT2
+dxcc:CX:Uruguay:SA:14:13:-3:35S:56W:CV-CX:
+dxcc:CY0:Sable Is:NA:09:05:-5:44N:60W::
+dxcc:CY9:St Paul Is:NA:09:05:-5:47N:60W::
+dxcc:D2:Angola:Af:52:36:+1:9S:13E:D2-D3:
+dxcc:D4:Cape Verde:Af:46:35:-2:15N:23W:D4:
+dxcc:D6:Comoros:Af:53:39:+3:12S:43E:D6:
+dxcc:DL:Germany:Eu:28:14:+1:53N:13E:DA-DR,Y2-Y9:
+%dxcc:DL*:Germany:Eu:28:14:+1:52N:7E::
+dxcc:DU:Philippines:Oc:50:27:+8:15N:121E:4D-4I,DU-DZ:
+dxcc:E3:Eritrea:Af:48:37:+3:15N:39E:E3:ET2
+dxcc:EA:Spain:Eu:37:14:+1:40N:4W:AM-AO,EA-EH:
+dxcc:EA6:Balearic Is:Eu:37:14:+1:38N:3E::
+dxcc:EA8:Canary Is:Af:36:33:+0:28N:15W::
+dxcc:EA9:Ceuta & Melilla:Af:37:33:+1:36N:5W::
+dxcc:EA9*:Ifni:Af:37:33:+0:29N:10W::
+dxcc:EI:Ireland:Eu:27:14:+0:53N:6W:EI-EJ:
+dxcc:EK:Armenia:As:29:21:+4:40N:45E:EK:UG
+dxcc:EL:Liberia:Af:46:35:-0.75:6N:11W:5L-5M,6Z,A8,D5,EL:
+dxcc:EP:Iran:As:40:21:+3.5:36N:51E:9B-9D,EP-EQ:
+dxcc:ER:Moldova:Eu:29:16:+3:47N:29E:ER:UO
+dxcc:ES:Estonia:Eu:29:15:+2:59N:25E:ES:UR
+dxcc:ET:Ethiopia:Af:48:37:+3:9N:39E:9E-9F,ET:
+dxcc:EV:Belarus:Eu:29:16:+2:54N:28E:EU-EW:UC
+dxcc:EX:Kyrgyzstan:As:30,31:17:+6:43N:75E:EX:UM
+dxcc:EY:Tajikistan:As:30:17:+6:39N:69E:EY:UJ
+dxcc:EZ:Turkmenistan:As:30:17:+5:38N:58E:EZ:UH
+dxcc:F:France:Eu:27:14:+1:49N:2E:FA-FZ,HW-HY,TH,TK,TM,TO-TQ,TV-TX:
+%dxcc:FF*:French W Africa:Af:46:35:+0:15N:18W::
+dxcc:FG:Guadeloupe:NA:11:08:-4:16N:62W::
+dxcc:FH:Mayotte:Af:53:39:+3:13S:45E::
+%dxcc:FH*:Comoros:Af:53:39:+3:12S:43E::FB8
+dxcc:FI8*:Fr Indo China:As:49:26:+7:11N:107E::
+dxcc:FK:New Caledonia:Oc:56:32:+11:22S:167E::
+dxcc:FM:Martinique:NA:11:08:-4:15N:61W::
+%dxcc:FN8*:French India:As:41:22:+5.5:12N:80E::
+dxcc:FO:French Polynesia:Oc:63:32:-10:18S:150W::
+dxcc:FO0:Clipperton Is:NA:10:07:-7:10N:109W::
+dxcc:FP:St Pierre & Miquelon:NA:09:05:-4:47N:56W::
+%dxcc:FQ8*:Fr Equatorial Africa:Af:47,52:36:+1:5N:18E::
+dxcc:FR:Reunion:Af:53:39:+4:21S:55E::
+dxcc:FR/G:Glorioso Is:Af:53:39:+3:12S:47E::
+dxcc:FR/J:Juan de Nova, Europa:Af:53:39:+3:17S:43E::
+dxcc:FR/T:Tromelin:Af:53:39:+4:16S:54E::
+dxcc:FS:St Martin:NA:11:08:-4:18N:63W::FJ
+dxcc:FT_W:Crozet:Af:68:39:+3:46S:52E::
+dxcc:FT_X:Kerguelen Is:Af:68:39:+5:50S:70E::
+dxcc:FT_Z:Amsterdam & St Paul Is:Af:68:39:+5:38S:78E::
+dxcc:FW:Wallis & Futuna Is:Oc:62:32:-10.5:14S:172W::
+dxcc:FY:French Guiana:SA:12:09:-4:5N:52W::
+dxcc:G:England:Eu:27:14:+0:52N:0W:2A-2Z,GA-GZ,MA-MZ,VP-VS,ZB-ZJ,ZN-ZO,ZQ:2E
+dxcc:GD:Isle of Man:Eu:27:14:+0:54N:4W::2D
+dxcc:GI:No Ireland:Eu:27:14:+0:55N:6W::2I
+dxcc:GJ:Jersey:Eu:27:14:+0:49N:2W::2J
+dxcc:GM:Scotland:Eu:27:14:+0:57N:2W::2M
+dxcc:GU:Guernsey:Eu:27:14:+0:49N:3W::2U
+dxcc:GW:Wales:Eu:27:14:+0:52N:3W::2W
+dxcc:H4:Solomon Is:Oc:51:28:+11:9S:160E:H4:
+dxcc:HA:Hungary:Eu:28:15:+1:48N:19E:HA,HG:
+dxcc:HB:Switzerland:Eu:28:14:+1:47N:7E:HB,HE:
+dxcc:HB0:Liechtenstein:Eu:28:14:+1:47N:10E::
+dxcc:HC:Ecuador:SA:12:10:-5:0N:79W:HC-HD:
+dxcc:HC8:Galapagos Is:SA:12:10:-5:1S:90W::
+dxcc:HH:Haiti:NA:11:08:-5:19N:72W:4V,HH:
+dxcc:HI:Dominican Rep:NA:11:08:-5:18N:70W:HI:
+dxcc:HK:Colombia:SA:12:09:-5:5N:74W:5J-5K,HJ-HK:
+dxcc:HK0:Malpelo Is:SA:12:09:-5:4N:82W::
+dxcc:HK0:San Andres & Providencia:NA:11:07:-6:13N:82W::
+%dxcc:HK0*:Bajo Nuevo:NA:11:08:-5:16N:79W::
+%dxcc:HK0*:Serrana Bnk, Roncador Cay:NA:11:07:-5:14N:80W::KP3,KS4
+dxcc:HL:So Korea:As:44:25:+9:38N:127E:6K-6N,DS-DT,D7-D9,HL:
+dxcc:HP:Panama:NA:11:07:-5:9N:80W:3E-3F,HO-HP,H3,H8-H9:
+dxcc:HR:Honduras:NA:11:07:-6:14N:87W:HQ-HR:
+dxcc:HS:Thailand:As:49:26:+7:14N:101E:E2,HS:
+dxcc:HV:Vatican:Eu:28:15:+1:42N:13E:HV:
+dxcc:HZ:Saudi Arabia:As:39:21:+3:25N:47E:8Z,HZ,7Z:
+dxcc:I:Italy:Eu,Af:28,37:15,33:+1:42N:12E:IA-IZ:
+%dxcc:I1*:Trieste:Eu:28:15:+1:46N:14E::
+%dxcc:I5*:Ital Somaliland:Af:48:37:+3:2N:46E::
+dxcc:IS:Sardinia:Eu:28:15:+1:39N:9E::
+dxcc:J2:Djibouti:Af:48:37:+3:12N:43E:J2:
+dxcc:J3:Grenada:NA:11:08:-4:12N:62W:J3:
+dxcc:J5:Guinea-Bissau:Af:46:35:-1:12N:16W:J5:
+dxcc:J6:St Lucia:NA:11:08:-4:14N:61W:J6:
+dxcc:J7:Dominica:NA:11:08:-4:15N:61W:J7:
+dxcc:J8:St Vincent:NA:11:08:-4:13N:61W:J8:
+dxcc:JA:Japan:As:45:25:+9:36N:140E:7J-7N,8J-8N,JA-JS:
+dxcc:JD:Minami Torishima:Oc:45/90:27:+10:24N:154E::
+dxcc:JD:Ogasawara:As:45:27:+10:28N:142E::
+%dxcc:JD1*:Okino Tori-shima:As:45:27:+10:30N:140E::7J1
+dxcc:JT:Mongolia:As:32,33:23:+7.5:48N:107E:JT-JV:
+dxcc:JW:Svalbard:Eu:18:40:+1:78N:16E::
+dxcc:JX:Jan Mayen:Eu:18:40:-1:71N:9W::
+dxcc:JY:Jordan:As:39:20:+2:32N:36E:JY:
+%dxcc:JZ0*:Neth New Guinea:Oc:51:28:+10:10S:147E::
+dxcc:K:United States:NA:06-08:03-05:-5:39N:77W:AA-AL,KA-KZ,NA-NZ,WA-WZ:
+dxcc:KG4:Guantanamo Bay:NA:11:08:-5:20N:75W::
+dxcc:KH0:Mariana Is:Oc:64:27:+10:15N:146E::AH0,NH0,WH0
+dxcc:KH1:Baker & Howland Is:Oc:61:31:-12:0N:176W::AH1,NH1,WH1
+dxcc:KH2:Guam:Oc:64:27:+10:13N:145E::AH2,NH2,WH2
+dxcc:KH3:Johnston Is:Oc:61:31:-11:17N:170W::AH3,NH3,WH3
+dxcc:KH4:Midway Is:Oc:61:31:-11:28N:177W::AH4,NH4,WH4
+dxcc:KH5:Palmyra, Jarvis Is:Oc:61,62:31:-11:6N:162W::AH5,NH5,WH5
+dxcc:KH5K:Kingman Reef:Oc:61:31:-11:6N:162W::AH5K,NH5K,WH5K
+dxcc:KH6:Hawaii:Oc:61:31:-10:21N:158W::AH6,NH6,WH6,AH7,KH7,NH7,WH7
+dxcc:KH7K:Kure Is:Oc:61:31:-11:29N:178W::AH7K,NH7K,WH7K
+dxcc:KH8:Am Samoa:Oc:62:32:-11:14S:171W::AH8,NH8,WH8
+dxcc:KH9:Wake Is:Oc:65:31:+12:19N:167E::AH9,NH9,WH9
+dxcc:KL:Alaska:NA:01,02:01:-8:58N:134W::AL,NL,WL
+dxcc:KP1:Navassa Is:NA:11:08:-5:18N:75W::NP1,WP1
+dxcc:KP2:Virgin Is:NA:11:08:-4:18N:65W::NP2,WP2
+dxcc:KP4:Puerto Rico:NA:11:08:-4:18N:66W::KP3,NP3,WP3,NP4,WP4
+dxcc:KP5:Desecheo Is:NA:11:08:-4:18N:68W::NP5,WP5
+%dxcc:KR6*:Okinawa (Ryukyu):As:45:25:+8:26N:128E::KR8,JR6,KA6
+%dxcc:KS4*:Swan Is:NA:11:07:-6:17N:84W::
+%dxcc:KZ5*:Canal Zone:NA:11:07:-5:9N:80W::
+dxcc:LA:Norway:Eu:18:14:+1:60N:11E:3Y,JW-JX,LA-LN:
+dxcc:LU:Argentina:SA:14,16:13:-3:35S:58W:AY-AZ,LO-LW,L2-L9:
+dxcc:LX:Luxembourg:Eu:27:14:+1:50N:6E:LX:
+dxcc:LY:Lithuania:Eu:29:15:+2:55N:25E:LY:UP
+dxcc:LZ:Bulgaria:Eu:28:20:+2:43N:23E:LZ:
+dxcc:OA:Peru:SA:12:10:-5:12S:78W:4T,OA-OC:
+dxcc:OD:Lebanon:As:39:20:+2:34N:36E:OD:
+dxcc:OE:Austria:Eu:28:15:+1:48N:16E:OE:
+dxcc:OH:Finland:Eu:18:15:+2:60N:25E:OF-OJ:
+dxcc:OH0:Aland Is:Eu:18:15:+2:60N:20E::
+dxcc:OJ0:Market Reef:Eu:18:15:+2:60N:19E::
+dxcc:OK:Czech Republic:Eu:28:15:+1:50N:15E:OK-OL:
+%dxcc:OK*:Czechoslovakia:Eu:28:15:+1:50N:15E::
+dxcc:OM:Slovakia:Eu:28:15:+1:48N:17E:OM:
+dxcc:ON:Belgium:Eu:27:14:+1:51N:4E:ON-OT:
+dxcc:OX:Greenland:NA:05,75:40:-3:64N:52W::XP
+dxcc:OY:Faroe Is:Eu:18:14:+0:62N:7W::
+dxcc:OZ:Denmark:Eu:18:14:+1:56N:13E:5P-5Q,OU-OZ,XP:
+dxcc:P2:Papua New Guinea:Oc:51:28:+10:10S:147E:P2:
+%dxcc:P2*:Papua Terr:Oc:51:28:+10:10S:147E::VK9
+%dxcc:P2*:Terr New Guinea:Oc:51:28:+10:10S:147E::VK9
+dxcc:P4:Aruba:SA:11:09:-4:13N:70W:P4:
+DXCC:P5:No Korea:As:44:25:+9:39N:126E:HM,P5-P9:
+DXCC:PA:Netherlands:Eu:27:14:+1:52N:5E:PA-PI:
+DXCC:PJ2:Neth Antilles:SA:11:09:-4:12N:69W:PJ:PJ4,PJ9
+DXCC:PJ5:St Maarten, Saba, St Eus:NA:11:08:-4:18N:63W::PJ6-8
+%DXCC:PK1*:Java:Oc:54:28:+7.5:6S:107E::PK2-3
+%DXCC:PK4*:Sumatra:Oc:54:28:+7:1S:100E::
+%DXCC:PK5*:Netherlands Borneo:Oc:54:28:+8:3S:115E::
+%DXCC:PK6*:Celebe & Molucca Is:Oc:54:28:+8:5S:119E::
+DXCC:PY:Brazil:SA:12,13,15:11:-3:16S:48W:PP-PY,ZV-ZZ:
+DXCC:PY0F:Fernando de Noronha:SA:13:11:-2:4S:32W::
+DXCC:PY0P:St Peter & St Paul Rocks:SA:13:11:-2:1N:29W::
+DXCC:PY0T:Trindade & Martin Vaz Is:SA:15:11:-2:21S:29W::
+DXCC:PZ:Surinam:SA:12:09:-3.5:6N:55W:PZ:
+DXCC:R1FJ:Franz Josef Land:Eu:75:40:+3:81N:48E::4K2
+DXCC:R1MV:Malyj Vysotskij Is:Eu:29:16:+3:61N:29E::4J1
+DXCC:S0:Western Sahara:Af:37:33:+0:27N:13W:S0~:
+DXCC:S2:Bangladesh:As:41:22:+6:24N:90E:S2-S3:
+DXCC:S5:Slovenia:Eu:28:15:+1:46N:15E:S5:
+DXCC:S7:Seychelles:Af:53:39:+4:5S:55E:S7:
+DXCC:S9:Sao Tome & Principe:Af:47:36:+0:0N:7E:S9:
+DXCC:SM:Sweden:Eu:18:14:+1:59N:18E:7S,8S,SA-SM:
+DXCC:SP:Poland:Eu:28:15:+1:52N:21E:3Z,HF,SN-SR:
+dxcc:ST:Sudan:Af:48:34:+2:16N:33E:6T-6U,SSN-SSZ,ST:
+dxcc:ST0:Southern Sudan:Af:48:34:+2:5N:32E::
+dxcc:SU:Egypt:Af,As:38:34:+2:31N:31E:6A-6B,SSA-SSM,SU:
+dxcc:SV:Greece:Eu:28:20:+2:38N:24E:J4,SV-SZ:
+dxcc:SV5:Dodecanese:Eu:28:20:+2:36N:28E::
+dxcc:SV9:Crete:Eu:28:20:+2:36N:24E::
+dxcc:SY:Mt Athos:Eu:28:20:+2:40N:24E::SV1/A
+dxcc:T2:Tuvalu:Oc:65:31:+12:9S:179E:T2:
+dxcc:T30:West Kiribati:Oc:65:31:+12:1S:173E::
+dxcc:T31:Central Kiribati:Oc:62:31:+12:4S:171W:T3:
+dxcc:T32:East Kiribati:Oc:61,63:31:+12:2N:158W::
+dxcc:T33:Banaba:Oc:65:31:+11.5:1S:170E::
+dxcc:T5:Somalia:Af:48:37:+3:2N:46E:6O,T5:
+dxcc:T7:San Marino:Eu:28:15:+1:44N:12E:T7:
+dxcc:T8:Belau:Oc:64:27:+10:7N:134E:T8:KC6
+dxcc:T9:Bosnia-Hercegovina:Eu:28:15:+1:44N:18E:T9:4N4
+dxcc:TA:Turkey:As,Eu:39:20:+2:40N:33E:TA-TC,YM:
+dxcc:TF:Iceland:Eu:17:40:+0:64N:22W:TF:
+dxcc:TG:Guatemala:NA:11:07:-6:16N:92W:TD,TG:
+dxcc:TI:Costa Rica:NA:11:07:-6:10N:84W:TE,TI:
+dxcc:TI9:Cocos Is:NA:11:07:-6:6N:87W::
+dxcc:TJ:Cameroon:Af:47:36:+1:4N:12E:TJ:
+dxcc:TK:Corsica:Eu:28:15:+1:42N:9E::
+dxcc:TL:Central African Rep:Af:47:36:+1:5N:19E:TL:
+dxcc:TN:Congo:Af:52:36:+1:4S:15E:TN:
+dxcc:TR:Gabon:Af:52:36:+1:1N:10E:TR:
+dxcc:TT:Chad:Af:47:36:+1:12N:15E:TT:
+dxcc:TU:Ivory Coast:Af:46:35:+0:7N:5W:TU:
+dxcc:TY:Benin:Af:46:35:+0:6N:3E:TY:
+dxcc:TZ:Mali:Af:46:35:+0:13N:8W:TZ:
+dxcc:UA:Russia:Eu:19,20,29,30:16:+3:56N:37E:RA-RZ,UA-UI:
+dxcc:UA2:Kaliningrad:Eu:29:15:+2:55N:21E::
+dxcc:UA9:Russia (Asiatic):As:20-26,30-35,75:16-19,23:+7:52N:104E::UA0
+dxcc:UK:Uzbekistan:As:30:17:+6:41N:69E:UJ-UM:UI
+dxcc:UN:Kazakhstan:As:29-31:17:+5.5:43N:77E:UN-UQ:UL
+dxcc:UN1*:Karelo-Finnish Rep:Eu:19:16:+3:64N:32E::
+dxcc:UR:Ukraine:Eu:29:16:+2:50N:30E:EM-EO,UR-UZ:UB
+dxcc:V2:Antigua, Barbuda:NA:11:08:-4:17N:62W:V2:
+dxcc:V3:Belize:NA:11:07:-5.5:17N:89W:V3:
+dxcc:V4:St Kitts, Nevis:NA:11:08:-4:17N:63W:V4:
+dxcc:V5:Namibia:Af:57:38:+2:22S:17E:V5:
+dxcc:V6:Micronesia:Oc:65:27:+11:7N:158E:V6:KC6
+dxcc:V7:Marshall Is:Oc:65:31:+12:7N:171E:V7:KX6
+dxcc:V8:Brunei:Oc:54:28:+8:5N:115E:V8:
+dxcc:VE:Canada:NA:02-04,09,75:01-05:-5:45N:76W:CF-CK,CY-CZ,VA-VG,VO,VX-VY,XJ-XO:
+dxcc:VK:Australia:Oc:55,58,59:29,30:+10:35S:149E:AX,VH-VN,VZ:
+dxcc:VK0:Heard Is:Af:68:39:+5:53S:73E::
+dxcc:VK0:Macquarie Is:Oc:60:30:+11:54S:159E::
+dxcc:VK9C:Cocos-Keeling Is:Oc:54:29:+6.5:12S:97E::VK9Y
+dxcc:VK9L:Lord Howe Is:Oc:60:30:+10:31S:159E::
+dxcc:VK9M:Mellish Reef:Oc:55:30:+10:17S:156E::VK9Z
+dxcc:VK9N:Norfolk Is:Oc:60:32:+11.5:29S:168E::
+dxcc:VK9W:Willis Is:Oc:55:30:+10:16S:150E::VK9Z
+dxcc:VK9X:Christmas Is:Oc:54:29:+7:10S:106E::
+%dxcc:VO*:Newfoundland, Labrador:NA:09:02,05:-3.5:48N:53W::
+dxcc:VP2E:Anguilla:NA:11:08:-4:18N:63W::
+dxcc:VP2M:Montserrat:NA:11:08:-4:17N:62W::
+dxcc:VP2V:Br Virgin Is:NA:11:08:-4:18N:65W::
+dxcc:VP5:Turks & Caicos Is:NA:11:08:-5:22N:71W::
+dxcc:VP8:Falkland Is:SA:16:13:-4:52S:58W::
+dxcc:VP8:So Georgia Is:SA:73:13:-1.5:54S:37W::LU_Z
+dxcc:VP8:So Orkney Is:SA:73:13:-3:61S:45W::LU_Z
+dxcc:VP8:So Sandwich Is:SA:73:13:-3:59S:27W::LU_Z
+dxcc:VP8:So Shetland Is:SA:73:13:-4:62S:58W::LU_Z,CE9,HF0,R1AN,4K1
+dxcc:VP9:Bermuda:NA:11:05:-4:32N:65W::
+%dxcc:VQ1*:Zanzibar:Af:53:37:+3:7S:39E::5H1
+%dxcc:VQ6*:British Somaliland:Af:48:37:+3:2N:46E::
+%dxcc:VQ9:Chagos:Af:41:39:+5:7S:72E::
+%dxcc:VQ9*:Aldabra:Af:53:39:+4:9S:46E::
+%dxcc:VQ9*:Desroches:Af:53:39:+4:6S:55E::
+%dxcc:VQ9*:Farquhar:Af:53:39:+4:10S:51E::
+dxcc:VR2:Hong Kong:As:44:24:+8:22N:114E::VS6
+dxcc:VR6:Pitcairn Is:Oc:63:32:-8.5:25S:130W::
+%dxcc:VS2*:Malaya:As:54:28:+7.5:3N:102E::9M2
+%dxcc:VS4*:Sarawak:Oc:54:28:+8:2N:110E::
+%dxcc:VS9H*:Kuria Muria Is:As:39:21:+4:18N:56E::
+%dxcc:VS9K*:Kamaran Is:As:39:21:+3:15N:43E::7O
+dxcc:VU:India:As:41:22:+5.5:29N:77E:8T-8Y,AT-AW,VT-VW:
+dxcc:VU7:Andaman & Nicobar Is:As:49:26:+5.5:12N:93E::
+dxcc:VU7:Laccadive Is:As:41:22:+5.5:11N:73E::
+dxcc:XE:Mexico:NA:10:06:-6:20N:99W:4A-4C,6D-6J,XA-XI:
+dxcc:XF4:Revilla Gigedo:NA:10:06:-7:18N:113W::
+dxcc:XT:Burkina Faso:Af:46:35:+0:12N:2W:XT:
+dxcc:XU:Cambodia:As:49:26:+8:12N:105E:XU:
+dxcc:XW:Laos:As:49:26:+7:20N:102E:XW:
+dxcc:XX9:Macao:As:44:24:+8:22N:114E::
+dxcc:XZ:Myanmar (Burma):As:49:26:+6.5:17N:96E:XY-XZ:
+%dxcc:Y2*:East Germany:Eu:28:14:+1:53N:13E::Y3-Y9
+dxcc:YA:Afghanistan:As:40:21:+4.5:35N:69E:T6,YA:
+dxcc:YB:Indonesia:Oc:51,54:28:+7.5:6S:107E:7A-7I,8A-8I,JZ,PK-PO,YB-YH:
+dxcc:YI:Iraq:As:39:21:+3:32N:45E:HN,YI:
+dxcc:YJ:Vanuatu:Oc:56:32:+11:18S:168E:YJ:
+dxcc:YK:Syria:As:39:20:+2:34N:36E:6C,YK:
+dxcc:YL:Latvia:Eu:29:15:+2:57N:24E:YL:UQ
+dxcc:YN:Nicaragua:NA:11:07:-6:12N:87W:HT,H6-H7,YN:
+dxcc:YO:Romania:Eu:28:20:+2:45N:26E:YO-YR:
+dxcc:YS:El Salvador:NA:11:07:-6:14N:89W:HU,YS:
+dxcc:YU:Yugoslavia:Eu:28:15:+1:45N:21E:4N-4O,YT-YU,YZ:
+dxcc:YV:Venezuela:SA:12:09:-4:10N:67W:4M,YV-YY:
+dxcc:YV0:Aves Is:NA:11:08:-4:16N:64W::
+dxcc:Z2:Zimbabwe:Af:53:38:+2:18S:31E:Z2:
+dxcc:Z3:Macedonia:Eu:28:15:+1:42N:22E:Z3:4N5
+dxcc:ZA:Albania:Eu:28:15:+1:41N:20E:ZA:
+dxcc:ZB:Gibraltar:Eu:37:14:+1:37N:5W::
+dxcc:ZC:Cyprus SBA:As:39:20:+2:35N:33E::
+%dxcc:ZC5*:Br No Borneo:Oc:54:28:+8:6N:116E::
+%dxcc:ZC6*:Palestine:As:39:20:+2:32N:35E::4X1
+%dxcc:ZD4*:Gold Coast, Togoland:Af:46:35:+0:5N:0W::
+dxcc:ZD7:St Helena:Af:66:36:+0:16S:6W::
+dxcc:ZD8:Ascension Is:Af:66:36:+0:8S:14W::
+dxcc:ZD9:Tristan da Cunha & Gough Is:Af:66:38:+0:37S:12W::
+dxcc:ZF:Cayman Is:NA:11:08:-5:19N:81W::
+dxcc:ZK1:No Cook Is:Oc:62,63:32:-10.5:10S:161W::
+dxcc:ZK1:So Cook Is:Oc:63:32:-10.5:22S:158W::
+dxcc:ZK2:Niue:Oc:62:32:-11:19S:170W::
+dxcc:ZK3:Tokelau Is:Oc:62:31:-11:9S:171W::
+dxcc:ZL:New Zealand:Oc:60:32:+12:41S:175E:ZK-ZM:
+dxcc:ZL7:Chatham Is:Oc:60:32:+12.75:44S:177W::
+dxcc:ZL8:Kermadec Is:Oc:60:32:+12:29S:178W::
+dxcc:ZL9:Auckland, Campbell Is:Oc:60:32:+12:51S:166E::
+dxcc:ZP:Paraguay:SA:14:11:-4:26S:57W:ZP:
+dxcc:ZS:So Africa:Af:57:38:+2:26S:28E:H5~,S4~,S8~,V9~,ZR-ZU:
+%dxcc:ZS0*:Penguin Is:Af:57:38:+2:27S:15E::
+dxcc:ZS8:Pr Edward & Marion Is:Af:57:38:+3:47S:38E::
+%dxcc:ZS9*:Walvis Bay:Af:57:38:+2:23S:15E::
+%--------------------------------------dxcc.dat

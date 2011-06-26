@@ -1,0 +1,18 @@
+%--------------------------------------
+%Annotation file (annotation) for AZ_PROJ. Requires AZ_PROJ v1.1.3 or later
+%	To add a notation to the map, supply data in the form
+%		annotate:Notation:Lat:Lon:comment
+%		annotate:Notation:gridsquare::comment
+%	eg.	annotate:NV3Z:38.98847N:76.58033W:
+%
+%with v1.1.3 a ':' is required after the lat/lon to be compatible
+%with parsing lat/lon the same way as in other *.dat files
+%this allows a comment at the end of the line
+%
+annotate:Mom's Place:39.00N:81.00W:comment
+%Bullamakanka ARC 2m repeater
+annotate:BARC 2m:30.1S:145.5E:comment
+annotate:Good day, eh:49N:75W:comment
+annotate:Sydney:34S:151E:comment
+%--------------------------------------
+%--------------------------------------annot.dat

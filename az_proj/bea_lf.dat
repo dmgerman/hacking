@@ -1,0 +1,143 @@
+%lfbcn.dat (C) KD4IDY ----------------------------------------------
+%
+%160 - 190 kHz
+%VLF AND ULF BEACONS
+%----------------------------------------------
+%Date: Fri, 24 Oct 1997 22:20:09 -0400 (EDT)
+%From: LWCANews@aol.com
+%Message-ID: <971024222008_324214857@mrin44.mail.aol.com>
+%To: mack@appliedreasoning.com
+%Subject: Re: Request for Permission to use LW list
+%Status: O
+%X-Status:
+%X-IMAP-Date: 25-Oct-1997 05:18:37 +0000
+%X-UID: 936
+%
+%Hi Joe,
+%
+%Finally got a chance to look at the AZ_PROJ site last night. I'd be most
+%happy for you to utilize the LF-MF Beacons list in conjunction with it, if
+%you think it would be of interest.
+%
+%If you do eventually release a commercial version, though, please contact me
+%again before any use in connection with it.
+%
+%73,
+%John Davis
+%KD4IDY
+%
+%This document is Copyright 1997 by John H. Davis;
+%all rights reserved. It is provided in electronic form
+%by the Longwave Club of America for individual use only.
+%Obtain <A HREF="mailto:lwcanews@aol.com">permission</A>
+%before publishing in any other form.
+%
+%With updates received through 18 Oct. 1997
+%Please <A HREF="mailto:lwcanews@aol.com">report</A> additions and corrections
+%
+%----------------------------------------------
+%
+%160 - 190 kHz
+%VLF AND ULF BEACONS
+%
+beacon:983:R:DM23:-1:-1:Durant, OK DM23 John R. Wright, by Request
+%beacon:7812:T:EN41:-1:-1:Cedar Rapids, IA:EN41 *Discontinued*
+%
+%----------------------------------------------
+%WESTERN LOW FREQUENCY BEACONS REPORTED
+%West Coast Net Thurs., 8 pm; and Sun., 7:30 am; 3927 kHz+/-, LSB
+%
+beacon:180.000:G:CM97:-1:-1:Palo Alto, CA Herb Vanderbeek WY6G
+beacon:181.167:IZJ:DM04:-1:-1:San Gabriel, CA Ed Phillips W6IZJ, 1000-0600 UTC
+beacon:182.:ELU:DM04:-1:-1:Simi Valley, CA Randy Seden WD6ELU, VFO, SSB
+beacon:182.518:NR:DM13:-1:-1:Riverside, CA Bill Gates N6WHP 9a-9p Sat., Sun.
+beacon:183.160:PRK:CM97:-1:-1:Saratoga, CA Dan Smith K6PRK
+beacon:183.500:PLI:DM04:-1:-1:Burbank, CA Dave Curry WD4PLI; CCW
+beacon:183.500:Z: DN41:-1:-1:Layton, UT Pete Smith K7ZTM
+beacon:183.544:ME:CM97:-1:-1:San Jose, CA Mitchell Lee
+beacon:184.300:SB:DM04:-1:-1:Santa Barbara, CA WB6RIJ; CCW, BPSK; Wkend 8a-12p
+%beacon:186.100:3GOATS::-1:-1:Talent, OR Fred Lord; 24 hr
+beacon:187.088:M:DM22:-1:-1:Westmorland, CA Mark Monte AB6ZQ
+beacon:187.370:HM:DM34:-1:-1:Prescott, AZ Howard Myers W7ILW; except rain
+beacon:187.500:TAL:CN87:-1:-1:Tacoma, WA John Lyman; Fri PM - Mon AM.
+beacon:187.650:HDO:CM95:-1:-1:Morro Bay, CA Cliff Buttschardt; BPSK
+beacon:188.920:DJL:DM04:-1:-1:Newbury Park, CA Darwin Long IV, CCW 24h exc. rain
+%
+%----------------------------------------------
+%EASTERN/CENTRAL/CANADIAN LOW FREQUENCY BEACONS
+%Eastern Nets: 1961+/- kHz Sunday PM; 1983, evenings;
+%7280, Sat/Sun early afternoon, Eastern Time
+%
+%beacon:174.600:TXT::-1:-1:Sandusky, OH:Michael Agsten WA8TXT
+beacon:175.000:D:EN31:-1:-1:Des Moines, IA:Tom Gruis, K0HTF; alt 164.44
+%beacon:177.500:SVZ::-1:-1:Bridgeport, NY:Philip Gentile (still on?)
+beacon:177.900:MPK:FN23 :-1:-1:Chittenango, NY:Donald Moth W2MPK
+beacon:178.600:ZWI:FN13 :-1:-1:Baldwinsville, NY: Howard Mortimer WB2ZWI
+beacon:179.860:FL:FM19 :-1:-1:Silver Spring, MD: Fred Larrick N3FL; by Req.
+beacon:180.000:K3DI:FM19 :-1:-1:Arnold, MD:Dick Wilder K3DI; VFO; by sked.
+%beacon:181.50:I::-1:-1:Princeton, MN: Jim Strong K0PM; ID may change
+beacon:181.620:RL:FM18 :-1:-1:Herndon, VA:Robt. Laney WB7PZU; exc. storm
+%beacon:182.500:UD::-1:-1:Wakefield, QC: Don Dawson VE2UD; intmtt
+beacon:182.700:TFQ:EM67:-1:-1:Centertown, KY:Doug Smith WB4TFQ; 24h wkend/hol.
+beacon:184.320:IA:EN70:-1:-1:Marion, IN:Robert J Fear; ASCII/Baudot
+beacon:184.320:YWK:EM74:-1:-1:Crossroads, GA:Will Payne N4YWK; alt 184.273
+beacon:184.320:RI:FN21:-1:-1:Rifton, NY:Pierre Thomson
+beacon:184.480:TEXAS:EM12:-1:-1:Haslet, TX:Bill Cantrell WD5CVG
+beacon:184.877:R:DM23:-1:-1:Durant, OK:CW, John Wright;:intermtt.
+beacon:185.000:RED:EM70:-1:-1:Wausa, FL: Cecil Wadford; BPSK
+beacon:185.700:JPH:FM18:-1:-1:Riverdale, MD: J. Patrick Harrington N3IZV
+beacon:185.900:3SCO:FN03:-1:-1:Scarborough, ON:Scott Reynolds, VE3SCO
+beacon:186.320:P:FN33:-1:-1:Cornish, NH:John T. Collins KN1H
+beacon:186.375:BA:EM68:-1:-1:Lancaster, IL: Brice Anderson W9PNE, 24 hr
+beacon:186.750:LEK:EN36:-1:-1:Aitkin, MN:Lyle Koehler; CCW, BPSK
+beacon:186.800:MS:EN78:-1:-1:Scottsburg, IN:Michael Stidam
+beacon:186.986:BOB:EN50:-1:-1:Mahomet, IL:Bob Hoffswell AA9DH
+beacon:187.400:ALF:EM48:-1:-1:St. Louis, MO: Stan Wilson, AK0B
+beacon:187.500:WA:FN42:-1:-1:Andover, MA:Bill Ashlock
+beacon:187.500:YD:EL79:-1:-1:White City, FL:Bernie Pridgeon, KQ4YD
+beacon:187.780:MOO:FM29:-1:-1:Monroeville, NJ:Norm Harbison Jr K2NH, Intmt
+beacon:187.800:VA:FM07:-1:-1:Smith Mtn Lake, VA:Bart Prater, N4ZV
+beacon:188.150:YHO:EM79:-1:-1:Mason, OH: Bill Dawson, K8YHO
+beacon:188.810:R:DM23:-1:-1:Durant, OK:BPSK; intermit; see 184.877
+beacon:189.050:ZIA:EM95:-1:-1:Stanfield, NC: Dexter McIntyre WA4ZIA
+beacon:189.200:SAM:EN35:-1:-1:Crystal, MN:Sam Eastey W0IMG
+beacon:189.200:GIR:FN00:-1:-1:New Eagle, PA: George M. Jacob KA3GIR
+beacon:189.360:TH:FN20:-1:-1:Colts Neck, NJ:Carl Lundgren Jr W2AZQ
+beacon:189.500:ABC:EM92:-1:-1:Hilton Head Is., SC:WD4NGG; Intmtt wkend days (?)
+beacon:189.800:RM:EN36:-1:-1:Duluth, MN:Roger Magnuson K0MVJ
+beacon:189.950:OK:EM15:-1:-1:Davenport, OK: Bill Bowers 24h/7d
+%
+%----------------------------------------------
+%1600 - 1700 kHz</H3>
+%beacon:512.0:FL:FM19:-1:-1:Silver Spring, MD: Fred Larrick; by request: Freq?
+beacon:1606.25:2IQ:FN25:-1:-1:St Adolphe d'Howard QC Bill de Carle; by request
+beacon:1610:BWK:FN11:-1:-1:Berwick, PA:See RGQ; intmtt day & early pm
+%beacon:1610.075:MB::-1:-1:Glacier, WA:Jim Ericson CW FSK + AM intmt
+%beacon:1620.0:GK::-1:-1:Kailua Town, HI Herb Vanderbeek
+beacon:1625.0:JR:FN31:-1:-1:West Hartford, CT: John Ramsey, N1AKB
+beacon:1637.6:NH:FM29:-1:-1:Monroeville, NJ:Norm Harbison, Jr.:(Intermitt.)
+beacon:1638.75:0KVL:EN35:-1:-1:North Branch, MN:Tom Lambert
+beacon:1639.00:PX:FM28:-1:-1:Berlin MD: David C. Holland; back on *
+beacon:1640.30:R:CM97:-1:-1:San Jose, CA:Jim Vandermaaten
+beacon:1641.00:JN:EN50:-1:-1:Mahomet, IL:John Horton N9RLV
+beacon:1641.50:MPK:FN23:-1:-1:Chittenango NY:Donald Moth W2MPK
+beacon:1641.95:MIN:EN36:-1:-1:Aitkin, MN:Lyle Koehler
+beacon:1643.50:ABC:EM92:-1:-1:Hilton Head Is., SC:Todd Roberts WD4NGG
+beacon:1645.00:A:DM24:-1:-1:Quartzite, AZ: Kirk Wines KC6ASA
+beacon:1650.62:G4:CM97:-1:-1:Palo Alto, CA: Herb Vanderbeek
+beacon:1651.10:YHO:EM79:-1:-1:Mason OH:Bill Dawson
+beacon:1651.58:G3:DM05:-1:-1:Fresno, CA:Boyd Skillin
+beacon:1658.70:W:EL97:-1:-1:Vero Beach, FL:Dave Ross; on ?
+%beacon:1687.40:TSN::-1:-1:Catalina, AZ (Tucson) Frank Cathell
+beacon:1673.50:RLR:EL17:-1:-1:Corpus Christi, TX:Rob't Rowe N5PMX
+beacon:1675.00:D:DM79:-1:-1:Englewood, CO: William Hensel, AA0RQ
+%beacon:1678.00:N::-1:-1:Lake Wildwood, CA: Carle Bumpus
+beacon:1684.00:SEA:EM72:-1:-1:Warm Springs, GA:John H. Davis
+beacon:1685.:PH:FM18:-1:-1:Riverdale, MD: N3IZV; solar power, afternoons
+beacon:1687.60:CSA:EM97:-1:-1:Elliston, VA:KC4DY; formerly GDY
+beacon:1689.40:PC:FN31:-1:-1:Harwinton, CT: Paul Cianciolo KB1RP
+beacon:1690.798:STLMO:EM48:-1:-1:St. Louis, MO: KA0TUP; 1 min CCW+1 min BPSK
+beacon:1693.80:VA:FM07:-1:-1:Smith Mtn. Lake, VA:Bart, N4ZV; CW/narrow LSB
+beacon:1696.20:WM:DM34:-1:-1:Prescott, AZ:Howard Myers W7ILW; except rain
+beacon:1703.00:RGQ:FN11:-1:-1:Berwick, PA:Shel Cleaver W3RGQ
+%----------------------------------------------lfmfbcns.dat (C) KD4IDY

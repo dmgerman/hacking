@@ -1,0 +1,751 @@
+	This file is README.AZP for AZ_PROJ.PS v1.1, Apr 00
+AZ_PROJ.PS (C) 1994,5,6,7,8,9,2000 Joseph Mack NA3T and Michael Katzmann NV3Z.
+
+LEGAL STUFF:
+
+AZ_PROJ.PS is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+This package is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with AZ_PROJ.PS; see the file COPYING. If not, write to
+the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+
+
+WHAT AZ_PROJ DOES:
+
+	AZ_PROJ is a set of postscript files that generates azimuthal
+equidistant projections of the earth from almost (not from the poles)
+any location, giving bearing and distance from your location to any
+other place on the surface of the earth.
+
+WHERE TO GET AZ_PROJ:
+
+	The code is available at the AZ_PROJ website(s)
+
+Mar 00 http://www.wm7d.net/azproj.shtml
+Mar 00 http://www.hfradio.org/azproj.shtml
+
+	The AZ_PROJ Map Server(s) will generate GIF formatted maps 
+for you to download, using a subset of AZ_PROJ's features.
+
+	These sites have the beta release versions and the original 
+full release (v1.04 which is now very old and not used). The beta 
+releases have been (mostly) bugfree working code in which the docs
+haven't been kept up, rather than code which has problems. As of 
+v1.1-beta10 (Mar 2000) I'm released files in the unix tar.gz format 
+and new files will have unix rather than DOS carriage control.
+
+	The location of the server(s) has varied somewhat in the course
+of time due to job changes and availability of people to host the site.
+If the AZ_PROJ server is not at this site when you go looking for it,
+use your web search toold to look for any or all of: "azimuthal"
+"equidistant" "projection" "map" "postscript"
+
+	The publically released versions of AZ_PROJ are archived in
+
+North America at ftp://oak.oakland.edu/pub/hamradio/dos/ham-utils/azprojxx.zip
+Europe        at ftp://nic.funet.fi/pub/ham/antenna/azprojxx.zip
+
+	where xx is a version number
+
+	I will not be using these sites for further versions of az_proj
+as az_proj will be released as sets of files all with unrelated names.
+
+HOW AZ_PROJ WORKS:
+
+	AZ_PROJ is a postscript printer file (although this may
+not be obvious at first appearance). As such, it can be sent to 
+a postscript printer to produce a map. The computer and the operating
+system you use are irrelevant to producing a printed map - they all
+work. If you want to display the map on your screen, then you will 
+need some OS dependant mechanism, such as the program "ghostscript" 
+to do so. "ghostscript" is available for most computers/operating 
+systems, and it can be installed using the documentation provided with
+the ghostscript package. There are some files in AZ_PROJ which will do 
+basic tests on your ghostscript installation, but the installation of 
+ghostscript is left to you.
+
+	The az_proj file you send to the printer consists of a section 
+where variables (projection center, scale, colours, features drawn) 
+are given initial values (which you edit), then a section of code 
+which draws the map and then a section of data. These parts can be 
+manipulated independantly and for convenience are kept as separate 
+files - az_ini.ps, az_proj.ps and the various data files 
+(eg *.dat, *.wdb...) respectively. The data files have geographical 
+information (continents, countries, rivers, lakes, elevation) and 
+ham information (beacons, your personal worked grids list which can 
+be generated from you log, mountain top locations, dxcc countries, 
+commercial transmitters, ham population). When making a map, you 
+edit az_ini.ps and then select the data files you want displayed. 
+The file are concatenated into one file and sent to the printer. 
+For ghostscript you can also name these files separately on the 
+command line without concatenating them.
+
+	The structure of the AZ_PROJ file then is
+
+	variables (and their values), then code, then data.
+
+INSTALLATION AND RUNNING OF AZ_PROJ
+
+	1. Unzip the AZ_PROJ files into a directory of your choice.
+(you're done installing AZ_PROJ).
+
+	2. If you want to display the maps on a screen or print 
+to a non-postscript printer, then install ghostscript (see ghost.doc).
+Test ghostscript by displaying and printing tiger.ps (to test 
+the graphics) and alphabet.ps (to test fonts). 
+
+	If you want gif output, you can use v2.6.1 or use a current version
+to produce a .png which you can convert to a gif. Note that v2.6.1 cannot
+do the gamma correction neccessary for color printers, so use a current
+version to produce printer files. (I have both v2.6.1 and the current 
+version v5.xx installed). Presumably I will be changing the server site
+from .gif to .png sometime.
+
+	3. Run the example script (*.bat, *.sh) files contained in the 
+AZ_PROJ package (making sure to change "gs" to the name of your gs executable, 
+which may be gs386, gs261dvx...)
+
+	4. Read the text below and the comments in az_ini.ps and in
+the various .dat files to customise the maps.
+
+FILES IN AZ_PROJ
+
+code:
+az_ini.ps	initial values for variables (edit these)
+az_proj.ps	the actual code
+controld.ps	The ^D symbol (EOF for a postscript printer)
+		(if your spooler doesn't add ^D).
+hf_config.ps	Preconfigured file for HF maps (see comments in file).
+vhf_config.ps	Preconfigured file for VHF maps (see comments in file).
+
+The *config.ps files are edited copies of az_ini.ps. If you make a 
+postscript file by concatenating
+
+az_ini.ps hf_config.ps az_proj.ps n_amer.wdb
+
+and if hf_config.ps is initially a copy of az_ini.ps with the variables
+of your interest set at your values, then you don't have to edit the
+large az_ini.ps file or loose the default values.
+
+text files:
+COPYING		The GNU Public License under which this set of files is distributed
+ghost.doc 	my hints for setting up ghostscript (quite old now)
+simpson.doc 	Article about NMEA by Wayne Simpson
+README.azp	This file
+history.txt	List of features added, with version number.
+
+continents,countries,rivers,lakes:
+
+*.wdb		MicroWorldDatabase files for parts of the world
+*.pod		inverted wdb files for projecting the antipodes onto your site
+
+(lat/lon are in decimal degrees)
+
+elevation: 
+
+[A-Z][A-Z].dat	5min elevation data from National Oceanographic and Atmospheric 
+		Agency, by 2 char gridsquares
+
+dat files:
+
+AA.dat-RG.dat	5 min elevation data for 2 char gridsquares
+annot.dat	label a lat/lon point (lat/lon in d:m:s) 
+bea*.dat	beacon files
+dxcc.dat	The ARRL dxcc countries list, maintained by K2DI
+grid*.dat 	various files for colouring/marking a gridsquare 
+label.dat	(actual example is us_call.dat) - label point by decimal lat/lon
+mountain.dat	An example file for plotting mountain tops
+nmea.dat	An example NMEA format file for GPS location of QTH
+qra*.dat	files showing density of hams, or contacts/gridsquare
+qso*.dat	Pairs of QTH's and call signs for plotting paths of QSO's
+repeater.dat	An example file for plotting repeaters
+rover.dat	An example file for plotting rovers
+tv,am,fm*.dat	commercial transmitters
+*.den		some files for plotting density (in this case of ham population)
+
+script/bat files
+
+azview.bat	view a continent under Ghostscript
+azview1.bat	like azview.bat except data is fed to Ghostscript stdin,
+                    as if Ghostscript were a printer
+azfile.bat	generate a file for later printing, needs gs v3.33
+azgif.bat	generates a gif file with gs v2.61
+azprint.bat	print under Ghostscript directly to a printer
+makbig.bat	concatenate files
+makdat.bat	concatenate files
+
+az.sh		a file containing command lines that I've used recently
+makebig.sh	make a ps file from a lot of files
+makesmall.sh	make a ps file from a few files
+makeworld.sh	make world.wdb
+test_suite.sh	my test suite
+
+DESCRIPTION OF AZ_PROJ
+
+	This file (README.azp) describes the use of AZ_PROJ. 
+
+az_ini.ps 
+
+	az_ini.ps will arrive set up to give a map of North America
+centered on my current residence (Chapel Hill, North Carolina)
+at a scale of 400km/cm. To customise the maps once you've tested
+the examples, you edit az_ini.ps (or copy it to a *config.ps file
+and edit that and then include the *config file after az_ini.ps
+in your output file). 
+
+	az_ini.ps has variables which allow the map to be customised.
+In general the order of variables can be changed to suit your needs,
+as long as variables which are defined in terms of other variables
+are not exchanged in order (eg colors need to be defined before you
+use them). az_ini.ps is full of comments which will tell you how to
+customise AZ_PROJ. You can remove these comments when no longer
+needed.
+
+DATA FILES
+
+	Each line of an input file is parsed individually. AZ_PROJ
+determines the data types from the first few characters on the line.
+Unrecognisable lines are ignored (with an error notice and the
+offending line posted to stdout if verbose is on).
+
+	Blank lines are not valid data. Make sure all comment lines
+begin with a %
+
+.wdb files
+
+	These are an ascii version of the Central Intellegence Agency
+Micro World Data Base (CIA WDB) adapted for AZ_PROJ. These files contain
+geographic information. In general you will not need to change these
+files. However if your favorite lake, island or river was not considered
+worthy of inclusion by the CIA, then you can add it yourself using the
+same format.
+
+.dat files:
+
+	These are files containing one piece of information per line.
+Each line starts with a word (eg beacon) followed by a ":" (beacon:).
+These .dat files contain ham specific information such as dxcc
+lists of countries (worked and not worked), grid squares worked,
+beacons, mountain tops, and any annotations that you want to put on the map
+("Mom's place"). Enough information has been included at the
+start of each .dat file for you to be able to add/change entries.
+
+	Since the .dat files are just collections of independent
+on line entries, there is no real reason to keep the .dat files
+separate - in principle the .dat files can be concatenated and
+the lines put in any order. We have kept each type of .dat
+file separate mainly for bookkeeping purposes.
+
+	Note: Order of files.
+
+	The data (.dat and .wdb) files can be sent in any order. However
+the output of each file will be drawn on top of the output of the previous
+data files. Thus the order in which .dat files are sent to the output
+(the order in the command line or in the combined file sent to a printer)
+affects the look of the map.
+
+	In particular if you're using a NMEA.dat file generated from
+Global Positioning System (GPS) NMEA formatted data to center your
+map (such as on a mountain top) then this file _must_be read first
+as it will move the QTH from that established in az_ini.ps.
+
+	Some of the .dat files (eg grid.dat) generate solid colors
+that will cover anything under it. These types files should go next.
+The other .wdb/.dat files put points or lines on the map and these can go
+last.
+
+	An example command line to put the files in the most sensible
+order would be
+
+C:>gs -q az_ini.ps -- az_proj.ps nmea.dat grid.dat n_amer.wdb *.dat
+
+	When sending to a real Postscript printer, these files could be
+concatenated, again in the chosen order, by generating the file big.ps,
+using the following command line and then sending big.ps to the printer.
+
+C:>copy az_ini.ps+AZ_PROJ.ps+grid.dat+n_amer.wdb+mountain.dat+beacon.dat big.ps
+
+
+MAKING MAPS
+
+1. SENDING TO SCREEN/PRINTER VIA AN INTERPRETER (eg GHOSTSCRIPT):
+
+	If you don't have a real postscript printer or if you
+want to display AZ_PROJ maps on a screen then you will need
+a postscript interpreter like Ghostscript (see ghost.doc and
+the comments in AZ_PROJ.ps).
+
+	MAKE SURE THAT GHOSTSCRIPT IS RUNNING ON YOUR MACHINE BEFORE
+TRYING TO RUN AZ_PROJ. RUN THE TEST FILES tiger.ps AND alphabet.ps
+
+	Run some of the example files that come with
+Ghostscript (e.g. the graphics file tiger.ps) and a postscript file
+which contains text (eg the manual, use.ps, which comes with
+Ghostscript). A postscript file which contains text is needed
+to show that you have the FONTMAP file pointing to the correct
+fonts (otherwise you'll get complaints from ghostscript that it
+cannot find various fonts).
+
+	Ghostscript runs on your computer (rather than in your
+printer as with Postscript) and hence it can find files on your
+hard disk. The names of the data files can be given as parameters
+to the interpreter. You can send any number of different .WDB and .DAT
+files to ghostscript as command line parameters, rather than
+concatenating the files together before sending them to the
+output device as is done with a postscript printer.
+
+	Note that AZ_PROJ checks the size of the display
+it is printing (or screening) on. Since the screen and printer
+could be different sizes, you will not neccesarily get the same
+picture when previewed on a screen as you will on the
+printer. (The versions of Ghostscipt compiled to run under
+X-window think they're running on 8.5x11.0" paper).
+
+- screen viewing for DOS:
+
+	C:\gs>gs -q az_ini.ps -- az_proj.ps n_amer.wdb
+
+	or run the supplied file azview.bat
+
+	C:\gs>azview
+
+- to a file for later printing
+
+	To make the file `n_amer.cdj' which can then be sent to
+a color desk jet 550 (which ghostscript calls a "cdj550", see the
+ghostscript docs for details of other printers) -
+
+	C:\gs>gs -q -sDEVICE=cdj550 -sOutputFile=n_amer.cdj az_ini.ps -- az_proj.ps n_amer.wdb dxcc.dat
+
+	or run the supplied azfile.bat file
+
+	C:\gs>azfile
+
+	The format of the command line for ghostscript is
+
+	exucutable              (gs)
+	gs switches		(-q -sDEVICE=cdj550 -sOutputFile=n_amer.cdj)
+	postscriptfilename      (az_ini.ps)
+	another switch	        (--)
+	datafiles               (az_proj.ps n_amer.wdb dxcc.dat)
+
+- sending a file to a non-postscript printer
+
+	You can send output to the printer directly (see below). However
+you might want to generate the file if you want to print several copies of
+the map (and only have to calculate the map once), or you have a spooler
+(recommend dmp205.zip, look on a BBS) which will give you back your
+keyboard again, so you can go on with something else during the printing.
+
+
+- without a spooler (note /b for binary)
+
+	C:\gs>copy/b n_amer.cdj lpt1:
+
+- to the printer directly (PRN is the normal output target in MSDOS)
+
+	To send to the printer (through lpt1:, note: can use MODE to redirect)
+
+	C:\gs>gs -q -sDEVICE=cdj550 az_ini.ps -- az_proj.ps n_amer.wdb dxcc.dat
+
+	or run the supplied azprint.bat file
+
+	C:\gs>azprint
+
+- using ghostscript to simulate a printer
+
+	A printer listens to its stdin (the printer cable). A printer
+doesn't know about files. Ghostscript can run in this mode. Make a
+big.ps file using makebig.bat. Then do
+
+
+	c:\gs>type big.ps | gs -q -
+
+	The first part of the instruction sends the file to stdout, the
+second part tells gs to take input from stdin (for unix change "type"
+to "cat"). You'll get a screen display instead of printout. Note that
+big.ps will already have the EOF for the operating system and controld.ps
+is not needed (but will do no harm).
+
+COLOR PRINTERS:
+
+	If you're going to output color maps to a non-postscript
+printer, using ghostscript and you want the colors gamma corrected
+(they'll be murkier if you don't), then you'll need v3.33 (or later).
+V2.61 either doesn't do it, or doesn't understand my code, or
+has a bug.
+
+	If you have a color printer, read the poop in AZ_PROJ.ps
+about gamma correction (use an editor to search for string "gamma").
+If you have a Deskjet550C or 1200C you are already covered (we've
+coded it for you). If you don't get the gamma correction right,
+then the colors you get on the printer will be darker (murkier)
+that those seen on the screen.
+
+GIF FILE OUTPUT:
+
+	You'll need gs v2.61 for this (try AZGIF.BAT). The
+gif feature was removed from later versions of ghostscript,
+for fear of copyright infringement with Unisys.
+
+2. SCREEN DISPLAY IN A WINDOWING ENVIRONMENT.
+
+	In a windowing environment like X-window, you can launch
+the program from one window and have a new window pop-up to display
+the map. In this case you can turn on a feature we used for debugging,
+(verbose, in az_ini.ps) and the launching window will tell you what
+is being drawn in the display window or what is being generated
+in the printer output file. (Remember to turn verbose to off
+for all other cases).
+
+3. SENDING TO A POSTSCRIPT PRINTER:
+
+	Printing on a Postscript printer is sloooooow. It takes
+75 min to generate a map of the whole world on an HPLaserJet 5MP with
+3M of memory.
+
+	As well, AZ_PROJ needs lots of memory. Postscript printers which
+only have enough memory to handle text may not be able to handle all the
+graphics.
+
+	The files must be sent as one stream (ie one big concatenated
+file) in the suggested order
+
+az_ini.ps
+az_proj.ps
+nmea.dat
+grid.dat
+*.wdb files
+*.dat files
+controld.ps
+
+	Run makebig.dat to make such a file.
+
+	At the end of the concatenated file, there MUST be an EOF
+(a ctrl D for postscript) for the printer to know that it had come
+to the end of the job. This is usually sent by the spooler, but
+if your setup (like most MSDOS and some unix setups) doesn't do this,
+you'll wait hours till the printer times out. If this is your
+situation, concatenate controld.ps onto the end of your big.ps
+file for printing.
+
+
+
+Examples:
+
+(make sure "verbose is "off" in the az_ini.ps file)
+
+- to a postscript printer (DOS)-
+
+	Run makebig.bat
+
+	C:\gs>makebig
+
+	This will produce big.ps. Send this new file to your postscript
+printer with
+
+	C:\gs>print big.ps
+
+- to a postscript printer (UNIX)-
+
+	$ cat az_ini.ps AZ_PROJ.ps n_amer.wdb |lp
+
+
+Examples:
+
+(make sure "verbose" in az_ini.ps to "off" in the az_ini.ps file)
+
+- to a postscript printer (DOS)-
+
+	Run makebig.bat
+
+	C:\gs>makebig
+
+	This will produce big.ps. Send this new file
+to your postscript printer with
+
+	C:\gs>print big.ps
+
+- to a postscript printer (UNIX)-
+
+	$ cat az_ini.ps az_proj.ps n_amer.wdb |lp
+
+
+
+CUSTOMISING az_ini.ps FOR YOUR NEEDS
+
+	Just start changing things in az_ini.ps to vary the map.
+Hopefully there's enough documentation there to help you. Here are
+some that you're likely to want to change.
+
+QTH:
+
+	You can change the lat/lon to your QTH (use decimal degrees,
+eg 90.05, with N and E being positive, S and W being negative),
+center_offset (2nd line) to "off", change the scale to "500"
+and scale type to "off".
+
+SCALE:
+
+	A map of the whole world needs 2000km/cm
+
+DECORATIONS:
+
+	For example, you can turn letter_squares and labels on/off, with
+number_squares and labels on/off.
+
+
+
+FORMAT OF RECORDS IN *.dat FILES:
+
+See the sample files for more details.
+
+transmitters: all have the same format. The first field in the record 
+determines the symbol. Depending on the transmitter type some fields
+may be interpreted differently.
+
+	transmitter_type is
+		beacon
+		repeater
+		rover
+		mountain		(uses tranmitter format)
+		TV
+		BC                      %usually 550-1630 kHz AM
+		AM                      %usually 550-1630 kHz AM
+		FM                      %North America is 88-108MHz
+
+transmitter_type:frequency:string_1(suggested use, callsign):grid_locator:power(W):beam_heading(s):string_2(suggested use, location or special operating condx):comment (ignored by AZ_PROJ)
+2m beacon
+	beacon:144.170:NA3T:FM19gk:60:300:Frederick, MD: Joe, ph# 301-555-1212, 5dbd yagi, from W3EP, Oct 96
+        (beacon and repeater is plotted as a nested set of circles, 
+         The number of circles indicate the power level.)
+
+rover operating a weekend 10GHz contest from Mt Ascutney
+	rover:10:NA3T:FN33sk:::only saturday: 2m link is 147.54, cell ph# 860-555-1212
+	Rover is plotted as a VW beetle.
+
+TV station North America channel 2, used as a 6m propagation marker
+	TV:55.25Z:WPBT/02:FL05cx:100000:-1:Miami,FL,US:comment
+
+		High power commercial stations used as propagation markers or
+		for mad DX hunters (TV, AM, FM, ...) are not differentiated
+		by AZ_PROJ (at least yet). They can be plotted as either
+		a non-directional tower (one section for each factor of 10
+		increase in power) or by nested circles (see az_ini.ps).
+
+	frequency is
+		int or a real. The units are not specified here and
+		instead are known by the program using the file.
+		Units could be	kHz, MHz, GHz, wavelength in m, channel number...
+
+		In AZ_PROJ the frequency entry is matched with entries in the
+		array /bands_plotted. If a match is found the entry is plotted
+		on the map, otherwise the entry is skipped. If the entry is a real
+		eg 55.25, then the int resulting from truncation (in this case 55)
+		is matched against the entries in /bands_plotted. If a real
+		the last digit in the frequency can instead be an arbitrary char
+		which is plotted on the map (eg 55.250H for horizontal polarisation).
+		Some chars have special meaning eg +,-,N,Z for TV stations
+		(see file TVxxx.dat for further details), or +/- for repeaters
+		(see file repxxx.dat for further details).
+
+	power
+		if -1, then power unknown. Will be plotted as minimal power
+		(set in az_proj.ps).
+		% Eg for a tower (minimum of one section of tower)
+		% 1W->1 section
+		% 10W->1 section
+		% 100W -> 2 sections
+		% 1000W -> 2 sections
+		% 9999W _> 3 sections
+		% 10000W -> 4 sections
+
+	beam_heading is
+		1. -1 if omnidirectional
+		2. int (0..360) if one main lobe is radiated
+		or
+		3. comma separated list of int eg 60,180,300 if multilobed radiator
+		or 45,225 if dipole facing NE/SW
+
+		It is also possible to draw a multilobed radiator by putting
+		several lines identical except for the beam_heading.
+
+
+Annotation:
+	%	To add a notation to the map, supply data in the form
+	%		annotate:Notation:Lat:Lon
+	%	eg.	annotate:NV3Z:38.98847N:76.58033W
+	%
+	annotate:Mom's Place:39.00N:81.00W
+	%Bullamakanka ARC 2m repeater
+	annotate:BARC 2m:30.1S:145.5E
+	annotate:Good day, eh:49N:75W
+	annotate:Sydney:34S:151E
+
+Density:
+	The routine which fills worked grids has been adapted
+to colour gridsquares for number of contacts/contest, elevation
+(anything you like). The routines will handle 2,4 and 6 char
+gridsquares and fill an appropriate 2,4 or 6 char sized box.
+(will add 8char sometime). 
+
+Note you need to have a legend line to scale the density.
+The colors for each level are set in az_proj.ps. The colors
+are in rainbow order (grey..blue..green..yellow..red). Here
+anything up to 128 will get grey, while anything upto
+16384 will get red. Gridsquares not explicitely acted on
+will receive no color at all. 
+
+%qra6mden.dat, Oct 98,
+%format
+%grid-density: command
+%1; number of contacts (intensity/color of grid)
+%50: band (here 6m)
+% unused field
+%BP41: grid worked
+%comment
+%
+legend:density:hams/grid:128,256,512,1024,2048,4096,8192,16384:
+grid-density:2:50::AO63:
+%--------------------------
+
+
+
+Label:
+	similar to annotate, uses decimal lat/lon rather than D:M:S
+%
+% To add a label at lat/lon (decimal degrees, not deg:min:sec) add a line like
+%label:string(can include blanks):lat(real):long(real):font_size(real 1-10):string ignored by AZ_PROJ
+%font_size is 1 (small) to 10 (large), null defaults to 1
+%
+label:0:-55:157:1:VK call area 0
+
+
+City: 
+       same as label
+% city:name:lat:lon:scaling factor for font size:comment
+%
+city:Addis Ababa:9.05:38.70:1:Comment ignored by AZ_PROJ
+
+DXCC:
+
+%dxcc.dat-v2.0--------------------------------------
+% dxcc:40 SSB:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+% dxcc:20 CW:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+% dxcc:20 SSB:3A:Monaco:Eu:27:14:+1:44N:8E:3A:
+%
+
+elevation data
+   a modification of the density code
+%--------------------------------------
+legend:density:elevation,m:125,250,500,750,1000,1500,2000,2500:elevation,m 
+%-------------------------------------- FM.dat
+grid-etopo5:FM09aw:    328    338    338    407    522    462    704    656    614    629    730    717
+grid-etopo5:FM09mw:    742    606    511    478    455    426    406    390    452    342    334    430
+grid-etopo5:FM19aw:    363    262    201    210    308    496    416    284    203    175    161    138
+grid-etopo5:FM19mw:    145    149    149    183    174     91    101    108    128    181    178    187
+grid-etopo5:FM29aw:    166    122    115    108    115     97     84     61     31     10      8     21
+grid-etopo5:FM29mw:     23     23     23     29     29     36     34     25     11     -1     -4     -1
+grid-etopo5:FM39aw:     -3    -15    -23    -30    -39    -44    -49    -50    -50    -49    -50    -51
+grid-etopo5:FM39mw:    -51    -49    -50    -56    -66    -75    -75    -66    -51    -31    -15    -17
+grid-etopo5:FM49aw:    -30    -42    -94    -96    -99   -103   -107   -140   -209   -230   -365   -428
+%-------------------------------------- AA.dat
+
+Worked GRID:
+
+%--------------------------------------
+% % File gridw3ep.dat, worked grid squares on 6m by w3ep
+%
+% The band to be displayed is selected in
+% the array "/bands_plotted" in az_ini.ps
+% the grid worked will be colored/marked according to the propagation mode used.
+% the propagation modes are primarily of interest to VHF'ers
+% The equivelent for HF'ers would be the dxcc list, by band and mode (CW, ssb...)
+%
+% the line grid:50:F2:FM19 is parsed as -
+% grid: symbol to show that following data is a worked grid
+% 50: band the grid was worked on
+% F2: propagation mode (F2, Es, EME, Au, Ms, TEP)
+% FM19 grid worked
+%
+% Ms and Au occupy the same space and an Es contact will overwrite an Au contact.
+% The reverse is not true. The Au symbol does not overwrite the Es color patch.
+% For any grid, list the Au contact after the Es contact.
+% White space is not allowed anywhere in file.
+% ie Do not have anything (even a blank) following the grid square symbol.
+%
+grid:50:F2:CN70:comment field ignored by AZ_PROJ
+grid:50:F2:CN73:comment field
+grid:50:F2:CN74:comment field
+grid:50:F2:CN77:comment field
+grid:50:F2:CM86:comment field
+grid:50:F2:CM87:comment field
+grid:50:Es:CM87:comment field
+grid:50:F2:CM88:comment field
+grid:50:Es:CM88:comment field
+grid:50:Es:CM89:comment field
+
+NMEA: for GPS receivers
+
+% nmea.dat file for az_proj
+$GPGLL,4130.34,N,7135.42,W
+$GPBOD,120,T, 125,M,####,####
+$GPBWC,235959,4359.00,N,7459.00,W,175,T,185,M,252.5,N,####
+
+
+QSO:
+	will draw great circle path and optionally fill the
+gridsquare at either or both ends (depends whether gridsquare
+is upper/lower case)
+.
+%--------------------------------------
+% File qso.dat
+%
+% typical entry
+% qso:50:w3abc:EM85:n2xy:FN00:comment field (ignored by AZ_PROJ)(can be null)
+% or
+% qso:50::FM19::CM20:
+% where
+% qso: data type for line
+% 50: band in /bands_plotted format (az_ini.ps)
+% w3abc: callsign of first station (optional, null otherwise)
+% EM85: 4 char grid locator of first station (or lat:lon:)
+% n2xy: callsign of send station (optional, null otherwise)
+% FN00: 4 char grid locator of second station (or lat:lon:)
+% comment field (anything you like)
+%
+qso:50::fm11:n2xy:FN54:
+qso:50::fm11:n2xy:FN54:
+qso:50:NA3T:42.1:-73.9:n2xy:fn54:Note one location is as lat/lon
+qso:144::AD00::AM00:test line to check if bands_plotted is working
+qso:50::AD00::AM00:comment field
+qso:50::GC00::HM00:comment field
+qso:50::GC00::iM00:comment field
+qso:50::GC00::jM00:comment field
+
+
+
+
+That's it.
+
+
+	Have fun
+	Our addresses are in AZ_PROJ.PS
+
+	Joe NA3T and Michael NV3Z
+	Apr 00 
+
+Map Server (Apr 00): http://www.wm7d.net/azproj.shtml
+                     http://www.hfradio.org/azproj.shtml 
+
+e-mail for comments on AZ_PROJ: jmack@wm7d.net
+-----------------------------------------------
+

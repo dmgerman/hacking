@@ -1,0 +1,27 @@
+Package: gqview
+Version: 2.0.1
+Revision: 1
+Depends:  gtk+2-shlibs (>= 2.4.0), atk1-shlibs, pango1-shlibs, glib2-shlibs, gettext, libiconv
+BuildDepends: gtk+2 (>= 2.4.0), gtk+2-dev (>= 2.4.0), atk1, pango1, pango1-dev, glib2, glib2-dev, gettext, gettext-dev, libiconv, libiconv-dev
+Source: mirror:sourceforge:gqview/gqview-%v.tar.gz
+Source-MD5: acd8f1dad2b04389c1936adac1512e32
+SetCPPFLAGS: -no-cpp-precomp
+ConfigureParams: --mandir=%p/share/man
+InstallScript: <<
+ make install DESTDIR=%d
+ rm -rf %i/lib %i/share/gqview %i/share/locale/locale.alias
+<<
+DocFiles: AUTHORS COPYING ChangeLog INSTALL NEWS README TODO 
+License: GPL
+Description: Browser for graphics files
+DescDetail: <<
+GQview is a browser for graphics files
+offering single click viewing of your graphics files
+includes thumbnail view, zoom and filtering features
+and external editor support.
+<<
+DescPackaging: <<
+gqview builds under OS X with no special modifications.
+<<
+Homepage: http://gqview.sourceforge.net
+Maintainer: Daniel German <dmgerman@uvic.ca>

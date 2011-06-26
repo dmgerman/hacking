@@ -1,0 +1,24 @@
+%call_zl.dat--------------------------------------
+%call_zl.dat, part of AZ_PROJ v1.1
+% (C) Joseph Mack 1998
+%
+% label file to display the numbers of the New Zealand call areas (1..4)
+% This file puts the appropriate number in the center of each call area.
+%
+% distributed under GPL, see COPYING, which accompanies the AZ_PROJ package
+% This file needs AZ_PROJ v1.04 (at least)
+%
+% label: a string centered on the lat/lon point
+% (cf annot, which is drawn above the lat/lon point, with a blob on the lat/lon point)
+%
+% To add a label at lat/lon (decimal degrees, not deg:min:sec) add a line like
+%
+%label:string(can include blanks):lat(real):long(real):font_size(real 1-10):string ignored by AZ_PROJ
+%
+%font_size is 1 (small) to 10 (large), null defaults to 1
+%
+label:1:-37:175:1:ZL call area 1
+label:2:-40:176:1:
+label:3:-42.5:172:1:
+label:4:-45:169:1:
+%--------------------------------------call_zl.dat

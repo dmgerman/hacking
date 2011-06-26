@@ -1,0 +1,667 @@
+%%Title: debug.ps
+%%CreationDate:  30 Oct 96
+%
+% (C) 1994,5,6 Joseph Mack NA3T and Michael Katzmann NV3Z/VK2BEA/G4NYV
+%
+%--------------------------------------
+% To change the QTH, try one of these (or your own QTH)
+%
+/Title (25,000 maps, Oct 98 - Feb 00, by gridsquare) def
+%/lat_QTH (41.6)		def /lon_QTH (-72.7)	def /QTH_name (ARRL HQ)		def
+%/lat_QTH (65)		def /lon_QTH (-65)	def /QTH_name (ARRL HQ)		def
+%/lat_QTH (34)		def /lon_QTH (-72.7)	def /QTH_name (ARRL HQ)		def
+%/lat_QTH (45)		def /lon_QTH (25)	def /QTH_name (ARRL HQ)		def
+%/lat_QTH ( 44)		def /lon_QTH (-71)	def /QTH_name (US Call Area 1)		def
+%/lat_QTH ( 50)		def /lon_QTH (-70)	def /QTH_name (Canadian Call Area 1)		def
+%/lat_QTH ( 13.0)	def /lon_QTH (132.5)	def /QTH_name (Pacific Ocean)		def
+%/lat_QTH ( 40)		def /lon_QTH (120)	def /QTH_name (Pacific Ocean)		def
+%/lat_QTH ( -38.0)	def /lon_QTH (146)	def /QTH_name (VK3OT)		def
+%/lat_QTH ( -34)	def /lon_QTH (151)	def /QTH_name (Sydney)		def
+%/lat_QTH ( 60)		def /lon_QTH (30)	def /QTH_name (Europe)	def
+%/lat_QTH (52.47)	def /lon_QTH (13.41)	def /QTH_name (Berlin)	def
+%/lat_QTH ( 40)		def /lon_QTH (-50)	def /QTH_name (George's Bank) def
+%/lat_QTH ( 63.5)	def /lon_QTH (66)	def /QTH_name (Lake in Northern Russia) def
+%/lat_QTH (60)		def /lon_QTH (-150)	def /QTH_name (Alaska) def
+%/lat_QTH (0)		def /lon_QTH (25)	def /QTH_name (Deepest Darkest Africa)		def
+%/lat_QTH (20)		def /lon_QTH (45)	def /QTH_name (Arabian Peninsula)		def
+%/lat_QTH (-23.77)	def /lon_QTH (133.93)	def /QTH_name (Alice Springs, The Dead Heart)	def
+%/lat_QTH (41.6)	def /lon_QTH (-72.7)	def /QTH_name (ARRL HQ)		def
+%/lat_QTH (-35.0)	def /lon_QTH (-160.0)	def /QTH_name (Antipodes of Mediterranian) def % interesting view of Europe
+%/lat_QTH (-34)		def /lon_QTH (18)	def /QTH_name (Capetown)	def
+%/lat_QTH (-27.0)	def /lon_QTH (-108.0)	def /QTH_name (Easter Is.)	def
+%/lat_QTH (0.1)		def /lon_QTH (0.0)	def /QTH_name (Equator)		def
+%/lat_QTH (22.0)	def /lon_QTH (-82.0)	def /QTH_name (Havana)		def
+%/lat_QTH (52)		def /lon_QTH (95)	def /QTH_name (Kyzyl)		def
+%/lat_QTH (21.31)	def /lon_QTH (-157.86)	def /QTH_name (Honolulu)	def
+%/lat_QTH (39)		def /lon_QTH (-9)	def /QTH_name (Lisbon)		def
+%/lat_QTH (52) 		def /lon_QTH (0)	def /QTH_name (London)		def
+%/lat_QTH (-55)		def /lon_QTH (160)	def /QTH_name (Macquarie Is.)	def
+%/lat_QTH (35)		def /lon_QTH (-90)	def /QTH_name (Memphis)		def
+%/lat_QTH (55.76)	def /lon_QTH (37.62)	def /QTH_name (Moscow)		def
+%/lat_QTH (-20)		def /lon_QTH (120)	def /QTH_name (Mid Oceania)	def
+%/lat_QTH (89.1)	def /lon_QTH (0.1)	def /QTH_name (North Pole)	def
+%/lat_QTH (8.0)		def /lon_QTH (-80.0)	def /QTH_name (Panama)		def
+%/lat_QTH (-25.0)	def /lon_QTH (-130.0)	def /QTH_name (Pitcairn Is.)	def
+%/lat_QTH (-89.9)	def /lon_QTH (0.0)	def /QTH_name (South Pole)	def
+%/lat_QTH ( 59)		def /lon_QTH (18)	def /QTH_name (Stockholm)	def
+%/lat_QTH (-34)		def /lon_QTH (151)	def /QTH_name (Sydney)		def
+%/lat_QTH ( 36)		def /lon_QTH (140)	def /QTH_name (Tokyo)		def
+%/lat_QTH (-2)		def /lon_QTH (29)	def /QTH_name (Rwanda)		def
+%/lat_QTH (-22.8)	def /lon_QTH (-44.8)	def /QTH_name (Rio)		def
+%/lat_QTH (40.0)	def /lon_QTH (60.0)	def /QTH_name (Somewhere in Russia)	def
+%/lat_QTH (48.0)	def /lon_QTH (-124.0) 	def /QTH_name (Vancouver)	def
+%/lat_QTH (-41.31)	def /lon_QTH (174.66) 	def /QTH_name (Wellington)	def
+%/lat_QTH (38.92)	def /lon_QTH (-77.05)	def /QTH_name (Washington DC)	def
+%/lat_QTH (38.98847) 	def /lon_QTH (-76.58033) def /QTH_name (NV3Z Annapolis, FM18rx)	def
+%/lat_QTH (39.42933)	def /lon_QTH (-77.42536) def /QTH_name (NA3T/N3REQ Frederick, FM19gk)	def
+%/lat_QTH (FM05lw)	def /lon_QTH (-77.42536) def /QTH_name (QTH NA3T FM05lw)	def
+%/lat_QTH (38.48)	def /lon_QTH (-90.02)	def /QTH_name (K4SSO Arnold, MO, EM48tk) def
+/lat_QTH (FM09)	def /lon_QTH (-77.42536) def /QTH_name (FM09)	def
+
+/QTH_marker 	off	def
+
+/center_offset	off	def
+
+/lat_center	(40.0) 	def	%(real or int)
+/lon_center	(-90.0)	def	%(real or int)
+
+
+
+%
+%	(40)	(-90)	% centred on middle of N.A
+%	(59)	(18)	% centred on Stockholm
+%	(-34)	(151)	% centred on Sydney
+%	(-24)	(133)	% centred on Alice Springs (Middle of Oz)
+%	(47)	(7)	% centred on Berne
+%	(-10)	(155)	% centred on Guadalcanal
+
+
+/map_scale_deg 10	def
+
+scale_type {/map_scale_km map_scale_deg def} if
+
+
+/plotting_resolution	(auto)	def	%(low), whole map at low res, for fast drawing
+					%(auto), high res for small scale maps, lower res for large scale maps (eg whole world)
+					%(high), whole map at high res, slow, but best picture
+
+/draw_letter_square_borders	on	def
+/draw_letter_square_labels	on	def
+/draw_number_square_borders	on	def
+/draw_number_square_labels	on	def
+/grid_locator_number_squares_northern_limit	1 def
+/grid_locator_number_squares_southern_limit	1 def
+/grid_locator_number_squares_eastern_limit	1 def
+/grid_locator_number_squares_western_limit	1 def
+/draw_compass_circumference	off	def	%(on/off) draw compass circumference
+/draw_compass_circumference	off	def	%(on/off) draw compass circumference
+/draw_compass_spokes		off	def	%(on/off) draw compass spokes
+
+
+
+% Pick one style of lat/lon lines by uncommenting that line
+
+%/lat_lon_lines		(none) 		def
+%/lat_lon_lines		(lat_lon) 	def
+/lat_lon_lines		(gridsquares) 	def
+
+
+/alternate_lat_spacing	30 def
+/alternate_lon_spacing	30 def  %15 deg = 1hr
+
+
+%--------------------------------------
+
+%Uncomment one of the next two lines
+%/grid_locator_labelling_style	(arrl) def % Style used by ARRL in their maps
+/grid_locator_labelling_style	(az_proj) def % Original AZ_PROJ style
+
+%--------------------------------------
+
+
+%ORIENTATION
+%
+%uncomment one of these (AZ_PROJ will use the last one, if several are uncommented)
+%
+%/orientation	(portrait)			def	%note need ()'s around names, uncomment the one you want
+/orientation	(landscape)			def
+%/orientation	(orthographic-portrait)		def	%orthographic - with Australia at the top
+%/orientation	(orthographic-landscape) 	def	%the normal orientation in the southern hemisphere (-:
+
+%--------------------------------------
+%antipodes feature
+
+/antipodes 	on	def
+
+%--------------------------------------
+
+/bands_plotted
+%these used to be integers, now (v1.1beta9) they are strings eg 10G for 10GHz
+[
+(*)
+%AM BC 540-1630kHz
+%(0)
+%(1)
+%HF, Wavelength, m
+(%160)
+(%80)
+(%75)
+(%40)
+(%30)
+(%20)
+(%17)
+(%15)
+(%12)
+(%10)
+(%Ham, MHz)
+(28)
+(50)
+(51)
+(52)
+(%53)
+(%70)
+(%71)
+(144)
+(145)
+(146)
+(147)
+(222)
+(%224)
+(432)
+(%440)
+(902)
+(903)
+(926)
+(1295)
+(1296)
+(2304)
+(2312)
+(3456)
+(5759)
+(5760)
+(10248)
+(10256)
+(10265)
+(10368)
+(24192)
+(%Microwave, GHz)
+(5)
+(10)
+(%)
+(%TV channels (North America and VK))
+(%0)
+(%1)
+(%2)
+(%3)
+(%4)
+(%5)
+(%5A)
+(%6)
+(%7)
+(%8)
+(%9)
+(%10)
+(%11)
+(%12)
+(%13)
+(%14)
+(%15)
+(%16)
+(%17)
+(%18)
+(%FM freqs MHz, North America)
+(%88)
+(%89)
+(%90)
+(%91)
+(%92)
+(%93)
+(%94)
+(%95)
+(%96)
+(%97)
+(%98)
+(%99)
+(%100)
+(%101)
+(%102)
+(%103)
+(%104)
+(%105)
+(%106)
+(%107)
+(%108)
+(%)
+(%US/North America TV by (video) freq,)
+(%not all of these freqs are equally useful as propagation markers.)
+(%you can delete the ones you'll never use)
+(%(beware there is a 55 in NA_TV and Euro_TV, don't turn both on).)
+(%55)
+(%61)
+(%67)
+(%77)
+(%83)
+(%175)
+(%181)
+(%187)
+(%193)
+(%199)
+(%205)
+(%211)
+(%471)
+(%477)
+(%483)
+(%489)
+(%495)
+(%501)
+(%507)
+(%513)
+(%519)
+(%525)
+(%531)
+(%537)
+(%549)
+(%555)
+(%561)
+(%567)
+(%573)
+(%579)
+(%585)
+(%591)
+(%597)
+(%603)
+(%615)
+(%621)
+(%627)
+(%633)
+(%639)
+(%645)
+(%651)
+(%657)
+(%663)
+(%669)
+(%675)
+(%681)
+(%687)
+(%693)
+(%699)
+(%705)
+(%711)
+(%717)
+(%723)
+(%729)
+(%735)
+(%741)
+(%747)
+(%753)
+(%759)
+(%765)
+(%771)
+(%777)
+(%783)
+(%789)
+(%795)
+(%801)
+(%807)
+(%813)
+(%819)
+(%825)
+(%831)
+(%837)
+(%843)
+(%849)
+(%855)
+(%861)
+(%867)
+(%873)
+(%879)
+(%885)
+(%combined Euro/Irish/NA/Australian VHF TV)
+(46)
+(48)
+(49)
+(53)
+(55)
+(57)
+(59)
+(60)
+(61)
+(62)
+(63)
+(64)
+(67)
+(77)
+(83)
+(85)
+(86)
+(%93)
+(%95)
+(%102)
+(%138)
+(%175)
+(%176)
+(%181)
+(%182)
+(%183)
+(%184)
+(%187)
+(%189)
+(%191)
+(%192)
+(%193)
+(%196)
+(%199)
+(%200)
+(%203)
+(%204)
+(%207)
+(%208)
+(%209)
+(%210)
+(%211)
+(%215)
+(%216)
+(%217)
+(%223)
+(%224)
+(%)
+(%)
+(%Euro TV near 6m)
+(%48)
+(%49)
+(%53)
+(%55)
+(%62)
+(%VK TV (starts at Channel 0 = 46MHz, has an extra channel between 5 and 6 called 5A))
+(%46	%Ch 0)
+(%57)
+(%64)
+(%86)
+(%95)
+(%102)
+(%138	%Channel 5A, good for 2m openings, the sound carrier is just below 2m)
+(%175)
+(%182)
+(%189)
+(%196)
+(%209	% Ch 10)
+(%216)
+(%527)
+(%534)
+(%541)
+(%548)
+(%555)
+(%562)
+(%569)
+(%576)
+(%604)
+(%611)
+(%618)
+(%625)
+(%632)
+(%639)
+(%646)
+(%653)
+(%660)
+(%667)
+(%674)
+(%681)
+(%688)
+(%695)
+(%702)
+(%709)
+(%716)
+(%723)
+(%730)
+(%737)
+(%744)
+(%751)
+(%758)
+(%765)
+(%772)
+(%779)
+(%786)
+(%793)
+(%800)
+(%807)
+(%814)
+(%LF Beacons 160-190kHz)
+(160)
+(161)
+(162)
+(163)
+(164)
+(165)
+(166)
+(167)
+(168)
+(169)
+(170)
+(171)
+(172)
+(173)
+(174)
+(175)
+(176)
+(177)
+(178)
+(179)
+(180)
+(181)
+(182)
+(183)
+(184)
+(185)
+(186)
+(187)
+(188)
+(189)
+(190)
+(%MF beacons 1600-1700kHz)
+(1600)
+(1601)
+(1602)
+(1603)
+(1604)
+(1605)
+(1606)
+(1607)
+(1608)
+(1609)
+(1610)
+(1611)
+(1612)
+(1613)
+(1614)
+(1615)
+(1616)
+(1617)
+(1618)
+(1619)
+(1610)
+(1621)
+(1622)
+(1623)
+(1624)
+(1625)
+(1626)
+(1627)
+(1628)
+(1629)
+(1620)
+(1631)
+(1632)
+(1633)
+(1634)
+(1635)
+(1636)
+(1637)
+(1638)
+(1639)
+(1630)
+(1641)
+(1642)
+(1643)
+(1644)
+(1645)
+(1646)
+(1647)
+(1648)
+(1649)
+(1640)
+(1651)
+(1652)
+(1653)
+(1654)
+(1655)
+(1656)
+(1657)
+(1658)
+(1659)
+(1650)
+(1661)
+(1662)
+(1663)
+(1664)
+(1665)
+(1666)
+(1667)
+(1668)
+(1669)
+(1660)
+(1671)
+(1672)
+(1673)
+(1674)
+(1675)
+(1676)
+(1677)
+(1678)
+(1679)
+(1670)
+(1681)
+(1682)
+(1683)
+(1684)
+(1685)
+(1686)
+(1687)
+(1688)
+(1689)
+(1690)
+(1691)
+(1692)
+(1693)
+(1694)
+(1695)
+(1696)
+(1697)
+(1698)
+(1699)
+(1700)
+(1701)
+(1702)
+(1703)
+(1704)
+(1705)
+(1706)
+(1707)
+(1708)
+(1709)
+] def
+
+%--------------------------------------)
+/distance_circles	off 	def
+
+/distances_plotted %( in km)
+%)
+% Possible distances might be -
+%	3100km for start of double hop F2
+%	2300km for end of single hop F2.
+%	1100km for end of Es single hop (aurora, Es, FAI)
+%	500km minimum distance for F2 on 6m (MUF=144MHz)
+%
+[
+%100
+%200
+%300
+%400
+500
+%600
+%700
+%800
+%900
+%1000
+1100
+%1200
+%1250
+%1500
+%2000
+2300
+%2500
+%3000
+3100
+%3750
+5000
+%6250
+7500
+%8750
+10000
+] def
+
+%--------------------------------------
+%Greyline. Time/date to draw greyline
+
+1996	/year	exch def % (int)
+08	/month 	exch def % (1..12)
+26 	/day	exch def % (1..31)
+0310 	/hour 	exch def % (0000..2359)
+
+/draw_analema		off		def	% off/on
+
+%Uncomment one of the following
+
+/greyline_type	(none)				def	% default
+%/greyline_type	(greyline_by_date_time)		def	% draw greyline for date/time below (see /month /day /hour), these greylines may have no particular relationship to sunrise/set at your QTH.
+%/greyline_type	(sunrise_at_QTH)		def	% draw sunrise and sunset lines for date below (hour is ignored)
+%/greyline_type	(sunset_at_QTH)			def	% draw greyline at sunset for your QTH throughout the year
+%/greyline_type	(sunrise_and_sunset_at_QTH_by_date)	def	% draw greyline at sunset for your QTH throughout the year
+
+%If drawing sunset/rise lines at a QTH, the dates to draw
+/greyline_months_plotted_array [ 6 7 8 9 10 11 12 ] def	% month of year
+/greyline_days_plotted_array [ 22 ] def 		% day of month
+
+
+
+
+% if greyline_type == (date)
+/shade_night_time	on 	def	%on: shade nighttime part of earth
+					%off: just draw greyline
+
+
+%--------------------------------------
+
+
+
+/draw_coast_lines		on def	% you can turn off the coast lines
+/draw_country_borders		off def  % and all these things here
+/draw_political_states		off def	% suggested by beta tester Brian Derx
+%/not_used
+/draw_islands			on def
+/draw_lakes			off def
+/draw_rivers			off def
+/draw_opposite_countries	off def
+/draw_USA_call_areas		on def
+
+%/lake_fill on def
+/lake_fill off def
+
+%--------------------------------------
+/verbose off def
+%/verbose on def
+
+
+%/debug on def
+%/debug off def
+%/bands_plotted [88]def
+%--------------------------------------debug.ps

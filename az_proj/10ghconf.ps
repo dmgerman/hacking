@@ -1,0 +1,61 @@
+%--------------------------------------
+%%Title: 10ghzconf.ps
+%%CreationDate:  3 Aug 96
+%
+% (C) 1994,5,6 Joseph Mack NA3T and Michael Katzmann NV3Z/VK2BEA/G4NYV
+%
+%--------------------------------------
+%
+% Most of the AZ_PROJ customisable variables are in az_ini.ps 
+% (a relatively large file). If you routinely only vary a
+% small number of variables, they can be separated into a smaller
+% file which is read in after az_ini.ps, thus overwriting the
+% standard values in az_ini.ps. Alternatively, if you routinely
+% make several different maps, then a separate config file can be
+% made for each map.
+%
+% Thus an HF config file could have a large scale map,
+% lat/lon lines separated by 30 degrees, with rivers and
+% state borders turned off.
+%
+% A config file would have a scale suitable for the
+% band, grid squares and all geographic features turned on.
+%
+% A config file for a mountain top, will have a different QTH 
+% than your normal home.
+%
+% a config file can be used with ghostscript
+% C:>gs az_ini.ps config.ps -- az_proj.ps world.wdb dxcc.dat
+%
+% or by making a big.ps file eg for HF
+% C:>copy az_ini.ps+config.ps+az_proj.ps+world.wdb+dxcc.dat big.ps
+%
+% for a mountain top expedition on 10GHz using a GPS receiver to determine
+% your QTH
+%
+%C: gs -q az_ini.ps 10ghconf.ps -- az_proj.ps nmea.dat mountain.dat rover.dat n_amer.wdb
+%
+% where 10ghconf.ps has the scale variable set for 10GHz (say 25km/cm)
+% nmea.dat has the QTH
+% rover.dat is the rovers out that weekend
+% mountain.dat is the list of mountains (and other sites where people operate)
+%
+%
+%
+%--------------------------------------
+% 10ghconf.ps - configuration file for AZ_PROJ.PS
+%
+/Title (10 Ghz Contest) def
+/lat_QTH 41.6 def /lon_QTH -72.7 def /QTH_name (My Moutain Top) def
+/center_offset	off	def
+/map_scale_deg	25	def
+/draw_letter_square_borders	on	def
+/draw_letter_square_labels	on	def
+/draw_number_square_borders	on	def
+/draw_number_square_labels	on	def
+/grid_locator_number_squares_northern_limit	1 def
+/grid_locator_number_squares_southern_limit	1 def
+/grid_locator_number_squares_eastern_limit	1 def
+/grid_locator_number_squares_western_limit	1 def
+/draw_compass_circumference	on	def	%(on/off) draw compass circumference
+%--------------------------------------vhf_conf.ps

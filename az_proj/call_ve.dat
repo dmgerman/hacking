@@ -1,0 +1,28 @@
+%call_ve.dat--------------------------------------
+%call_ve.dat, part of AZ_PROJ v1.1
+% (C) Joseph Mack 1998
+%
+% label file to display the numbers of the call areas (0..9)
+% This file puts the appropriate number in the center of each call area.
+%
+% distributed under GPL, see COPYING, which accompanies the AZ_PROJ package
+% This file needs AZ_PROJ v1.04 (at least)
+%
+% label: a string centered on the lat/lon point
+% (cf annot, which is drawn above the lat/lon point, with a blob on the lat/lon point)
+%
+% To add a label at lat/lon (decimal degrees, not deg:min:sec) add a line like
+%
+%label:string(can include blanks):lat(real):long(real):font_size(real 1-10):string ignored by AZ_PROJ
+%
+%font_size is 1 (small) to 10 (large), null defaults to 1
+%
+label:1:54:-63:1:VE call area 1
+label:1:46:-65:1:VE call area 1
+label:2:50:-72:1:
+label:3:50:-87:1:
+label:4:55:-97:1:
+label:5:55:-105:1:
+label:6:55.5:-115:1:
+label:7:55:-125:1:VE call area 7
+%--------------------------------------call_ve.dat

@@ -1,0 +1,428 @@
+* CCFinder
+** HOW TO DO
+
+  1. Checkout directory
+
+    svn co file:///home/dmg/mirror/svn.lcms/trunk/lcms
+     
+  2. Extract the clones
+   
+    processAllHistory.pl --coDir=/tmp/lcms --repo=file:///home/dmg/mirror/svn.lcms --ccfinder  lcms
+
+** Options for ccfinder
+
+   ccfinder D -u- -o a.ccfxd -s 3 -i allfiles.txt
+
+** To scan project and recreate each revision, including re-runnig ccfinder
+
+
+** Tasks
+*** TODO I need to now compare the files in a revision to its predecessor
+*** TODO Insert clonesets into a database...
+
+** Description of programs
+
+- [[callgraph.pl]] extracts all the calls inside a given file.
+- [[insertCloneSets.pl]] given a directory of clones (already extracted)
+  it inserts the clonesets into a table.
+ 
+
+** Description of modules
+
+
+
+* Some thoughs
+
+** What do I need from a given revision?
+-- Files that have been modified
+-- ccfinder of the current version
+-- translated lines of code for all the files in that moment
+
+
+** TODO Next step
+
+*** The goal is to:
+**** Find the clones that have changed   
+**** Algorithm
+
+For every file f in the revision
+   r0 <- previous revision of f
+   @list <- all clones in f
+   
+   for every clone c in @list 
+      c2 <- matching clone not in the revision itself
+      if (c2 is not in not in the revision)
+          find the same clone in the previous revision
+          get its cloneSet
+          c0<-match it to the clone in r0 
+      end
+
+
+
+
+** On clone evolution
+
+A clone evolves in one of three ways:
+
+- It disappears (the source code changes slightly)
+- It morphs from one clone to the other (the set, or part of it,
+  evolves together)
+- It splits into several clones: a bigger clone is modified sligthly
+  and there is still enough cloning in it to create new, smaller
+  clones
+- Clones merge: a clone gets larger
+
+* Bugs
+
+g@aluminium:~/temp/apache.clones/4770$ grep 392 clonesInMR.txt 
+./src/modules/proxy/mod_proxy.c                     26     392    3705    3772   812    13   823     5  25155  25466
+./src/main/http_core.c                             106     392    7162    7229  1636     8  1648     5  46058  46394
+
+
+* Apache
+** Apache has 1159 different clone sets
+** 226 clone sets were never, ever changed after they were introduced.
+
+
+* Bug report
+
+
+ revid | cloneset |           filename           | tokenbegin |               md5                
+-------+----------+------------------------------+------------+----------------------------------
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       2012 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       2672 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1655 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1783 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |        530 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |        734 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1719 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |        594 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1323 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1259 | 4136ff7fc546c72966fb665619c95833
+  5536 |     1479 | src/lib/expat-lite/xmlrole.c |       3878 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       2965 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1082 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1478 | 4136ff7fc546c72966fb665619c95833
+  5536 |     1479 | src/lib/expat-lite/xmlrole.c |       2608 | 4136ff7fc546c72966fb665619c95833
+  5536 |      926 | src/lib/expat-lite/xmlrole.c |       1948 | 4136ff7fc546c72966fb665619c95833
+(16 rows)
+
+
+dmg@aluminium:/tmp$ diff *2608*.cloneToken *2012*.cloneToken
+1c1
+< (def_block:r_int:id|attlist5:c_func:(paren:id|PROLOG_STATE:op_star:id|state:comma:r_int:id|tok:comma:r_const:r_char:op_star:id|ptr:comma:r_const:r_char:op_star:id|end:comma:r_const:id|ENCODING:op_star:id|enc:)paren:(brace:r_switch:c_cond:(paren:id|tok:)paren:(brace:r_case:id|XML_TOK_PROLOG_S:suffix:colon:(brace:r_return:id|XML_ROLE_NONE:suffix:semicolon:)brace:r_case:id|XML_TOK_OPEN_PAREN:suffix:colon:(brace:id|state-&gt;handler:op_assign:id|attlist6:suffix:semicolon:r_return:id|XML_ROLE_NONE:suffix:semicolon:)brace:)brace:r_return:id|syntaxError:c_func:(paren:id|state:)paren:suffix:semicolon:)brace:)def_block
+---
+> (def_block:r_int:id|notation3:c_func:(paren:id|PROLOG_STATE:op_star:id|state:comma:r_int:id|tok:comma:r_const:r_char:op_star:id|ptr:comma:r_const:r_char:op_star:id|end:comma:r_const:id|ENCODING:op_star:id|enc:)paren:(brace:r_switch:c_cond:(paren:id|tok:)paren:(brace:r_case:id|XML_TOK_PROLOG_S:suffix:colon:(brace:r_return:id|XML_ROLE_NONE:suffix:semicolon:)brace:r_case:id|XML_TOK_LITERAL:suffix:colon:(brace:id|state-&gt;handler:op_assign:id|declClose:suffix:semicolon:r_return:id|XML_ROLE_NOTATION_SYSTEM_ID:suffix:semicolon:)brace:)brace:r_return:id|syntaxError:c_func:(paren:id|state:)paren:suffix:semicolon:)brace:)def_block
+dmg@aluminium:/tmp$ cat *2012*.clone *2608*.clone
+----------------------------------------------------------------------
+-- starting at token 2012
+int notation3(PROLOG_STATE *state,
+              int tok,
+              const char *ptr,
+              const char *end,
+              const ENCODING *enc)
+{
+  switch (tok) {
+  case XML_TOK_PROLOG_S:
+    return XML_ROLE_NONE;
+  case XML_TOK_LITERAL:
+    state->handler = declClose;
+    return XML_ROLE_NOTATION_SYSTEM_ID;
+  }
+  return syntaxError(state);
+}
+
+static
+----------------------------------------------------------------------
+-- starting at token 2608
+int attlist5(PROLOG_STATE *state,
+             int tok,
+             const char *ptr,
+             const char *end,
+             const ENCODING *enc)
+{
+  switch (tok) {
+  case XML_TOK_PROLOG_S:
+    return XML_ROLE_NONE;
+  case XML_TOK_OPEN_PAREN:
+    state->handler = attlist6;
+    return XML_ROLE_NONE;
+  }
+  return syntaxError(state);
+}
+
+
+static
+----------------------------------------------------------------------
+-- starting at token 2672
+int attlist6(PROLOG_STATE *state,
+             int tok,
+             const char *ptr,
+             const char *end,
+             const ENCODING *enc)
+{
+  switch (tok) {
+  case XML_TOK_PROLOG_S:
+    return XML_ROLE_NONE;
+  case XML_TOK_NAME:
+    state->handler = attlist7;
+    return XML_ROLE_ATTRIBUTE_NOTATION_VALUE;
+  }
+  return syntaxError(state);
+}
+
+
+cat *2012*.cloneAbs *2608*.cloneAbs
+
+(def_block:r_int:id:c_func:(paren:id:op_star:id:comma:r_int:id:comma:r_const:r_char:op_star:id:comma:r_const:r_char:op_star:id:comma:r_const:id:op_star:id:)paren:(brace:r_switch:c_cond:(paren:id:)paren:(brace:r_case:id:suffix:colon:(brace:r_return:id:suffix:semicolon:)brace:r_case:id:suffix:colon:(brace:id:op_assign:id:suffix:semicolon:r_return:id:suffix:semicolon:)brace:)brace:r_return:id:c_func:(paren:id:)paren:suffix:semicolon:)brace:)def_block
+(def_block:r_int:id:c_func:(paren:id:op_star:id:comma:r_int:id:comma:r_const:r_char:op_star:id:comma:r_const:r_char:op_star:id:comma:r_const:id:op_star:id:)paren:(brace:r_switch:c_cond:(paren:id:)paren:(brace:r_case:id:suffix:colon:(brace:r_return:id:suffix:semicolon:)brace:r_case:id:suffix:colon:(brace:id:op_assign:id:suffix:semicolon:r_return:id:suffix:semicolon:)brace:)brace:r_return:id:c_func:(paren:id:)paren:suffix:semicolon:)brace:)def_block
+
+* TODO Follow the rabbit...
+
+
+
+
+ e119206d2b3761270032ee959fa2c455 |     5
+ 1d1b8f04b227e205e2f73583f9fc7d7e |     5
+ 53bd495259c68b97962e085a0d77317c |     5
+
+This file has 44 revisions with clone changes, and 96 clones
+
+ src/modules/proxy/proxy_ftp.c
+
+Number of clones per revision...
+
+
+ revid | count 
+-------+-------
+   510 |     9
+   535 |     9
+   897 |    10
+   956 |    13
+   967 |    13
+  1013 |    13
+  1169 |    12
+  1174 |    13
+  1195 |    13
+  1249 |    12
+  1281 |    14
+  1296 |    14
+  1297 |    14
+  1309 |    14
+  1310 |    16
+  1333 |    16
+  1334 |    16
+  1338 |    16
+  1391 |    16
+  1584 |    16
+  1595 |    16
+  1802 |    16
+  1810 |    16
+  1831 |    16
+  1894 |    16
+  1920 |    17
+  1921 |    17
+  1931 |    15
+  2004 |    15
+  2166 |    14
+  2170 |    14
+  2266 |    14
+  2283 |    14
+  2312 |    15 <- this appears to be a "developed into a clone"
+  2578 |    16
+  2582 |    16
+  2698 |    16
+  2824 |    16
+  2894 |    16
+  2913 |    16
+  3118 |    16
+  3331 |    16
+  3397 |    16 
+  3398 |    17 <- known cloning
+  3404 |    17
+  3442 |    17
+  3445 |    17
+  3626 |    17
+  4021 |    17
+  4047 |    17
+  4049 |    19
+  4147 |    19
+  4186 |    19
+  4284 |    19
+  4296 |    19
+  4443 |    19
+  4501 |    18
+  4522 |    18
+  4523 |    14
+  5157 |    14
+  5253 |    14
+  5360 |    14
+  5372 |    14
+  5452 |    16
+  5575 |    16
+  5743 |    16
+  5800 |    16
+  6017 |    16
+  6019 |    16
+  6092 |    16
+  6213 |    16
+  6753 |    16
+  6837 |    16
+  7071 |    18
+  7177 |    16
+  7181 |    16
+  7201 |    19
+  7202 |    24
+  7225 |    24
+  7232 |    24
+  7249 |    24
+  7284 |    24
+  7299 |    24
+  7514 |    24
+  7625 |    25
+(85 rows)
+
+
+** TODO Another example of a clone set with varing number of clones
+
+ 1ee6f399940a5781e3df864f61303f17 |  1215 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1412 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1199 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1353 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1269 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1091 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1253 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1096 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1248 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1363 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1070 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1320 |     3
+ 1ee6f399940a5781e3df864f61303f17 |  1109 |     4
+ 1ee6f399940a5781e3df864f61303f17 |   974 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1000 |     4
+ 1ee6f399940a5781e3df864f61303f17 |  1013 |     4
+
+
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  4830 |     2
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  5961 |     5
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  6080 |     4
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  6026 |     4
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  6020 |     5
+ 22c1e8bf6691dd0ce091e551b51dbe30 |  6034 |     4
+
+** Clone that moved form one class to another
+
+
+Processing [45] .................................... 
+MOD clone src/modules/standard/mod_dir.c                    13     219       1    4375   110     1   847     1   3688  25222
+MOD clone [PartialAtEnd]
+MOD clone src/modules/standard/mod_autoindex.c              22     219       1    4375   110     1   847     1   3688  25222
+MOD clone [PartialAtEnd]
+
+ 311a35c4e5b8695650a51a76c0147404
+
+
+dmg@aluminium:~/temp/apache.clones2$ ~/bin/cloneDiff src/modules/standard/mod_dir.c 45 19
+--- 45/src/modules/standard/mod_dir.c   2008-05-19 19:39:18.000000000 -0700
++++ 19/src/modules/standard/mod_dir.c   2008-05-19 19:35:37.000000000 -0700
+@@ -604 +604 @@
+-                             escape_html(scratch, os_escape_path(scratch, t, 0)),
++                             escape_html(scratch, os_escape_path(scratch, t)),
+@@ -626 +626 @@
+-                             escape_html(scratch, os_escape_path(scratch, t, 0)),
++                             escape_html(scratch, os_escape_path(scratch, t)),
+
+dmg@aluminium:~/temp/apache.clones2$ ~/bin/cloneDiff src/modules/standard/mod_autoindex.c 45 19
+--- 45/src/modules/standard/mod_autoindex.c     2008-05-19 19:39:18.000000000 -0700
++++ 19/src/modules/standard/mod_autoindex.c     2008-05-19 19:35:37.000000000 -0700
+@@ -604 +604 @@
+-                             escape_html(scratch, os_escape_path(scratch, t, 0)),
++                             escape_html(scratch, os_escape_path(scratch, t)),
+@@ -626 +626 @@
+-                             escape_html(scratch, os_escape_path(scratch, t, 0)),
++                             escape_html(scratch, os_escape_path(scratch, t)),
+dmg@aluminium:~/temp/apache.clones2$ 
+
+
+It is very fascinating... these two clones evolved together (changed
+cloneset as they evolved) for 10 revisions. the md5 field uniquely
+identifies a cloneset. It is added in an import, and every time one
+changes, the other changes too.
+
+the funny thing, they are not in the current version of the code. At
+some point this code diverged... I am still not finding when clone cease
+to exist... but that is easy...
+
+these clones were actually huge. then they start to break apart on
+transaction 1612 (first into 3) and by 1727 they no longer have any in
+common. ... and why ... this is the log:
+
+ 1727 | Automatic indexes moved from mod_dir into mod_autoindex.  The mod_autoindex
+        CVS files are copies of the mod_dir files so that we retain history in
+        both places.
+
+
+
+apache13=# select * from clonemodmd5 where filename in ( 'src/modules/standard/mod_dir.c', 'src/modules/standard/mod_autoindex.c')  and revid < 500 order by revid ;
+ revid | tokenbegin |               filename               |               md5                | typemod 
+-------+------------+--------------------------------------+----------------------------------+---------
+     4 |          1 | src/modules/standard/mod_autoindex.c | 162bbf3c26ad0f4a21000a1e7df8624b | A
+     4 |          1 | src/modules/standard/mod_dir.c       | 162bbf3c26ad0f4a21000a1e7df8624b | A
+     9 |          1 | src/modules/standard/mod_autoindex.c | 60dd802060a9b20233ccd5afc523b4ba | M
+     9 |          1 | src/modules/standard/mod_dir.c       | 60dd802060a9b20233ccd5afc523b4ba | M
+    19 |          1 | src/modules/standard/mod_autoindex.c | 9eecfc96842a5d8d9cc6ceaeb5b1ba02 | M
+    19 |          1 | src/modules/standard/mod_dir.c       | 9eecfc96842a5d8d9cc6ceaeb5b1ba02 | M
+    45 |          1 | src/modules/standard/mod_dir.c       | 311a35c4e5b8695650a51a76c0147404 | M
+    45 |          1 | src/modules/standard/mod_autoindex.c | 311a35c4e5b8695650a51a76c0147404 | M
+    53 |          1 | src/modules/standard/mod_autoindex.c | 955b7e639aa8a25873155ae0e6cabbbd | M
+    53 |          1 | src/modules/standard/mod_dir.c       | 955b7e639aa8a25873155ae0e6cabbbd | M
+   139 |          1 | src/modules/standard/mod_dir.c       | 5cb813a7b14053ae1a928cbec65c5c89 | M
+   139 |          1 | src/modules/standard/mod_autoindex.c | 5cb813a7b14053ae1a928cbec65c5c89 | M
+   153 |          1 | src/modules/standard/mod_autoindex.c | c0e6b79e2cc8f4e68fd60136b370d920 | M
+   153 |          1 | src/modules/standard/mod_dir.c       | c0e6b79e2cc8f4e68fd60136b370d920 | M
+   154 |          1 | src/modules/standard/mod_autoindex.c | 5cb813a7b14053ae1a928cbec65c5c89 | M
+   154 |          1 | src/modules/standard/mod_dir.c       | 5cb813a7b14053ae1a928cbec65c5c89 | M
+   262 |          1 | src/modules/standard/mod_autoindex.c | 1a677446644060acd038d1dfd9024985 | M
+   262 |          1 | src/modules/standard/mod_dir.c       | 1a677446644060acd038d1dfd9024985 | M
+   277 |          1 | src/modules/standard/mod_dir.c       | 67c808fcdfadca82fc360b4cf844a1c6 | M
+   277 |          1 | src/modules/standard/mod_autoindex.c | 67c808fcdfadca82fc360b4cf844a1c6 | M
+
+
+
+
+
+* Tracking line numbers
+
+* SQL
+
+** clonesets
+** clonechanges
+
+* Description of data
+
+** Clonesets
+
+
+* Tracking siblings again
+
+** printclones
+
+ccfinder P <file> | perl printClones
+
+this creates files.txt and clonepairs.txt
+
+** sort them
+
+sort -n -t ';' -k1 -k2 -k3 -k4 -k5 -k6 -k7 -k8 clonepairs.txt  > sortedClonePairs.txt
+
+** simplify
+
+then use:
+
+
+simplify.pl sortedClonePairs.txt > fileclones.txt
+
+** findFileSiblings.txt
+
+Now we 
+
