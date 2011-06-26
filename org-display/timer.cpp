@@ -5,34 +5,21 @@
 
 
 
-Timer::Timer(QWidget *parent,  char *filename = NULL)
-    : QWidget(parent)
+Timer::Timer(char *filename = NULL,int seconds, QWidget *parent)
+    : QTextBrowser(parent)
 {
-
-  browser = new QTextBrowser(this);
-  //  browser = new QTextEdit(this);
-  //browser->setMinimumSize(100,100);
-  //  browser->resize(1000,200);
-
-  browser->setSizePolicy(QSizePolicy::Expanding, 
-      QSizePolicy::Expanding);
-  browser->updateGeometry() ;
-
+  QFont font("Helvetica", 8);
+  setFont(font);
   url = QUrl::fromUserInput(filename);
-  browser->setSource(url);
-  printf("Hello world\n");
+  setSource(url);
+  setGeometry(1, 1, 800, 400);
   updateGeometry() ;
-  startTimer(1000);
+  startTimer(seconds * 1000); // 1 minute later
 
-}
-
-void resizeEvent(QTimerEvent *event)
-{
-  printf("To resize\n");
 }
 
 void Timer::timerEvent(QTimerEvent *event)
 {
-  browser->reload();
+  reload();
   updateGeometry() ;
 }

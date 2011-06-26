@@ -5,19 +5,14 @@
 #include <QLabel>
 #include <qtextbrowser.h>
 
-class Timer : public QWidget
+class Timer : public QTextBrowser
 {
   public:
-  Timer(QWidget *parent, char *filename);
-  virtual QSize sizeHint() const { return QSize(10, 25); }
-  void resizeEvent(QTimerEvent *event);
+  Timer(char *filename,int seconds = 60, QWidget *parent =0);
 
   protected:
     void timerEvent(QTimerEvent *event);
   private:
-    QTextBrowser *browser;
-    //QTextEdit *browser;
-    QLabel *label;
     QUrl url;
 };
 

@@ -1,10 +1,12 @@
-#include "vbox.h"
+#include "timer.h"
 #include <QDesktopWidget>
 #include <QApplication>
 #include <QHBoxLayout>
 #include <stdlib.h>
+#include <stdio.h>
 
-void resize(QWidget &widget, int width=1000, int height=300)
+
+void resize(QWidget &widget, int width=200, int height=200)
 {
   int screenHeight;
   int screenWidth;
@@ -13,8 +15,7 @@ void resize(QWidget &widget, int width=1000, int height=300)
 
   screenWidth = desktop->width();
   screenHeight = desktop->height();
-
-  widget.setGeometry(1, 1, width, height);
+  widget.setGeometry(10, 10, width, height);
 
 }
 
@@ -22,16 +23,17 @@ void resize(QWidget &widget, int width=1000, int height=300)
 int main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
-  QWidget *rip = NULL;
-  int sizeX = 0;
-  int sizeY = 0;
-  int i;
 
-  VerticalBox window(argv[1]);
+  if (argc < 2) {
+    printf("Usage %s <filename>\n", argv[0]);
+    exit(1);
+  }
+
+  Timer window(argv[1],60);
   
-  resize(window);
+  //resize(window);
 
-  window.setWindowTitle("XXX");
+  window.setWindowTitle(argv[1]);
   window.show();
    return app.exec();
 }

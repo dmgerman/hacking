@@ -1,2 +1,2 @@
-SOURCES += timer.cpp org-display.cpp vbox.cpp
+SOURCES += timer.cpp org-display.cpp
 TARGET=org-display
