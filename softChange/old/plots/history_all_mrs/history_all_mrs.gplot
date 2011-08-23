@@ -1,0 +1,20 @@
+reset
+set output "history_all_mrs.eps"
+#set terminal postscript eps monochrome 22  
+load "../terminal.inc"
+
+set terminal postscript  12
+set size 1.0,0.35
+
+set format x "%y/%m"
+set timefmt "%m/%d/%y %H:%M"
+set timefmt "%Y/%m/%d"
+set xdata time
+set key left
+set xlabel "Date"
+set ylabel "MRs"
+#set y2label "LOCS added in release"
+#set arrow from "1998/01/01",0 to "2003/05/01",0  nohead lt 5 
+#show arrow
+plot 'all_mrs.clean' using 1:2  title "MRs" with lines
+

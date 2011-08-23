@@ -1,0 +1,311 @@
+
+index.pl,485
+my $q q23,474
+my $c c24,493
+my $h h33,718
+my $query query36,787
+my $detail detail37,815
+my $mrselect mrselect38,845
+my $mridselect mridselect39,879
+my $fileselect fileselect40,917
+my $revisionselect revisionselect41,955
+my $db db47,1164
+my $offset offset50,1271
+my $server server51,1325
+my $user user52,1358
+my $singleDate singleDate53,1391
+my $startDate startDate56,1520
+my $endDate endDate57,1556
+my @devList devList58,1588
+my $month month59,1620
+
+cookie.pm,810
+package cookie;3,20
+sub new cookie::new53,1081
+sub startMonth cookie::startMonth124,2413
+sub startDay cookie::startDay154,2764
+sub startYear cookie::startYear184,3139
+sub endMonth cookie::endMonth214,3495
+sub endDay cookie::endDay244,3826
+sub endYear cookie::endYear274,4181
+sub developers cookie::developers306,4625
+sub maximumRows cookie::maximumRows337,5090
+sub dateFormat cookie::dateFormat381,5863
+sub resetCookie cookie::resetCookie419,6246
+sub getFormattedDate cookie::getFormattedDate480,7187
+sub getStartDate cookie::getStartDate549,8290
+sub getEndDate cookie::getEndDate583,8703
+sub getDateRange cookie::getDateRange619,9246
+sub getSQLStartDate cookie::getSQLStartDate661,9917
+sub getSQLEndDate cookie::getSQLEndDate697,10338
+sub getHTML cookie::getHTML739,10896
+
+databaseAccess.pm,279
+package databaseAccess;3,20
+sub new databaseAccess::new49,1211
+sub dbQueryDebug databaseAccess::dbQueryDebug91,1782
+sub database databaseAccess::database160,3181
+sub disconnect databaseAccess::disconnect216,4201
+sub databaseQuery databaseAccess::databaseQuery346,8557
+
+databaseList.pm,85
+package databaseList;3,20
+sub getDatabaseList databaseList::getDatabaseList48,803
+
+databasePreferences.pm,163
+package databasePreferences;3,20
+sub getDeveloperList databasePreferences::getDeveloperList49,722
+sub getDateRanges databasePreferences::getDateRanges95,1611
+
+databasebyauthor.pm,89
+package databasebyauthor;3,20
+sub getMRByAuthor databasebyauthor::getMRByAuthor47,779
+
+databasebybugzilla.pm,90
+package databasebybugzilla;3,20
+sub getBugzilla databasebybugzilla::getBugzilla54,1142
+
+databasebyfile.pm,81
+package databasebyfile;3,20
+sub getMRByFile databasebyfile::getMRByFile46,790
+
+databasebyfilename.pm,97
+package databasebyfilename;3,20
+sub getMRByFileName databasebyfilename::getMRByFileName46,897
+
+databasebymonth.pm,85
+package databasebymonth;3,20
+sub getMRByMonth databasebymonth::getMRByMonth46,660
+
+databasebymr.pm,77
+package databasebymr;3,20
+sub getMRDetail databasebymr::getMRDetail46,795
+
+databasebymrid.pm,86
+package databasebymrid;3,20
+sub getMRIDDetail databasebymrid::getMRIDDetail48,1172
+
+databasefilerevtomrid.pm,109
+package databasefilerevtomrid;3,20
+sub getMRIDFromFileRev databasefilerevtomrid::getMRIDFromFileRev46,708
+
+databasegetinfo.pm,75
+package databasegetinfo;3,20
+sub getInfo databasegetinfo::getInfo46,632
+
+databasemridstats.pm,89
+package databasemridstats;3,20
+sub getMRIDStats databasemridstats::getMRIDStats46,842
+
+databaserevisiondefs.pm,277
+package databaserevisiondefs;3,20
+sub getRevisionDefsRemoved databaserevisiondefs::getRevisionDefsRemoved48,849
+sub getRevisionDefsAdded databaserevisiondefs::getRevisionDefsAdded115,2205
+sub getRevisionDefsModified databaserevisiondefs::getRevisionDefsModified189,3587
+
+databaserevisiondetails.pm,113
+package databaserevisiondetails;3,20
+sub getRevisionDetails databaserevisiondetails::getRevisionDetails46,879
+
+databaserevisiondiffs.pm,171
+package databaserevisiondiffs;3,20
+sub getMethodName databaserevisiondiffs::getMethodName54,1012
+sub getRevisionDiffs databaserevisiondiffs::getRevisionDiffs155,3598
+
+databasesearch.pm,77
+package databasesearch;3,20
+sub getSearch databasesearch::getSearch46,764
+
+hardcode.pm,381
+package hardcode;3,20
+sub language hardcode::language592,14366
+sub getCGIQueryDetailAll hardcode::getCGIQueryDetailAll652,15499
+sub trim hardcode::trim687,16151
+sub trim2 hardcode::trim2709,16493
+sub getTabs hardcode::getTabs763,17695
+sub monthName hardcode::monthName822,18581
+sub htmlSpace hardcode::htmlSpace880,19862
+sub formatLog hardcode::formatLog924,20601
+
+html.pm,1101
+package html;3,20
+sub new html::new104,2798
+sub setMRIDSelect html::setMRIDSelect218,6319
+sub setDetail html::setDetail246,6621
+sub getDatabase html::getDatabase278,6950
+sub getQuery html::getQuery305,7213
+sub getOffset html::getOffset339,7686
+sub getDetail html::getDetail366,7972
+sub getSort html::getSort399,8491
+sub getSortDir html::getSortDir463,10504
+sub getMRSelect html::getMRSelect523,11722
+sub getMRIDSelect html::getMRIDSelect550,12013
+sub getFileSelect html::getFileSelect577,12310
+sub getRevisionSelect html::getRevisionSelect604,12608
+sub getDeveloper html::getDeveloper639,13384
+sub getDate html::getDate680,14197
+sub getsearchWithAll html::getsearchWithAll722,14899
+sub getsearchWithExact html::getsearchWithExact749,15195
+sub getsearchWithAtLeast html::getsearchWithAtLeast776,15531
+sub getsearchWithout html::getsearchWithout803,15845
+sub title html::title834,16162
+sub icon html::icon864,16451
+sub bugzillaURL html::bugzillaURL894,16827
+sub supportedTables html::supportedTables927,17466
+sub generateHTML html::generateHTML987,19403
+
+htmlbody.pm,263
+package htmlbody;3,20
+sub addBody htmlbody::addBody51,575
+sub blankParagraph htmlbody::blankParagraph78,807
+sub smallSpace htmlbody::smallSpace107,1100
+sub unimplementedPage htmlbody::unimplementedPage135,1432
+sub writeHTML htmlbody::writeHTML174,1968
+
+htmlbyauthor.pm,75
+package htmlbyauthor;3,20
+sub MRByAuthor htmlbyauthor::MRByAuthor44,660
+
+htmlbybugzilla.pm,83
+package htmlbybugzilla;3,20
+sub MRByBugzilla htmlbybugzilla::MRByBugzilla44,685
+
+htmlbyfile.pm,67
+package htmlbyfile;3,20
+sub MRByFile htmlbyfile::MRByFile44,721
+
+htmlbyfilename.pm,83
+package htmlbyfilename;3,20
+sub MRByFileName htmlbyfilename::MRByFileName44,855
+
+htmlbymonth.pm,71
+package htmlbymonth;3,20
+sub MRByMonth htmlbymonth::MRByMonth44,603
+
+htmldblist.pm,75
+package htmldblist;3,20
+sub databaseList htmldblist::databaseList44,633
+
+htmlforms.pm,121
+package htmlforms;3,20
+sub hidden htmlforms::hidden56,981
+sub getHiddenElements htmlforms::getHiddenElements93,1750
+
+htmlmrdetail.pm,71
+package htmlmrdetail;3,20
+sub MRDetail htmlmrdetail::MRDetail47,926
+
+htmlmriddetail.pm,79
+package htmlmriddetail;3,20
+sub MRIDDetail htmlmriddetail::MRIDDetail46,798
+
+htmlmridstats.pm,75
+package htmlmridstats;3,20
+sub MRIDStats htmlmridstats::MRIDStats44,790
+
+htmlpath.pm,61
+package htmlpath;3,20
+sub getPath htmlpath::getPath49,918
+
+htmlpreferences.pm,561
+package htmlpreferences;3,20
+sub preferencesHeader htmlpreferences::preferencesHeader64,1050
+sub developerListForm htmlpreferences::developerListForm104,1668
+sub applyDatesCheckBox htmlpreferences::applyDatesCheckBox160,2740
+sub dateRangeForm htmlpreferences::dateRangeForm213,3857
+sub maxRowSelection htmlpreferences::maxRowSelection317,6014
+sub dateFormatSelection htmlpreferences::dateFormatSelection353,6503
+sub preferencesFooter htmlpreferences::preferencesFooter406,7290
+sub preferencesSuccess htmlpreferences::preferencesSuccess453,8082
+
+htmlrevisiondefs.pm,87
+package htmlrevisiondefs;3,20
+sub revisionDefs htmlrevisiondefs::revisionDefs48,872
+
+htmlrevisiondetails.pm,99
+package htmlrevisiondetails;3,20
+sub revisionDetails htmlrevisiondetails::revisionDetails44,841
+
+htmlrevisiondiffs.pm,92
+package htmlrevisiondiffs;3,20
+sub revisionDiffs htmlrevisiondiffs::revisionDiffs59,1473
+
+htmlsearch.pm,125
+package htmlsearch;3,20
+sub searchForm htmlsearch::searchForm46,562
+sub searchResults htmlsearch::searchResults138,2455
+
+htmltop.pm,150
+package htmltop;3,20
+sub mainHeader htmltop::mainHeader55,779
+sub mainQuery htmltop::mainQuery416,9380
+sub mainMRID htmltop::mainMRID473,10617
+
+htmlurl.pm,152
+package htmlurl;3,20
+sub getURL htmlurl::getURL81,1898
+sub getSelfURL htmlurl::getSelfURL160,3728
+sub getLocaleURL htmlurl::getLocaleURL212,4890
+
+htmlutility.pm,364
+package htmlutility;3,20
+sub getSQLMonth htmlutility::getSQLMonth70,996
+sub getFormattedMonth htmlutility::getFormattedMonth119,1674
+sub getFormattedTime htmlutility::getFormattedTime203,3253
+sub compareDates htmlutility::compareDates253,4078
+sub getSortDirString htmlutility::getSortDirString306,4998
+sub offsetLinks htmlutility::offsetLinks343,5592
+
+locale_en.pm,1569
+package locale_en;3,20
+sub dateOutsideRange locale_en::dateOutsideRange379,6027
+sub emptyQueryDBList locale_en::emptyQueryDBList459,7508
+sub emptyQueryMonth locale_en::emptyQueryMonth538,9298
+sub emptyQueryMonthDetail locale_en::emptyQueryMonthDetail641,11858
+sub emptyQueryAuthorDetail locale_en::emptyQueryAuthorDetail731,14290
+sub colsQueryMRIDDetail locale_en::colsQueryMRIDDetail787,15491
+sub emptyQueryMRIDDetail locale_en::emptyQueryMRIDDetail863,17507
+sub emptyQueryMRIDStats locale_en::emptyQueryMRIDStats941,18766
+sub emptyQueryAuthor locale_en::emptyQueryAuthor1037,20840
+sub emptyQueryFile locale_en::emptyQueryFile1134,22938
+sub emptyQueryFileName locale_en::emptyQueryFileName1240,25483
+sub emptyQueryBugzilla locale_en::emptyQueryBugzilla1341,27870
+sub emptyQuerySearch locale_en::emptyQuerySearch1440,30208
+sub revisionsNotSupported locale_en::revisionsNotSupported1499,31275
+sub emptyQueryRevision locale_en::emptyQueryRevision1558,33001
+sub emptyQueryRevisionDetails locale_en::emptyQueryRevisionDetails1639,34377
+sub colsRevisionDiffs locale_en::colsRevisionDiffs1721,35638
+sub byMonthDetailTitle locale_en::byMonthDetailTitle1838,37464
+sub byAuthorDetailTitle locale_en::byAuthorDetailTitle1873,37826
+sub byFileDetailTitle locale_en::byFileDetailTitle1908,38200
+sub byBugzillaMRIDTitle locale_en::byBugzillaMRIDTitle1943,38582
+sub searchMRIDTitle locale_en::searchMRIDTitle1989,39110
+sub revisionDetailsTitle locale_en::revisionDetailsTitle2046,39743
+sub booleanText locale_en::booleanText2293,43739
+
+locale_fr.pm,1569
+package locale_fr;3,20
+sub dateOutsideRange locale_fr::dateOutsideRange381,6183
+sub emptyQueryDBList locale_fr::emptyQueryDBList465,7814
+sub emptyQueryMonth locale_fr::emptyQueryMonth545,9643
+sub emptyQueryMonthDetail locale_fr::emptyQueryMonthDetail648,12241
+sub emptyQueryAuthorDetail locale_fr::emptyQueryAuthorDetail735,14623
+sub colsQueryMRIDDetail locale_fr::colsQueryMRIDDetail788,15780
+sub emptyQueryMRIDDetail locale_fr::emptyQueryMRIDDetail864,17903
+sub emptyQueryMRIDStats locale_fr::emptyQueryMRIDStats942,19313
+sub emptyQueryAuthor locale_fr::emptyQueryAuthor1038,21446
+sub emptyQueryFile locale_fr::emptyQueryFile1135,23603
+sub emptyQueryFileName locale_fr::emptyQueryFileName1241,26217
+sub emptyQueryBugzilla locale_fr::emptyQueryBugzilla1339,28578
+sub emptyQuerySearch locale_fr::emptyQuerySearch1439,30964
+sub revisionsNotSupported locale_fr::revisionsNotSupported1498,32065
+sub emptyQueryRevision locale_fr::emptyQueryRevision1549,33532
+sub emptyQueryRevisionDetails locale_fr::emptyQueryRevisionDetails1630,35028
+sub colsRevisionDiffs locale_fr::colsRevisionDiffs1711,36352
+sub byMonthDetailTitle locale_fr::byMonthDetailTitle1828,38269
+sub byAuthorDetailTitle locale_fr::byAuthorDetailTitle1863,38632
+sub byFileDetailTitle locale_fr::byFileDetailTitle1899,39013
+sub byBugzillaMRIDTitle locale_fr::byBugzillaMRIDTitle1934,39399
+sub searchMRIDTitle locale_fr::searchMRIDTitle1980,39954
+sub revisionDetailsTitle locale_fr::revisionDetailsTitle2037,40613
+sub booleanText locale_fr::booleanText2288,45005

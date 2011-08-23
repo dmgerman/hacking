@@ -1,0 +1,31 @@
+BODY           { background:white;}
+DD             {font-style:italic; }
+H1             { color:darkblue;}
+H2.header      {color:blue;}
+h2             {margin-top:3pt; margin-bottom:3pt;}
+H3             {color:black;}
+table          {background:white;}
+.back1         {background: #eeeeee; }
+.back0         {background: white; }
+td.backchange    {background: #eeffff; vertical-align:top;}
+td.backdelete    {background: #ffeeff; vertical-align:top;}
+td.backadded     {background: #ffffee; vertical-align:top;}
+td.backlines     {background: #eeeeee; vertical-align:top;}
+td.backtitle0     {background: blue; vertical-align:top;}
+td.backtitle1     {background: orange; vertical-align:top;}
+
+.highlight     {color: blue}
+
+em.publication {color:black;font-weight:700;}
+
+.abstract      {margin-left: 10%; margin-right: 10%; margin-top:3pt; margin-bottom:5pt;
+                font-size:80% }
+.week          {font-weight:700;}
+.days          {vertical-align:center;}
+
+a.black        {background:black;color:white;font-weight:80%;}           
+tr.black        {background:black;color:white;font-weight:80%;}           
+td.bar         {font-family:"Arial, Helvetica,sans-serif";color=#FF0000;background:#eeeeee;font-weight:dark;}
+td.subheader   {font-family:"Arial, Helvetica,sans-serif";background:#000000;color:white}
+.header        {text-align:right;}
+ul             {margin-top:1pt; margin-bottom:1pt;}

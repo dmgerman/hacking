@@ -1,0 +1,6 @@
+Sometimes tags get on the way:
+
+	  file=doc/C/apx-authors.sgml, revision 
+
+          aaron:2001/06/07 00:17:16 	aaron 	1.10
+

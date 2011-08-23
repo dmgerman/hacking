@@ -1,0 +1,8 @@
+create_authors_detail_mrs.pl: 
+			      Create a graph of mrs per author/month,
+			      including their proportion
+reate_authors_mrs.pl:
+                        number of authors in a given month
+
+create_history_all_mrs.pl: 
+                           mrs in the history of the project

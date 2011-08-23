@@ -1,0 +1,18 @@
+
+* Postgresql had some repeated revisions 1.2 
+
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/md5.c] [12][13]
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/md5.h] [8][9]
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/pgcrypto.c] [16][17]
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/pgcrypto.h] [8][9]
+
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/sha1.c] [14][15]
+
+Mmmm Total revisions differ from the number of revisions we are extracting [contrib/pgcrypto/sha1.h] [9][10]
+
+Mmmm Total revisions differ from the number of revisions we are extracting [src/include/c.h] [169][170]
+
+
+* Some commits have the wrong date
+
+

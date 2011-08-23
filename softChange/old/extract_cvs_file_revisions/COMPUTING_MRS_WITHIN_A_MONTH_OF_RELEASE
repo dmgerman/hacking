@@ -1,0 +1,36 @@
+
+--Create tabel with mrs within a month
+
+
+ create temp table mr74 as select distinct mrid from mrs2 natural join mrstats where (daterev > date '2003-11-17 00:00:00' - 30 ) and (daterev < date '2003-11-17 00:00:00' + 30 ) and (code) and (not branch);
+
+ select daterev, sum(sizeDiffs) from mrs2 natural join mr74 natural join mrstats group by daterev order by daterev;
+
+
+drop table mr72; create temp table mr72 as select distinct mrid from mrs2 natural join mrstats where (daterev > date '2002-02-04 00:00:00' - 30 ) and (daterev < date '2002-02-04 00:00:00' + 30 ) and (code) and (not branch);
+
+ drop table mr73; create temp table mr73 as select distinct mrid from mrs2 natural join mrstats where (daterev > date '2002-11-27 00:00:00' - 30 ) and (daterev < date '2002-11-27 00:00:00' + 30 ) and (code) and (not branch);
+
+
+--- evolution
+
+ drop table mr12; create temp table mr12 as select distinct mrid from mrs2 natural join mrstats where (daterev > date '2002-11-07 00:00:00' - 30 ) and (daterev < date '2002-11-07 00:00:00' + 30 ) and (code) and (not branch);
+
+
+
+-- this computes a lot of statistics
+
+ select daterev, count(*) as numberm, sum(sizediffs) as sizediffs, sum(sizecleandiffs) as sizediffclean, sum(linesadded) as linesadded, sum(linesremoved) as linesremoved, sum(linesnet) as linesnet , count(*) as numbermrs2 from mrs2 natural join mr72 natural join mrstats group by daterev order by daterev;
+ERROR:  canceling query due to user request
+update mrstats   set linesremoved = (select sum(linesrm) from  mrsfiles f, revisions d, files f2, extensions e where f.filename = f2.filename and f2.extension  = e.extension and e.code  and f.filename = d.filename and f.revisionid = d.revisionid and mrid = mrstats.mrid group by f.mrid);
+
+
+----
+
+This is to compute the files changes per day
+
+select daterev, avg(filescount), avg(filesadded), avg(filesremoved) from mrstats  natural join mrs2 where daterev ~ '2002-1[01]' group by daterev order by daterev;
+
+* INteresting statis about releases
+
+select daterev, count(*), max(filescount), min(filescount), avg(filescount), sum(sizecleandiffs) as sizecleandiffs from mrstats  natural join mrs2 where code and  daterev ~ '2002-1[012]' group by daterev order by daterev;

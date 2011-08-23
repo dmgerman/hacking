@@ -1,0 +1,24 @@
+
+do.sh can do all of this at once
+----------------------------------------------------------------------
+
+* Create schema
+
+  * First extract files for each revision and put them into the database (populate-revisions.pl)
+
+  * Extend fileRevisions with its cleanLOCS (add-clean-locs-to-filesrevisions.pl)
+
+* Now create a table called Definitions
+
+   * Populate it with info from filesRevision (add-definitions.pl)
+
+   * Extend it with the length of the defintion  (add-length-of-definition.pl)
+
+
+Other programs
+
+  - extract_revisions.pl (given a filename, and revision, prints to the STDOUT)
+
+  - compute difference revisions
+
+

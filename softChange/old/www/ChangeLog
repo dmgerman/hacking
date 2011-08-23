@@ -1,0 +1,42 @@
+2004-03-09  Daniel German  <dmgerman@uvic.ca>
+
+	* Cleaned up the interface and added more details to Revisions
+
+2004-03-07  Daniel German  <dmgerman@uvic.ca>
+
+	* index.php: Fixed link to revisiondetails.php 
+
+	* revisiondetails.php: cleanlines and lines are properly handled
+	in diffs
+
+	* softchange.php: Fixed spelling mistake
+
+	* Created 2 new scripts:
+
+	mrsdetails.php: it displays stats about the mr
+
+	revisiondetails.php: displays a smarter diff of the change
+	
+
+2004-03-05  Daniel German  <dmgerman@uvic.ca>
+
+	* Added changes by Andrew, after I cleaned them up
+
+2003-10-07  Daniel German  <dmgerman@uvic.ca>
+
+	* index.php: Added linking to bugzilla
+
+2003-10-06  Daniel German  <dmgerman@uvic.ca>
+
+        * Replaced Mozilla icon
+	
+	* Implemented linking to bonsai for diff visualization
+
+	* ChangeLog: Created the file
+
+	* TODO: Created the file
+
+	* Implemented basic search form
+	
+	
+

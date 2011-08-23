@@ -1,0 +1,8 @@
+
+gcc=# create table temp as select mrid,filename,revisionid,to_timestamp(daterev || ' ' || timerev, 'YYYY-MM-DD HH24:MI:SS') as daterev from mrsfiles ;
+SELECT
+
+ create table mrtime as select mrid, max(daterev), min(daterev), count(*) as number from temp group by mrid; 
+
+
+ create table filerevcount as select filename, count(*) as revisions from revisions group by filename;

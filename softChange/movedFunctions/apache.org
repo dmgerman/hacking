@@ -1,0 +1,100 @@
+Refactors:src/modules/standard/mod_autoindex.c,escape_html,29
+          src/modules/standard/mod_dir.c,escape_html,29
+
+
+** This is one version
+
+157.8.2ccc	+0	(def_block
+157.8.2ccc	+4	r_void
+157.d.2cd1	+d	id|add_file_conf
+157.1a.2cde	+0	c_func
+157.1a.2cde	+1	(paren
+157.1b.2cdf	+f	id|core_dir_config
+157.2b.2cef	+1	op_star
+157.2c.2cf0	+4	id|conf
+157.30.2cf4	+1	comma
+157.32.2cf6	+4	r_void
+157.37.2cfb	+1	op_star
+157.38.2cfc	+a	id|url_config
+157.42.2d06	+1	)paren
+158.1.2d08	+1	(brace
+159.5.2d0e	+4	r_void
+159.a.2d13	+1	op_star
+159.b.2d14	+1	op_star
+159.c.2d15	+9	id|new_space
+159.16.2d1f	+1	op_assign
+159.18.2d21	+1	(paren
+159.19.2d22	+4	r_void
+159.1e.2d27	+1	op_star
+159.1f.2d28	+1	op_star
+159.20.2d29	+1	)paren
+159.21.2d2a	+d	id|ap_push_array
+159.2e.2d37	+0	c_func
+159.2e.2d37	+1	(paren
+159.2f.2d38	+9	id|conf-&gt;sec
+159.38.2d41	+1	)paren
+159.39.2d42	+1	suffix:semicolon
+15b.5.2d4d	+1	op_star
+15b.6.2d4e	+9	id|new_space
+15b.10.2d58	+1	op_assign
+15b.12.2d5a	+a	id|url_config
+15b.1c.2d64	+1	suffix:semicolon
+15c.1.2d66	+1	)brace
+15c.2.2d67	+0	)def_block
+
+** And this is another
+
+
+157.13.2cd7	+0	(def_block
+157.13.2cd7	+10	id|ap_add_file_conf
+157.23.2ce7	+0	c_func
+157.23.2ce7	+1	(paren
+157.24.2ce8	+f	id|core_dir_config
+157.34.2cf8	+1	op_star
+157.35.2cf9	+4	id|conf
+157.39.2cfd	+1	comma
+157.3b.2cff	+4	r_void
+157.40.2d04	+1	op_star
+157.41.2d05	+a	id|url_config
+157.4b.2d0f	+1	)paren
+158.1.2d11	+1	(brace
+159.5.2d17	+4	r_void
+159.a.2d1c	+1	op_star
+159.b.2d1d	+1	op_star
+159.c.2d1e	+9	id|new_space
+159.16.2d28	+1	op_assign
+159.18.2d2a	+1	(paren
+159.19.2d2b	+4	r_void
+159.1e.2d30	+1	op_star
+159.1f.2d31	+1	op_star
+159.20.2d32	+1	)paren
+159.21.2d33	+d	id|ap_push_array
+159.2e.2d40	+0	c_func
+159.2e.2d40	+1	(paren
+159.2f.2d41	+9	id|conf-&gt;sec
+159.38.2d4a	+1	)paren
+159.39.2d4b	+1	suffix:semicolon
+15b.5.2d56	+1	op_star
+15b.6.2d57	+9	id|new_space
+15b.10.2d61	+1	op_assign
+15b.12.2d63	+a	id|url_config
+15b.1c.2d6d	+1	suffix:semicolon
+15c.1.2d6f	+1	)brace
+15c.2.2d70	+0	)def_block
+
+** This is the source code
+
+static void add_file_conf(core_dir_config *conf, void *url_config)
+{
+    void **new_space = (void **)ap_push_array(conf->sec);
+    
+    *new_space = url_config;
+}
+
+
+CORE_EXPORT(void) ap_add_file_conf(core_dir_config *conf, void *url_config)
+{
+    void **new_space = (void **)ap_push_array(conf->sec);
+    
+    *new_space = url_config;
+}

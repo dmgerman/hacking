@@ -1,0 +1,19 @@
+2004-09-15  dmg  <dmgerman@uvic.ca>
+
+	* TODO: Created the file
+
+	* methoddeltas.sql: It should add length of all definitions
+
+2004-03-02  Daniel German  <dmgerman@uvic.ca>
+
+	* add-definitions.pl: Fixed an error that I introduced in a
+	previous commit. I really need to do regresion testing
+
+2004-02-15    <dmg@platinum.dmg>
+
+	* Now all the scripts can take the database name from the command
+	line
+	
+
+	
+

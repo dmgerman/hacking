@@ -1,0 +1,6 @@
+#!/usr/bin/python
+
+import sys
+import parti.scripts.main
+
+parti.scripts.main.main(sys.argv)

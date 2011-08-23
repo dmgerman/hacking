@@ -1,0 +1,22 @@
+2004-02-18    <dmg@platinum.dmg>
+
+	* extractFilesRevisionsFromCVS.pl (Process_Revisions): 
+	I fixed another bug introduced while removing %s in printf
+	
+
+	* extractMRs.pl: Changed lengh window to 600 seconds
+	(catches all evolution MRs)
+
+	* Added support for not repeating files in MR
+
+2004-02-17    <dmg@platinum.dmg>
+
+	* extractFilesRevisionsFromCVS.pl (Process_Revisions): 
+	 Added support for files with no revisions
+	* Fixed a bug in matching of revisions 
+	* Fixed a bug that kept the ===. separator as part of the log
+	 of the last revision of a file
+
+	
+	
+

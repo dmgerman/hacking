@@ -1,0 +1,381 @@
+#!/usr/bin/perl
+
+use strict;
+
+my $useMangle = 0;
+my $debug = 0;
+my $cleanLocs = 0;
+my $reindent  = 0;
+
+my $i =-1;
+#$args = '';
+#foreach $a (@ARGV) {
+#	$i++;
+#	print "$i, '$ARGV[$i]'\n";
+#	next	if ($ARGV[$i] eq "-u") ;
+#	$args .= "'$ARGV[$i]' ";#
+#}
+
+
+
+#print "\n\n[" , join(' ', @ARGV), "][$args]\n";
+
+#open (IN, "/usr/bin/diff -p -b -w -E --context=0 $args|") or die "Unable to start pipe";     
+#
+#my %found;
+#
+#while (<IN>) {
+#    chomp;
+#    print "$_\n";
+#    if ($_ =~ /^\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* +/) {
+#	$rest = $'; #';
+##	if ($rest =~ /([^\s]+)\s*\(.*$/) {
+##	    $name = $1 ; 
+#	$name = $rest;
+#	    $found{$name} = $name;
+#	print ">>>>>>>>$name\n";
+##	}
+#    }
+#}
+#close IN;
+#
+#foreach $a (sort keys %found) {
+#    print "::$a\n";
+#}
+#
+#
+
+my $tmpFile = "/tmp/rip-myDiff$$.c";
+my $tmpFile1 = "/tmp/rip-myDiff-1-$$.c";
+my $tmpFile2 = "/tmp/rip-myDiff-2-$$.c";
+
+#print "Usage <before> <after>\n" if scalar(@ARGV) != 2;
+
+my $beforeName;
+my $afterName;
+
+if (scalar(@ARGV) >= 6) {
+    $beforeName = $ARGV[5];
+    $afterName = $ARGV[6];
+    print STDERR "Before:: $ARGV[2] After:: $ARGV[4]\n";
+} elsif (scalar(@ARGV) == 2) {
+    $beforeName = $ARGV[0];
+     $afterName = $ARGV[1];
+    print STDERR "Before:: $ARGV[0] After:: $ARGV[1]\n";
+} else {
+    die "Usage $0 <before> <after>\n";
+}
+
+#read files in memory, we need to process the apache ones.
+
+undef $/;
+
+my $before = Load_File($beforeName);
+my $after = Load_File($afterName);
+
+
+if ($cleanLocs) {
+    $before = Clean_Locs($before);
+    $after = Clean_Locs($after);
+}
+
+
+if ($reindent) {
+    $before = Re_Indent($before);
+    $after = Re_Indent($after);
+}
+
+
+
+my %beforeTags = Get_Tags($before);
+my %afterTags = Get_Tags($after);
+
+
+my @linesBefore = split('\n', $before);
+my @linesAfter = split('\n', $after);
+
+
+
+
+
+#my @lookupTableBefore = Create_Table(%beforeTags);
+#my @lookupTableAfter = Create_Table(%afterTags);
+
+#first process the ones that were before
+
+my %count;
+$count{A} = 0;
+$count{I} = 0;
+$count{M} = 0;
+$count{D} = 0;
+
+foreach my $f (sort keys %beforeTags) {
+    if ($beforeTags{$f}{type} eq "function") {
+	if ($afterTags{$f}{type} ne "function") {
+	    print "::${f}::D::" , $beforeTags{$f}{len}, "::0\n";	    
+	    $count{D} ++;
+	} else {
+	    # it is before and after
+	    my $fBefore = Get_Function_Before($beforeTags{$f}{begin}, $beforeTags{$f}{end}, @linesBefore);
+	    my $fAfter = Get_Function_Before($afterTags{$f}{begin}, $afterTags{$f}{end}, @linesAfter);
+	    if ($fBefore ne $fAfter) {
+#		print "------------------$fBefore\n";
+#		print "------------------$fAfter\n";
+		my $diffF = Compute_Diff($fBefore, $fAfter);
+		print "::${f}::M::" , $beforeTags{$f}{len}, "::", $afterTags{$f}{len} ,"::", $diffF ,"\n";	    
+		$count{M} ++;
+	    } else {
+		print "::${f}::I::" , $beforeTags{$f}{len}, "::", $afterTags{$f}{len} ,"\n";	    
+		$count{I} ++;
+	    }
+	}
+    }
+}
+#now see which ones were added
+foreach my $f (sort keys %afterTags) {
+    if ($afterTags{$f}{type} eq "function") {
+	if ($beforeTags{$f}{type} ne "function") {
+	    print "::${f}::A::0::" , $afterTags{$f}{len}, "\n";
+	    $count{A} ++;
+	} else {
+	    # it is before and after
+	    # taken  care in the before,after comparison
+	}
+    }
+}
+
+print STDERR "Totals: identical $count{I}; modified $count{M}; added $count{A}; deleted $count{D}\n";
+
+exit 0;
+
+
+
+sub Get_Function_Before
+{
+    my ($from, $end, @lines) = @_;
+    
+    my $result = '';
+    # ctags indexes are base 1, array is base 0
+    for my $i ($from-1.. $end-1) {
+	$result .= "$lines[$i]\n";
+    }
+    return $result;
+}
+
+
+sub Create_Table
+{
+    my (%exTags) = @_;
+    my @table;
+
+    foreach my $f (sort keys %exTags) {
+	if ($exTags{$f}{type} eq "function") {
+#	    print $f, ":", $exTags{$f}{begin} , ":", $exTags{$f}{end} , "\n";
+	    for (my $i=$exTags{$f}{begin};$i<=$exTags{$f}{end};$i++) {
+		$table[$i] = $f;
+	    }
+	}
+    }
+
+    if ($debug) {
+	for (my $i=0; $i< scalar(@table); $i++) {
+	    print  STDERR "$i:$table[$i]\n";
+	}
+    }
+}
+
+
+#apache requires removal of funny macros around function names
+
+sub Get_Tags
+{
+    my ($f) = @_;
+    my (%exTags);
+
+    Write_File($tmpFile, $f);
+
+    my $totalLines = ($f =~ tr/\n//);
+
+
+    $/ = "\n";
+
+    open(INT, "ctags-exuberant --sort=no -x $tmpFile|") or die "Unable to run exuberant ctags\n";
+
+
+    my ($prevName, $type, $line);
+    while (<INT>)  {
+#	print $_;
+	chomp;
+	my ($name, $type, $line) = ("","","");
+	if (/^([^ ]+) +([^ ]+) +([^ ]+) +(.*)$/) {
+	    ($name, $type, $line)  = ($1, $2, $3);
+	} else {
+	    die "Illegal format in ctags\n";
+	}
+
+	$exTags{$name}{type} = $type;
+
+	if ($type eq "function") {
+#	    print "$name:$line ..........\n";
+	    $exTags{$name}{begin} = $line;
+	} else {
+
+	}
+	if (($prevName ne "")) {
+	    if  (defined($exTags{$prevName}{begin})) {
+#		print ">>>>>>>>>$name, $prevName\n";
+		$exTags{$prevName}{end} = $line -1;
+		$exTags{$prevName}{len} = $exTags{$prevName}{end} - $exTags{$prevName}{begin} ;
+	    }
+	}
+	$prevName = $name;
+
+    }
+    if (($prevName ne "")) {
+	if  (defined($exTags{$prevName}{begin})) {
+#		print ">>>>>>>>>$name, $prevName\n";
+	    $exTags{$prevName}{end} = $totalLines;
+	    $exTags{$prevName}{len} = $exTags{$prevName}{end} - $exTags{$prevName}{begin} ;
+	}
+    }
+
+    close INT;
+
+    unlink $tmpFile;
+    return %exTags;
+
+    
+}
+
+
+
+sub Load_File 
+{
+    my ($f) = @_;
+    open (IN, "<$f") or die "Unable to read from $f";
+    
+    undef $/;
+    my $result = <IN>;
+    close IN;
+    return $result;
+
+}
+
+sub Re_Indent
+{
+    my ($f) = @_;
+    # -st standard output
+    # -psl type before funtion
+    # -l maximum length of output line, avoids wrapping of defs
+    open(IND, "|indent -st -bap -bl -bad -psl -l1000 > $tmpFile") or die "Unable to run indent\n";
+
+    print IND $f;
+    
+    close IND;
+
+    my $result = Load_File($tmpFile);
+
+
+}
+
+sub Clean_Locs
+{
+    my ($f) = @_;
+
+
+    $/ = "\n";
+#
+
+    Write_File($tmpFile, $f);
+    
+    my $result = "";
+
+    if ($useMangle) {
+	open (MANGLE, "mangle -co $tmpFile 2> /dev/null | ") or die "Unable to run mangle on [$tmpFile]";
+    } else {
+	open (MANGLE, "stripcmt $tmpFile 2> /dev/null |") or die "Unable to run stripcmt on [$tmpFile]";
+    }
+
+    while (<MANGLE>) {
+	chomp;
+	s/\s+$//;
+	next if ($_ eq "");
+	$result .= "$_\n";
+	
+    }
+
+    close MANGLE;
+    undef $/;
+    
+    unlink($tmpFile);
+
+    return $result
+}
+
+
+sub Write_File
+{
+    my ($f, $contents) = @_;
+    open (OUT, ">$f") or die "unable to create file $f\n";
+    print OUT $contents;
+    close OUT;
+}
+
+
+sub Compute_Diff
+{
+    my ($b, $a) = @_;
+    Write_File($tmpFile1, $b);
+    Write_File($tmpFile2, $a);
+    my $result = `diff -d -U0 ${tmpFile1} ${tmpFile2}`;
+    if (!$debug) {
+	unlink $tmpFile1;
+	unlink $tmpFile2;
+    }
+    my @hunks = grep(/^@@/, split('\n', $result));
+
+#    print $result;
+    my $count;
+    my $added = 0;
+    my $deleted = 0;
+    my $hunkLine = "";
+    foreach my $h (@hunks) {
+	my ($beg, $len, $h) = extract_Hunk_Location($h);
+	my ($end, $lenEnd, $h) = extract_Hunk_Location($h);
+#	print "Begin: $beg, len $len \n";
+#	print "Begin: $end, len $lenEnd\n";
+	$added += $lenEnd;
+	$deleted += $len;
+	$count ++;
+	$hunkLine .= sprintf("%d,%d,%d,%d#", $beg, $len, $end, $lenEnd);
+    }
+    if ($hunkLine ne "") {
+	$hunkLine = substr($hunkLine, 0, -1);
+    }
+    return "$count;$deleted;$added;$hunkLine\n";
+}
+
+
+sub extract_Hunk_Location
+{
+    my ($line) =@_;
+    my $hunk = $line;
+    # remove header @@
+    $line =~ s/^@@//;
+    if ($line =~ s/^ [+-]([0-9]+),?([0-9]+)?//) {
+	my ($beg, $len) = ($1,$2);
+	# if no len is specified, then assume it is 1
+	if (!defined($len)) {
+	    $len = 1;
+	}
+	# Do not trust locations for sizes == 0
+	if ($len == 0) {
+	    $beg ++;
+	}
+	return ($beg, $len, $line);
+    } else {
+	# hunks of size 0 have an under
+	die "Illegal hunk part $hunk";
+    }
+}
+

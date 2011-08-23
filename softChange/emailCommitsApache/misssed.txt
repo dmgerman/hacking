@@ -1,0 +1,91 @@
+965 <- Makefile
+966 <- Makefile
+980  <- util.c
+1018 <- util.c
+1065 <- truncated message!
+1099 <- Makefile
+1110 <- added a file   Added:       htdocs/manual/mod  mod_expires.html
+1162 <- two files with same name
+1178 <- a new file
+1202 <- util.c
+1203 <- util.c
+1214 <- util.c
+1226 <- makefile
+1245 <- added file
+1246 <- removed file
+1251
+1292
+1293
+1294
+1298
+1299
+1301
+1302
+1312
+1401
+1402
+1475
+1476
+1536
+1537
+1538
+1541
+1542
+1545
+1555
+1608
+1618 <- util.c
+1633
+1663 <- util.c
+1713
+1749
+1761
+1763
+1779
+1823
+1838
+1847
+1886 <- util.c
+1964
+1965
+1966
+1967
+1968
+1969
+1970
+1981
+1982
+1985
+1987
+1988
+1993
+1999
+2066
+2089
+2106
+2162
+2198
+2223
+2227
+2230
+2232
+2255
+2346
+2347
+2351 <- missing in mailing list
+2352 <- missing in mailing list
+2353 <- missing in mailing list
+2354 <- missing in mailing list
+2355 <- missing in mailing list
+2356 <- missing in mailing list
+2357 <- missing in mailing list
+2379 <-added file
+2380 <- and error in the computation of the diff, but the message 'matches'
+2466
+2499
+2500
+2502
+2515
+2521
+2522
+2549

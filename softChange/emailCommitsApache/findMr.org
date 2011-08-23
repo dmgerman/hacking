@@ -1,0 +1,3 @@
+postal_digger --to='apache\-1.3-cvs@apache.org' 199909  > apache13-199909
+egrep -i '(^From |RCS file|retrieving|^Message\-id)' apache13-199909   > headers.199909
+perl findMr.pl apache13 < headers.199909 > 199909.mrs

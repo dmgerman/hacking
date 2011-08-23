@@ -1,0 +1,349 @@
+#!/usr/bin/perl -w
+
+use strict;
+use databaseAccess;
+use html;
+use hardcode;
+
+=head1 Preferences code : C<preferences.pl>
+
+=head2 Uses: C<databaseAccess.pm>, C<hardcode.pm>, C<html.pm>
+
+=head2 Requires: C<none>
+
+=head2 Pragmas: C<strict>
+
+This file presents the user with an interface to
+view and set their preferences. The preferences are used to narrow
+down the query results.
+
+The default value is C<any> for all preferences, which means
+the full results of the queries are displayed.
+
+If one or more of these preferences are set to a value
+other than C<any>, the query results are narrowed down
+to results that include only what is specified.
+
+=head2 Preference Values
+
+The current set of preferences allows the user to narrow
+down the following portions of queries:
+
+=over
+
+=item* C<authors> => One or more authors
+
+=item* C<from time> => The earliest results
+
+=item* C<to time> => The latest results
+
+=item* C<maximum rows> => Maximum number of rows to return at a time
+
+=back
+
+This code produces the initial display to set the
+preferences and the success message. If an error
+occurs, the display to set the preferences is regenerated
+with an error message at the top.
+
+The success message is necessary, since a separate page must
+be loaded to set the cookies. The main page could have done this,
+which would be more convenient for the user, but then the choosing
+and setting of preferences would not be modular.
+
+The state and base url of the referring page are passed as cgi
+parameters to preferences from the caller. Preferences passes this
+data on to the success page, which can then provide a button that
+returns to the caller.
+
+It is possible to add a preferences button to any page, and preferences
+will return to that same page when the button is clicked on the
+success page. The page returned to may not look the same, since
+the preferences just set are applied to that page.
+
+=head2 Error Messages
+
+The current set of possible errors is:
+
+=over
+
+=item* Date error: the ending (month | day | year) must come on or after the starting (month | day | year)
+
+The ending date has to be >= the starting date for the queries to make sense.
+The year is checked first, then the month, then the day. So if the error says
+'month', then the years are the same, which is ok, but the ending month is
+before the starting month. Similarly, if the error says 'day', then the both
+the years and months are the same, but the ending day is before the starting
+day.
+
+=back
+
+=cut
+
+# Objects needed for creating other objects
+my $q = new CGI();
+my $c = new cookie($q);
+
+# Set the language before doing anything else.
+# First, check the cookie language. If it is
+# not defined, then use whatever apache indicates.
+$0 =~ /(\w\w)$/;
+language($1);
+
+# See if we should write the prefs or display them
+my $writePrefs = $q->param(hardcode->cgiParmWritePrefs);
+
+# Create the html object and set the page title
+my $h = new html($q, $c);
+$h->title(hardcode->prefsTitle);
+
+my $db = new databaseAccess($q, $h, $c);
+
+# The database name and query
+my $dbname = $h->getDatabase();
+my $query = $h->getQuery();
+
+# Whether or not to display the form
+my $displayForm = ! $writePrefs;
+
+# The ranges of dates to work with
+my $dateRanges;
+
+# The error message to display on the form
+my $errorMessage;
+
+# The values of the parameters
+# Add an extra field for the month as a number
+my @fromDate = (
+	$q->param(hardcode->cgiParmFromMonth),
+	$q->param(hardcode->cgiParmFromDay),
+	$q->param(hardcode->cgiParmFromYear)
+);
+
+push @fromDate, hardcode->uiMonthNames->{$fromDate[0]}
+	if $fromDate[0];
+
+my @toDate = (
+	$q->param(hardcode->cgiParmToMonth),
+	$q->param(hardcode->cgiParmToDay),
+	$q->param(hardcode->cgiParmToYear)
+);
+
+push @toDate, hardcode->uiMonthNames->{$toDate[0]}
+	if $toDate[0];
+
+my $clearDates = $q->param(hardcode->cgiParmApplyDates) || (! $fromDate[0]);
+
+if ($dbname && $writePrefs && ! $clearDates) {
+	# Make sure the preferences make sense.
+	# Otherwise, redisplay the form with an error message.
+	# Up to three errors can occur, display all errors at once
+	# for convenience.
+	
+	# Connect to the database
+	$db->database($dbname);
+	
+	# Get the date ranges actually used in the project
+	$dateRanges = ($db->getDateRanges())->[1];
+	# Dump the line number.
+	shift @{$dateRanges};
+	
+	# Disconnect from the database
+	$db->disconnect();
+	
+	# Massage the date arrays to a format we can compare with.
+	my $start = [$dateRanges->[0], $dateRanges->[2],$dateRanges->[4]];
+	my $end = [$dateRanges->[1], $dateRanges->[3], $dateRanges->[5]];
+	my $d1 = [$fromDate[3], $fromDate[1], $fromDate[2]];
+	my $d2 = [$toDate[3], $toDate[1], $toDate[2]];
+	
+	# Assume no problem
+	$errorMessage = "";
+	
+	# Make sure the starting date is on or before the ending date.
+	$errorMessage .=
+		$h->compareDates($d1, $d2) > 0 ?
+		$q->p($q->b(hardcode->dateStartAfterEnd)) :
+		"";
+	
+	# Make sure the starting date is in the usable date range
+	$errorMessage .=
+		($h->compareDates($d1, $start) < 0 ||
+		$h->compareDates($d1 , $end) > 0) ?
+		$q->p($q->b(hardcode::dateOutsideRange(
+			$c->getFormattedDate(@{$start}),
+			$c->getFormattedDate(@{$end}),
+			1
+		))) :
+		"";
+	
+	# Make sure the ending date is in the usable date range
+	$errorMessage .=
+		($h->compareDates($d2, $start) < 0 ||
+		$h->compareDates($d2 , $end) > 0) ?
+		$q->p($q->b(hardcode::dateOutsideRange(
+			$c->getFormattedDate(@{$start}),
+			$c->getFormattedDate(@{$end})
+		))) :
+		"";
+	
+	# The dates must be valid dates.
+	# EG June 31 doesn't exist. SQL will return no data
+	# if the date is invalid.
+	# Instead of producing an error, simply adjust the date.
+	if (! $errorMessage) {
+		# Set the length of Feb according to the from year
+		# Note that the month numbers are SQL month numbers,
+		# and are 1-based. That's why the extra 0 appears at
+		# the beginning of the array.
+		my @monthLengths = (
+			0,
+			31,
+			28 + ($fromDate[2] % 4 == 0),
+			31,
+			30,
+			31,
+			30,
+			31,
+			31,
+			30,
+			31,
+			30,
+			31
+		);
+		
+		# Adjust the from day	
+		$fromDate[1] = $monthLengths[$fromDate[3]]
+			if $fromDate[1] > $monthLengths[$fromDate[3]];
+		
+		# Set the length of Feb according to the to year
+		$monthLengths[2] = 28 + ($toDate[2] % 4 == 0);
+		
+		# Adjust the to day
+		$toDate[1] = $monthLengths[$toDate[3]]
+			if $toDate[1] > $monthLengths[$toDate[3]];
+	}		
+
+	# The form needs to be displayed if there's an error
+	$displayForm = $errorMessage;
+}
+
+if ($displayForm) {
+	# Create the user preferences page
+
+	# Create the form header
+	$h->preferencesHeader($dbname, $query);
+
+	# Print out any error message that occured
+	$errorMessage && $h->addBody($errorMessage);
+	
+	if ($query eq hardcode->cgiQueryList) {
+		# Any preferences that require connecting to
+		# a database can't be set on the initial page.
+		# Indicate there are more prefs avail after choosing a db.
+		$h->addBody($q->p(hardcode->prefsMoreDetailsText));
+		
+	} else {
+		# Connect to the database
+		$db->database($dbname);
+		
+		# Indicate these are short term preferences
+		$h->addBody($q->p(hardcode->prefsShortTermText));
+
+		# Add the list of developers to the form
+		my $dev = $db->getDeveloperList();
+		shift @{$dev};
+		$h->developerListForm($dev, [$c->developers()]);
+		
+		# Add a checkbox to select whether or not to apply date ranges
+		$h->applyDatesCheckBox();
+
+		# Add the date ranges to the form
+		if (! $dateRanges) {
+			# Get the date ranges actually used in the project
+			$dateRanges = ($db->getDateRanges())->[1];
+			# Dump the line number.
+			shift @{$dateRanges};
+		}
+		
+		$h->dateRangeForm(
+			hardcode->prefsDateFromText,
+			hardcode->prefsDateFirst,
+			[$c->startMonth(), $c->startDay(), $c->startYear()],
+			$dateRanges
+		);
+		$h->dateRangeForm(
+			hardcode->prefsDateToText,
+			hardcode->prefsDateLast,
+			[$c->endMonth(), $c->endDay(), $c->endYear()],
+			$dateRanges
+		);
+	}
+	
+	# Separate the long term preferences
+	$h->addBody($q->hr()."\n");
+		
+	# Indicate these are long term preferences
+	$h->addBody($q->p(hardcode->prefsLongTermText));
+	
+	# Add the maximum row selection to the form
+	$h->maxRowSelection();
+	
+	# Add a radio group to select long or short date format.
+	$h->dateFormatSelection();
+	
+	$h->addBody($q->hr()."\n");
+
+	# Close the form
+	$h->preferencesFooter();
+
+	# Disconnect from the database
+	$db->disconnect();
+} else {
+	# Write the preferences out to the cookie
+	
+	# Set developer list if the checkbox is set,
+	# otherwise clear the developer list.
+	my @devValue = (hardcode->cookieDefaultValue);
+	if (! $q->param(hardcode->cgiParmApplyDevelopers)) {
+		@devValue = $q->param(hardcode->cgiParmSetDevelopers);
+	}
+	
+	# Set or clear the developer list
+	$c->developers(@devValue);
+	
+	# Clear date ranges if the checkbox is set,
+	# otherwise set the date ranges.
+	if ($clearDates) {
+		$c->startMonth('');
+		$c->startDay('');
+		$c->startYear('');
+
+		$c->endMonth('');
+		$c->endDay('');
+		$c->endYear('');
+	} else {
+		$c->startMonth(hardcode->uiMonthNames->{$fromDate[0]});
+		$c->startDay($fromDate[1]);
+		$c->startYear($fromDate[2]);
+
+		$c->endMonth(hardcode->uiMonthNames->{$toDate[0]});
+		$c->endDay($toDate[1]);
+		$c->endYear($toDate[2]);
+	}
+	
+	# Set the maximum number of rows
+	$c->maximumRows($q->param(hardcode->cgiParmMaxRows));
+		
+	# Set the date format
+	$c->dateFormat(
+		$q->param(hardcode->cgiParmDateFormat) eq hardcode->termLong ?
+		hardcode->dateLongFormat :
+		hardcode->dateShortFormat
+	);
+	
+	$h->preferencesSuccess();
+}
+
+# Write out the web page
+$h->writeHTML();

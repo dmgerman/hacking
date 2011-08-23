@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: parti-all
+Version: 0.0.6
+Summary: A window manager library, a window manager, and a 'screen for X' utility
+Home-page: http://partiwm.org
+Author: Nathaniel Smith
+Author-email: parti-discuss@partiwm.org
+License: UNKNOWN
+Download-URL: http://partiwm.org/static/downloads/
+Description: This package contains several sub-projects:
+        wimpiggy:
+        A library for writing window managers, using GTK+
+        parti:
+        A tabbing/tiling window manager using GTK+
+        xpra:
+        'screen for X' -- a tool to detach/reattach running X programs
+Platform: UNKNOWN

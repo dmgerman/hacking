@@ -1,0 +1,3 @@
+methoddeltas.sql has a bug. It either works with files that have only
+methods, or only functions, but not both. It is not clear what we should do
+
