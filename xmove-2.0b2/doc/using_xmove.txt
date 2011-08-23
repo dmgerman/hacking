@@ -1,0 +1,88 @@
+	The important decisions when using xmove are:
+
+How many xmoves should I run?
+Where should I run xmove?
+What should I set the default server to?
+
+	We envision two common xmove setups. Regardless of how
+you use xmove, there is one rule-of-thumb which should always be
+remembered: the default server should never be set to another
+xmove, i.e. it should always be set to a real X server. This
+prevents possible cycles in which one xmove contacts another
+xmove, which in turn contacts the first xmove.
+
+	When moving clients via xmovectrl -move or -moveall,
+don't specify a display number. Just say -move machine, not
+machine:1 or machine:0. xmove will try to find another xmove at
+machine:1 automatically, and if it doesn't find one it will try
+machine:0. If you do specify a full display name, never specify
+another xmove. That is, never -move machine:1 when machine:1 is
+an xmove.
+
+SETUP 1: One xmove per X server
+
+	Here, each xmove represents an X server. Typically, for
+every display machine:0, there will be an xmove machine:1. This
+way, to send something to "machine", or to find out what is on
+"machine", you can always be sure that machine:1 is the right
+display.
+
+	If you are using X terminals rather than full
+workstations, you can still have one xmove per X server, but the
+xmove for terminal:0 will have to be run on another machine. You
+might use one machine to hold several xmoves. That server would
+have server:1 with default server terminal1:0, server:2 going to
+terminal2:0, etc.
+
+	When moving clients to a new server using -move or
+-moveall, specify the name of the machine rather than a full name
+(ie. machine, not machine:1 or machine:0). xmove will try to find
+another xmove running on machine:1, or if not will use
+machine:0. Never move directly to another xmove (eg -moveall
+machine:1).
+
+
+SETUP 2: One xmove per user
+
+	In this scenario, an xmove "machine:1" represents a
+single user's workspace. When the user who owns the xmove
+"machine:1" wants to move to another machine, they should use
+xmovectrl to both move all applications to the new machine, and
+set the default server to that new machine.
+
+	So, if user ethan has spruce as his main machine, he'll
+run an xmove on spruce:1. If ethan moves down the hall and wants
+to use pigpen, ethan would
+
+xmovectrl spruce:1 -moveall pigpen
+xmovectrl spruce:1 -setdefaultserver pigpen:0
+
+	The first moves the environment to pigpen, and the second
+says that new applications will also be sent to pigpen. This way,
+ethan continues to use spruce:1, even though he is now seated at
+pigpen.
+
+	With the first setup above, ethan would have an xmove
+running on pigpen called pigpen:1, would not have changed the
+default server, and would've begun using pigpen:1 for future
+applications instead of spruce:1.
+
+	The disadvantage to this setup is that you have to be
+careful to be sure where an xmove is pointing with its default
+server. spruce:1 could be pointing at spruce:0, or anywhere else
+on the network.
+
+	When moving an application with -move or -moveall,
+specify the actual display, that is, spruce:0. Never move
+directly to another xmove, ie, spruce:1. If you just specify
+spruce, xmove will try to find another xmove at spruce:1, and if
+not will connect to spruce:0. This may not produce the desired
+result, as spruce:1 may send the client to some other display.
+
+
+	Of course, xmove can be used in any configuration you
+like. The above are just suggestions and reminders. Remember
+that, in order to avoid the risk of cycles of xmoves, never set
+the default display to another xmove, and never -move or -moveall
+directly to another xmove.
+

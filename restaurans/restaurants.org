@@ -1,0 +1,9 @@
+* The ones I could not parse
+
+dmg@phosphorus:~/w/courses/2010/seng265s/unix$ cat  restaurantsVictoria.txt | cut -d ';' -f 2 | sed "s/'/\\\\'/g" | xargs -n1 -I@ sh saveRestInfo.sh '@'
+saveRestInfo.sh: 3: cannot create CROWN PALACE/CHICKEN ON THE RUN.txt: Directory nonexistent
+saveRestInfo.sh: 3: cannot create EUGENE'S WAREHOUSE/COMMISSARY.txt: Directory nonexistent
+saveRestInfo.sh: 3: cannot create SHARE ORGANICS/FOOD ROOTS.txt: Directory nonexistent
+saveRestInfo.sh: 3: cannot create THRIFTY FOODS #6, MEAT/SEAFOOD.txt: Directory nonexistent
+saveRestInfo.sh: 3: cannot create TRAFALGAR/PRO PATRIA BRANCH #292.txt: Directory nonexistent
+saveRestInfo.sh: 3: cannot create TRAFALGAR/PRO PATRIA BRANCH #292, KITCHEN.txt: Directory nonexistent

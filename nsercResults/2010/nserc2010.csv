@@ -1,4 +1,4 @@
-"";"Name";"Department";"Institution";"Program";"Title";"Term";"Awarded Amount";"amount"
+"";"Name";"Department";"Institution";"Program";"Title";"Term";"a2";"amount"
 "1";"Abdelrahman, Tarek TS";"Department Electrical and Computer Engineering, Edward S. Rogers Sr.";"Toronto";"RGPIN";"Compiler support for GPU application accelerators";"5";"$31,000.00";31000
 "2";"Abdi, Samar S";"Department Electrical and Computer Engineering";"Concordia";"RGPIN";"Design of multi-core embedded systems using transaction level models";"5";"$25,000.00";25000
 "3";"Adams, Bram BM";"Department Computing, School of";"Queen's";"RGPIN";"Empirically Studying and Improving the Co-Evolution of Source Code and Build System";"5";"$15,000.00";15000
@@ -9,21 +9,21 @@
 "8";"Aravind, Alex Alagarsamy AA";"Department Computer Science";"Northern British Columbia";"RGPIN";"Development and performance study of synchronization algorithms";"5";"$15,000.00";15000
 "9";"Arbel, Tal T";"Department Electrical and Computer Engineering";"McGill";"RGPIN";"Probabilistic inference in computer vision and medical imaging";"5";"$43,000.00";43000
 "10";"Atkins, Stella MS";"Department Computing Science";"Simon Fraser";"RGPIN";"Medical image display and analysis for diagnosis and treatment";"5";"$43,000.00";43000
-"11";"Auclair-Fortier, Marie-Flavie MF";"Department Informatique";"Sherbrooke";"RGPIN";"Vision panoramique pour la modélisation d'environments virtuels réalistes";"5";"$20,000.00";20000
+"11";"Auclair-Fortier, Marie-Flavie MF";"Department Informatique";"Sherbrooke";"RGPIN";"Vision panoramique pour la modelisation d'environments virtuels realistes";"5";"$20,000.00";20000
 "12";"Aycock, John JD";"Department Computer Science";"Calgary";"RGPIN";"Proactive identification of computer security threats";"5";"$15,000.00";15000
 "13";"Baecker, Ronald RM";"Department Computer Science";"Toronto";"RGPIN";"Assistive technology for cognition and communication";"5";"$34,000.00";34000
 "14";"Bagheri, Ebrahim E";"Department Computing & Information Systems, School of";"Athabasca";"RGPIN";"Quality engineering for software product lines";"5";"$18,000.00";18000
 "15";"Baranoski, Gladimir GVG";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"A framework for the in silico modeling and investigation of time dependent photobiophysical phenomena";"5";"$20,000.00";20000
 "16";"Bauer, Michael MA";"Department Computer Science";"Western Ontario";"RGPIN";"Discovering foundations and methods for autonomic computing";"5";"$31,000.00";31000
-"17";"Bengio, Yoshua Y";"Department Informatique et recherche opérationnelle";"Montréal";"EQPEQ";"GPUs for unsupervised learning of representations";"1";"$111,762.00";111762
-"18";"Bergevin, Robert R";"Department Génie électrique et génie informatique";"Laval";"RGPIN";"Fundamental issues in cognitive computer vision";"5";"$25,000.00";25000
+"17";"Bengio, Yoshua Y";"Department Informatique et recherche operationnelle";"Montreal";"EQPEQ";"GPUs for unsupervised learning of representations";"1";"$111,762.00";111762
+"18";"Bergevin, Robert R";"Department Genie electrique et genie informatique";"Laval";"RGPIN";"Fundamental issues in cognitive computer vision";"5";"$25,000.00";25000
 "19";"Biddle, Robert RL";"Department Arts and Social Sciences, Faculty of";"Carleton";"RGPIN";"Software design beyond usable security";"5";"$34,000.00";34000
 "20";"Biedl, Therese T";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Algorithms for geometric reconstruction problems";"5";"$20,000.00";20000
 "21";"Biletskiy, Yevgen YV";"Department Electrical and Computer Engineering";"New Brunswick";"RGPIN";"Ontology engineering for advanced data management";"5";"$15,000.00";15000
-"22";"Bilodeau, Guillaume-Alexandre GA";"Department Génie informatique et génie logiciel";"École Polytechnique";"RGPIN";"Contributions to intelligent visual surveillance";"5";"$20,000.00";20000
+"22";"Bilodeau, Guillaume-Alexandre GA";"Department Genie informatique et genie logiciel";"Ecole Polytechnique";"RGPIN";"Contributions to intelligent visual surveillance";"5";"$20,000.00";20000
 "23";"Blouin, Christian C";"Department Computer Science, Faculty of";"Dalhousie";"RGPIN";"Defining the shape of evolutionary landscapes";"5";"$25,000.00";25000
 "24";"Booth, Kellogg KS";"Department Computer Science";"British Columbia";"RGPIN";"Collaboration technology and multi-user interfaces";"1";"$31,000.00";31000
-"25";"Brassard, Gilles G";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"Quantum information science and cryptography";"5";"$125,000.00";125000
+"25";"Brassard, Gilles G";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"Quantum information science and cryptography";"5";"$125,000.00";125000
 "26";"Braverman, Mark M";"Department Computer Science";"Toronto";"RGPIN";"Complexicity theory, algorithms and applications";"5";"$51,000.00";51000
 "27";"Bremner, David DD";"Department Computer Science, Faculty of";"New Brunswick";"RGPIN";"Geometric aspects of optimization";"5";"$20,000.00";20000
 "28";"Brown, Daniel DGB";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Theory and applications of sequence analysis";"5";"$34,000.00";34000
@@ -37,7 +37,7 @@
 "36";"Chan, Timothy TM";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"New directions in computational geometry";"5";"$51,000.00";51000
 "37";"Chechik, Marsha M";"Department Computer Science";"Toronto";"RGPIN";"Abstraction and automation for model management";"5";"$43,000.00";43000
 "38";"Chen, Yuanzhu YP";"Department Computer Science";"Memorial Univ. of Nfld";"RGPIN";"Exploration and utilization of broadcast nature of multi-hop wireless networks at the link and network layers";"5";"$15,000.00";15000
-"39";"Cherkaoui, Soumaya S";"Department Génie électrique et génie informatique";"Sherbrooke";"RGPIN";"Enabling service provisioning based on mobile users generated content in next generation networks";"5";"$20,000.00";20000
+"39";"Cherkaoui, Soumaya S";"Department Genie electrique et genie informatique";"Sherbrooke";"RGPIN";"Enabling service provisioning based on mobile users generated content in next generation networks";"5";"$20,000.00";20000
 "40";"Christara, Christina CC";"Department Computer Science";"Toronto";"RGPIN";"Numerical methods for partial differential equations: algorithms and software on innovative computer architectures";"5";"$25,000.00";25000
 "41";"Clark, James JJ";"Department Electrical and Computer Engineering";"McGill";"RGPIN";"Task sensitive attention tracking";"5";"$43,000.00";43000
 "42";"Clarke, Charles CLA";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Information retrieval, search, text mining and related applications";"5";"$34,000.00";34000
@@ -50,25 +50,25 @@
 "49";"Day, Nancy NA";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Abstraction in model-driven engineering";"5";"$25,000.00";25000
 "50";"Dehne, Frank FK";"Department Computer Science, School of";"Carleton";"RGPIN";"Parallel algorithms for multi-core & many-core processor clusters and applications in online analytical processing (OLAP) and computational biology";"1";"$25,000.00";25000
 "51";"Denzinger, Jörg J";"Department Computer Science";"Calgary";"RGPIN";"Testing multi-agent systems for unwanted behavior";"5";"$20,000.00";20000
-"52";"Desrosiers, Christian C";"Department Génie logiciel et des TI";"École de technologie supérieure";"RGPIN";"Forage de données dans les réseaux dynamiques complexes";"5";"$25,000.00";25000
+"52";"Desrosiers, Christian C";"Department Genie logiciel et des TI";"Ecole de technologie superieure";"RGPIN";"Forage de donnees dans les reseaux dynamiques complexes";"5";"$25,000.00";25000
 "53";"Deters, Ralph RA";"Department Computer Science";"Saskatchewan";"RGPIN";"Software infrastructures for mobile cloud computing";"5";"$20,000.00";20000
 "54";"Deugo, Dwight DL";"Department Computer Science, School of";"Carleton";"RGPIN";"Open source software fingerprinting, detection and identification";"5";"$15,000.00";15000
-"55";"Diallo, Abdoulaye Baniré AB";"Department Informatique";"Québec à Montréal";"RGPIN";"New algorithms for ancestral genome reconstruction, phylogenomic inference and genome analyses";"5";"$20,000.00";20000
+"55";"Diallo, Abdoulaye Banire AB";"Department Informatique";"Quebec a Montreal";"RGPIN";"New algorithms for ancestral genome reconstruction, phylogenomic inference and genome analyses";"5";"$20,000.00";20000
 "56";"Dickinson, Sven SJ";"Department Computer Science";"Toronto";"RGPIN";"Image abstraction";"5";"$43,000.00";43000
 "57";"Ding, Chen (Cherie) C";"Department Computer Science";"Ryerson";"RGPIN";"QoS-based service selection";"5";"$15,000.00";15000
-"58";"Dubé, Danny D";"Department Informatique et de génie logiciel";"Laval";"RGPIN";"Improving the implementation of high-level languages";"5";"$15,000.00";15000
-"59";"Dufour, Bruno B";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"Understanding the behaviour of framework-intensive applications using blend analysis";"5";"$20,000.00";20000
-"60";"Duong, Luc LY";"Department Génie logiciel et des TI";"École de technologie supérieure";"RGPIN";"Motion compensation for image-guided coronary intervention";"5";"$25,000.00";25000
+"58";"Dube, Danny D";"Department Informatique et de genie logiciel";"Laval";"RGPIN";"Improving the implementation of high-level languages";"5";"$15,000.00";15000
+"59";"Dufour, Bruno B";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"Understanding the behaviour of framework-intensive applications using blend analysis";"5";"$20,000.00";20000
+"60";"Duong, Luc LY";"Department Genie logiciel et des TI";"Ecole de technologie superieure";"RGPIN";"Motion compensation for image-guided coronary intervention";"5";"$25,000.00";25000
 "61";"Durocher, Stephane SJ";"Department Computer Science";"Manitoba";"RGPIN";"Geometric algorithms for wireless networks and mobile computing";"5";"$25,000.00";25000
 "62";"Dymond, Patrick PW";"Department Computer Science and Engineering";"York";"RGPIN";"Complexity and parallel algorithms";"3";"$15,000.00";15000
-"63";"Eck, Douglas DS";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"New machine learning methods for music: learning at multiple timescales";"5";"$43,000.00";43000
-"64";"Elbiaze, Halima H";"Department Informatique";"Québec à Montréal";"RGPIN";"Providing end-to-end quality of service in next generation networks";"5";"$25,000.00";25000
+"63";"Eck, Douglas DS";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"New machine learning methods for music: learning at multiple timescales";"5";"$43,000.00";43000
+"64";"Elbiaze, Halima H";"Department Informatique";"Quebec a Montreal";"RGPIN";"Providing end-to-end quality of service in next generation networks";"5";"$25,000.00";25000
 "65";"Ellen, Faith F";"Department Computer Science";"Toronto";"RGPIN";"The complexity of fundamental problems in distributed computing";"5";"$34,000.00";34000
 "66";"Elmallah, Ehab ES";"Department Computing Science";"Alberta";"RGPIN";"Dependable services on wireless sensor networks";"5";"$25,000.00";25000
 "67";"Ester, Martin M";"Department Computing Science";"Simon Fraser";"EQPEQ";"Computational infrastructure for data ming and bioinformatics group";"1";"$121,917.00";121917
 "68";"Farmer, William WM";"Department Computing and Software";"McMaster";"RGPIN";"MathScheme: Integrating axiomatic and algorithmic mathematics";"5";"$31,000.00";31000
-"69";"Feeley, Marc M";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"Dynamic languages: design, implementation and evaluation";"5";"$43,000.00";43000
-"70";"Fernandez, Jose Manuel JM";"Department Génie informatique et génie logiciel";"École Polytechnique";"EQPEQ";"Network security in electrical control networks";"1";"$43,919.00";43919
+"69";"Feeley, Marc M";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"Dynamic languages: design, implementation and evaluation";"5";"$43,000.00";43000
+"70";"Fernandez, Jose Manuel JM";"Department Genie informatique et genie logiciel";"Ecole Polytechnique";"EQPEQ";"Network security in electrical control networks";"1";"$43,919.00";43919
 "71";"Ferworn, Alexander A";"Department Computer Science";"Ryerson";"RGPIN";"Canine augmentation technology";"5";"$31,000.00";31000
 "72";"Fichtinger, Gabor G";"Department Computing, School of";"Queen's";"RGPIN";"Image-guided robotic needle-based surgery of soft tissues";"1";"$31,000.00";31000
 "73";"Fleet, David DJ";"Department Computer Science";"Toronto";"RGPIN";"Video-based analysis of human motion";"5";"$51,000.00";51000
@@ -106,18 +106,18 @@
 "105";"Kapron, Bruce BM";"Department Computer Science";"Victoria";"RGPIN";"Computational and logical foundations of privacy and security";"1";"$15,000.00";15000
 "106";"Karmouch, Ahmed A";"Department Information Technology and Engineering, School of";"Ottawa";"RGPIN";"Service composition oriented self-management for autonomic networks";"5";"$43,000.00";43000
 "107";"Khendek, Ferhat F";"Department Electrical and Computer Engineering";"Concordia";"RGPIN";"Model driven real-time software systems engineering";"5";"$31,000.00";31000
-"108";"Kherfi, Mohammed Lamine ML";"Department Mathématiques et informatique";"Québec à Trois-Rivières";"RGPIN";"Recherche et indexation de documents visuels: vers des systèmes qui se configurent automatiquement";"5";"$15,000.00";15000
+"108";"Kherfi, Mohammed Lamine ML";"Department Mathematiques et informatique";"Quebec a Trois-Rivieres";"RGPIN";"Recherche et indexation de documents visuels: vers des systemes qui se configurent automatiquement";"5";"$15,000.00";15000
 "109";"Kim, Theodore TW";"Department Computer Science";"Saskatchewan";"RGPIN";"Many-core physically based simulations";"5";"$25,000.00";25000
 "110";"Kosseim, Leila L";"Department Computer Science and Software Engineering";"Concordia";"EQPEQ";"Competitive environment for today's terabyte-level document collections";"1";"$77,870.00";77870
 "111";"Koudas, Nick N";"Department Computer Science";"Toronto";"RGPIN";"Processing queries on text streams";"5";"$34,000.00";34000
 "112";"Kruchten, Philippe P";"Department Applied Science, Faculty of";"British Columbia";"RGPIN";"Software architecture knowledge management";"5";"$25,000.00";25000
 "113";"Krzyzak, Adam A";"Department Computer Science and Software Engineering";"Concordia";"RGPIN";"Nonparametric estimation and learning with applications to object recognition and image analysis";"5";"$43,000.00";43000
-"114";"Ktari, Béchir B";"Department Informatique et de génie logiciel";"Laval";"RGPIN";"Cadre algébrique pour l'analyse de programmes informatiques";"5";"$15,000.00";15000
+"114";"Ktari, Bechir B";"Department Informatique et de genie logiciel";"Laval";"RGPIN";"Cadre algebrique pour l'analyse de programmes informatiques";"5";"$15,000.00";15000
 "115";"Labahn, George G";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Symbolic computation of matrices of operators and related topics";"5";"$51,000.00";51000
 "116";"Lam, Patrick P";"Department Electrical & Computer Engineering";"Waterloo";"EQPEQ";"embedded systems lab";"1";"$66,779.00";66779
-"117";"Langlais, Philippe P";"Department Informatique et recherche opérationnelle";"Montréal";"EQPEQ";"A server for NLP applications at RALI";"1";"$30,731.00";30731
+"117";"Langlais, Philippe P";"Department Informatique et recherche operationnelle";"Montreal";"EQPEQ";"A server for NLP applications at RALI";"1";"$30,731.00";30731
 "118";"Lea, Rodger J";"Department Graduate Studies, Faculty of";"British Columbia";"RGPIN";"Large scale ubiquitous computing infrastructure";"5";"$20,000.00";20000
-"119";"Lespérance, Yves Y";"Department Computer Science and Engineering";"York";"RGPIN";"Designing rational agents that can work with others";"5";"$20,000.00";20000
+"119";"Lesperance, Yves Y";"Department Computer Science and Engineering";"York";"RGPIN";"Designing rational agents that can work with others";"5";"$20,000.00";20000
 "120";"Leung, Debbie DW";"Department Combinatorics and Optimization";"Waterloo";"RGPIN";"Quantum communication theory";"5";"$51,000.00";51000
 "121";"Li, Ze-Nian ZN";"Department Computing Science";"Simon Fraser";"RGPIN";"Digital video analysis based on contexts";"5";"$31,000.00";31000
 "122";"Light-Thompson, Janet JV";"Department Computer Science and Applied  Statistics  - Saint John";"New Brunswick";"RGPIN";"Data interaction models for predictive system in pervasive computing environment";"5";"$15,000.00";15000
@@ -133,7 +133,7 @@
 "132";"Marbach, Peter P";"Department Computer Science";"Toronto";"RGPIN";"Theoretical foundations of online social networks";"5";"$34,000.00";34000
 "133";"McQuillan, Ian ID";"Department Computer Science";"Saskatchewan";"RGPIN";"Natural computatoin with genetic processes";"5";"$25,000.00";25000
 "134";"Mercer, Robert RE";"Department Computer Science";"Western Ontario";"RGPIN";"Argumentation in scholarly biomedical research papers";"5";"$31,000.00";31000
-"135";"Merlo, Ettore E";"Department Génie informatique et génie logiciel";"École Polytechnique";"RGPIN";"Analysis, testing and evolution of security vulnerabilities in web applications";"5";"$31,000.00";31000
+"135";"Merlo, Ettore E";"Department Genie informatique et genie logiciel";"Ecole Polytechnique";"RGPIN";"Analysis, testing and evolution of security vulnerabilities in web applications";"5";"$31,000.00";31000
 "136";"Misic, Jelena J";"Department Computer Science";"Ryerson";"RGPIN";"Deployment of IEEE 802.11p family of protocols in VANET";"5";"$25,000.00";25000
 "137";"Mitchell, David DG";"Department Computing Science";"Simon Fraser";"RGPIN";"Solving combinatorial problems by grounding from specifications";"5";"$20,000.00";20000
 "138";"Mohassel, Payman P";"Department Computer Science";"Calgary";"RGPIN";"Practical secure computation";"5";"$25,000.00";25000
@@ -158,9 +158,9 @@
 "157";"Payeur, Pierre P";"Department Information Technology and Engineering, School of";"Ottawa";"RGPIN";"Visual and tactile perception for robotic applications";"5";"$20,000.00";20000
 "158";"Penn, Gerald GB";"Department Computer Science";"Toronto";"EQPEQ";"Massively parallel computing in natural language technology";"1";"$140,843.00";140843
 "159";"Penn, Gerald GB";"Department Computer Science";"Toronto";"RGPIN";"Spoken language processing in ecologically valid contexts";"5";"$25,000.00";25000
-"160";"Poulin, Pierre P";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"Complex appearance modeling and animation";"5";"$25,000.00";25000
+"160";"Poulin, Pierre P";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"Complex appearance modeling and animation";"5";"$25,000.00";25000
 "161";"Precup, Doina D";"Department Computer Science, School of";"McGill";"RGPIN";"Developmental reinforcement learning";"5";"$60,000.00";60000
-"162";"Privat, Jean J";"Department Informatique";"Québec à Montréal";"RGPIN";"A object-oriented programming language for robust software";"5";"$15,000.00";15000
+"162";"Privat, Jean J";"Department Informatique";"Quebec a Montreal";"RGPIN";"A object-oriented programming language for robust software";"5";"$15,000.00";15000
 "163";"Rappaport, David DH";"Department Computing, School of";"Queen's";"RGPIN";"Computational geometry and data analysis";"5";"$25,000.00";25000
 "164";"Ray, Nilanjan N";"Department Computing Science";"Alberta";"RGPIN";"Feature correspondence for image analysis";"5";"$25,000.00";25000
 "165";"Rayside, Derek DF";"Department Electrical & Computer Engineering";"Waterloo";"RGPIN";"Programming with specifications";"5";"$15,000.00";15000
@@ -170,7 +170,7 @@
 "169";"Roy, Chanchal Kumar CK";"Department Computer Science";"Saskatchewan";"RGPIN";"Change, similarity and redundancy in software systems";"5";"$15,000.00";15000
 "170";"Sadaoui, Samira S";"Department Computer Science";"Regina";"RGPIN";"Trust management and matchmaking system for multi-attribute reverse auctions";"5";"$20,000.00";20000
 "171";"Sahinalp, Cenk CS";"Department Computing Science";"Simon Fraser";"RGPIN";"Bioinformatics algorithms- from sequence to structure and function";"5";"$43,000.00";43000
-"172";"Salah, Aziz A";"Department Informatique";"Québec à Montréal";"RGPIN";"Service management system: protocol similarity search";"5";"$15,000.00";15000
+"172";"Salah, Aziz A";"Department Informatique";"Quebec a Montreal";"RGPIN";"Service management system: protocol similarity search";"5";"$15,000.00";15000
 "173";"Schost, Eric E";"Department Computer Science";"Western Ontario";"RGPIN";"Efficient algorithms in computer algebra and their applications";"5";"$43,000.00";43000
 "174";"Scott, Stacey SD";"Department Systems Design Engineering";"Waterloo";"EQPEQ";"Experimental platform for developing interactive surface computers to support complex, time-critical teamwork";"1";"$65,236.00";65236
 "175";"Sedig, Kamran K";"Department Computer Science";"Western Ontario";"RGPIN";"Design of cognitive tools for everyday information-based activities";"5";"$15,000.00";15000
@@ -181,12 +181,12 @@
 "180";"Shoja, Gholamali GC";"Department Computer Science";"Victoria";"RGPIN";"Leveraging social network theories to address data delivery issues in mobile ad hoc networks";"5";"$15,000.00";15000
 "181";"Singh, Mohit M";"Department Computer Science, School of";"McGill";"RGPIN";"New techniques and directions in approximation algorithms";"5";"$31,000.00";31000
 "182";"Smyth, Tamara TR";"Department Computing Science";"Simon Fraser";"RGPIN";"Modeling, extension, and parameter identification/estimation of vocal and musical instrument systems";"5";"$15,000.00";15000
-"183";"Stewart, Neil NF";"Department Informatique et recherche opérationnelle";"Montréal";"RGPIN";"Robustness of subdivision-surface methods";"5";"$20,000.00";20000
+"183";"Stewart, Neil NF";"Department Informatique et recherche operationnelle";"Montreal";"RGPIN";"Robustness of subdivision-surface methods";"5";"$20,000.00";20000
 "184";"Stojmenovic, Ivan I";"Department Information Technology and Engineering, School of";"Ottawa";"RGPIN";"Data communication in wireless ad hoc, sensor and vehicular networks";"5";"$31,000.00";31000
 "185";"Storey, Margaret-Anne M-AD";"Department Computer Science";"Victoria";"RGPIN";"Understanding the role of web 2.0 and social media in collaborative software development";"5";"$43,000.00";43000
-"186";"Tahar, Sofiène SO";"Department Electrical and Computer Engineering";"Concordia";"RGPIN";"Formal verification of physical systems and devices";"5";"$51,000.00";51000
+"186";"Tahar, Sofiene SO";"Department Electrical and Computer Engineering";"Concordia";"RGPIN";"Formal verification of physical systems and devices";"5";"$51,000.00";51000
 "187";"Tan, Lin L";"Department Electrical & Computer Engineering";"Waterloo";"RGPIN";"Leveraging software semantic information to improve software reliability";"5";"$20,000.00";20000
-"188";"Tawbi, Nadia N";"Department Informatique et de génie logiciel";"Laval";"RGPIN";"Security policy enforcement mechanisms";"5";"$31,000.00";31000
+"188";"Tawbi, Nadia N";"Department Informatique et de genie logiciel";"Laval";"RGPIN";"Security policy enforcement mechanisms";"5";"$31,000.00";31000
 "189";"Thulasiram, Ruppa RK";"Department Computer Science";"Manitoba";"RGPIN";"Advances in computational finance and its application in grid computing";"5";"$15,000.00";15000
 "190";"Tompa, Frank FW";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Flexible, efficient text databases";"5";"$31,000.00";31000
 "191";"Tourlakis, George G";"Department Computer Science and Engineering";"York";"RGPIN";"Calculational logic";"5";"$15,000.00";15000
@@ -200,11 +200,11 @@
 "199";"Waldispuhl, Jerome J";"Department Computer Science, School of";"McGill";"RGPIN";"Algorithms for exploring the mutational landscape of RNA molecules";"5";"$25,000.00";25000
 "200";"Wan, Justin JWL";"Department Computer Science, David R. Cheriton School of";"Waterloo";"RGPIN";"Numerical models and methods for cell image analysis";"5";"$25,000.00";25000
 "201";"Wang, Fangju F";"Department Computing and Information Science";"Guelph";"RGPIN";"Disambiguation in natural language user interfaces of service robots";"5";"$15,000.00";15000
-"202";"Wang, Shengrui S";"Department Informatique";"Sherbrooke";"RGPIN";"Mining high-dimensional data, sequences and data streams / Prospection de données de grande dimension, de séquences et de flux de donées";"5";"$43,000.00";43000
+"202";"Wang, Shengrui S";"Department Informatique";"Sherbrooke";"RGPIN";"Mining high-dimensional data, sequences and data streams / Prospection de donnees de grande dimension, de sequences et de flux de donees";"5";"$43,000.00";43000
 "203";"Wareham, Harold HT";"Department Computer Science";"Memorial Univ. of Nfld";"RGPIN";"Parameterized complexity analysis in cognitive science";"5";"$15,000.00";15000
 "204";"Wasserman, Wyeth WW";"Department Medical Genetics";"British Columbia";"RGPIN";"Computational analysis of regulatory DNA sequences controlling gene transcription";"5";"$35,700.00";35700
 "205";"Wineberg, Mark ML";"Department Computing and Information Science";"Guelph";"RGPIN";"Modeling evolutionary algorithms for dynamic and stochastic optimization";"5";"$15,000.00";15000
-"206";"Witte, René R";"Department Computer Science and Software Engineering";"Concordia";"RGPIN";"Natural language processing services for semantic computing";"5";"$15,000.00";15000
+"206";"Witte, Rene R";"Department Computer Science and Software Engineering";"Concordia";"RGPIN";"Natural language processing services for semantic computing";"5";"$15,000.00";15000
 "207";"Wohlstadter, Eric EA";"Department Computer Science";"British Columbia";"RGPIN";"Optimization of distributed data access for web applications";"5";"$15,000.00";15000
 "208";"Wu, Fang Xiang FX";"Department Mechanical Engineering";"Saskatchewan";"RGPIN";"Development of methodologies for modeling and design molecular biological systems";"5";"$20,000.00";20000
 "209";"Yeh, Chi-Hsiang CH";"Department Electrical and Computer Engineering";"Queen's";"RGPIN";"Green wireless internet: architectures, protocols, applications, and implementations";"5";"$25,000.00";25000

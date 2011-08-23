@@ -1,0 +1,208 @@
+.\" @(#)xmovectrl.1	1.2 30 Nov 1994
+.TH xmovectrl 1 "30 November 1994"
+
+.SH NAME
+xmovectrl \- xmove control program
+
+.SH SYNOPSIS
+.B xmovectrl 
+[
+.I xmove_DISPLAY
+] 
+.I command 
+[
+.I args
+] ...
+
+.SH DESCRIPTION
+.B xmovectrl
+is a command program which sends commands to an
+.B xmove
+pseudoserver. The commands allow you to obtain a list of clients 
+under control of the
+.B xmove,
+to move some or all clients to a new server, or to tell xmove to
+exit.
+.PP
+The environment variable \fBDISPLAY\fP is used to determine the
+.B xmove
+to access, since access to 
+.B xmove
+is through a standard X connection.
+This default can be overridden
+by specifying the display connection for the
+.B xmove
+pseudoserver as 
+.I xmove_DISPLAY
+on the command line.
+.PP
+Because 
+.B xmove
+supports host-level and
+.B MIT-MAGIC-COOKIE-1
+security, any connection from an 
+.B xmovectrl
+will be rejected unless the user is permitted access to
+.I xmove's
+default display. See
+.B xmove(1)
+for details about security and authorization.
+
+
+.SH OPTIONS
+The command options determine the action taken by the
+accessed 
+.B xmove
+pseudoserver:
+.TP
+.BI -list
+This command takes no arguments. In response to this
+command, 
+.B xmovectrl
+prints a list of all clients that are currently under control of the
+.B xmove
+pseudoserver. These include both clients started directly under
+control of the pseudoserver and clients which were moved from
+other machines. For example:
+.IP
+.B "vagabond% xmovectrl -list"
+.br
+.B "1     gnuemacs: Emacs @ sa local"
+.br
+.B "2     xterm                local"
+.br
+.B "4     xv info              peabody:0"
+.br
+.B "5     FM: Waste:V3.3 Alpha suspended"
+.IP
+Each line contains information on a single client. The first column contains
+a number identifying the particular client. When you wish to move
+a client, use this number to specify it.
+If more than one line has the same client identification
+number, 
+.B xmove
+believes the two clients both belong to the same application,
+and attempting to move one will cause the other to move also.
+The second column contains a textual identification of
+the client.
+.B xmove
+obtains this information as the title string from the first window
+created by the client, but that may not always be the main application window.
+In the example, client number 5's identification should be
+"File Manager", but the File Manager application creates
+two windows, the first of which is for a wastecan.
+The third column specifies the server on which the client
+is currently being displayed. In this column the word 'local'
+means that the client is being displayed on
+.B xmove's
+default server, and the word 'suspended' means that the client
+is in suspended animation, ie. the client is not currently being
+displayed on any server.
+.TP
+.BI -moveall \ to_machine_name
+This command takes as its only argument the
+name of a host machine to which all the 
+clients at this
+.B xmove
+are moved.
+In general it should only be necessary to specify a
+machine name as the location, since
+.B xmove
+will try to find another 
+.B xmove
+at 
+.IB to_machine_name :1, 
+and if
+it does not find one it will connect directly to the server at
+.IB to_machine_name :0. 
+If you wish to override these defaults you can specify
+a full display name instead of just a machine name.
+.sp
+If the machine to which you are moving is multiheaded,
+you can use the 
+.BI "'-screen n'"
+option, where 
+.I n
+is the screen number, immediately after the name of the new host,
+in order to specify a particular screen.
+For example:
+.IP
+.B "vagabond% xmovectrl -moveall spruce -screen 1"
+.sp
+Will move all client to screen 1 on host spruce.
+.sp
+The time required to move a client should be roughly
+comparable to the time that the client takes to display when first
+started. Clients will be unresponsive until the last one has been
+moved. Then they will all begin the process of refreshing their
+windows.
+.sp
+New with
+.I xmove 1.2
+is the ability to place a client in suspended animation. This
+removes it from the display without moving it onto another
+display. The server can then go down without affecting the
+client. Later, the client can be unsuspended by moving it to a
+new display. To suspend a client, move the client and specify
+.I '-suspend'
+as the name of the display to which it should be moved.
+.TP
+.BI -move \ to_machine_name\ client_id_number_list
+This command allows you to specify a list of client id numbers
+for clients which should be moved to the new display. The client
+numbers should be separated by spaces. For example:
+.IP
+.B "vagabond% xmovectrl -move suntana 1 7 42"
+.sp
+Will move clients 1, 7 and 42 to the machine named suntana.
+.TP
+.BI -setdefaultserver \ display_name
+Changes
+.B xmove's
+default server to display_name. The default server is the display
+to which
+.B xmove
+sends newly arriving applications. It should be set to a full
+display name, eg. spruce:0. If the specified display is unusable
+for any reason the error will likely not be detected until the
+next time a new application or xmovectrl is invoked.
+.TP
+.BI -quit
+Causes the addressed
+.B xmove
+and all applications under it's control to exit.
+.SH SEE ALSO
+.BR xmove (1), 
+.BR xhost (1), 
+.BR xauth (1),
+.BR X11 (7)
+.SH NOTES
+.B xmovectrl
+waits for the requested move to complete before returning. Note
+that the move cannot be cancelled by killing
+.B xmovectrl
+because the move is actually being done by
+the
+.B xmove
+pseudoserver.
+.PP
+Because 
+.B xmove
+supports host-level and xauth security, any
+connection from an 
+.B xmovectrl
+will be rejected unless it is run from a machine
+or by a user who is permitted access to
+.B xmove's
+default display.
+
+.SH AUTHOR
+Ethan Solomita, Columbia University
+.LP
+This work was supported by Professor Dan Duchamp of
+Columbia University and by Dick Sillman and Jim Kempf of Sun
+Microsystems, Inc.
+.PP
+Bug reports and other problems should be sent to
+ethan@cs.columbia.edu. Please give all details, including
+hardware configuration, make of X server and window manager.

@@ -1,0 +1,33 @@
+SHOGUN
+
+   Facility Location:
+   FF205 1644 Hillside Avenue
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64003213
+   Facility Type:                   Food (Take Out)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Follow-Up Inspection    1-Mar-2010
+   [2]Routine Inspection     25-Feb-2010
+   [3]Follow-Up Inspection    4-Sep-2009
+   [4]Routine Inspection      3-Sep-2009
+   [5]Routine Inspection     27-Mar-2009
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/28A2961FFF143AD7882576DC002ED785?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/541AD00C2210876A882576D8002D603F?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/924E762668978F6F8825762D007A8C07?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A68D53213F94201788257629007A7F88?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/313AB1145D8A2E448825758B0042327D?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

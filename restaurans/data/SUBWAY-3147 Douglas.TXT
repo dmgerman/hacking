@@ -1,0 +1,33 @@
+SUBWAY
+
+   Facility Location:
+   FC4 3147 Douglas Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64001872
+   Facility Type:                   Food (Take Out)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Routine Inspection     31-Mar-2010
+   [2]Routine Inspection     17-Mar-2009
+   [3]Complaint Inspection   30-Sep-2008
+   [4]Routine Inspection     27-Mar-2008
+   [5]Routine Inspection     12-Apr-2007
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7F9BC1336578D630882576F90029A498?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C961C5CA4954C9348825757F00424D57?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0EC757837160B392882574D900422171?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1658EE9F831F89088825741C00421FA0?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/86E539E334F61ACA882572BE004229CE?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

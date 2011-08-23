@@ -1,0 +1,24 @@
+
+* TODO
+
+** [TODO] Implement switching from one class to another (similar to windows in one class)
+
+** [TODO] Properly implement maximize/minimize
+
+** [TODO] Implement readline in sawfish-client
+
+* Bugs
+
+** [TODO] Check why maximize does no work with more than one head
+
+
+* Userful into
+
+** how to test a window
+
+(window-name (get-window-by-name-re "sawfish"))
+
+
+** Change title of window
+
+ (set-x-text-property (get-window-by-name "a") 'WM_NAME ["powertop"])

@@ -1,0 +1,39 @@
+| 2008 | Irani, Pourang        | Manitoba         |
+|      | Miller, Renée         | Toronto          |
+|      | Mori, Gregory         | Simon Fraser     |
+|      | Morin, Patrick        | Carleton         |
+|      | Pei, Jian             | Simon Fraser     |
+|      | Schuurmans, Dale      | Alberta          |
+|      | Siddiqi, Kaleem       | McGill           |
+|      | Van Oorschot, Paul    | Carleton         |
+| 2009 | Ben-David, Shai       | Waterloo         |
+|      | Boutaba, Raouf        | Waterloo         |
+|      | Lakshmanan, Laks      | British Columbia |
+|      | Lhotàk, Ondréj        | Waterloo         |
+|      | Liu, Jiangchuan       | Simon Fraser     |
+|      | Molloy, Michael       | Toronto          |
+|      | Shatkay, Hagit        | Queen's          |
+|      | Zemel, Richard        | Toronto          |
+| 2010 | Chechik, Marsha       | Toronto          |
+|      | Heidrich, Wolfgang    | British Columbia |
+|      | Hoos, Holger          | British Columbia |
+|      | Möller, Torsten       | Simon Fraser     |
+|      | Müller, Martin        | Alberta          |
+|      | Precup, Doina         | McGill           |
+|      | Schost, Eric          | Western Ontario  |
+|      | Storey, Margaret-Anne | Victoria         |
+|      | Van de Panne, Michiel | British Columbia |
+|      | Youssef, Amr          | Concordia        |
+| 2011 | Dehne, Frank          | Carleton         |
+|      | German, Daniel        | Victoria         |
+|      | Hefeeda, Mohamed      | Simon Fraser     |
+|      | Hertzmann, Aaron      | Toronto          |
+|      | Hoey, Jesse           | Waterloo         |
+|      | Kemme, Bettina        | McGill           |
+|      | Kutulakos, Kiriakos   | Toronto          |
+|      | Robillard, Martin     | McGill           |
+|      | Sander, Jorg          | Alberta          |
+|      | Singh, Karan          | Toronto          |
+|      | Thomo, Alex           | Victoria         |
+|      | Vassileva, Julita     | Saskatchewan     |
+|      | Wigdor, Daniel        | Toronto          |

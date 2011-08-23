@@ -1,0 +1,31 @@
+NPC TRUST UNIT 32
+
+   Facility Location:
+   850 Burdett Avenue
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64000354
+   Facility Type:                   Food (Take Out)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                    Document Details
+   [1]Routine Inspection   16-Mar-2010
+   [2]Routine Inspection   10-Mar-2009
+   [3]Routine Inspection    6-Mar-2008
+   [4]Routine Inspection   13-Mar-2007
+
+   [5]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3FC37F8AE246F3A1882576EC0029BCE5?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D6E4913E69D5F51E8825757800422D88?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6A570474AB261BC7882574060047BC41?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/04FC1035E4AD3B1C882572A000423728?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

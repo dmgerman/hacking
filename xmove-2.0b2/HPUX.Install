@@ -1,0 +1,75 @@
+Package name:     xmove
+Version number:   2.0b2
+Original author:  James L. Peterson, MCC. <N/A>
+Original URL:     ftp://ftp.cs.columbia.edu/pub/xmove/
+HP-UX URL:        http://hpux.connect.org.uk/hppd/cgi-bin/search?package=&term=xmove-
+Install tree:     /opt/xmove
+Report bugs to:   stephie@connect.org.uk
+Tested on:        HP 9000/780/C160 running HP-UX 11.00
+C compiler used:  Version A.11.01.02
+Purpose:
+A Pseudoserver For Client Mobility. Xmove starts a pseudoserver which allows
+its X11 clients to be relocated from one display to another. Upon startup it
+will create a listening port from which it accepts new client connections. All
+such clients will be displayed on the default server, until moved elsewhere.
+Date archived:    Tue  7 Mar 2000.  Derived from "xmon".
+
+-------------------------------------------------------------------------------
+
+System:
+======
+	HP-UX shin B.11.00 A 9000/780
+
+URL:
+====
+
+	ftp://ftp.cs.columbia.edu/pub/xmove/	
+
+
+HP Porting Changes:
+===================
+
+  Configuration Files:
+
+     Imakefile -> Moved the xmove project (and xmovectrl) to the
+                  top-level dir so both targets could be built
+                  from one Imakefile.  The orginal xmovectrl dir
+                  (and contents) is still there - I renamed it to
+                  "./xmvctrl".
+
+                  The library functions are "compiled in".
+
+                  Copied man pages (".1" ext) to top dir (".man" ext)
+                  so "make install.man" doesnt fail.
+
+
+  Source Files:
+                   
+     main.c ----> Fixed warns about args to select(), hpux use 
+                  "fd_set *" now.
+
+
+Building:
+=========
+
+  Run "configure" || "xmkmf" to re-generate the Makefiles. 
+
+  Run "make" in the top level dir.
+
+  Use "make -n install" to check the defaults, then "make install"
+
+
+
+
+
+Installed:
+==========
+ By
+ --     [stephie@connect.org.uk]
+ On
+ --	[ Tue Mar 7   GMT 2000 ]
+ 
+
+
+       HPUX Porting and Archive Centre, Connect, Liverpool University.
+  __/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/

@@ -1,0 +1,13 @@
+Make MapColorCell(reply) use MakeServerColorCellMap.
+
+xmove.c:AllocColorCell should be able to return False if it can't
+find a legitimate color cell for the new color. The caller should
+then free the allocated color on the server and "fake" an Alloc
+error response.
+
+
+CreateNewAtom got me in infinite loop new_atom = FindAtom...
+
+SetDashes??
+
+convert GC's pixmap connections when converting it.

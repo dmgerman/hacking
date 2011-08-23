@@ -1,0 +1,60 @@
+	The following are the high-level changes made to xmove
+between 1.1b and 1.2. These are written for programmers familiar
+with the source code. Users should refer to features.txt and
+limitations.txt in xmove/doc for more information.
+
+1. xmove-specific header files are included by xmove.h directly.
+2. no longer uses 2 connections to the server per client. now
+   uses new functions in XMOVELib.c to synchronize inserted
+   requests. Code is much cleaner which used to use
+   server->alt_fd.
+3. new method of determining the stacking order of windows. Uses
+   QueryTree and RaiseWindow in order to determine, and set,
+   stacking order of window during movement between servers.
+4. new authorization code allows xmove to survive the death of
+   its default server. When the server is down, xmovectrl clients
+   will be permitted to issue commands based on the most recent
+   authorization information available to xmove, which is
+   accurate as of the last client to have connected through
+   xmove.
+5. Fixed code to extract items from "ListOfFoo" structures which
+   may be smaller than the space provided in the structure. eg
+   Window and GC value lists. See IParseByte/Short/Long in
+   common.h.
+6. DecodeRequest finds its function pointers from an array,
+   instead of using a switch statement.
+7. Functions which process requests can now return a void pointer 
+   which will be handed off the the function which processes that
+   request's reply. eg InternAtomReply needs to know the name of
+   atom that it has just received a reply about. This eliminates
+   client->misc/misc2.
+8. Clients can be placed in suspended animation, which means that
+   xmove retrieves their state from the server, and ceases
+   processing input from them until they are move to a new
+   server. This allows the user to save a client, kill the server
+   or network connection, and then restore it later,
+   elsewhere. The network connection between client and xmove,
+   however, must not be lost.
+9. The above implies that changes were needed in the movement
+   process. Wherever it was necessary to retrieve state from the
+   original server, that is now done in bursts rather than as
+   needed for state such as properties of a window, and stacking
+   order of windows. That state is stored in the client until it
+   is needed at the new server. This enables the move.c code to
+   be the same regardless of whether the client has been
+   suspended.
+10.Part of supporting the elimination of the second connection to
+   the server (2. above) involved modifying the SequenceNumbers
+   of incoming server packets at the time they are received,
+   instead of when they are processed. main.c:ReadAndProcessData
+   now adds SequenceMapping to incoming data, rather than
+   decode11.c.
+11.Pixmaps used to create cursors now have their image retrieved
+   at the time the cursor is created, rather than when the client
+   is moved, or when the pixmap is freed.
+12.Support for read-only colormaps. Sometimes clients will read
+   the entire colormap in and then use the colors without ever
+   allocating them. We notice this, and treat the color as if
+   it had been allocated. This was necessary to support
+   grey-scale properly.
+
