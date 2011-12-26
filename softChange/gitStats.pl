@@ -1,6 +1,13 @@
 #!/usr/bin/perl
 
-# git log --pretty=fuller --numstat > /tmp/linux.log
+# git log --pretty=fuller --numstat --parents > /tmp/linux.log
+
+#create table meta(id char(40), author varchar(200), audate timestamp, committer varchar(200), codate timestamp, ismerge boolean);
+#copy meta from '/tmp/samba/meta.txt' DELIMITER ';';
+
+#create table files(id char(40), filename varchar(200), linesadd int, linesrm int);
+# copy files from '/tmp/samba/files.txt' DELIMITER ';' NULL '';
+
 
 
 
@@ -19,15 +26,26 @@ my $testOnly = -1;
 my $log;
 my $isMerge = 0;
 
-open(FILES, ">files.txt")      or die "unable to create files.txt";
-open(LOGS, ">logs.txt")        or die "unable to create logs.txt";
-open(META, ">meta.txt")        or die "unable to create meta.txt";
-open(PARENTS, ">parents.txt")  or die "unable to create parents.txt";
+open(GIT, "git log --pretty=fuller --numstat --parents |") or die "unable to start git log in current directory";
 
-while(<>) {
+
+open(FILES, ">/tmp/files.txt")      or die "unable to create files.txt";
+open(LOGS, ">/tmp/logs.txt")        or die "unable to create logs.txt";
+open(META, ">/tmp/meta.txt")        or die "unable to create meta.txt";
+open(PARENTS, ">/tmp/parents.txt")  or die "unable to create parents.txt";
+
+my $i;
+
+while(<GIT>) {
     s/\\//g;
     chomp;
     if (/^commit (.+)$/) {
+        $i++;
+
+        if ($i % 100) {
+            print ".";
+        }
+
         my @ids = split(/ /, $1);
         $commit = shift @ids;
 
@@ -88,8 +106,9 @@ while(<>) {
     }
 
 }
-
+printf STDERR "processed $i commits\n";
 close (LOGS);
 close (FILES);
 close (META);
 close (PARENTS);
+close GIT;

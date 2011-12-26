@@ -24,3 +24,26 @@ CREATE AGGREGATE median (
   stype = _float8,
   finalfunc = r_median
 );
+
+CREATE OR REPLACE FUNCTION f_graph() RETURNS text AS
+$BODY$
+mov <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr is null order by rank;");
+epi <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr = 'TVEpisode' order by rank;");
+tvm <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr = 'TV' order by rank;");
+mov2 <<- as.numeric(mov$rank)
+epi2 <<- as.numeric(epi$rank)
+movies<-density(mov$rank)
+episodes<-density(epi$rank)
+pdf("/tmp/myplot.pdf");
+hist(mov2,col="blue");
+hist(epi2,add=T,col="red");
+line
+dev.off();
+print("done");
+$BODY$
+LANGUAGE plr;
+
+lines(d1,col="red");
+boxplot(mov$rank,epi$rank,tvm$rank,main="Distribution");
+#
+
