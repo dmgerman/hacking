@@ -14,18 +14,20 @@ THRIFTY FOODS #17, DELI
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   10-Dec-2009
-   [2]Routine Inspection   26-May-2009
-   [3]Routine Inspection    7-Oct-2008
-   [4]Routine Inspection   24-Sep-2007
+   Type                      Document Details
+   [1]Follow-Up Inspection    2-Aug-2012
+   [2]Routine Inspection     26-Jul-2012
+   [3]Routine Inspection     16-Sep-2010
+   [4]Routine Inspection     10-Dec-2009
+   [5]Routine Inspection     26-May-2009
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E4C985562D6069B18825768B0048170A?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E754DE08E3E1F3F1882575C500440DCC?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6E187BF37A57A523882574EB004227B5?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6541C8F41BC4CA018825736300423E90?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/EE610A92B5A61F1888257A510029A954?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/6AB6FE67D70A202E88257A4A00377CB0?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A07CC7D00A17EE788825796900069386?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8C08B98F462D18D88825796D0064C62E?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C8140CEAE1C390328825796E005C8D58?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

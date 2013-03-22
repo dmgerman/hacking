@@ -15,19 +15,19 @@ WILLIE'S BAKERY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     26-Nov-2009
-   [2]Follow-Up Inspection   23-Jun-2009
-   [3]Follow-Up Inspection   26-May-2009
-   [4]Follow-Up Inspection   19-May-2009
-   [5]Routine Inspection     12-May-2009
+   [1]Follow-Up Inspection    3-Jul-2012
+   [2]Routine Inspection     25-Jun-2012
+   [3]Routine Inspection     16-Feb-2012
+   [4]Routine Inspection     12-Jul-2011
+   [5]Routine Inspection     26-Jan-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BCF32F723453525A8825767C00481526?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D220BE4C7D320080882575E2007A9D8B?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FB5D391D10EAF305882575C500440E36?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5247AC4E69BF4D7D882575BE00435AC6?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2118EE6D9F0C24CF882575B7004389A7?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/8323C197C8BA245C88257A3300383943?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/41FCD297EA82912D88257A3300383945?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DF2A39758742FA60882579AC002CFF61?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E14321BF45F030F98825796C0001486B?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/41D6B14DE623A0068825796C0038CD0B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

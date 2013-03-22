@@ -14,20 +14,20 @@ OH GELATO
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection     16-Mar-2010
-   [2]Routine Inspection      3-Mar-2009
-   [3]Routine Inspection     28-Feb-2008
-   [4]Routine Inspection      6-Mar-2007
-   [5]Follow-Up Inspection    6-Jul-2006
+   Type                    Document Details
+   [1]Routine Inspection   29-Feb-2012
+   [2]Routine Inspection   15-Mar-2011
+   [3]Routine Inspection   16-Mar-2010
+   [4]Routine Inspection    3-Mar-2009
+   [5]Routine Inspection   28-Feb-2008
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FE8DFD7823CB8086882576EC0029BCE1?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/31521BE9D33B37338825757000479B34?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/45E244D6E43EAAA0882573FF0047B5AA?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BE0BE1F22261BB638825729900479E13?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D33A6C7CA9EBD052882571A60044F1AF?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2532670C2AC6F68882579B7002C44B8?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CFFF2E08B69B7FBD8825796C001BC18A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C9EAC3B01C14EE9F8825796D00316FC6?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C6B35015C24C9E018825796F0008518D?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B9A2BEB2949360608825797000212F84?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

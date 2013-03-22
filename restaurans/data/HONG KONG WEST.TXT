@@ -14,20 +14,20 @@ HONG KONG WEST
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   19-Apr-2010
-   [2]Routine Inspection   21-Sep-2009
-   [3]Routine Inspection   10-Mar-2009
-   [4]Routine Inspection   29-Oct-2008
-   [5]Routine Inspection   27-Jun-2008
+   Type                      Document Details
+   [1]Follow-Up Inspection   23-Mar-2012
+   [2]Routine Inspection      9-Jan-2012
+   [3]Follow-Up Inspection   26-Nov-2010
+   [4]Routine Inspection     26-Nov-2010
+   [5]Routine Inspection     19-Apr-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/44A1038BE04584CF8825770D002BFB8E?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/655B32912F6D21248825763B007AB3E5?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/133C7CA428A075928825757800422DAA?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/27076CCA2758EA79882574F400422CE4?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BC916D035D4B3FB18825747A00425CB8?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0B957213DC37D2F2882579CF00285D64?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D6447FBF240696E388257984002CAD31?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D5A33BF48BF730C88825796C00010068?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6C42F25DFE7B93288825796C000100CB?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E8EF4C8715B93F178825796D0024D6F6?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

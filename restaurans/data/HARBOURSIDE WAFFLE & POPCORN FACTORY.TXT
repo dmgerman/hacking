@@ -15,13 +15,17 @@ HARBOURSIDE WAFFLE & POPCORN FACTORY
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   1-Apr-2010
-   [2]Initial Inspection   5-Feb-2010
+   [1]Routine Inspection   10-Apr-2012
+   [2]Routine Inspection    4-Apr-2011
+   [3]Routine Inspection    1-Apr-2010
+   [4]Initial Inspection    5-Feb-2010
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6FD1AC908595A6CA882576FA002B0A52?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7280FBA1D79E767C882576C3002D7B0C?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B41E9CA576B724AD882579DF002BE49F?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/70F106F05835D5E88825796C00150B14?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DD61C4162EB9E0278825796D002944A8?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3035DF33A6BBDED98825796D005AC99F?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

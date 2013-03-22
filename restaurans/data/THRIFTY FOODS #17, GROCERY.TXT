@@ -15,15 +15,19 @@ THRIFTY FOODS #17, GROCERY
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   15-Oct-2009
-   [2]Routine Inspection    7-Oct-2008
-   [3]Routine Inspection   24-Sep-2007
+   [1]Routine Inspection   26-Jul-2012
+   [2]Routine Inspection   15-Nov-2010
+   [3]Routine Inspection   15-Oct-2009
+   [4]Routine Inspection    7-Oct-2008
+   [5]Routine Inspection   24-Sep-2007
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8B484EDCCA2B9FF488257653007A88C2?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A26F99791887FF8F882574EB004227AE?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4D0CAEE92E5AEE788825736300423E95?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/47CF827766448E1088257A4A00377CAB?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C5905185650636338825796C003D782C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D0F7CE2FE35073F98825796E000EDE2C?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A68C70CCD8F5B5948825796F00690755?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/38B6E2DD2E127E5B882579700023F0AD?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

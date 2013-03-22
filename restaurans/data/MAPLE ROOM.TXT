@@ -15,19 +15,19 @@ MAPLE ROOM
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   27-Jan-2010
-   [2]Routine Inspection   10-Dec-2008
-   [3]Routine Inspection   27-May-2008
-   [4]Routine Inspection   11-May-2007
-   [5]Routine Inspection   17-Oct-2006
+   [1]Routine Inspection   26-Mar-2012
+   [2]Routine Inspection    8-Feb-2011
+   [3]Routine Inspection   27-Jan-2010
+   [4]Routine Inspection   10-Dec-2008
+   [5]Routine Inspection   27-May-2008
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D6DC7876532739D3882576BB002F0A57?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/68E3AC50761573038825751D0047AA25?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E6954F99280685998825745800423B45?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E07870FC43099FEB882572DE00423810?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/56775D824C9D71858825720D0044CA9E?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CAC6FD91D5D22C7B882579D70029527E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4F1223110E731D5B8825796C0034A791?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C5BD187851EB70B18825796D005B7236?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1DD93120DDEDC18B8825796F0033F11F?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A4E576EEF1E1BF2C88257970001CD5A8?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

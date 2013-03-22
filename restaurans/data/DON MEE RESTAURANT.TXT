@@ -15,19 +15,19 @@ DON MEE RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    9-Nov-2009
-   [2]Follow-Up Inspection    2-Nov-2009
-   [3]Follow-Up Inspection   16-Sep-2009
-   [4]Follow-Up Inspection   27-Aug-2009
-   [5]Follow-Up Inspection   19-Aug-2009
+   [1]Follow-Up Inspection   24-Jul-2012
+   [2]Follow-Up Inspection   17-Jul-2012
+   [3]Routine Inspection     12-Jul-2012
+   [4]Follow-Up Inspection   26-Mar-2012
+   [5]Routine Inspection     22-Mar-2012
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/43ED5554C0E18A0C8825766C00480DEC?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/73A24E5C04E7BDE18825766500480D7D?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/61E2C34E76A63E2F88257636007ABC60?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A8696077C258B344882576250073D964?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8AB9571E69A8BC9B8825761B007A9B5D?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/5A6BEC0DF231B7C188257A48003566AA?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/1F46EF090240462C88257A41002FE92B?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/D1E975BF8339099D88257A3C002AAAE6?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8F9AA6CD24D9991F882579D0002694C6?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/72F8F943773C35C2882579CC0029BF9E?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

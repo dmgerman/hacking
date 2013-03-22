@@ -1,7 +1,7 @@
 GREEN CUISINE
 
    Facility Location:
-   5 560 Johnson Street
+   5 - 560 Johnson Street
    Victoria
 
    Facility Information:
@@ -15,19 +15,19 @@ GREEN CUISINE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Complaint Inspection    6-Jan-2010
-   [2]Routine Inspection     17-Nov-2009
-   [3]Routine Inspection     11-Aug-2009
-   [4]Follow-Up Inspection   15-Jul-2009
-   [5]Routine Inspection     15-Jun-2009
+   [1]Follow-Up Inspection   23-May-2012
+   [2]Routine Inspection     15-May-2012
+   [3]Routine Inspection     18-Nov-2011
+   [4]Routine Inspection     16-Mar-2011
+   [5]Routine Inspection     22-Oct-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F9BECF7580BD8A92882576AA00391EED?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D73DEA3D270CCA408825767400481C30?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3666F818CA74D4EA88257612007ABC98?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FFBAB089DEFA426E882575F7007ACBDF?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/563429B47E30AE69882575D80073BD66?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9E0794E89F33B3AB88257A0A00268DFA?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3372B5BC6DC4C0EE88257A040026D45A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C16540C2B0672C198825796B007E7F6D?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DF5450C8C5729F678825796C0005E9C5?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2681364C639F40548825796C00406500?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

@@ -14,20 +14,20 @@ ABIGAIL'S HOTEL
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection    9-Feb-2010
-   [2]Routine Inspection    2-Jul-2009
-   [3]Routine Inspection   30-Oct-2008
-   [4]Routine Inspection    6-Feb-2008
-   [5]Routine Inspection   16-Aug-2007
+   Type                      Document Details
+   [1]Routine Inspection      7-Mar-2012
+   [2]Routine Inspection      9-Sep-2011
+   [3]Routine Inspection      2-Mar-2011
+   [4]Follow-Up Inspection   12-Aug-2010
+   [5]Routine Inspection     10-Aug-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C4EE5C2D2BC4BA8E882576C800311366?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F7F222A066543CE9882575ED0073C3E6?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/966574ECEA90A3E2882574F500421673?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DE0B60E4A616E56B882573EA0047C134?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0C1CFB8C2E1E79BA8825733B0042509B?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A63A9B4C010A94C1882579BE002F0B94?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FD433681103E1DF18825796B007F413B?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1215663FC0C588808825796C002347FA?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A49F8D4E2BE66F6B8825796C00707A47?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/80800C028B046FC58825796C0070887B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

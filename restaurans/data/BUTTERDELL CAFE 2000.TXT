@@ -15,19 +15,19 @@ BUTTERDELL CAFE 2000
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     10-Dec-2009
-   [2]Routine Inspection     16-Jun-2009
-   [3]Routine Inspection      1-Dec-2008
-   [4]Follow-Up Inspection   17-Jun-2008
-   [5]Routine Inspection     13-Jun-2008
+   [1]Routine Inspection     26-Mar-2012
+   [2]Follow-Up Inspection   28-Jun-2011
+   [3]Routine Inspection     20-Jun-2011
+   [4]Follow-Up Inspection    7-Dec-2010
+   [5]Routine Inspection      6-Dec-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2BF135D84CF376148825768A004828C7?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/739B644DC38849AA882575DB007A7F0C?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/66AF3F67B80C2DFE882575150047ADDD?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ACF4E5C0E7E951168825746E00423CBC?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5A2FCD1E9206A9788825746C004243D4?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F1CD155675795EFF882579D000269499?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/72FC807C816D3E3B8825796C0001F127?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/30EB85CCDD2BEE7A8825796C0002A80B?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F834C07D2AECCF6A8825796C003A3B29?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6EE95AE27A2177268825796C00062829?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

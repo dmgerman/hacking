@@ -14,20 +14,20 @@ OXFORD FOODS
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   30-Apr-2010
-   [2]Routine Inspection    7-Jan-2010
-   [3]Routine Inspection    6-Jul-2009
-   [4]Routine Inspection    5-May-2009
-   [5]Routine Inspection   21-Feb-2008
+   Type                      Document Details
+   [1]Routine Inspection      3-May-2012
+   [2]Routine Inspection      9-Nov-2011
+   [3]Routine Inspection     11-May-2011
+   [4]Follow-Up Inspection    8-Nov-2010
+   [5]Routine Inspection      5-Nov-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/12D34CFB628C4385882577170028CFFE?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6FA901B05A1691B4882576AA00391EE6?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B60DF9FACCA86919882575EE007A8A7D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4A6B5EE82FA5BB2A882575B000427903?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7C1E81389F27BDDA882573F90047BBED?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2FCE3608AC5ACE6C882579F60029FF05?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E43917F6F9F5941B8825796B007E9C21?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3BD0747F8E0CFEDD8825796C000A6EB2?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2FA5B003BADA304B8825796C003D9D66?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/28EC06BC679ACBDA8825796C003E27E1?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

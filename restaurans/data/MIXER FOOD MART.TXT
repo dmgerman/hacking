@@ -6,7 +6,7 @@ MIXER FOOD MART
 
    Facility Information:
 
-   Facility Number:                 6011980
+   Facility Number:                 64008508
    Facility Type:                   Food (Store)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -15,17 +15,11 @@ MIXER FOOD MART
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   16-Apr-2010
-   [2]Routine Inspection   19-Feb-2009
-   [3]Routine Inspection   20-Mar-2008
-   [4]Routine Inspection   25-Apr-2007
+   [1]Initial Inspection   6-Jun-2012
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [2]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/61C34FF54B5F87198825770D002BFB9E?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/35F7F151DCB020D9882575650047A832?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A1EEC73B93E7DE4E882574140042282A?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4FE16C401FFC8968882572CC004228FF?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/966544C2AB740D2188257A1900366414?OpenDocument
+   2. http://www.viha.ca/disclaimer.htm

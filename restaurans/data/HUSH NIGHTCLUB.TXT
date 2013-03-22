@@ -15,17 +15,19 @@ HUSH NIGHTCLUB
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     19-Jun-2008
-   [2]Routine Inspection     23-Apr-2007
-   [3]Follow-Up Inspection   28-Mar-2006
-   [4]Routine Inspection     23-Mar-2006
+   [1]Follow-Up Inspection   30-Jul-2012
+   [2]Routine Inspection     27-Jun-2012
+   [3]Follow-Up Inspection   25-Jun-2012
+   [4]Follow-Up Inspection   22-Jun-2012
+   [5]Routine Inspection     20-Jun-2012
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/301BFEC28CCD69708825747000422CD9?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/480F80EDD8A682BA882572CA00423680?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BD7417495373B8F788257142004B73A2?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5A33877288AB3BC28825713D0050C6F6?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/636F46F39FC7C86388257A4E003C56DA?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/E637B7F3489751A288257A2D00328BCE?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/AC975C3A3913D9E788257A2C003189C6?OpenDocument
+   4. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/FC2C29F9C277EF4188257A2C003189CC?OpenDocument
+   5. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/6B6A8F86D321DB1188257A26002BF374?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

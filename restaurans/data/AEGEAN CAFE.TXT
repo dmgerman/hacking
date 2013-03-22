@@ -15,19 +15,19 @@ AEGEAN CAFE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     13-Jan-2010
-   [2]Routine Inspection      5-Jun-2009
-   [3]Follow-Up Inspection   25-Nov-2008
-   [4]Routine Inspection     25-Nov-2008
-   [5]Follow-Up Inspection   21-May-2008
+   [1]Routine Inspection     18-Apr-2012
+   [2]Routine Inspection      6-Oct-2011
+   [3]Follow-Up Inspection   10-Feb-2011
+   [4]Routine Inspection      9-Feb-2011
+   [5]Routine Inspection     26-Aug-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8B273EF93D556168882576AE003CD2F9?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/443D30B3FE2DCC0D882575CE007AB79F?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AF24F03D76FBE8F28825750F00479488?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED4750CAFAD98BE88825750F0047948A?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/34A400D77A8BA5308825745200422EEC?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5CC37AB060D5D06D882579E700276755?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AE80A6EF0807A3C88825796B007EF920?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/22617E6A4DA0494B882579690006522B?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5EB5ECDC4D091C8A8825796C00348842?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5D84FFEA7AF4C6A68825796C00636C96?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

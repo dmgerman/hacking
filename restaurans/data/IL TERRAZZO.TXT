@@ -15,19 +15,19 @@ IL TERRAZZO
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    4-Dec-2009
-   [2]Routine Inspection     27-Nov-2009
-   [3]Routine Inspection      9-Apr-2009
-   [4]Follow-Up Inspection    9-Apr-2009
-   [5]Routine Inspection     10-Sep-2008
+   [1]Routine Inspection     30-May-2012
+   [2]Complaint Inspection   21-Oct-2011
+   [3]Routine Inspection      4-Jul-2011
+   [4]Routine Inspection     26-Jan-2011
+   [5]Routine Inspection     28-Jun-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/34D4D1DC251E9DC388257689004819E0?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B0288F5953F0A8418825768000481472?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C57158D0195FA38E8825759B00423C8A?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C62DC02A1CEF44668825759B00423C81?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/907AE0C0754BD62C882574C3004239A8?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4335F0A10C9A357588257A1100276FE6?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/35CB9B4185650B988825796B007ED58C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3EADE9FCF1D4637A8825796C0001E89A?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A83EB63B8EDB1E878825796C0038CCE5?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/158D84A9E3B6AD958825796C00776EF5?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

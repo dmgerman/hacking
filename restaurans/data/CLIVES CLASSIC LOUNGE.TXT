@@ -15,19 +15,19 @@ CLIVES CLASSIC LOUNGE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     11-Dec-2009
-   [2]Routine Inspection     10-Jun-2009
-   [3]Follow-Up Inspection   16-Dec-2008
-   [4]Routine Inspection     12-Dec-2008
-   [5]Follow-Up Inspection   27-Mar-2008
+   [1]Routine Inspection     23-May-2012
+   [2]Routine Inspection     15-Nov-2011
+   [3]Routine Inspection      2-Mar-2011
+   [4]Follow-Up Inspection   19-Aug-2010
+   [5]Follow-Up Inspection   11-Aug-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/673A1BD3366E9BE58825768E00482A08?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/656D41A7D880468A882575D4007A7D29?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/99A715614607D162882575230047AE93?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D19FDD2BAE2B6A3C8825751F00479822?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/81BF75781349126D8825741C0042200F?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/DC528B6E3FA037C288257A460033A4CA?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AE2077AFD230ECCD8825796B007E978A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1DB55022FDDC7C388825796C0023BECD?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/59F23722050D74E28825796C006AC627?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A120ACC2849251EE8825796C00707C25?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

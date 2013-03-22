@@ -15,13 +15,17 @@ CANADA CONES
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   21-Apr-2010
-   [2]Initial Inspection    9-Sep-2009
+   [1]Routine Inspection   12-Apr-2012
+   [2]Routine Inspection   13-May-2011
+   [3]Routine Inspection   21-Apr-2010
+   [4]Initial Inspection    9-Sep-2009
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B522FF9EF52B485E8825770E00283891?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/595E59F7557CFD438825762E007A9454?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/93D717DD267B2619882579E000281F6F?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/06067BECF2C7B9078825796C0009CDD5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/65FBBD7FE05C07158825796D00248D21?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/629E75484CF5479D8825796E0016EE38?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

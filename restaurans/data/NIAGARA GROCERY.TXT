@@ -14,14 +14,20 @@ NIAGARA GROCERY
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   19-Feb-2010
-   [2]Routine Inspection   29-Oct-2009
+   Type                      Document Details
+   [1]Follow-Up Inspection   23-Aug-2012
+   [2]Routine Inspection     17-Aug-2012
+   [3]Follow-Up Inspection   17-Aug-2012
+   [4]Follow-Up Inspection    8-Feb-2012
+   [5]Routine Inspection      7-Feb-2012
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8D025BDB2409A543882576D40030D52E?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F2C5305092B2B8188825766500480DB5?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/D2AB4409E4A7B06588257A66002A0788?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/97945F58F9F0C1C488257A62003B3F92?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/9B9C9BAFAC3D999B88257A62003B3F8D?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F641AB03359C181D882579A0002ECDF2?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/143D760D3E66CA5E882579A0002ECE73?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

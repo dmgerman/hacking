@@ -14,16 +14,20 @@ LIFESTYLE MARKETS, GROCERIES
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection    4-Sep-2009
-   [2]Routine Inspection    9-Sep-2008
-   [3]Routine Inspection   20-Sep-2007
+   Type                      Document Details
+   [1]Routine Inspection     16-May-2012
+   [2]Complaint Inspection    1-Nov-2010
+   [3]Routine Inspection      9-Sep-2010
+   [4]Routine Inspection      4-Sep-2009
+   [5]Routine Inspection      9-Sep-2008
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E7F890E9C661418F8825762D007A8C42?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/45287202584C838B882574C200423647?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7FCB2F6950938BB48825735F004232AA?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E37FEA0CEB87D91C88257A040026D483?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/519A6B5B3FC2B7648825796C003F1917?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A1273C30A982C88C8825796C00530A01?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6424DA03B9FF3C7D8825796E00179C74?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FE0A8616933DA626882579690008F3D5?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

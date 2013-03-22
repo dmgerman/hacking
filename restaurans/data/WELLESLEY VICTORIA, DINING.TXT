@@ -7,27 +7,27 @@ WELLESLEY VICTORIA, DINING
    Facility Information:
 
    Facility Number:                 6011095
-   Facility Type:                   Food (Restaurant)
+   Facility Type:                   Food (Institution)
    Months Open:                     All year long
-   FOODSAFE Excellence Certified:   Yes
+   FOODSAFE Excellence Certified:   No
 
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   17-Mar-2010
-   [2]Routine Inspection   17-Sep-2009
-   [3]Routine Inspection   19-Mar-2009
-   [4]Routine Inspection   25-Sep-2008
-   [5]Routine Inspection   21-Feb-2008
+   Type                      Document Details
+   [1]Follow-Up Inspection   12-Apr-2012
+   [2]Routine Inspection      5-Apr-2012
+   [3]Routine Inspection      5-Dec-2011
+   [4]Routine Inspection     28-Mar-2011
+   [5]Routine Inspection     28-Sep-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C2CA9DA2B40CA108882576EC0029BCDD?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9EB7F1767B64F3F188257637007A87AE?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/52E977914F42D1218825758100421D70?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D3FB692E67F9997B882574D2004237B0?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2C0A38445AAA15D2882573F90047BB9C?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/33963524A7CF5DB1882579EC002A4BC3?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7900C45530B2E794882579DE00292313?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1A21E4D810EA06078825796B007E422C?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/54F54BC444A4FA8E8825796C0017EC08?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A484E790EE123AD08825796C00466DF1?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

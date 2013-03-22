@@ -15,19 +15,19 @@ PACIFIC RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   25-Mar-2010
-   [2]Routine Inspection     18-Mar-2010
-   [3]Routine Inspection     28-Jul-2009
-   [4]Routine Inspection      3-Feb-2009
-   [5]Routine Inspection     18-Jul-2008
+   [1]Follow-Up Inspection   29-Feb-2012
+   [2]Follow-Up Inspection   29-Feb-2012
+   [3]Routine Inspection     22-Feb-2012
+   [4]Routine Inspection     26-May-2011
+   [5]Routine Inspection     23-Sep-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/50264DA62821AEBC882576F4002C809F?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/86534EBBCA7C44AC882576ED002B1B16?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6584D0107EEC889D88257604007AB38D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/609148C090942CB3882575540047AC2F?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C10059D4E98704A18825748F00424A45?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/43BB86FC13FECAFC882579B7002C453E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A595C7391F96F33D882579B7002C4535?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3B5CE82D99F265D2882579AE002CF26F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/972F15EB8F1E257C8825796C000748F7?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A0F4CCCEA2C585A28825796900068C29?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

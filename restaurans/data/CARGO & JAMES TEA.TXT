@@ -15,19 +15,19 @@ CARGO & JAMES TEA
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   26-Oct-2009
-   [2]Routine Inspection     22-Oct-2009
-   [3]Follow-Up Inspection    3-Oct-2008
-   [4]Routine Inspection      1-Oct-2008
-   [5]Follow-Up Inspection   23-Oct-2007
+   [1]Routine Inspection     22-Nov-2011
+   [2]Routine Inspection      2-Dec-2010
+   [3]Routine Inspection     18-Oct-2010
+   [4]Follow-Up Inspection   26-Oct-2009
+   [5]Routine Inspection     22-Oct-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E7EBD8185C5B5A418825765E007A9765?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/60B8A2F9F55DF3908825765A007AAB3B?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/17EF1BC5A4EE88C2882574DC004236BE?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8148A856DB197586882574D80042409F?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DD3B123A03D0B7DC8825737F00423A62?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D6DFA9599AC653CC8825796B007E8175?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3AA857DA6710287D8825796C003B166C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/04A5631833A7368E8825796C00418A8F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FDDCBA8D214E37168825796E000E9096?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D3FEBBF3A2C8F6FA8825796E000E9A27?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

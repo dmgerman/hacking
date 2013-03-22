@@ -8,22 +8,26 @@ MCDONALD PARK MEN'S FASTBALL LEAGUE
 
    Facility Number:                 6012878
    Facility Type:                   Food (Take Out)
-   Months Open:                     May Jun Jul Aug Sep
+   Months Open:                     May Jun Jul Aug
    FOODSAFE Excellence Certified:   No
 
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection    3-Jul-2009
-   [2]Routine Inspection   15-May-2008
-   [3]Routine Inspection   24-May-2006
+   [1]Routine Inspection    5-Jul-2012
+   [2]Routine Inspection   14-Jul-2010
+   [3]Routine Inspection    3-Jul-2009
+   [4]Routine Inspection   15-May-2008
+   [5]Routine Inspection   24-May-2006
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AB5E1D6483206CCF882575EE007A8ABD?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DFB35F208AED9584882574510042303F?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0FC23CADA8BAB36E8825717B00426DAD?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/3C683BB61A97F8FC88257A38003C6E7E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B07F71013017AB6D8825796C0072721C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3332931742BAA608882579690007B872?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BF5DC56A5035C82688257970001CE960?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/37A294B5F094E42788257971001021AD?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

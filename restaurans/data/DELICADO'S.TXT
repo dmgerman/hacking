@@ -15,17 +15,19 @@ DELICADO'S
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     15-Dec-2009
-   [2]Follow-Up Inspection   16-Jun-2009
-   [3]Routine Inspection      8-Jun-2009
-   [4]Initial Inspection     16-Feb-2009
+   [1]Routine Inspection     27-Jun-2012
+   [2]Follow-Up Inspection   24-Feb-2011
+   [3]Routine Inspection     24-Feb-2011
+   [4]Routine Inspection     11-Aug-2010
+   [5]Routine Inspection     15-Dec-2009
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AFCE877D56F8E28D882576900048459C?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2FDAB3E04D8C2D0D882575DA007A87C0?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/24675629C8905BC2882575D2007A78BF?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1194DAB5BC14B74A882575620047AE51?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/8069FC47C9BF3BDC88257A32003736E1?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CADBAFE9D5B447A68825796900063AC9?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C2E1C373799617048825796C0028C3A3?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/055F0AC95F9D8DF28825796C00707DF4?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9D37B96701CE6A598825796D0062D87E?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

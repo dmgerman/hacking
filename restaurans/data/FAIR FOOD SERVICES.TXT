@@ -1,12 +1,12 @@
 FAIR FOOD SERVICES
 
    Facility Location:
-   Vancouver Island Health Authority
+   1650 Eagle Way
    Victoria
 
    Facility Information:
 
-   Facility Number:                 64004794
+   Facility Number:                 64008504
    Facility Type:                   Food (Mobile)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -15,19 +15,11 @@ FAIR FOOD SERVICES
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   13-Jun-2009
-   [2]Routine Inspection   29-Apr-2008
-   [3]Routine Inspection    9-Jun-2007
-   [4]Routine Inspection   15-Sep-2006
-   [5]Routine Inspection   20-Jul-2006
+   [1]Initial Inspection   1-Jun-2012
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [2]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/057389FA2B44A375882575D80073BD08?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/92F09BC99F468E508825743D00422215?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/99A7241298BF0FA2882572FF000102FE?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0DA12D058B3D355B882571F600470950?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3F47A3A9E84DBAAA882571C7004532A7?OpenDocument
-   6. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/211C718F7CF12CE888257A170034D4DD?OpenDocument
+   2. http://www.viha.ca/disclaimer.htm

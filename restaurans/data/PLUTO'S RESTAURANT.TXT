@@ -15,19 +15,19 @@ PLUTO'S RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   15-Feb-2010
-   [2]Follow-Up Inspection   10-Feb-2010
-   [3]Routine Inspection     10-Feb-2010
-   [4]Routine Inspection     27-Aug-2009
-   [5]Routine Inspection     26-Feb-2009
+   [1]Follow-Up Inspection    7-Feb-2012
+   [2]Routine Inspection     31-Jan-2012
+   [3]Follow-Up Inspection   14-Jul-2011
+   [4]Follow-Up Inspection    7-Jul-2011
+   [5]Routine Inspection      6-Jul-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/20A88FA9E2084B2E882576CE00314673?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/29AF914D1138CF68882576CA002F35B3?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9288CB0A4B49161F882576CA002F35B4?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D4FF4E328C81635D88257622007A855D?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CC8172EA208E15BB8825756C00479BB5?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CC80BC2B3DD9AA688825799F002C2FB9?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/572210FBDBABEB7588257998002F0764?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/45862342005534E48825796C000133C8?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/021EA6E209C9B6D88825796C0001AB51?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/13FB4937A509F7C88825796C0001C836?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

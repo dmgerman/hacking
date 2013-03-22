@@ -15,11 +15,15 @@ FAIRFIELD UNITED CHURCH
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   7-Aug-2009
+   [1]Routine Inspection   11-Jul-2012
+   [2]Routine Inspection   14-Sep-2010
+   [3]Routine Inspection    7-Aug-2009
 
-   [2]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [4]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/08E57D60654B65F4882576100073CC67?OpenDocument
-   2. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/B1DBAC0111526BBC88257A3C002AAAB9?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2E47E2C5C123C7B08825796900069392?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9A9A0BFE9A623AA58825796D00287C92?OpenDocument
+   4. http://www.viha.ca/disclaimer.htm

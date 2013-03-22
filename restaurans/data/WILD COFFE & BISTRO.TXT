@@ -15,13 +15,19 @@ WILD COFFE & BISTRO
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     15-Mar-2010
-   [2]Follow-Up Inspection   24-Feb-2010
+   [1]Routine Inspection     14-May-2012
+   [2]Routine Inspection     17-May-2011
+   [3]Routine Inspection     24-Jun-2010
+   [4]Routine Inspection     15-Mar-2010
+   [5]Follow-Up Inspection   24-Feb-2010
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A3FAAE3947C64CF2882576E900298C48?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5C60E51BC3F99806882576D70030C95A?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FC4C411DC5D516CB88257A040026D480?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5253ED434BC7D8A08825796C000991A7?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3C93DB4300FC2F528825796C0078E00E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E75132F4AA4633688825796900073EFC?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8145DABBCCBDFA478825796D00483098?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

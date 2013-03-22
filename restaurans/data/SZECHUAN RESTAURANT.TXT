@@ -1,7 +1,7 @@
 SZECHUAN RESTAURANT
 
    Facility Location:
-   853 Caledonia Street
+   853 Caledonia Avenue
    Victoria
 
    Facility Information:
@@ -14,20 +14,20 @@ SZECHUAN RESTAURANT
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   16-Apr-2010
-   [2]Routine Inspection   20-Aug-2009
-   [3]Routine Inspection   18-Feb-2009
-   [4]Routine Inspection   29-Jan-2008
-   [5]Routine Inspection   17-Jul-2007
+   Type                      Document Details
+   [1]Follow-Up Inspection    5-Jun-2012
+   [2]Routine Inspection     30-May-2012
+   [3]Routine Inspection     23-Nov-2011
+   [4]Routine Inspection     12-May-2011
+   [5]Routine Inspection     19-Nov-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C87639A35C6267B08825770D002BFBAD?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/423B8F0F76E082BC8825761B007A9B3C?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0F25231FFC5CDEF0882575640047C7A8?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C079BF442E185C62882573E20047BBCF?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C0FD477756C2A3868825731E004D3D47?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/521AFE3A77851A0088257A170034D4A4?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/168CE44C5F4568A688257A1100276FFB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/29E466D60BCCEEB38825796B007E725F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CFACB11C2F969F808825796C000A77B7?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6BDCEE066BDFF9F7882579690006696A?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

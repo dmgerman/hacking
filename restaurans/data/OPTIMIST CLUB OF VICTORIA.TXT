@@ -15,17 +15,19 @@ OPTIMIST CLUB OF VICTORIA
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   29-Apr-2010
-   [2]Routine Inspection   29-Jun-2009
-   [3]Routine Inspection   20-Aug-2008
-   [4]Routine Inspection   17-Aug-2007
+   [1]Routine Inspection   14-Jun-2012
+   [2]Routine Inspection   28-Jun-2011
+   [3]Routine Inspection   29-Apr-2010
+   [4]Routine Inspection   29-Jun-2009
+   [5]Routine Inspection   20-Aug-2008
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/052F35D21A08F186882577170028CF86?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/04FC3EC2C82795A8882575E7007A876A?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DE7F5AE14CF0B1BF882574B40042697C?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/366CD0440318072C8825733F004239FF?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/C700DF2FB7A13AA788257A20003C6E8F?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/38381D35462B3D368825796900057D41?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D0431F74CE5C13F38825796D0023B01B?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8EE143A6FDEC58538825796C000222F1?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A084C99A7CA91FBE8825796F007107E8?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

@@ -14,20 +14,20 @@ CAMILLE'S RESTAURANT
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection     13-May-2009
-   [2]Routine Inspection      4-Nov-2008
-   [3]Routine Inspection     27-Mar-2008
-   [4]Follow-Up Inspection   25-Sep-2007
-   [5]Follow-Up Inspection   30-Aug-2007
+   Type                    Document Details
+   [1]Routine Inspection   21-Jun-2012
+   [2]Routine Inspection   23-Feb-2012
+   [3]Routine Inspection   13-May-2009
+   [4]Routine Inspection    4-Nov-2008
+   [5]Routine Inspection   27-Mar-2008
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6400BF9F1197D05E882575B8004599E4?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/720DC46B44B4E828882574FA0047A8B1?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8E3F8D7CF42B36868825741C0042204D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/23DAFE5357B0D9298825736300423E10?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/886C7A45C2F5048888257354000113A1?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/0017CFB4CE87287288257A3200373753?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2902FD272A83EC97882579B0002D55D5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6EA7C0F9DB7D3E8D8825796E006769AF?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/892FD1997C9911948825796F0048ABBC?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BD2FD451E71F4ACE88257970001EEC50?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

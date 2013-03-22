@@ -15,19 +15,19 @@ FIAMO ITALIAN KITCHEN
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     11-Jan-2010
-   [2]Follow-Up Inspection   25-Nov-2009
-   [3]Follow-Up Inspection   24-Nov-2009
-   [4]Follow-Up Inspection   23-Nov-2009
-   [5]Routine Inspection     20-Nov-2009
+   [1]Routine Inspection     30-May-2012
+   [2]Routine Inspection      9-Feb-2012
+   [3]Follow-Up Inspection    6-Feb-2012
+   [4]Follow-Up Inspection   16-Jan-2012
+   [5]Routine Inspection     13-Jan-2012
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EA1096C8079FD97C882576AB0039F030?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/82F7B1F81960D83A8825768000481435?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/73EC34F968ABE5958825767B00480E29?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C9CE233A1097607F8825767B00480E2E?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/96ECB805F98CB0B58825767900481386?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/771545709BE6A8B988257A1100276F5B?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9AB8BD78862DC36A882579A200323170?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3088BC9C42A6F009882579A1002CDA6E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3FABECFA16FA9D2C8825798A002EFDC3?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3A6DAD898D186E9D8825798A002EFDC6?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

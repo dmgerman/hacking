@@ -14,20 +14,20 @@ JAMES BAY CARE CENTRE
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection      5-Mar-2010
-   [2]Routine Inspection      5-Aug-2009
-   [3]Routine Inspection     18-Feb-2009
-   [4]Follow-Up Inspection   12-Aug-2008
-   [5]Routine Inspection      7-Aug-2008
+   Type                    Document Details
+   [1]Routine Inspection    6-Mar-2012
+   [2]Routine Inspection   12-Sep-2011
+   [3]Routine Inspection   18-Mar-2011
+   [4]Routine Inspection   30-Aug-2010
+   [5]Routine Inspection    5-Mar-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B41E6C471DC46ACC882576E2002DBF92?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/33C7C94401A766358825760C007A8B0A?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/95AE394A83ABE7E1882575640047C7CC?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B5DCF97F2E949A25882574A7004294B9?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F8A8B21A857E1F1B882574A100423D14?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A96F7365A96E6087882579BC002E4C76?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7D0D5044A3FC1F528825796B007F4106?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EC3E10A0DA75C9368825796C001BD913?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1959A2246FA7DB3A8825796C001D7192?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/575007E5C3610C668825796D003F1BBB?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

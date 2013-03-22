@@ -1,7 +1,7 @@
 STARBUCKS COFFEE CO. #4223
 
    Facility Location:
-   97 1644 Hillside Avenue
+   97 - 1644 Hillside Avenue
    Victoria
 
    Facility Information:
@@ -15,19 +15,19 @@ STARBUCKS COFFEE CO. #4223
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection    3-Sep-2009
-   [2]Routine Inspection   26-Sep-2008
-   [3]Routine Inspection   14-Sep-2007
-   [4]Routine Inspection    1-Sep-2006
-   [5]Routine Inspection   19-Apr-2006
+   [1]Routine Inspection   29-Feb-2012
+   [2]Initial Inspection   17-Feb-2012
+   [3]Routine Inspection   19-Jan-2012
+   [4]Routine Inspection   13-Oct-2010
+   [5]Routine Inspection    3-Sep-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F4B4F1F7F5D1D9A488257629007A7F65?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E378ECBFAD5F9F8A882574D500423284?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5DFB55DD45B7385D8825735B00423B12?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CE44537DFF5B66F4882571DE00429726?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7CCA2042FB735E1A882571570042B2D1?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5FF82C61A44B9F04882579B7002C455E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C2586102B60AD232882579AD002E017C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5D938FACC220429788257990002E4135?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EB424505398F5BB68825796C00426E4E?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5BBCCD75CAE3B97F8825796E0017C3B2?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

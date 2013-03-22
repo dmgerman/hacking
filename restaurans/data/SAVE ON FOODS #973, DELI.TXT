@@ -1,7 +1,7 @@
 SAVE ON FOODS #973, DELI
 
    Facility Location:
-   172 Wilson Street
+   100 172 Wilson Street
    Victoria
 
    Facility Information:
@@ -15,19 +15,19 @@ SAVE ON FOODS #973, DELI
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   11-Sep-2009
-   [2]Routine Inspection      8-Sep-2009
-   [3]Routine Inspection      4-Sep-2008
-   [4]Follow-Up Inspection    2-Oct-2007
-   [5]Routine Inspection     27-Sep-2007
+   [1]Routine Inspection      1-Nov-2011
+   [2]Complaint Inspection   24-Aug-2011
+   [3]Complaint Inspection   29-Nov-2010
+   [4]Routine Inspection      3-Nov-2010
+   [5]Follow-Up Inspection   11-Sep-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/013E3F40FD0385BD882576330073EEBD?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5281384FB81918698825762F007A910D?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F588F25AF7A9B507882574BD0042357A?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/233BA5CF172B3E6B8825736A00423C3F?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/06C0542D025FE02C882573650042397D?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BFAEA88C86E000E48825796B007EB967?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EFFFCC6FA594A1448825796C00002CC9?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FBE73D5E6AA7B85F8825796C003BB21E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/57BFE866C51C312C8825796C003EBFB8?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/16F6428970272C768825796E00161A04?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

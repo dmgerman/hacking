@@ -15,19 +15,19 @@ NORTH PARK CENTRE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     10-Aug-2009
-   [2]Routine Inspection     16-Feb-2009
-   [3]Follow-Up Inspection   21-Feb-2008
-   [4]Routine Inspection     22-Jan-2008
-   [5]Follow-Up Inspection   24-Jan-2007
+   [1]Routine Inspection      2-Mar-2012
+   [2]Routine Inspection     26-Jul-2011
+   [3]Routine Inspection     29-Mar-2011
+   [4]Follow-Up Inspection   27-May-2010
+   [5]Routine Inspection     25-May-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/57660870C4F7059E88257611007AC709?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2BF8E70879D8D235882575620047AE35?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/551C8BA6F84A5FED882573F90047BBDF?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6D2C11C88820760A882573DC0047C3C2?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9B1DDE15B4D5154A882572710047AD0B?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DA0151B5F2EBD0E3882579B7002C4311?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/86F679F17A48B5068825796C0000C47D?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E201F88D9609F9208825796C0016473E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FA0465C6F8C908A88825796D000F1493?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8F02C95DC2AE0D8B8825796D0013CCE9?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

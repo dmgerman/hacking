@@ -15,15 +15,17 @@ SANCTUARY YOUTH CENTRE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   15-Apr-2008
-   [2]Routine Inspection   13-Mar-2007
-   [3]Routine Inspection   13-Jan-2006
+   [1]Routine Inspection   13-Jun-2012
+   [2]Routine Inspection   15-Apr-2008
+   [3]Routine Inspection   13-Mar-2007
+   [4]Routine Inspection   13-Jan-2006
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0820CDEBDCA8CE608825742F00422616?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DE0CAD4448F41A16882572A000423744?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D663538B7668C0B3882570FB005BDA00?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/D3F727BEB05B75C588257A1F003BCA81?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F5F9E7DF5C2F276688257970001DD785?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/72DC420B323A1CFC8825797000641F51?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2C89BF6C105769B688257971002A2886?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

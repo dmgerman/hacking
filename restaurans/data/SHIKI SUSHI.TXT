@@ -14,16 +14,20 @@ SHIKI SUSHI
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   10-May-2010
-   [2]Routine Inspection    5-May-2010
-   [3]Initial Inspection   29-Apr-2010
+   Type                      Document Details
+   [1]Follow-Up Inspection    5-Apr-2012
+   [2]Follow-Up Inspection    2-Apr-2012
+   [3]Routine Inspection     28-Mar-2012
+   [4]Follow-Up Inspection    1-Nov-2011
+   [5]Routine Inspection     31-Oct-2011
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/02550DD95203BCBA88257722002B6598?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0F7C7A329C3D9F368825771D0028798E?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2E5287664D3E6850882577170028D005?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B3FC80D87215DA5C882579D9002CBD6A?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/09E5535E132F5663882579D700295220?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E644DFE0D0DC6533882579D20029AF53?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/38932522369A91158825796B007EBCE2?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2A6990E6FF6B473F8825796B007EBBD3?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

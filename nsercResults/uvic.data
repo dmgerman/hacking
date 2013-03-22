@@ -1,12 +1,8 @@
 "Year";"Name";"Title";"Years";"Amount"
-2007;Gooch, Amy;Preserving Salience By Maintaining Perceptual Differences for Image Creation and Manipulation;5;18000
-2007;Gooch, Bruce;Digital Image Forensics;5;19000
-2007;Horsepool;Profile-guided code optimization;5;48000
-2007;Srinivasan, Venkatesh;Randomness and complexity;5;20500
-2007;Tzanetakis, George;Sound source description for music information retrieval;5;20000
-2007;Wadge, Bill;Infinitesimal and intensional software;5;23000
 2008;Olesky, Dale;Spectral analysis of sign/zero-nonzero patterns, positivity of principal minors and primitive;5;21000
 2008;Wu, K;Perception-based wireless sensor networks;5;19600
+2008;Branzan Albu, A;A computer vision-based framework for human motion analysis with applications to elderly health care;5;20000
+2008;Goodenough, DG;Advanced computational systems for environmental monitoring;5;25000
 2009;Myrvold, WJ;Finding torus obstructions/graph theory and algorithms for chemistry;5;30000
 2009;Ruskey, F;Efficient algorithms for sequencing, counting, manipulating and visualizating discrete structures;5;30000
 2009;Tory, MK;Empirical examination of design issues in multidimensional visualization;5;35000
@@ -27,3 +23,6 @@
 2011;Thomo, Alex AI;Extracting intelligence from an interconnected world of data;5;29000
 2011;Whitesides, Sue S;Robotics and geometry;5;33000
 2011;Wyvill, Brian BLM;Interactive implicit modelling;5;33000
+2012;Gooch, Amy;Framework for Preserving Salience through Perceptual Differences in Spectral Image Creation and Manipulation: From Scene to Display;5;17000
+2012;Srinivasan, Venkatesh;Information Extraction from Interconnected Data: An Algorithmic Study;5;22000
+2012;Tzanetakis, George;Time Information for Multimedia Processing and Analysis;5;28000

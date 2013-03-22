@@ -15,17 +15,19 @@ CAFE MELA AT THE BELVEDERE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   14-Jan-2010
-   [2]Routine Inspection     21-Dec-2009
-   [3]Initial Inspection      2-Dec-2009
-   [4]Initial Inspection     23-Nov-2009
+   [1]Routine Inspection     16-Apr-2012
+   [2]Routine Inspection     17-Oct-2011
+   [3]Routine Inspection     10-Feb-2011
+   [4]Routine Inspection      9-Aug-2010
+   [5]Follow-Up Inspection   14-Jan-2010
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FE53D6A17F9C13F3882576AE003CD2BE?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/50505B08DE61548D8825769600481FE4?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F6954D29F9B0A2058825768300481D82?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/47B6BDE9936189F28825767A004811EC?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7F76EC08725A27C3882579E500270CDC?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/178A1CAF00CC47248825796B007EE4BC?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4D4D76ACF8CB0F988825796C00328D91?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2BF0AEF230E984F48825796C0057826D?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D823EB2564A2ED348825796D005E0E0B?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

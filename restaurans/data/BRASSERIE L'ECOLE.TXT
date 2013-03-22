@@ -15,19 +15,19 @@ BRASSERIE L'ECOLE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   20-Nov-2009
-   [2]Routine Inspection   24-Sep-2008
-   [3]Routine Inspection   29-Nov-2007
-   [4]Routine Inspection   14-Mar-2007
-   [5]Routine Inspection   23-Mar-2006
+   [1]Routine Inspection   13-Jun-2012
+   [2]Routine Inspection   20-Nov-2009
+   [3]Routine Inspection   24-Sep-2008
+   [4]Routine Inspection   29-Nov-2007
+   [5]Routine Inspection   14-Mar-2007
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ACDE1C026C94BAD18825767A004811D6?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FB080D101A5BD755882574D20042380B?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6BB5C5DE29E029FF882573A50047A1ED?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/03BA96E1CAED39DD882572A10042493B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/52A8E6DEDE1F29218825713D0050C7D4?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/3DB74643C558A19288257A20003C6EF6?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F00470642F6083698825796D00725488?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9B9F82FDAF13A8E08825796F0069A31A?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AE7FF1DF0F63788A88257970002C1EF2?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0E946C06D1198BCD88257970006D02CE?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

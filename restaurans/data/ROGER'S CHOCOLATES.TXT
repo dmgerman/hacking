@@ -15,17 +15,19 @@ ROGER'S CHOCOLATES
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   28-Jul-2009
-   [2]Routine Inspection   25-Aug-2008
-   [3]Routine Inspection    9-Aug-2007
-   [4]Routine Inspection    1-Feb-2006
+   [1]Routine Inspection   12-Oct-2011
+   [2]Routine Inspection   24-Aug-2010
+   [3]Routine Inspection   28-Jul-2009
+   [4]Routine Inspection   25-Aug-2008
+   [5]Routine Inspection    9-Aug-2007
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/153C7AD19E40049688257603007AA515?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/35184FA40D3FD291882574B300426944?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/83DF180E60796ED488257335004239DB?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E7F61E1661AEAC558825710C004A111A?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9814F04969FB4B7E8825796B007EF82C?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F40B420D4046AE738825796C0065553E?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D86A501286C1F20F8825796E002CB929?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/597B16FF4CCF9D338825796F00713B08?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C3444A0C15021417882579700055908B?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

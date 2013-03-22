@@ -15,9 +15,12 @@ cg <- function(var, province) {
 }
  
 
-#x<-readHTMLTable("./nsercCS2011.html")
+#nserc<-readHTMLTable("./nsercCS2011.html")
+#
 #names(nserc)[6]<-"amount"
-#nserc$amount<-as.numeric(as.character(gsub(',', '', nserc$amount)))
+
+# nserc$amount = as.numeric(as.character(gsub('(\\$|,)', '', nserc$amount)))
+
 
 x<-read.csv("nserc2011.csv", sep=";")
 nserc<-x

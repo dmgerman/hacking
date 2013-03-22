@@ -15,19 +15,19 @@ JAMES BAY FISH & CHIPS
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    5-Mar-2010
-   [2]Routine Inspection      5-Mar-2010
-   [3]Routine Inspection     13-Aug-2009
-   [4]Follow-Up Inspection   19-Feb-2009
-   [5]Routine Inspection     18-Feb-2009
+   [1]Routine Inspection      5-Jun-2012
+   [2]Routine Inspection     24-Nov-2011
+   [3]Follow-Up Inspection   24-Nov-2011
+   [4]Follow-Up Inspection   19-May-2011
+   [5]Routine Inspection     18-May-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A78C2C18FFCC6673882576E2002DBF87?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A3752F42928A1242882576E2002DBF89?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8BC2F31087E675E788257614007A866A?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/476C0D134EEE3CF9882575650047A85D?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2A7A13D573CC6D92882575640047C7DA?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7406115645CCBA4F88257A1C00393A4F?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/27827D9A857DDAA38825796B007E6E6A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2E26D0B0AC94F5678825796B007E6E5F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EA88AB3F544AD2EB8825796C0008B3CD?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E6DD876D44CA79868825796C00092695?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

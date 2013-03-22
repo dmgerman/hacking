@@ -15,19 +15,19 @@ FERRIS' OYSTER BAR
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    8-Dec-2009
-   [2]Routine Inspection      3-Dec-2009
-   [3]Routine Inspection     30-Oct-2008
-   [4]Routine Inspection     25-Jul-2007
-   [5]Routine Inspection     24-Jan-2007
+   [1]Follow-Up Inspection   16-May-2012
+   [2]Routine Inspection     15-May-2012
+   [3]Follow-Up Inspection   11-Feb-2011
+   [4]Routine Inspection      9-Feb-2011
+   [5]Routine Inspection     22-Jun-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3D674F546E6988D08825768900481A16?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BCCD9EBBC3656F1688257684004811B4?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/25609C0602195DF8882574F50042165C?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/80A488C694FF48DA8825732A0074365C?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/45FA4070B9882A2B882572700047B3E6?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/367048AA998EC8C788257A0B00278A13?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/77650DCDE0CA0D4B88257A0B00278A18?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/83F231AB76D3336D8825796C00304F81?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/227BBF317E61208D8825796C00347DE9?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0CA400A3D238C2E68825796C007AB541?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

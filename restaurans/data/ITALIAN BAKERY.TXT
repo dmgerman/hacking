@@ -15,19 +15,19 @@ ITALIAN BAKERY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   12-Nov-2009
-   [2]Routine Inspection      9-Nov-2009
-   [3]Routine Inspection     28-May-2009
-   [4]Follow-Up Inspection   21-Nov-2008
-   [5]Routine Inspection     18-Nov-2008
+   [1]Follow-Up Inspection   14-Mar-2012
+   [2]Routine Inspection      7-Mar-2012
+   [3]Routine Inspection     17-Nov-2010
+   [4]Follow-Up Inspection   12-Nov-2009
+   [5]Routine Inspection      9-Nov-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/403C84DD7BB58EE98825766F00480D0C?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A3852E71BA2BAB8E8825766B004813A2?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BC0F361C9C2F8469882575C700423964?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/24E878B2727C454F8825750D0047A081?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/724A899FB7229CE588257508004796F4?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CC0D33F9A88A53F5882579C40026CCDC?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/82FA0391D3381826882579BE002F0B8D?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AF5F125019F689D38825796C003CC9A0?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2E0B4AD250D7C9DD8825796D002342B9?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EDA5A537CCC0B6AB8825796D007D2D83?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

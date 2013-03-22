@@ -15,17 +15,19 @@ MCPHERSON THEATRE, LOUNGE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection    6-Mar-2009
-   [2]Routine Inspection    7-Mar-2008
-   [3]Routine Inspection    9-Mar-2007
-   [4]Routine Inspection   20-Mar-2006
+   [1]Routine Inspection   13-Jun-2012
+   [2]Routine Inspection    6-Mar-2009
+   [3]Routine Inspection    7-Mar-2008
+   [4]Routine Inspection    9-Mar-2007
+   [5]Routine Inspection   20-Mar-2006
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/42BEABC393C949188825757600422A08?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A9BC47B70A9FC97A8825740A0042199E?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6D588E7D6CE582CF8825729F004233EA?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/822DE60761EA40AB8825713A0049F54C?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/E4EFC506DB4B807188257A20003C6EF8?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9C34E938341E13E58825796F00053501?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D97B31BA4665CD4C8825797000206ED8?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D89862BC139D74F188257970006EB8AC?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C217D2EC82D8B24D8825797100199AEF?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

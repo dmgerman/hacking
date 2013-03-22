@@ -14,20 +14,20 @@ SUPERIOR CAFE
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   18-Jun-2009
-   [2]Routine Inspection   13-Jan-2009
-   [3]Routine Inspection   20-Jun-2008
-   [4]Routine Inspection   22-Feb-2008
-   [5]Routine Inspection    3-Aug-2007
+   Type                      Document Details
+   [1]Routine Inspection     22-May-2012
+   [2]Routine Inspection     16-Nov-2011
+   [3]Routine Inspection     18-May-2011
+   [4]Follow-Up Inspection   16-Nov-2010
+   [5]Routine Inspection     10-Nov-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5ADE3FACACAFD564882575DC007A7BB3?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D1D10732A3A07B0A882575400047A734?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/722D58960E1E8E268825747300427C03?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9BD723FA2EFCA813882573FC0047BAA3?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/716313DD201522588825733200423755?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1C2B5C766530AC8488257A0E0027D774?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A051C7A58264730C8825796B007E8E2F?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B72CF726AFAA734B8825796C000901CF?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4F33536B120022108825796C003D3F57?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5BE8405C0760196C8825796C003D4070?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

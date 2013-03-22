@@ -15,19 +15,19 @@ RED KETTLE RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     10-Feb-2010
-   [2]Routine Inspection     11-Aug-2009
-   [3]Routine Inspection      3-Feb-2009
-   [4]Follow-Up Inspection   11-Aug-2008
-   [5]Routine Inspection     31-Jul-2008
+   [1]Routine Inspection     16-May-2012
+   [2]Follow-Up Inspection   23-Nov-2011
+   [3]Routine Inspection     17-Nov-2011
+   [4]Routine Inspection      7-Apr-2011
+   [5]Routine Inspection      5-Aug-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E2CB3820C7D032A0882576CA002F359B?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/275495779A12900A88257612007ABC3F?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7B12C4668D8062E6882575550047C379?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/94010F968DCD540D882574A500424FE6?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6090789897322BCC8825749A0042414F?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5D59C36BF8C56B5F88257A0B002789EE?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1D5E237C0577875D8825796B007E7B57?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0B6F9644746199C38825796B007E9036?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/70E57B5137CA0CD98825796900060A11?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8F4DA4F1D97BE8A98825796C0070A670?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ VICTORIA GIFT PLUS
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   12-Aug-2009
-   [2]Routine Inspection     10-Aug-2009
-   [3]Routine Inspection     27-Aug-2008
-   [4]Routine Inspection     13-Aug-2007
-   [5]Initial Inspection     19-May-2006
+   [1]Routine Inspection      3-Jul-2012
+   [2]Routine Inspection     13-Jul-2011
+   [3]Routine Inspection     30-Aug-2010
+   [4]Follow-Up Inspection   12-Aug-2009
+   [5]Routine Inspection     10-Aug-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6A4CE8BB761FF37488257613007A9EB4?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D24EA636631A9FF988257613007A9EB3?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9EBF949EF030D823882574B500425B23?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F6E28A3E7D806FE3882573390042376A?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9F35091F93B7D5478825717900428396?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/1A975096DD2AE7A788257A3300383942?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/48B69E34DFBF90238825796C00013F65?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/92BC11EB71111AC28825796C00608C2F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BC0BF8816C650D758825796E00200CAE?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1219B4B894F4A3318825796E00200A30?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

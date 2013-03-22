@@ -14,20 +14,20 @@ BARTHOLOMEW'S
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Follow-Up Inspection    1-Dec-2009
-   [2]Follow-Up Inspection   29-Oct-2009
-   [3]Follow-Up Inspection   23-Oct-2009
-   [4]Routine Inspection     20-Oct-2009
-   [5]Routine Inspection     27-May-2009
+   Type                    Document Details
+   [1]Routine Inspection   13-Jul-2012
+   [2]Routine Inspection   19-Dec-2011
+   [3]Routine Inspection   15-Jul-2011
+   [4]Routine Inspection   19-Jan-2011
+   [5]Routine Inspection    4-Oct-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/157707557A10A9448825768200481937?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7856FE53CA3BD023882576600042C4AE?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3B1C560AF273A5498825765D0073E561?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/48F41026E29E060488257658007A9964?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC804C6FE89E16A6882575C500440D34?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/5107B6EF202241E288257A3F002D53A4?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A6427D407F0030A888257971003FF7FB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/51364059C34A88948825796C00011755?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1636F63878D7766D8825796C0038EA04?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6B749B4B08577D178825796C00456A26?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

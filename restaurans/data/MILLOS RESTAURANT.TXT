@@ -14,20 +14,20 @@ MILLOS RESTAURANT
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection     25-Mar-2010
-   [2]Routine Inspection     18-Mar-2010
-   [3]Routine Inspection     20-Feb-2009
-   [4]Follow-Up Inspection   27-Aug-2008
-   [5]Routine Inspection     19-Aug-2008
+   Type                    Document Details
+   [1]Routine Inspection   12-Jan-2012
+   [2]Routine Inspection   24-Jun-2011
+   [3]Routine Inspection   17-Sep-2010
+   [4]Routine Inspection   25-Mar-2010
+   [5]Routine Inspection   18-Mar-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC1FB5F3BCFFFA35882576F4002C808A?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E781C44782498DBF882576ED002B1A56?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/92A077A3C7874A5688257568007910A4?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C207122FC35CDDD6882574B400426945?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/758F63B1A83D6D20882574AD0042462C?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6CB65ED732592EAD88257986002C84E8?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F178915077ADB7698825796C00022ABB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/810D9A4F055D33B08825796C004CBCB5?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A4F0C60221610FDF8825796D002AC72D?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C2FE5FF2E65E2C958825796D002E02BC?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ VIC'S BAR
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   15-Mar-2010
-   [2]Follow-Up Inspection   12-Mar-2010
-   [3]Routine Inspection     11-Mar-2010
-   [4]Follow-Up Inspection   22-Sep-2009
-   [5]Routine Inspection     21-Sep-2009
+   [1]Routine Inspection     13-Aug-2012
+   [2]Follow-Up Inspection   24-Nov-2011
+   [3]Routine Inspection     22-Nov-2011
+   [4]Follow-Up Inspection   17-May-2011
+   [5]Routine Inspection     16-May-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2144D1A5F198FEEB882576EA002B1940?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4E1804557A3A6CE5882576EA002B1942?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7D50366568445B45882576E5002DABCA?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6A73EC16F002472A8825763B007AB3B2?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D1365F1DFE0F52298825763A0073DF3F?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/7B4F4FF36AA3FB2688257A5C0034783C?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/467EEB412BB7C6A58825796B007E6F05?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/450AB18045702E538825796B007E85FC?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B02D8010A6F5019C8825796C00093940?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/690777AFFA87D24F8825796C000A1018?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

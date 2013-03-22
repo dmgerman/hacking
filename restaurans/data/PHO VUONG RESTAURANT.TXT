@@ -6,7 +6,7 @@ PHO VUONG RESTAURANT
 
    Facility Information:
 
-   Facility Number:                 64007419
+   Facility Number:                 64008520
    Facility Type:                   Food (Restaurant)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -14,14 +14,16 @@ PHO VUONG RESTAURANT
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Follow-Up Inspection   7-Apr-2010
-   [2]Initial Inspection     3-Mar-2010
+   Type                    Document Details
+   [1]Initial Inspection   29-Jun-2012
+   [2]Initial Inspection   26-Jun-2012
+   [3]Initial Inspection   22-Jun-2012
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [4]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC08056BDCE86BCD882577020028A490?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C92E2DDA05655E2F882576DE002D4DC8?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/23D84748696A4A2188257A3200373777?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/99068213989FE13588257A2D00328BC7?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/555E8FB124C563C488257A2B00308B1C?OpenDocument
+   4. http://www.viha.ca/disclaimer.htm

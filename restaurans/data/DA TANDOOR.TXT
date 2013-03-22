@@ -15,19 +15,19 @@ DA TANDOOR
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     20-Feb-2009
-   [2]Routine Inspection      5-Nov-2008
-   [3]Follow-Up Inspection   22-Apr-2008
-   [4]Follow-Up Inspection   28-Mar-2008
-   [5]Routine Inspection     26-Mar-2008
+   [1]Routine Inspection     31-May-2012
+   [2]Routine Inspection     23-Feb-2012
+   [3]Routine Inspection     16-Aug-2011
+   [4]Follow-Up Inspection   20-Oct-2010
+   [5]Follow-Up Inspection    6-Oct-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/636FE9E84287826A88257568007910A9?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/12CB88EAC5227CBA882574FB0047BBA2?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F77DC58E900B50648825743600422C78?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2BD874F45B9EF6038825741C00421F9A?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D11713E66C75A1C18825741B00422A62?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/659388F4C75C47AC88257A120027375A?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BCACCF22FB277664882579B0002D55DF?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/43CFA938844581898825796C00004CB0?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DFC7BCD45B8E8B0F8825796C0040D181?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/908F81B75A8F86B48825796C0043FA93?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

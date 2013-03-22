@@ -6,7 +6,7 @@ UPSTAIRS CABARET
 
    Facility Information:
 
-   Facility Number:                 64001870
+   Facility Number:                 64008253
    Facility Type:                   Food (Licensed Premises)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -15,15 +15,13 @@ UPSTAIRS CABARET
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection      5-Jan-2009
-   [2]Routine Inspection     31-Oct-2007
-   [3]Follow-Up Inspection   10-Mar-2006
+   [1]Follow-Up Inspection   19-Dec-2011
+   [2]Routine Inspection      1-Dec-2011
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [3]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9FCC7605274A3DCF882575380047ABBC?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E25FDE3D6450F0E388257388004241E0?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AC4E67A2009B326D88257132004D585F?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F7D12EF9DF13DCB38825796F0031D5B0?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/12CD6F11DAE7E4B48825796F0031D5B5?OpenDocument
+   3. http://www.viha.ca/disclaimer.htm

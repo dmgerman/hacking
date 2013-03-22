@@ -15,19 +15,19 @@ CAFE BLISS
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection      8-Apr-2010
-   [2]Follow-Up Inspection   12-Aug-2009
-   [3]Follow-Up Inspection   10-Aug-2009
-   [4]Follow-Up Inspection    8-Jul-2009
-   [5]Follow-Up Inspection    2-Jul-2009
+   [1]Routine Inspection      7-May-2012
+   [2]Routine Inspection      4-Nov-2011
+   [3]Follow-Up Inspection    4-Nov-2011
+   [4]Follow-Up Inspection   10-May-2011
+   [5]Routine Inspection      5-May-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A5D19815FE0006A18825770500283558?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B92C80706A44DFC388257613007A9EC1?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/805785FBDDE8971D88257611007AC7BC?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B893B24C4D3327EC882575EF007A8657?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0921195EC54015F4882575E9007A794D?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1133203378D138FD882579FB0029AA9F?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/50FB991A92AD00B18825796B007E73B5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6840893B8FE3DFDE8825796B007EA9CC?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EECE6352EABFE1358825796C000A8F64?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3BEF681A09B9B5C88825796C000C9274?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

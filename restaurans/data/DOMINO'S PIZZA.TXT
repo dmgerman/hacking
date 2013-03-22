@@ -14,20 +14,20 @@ DOMINO'S PIZZA
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   18-Nov-2009
-   [2]Routine Inspection   11-Jun-2009
-   [3]Routine Inspection    9-Dec-2008
-   [4]Routine Inspection   24-Jun-2008
-   [5]Routine Inspection   11-Jan-2008
+   Type                      Document Details
+   [1]Follow-Up Inspection    1-Aug-2012
+   [2]Routine Inspection     19-Jun-2012
+   [3]Routine Inspection      3-Jan-2012
+   [4]Routine Inspection     20-Jun-2011
+   [5]Routine Inspection     25-Jan-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B8E99A1B32F070BB8825767400481C44?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/41F250AABFB500CA882575D80073BD34?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2F4C4886D6BCB2028825751C0047A418?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BB397F5326C3A8DD8825747500427299?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/704718A5AF2CDBD9882573D1005B713F?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/D2467D300D160B0588257A500029467B?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/660107EF81BF30C388257A25002B2095?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/36C6A0A42C75EBCE8825798200305DFA?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B1076B6C6B1F099C8825796C0002AF05?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F33D7719902D89098825796C0038CE8B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

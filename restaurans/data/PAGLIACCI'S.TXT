@@ -15,19 +15,38 @@ PAGLIACCI'S
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   18-May-2010
-   [2]Routine Inspection     11-May-2010
-   [3]Follow-Up Inspection   27-Jul-2009
-   [4]Routine Inspection     16-Jul-2009
-   [5]Routine Inspection     19-Jan-2009
+   [1]Routine Inspection     24-May-2012
+   [2]Routine Inspection     24-May-2012
+   [3]Follow-Up Inspection   26-Apr-2012
+   [4]Routine Inspection     25-Apr-2012
+   [5]Routine Inspection      4-Oct-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0432345B2E68E2798825772A0028D75F?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D60AE5294DD77A718825772300285262?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1EC34BA11019784C882576020073C967?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5F1926F2E97593FD882575F8007A8662?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/55BADC0503E56A9E882575450047ACEB?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/05567A41DAC031F588257A1200273740?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/13B19DBF21C7431088257A1200273748?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A404A28BB6B0E6E6882579F200274263?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EAD83723DCEC5FD0882579ED0026E5F2?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BC9CFA8EE42C67C48825796B007F097B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm
+
+PAGLIACCI'S
+
+   Facility Location:
+   1011 Broad Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 6010290
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   [1]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
+
+References
+
+   1. http://www.viha.ca/disclaimer.htm

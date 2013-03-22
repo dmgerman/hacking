@@ -15,19 +15,19 @@ EMBASSY MOTOR INN
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     23-Oct-2009
-   [2]Routine Inspection      8-Oct-2008
-   [3]Follow-Up Inspection    4-Feb-2008
-   [4]Follow-Up Inspection    1-Feb-2008
-   [5]Routine Inspection     31-Jan-2008
+   [1]Follow-Up Inspection   28-May-2012
+   [2]Follow-Up Inspection   22-May-2012
+   [3]Routine Inspection     18-May-2012
+   [4]Routine Inspection     14-Nov-2011
+   [5]Routine Inspection     25-May-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BFF2F01152A5EC498825765D0073E514?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/18509E33A08D00C8882574EA0079BAC9?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/57B8B0350BCDAB23882573E70047C131?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/96FC6BB41CF98224882573E70047C165?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/464B080D4FA02A50882573E70047C166?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B522E46BD9CFCC8A88257A170034D4CC?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3AA4308AE04CD5F688257A0B00278A8A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2621C81B0D89386288257A0B00278A90?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8DF6E7C02FF9B8548825796B007E95BA?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F71F0C1EB6ADD9C08825796C0007B705?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

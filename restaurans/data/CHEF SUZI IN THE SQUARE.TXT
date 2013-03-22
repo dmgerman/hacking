@@ -15,15 +15,19 @@ CHEF SUZI IN THE SQUARE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   26-Mar-2010
-   [2]Routine Inspection   15-Sep-2009
-   [3]Initial Inspection    4-Sep-2009
+   [1]Routine Inspection   22-May-2012
+   [2]Routine Inspection   24-Nov-2011
+   [3]Routine Inspection   17-May-2011
+   [4]Routine Inspection   14-Sep-2010
+   [5]Routine Inspection   26-Mar-2010
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5FDE24272C911C77882576F7002BF2B8?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/55CBF62884C80F2C88257635007A93BA?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7BEB81591CF4DD2D8825762900268E70?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/34E635BFE3B3EC9988257A1100276F6A?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0E732BF796EBCA6D8825796B007E7027?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C94A9A6C3064ACFF8825796C00094B93?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CF3B676AD9B013168825796C00421C1C?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EB7A662974C42C838825796900072C92?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

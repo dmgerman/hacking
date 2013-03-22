@@ -7,21 +7,27 @@ ISLAND MEAT & SEAFOOD
    Facility Information:
 
    Facility Number:                 64007348
-   Facility Type:                   Food (Other)
+   Facility Type:                   Food (Take Out)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
 
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   16-Mar-2010
-   [2]Initial Inspection    9-Mar-2010
+   Type                      Document Details
+   [1]Follow-Up Inspection   21-Oct-2011
+   [2]Routine Inspection     18-Oct-2011
+   [3]Follow-Up Inspection   23-Mar-2011
+   [4]Routine Inspection     16-Mar-2011
+   [5]Routine Inspection     27-Jul-2010
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/16101B3AA4AA836C882576EC0029BCB9?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/51433DB7794ACC1C882576E5002DABF5?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E9703FD9B406E3EC882579690004EA59?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3AA209C5BA267B738825796B007EE4FA?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B2A26F851D9146A18825796C0018E62B?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1954150E658BA06C8825796C001C7826?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A00D63C03B3EDF108825796C0070E68C?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

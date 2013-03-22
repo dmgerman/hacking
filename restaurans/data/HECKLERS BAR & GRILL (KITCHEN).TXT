@@ -15,19 +15,19 @@ HECKLERS BAR & GRILL (KITCHEN)
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   21-Apr-2010
-   [2]Routine Inspection     21-Apr-2010
-   [3]Follow-Up Inspection    4-Dec-2009
-   [4]Routine Inspection     27-Nov-2009
-   [5]Routine Inspection      4-Jun-2009
+   [1]Follow-Up Inspection   24-Jul-2012
+   [2]Routine Inspection     12-Jul-2012
+   [3]Follow-Up Inspection   23-Nov-2011
+   [4]Follow-Up Inspection   13-Oct-2011
+   [5]Routine Inspection     11-Oct-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C10E4376B15D7FA98825770E0028388F?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F19D1FC06D6E26C08825770E00283890?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC20C353DE06676588257689004819EB?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/87192AEA5399C1768825768000481596?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A8BA53A72BB96F34882575CE007AB7A2?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/B8D78EA7A86B6BA588257A48003566CB?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/56B08BFDB2820B2088257A3C002AAAD7?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0E6DE6DBF66F75A68825796B007E7BA4?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5B2C4D50409FA35F8825796B007EEBF1?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/71685610DFC3AFDD882579690004EDCD?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

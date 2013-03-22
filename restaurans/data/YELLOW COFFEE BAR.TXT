@@ -15,19 +15,19 @@ YELLOW COFFEE BAR
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   8-Jun-2009
-   [2]Routine Inspection     1-Jun-2009
-   [3]Follow-Up Inspection   7-Aug-2008
-   [4]Follow-Up Inspection   3-Aug-2008
-   [5]Routine Inspection     3-Aug-2008
+   [1]Routine Inspection     11-May-2012
+   [2]Routine Inspection     24-Jun-2011
+   [3]Routine Inspection     16-Jun-2010
+   [4]Follow-Up Inspection    8-Jun-2009
+   [5]Routine Inspection      1-Jun-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3924BD66068A2076882575D10073BCFF?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/64003055BAA80693882575CC007A8313?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/205DD5EDB9469FD9882574A00042374E?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/111B1996154E78318825749E00424A6B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5EFD5982D54FEB338825749E00424A6D?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/834CEC45A50AD24F882579FD00271D29?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6F8355A6F87097B08825796C000204A0?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/658067E33CC406C98825796C007346C4?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B81E3E4275BAA39B8825796E0053F2F5?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7C6244EA2E4B78B68825796E00580D6C?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

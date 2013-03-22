@@ -15,17 +15,19 @@ KINGS ROAD FOOD MARKET
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   18-Jun-2009
-   [2]Routine Inspection   23-Jul-2008
-   [3]Routine Inspection    3-Aug-2007
-   [4]Routine Inspection    8-Feb-2006
+   [1]Routine Inspection    6-Jan-2012
+   [2]Routine Inspection   20-Jun-2011
+   [3]Routine Inspection   22-Jul-2010
+   [4]Routine Inspection   18-Jun-2009
+   [5]Routine Inspection   23-Jul-2008
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BCE9F06AF9FBD26A882575DC007A7BB0?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E5C4446C590E6EC88825749200425BD9?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/34EAED19E9A413F1882573320042370D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/91C40D1649FEDD778825711300483A41?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/825FA9F3C17B0F688825798200305E13?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2C97BB697BF4AAAC8825796C0002AD52?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2A11EB0FDB1730A68825796C0071187E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AE47FAE2EADADF228825796E004BFF9A?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7BDF1949862F36C28825796F007E1F3C?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

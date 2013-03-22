@@ -15,17 +15,19 @@ CATAWAMPUS FUDGE FACTORY
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   28-Apr-2009
-   [2]Routine Inspection   21-Apr-2008
-   [3]Routine Inspection    1-May-2007
-   [4]Routine Inspection   26-Apr-2006
+   [1]Routine Inspection    6-Jun-2012
+   [2]Routine Inspection    9-Jun-2011
+   [3]Routine Inspection    7-Jun-2010
+   [4]Routine Inspection   28-Apr-2009
+   [5]Routine Inspection   21-Apr-2008
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BF3B12E188D23A7A882575A800424184?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/28434307B2E7E5AD8825743500424584?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/87E90A8B33B9F648882572D100422FB4?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C22B9CF6213B6583882571600043EE42?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/871F7B6788279F6588257A170034D493?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/206AE630CC517EC98825796C0003BEF3?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/34069D2CC96CDC6C8825796D00077881?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E9E3485ED9648F6F8825796E00810B13?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/991A3076B75B8F4B88257970001DACCA?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

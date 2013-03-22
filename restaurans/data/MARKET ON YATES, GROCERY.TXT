@@ -15,17 +15,19 @@ MARKET ON YATES, GROCERY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     26-Feb-2009
-   [2]Routine Inspection     12-Mar-2008
-   [3]Routine Inspection      5-Mar-2007
-   [4]Complaint Inspection   16-Jun-2006
+   [1]Follow-Up Inspection   11-Jun-2012
+   [2]Routine Inspection      8-Jun-2012
+   [3]Routine Inspection     24-May-2011
+   [4]Routine Inspection     24-Jun-2010
+   [5]Routine Inspection     26-Feb-2009
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/91343F9E5D04E8C08825756C00479B2D?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED60AF2F7E71CCC48825740D004221F7?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3A883BD0F017E2C28825729900479DCB?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C5B94A5AB0451895882571950043D5B3?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CCDA99C1FD44663D88257A1D003A24A7?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2F23B6E37D16B79288257A1C00393AC5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6953CFFBD243FFA38825796C00081852?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5BBE256A34F782AF8825796C0078EF01?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A7E5554B5E27C9DD8825796F000A1992?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

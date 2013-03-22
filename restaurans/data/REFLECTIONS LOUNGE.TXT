@@ -15,17 +15,19 @@ REFLECTIONS LOUNGE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    4-Sep-2009
-   [2]Initial Inspection     28-Aug-2009
-   [3]Routine Inspection     28-Dec-2007
-   [4]Initial Inspection     28-Nov-2007
+   [1]Routine Inspection      2-Apr-2012
+   [2]Routine Inspection     17-Sep-2010
+   [3]Routine Inspection     10-Sep-2010
+   [4]Follow-Up Inspection    4-Sep-2009
+   [5]Initial Inspection     28-Aug-2009
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F1436E976DA2B0928825762D007A8C36?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C7E383A21EBDBB05882576250073D95E?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6A13DD058C3F1A7F882573C60047B67E?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EB0453B74A76BAA1882573A40047B4C6?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2D7327C7A49FBD9C882579D700295321?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2C6A0CFE3E92D2258825796C004BCA35?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A1913B27D96792348825796C0051B42E?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E5267998DCF786468825796E0017993F?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/65DA7368CC0033828825796E0019A33B?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

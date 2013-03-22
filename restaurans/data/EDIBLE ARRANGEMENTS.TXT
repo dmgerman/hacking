@@ -15,15 +15,19 @@ EDIBLE ARRANGEMENTS
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   13-Jan-2010
-   [2]Routine Inspection    9-Sep-2009
-   [3]Routine Inspection    4-Sep-2009
+   [1]Routine Inspection   23-Apr-2012
+   [2]Routine Inspection   23-Mar-2011
+   [3]Routine Inspection   13-Jan-2010
+   [4]Routine Inspection    9-Sep-2009
+   [5]Routine Inspection    4-Sep-2009
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E72992EC8F8C3AA9882576AD003BE2A6?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8BD339C18B1647EF8825762E007A9477?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/25DD32CB8C2770F58825762E007A947F?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/242558275D073110882579EC002A4C4A?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/68587C3132066B168825796C0019A125?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5E3B1A1A6A1186908825796D005E956A?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AE6BDCEC044B0DA78825796E00170B06?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/204FA4B7649B811B8825796E00171928?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

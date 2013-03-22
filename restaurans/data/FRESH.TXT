@@ -15,17 +15,19 @@ FRESH
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection    3-Mar-2010
-   [2]Routine Inspection    2-Sep-2009
-   [3]Routine Inspection    2-Mar-2009
-   [4]Initial Inspection   28-Jan-2009
+   [1]Routine Inspection   23-Mar-2012
+   [2]Routine Inspection    5-May-2011
+   [3]Routine Inspection    8-Sep-2010
+   [4]Routine Inspection    3-Mar-2010
+   [5]Routine Inspection    2-Sep-2009
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D114150C245AE288882576DE002D4D8B?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BFC251334A6B68AE88257628007A869E?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C84C245660026EF08825757000479BC5?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A9957809D52DAB4C8825754F0047A7E4?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/351E4F5F5992C95A882579CC00298BE1?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/08701132DA6B0FD38825796C000C88BB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/41799D514916BA1E8825796C0056CBAF?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/09B3F080162729888825796D004338A1?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/75376F05D06EA5168825796E00185D23?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

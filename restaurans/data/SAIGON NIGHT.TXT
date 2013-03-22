@@ -1,7 +1,7 @@
 SAIGON NIGHT
 
    Facility Location:
-   102 915 Fort Street
+   102 - 915 Fort Street
    Victoria
 
    Facility Information:
@@ -15,19 +15,19 @@ SAIGON NIGHT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection    8-Apr-2010
-   [2]Routine Inspection     30-Mar-2010
-   [3]Follow-Up Inspection   13-Oct-2009
-   [4]Follow-Up Inspection    6-Oct-2009
-   [5]Routine Inspection     24-Sep-2009
+   [1]Follow-Up Inspection   22-Mar-2012
+   [2]Routine Inspection     15-Mar-2012
+   [3]Routine Inspection      1-Nov-2011
+   [4]Routine Inspection     19-Apr-2011
+   [5]Routine Inspection     15-Apr-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1866D57A0E308CEA88257701002B4A0E?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8D44126CEA99116F882576F90029A4CA?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2B94F7BAEC58267188257651007A8F57?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E6129536F408FC288825764A007AA07A?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CC64DB7C7D70DFFF8825763E007A9B48?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9F43C0A19E9BD6D5882579D700295284?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A5EDD5B5A198CC68882579C5002A1D65?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D0324B8C034F3F4C882579690004E916?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C1BD98AC09D599798825796C000FE909?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/41AC2ADDCE189AFE8825796C00108EB6?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

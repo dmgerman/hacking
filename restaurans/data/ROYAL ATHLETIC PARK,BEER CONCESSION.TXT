@@ -15,15 +15,17 @@ ROYAL ATHLETIC PARK,BEER CONCESSION
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   16-Sep-2008
-   [2]Routine Inspection   25-Jun-2007
-   [3]Routine Inspection   22-Jun-2006
+   [1]Routine Inspection   28-May-2012
+   [2]Routine Inspection   16-Sep-2008
+   [3]Routine Inspection   25-Jun-2007
+   [4]Routine Inspection   22-Jun-2006
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/404F7C0E518C1927882574C8004231C1?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/839180178AF664798825731C006FE794?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/658495B6768E96338825719800428A5C?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8CB6F72E1B11D8AE88257A1100276FB4?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E5A5D7C2D0234B9A8825796F006B2CBA?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CD49CBEE69492F74882579700057C7DB?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/564FE4C1B7AC818288257971000D4BE6?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

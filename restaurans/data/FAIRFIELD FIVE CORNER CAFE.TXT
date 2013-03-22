@@ -15,15 +15,19 @@ FAIRFIELD FIVE CORNER CAFE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   29-Mar-2010
-   [2]Routine Inspection    5-Mar-2009
-   [3]Initial Inspection    9-Jan-2009
+   [1]Routine Inspection   12-Apr-2012
+   [2]Routine Inspection    6-Apr-2011
+   [3]Routine Inspection   29-Mar-2010
+   [4]Routine Inspection    5-Mar-2009
+   [5]Initial Inspection    9-Jan-2009
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B321DAD06E47821E882576F800282E79?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C1B2B536DDE9BACC88257573004795D2?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8D26E61ADA6A0A418825753E0047A9E2?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CB7644FC38B91B94882579E1002AC527?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1BAA2356135430A488257A0100279A4D?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D965C666F514362A8825796D002A0238?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/86512C1A688226158825796F00065C90?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E5B6A6910BB4C8858825796F000D9392?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

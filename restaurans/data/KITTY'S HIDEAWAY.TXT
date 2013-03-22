@@ -15,19 +15,19 @@ KITTY'S HIDEAWAY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     26-Mar-2010
-   [2]Routine Inspection     26-Mar-2010
-   [3]Complaint Inspection   27-Nov-2009
-   [4]Follow-Up Inspection   18-Aug-2009
-   [5]Routine Inspection     14-Aug-2009
+   [1]Follow-Up Inspection   11-Apr-2012
+   [2]Routine Inspection     26-Mar-2012
+   [3]Routine Inspection     13-Oct-2011
+   [4]Follow-Up Inspection   18-Mar-2011
+   [5]Routine Inspection     17-Mar-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C5FB8790EEC036D7882576F90029A495?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A46DC078C3A5A682882576F90029A49B?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/86B452DE7F8AC1E3882576800048157D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/40713EA5F574A3E088257619007AB8B4?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DAC27E110EA0AF7B882576170073D923?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8FDF449137B6914A882579E000282010?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2D7EF285CFA422C882579D0002694BB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED59F704562DA40C8825796B007EF377?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B134FCB6170DADB78825796C001B2F55?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/370B4B20E43024B68825796C001B33B3?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

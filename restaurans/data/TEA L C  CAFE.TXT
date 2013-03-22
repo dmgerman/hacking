@@ -14,20 +14,20 @@ TEA L C CAFE
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   21-Apr-2010
-   [2]Routine Inspection   18-Mar-2009
-   [3]Routine Inspection   28-Feb-2008
-   [4]Routine Inspection   28-Feb-2007
-   [5]Routine Inspection    7-Mar-2006
+   Type                      Document Details
+   [1]Follow-Up Inspection   12-Jan-2012
+   [2]Routine Inspection     11-Jan-2012
+   [3]Routine Inspection     21-Apr-2010
+   [4]Routine Inspection     18-Mar-2009
+   [5]Routine Inspection     28-Feb-2008
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6F4EA0A178889D328825770F0029D83D?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6FEA0E87983493BB8825758000422EA1?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/121F838C2D3D63C68825740000479A47?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FB9E5AE7B6004C8B882572930047A85B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F671270DEAB919D18825712D004859F5?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D1AC75E4930207A588257986002C841A?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8A84CB497DE703A688257986002C840E?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C8574576F9D64E8F8825796D00246DC6?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5F17DB293A47FCCC8825796F0000B686?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FC1DE6825DC55EDF8825797000211C2F?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ DENNY'S RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection      2-Mar-2010
-   [2]Follow-Up Inspection    3-Sep-2009
-   [3]Routine Inspection      1-Sep-2009
-   [4]Follow-Up Inspection   20-Mar-2009
-   [5]Follow-Up Inspection   17-Mar-2009
+   [1]Follow-Up Inspection   30-May-2012
+   [2]Routine Inspection     23-May-2012
+   [3]Routine Inspection     25-Nov-2011
+   [4]Follow-Up Inspection   15-Apr-2011
+   [5]Routine Inspection     25-Mar-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/06BF64C5516ADCC5882576DE002D4DBB?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C7368D9D5B4DC1C988257629007A7F76?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9E7B87425049678D88257627007A8EA4?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/198605084378A2EF882575840042392C?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C02ADF08129FF5438825757F00424DF0?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C74159A62BA5271A88257A1100276F75?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2D78CC27FA5BB0488257A0A00268E4A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC527B64FC256771882579690004CDB7?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6D8B49655FB668708825796C0010A706?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/533278FC3B13CB7A8825796C0017BD6E?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

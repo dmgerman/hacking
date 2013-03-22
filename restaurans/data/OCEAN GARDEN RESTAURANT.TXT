@@ -6,7 +6,7 @@ OCEAN GARDEN RESTAURANT
 
    Facility Information:
 
-   Facility Number:                 6010498
+   Facility Number:                 64008301
    Facility Type:                   Food (Restaurant)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -14,20 +14,14 @@ OCEAN GARDEN RESTAURANT
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection      7-Dec-2009
-   [2]Routine Inspection      4-Dec-2009
-   [3]Follow-Up Inspection   13-Jul-2009
-   [4]Follow-Up Inspection   26-Jun-2009
-   [5]Routine Inspection     25-Jun-2009
+   Type                    Document Details
+   [1]Routine Inspection   19-Jun-2012
+   [2]Initial Inspection    8-Feb-2012
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [3]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B93CA04A61E7189588257689004819B5?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4BD806446E6B3F4A882576870047ECFB?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AF6BBAC4E67E10ED882575F5007AACC1?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E0FB4F09887EC6AD882575E7007A8731?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/335BE5BD2F17DCC7882575E7007A873C?OpenDocument
-   6. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/4F3382156878AD0888257A25002B2098?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D9310B79AA645FE7882579A1002CDA55?OpenDocument
+   3. http://www.viha.ca/disclaimer.htm

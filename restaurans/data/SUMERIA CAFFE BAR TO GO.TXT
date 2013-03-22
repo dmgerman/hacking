@@ -14,12 +14,16 @@ SUMERIA CAFFE BAR TO GO
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Initial Inspection   2-Feb-2010
+   Type                      Document Details
+   [1]Follow-Up Inspection   9-May-2012
+   [2]Routine Inspection     1-May-2012
+   [3]Initial Inspection     2-Feb-2010
 
-   [2]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [4]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A97F6A50D2020B84882576C20030F1BA?OpenDocument
-   2. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CA33EDAACF4A8978882579FC002684ED?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AC300294EE6C10FB882579F4002AEABB?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/878104981EC360BB8825796C002242B1?OpenDocument
+   4. http://www.viha.ca/disclaimer.htm

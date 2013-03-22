@@ -15,19 +15,19 @@ SOCKEYE SUSHI
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     10-Dec-2009
-   [2]Routine Inspection      9-Dec-2009
-   [3]Follow-Up Inspection   30-Jun-2009
-   [4]Routine Inspection     23-Jun-2009
-   [5]Routine Inspection     27-Jan-2009
+   [1]Follow-Up Inspection    3-Aug-2012
+   [2]Routine Inspection     24-Jul-2012
+   [3]Follow-Up Inspection   26-Mar-2012
+   [4]Routine Inspection     20-Mar-2012
+   [5]Routine Inspection      4-Aug-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6750BC50914EF9468825768F004834F8?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6C144C3EA43ECF3F8825768A00482924?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DDE873EE89DD1E33882575E9007A7978?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/45BB0D44C1769CF7882575E1007A858B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9BDDCCAC9AEF99818825754D0047C386?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/78DE8352A13BC99388257A56002E3EE2?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/74BE91F5ABD6153488257A48003566D1?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FD0D35644AFE7F46882579D0002694C1?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D348187315943232882579CA002B030E?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BE4480AE1ECF838D8825796C00006F63?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

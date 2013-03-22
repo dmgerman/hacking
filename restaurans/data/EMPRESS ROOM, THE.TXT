@@ -15,19 +15,19 @@ EMPRESS ROOM, THE
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     25-Jan-2010
-   [2]Follow-Up Inspection   14-Jul-2009
-   [3]Routine Inspection     10-Jul-2009
-   [4]Routine Inspection      6-Jan-2009
-   [5]Routine Inspection     29-May-2008
+   [1]Routine Inspection      6-Feb-2012
+   [2]Routine Inspection      3-Jun-2011
+   [3]Routine Inspection     21-Oct-2010
+   [4]Routine Inspection     25-Jan-2010
+   [5]Follow-Up Inspection   14-Jul-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E8CDA962AE142DB8882576B900313D29?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B9E6007864A7019B882575F5007AAC92?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/43E8950FF842CA1A882575F40073C551?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/64ED7C91B7700160882575390047A0B4?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5F4AAD96BBA969E18825745B0042342C?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/16FB59AD8721223E8825799F002C3013?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/36D98819BF13A0038825796C00051D8F?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AAB795109A79451C8825796C004088D7?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/11B19FEDBDCEDA648825796D005C0B8C?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/10E6506F2DC550AD882579690007B0FB?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

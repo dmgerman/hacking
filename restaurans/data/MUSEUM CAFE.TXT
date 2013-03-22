@@ -14,20 +14,20 @@ MUSEUM CAFE
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection     19-Jan-2010
-   [2]Follow-Up Inspection   10-Jul-2009
-   [3]Routine Inspection      8-Jul-2009
-   [4]Routine Inspection     15-Jan-2009
-   [5]Routine Inspection      6-Jun-2008
+   Type                    Document Details
+   [1]Routine Inspection   17-Aug-2012
+   [2]Routine Inspection   14-Feb-2012
+   [3]Routine Inspection   13-Feb-2012
+   [4]Routine Inspection    6-Jul-2011
+   [5]Routine Inspection    5-Jan-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4E410B7E1C26CDD3882576B300313BF9?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2976610EB7752861882575F40073C55C?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8D33C67F04A0E3E4882575F40073C562?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8E377C6BA384D2EB882575420047C18A?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F93977D2CE25E8658825746200422B70?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/270E30C676B3A79488257A5F0037C1BD?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FC78DEEA6EAC686F882579A700311DDE?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B177CDDDB9D154EC882579A500310CE2?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DFC509B479A3A3DF8825796C0001C955?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B9FE76F23134A5CE8825796C003948BA?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

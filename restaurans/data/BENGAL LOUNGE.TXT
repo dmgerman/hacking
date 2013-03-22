@@ -15,19 +15,19 @@ BENGAL LOUNGE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   25-Jan-2010
-   [2]Routine Inspection   10-Jul-2009
-   [3]Routine Inspection    6-Jan-2009
-   [4]Routine Inspection   29-May-2008
-   [5]Routine Inspection   31-Oct-2007
+   [1]Routine Inspection    6-Feb-2012
+   [2]Routine Inspection    3-Jun-2011
+   [3]Routine Inspection   25-Jan-2010
+   [4]Routine Inspection   10-Jul-2009
+   [5]Routine Inspection    6-Jan-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3E3FBDB30ACFFE7D882576B900313D1A?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9D89B1A9AFB7153E882575F40073C591?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/26D3A774B8D4D87A882575390047A0CD?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D7238AA8E3E3AD518825745B0042343B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/426EE5DF5500D11F882573880042416E?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D38FF7A32FA97CD68825799F002C3008?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/647A95A4F4C13B518825796C00052618?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CAA21D48F0F6E47E8825796D005C01BE?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E120802387C908E48825796E0048E688?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8018B41F077CC17688257969000840A5?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

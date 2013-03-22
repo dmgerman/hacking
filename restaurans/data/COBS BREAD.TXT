@@ -14,20 +14,20 @@ COBS BREAD
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection    3-Nov-2009
-   [2]Routine Inspection    7-May-2009
-   [3]Routine Inspection    2-Oct-2008
-   [4]Routine Inspection   10-Apr-2008
-   [5]Initial Inspection   10-May-2007
+   Type                      Document Details
+   [1]Routine Inspection     14-Aug-2012
+   [2]Follow-Up Inspection   21-Feb-2012
+   [3]Routine Inspection     16-Feb-2012
+   [4]Routine Inspection     25-Jul-2011
+   [5]Routine Inspection     23-Mar-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/95BBA7BAF2A194228825766500480D45?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1A8D77CC2E7B3DF6882575B200435A56?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/16AF17A05B7713CD882574D9004221C3?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C17DDADEE725ED00882574290042299B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D16CF5BBC973FD00882572DB0043B295?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/7DFC3F541353B12F88257A5F0037C205?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F4E6181F39023B0C882579AE002D02BD?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1623B3CA64152454882579AC002CF060?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1B4F1F3A51C04BD98825796C0000D742?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B03F8702E710B49E8825796C00182F5A?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

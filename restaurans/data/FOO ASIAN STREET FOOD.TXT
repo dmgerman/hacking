@@ -15,19 +15,19 @@ FOO ASIAN STREET FOOD
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   22-Apr-2010
-   [2]Routine Inspection     20-Apr-2010
-   [3]Complaint Inspection   30-Nov-2009
-   [4]Follow-Up Inspection   20-Oct-2009
-   [5]Routine Inspection     19-Oct-2009
+   [1]Follow-Up Inspection   27-Jul-2012
+   [2]Routine Inspection     20-Jul-2012
+   [3]Follow-Up Inspection   26-Apr-2012
+   [4]Routine Inspection     24-Apr-2012
+   [5]Follow-Up Inspection    2-Dec-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BEFB3BD4A06BD1F6882577150029E255?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/149F39ED280F07E68825770E00283893?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E2582297B22293F58825768200481922?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4B54C86295505F0288257658007A9883?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B1A983AA10FD77C588257657007AB7B0?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/7521EA5FAA464AB288257A4D003B6CED?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/EE983B791E85595888257A460033A541?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/89243FAD9D301670882579F2002742F5?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4AD9DA7478437A3C882579EE002734C6?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F92F2650AC0A14CC8825796B007E4F5B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

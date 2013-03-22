@@ -15,19 +15,19 @@ CHATEAU VICTORIA VISTA 18
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     14-Dec-2009
-   [2]Routine Inspection     10-Jun-2009
-   [3]Routine Inspection     12-Dec-2008
-   [4]Follow-Up Inspection   24-Oct-2008
-   [5]Routine Inspection     22-Oct-2008
+   [1]Routine Inspection     23-May-2012
+   [2]Routine Inspection     23-May-2012
+   [3]Routine Inspection     15-Nov-2011
+   [4]Routine Inspection      2-Mar-2011
+   [5]Follow-Up Inspection   11-Aug-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A2A799D1B87597AC8825768E00482A9B?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B4289924DD79BD7F882575D4007A7D20?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/79D6DD8B173C44378825751F0047981F?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E2138888E3467E4B882574F100422684?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6EA97F5ADC3817D9882574EC00422003?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/416A32AF2427297B88257A1200273769?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C78CB1E83CE5A81B88257A1200273761?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E959837671CB7D298825796B007E9757?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1CBFD6A9A61705FA8825796C00279C33?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8592171A77E3FF4188257969000694D4?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

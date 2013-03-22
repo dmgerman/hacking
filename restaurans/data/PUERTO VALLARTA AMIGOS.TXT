@@ -1,7 +1,7 @@
 PUERTO VALLARTA AMIGOS
 
    Facility Location:
-   Capital Regional District
+   1010 Arcadia Street
    Victoria
 
    Facility Information:
@@ -14,12 +14,52 @@ PUERTO VALLARTA AMIGOS
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   20-May-2010
+   Type                      Document Details
+   [1]Follow-Up Inspection   31-Jul-2012
+   [2]Follow-Up Inspection   24-Jul-2012
+   [3]Routine Inspection     24-Jul-2012
+   [4]Routine Inspection     13-Jul-2012
+   [5]Routine Inspection     24-Apr-2012
 
-   [2]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C6012585044E38988825772C00269103?OpenDocument
-   2. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/52FF41645F5D585988257A4F00279275?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/978511C4450A5A9C88257A4800356696?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/E9F69B04FD7D926788257A4800356697?OpenDocument
+   4. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/B28381839D688A0B88257A40002E2629?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A54A696C4176FDC8882579ED0026E686?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm
+
+PUERTO VALLARTA AMIGOS
+
+   Facility Location:
+   Dock C-39 - 12 Erie Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64008190
+   Facility Type:                   Food (Take Out)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Follow-Up Inspection   25-Apr-2012
+   [2]Follow-Up Inspection   20-Apr-2012
+   [3]Routine Inspection     20-Apr-2012
+   [4]Initial Inspection      8-Mar-2012
+
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8688576130DF7C12882579F4002AEACA?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C89D8D05380F1B70882579F4002AEACE?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/04DA46C3299D1591882579F4002AEAD8?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/24309939D61CAD39882579BE002F0C49?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

@@ -15,15 +15,19 @@ COOK STREET MARKET PLACE
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection    4-Aug-2009
-   [2]Routine Inspection   14-Aug-2008
-   [3]Routine Inspection    8-Aug-2007
+   [1]Routine Inspection   10-Aug-2012
+   [2]Routine Inspection   31-Aug-2011
+   [3]Routine Inspection   18-Aug-2010
+   [4]Routine Inspection    4-Aug-2009
+   [5]Routine Inspection   14-Aug-2008
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/71AB4E34C8DEE7388825760B007A8F46?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C6D67ED36F99992F882574A800422C5A?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/35935E2892DEDCBF8825733400423266?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/C763DC1571DCDCD488257A5B00339246?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/120C8C0F78FCEA6F8825796B007F57DE?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/75D104B894601AA58825796C00706480?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/97BA58AB55D9200E8825796E0026E881?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/61602007D4C4BDDA8825796F00749C49?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

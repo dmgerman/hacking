@@ -15,19 +15,19 @@ CLUBHOUSE BAR
    Click on an inspection link below to see additional details
 
    Type                    Document Details
-   [1]Routine Inspection   27-Jan-2010
-   [2]Routine Inspection   10-Dec-2008
-   [3]Routine Inspection   27-May-2008
-   [4]Routine Inspection   11-May-2007
-   [5]Routine Inspection   17-Oct-2006
+   [1]Routine Inspection   26-Mar-2012
+   [2]Routine Inspection   26-Jul-2011
+   [3]Routine Inspection    8-Feb-2011
+   [4]Routine Inspection   27-Jan-2010
+   [5]Routine Inspection   10-Dec-2008
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5917A06C7E6319D3882576BB002F0A47?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7E34105884E982088825751D0047AA16?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3705A13A2476461A8825745800423B46?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1A43A5F1FF6197B9882572DE004237D3?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4D5474AC8BCDC11F8825720D0044CAB3?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E7FEBDECF647AAD1882579D70029524E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2813BEF7FDFBF878825796C0000D4CF?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/882609B720FD8CFC8825796C0034A22F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/207CE0A3AC7617608825796D005B63A3?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C84361CD11B06BFF8825796F0033E6C0?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

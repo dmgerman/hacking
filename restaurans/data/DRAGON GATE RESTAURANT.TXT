@@ -15,19 +15,19 @@ DRAGON GATE RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection      6-Jan-2010
-   [2]Routine Inspection      2-Jun-2009
-   [3]Follow-Up Inspection   12-Nov-2008
-   [4]Routine Inspection      5-Nov-2008
-   [5]Routine Inspection     13-May-2008
+   [1]Follow-Up Inspection   25-Apr-2012
+   [2]Routine Inspection     19-Apr-2012
+   [3]Routine Inspection     21-Sep-2010
+   [4]Routine Inspection      6-Jan-2010
+   [5]Routine Inspection      2-Jun-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7053B785082853D6882576A60034FE86?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2221193C67B5CB37882575CC007A8344?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E0B692234509CE7D882575020047A045?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BA97D699434101FC882574FB0047BB90?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3F5CC8392D5E34B28825744B00422FC5?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3F8FDB8C82623D0B882579EE002735B3?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9E71B5540A8745E4882579EB0027A310?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/3AAC82DF5EC16FA08825796C00491CEE?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/250C543C0E6BCEC98825796D00604500?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F87ABDA2873A71E68825796E005837A0?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

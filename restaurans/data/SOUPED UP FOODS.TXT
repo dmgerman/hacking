@@ -7,6 +7,40 @@ SOUPED UP FOODS
    Facility Information:
 
    Facility Number:                 64007047
+   Facility Type:                   Food (Kitchen)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Routine Inspection     21-Aug-2012
+   [2]Routine Inspection      8-Dec-2011
+   [3]Routine Inspection      4-Apr-2011
+   [4]Follow-Up Inspection    8-Nov-2010
+   [5]Routine Inspection      8-Nov-2010
+
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/AB31EA5773C2D74588257A640027933C?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F10C287937E8326B8825796B007E30A6?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7346CB5BF605AD678825796C0013DF59?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/73F3AA09F70455F48825796C003E10E1?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8F9D7F3A146DC0F58825796C003E125B?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm
+
+SOUPED UP FOODS
+
+   Facility Location:
+   145 - 736 View Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64007002
    Facility Type:                   Food (Restaurant)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -14,16 +48,20 @@ SOUPED UP FOODS
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   18-Jan-2010
-   [2]Routine Inspection    2-Sep-2009
-   [3]Initial Inspection   19-Jun-2009
+   Type                      Document Details
+   [1]Follow-Up Inspection   16-Apr-2012
+   [2]Routine Inspection     12-Apr-2012
+   [3]Follow-Up Inspection   12-Oct-2011
+   [4]Routine Inspection     11-Oct-2011
+   [5]Routine Inspection      5-Jan-2011
 
-   [4]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4EE562936E80E8E7882576B2002F6407?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0070DB466F18CA3788257628007A869C?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/123CFB21C9249ABD882575DF0073C98E?OpenDocument
-   4. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A63746DC6F70939D882579E500270C71?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D13BBE6C0316A1C9882579E1002AEE59?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B0C4B606038F8FFE8825796B007EF406?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/212E372A2C5E40C08825796B007EFE79?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F4FCAA2B61DC128D8825796C00395178?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ STARBUCKS COFFEE CO. #4500
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection      9-Feb-2010
-   [2]Follow-Up Inspection   16-Feb-2009
-   [3]Follow-Up Inspection   10-Feb-2009
-   [4]Routine Inspection      5-Feb-2009
-   [5]Routine Inspection     19-Feb-2008
+   [1]Routine Inspection     25-Jan-2012
+   [2]Routine Inspection      9-Feb-2011
+   [3]Routine Inspection      9-Feb-2010
+   [4]Follow-Up Inspection   16-Feb-2009
+   [5]Follow-Up Inspection   10-Feb-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0A2FCD6893543696882576C800311398?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D3174F7F139EC851882575620047AE52?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8156E623AE10B1728825755B0047AEFC?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D6FE6EC0D1DA60D7882575560047BBA8?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E0CF1D1EAF9D346A882573F70047BFA1?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/027F52451FB0C2DD88257992002CE584?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CD5400C42FED75B88825796C00331F07?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/805B1B6F865C83058825796D005AA0FA?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D125311A783359AA8825796F00141BC2?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AF97343D09E30A0C8825796F001898FD?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

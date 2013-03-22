@@ -15,19 +15,19 @@ CHANDLERS
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   11-Jun-2009
-   [2]Routine Inspection     28-May-2009
-   [3]Routine Inspection     13-May-2009
-   [4]Routine Inspection      4-Nov-2008
-   [5]Routine Inspection     22-Apr-2008
+   [1]Routine Inspection     29-Feb-2012
+   [2]Routine Inspection     23-Feb-2012
+   [3]Follow-Up Inspection   11-Jun-2009
+   [4]Routine Inspection     28-May-2009
+   [5]Routine Inspection     13-May-2009
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/832CE2D39D5CD70C882575D5007A70A0?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C3402CE335B1BFE2882575C700423940?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ADCE235338AD7743882575B8004599EC?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0557AD792625A15E882574FA0047A8B7?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DB4FC8A4BF50F8FB8825743600422C71?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B03804048041CED0882579B7002C44C8?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BED52A0443B58B4D882579B0002D587F?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/30590B27B91823DC8825796E0050F7D6?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED1C8930E20E1F618825796E005A8D79?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AF9739F2E0B3565D8825796E00676D93?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

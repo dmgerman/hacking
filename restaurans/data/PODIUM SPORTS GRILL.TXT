@@ -15,19 +15,19 @@ PODIUM SPORTS GRILL
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   28-Jan-2010
-   [2]Routine Inspection     28-Jan-2010
-   [3]Routine Inspection     23-Sep-2009
-   [4]Routine Inspection     23-Sep-2009
-   [5]Initial Inspection     12-Aug-2009
+   [1]Follow-Up Inspection    3-Jul-2012
+   [2]Follow-Up Inspection   28-Jun-2012
+   [3]Routine Inspection     26-Jun-2012
+   [4]Routine Inspection      9-Jan-2012
+   [5]Follow-Up Inspection    6-Jun-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/749665E8151AA40B882576BC003168CD?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED8FAEDB50833A58882576BC003168CE?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4AD22183645480FC8825763D007A8967?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9013F7289FBD37878825763D007A895E?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9607629CA758AEB688257613007A9F02?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/CAF73EE607E197CA88257A330038394D?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/C989C606F9FFBD8F88257A330038394E?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/6298FD57F8F9974A88257A330038394F?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/24E61F7CAE2DCF5C88257984002CACFE?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5CA5C47A274EF5A38825796C00050692?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ SOD-SAI THAI RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     23-Nov-2009
-   [2]Follow-Up Inspection   17-Jun-2009
-   [3]Routine Inspection     11-Jun-2009
-   [4]Routine Inspection      5-Nov-2008
-   [5]Routine Inspection     13-May-2008
+   [1]Follow-Up Inspection   31-May-2012
+   [2]Routine Inspection     28-May-2012
+   [3]Routine Inspection      7-Dec-2011
+   [4]Routine Inspection     16-Jun-2011
+   [5]Follow-Up Inspection   31-Jan-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/37F787EF5D898DC38825767B00480D9E?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EA82EDDE7638F0D2882575DF0073CAAE?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C4CDC6D313657E43882575D5007A70BB?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DD0F0072F5F69F54882574FB0047BB03?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/81C2893F4D02153C8825744B00422FD6?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A346C3B467D51C0388257A150028044C?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/78EB62B3775929CE88257A100026AF26?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/833B3BDF2963A79E8825796B007E2EEC?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E96DB7A284DB1F9F8825796C0002E064?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6AE64F9CB66AB22D8825796C0038C5FF?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

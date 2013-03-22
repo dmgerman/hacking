@@ -21,13 +21,13 @@ GEORGE JAY ELEMENTARY,LUNCH PROGRAM
    [4]Routine Inspection   20-Jun-2007
    [5]Routine Inspection   17-Nov-2006
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/09300077D0DA4119882576D6002ED5BC?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C3D90D19DEE65FC9882575470047B9D6?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ECC5F7EA9BB30E0C882573CE0047B09D?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DE7AAF0A57D241CD8825730300423630?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CB4BBD4A704FDBCD8825722E004C9053?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/05D21A585F7702A98825796D004A0F44?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/037C2514376DD3968825796F002D44E4?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/06B9741534633972882579700026A439?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/66D3CAE1101D246F8825797000586332?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CC8E3DB9A58956E5882579700068C2D3?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

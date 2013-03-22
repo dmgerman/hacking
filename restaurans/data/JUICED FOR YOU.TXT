@@ -1,12 +1,12 @@
 JUICED FOR YOU
 
    Facility Location:
-   Usual Location: Belleville & Menzies Street
+   811 St. Charles Street
    Victoria
 
    Facility Information:
 
-   Facility Number:                 6011720
+   Facility Number:                 64007928
    Facility Type:                   Food (Mobile)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -14,20 +14,18 @@ JUICED FOR YOU
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Follow-Up Inspection   28-Apr-2010
-   [2]Follow-Up Inspection   28-Apr-2010
-   [3]Routine Inspection     20-May-2009
-   [4]Routine Inspection     19-Jun-2008
-   [5]Follow-Up Inspection   26-Jul-2007
+   Type                    Document Details
+   [1]Routine Inspection   25-Jul-2012
+   [2]Routine Inspection    5-Apr-2012
+   [3]Routine Inspection   13-May-2011
+   [4]Initial Inspection   20-Apr-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [5]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D3BDC54B4472474388257716002B69D5?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1C321E6A154DF07788257716002B69DA?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AED3E210D2426D03882575BE00435A66?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7E11C033207F49768825747000422D09?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/018D3957CB4D28CE8825732A0074369C?OpenDocument
-   6. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/51A71750B677F48588257A4E003C5700?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/175C1F28D3E487A9882579DF002BE543?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5E5FB2ED6F5E39018825796C0009ACC0?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ECCF2DBE05AEC3C68825796C000FE5EF?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

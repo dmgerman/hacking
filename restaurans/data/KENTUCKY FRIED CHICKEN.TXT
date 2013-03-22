@@ -15,19 +15,19 @@ KENTUCKY FRIED CHICKEN
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Follow-Up Inspection   12-Mar-2010
-   [2]Follow-Up Inspection   11-Mar-2010
-   [3]Follow-Up Inspection    8-Mar-2010
-   [4]Routine Inspection      5-Mar-2010
-   [5]Follow-Up Inspection   11-Sep-2009
+   [1]Routine Inspection     14-Mar-2012
+   [2]Routine Inspection     15-Oct-2010
+   [3]Follow-Up Inspection   12-Mar-2010
+   [4]Follow-Up Inspection   11-Mar-2010
+   [5]Follow-Up Inspection    8-Mar-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5DA52F122DDD6167882576E900298C56?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C38AADD94EA99517882576E5002DABE9?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BF93FD01B9809FCE882576E2002DBF7C?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/25D65B3242D3FB0B882576E2002DBFA7?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8755F40811387DD5882576330073EE55?OpenDocument
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC20277B4646B6F4882579C40027140D?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1B7B203DCE320F738825796C0041D15C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/179B436FFAF8F52B8825796D0034D850?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EFD6C4C5DE78C2C78825796D00374925?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F511CB756D10E8DF8825796D003EE4F1?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

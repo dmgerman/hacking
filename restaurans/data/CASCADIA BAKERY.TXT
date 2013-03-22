@@ -15,19 +15,19 @@ CASCADIA BAKERY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     21-May-2010
-   [2]Routine Inspection     19-Oct-2009
-   [3]Follow-Up Inspection   10-Aug-2009
-   [4]Follow-Up Inspection   29-May-2009
-   [5]Follow-Up Inspection   22-May-2009
+   [1]Follow-Up Inspection   28-Jun-2012
+   [2]Routine Inspection     25-Jun-2012
+   [3]Follow-Up Inspection   23-Feb-2012
+   [4]Routine Inspection     11-Jan-2012
+   [5]Follow-Up Inspection    5-Jul-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B719976F35C9646F882577300028377D?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2D11B5E35778B99E88257657007AB684?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DC756CB9D370AB1E88257611007AC810?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7E73B61E9BD8DE91882575CE007AB7F4?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2A57C268D06FA37882575C000434AD0?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/E0B7FBD55972F59088257A320037376B?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/FA1AED2DCA6CECC888257A2D00328BCC?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/993401C3C658EC07882579B0002D596C?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D2C27A350D99A25E88257985002C1B56?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E8E0ED4F392217548825796C0001D5DB?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

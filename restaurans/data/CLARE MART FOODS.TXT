@@ -1,12 +1,12 @@
 CLARE MART FOODS
 
    Facility Location:
-   390 Moss Street
+   1273 Fairfield Road
    Victoria
 
    Facility Information:
 
-   Facility Number:                 6012101
+   Facility Number:                 64007833
    Facility Type:                   Food (Store)
    Months Open:                     All year long
    FOODSAFE Excellence Certified:   No
@@ -14,20 +14,14 @@ CLARE MART FOODS
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                      Document Details
-   [1]Routine Inspection     12-Feb-2010
-   [2]Routine Inspection      2-Feb-2009
-   [3]Follow-Up Inspection   21-Jan-2008
-   [4]Routine Inspection     30-Aug-2007
-   [5]Follow-Up Inspection   14-Jul-2006
+   Type                    Document Details
+   [1]Routine Inspection   11-Jul-2012
+   [2]Initial Inspection    1-Feb-2011
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [3]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BF689EC68D66C3EB882576CD002F4FBF?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5C73A4E7513BC4AB882575540047ACB1?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/24C267B4328241C0882573DB0047AE9B?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1D158B16D6AD379C8825735400011366?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/61DF81E2E954C735882571AD004792DB?OpenDocument
-   6. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/FD60E0F0C221684188257A3B0029E5F7?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E11B0D4544B71EA38825796C0038C140?OpenDocument
+   3. http://www.viha.ca/disclaimer.htm

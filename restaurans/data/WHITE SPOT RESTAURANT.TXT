@@ -1,7 +1,7 @@
 WHITE SPOT RESTAURANT
 
    Facility Location:
-   710 Caledonia Street
+   710 Caledonia Avenue
    Victoria
 
    Facility Information:
@@ -15,19 +15,19 @@ WHITE SPOT RESTAURANT
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     20-Nov-2009
-   [2]Follow-Up Inspection   17-Jun-2009
-   [3]Routine Inspection     10-Jun-2009
-   [4]Follow-Up Inspection   10-Nov-2008
-   [5]Follow-Up Inspection    3-Nov-2008
+   [1]Routine Inspection     20-Aug-2012
+   [2]Follow-Up Inspection   16-Mar-2012
+   [3]Follow-Up Inspection   21-Feb-2012
+   [4]Follow-Up Inspection   14-Feb-2012
+   [5]Routine Inspection     10-Feb-2012
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EFAE7D1FD5D6AC718825767A0048117C?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/11CF1418702B5F94882575DB007A7EF2?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5508D2F899092D61882575D3007A9298?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/54709F14C17FB909882575010047984B?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C89CB50C0D40DE94882574F90047A02E?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/E9A7B3F5457955C588257A63003C3F78?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/034B0F71136BE115882579CA002B1C12?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/FF28690FF8C60172882579AF002CF2FF?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/070FEF694D1DCF36882579A700311D53?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CA43214CAA45F22F882579A500310D4B?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

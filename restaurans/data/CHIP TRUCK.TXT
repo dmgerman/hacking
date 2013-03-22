@@ -14,12 +14,20 @@ CHIP TRUCK
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Initial Inspection   13-Apr-2010
+   Type                      Document Details
+   [1]Routine Inspection     18-May-2012
+   [2]Follow-Up Inspection   27-Feb-2012
+   [3]Routine Inspection     23-Feb-2012
+   [4]Routine Inspection     12-Jan-2012
+   [5]Follow-Up Inspection   21-Sep-2011
 
-   [2]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6EFA30C8827C6DF788257707002B9113?OpenDocument
-   2. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/590722A18A6E342288257A0800276F1E?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/660C788B196FE458882579B4002C59E5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D77A27198246ADD3882579B0002D5A4C?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/03BBAD77FE46D6E788257986002C842A?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B9DAF8CC827CD9948825796B007EC2DA?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

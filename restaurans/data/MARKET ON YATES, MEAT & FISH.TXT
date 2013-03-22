@@ -14,18 +14,20 @@ MARKET ON YATES, MEAT & FISH
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   26-Feb-2009
-   [2]Routine Inspection   12-Mar-2008
-   [3]Routine Inspection    5-Mar-2007
-   [4]Routine Inspection   13-Feb-2006
+   Type                      Document Details
+   [1]Follow-Up Inspection   13-Jun-2012
+   [2]Follow-Up Inspection   11-Jun-2012
+   [3]Routine Inspection      8-Jun-2012
+   [4]Complaint Inspection   23-Jun-2011
+   [5]Routine Inspection     24-May-2011
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/21F5B9EA777CDEF78825756C00479B06?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B2F3918507B2DB048825740D004221FA?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/864A9843FA2069BB8825729900479DA3?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BBE810D87F27120B8825712D00485838?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/691C23E50AAB355288257A25002B2090?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F0EC7934C87E728E88257A1D003A24DC?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/96444573423194AD88257A1C00393ACB?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E3AC156DF4D720E28825796C00024700?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7C37D80473587FD18825796C00081677?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

@@ -15,19 +15,19 @@ PATISSERIE DANIEL
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     20-May-2010
-   [2]Routine Inspection     11-Jan-2010
-   [3]Routine Inspection     12-Aug-2009
-   [4]Follow-Up Inspection   16-Apr-2009
-   [5]Routine Inspection      1-Apr-2009
+   [1]Follow-Up Inspection   21-Aug-2012
+   [2]Routine Inspection     15-Aug-2012
+   [3]Routine Inspection     30-Apr-2012
+   [4]Routine Inspection     10-Nov-2010
+   [5]Follow-Up Inspection    1-Jun-2010
 
-   [6]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E516D7B5F1AB0C148825772C002690EE?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/20FF7351049245FF882576AB0039F04B?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8024E909246FC3D888257614007A86E7?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/628EEC11735E6D728825759D004219DB?OpenDocument
-   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4577D8E3370398878825758E00423DBA?OpenDocument
+   1. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/3C51DF02405E6F3D88257A6400279324?OpenDocument
+   2. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/A1F85530240CD03888257A5E0036B700?OpenDocument
+   3. http://www.healthspace.ca/clients/viha/VIHA_Website.nsf/0/93F6EBD5B0BB1E6E882579F30027A006?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/178308BA1074194C8825796C003DA70E?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/55A0E0F6D051692B8825796D000D95E7?OpenDocument
    6. http://www.viha.ca/disclaimer.htm

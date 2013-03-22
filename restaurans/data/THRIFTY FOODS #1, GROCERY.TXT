@@ -1,7 +1,7 @@
 THRIFTY FOODS #1, GROCERY
 
    Facility Location:
-   1560 Fairfield Road
+   1590 Fairfield Road
    Victoria
 
    Facility Information:
@@ -15,17 +15,19 @@ THRIFTY FOODS #1, GROCERY
    Click on an inspection link below to see additional details
 
    Type                      Document Details
-   [1]Routine Inspection     16-Oct-2009
-   [2]Routine Inspection     28-Oct-2008
-   [3]Follow-Up Inspection    9-Oct-2007
-   [4]Initial Inspection     17-Sep-2007
+   [1]Routine Inspection     25-Apr-2012
+   [2]Complaint Inspection   12-Jan-2011
+   [3]Routine Inspection     15-Nov-2010
+   [4]Routine Inspection     16-Oct-2009
+   [5]Routine Inspection     28-Oct-2008
 
-   [5]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/9A14512174F4C23C882576560073CE24?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E6DEF0943BC0271E882574F300421F6F?OpenDocument
-   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/AFF0A6F471CC401888257372004245CC?OpenDocument
-   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/09EF9551021F061E8825735D004234A8?OpenDocument
-   5. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/EDFC94255FBC27EC882579EE002735A0?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C9EE2B1ACB4C33A08825796C003938E1?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E8A59E119E15695B8825796C003D5D15?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8E268E0D3AB4C5AB8825796E000EC689?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/ED2034F23DB20D8D8825796F0051F538?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

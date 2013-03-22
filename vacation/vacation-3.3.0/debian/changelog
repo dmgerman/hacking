@@ -1,0 +1,97 @@
+vacation (3.3.0-0.4ubuntu1) oneiric; urgency=low
+
+  * Fixed build failure due to linker command line order (LP: #803213)
+
+ -- Mat Scales <mat@wibbly.org.uk>  Wed, 29 Jun 2011 18:16:04 +0100
+
+vacation (3.3.0-0.4) unstable; urgency=low
+
+  * NMU
+  * Change build dependency to libdb-dev (>= 5.1)
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 28 Mar 2011 15:19:24 +0200
+
+vacation (3.3.0-0.3) unstable; urgency=low
+
+  * NMU
+  * Change build dependency to libdb-dev (>= 4.6.19-1).  closes: #442681.
+  * Bump Standards-Version to 3.7.2.
+
+ -- Clint Adams <schizo@debian.org>  Sun, 07 Oct 2007 09:55:42 -0400
+
+vacation (3.3.0-0.2) unstable; urgency=low
+
+  * NMU
+  * Fix the debian/copyright to properly indicate the history of this
+    package (Closes: #364522)
+  * Add binary-indep target comply with policy 4.8
+  
+ -- Don Armstrong <don@debian.org>  Tue, 25 Apr 2006 20:47:09 -0700
+
+vacation (3.3.0-0.1) unstable; urgency=low
+
+  * NMU
+  * Recompile against libdb4.3 (Closes: #263235)
+
+ -- Don Armstrong <don@debian.org>  Sat, 31 Dec 2005 00:12:39 -0800
+
+vacation (3.3.0) unstable; urgency=low
+
+  * Added support for editing the away message.
+  * Accept no reply as a negative reply. (Closes: #166227)
+  * Compiled against libdb4.1.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 15 Jun 2003 03:18:08 +0200
+
+vacation (3.2.5) unstable; urgency=medium
+
+  * Applied patch to support qmail-style Return-Path headers
+    (i.e. in the form "Name <address>").
+
+ -- Marco d'Itri <md@linux.it>  Tue, 17 Sep 2002 16:48:21 +0200
+
+vacation (3.2.4) unstable; urgency=medium
+
+  * Compiled with libdb4.0-dev.
+  * Fixed typos (Closes: #125630, #150576).
+  * Make -i and -r options work at the same time (Closes: #150576).
+  * Do not chdir(3) home if data files have absolute paths.
+
+ -- Marco d'Itri <md@linux.it>  Thu,  8 Aug 2002 21:37:23 +0200
+
+vacation (3.2.3) unstable; urgency=medium
+
+  * Fixed lookup() return value.
+
+ -- Marco d'Itri <md@linux.it>  Thu,  4 Oct 2001 02:00:08 +0200
+
+vacation (3.2.2) unstable; urgency=medium
+
+  * Fixed -l and -x switches (Closes: #112773).
+
+ -- Marco d'Itri <md@linux.it>  Wed, 19 Sep 2001 21:39:19 +0200
+
+vacation (3.2.1) unstable; urgency=medium
+
+  * Fixed Makefile (Closes: #109679).
+
+ -- Marco d'Itri <md@linux.it>  Wed, 22 Aug 2001 23:13:49 +0200
+
+vacation (3.2) unstable; urgency=low
+
+  * Added -d option (debug mode) from FreeBSD CVS.
+  * Implemented solaris-style automatic configuration.
+
+ -- Marco d'Itri <md@linux.it>  Tue, 21 Aug 2001 18:23:22 +0200
+
+vacation (3.1) unstable; urgency=low
+
+  * Fixed build dependencies (Closes: #90354).
+
+ -- Marco d'Itri <md@linux.it>  Mon, 16 Jul 2001 23:03:51 +0200
+
+vacation (3.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 16 Jul 2000 18:59:16 +0200

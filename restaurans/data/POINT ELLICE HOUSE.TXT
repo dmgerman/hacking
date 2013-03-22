@@ -14,14 +14,20 @@ POINT ELLICE HOUSE
    Facility History and Documents:
    Click on an inspection link below to see additional details
 
-   Type                    Document Details
-   [1]Routine Inspection   5-Jun-2009
-   [2]Initial Inspection   1-May-2009
+   Type                      Document Details
+   [1]Routine Inspection     18-May-2012
+   [2]Routine Inspection     16-May-2011
+   [3]Follow-Up Inspection    3-Jun-2010
+   [4]Routine Inspection     27-May-2010
+   [5]Routine Inspection      5-Jun-2009
 
-   [3]Disclaimer | Copyright Â© 2000-2010 Vancouver Island Health Authority
+   [6]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
 
 References
 
-   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E91638CB3CB4270F882575D10073BE63?OpenDocument
-   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4CFEAA8A0347FF2B882575AE00427AEF?OpenDocument
-   3. http://www.viha.ca/disclaimer.htm
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1101BA88699B2CB188257A0800276E06?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/8A009F82B45AFE918825796C00094F56?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/F0DE266690113E9F8825796D0008F6CC?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/14FE6BA57A4B3BFD8825796D000E5963?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1C34B9D381E1FAAC8825796E000E9655?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm
