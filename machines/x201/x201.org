@@ -1,0 +1,8 @@
+* WIFI 
+
+Intel driver
+
+[    3.208441] iwlagn 0000:02:00.0: Detected Intel(R) Centrino(R)
+Advanced-N 6200 AGN, REV=0x7
+
+* 

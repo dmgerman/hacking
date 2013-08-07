@@ -1,0 +1,27 @@
+SAM'S DELI
+
+   Facility Location:
+   805 Government Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64007495
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                    Document Details
+   [1]Routine Inspection    5-May-2010
+   [2]Initial Inspection   19-Apr-2010
+
+   [3]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/CAD169E43FD0D1028825771D0028798B?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A8AF0ADF22ED8FB48825770D002BFBA1?OpenDocument
+   3. http://www.viha.ca/disclaimer.htm

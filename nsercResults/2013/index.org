@@ -1,0 +1,93 @@
+* NSERC results
+
+Method
+
+1. Wait for results
+2. Download page: nsercCS2013.html
+3. Parse data
+
+#+begin_src sh :results output
+curl 'http://www.nserc-crsng.gc.ca/NSERC-CRSNG/FundingDecisions-DecisionsFinancement/ResearchGrants-SubventionsDeRecherche/ResultsGSCDetail-ResultatsCSSDetails_eng.asp?Year=2013&GSC=1507&Field=Computer+Science' | grep -v 'charset-iso' | perl -pe 's@<br /><strong>Department</strong><br />@</td><td>@' | perl -pe 's@>Institution</th>@>Deparment</th><th>Institution</th>@' > /tmp/rip.html
+#iconv -f iso8859-1 -t utf8 /tmp/rip.html > nsercCS2013.html 
+iconv -f iso8859-1 -t ASCII//TRANSLIT /tmp/rip.html > nsercCS2013.html 
+#lynx -dump nsercCS2013.html   | grep Mon
+echo -e "\xE2\x98\xA0"
+grep " Mon" nsercCS2013.html temp.csv
+#+end_src
+
+#+RESULTS:
+#+begin_example
+☠
+nsercCS2013.html:							<td style="font-size:0.8em;">Quebec a Montreal</td>
+nsercCS2013.html:							<td style="font-size:0.8em;">Knowledge Representation for Vehicle to Grid Systems: Power Monitoring, Storage and Trade</td>
+nsercCS2013.html:							<td style="font-size:0.8em;">Social Network-based Data Dissemination in Vehicular Sensor Networks to Support Distributed Monitoring Services</td>
+nsercCS2013.html:							<td style="font-size:0.8em;">Quebec a Montreal</td>
+temp.csv:"29","Brlek, Srecko SDepartmentInformatique","Quebec a Montreal","RGPIN","Combinatorics on words and digital geometry","5","$25,000.00"
+temp.csv:"76","Hunter, Aaron AMDepartmentComputing and Academic Studies, School of","BC Institute of Technology","RGPIN","Knowledge Representation for Vehicle to Grid Systems: Power Monitoring, Storage and Trade","5","$15,000.00"
+temp.csv:"139","Pazzi, Richard RWDepartmentBusiness and Information Technology, Faculty of","Ontario Institute of Technology","RGPIN","Social Network-based Data Dissemination in Vehicular Sensor Networks to Support Distributed Monitoring Services","5","$20,000.00"
+temp.csv:"178","Valtchev, Petko PGDepartmentInformatique","Quebec a Montreal","RGPIN","Pattern mining from linked data, methods, tools and applications","5","$20,000.00"
+#+end_example
+
+#
+summary(tab)
+strapply(tab$Name, "Department")
+summary(tab)
+
+#+begin_src R :results output
+require(XML)
+require(plyr)
+require(stringr)
+library(gsubfn)
+a<-readHTMLTable('nsercCS2013.html')
+tab<-a[[1]]
+tab<-rename(tab, c("Applicant Name"="Name", "Awarded Amount"="amount"))
+tab$amount <- sub(",", "", tab$amount)
+tab$amount <- sub("\\$", "", tab$amount)
+tab$amount <- as.numeric(tab$amount)
+tab$amount
+write.table(tab, file='nserc2013.csv', sep=';', col.names=TRUE, row.names=FALSE)
+disc<-tab[tab$Program=='RGPIN',]
+summary(disc)
+cat("----------------------\n")
+sum(disc$amount)
+cat("----------------------\n")
+nrow(disc)
+#+end_src
+
+
+
+#+RESULTS:
+#+begin_example
+  [1]  15000  25000  30000  20000  15000  20000  15000  15000  30000  20000  30000  15000  15000  30000  20000  15000  20000  15000  55586  16063  20000  15000
+ [23]  25000  66000  15000  25000  15000  62000  25000  20000  30000  20000  25000  44000  36000  25000  15000  30000  36000  13015  20000  30000  22000  15000
+ [45]  15000  36000  36000  25000  15000  47125  20000  36000  43590  15000  20000  52000  36000  30000  20000  25000  15000  20000  36000  30000  20000  25000
+ [67]  25000  36000  49940  30000  25000  20000  62000  30000  15000  15000  69333  30000  15000  29414  25000  20000  44000  20000  20000  20000  20000  15000
+ [89]  30000  36000  20000  36000  15000 148152  20000  26175  15000  30000  52000  25700  36000  25000  20000  30000  20000  25000  36000  25000  20000  15000
+[111]  20000  36000  20000  25000  36000  20000  20000  25000  30000  52000  20000  20000  44000  25000  20000  75000  20000  36000  15000  15000  25000  20000
+[133]  15000  44000  25000  15000  15000  36000  20000  44000  15000  36000  44000  30000  15000  25000  15000  20000  20000  44000  30000  20000  44000  30000
+[155]  15000  36000  20000  62000  36000  15000  15000  36000  30000  20000  25000  30000  25000  20000  25000  93258  15000  36000  25000  20000  20000  20000
+[177]  20000  20000  44000  15000  60124  30000  20000  15000  25000  20000  30000  15000  15000  20000  20000  20000  44000  15000  25000  20000  20000  25000
+[199]  25000  44000  36000  15000  15000  15000
+                         Name                                                       Deparment         Institution   Program   
+ ABIDI, SYED SIBTE RAZA SSR:  1   Computer Science                                       : 30   Waterloo    : 20   EQPEQ:  0  
+ Aboulnaga, Ashraf AI      :  1   Computer Science, David R. Cheriton School of          : 12   Toronto     : 16   RGPIN:190  
+ Aimeur, Esma E            :  1   Computer Science, School of                            : 11   Calgary     : 11              
+ AIT MOHAMED, Otmane O     :  1   Computer Science (St. George Campus)                   :  8   Simon Fraser: 10              
+ Alhajj, Reda RA           :  1   Electrical Engineering and Computer Science , School of:  8   Concordia   :  9              
+ Alim, Usman UR            :  1   Informatique et recherche operationnelle               :  8   McGill      :  9              
+ (Other)                   :184   (Other)                                                :113   (Other)     :115              
+                                                                                                            Title     Term        amount     
+ A Calculus Approach for Stochastic Networks: From Communication Networks to Smart Grids to Internet Water Army:  1   1:  3   Min.   :15000  
+ A control-theoretic model of speech production and recognition for use within prosthetic communication devices:  1   5:187   1st Qu.:20000  
+ Adaptive Mechanisms for Large Scale Software Systems                                                          :  1           Median :20000  
+ Affectively-Responsive Multi-Agent Adaptive Learning Environments                                             :  1           Mean   :25758  
+ A Framework for the Management of Preventive Maintenance                                                      :  1           3rd Qu.:30000  
+ Agent-Based Resilient and Secure Wireless Sensor Networks and Applications                                    :  1           Max.   :75000  
+ (Other)                                                                                                       :184                          
+----------------------
+[1] 4894000
+----------------------
+[1] 190
+#+end_example
+
+

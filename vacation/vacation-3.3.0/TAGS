@@ -1,0 +1,41 @@
+
+antivacation.c,1059
+static char copyright[copyright51,2245
+static char sccsid[sccsid55,2393
+# define _PATH_SENDMAIL 80,2867
+# define PATH_VACATION 84,2941
+# define DAYSPERWEEK 99,3199
+# define SECSPERDAY 100,3222
+#define VIT 118,3739
+#define MAXLINE 119,3787
+#define VDB 120,3859
+#define VMSG 121,3920
+#define FWDBACKUP 122,3983
+typedef struct alias 124,4056
+  struct alias *next;next125,4079
+  const char *name;name126,4101
+} ALIAS;127,4121
+ALIAS *names;names128,4130
+DB *db;db132,4196
+char from[from133,4204
+char subj[subj134,4224
+int jflag 135,4244
+int main(154,4709
+void readheaders(299,7980
+int nsearch(392,10291
+int junkmail(408,10650
+  static struct ignore 410,10671
+    const char      *name;name411,10696
+    int     len;412,10723
+int recent(454,11684
+time_t lookup(476,12289
+void setreply(495,12661
+void sendmessage(510,12955
+void usage(559,13939
+void listdb(566,14108
+int isdelim(592,14649
+void debuglog(609,15037
+void discard_exit(622,15403
+void *xmalloc(xmalloc632,15590
+void initialize(642,15774
+int askyn(753,18730

@@ -1,0 +1,187 @@
+* Machines
+
+| manganese |  142.104.68.218 | mn |
+| sulphur   |  142.104.68.220 | mn |
+| tungsten  |  142.104.68.122 | w  |
+| Gold      |   142.104.69.28 | w  |
+| Silver    |   142.104.69.27 | ag |
+| Thallium  |  142.104.68.213 | tl |
+| oxygen    | :142.104.68.221 | o  |
+| carbon    |                 |    |
+
+
+** Uvic
+
+|-----------+-------+----------------+--------------+-------------------------+----------------|
+| DNS       | Alias |             IP | Machine      | Machine type            | Location       |
+|-----------+-------+----------------+--------------+-------------------------+----------------|
+| Bismuth   | Bi    |  142.104.68.25 | Student 1    |                         |                |
+| Gold      | Au    |  142.104.69.28 | Lab 2        | Linux Debian Lenny      | Lab            |
+| Helium    | He    |  142.104.68.87 | Student 3    | Linux                   | Peter's Office |
+| Manganese | Mn    | 142.104.68.218 | Lab 1        | Linux Debian Etch       | Lab            |
+| Oxygen    | O     | 142.104.68.221 | New          | Linux                   | My  office     |
+| Potassium | K     | 142.104.68.178 |              |                         |                |
+| Silicon   | Si    |  142.104.69.72 | My Laptop    | Linux Ubuntu 11.10      | My office      |
+| Silver    | Ag    |  142.104.69.27 | Lab 1a       | Ubuntu Server 10.04 LTS | Lab            |
+| Sulfur    | S     | 142.104.68.220 | svn server   | Virtual on Lab 1        | Lab (virtual)  |
+| Thallium  | Tl    | 142.104.68.213 | Julius       | Linux                   | Lab            |
+| Tungsten  | W     | 142.104.68.122 | Web server   | Virtual on Lab 2        | Lab (virtual)  |
+| Xenon     | Xe    | 142.104.68.241 | CISCO Router |                         | My office      |
+|-----------+-------+----------------+--------------+-------------------------+----------------|
+
+*** Oxygen
+
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+	address 142.104.68.221
+	netmask 255.255.254.0
+	network 142.104.68.0
+	broadcast 142.104.69.255
+	gateway 142.104.68.1
+	# dns-* options are implemented by the resolvconf package, if installed
+	dns-nameservers 142.104.68.1
+	dns-search cs.uvic.ca
+
+*** thallium
+
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo eth0
+
+iface lo inet loopback
+
+iface eth0 inet static
+    address 142.104.68.213
+    netmask 255.255.254.0
+    gateway 142.104.68.1
+    dns-nameservers 142.104.71.127 142.104.96.2 142.104.6.1i
+    dns-search cs.uvic.ca
+
+#   dns-nameservers 64.59.160.13 64.59.160.15
+ 
+*** silver
+
+Last login: Tue Mar 13 18:20:29 2012 from s0106602ad07fa0dd.gv.shawcable.net
+dmg@silver:~$ more /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth1
+iface eth1 inet static
+	address 142.104.69.27
+	netmask 255.255.254.0
+	network 142.104.68.0
+	broadcast 142.104.69.255
+	gateway 142.104.68.1
+	# dns-* options are implemented by the resolvconf package, if installed
+	dns-nameservers 142.104.71.64 142.104.96.2 142.104.6.1
+	dns-search cs.uvic.ca
+
+*** gold
+
+if-down.d/      if-post-down.d/ if-pre-up.d/    if-up.d/        interfaces      interfaces~     run/            
+dmg@gold:~$ more /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth1
+##iface eth0 inet static
+#             address 142.104.69.28
+#             netmask 255.255.254.0
+#             network 142.104.66.0
+#            broadcast 142.104.69.255
+# force gold to be static
+#iface eth1 inet static
+#             address 142.104.69.28
+#             netmask 255.255.254.0
+#             network 142.104.68.1
+#             broadcast 142.104.69.255
+## tungsten is automatic
+#iface eth1   inet dhcp
+
+iface eth1 inet static
+             address 142.104.69.28
+             netmask 255.255.254.0
+             network 142.104.68.0
+             broadcast 142.104.69.255
+	     gateway 142.104.68.1
+
+iface eth1:0   inet static
+             address 142.104.68.122
+             netmask 255.255.254.0
+             network 142.104.68.0
+             broadcast 142.104.69.255
+	     gateway 142.104.68.1
+
+
+*** mn
+
+[dmg@manganese ~]$ more /etc/sysconfig/network-scripts/ifcfg-eth0:0
+DEVICE='eth0:0'
+BOOTPROTO='none'
+BROADCAST='142.104.127.255'
+IPADDR='142.104.68.220'
+NETMASK='255.255.224.0'
+NETWORK='142.104.96.0'
+ONBOOT='yes'
+GATEWAY=142.104.127.254
+TYPE=Ethernet
+USERCTL=no
+[dmg@manganese ~]$ 
+
+[dmg@manganese ~]$ more /etc/sysconfig/network-scripts/ifcfg-eth0:1
+DEVICE='eth0:1'
+BOOTPROTO='none'
+BROADCAST='142.104.127.255'
+IPADDR='142.104.68.218'
+NETMASK='255.255.224.0'
+NETWORK='142.104.96.0'
+ONBOOT='yes'
+GATEWAY=142.104.127.254
+TYPE=Ethernet
+USERCTL=no
+[dmg@manganese ~]$ 
+
+
+
+** Home Network
+
+|-----------+-------+---------------+---------------------+---------------+----------+----------|
+| DNS       | Alias |            IP | Machine             | MachineType   | Location | Notes    |
+|-----------+-------+---------------+---------------------+---------------+----------+----------|
+| Iodine    | I     |  192.168.1.53 | My laptop           | Linux         | -        |          |
+| Hydrogen  | H     |   192.168.1.1 | Router              | Cisco         | dmg      | cusadmin |
+| Mercury   | Hg    |  192.168.1.80 | Nas Server          | DLink 232     | dmg      |          |
+| Lead      | Pb    |  192.168.1.82 | Printer/Scanner     | Brother       | dmg      |          |
+| Iridium   | Ir    |  192.168.1.77 | Desktop             | MacPro        | dmg      |          |
+| Titanium  | Ti    |  192.168.1.22 | PC Server           | PC Linux      | Basement |          |
+| Radium    | Ra    |  192.168.1.88 | Media player/server | WDLive...     | dmg      |          |
+| Nitrogen  | N     |   192.168.1.7 | Phone               | N900          |          |          |
+| Oxygen    | O     |   192.168.1.8 | Netbook             | Toshiba NB525 | dmg      |          |
+| xxx       |       |               | galaxyTab           |               |          |          |
+|           |       |               |                     |               |          |          |
+|           |       |               | Lisa Laptop         |               |          |          |
+| wRouter   | H2    | 192.168.1.129 | Wireless Router     | Linksys       | dmg      | admin    |
+| rosePhone |       |               |                     |               |          |          |
+|-----------+-------+---------------+---------------------+---------------+----------+----------|
+

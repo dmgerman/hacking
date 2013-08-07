@@ -1,0 +1,33 @@
+SUBWAY
+
+   Facility Location:
+   239 Menzies Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 6011778
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Routine Inspection      7-Jan-2010
+   [2]Routine Inspection     28-Jan-2009
+   [3]Routine Inspection     14-Feb-2008
+   [4]Follow-Up Inspection   12-Sep-2007
+   [5]Routine Inspection     10-Sep-2007
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6A7E91C4B1E69304882576AA00391ED1?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A95F9884B448175D882575500047A53A?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/16EF9EEC1A301E36882573F20047B21D?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/2A4EEC97C5DCB60A88257357004222D4?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5EE54C797E69C625882573550042737D?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

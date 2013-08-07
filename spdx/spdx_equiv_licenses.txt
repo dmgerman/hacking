@@ -1,0 +1,27 @@
+;Unknown license
+NONE;No License found
+GPLnoVersion;GPL-1.0+
+GPLv1;GPL-1.0
+GPLv2;GPL-2.0
+GPLv2+;GPL-2.0+
+GPLv2,GPLv2;GPL-2.0
+GPLv2,GPLv2+;GPL-2.0+
+GPLv2,GPLv2,SeeFile;GPL-2.0;
+GPLv2+,MPLv1_1;GPL-2+,MPL-1.1
+GPLv2,SeeFile;GPL-2.0;
+GPLv2+,SeeFile;GPL-2.0+;
+GPLv2,SeeFile,SeeFile;GPL-2.0;
+kerberos;Kerberos
+LesserGPLnoVersion;LGPL-2.0+
+LesserGPLv2.1;LGPL-2.1
+LesserGPLv2.1+;LGPL-2.1+
+LibraryGPLv2+;LGPL-2.0+
+publicDomain;Public Domain
+spdxBSD2;BSD-2-Clause
+spdxBSD3;BSD-3-Clause
+spdxBSD3,SeeFile;BSD-3-Clause
+spdxBSD4;BSD-4-Clause
+NONE;NONE
+GPLv2,spdxBSD3;GPL-2.0,BSD-3-Clause
+GPLv2+,spdxBSD3;GPLv-2.0+,BSD-3-Clause
+MPLv1_1;MPL-1.1

@@ -1,0 +1,33 @@
+ELEMENT
+
+   Facility Location:
+   919 Douglas Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 6012091
+   Facility Type:                   Food (Licensed Premises)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                    Document Details
+   [1]Routine Inspection   27-Jan-2010
+   [2]Routine Inspection   10-Dec-2008
+   [3]Routine Inspection   27-May-2008
+   [4]Routine Inspection   11-May-2007
+   [5]Routine Inspection   18-Oct-2006
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E92B9F49ED9C2D57882576BB002F0A69?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/05F7D700AF789D238825751D0047AA56?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/DE4D67C188286AC58825745A004233A9?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B02F79D78B33A347882572DE00423834?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/05DFE30F851409988825720F0044DD9E?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

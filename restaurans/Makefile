@@ -5,7 +5,7 @@ vicRest.html:
 
 # this file has to be edited by hand to remove headers and footers
 restaurantsVictoria.txt: vicRest.html	scripts/extract.pl
-	perl scripts/extract.pl vicRest.html > restaurantsVictoria.txt
+	perl scripts/extract.pl vicRest.html | sort > restaurantsVictoria.txt
 
 sortedRestaurantsVictoria.txt: restaurantsVictoria.txt
 	sort restaurantsVictoria.txt > sortedRestaurantsVictoria.txt

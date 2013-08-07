@@ -1,0 +1,74 @@
+Delivered-To: dmgerman@gmail.com
+Received: by 10.216.207.149 with SMTP id n21cs31475weo;
+        Wed, 26 Oct 2011 11:13:24 -0700 (PDT)
+Received: by 10.151.41.10 with SMTP id t10mr15491723ybj.31.1319652803375;
+        Wed, 26 Oct 2011 11:13:23 -0700 (PDT)
+Return-Path: <luis.netter@gmail.com>
+Received: from antelope.comp.uvic.ca (antelope.comp.uvic.ca. [142.104.148.229])
+        by mx.google.com with ESMTPS id g16si1287524ybf.64.2011.10.26.11.13.21
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Wed, 26 Oct 2011 11:13:23 -0700 (PDT)
+Received-SPF: neutral (google.com: 142.104.148.229 is neither permitted nor denied by domain of luis.netter@gmail.com) client-ip=142.104.148.229;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 142.104.148.229 is neither permitted nor denied by domain of luis.netter@gmail.com) smtp.mail=luis.netter@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: from dog.comp.uvic.ca (dog.comp.uvic.ca [142.104.5.222])
+	by antelope.comp.uvic.ca (8.14.4/8.14.4) with ESMTP id p9QIDIN2008648
+	for <dmg@uvic.ca>; Wed, 26 Oct 2011 11:13:18 -0700
+Received: from mail-vw0-f44.google.com (mail-vw0-f44.google.com [209.85.212.44])
+	by dog.comp.uvic.ca (8.13.8/8.13.8) with ESMTP id p9QICgbQ008583
+	for <dmg@uvic.ca>; Wed, 26 Oct 2011 11:13:15 -0700
+Received: by mail-vw0-f44.google.com with SMTP id 5so1694044vws.3
+        for <dmg@uvic.ca>; Wed, 26 Oct 2011 11:13:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:content-transfer-encoding;
+        bh=mztM8FXyJCJhgFY0BDtoNf8glsKd1W5pgFPcTgIzv3I=;
+        b=K+82bUuA9PPaXkcrLGF1n9I0NlqyI62s/UlgU8R482vfOLYV54jTrb2s532BqKVx83
+         Fetboel/IrAZaJAGcIxAslkHNoBCzUJFyYZlg/EwKxK7jL/hg/9/zPi0sXcfShpYYpQd
+         sO4ILvvhTPSDiQYSO3XQbdhs0E1dqdsGFLT/4=
+MIME-Version: 1.0
+Received: by 10.182.225.3 with SMTP id rg3mr5545763obc.77.1319652794630; Wed,
+ 26 Oct 2011 11:13:14 -0700 (PDT)
+Received: by 10.182.192.103 with HTTP; Wed, 26 Oct 2011 11:13:14 -0700 (PDT)
+In-Reply-To: <CAEBXXD_fo5=W-RTBHDm5XMMc-oq5CSNWNZ7+3D0OmrnSvn1SRA@mail.gmail.com>
+References: <CAEBXXD_fo5=W-RTBHDm5XMMc-oq5CSNWNZ7+3D0OmrnSvn1SRA@mail.gmail.com>
+Date: Wed, 26 Oct 2011 11:13:14 -0700
+Message-ID: <CA+ON040ew8=AreOGVWRSU5Nxh0i-82w3SJo-VHvvVsnTiPE38g@mail.gmail.com>
+Subject: Re: before you flash it...
+From: Luis Netter <luis.netter@gmail.com>
+To: dmg <dmg@uvic.ca>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-UVic-Virus-Scanned: OK - Passed virus scan by ClamAV (clamd) on antelope
+X-UVic-Virus-Scanned: OK - Passed virus scan by Sophos (sophie) on antelope
+X-UVic-Virus-Scanned: OK - Passed virus scan by ClamAV (clamd) on dog
+X-UVic-Virus-Scanned: OK - Passed virus scan by Sophos (sophie) on dog
+X-UVic-Scan: antelope.comp.uvic.ca filter_version 3.1.50
+X-UVic-Scan: dog.comp.uvic.ca filter_version 3.1.50
+X-UVic-Outbound-Scan: antelope.comp.uvic.ca Not_scanned_Bypass
+X-UVic-Outbound-Scan: dog.comp.uvic.ca Not_scanned_Remote
+X-UVic-Spam-Scan: antelope.comp.uvic.ca Not_scanned_NOT_SA_HOST
+X-UVic-Spam-Scan: dog.comp.uvic.ca No_recips_rejected
+X-UVic-Spam-Status: No
+X-UVic-Spam-Score: -0.568 AWL,RCVD_IN_DNSWL_LOW,SPF_PASS
+X-UVic-Spam-Level: Spam-Level 
+X-Scanned-By: MIMEDefang 2.67 on 142.104.148.229
+X-Scanned-By: MIMEDefang 2.63 on 142.104.5.91
+
+yes, I do.
+You can try at any time.
+
+On Wed, Oct 26, 2011 at 10:51 AM, dmg <dmg@uvic.ca> wrote:
+> YOu got a Rogers Tab, right? and you have Gingerbread 2.3?
+>
+> If you dont' mind, I'd like to try using my Fido card and see what it
+> says. =A0I had a slight problem upgrading from 2.2 to 2.3
+> and I don't know if this is an Android issue or a carrier one.
+>
+>
+> --dmg
+>
+> ---
+> Daniel M. German
+> http://turingmachine.org
+>

@@ -1,0 +1,31 @@
+PIZZA PI
+
+   Facility Location:
+   1412 Douglas Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64006112
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                    Document Details
+   [1]Routine Inspection   10-Nov-2009
+   [2]Routine Inspection   20-Aug-2009
+   [3]Routine Inspection   13-Feb-2009
+   [4]Initial Inspection   12-Dec-2008
+
+   [5]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/D7A8B8AF2CAC08648825766E00481A55?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/6E055DC97BB00A7A8825761B007A9B39?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/7A0A8A036D778310882575610047BA58?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B0F183EC600AF295882575230047AEC1?OpenDocument
+   5. http://www.viha.ca/disclaimer.htm

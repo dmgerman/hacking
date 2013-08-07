@@ -52,15 +52,16 @@ static char copyright[] =
   "@(#) Copyright (c) 1983, 1987, 1993\n\
         The Regents of the University of California.  All rights reserved.\n";
 
-static char sccsid[] = "@(#)vacation.c  8.2 (Berkeley) 1/26/94";
+static char sccsid[] = "@(#)antivacation.c  0.1";
 #endif /* not lint */
 
 /*
-**  Vacation
-**  Copyright (c) 1983  Eric P. Allman
-**  Berkeley, California
+**  Antivacation
+**  Originally based on vacation.c Copyright (c) 1983  Eric P. Allman and further modified by Marco d'Itri <md@linux.it>
+**  Further modifications by Daniel M German (c) 2013
 */
 
+#include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -127,6 +128,12 @@ typedef struct alias {
 } ALIAS;
 ALIAS *names;
 
+typedef struct {
+  time_t firstSeen; // first seen message
+  time_t lastSeen;  // last seeen message
+  int count;        // count
+} record;
+
 void (*msglog)(int, const char *, ...) = &syslog;
 
 DB *db;
@@ -134,14 +141,12 @@ char from[MAXLINE];
 char subj[MAXLINE];
 int jflag = 0;
 
-int dryRunFlag = 0; // do not actually send any emails if true
-
 /* prototypes */
 void readheaders(void);
 int nsearch(const char *, const char *);
 int junkmail(void);
 int recent(void);
-time_t lookup(const char *, size_t);
+time_t lookup(const char *, size_t, record *rec);
 void setreply(const char *, size_t, time_t);
 void sendmessage(const char *, const char *);
 void usage(void);
@@ -153,6 +158,12 @@ void initialize(const char *);
 void debuglog (int, const char *, ...);
 int askyn (const char *);
 
+#define MAIL_PRECEDENCE_DEFAULT 0 
+#define MAIL_PRECEDENCE_BULK    1
+#define MAIL_PRECEDENCE_LIST    2
+#define MAIL_PRECEDENCE_JUNK    3
+int mailPrecedence = MAIL_PRECEDENCE_DEFAULT;
+
 int main(int argc, char *argv[])
 {
   struct passwd *pw;
@@ -161,8 +172,10 @@ int main(int argc, char *argv[])
   int ch, iflag, lflag, xflag, zflag;
   char *dbfilename = (char *)VDB;
   char *msgfilename = (char *)VMSG;
+  int dryRunFlag = 0; // do not actually send any emails if true
+
   
-  openlog("vacation", LOG_PERROR, LOG_MAIL);
+  openlog("antivacation", LOG_PERROR, LOG_MAIL);
   opterr = iflag = lflag = xflag = zflag = 0;
   interval = -1;
   while ((ch = getopt(argc, argv, "a:df:Iijlm:r:t:xyz")) != -1)
@@ -211,8 +224,8 @@ int main(int argc, char *argv[])
       xflag = 1;
       break;
     case 'y':
-      dry
-	
+      dryRunFlag = 1;
+      break;
     case 'z':
       zflag = 1;
       break;
@@ -281,10 +294,16 @@ int main(int argc, char *argv[])
   names = cur;
   
   readheaders();
+
   if (!recent()) {
     setreply(from, strlen(from), time(NULL));
     (db->close)(db);
-    sendmessage(zflag ? "<>" : pw->pw_name, msgfilename);
+    dryRunFlag = 1;
+    if (dryRunFlag) {
+      sendmessage(zflag ? "<>" : pw->pw_name, msgfilename);
+    } else {
+      debuglog(0, "Emailing %s\n", pw->pw_name);
+    }
   }
   else
     (db->close)(db);
@@ -344,10 +363,16 @@ void readheaders(void)
       while (*++p && isspace(*p));
       if (!*p)
 	break;
-      if (!strncasecmp(p, "junk", 4) ||
-	  !strncasecmp(p, "bulk", 4) ||
-	  !strncasecmp(p, "list", 4))
-	discard_exit();
+      if (!strncasecmp(p, "junk", 4)) {
+	mailPrecedence = MAIL_PRECEDENCE_JUNK;
+	// ignore junk precedence
+	if (junkmail())
+	  discard_exit();
+      } else if (!strncasecmp(p, "bulk", 4)) {
+	mailPrecedence = MAIL_PRECEDENCE_BULK;
+      } else if (!strncasecmp(p, "list", 4)) {
+	mailPrecedence = MAIL_PRECEDENCE_LIST;
+      }
       break;
     case 'S':               /* "Subject" */
       cont = 0;
@@ -403,7 +428,7 @@ int nsearch(const char *name, const char *str)
 
 /*
  * junkmail --
- *      read the header and return if automagic/junk/bulk/list mail
+ *      read the header and return if automagic/junk mail
  */
 int junkmail(void)
 {
@@ -455,25 +480,28 @@ int recent(void)
 {
   time_t then, next, now = time(NULL);
   char *domain;
+  record rec;
   
   /* get interval time */
-  if ((next = lookup(VIT, sizeof(VIT))) == -1)
+  if ((next = lookup(VIT, sizeof(VIT),&rec)) == -1)
     next = SECSPERDAY * DAYSPERWEEK;
   
   /* get record for this address */
-  if ((then = lookup(from, strlen(from))) != -1)
+  if ((then = lookup(from, strlen(from), &rec)) != -1)
     if (next == LONG_MAX || then == LONG_MAX || then + next > now)
       return 1;
+#ifdef IGNORE_DOMAIN
   if ((domain = strchr(from, '@')) == NULL)
     return 0;
   if ((then = lookup(domain, strlen(domain))) != -1)
     if (next == LONG_MAX || then == LONG_MAX || then + next > now)
       return 1;
+#endif
   return 0;
 }
 
 /* lookup a record in the database */
-time_t lookup(const char *s, size_t len)
+time_t lookup(const char *s, size_t len, record *rec)
 {
   DBT key, data;
   time_t ret;
@@ -481,8 +509,9 @@ time_t lookup(const char *s, size_t len)
   key.data = (char *)s;
   key.size = len;
   if (!(db->get)(db, &key, &data, 0)) {
-    memmove(&ret, data.data, sizeof(ret));
-    return ret;
+    assert(sizeof(*rec) >= data.size);
+    memmove(rec, data.data, data.size);
+    return rec->lastSeen;
   }
   return -1;
 }
@@ -495,11 +524,20 @@ time_t lookup(const char *s, size_t len)
 void setreply(const char *addr, size_t size, time_t when)
 {
   DBT key, data;
+  record rec;
+
+  /// look it up so we replace it
+  if (lookup(addr, size, &rec) == -1) {
+    rec.firstSeen = when;
+    rec.count = 0;
+  }
+  rec.lastSeen = when;
+  rec.count++;
   
   key.data = (char *)addr;
   key.size = size;
-  data.data = &when;
-  data.size = sizeof(when);
+  data.data = &rec;
+  data.size = sizeof(rec);
   (db->put)(db, &key, &data, 0);
 }
 

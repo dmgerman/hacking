@@ -1,0 +1,14 @@
+| Name:	Bismuth.cs.uvic.ca| Address: 142.104.68.25|
+| Name:	Gold.cs.uvic.ca| Address: 142.104.69.28|
+| Name:	Helium.cs.uvic.ca| Address: 142.104.68.87|
+| Name:	Manganese.cs.uvic.ca| Address: 142.104.68.218|
+| Name:	Oxygen.cs.uvic.ca| Address: 142.104.68.221|
+| Name:	Potassium.cs.uvic.ca| Address: 142.104.68.178|
+| Name:	Silicon.cs.uvic.ca| Address: 142.104.69.72|
+| Name:	Silver.cs.uvic.ca| Address: 142.104.69.27|
+| Name:	Sulfur.cs.uvic.ca| Address: 142.104.68.220|
+| Name:	Thallium.cs.uvic.ca| Address: 142.104.68.213|
+| Name:	Tungsten.cs.uvic.ca| Address: 142.104.68.122|
+| Name:	Xenon.cs.uvic.ca| Address: 142.104.68.241|
+
+

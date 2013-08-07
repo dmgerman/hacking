@@ -1,0 +1,33 @@
+                     Lynx source distribution and potpourri
+
+   Lynx is the text web browser. This is the top level page for the Lynx
+   software distribution site hosted by the Internet Software Consortium.
+
+   The [1]current development sources have the latest version of Lynx
+   available (development towards 2.8.8). The [2]main help page for
+   lynx-current is online; the current [3]User Guide is part of the online
+   documentation.
+
+   The most recent stable release is [4]lynx2-8-7. The [5]main help page
+   is online, as well as the [6]User Guide.
+
+   Other resources include:
+     * [7]ftp and http mirrors
+     * [8]Mailing list archives
+     * [9]pgp/gpg signatures
+     __________________________________________________________________
+
+   Viewable with any browser; [10]valid HTML.
+
+References
+
+   1. http://lynx.isc.org/current/index.html
+   2. http://lynx.isc.org/current/lynx2-8-8/lynx_help/lynx_help_main.html
+   3. http://lynx.isc.org/current/lynx2-8-8/lynx_help/Lynx_users_guide.html
+   4. http://lynx.isc.org/lynx2.8.7/index.html
+   5. http://lynx.isc.org/lynx2.8.7/lynx2-8-7/lynx_help/lynx_help_main.html
+   6. http://lynx.isc.org/lynx2.8.7/lynx2-8-7/lynx_help/Lynx_users_guide.html
+   7. http://lynx.isc.org/mirrors.html
+   8. http://lists.nongnu.org/mailman/listinfo/lynx-dev/
+   9. http://lynx.isc.org/signatures.html
+  10. http://validator.w3.org/check?uri=http%3A%2F%2Flynx.isc.org%2Findex.html

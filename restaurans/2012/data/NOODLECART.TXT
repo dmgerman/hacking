@@ -1,0 +1,29 @@
+NOODLECART
+
+   Facility Location:
+   1018 Blanshard Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64008009
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                    Document Details
+   [1]Routine Inspection   19-Apr-2012
+   [2]Routine Inspection   29-Mar-2012
+   [3]Initial Inspection   28-Mar-2012
+
+   [4]Disclaimer | Copyright © 2000-2012 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/76444D8C8134C1C6882579E7002766F1?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/B84474D8B652859D882579D9002C9E8C?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/C3C943285F3378EE882579D100277516?OpenDocument
+   4. http://www.viha.ca/disclaimer.htm

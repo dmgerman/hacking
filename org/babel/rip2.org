@@ -1,0 +1,113 @@
+* Title
+
+
+#+begin_src perl :results output 
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Test
+#+end_example
+
+#+name: t_output_raw
+#+begin_src perl :results raw 
+print "Test\n";
+(1, 2);
+#+end_src
+
+#+RESULTS: t_output_raw
+1
+2
+
+#+name: t_output_table1
+#+begin_src perl :results table
+print "Test\n";
+("a, b, c")
+#+end_src
+
+#+RESULTS: t_output_table1
+| a, b, c\n |
+
+
+
+#+name: t_output_table
+#+begin_src perl :results table
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_table
+| 1\n2\n |
+
+#+name: t_output_vector
+#+begin_src perl :results vector
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_vector
+| 1\n2\n |
+
+
+#+name: t_output_list
+#+begin_src perl :results list
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_list
+#+begin_example
+- 1
+2
+#+end_example
+
+#+name: t_output_org
+#+begin_src perl :results org
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_org
+#+BEGIN_SRC org
+1
+2
+#+END_SRC
+
+#+name: t_output_html
+#+begin_src perl :results html
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_html
+#+BEGIN_HTML
+1
+2
+#+END_HTML
+
+#+name: t_output_latex
+#+begin_src perl :results latex
+print "Test\n";
+(1, 2)
+#+end_src
+
+#+RESULTS: t_output_latex
+#+BEGIN_LaTeX
+1
+2
+#+END_LaTeX
+
+
+
+
+
+
+
+
+
+
+
+
+

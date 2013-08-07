@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>A quick tutorial of how to use Perl within Org</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="A quick tutorial of how to use Perl within Org"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="author" content="daniel m german"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style><script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">A quick tutorial of how to use Perl within Org</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Preamble</a></li>
+<li><a href="#sec-2">2. Org-mode and Perl</a></li>
+<li><a href="#sec-3">3. Getting Started</a></li>
+<li><a href="#sec-4">4. Other types of output</a></li>
+<li><a href="#sec-5">5. Input data to the script</a></li>
+<li><a href="#sec-6">6. Using literate programming features</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Preamble</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This document is licensed under the same terms as Org-mode.
+</p>
+</div>
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Org-mode and Perl</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Perl is one of the languages that is supported by Org. Unfortunately
+it is not very documented, so it might be hard to get a hand on how to use it.
+</p>
+
+<p>
+One of the many advantages of Org is that it is capable of working
+with source code within a document. It can be used in two main modes:
+</p>
+
+<ol class="org-ol">
+<li>Small scripts. Each relatively independent from each other. But one might feed output to the next.
+</li>
+<li>Literate programming. You write a larger script by breaking into a set of many different ones.
+</li>
+</ol>
+
+<p>
+And of course, you can use a combination of both.
+</p>
+</div>
+</div>
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Getting Started</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Let us get started. Let us simply create a scripts that write numbers from 1 to 10. 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl"><span style="color: #a020f0;">foreach</span> $<span style="color: #a0522d;">a</span> (1..10) {
+   print <span style="color: #8b2252;">"$a\n"</span>;
+}
+</pre>
+</div>
+
+<p>
+Org supports several :results types. In this case  <code>:results output</code>
+indicates that the results should be considered literal and simply embedded into the document.
+</p>
+
+<p>
+You can also name the block where the results are expected:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl" id="countingTo10"><span style="color: #a020f0;">foreach</span> $<span style="color: #a0522d;">a</span> (1..10) {
+   print <span style="color: #8b2252;">"$a\n"</span>;
+}
+</pre>
+</div>
+
+<p>
+This means you can move the <code>#+RESULTS:</code> block somewhere else. It does
+not have to follow immediately after the code any more.
+</p>
+</div>
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Other types of output</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Perl scripts might generate data that is parsed by Org. Unfortunately
+its current support is not very powerful but hopefully it will improve
+over time. The simplest is to use the result of the last expression in
+the script:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl" id="sampleList"><span style="color: #228b22;">my</span> @<span style="color: #a0522d; text-decoration: underline;">array</span>;
+<span style="color: #a020f0;">foreach</span> $<span style="color: #a0522d;">a</span> (1..10) {
+   print <span style="color: #8b2252;">"$a\n"</span>;
+   push @<span style="color: #a0522d; text-decoration: underline;">array</span>, $<span style="color: #a0522d;">a</span>;
+}
+@<span style="color: #a0522d; text-decoration: underline;">array</span>;
+</pre>
+</div>
+
+<p>
+I hope that the support for Perl increases and it allows more complex types of outputs to be parsed by Org.
+</p>
+</div>
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Input data to the script</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+For me the killer feature of using Perl within org is that I can use
+tables as input to my scripts. The tables can be created by hand, or
+generated by other scripts. I often use SQL to create tables&ndash;within
+Org. This means I can use Org as a meta-programming language. A glue
+that lets me piece together different languages. Yes, I can use DBI to
+call SQL directly, but this way is way cooler :)
+</p>
+
+<p>
+Let us assume we have the following table:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" id="example-table">
+
+
+<colgroup>
+<col class="right"/>
+
+<col class="left"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="left">a</td>
+</tr>
+
+<tr>
+<td class="right">2</td>
+<td class="left">b</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="left">c</td>
+</tr>
+
+<tr>
+<td class="right">4</td>
+<td class="left">d</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+We want to use this table as input. Org passes tables to perl as a
+reference to an array of anonymous arrays. In a nutshell, you can
+access an element of a table using <code>$$nameTable[row][column]</code>. Remember,
+in perl indexes are zero based: For instance:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl" id="example1usingTable-data-example-table">print $$<span style="color: #a0522d;">data</span>[2][1], <span style="color: #8b2252;">"\n"</span>;
+print $$<span style="color: #a0522d;">data</span>[0][0], <span style="color: #8b2252;">"\n"</span>;
+</pre>
+</div>
+
+<p>
+One challenge, however, is to know how big the table is. It is a bit
+complicated, given the type of data structure created by org to represent the table.
+I found that the best solution is to use two functions: one that
+returns the number of rows, and another the number of tuples. Let us transpose the table
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl" id="example2usingTable-data-example-table"><span style="color: #b22222;"># </span><span style="color: #b22222;">first we need to define two functions that will make your life easier</span>
+<span style="color: #a020f0;">sub</span> <span style="color: #0000ff;">org_columns</span>
+{
+    <span style="color: #228b22;">my</span> ($<span style="color: #a0522d;">table</span>) = @<span style="color: #a0522d; text-decoration: underline;">_</span>;
+    <span style="color: #228b22;">my</span> $<span style="color: #a0522d;">y</span> = $$<span style="color: #a0522d;">table</span>[0];
+    <span style="color: #a020f0;">return</span> scalar(@$<span style="color: #a0522d;">y</span>);
+}
+
+<span style="color: #a020f0;">sub</span> <span style="color: #0000ff;">org_rows</span>
+{
+    <span style="color: #228b22;">my</span> ($<span style="color: #a0522d;">table</span>) = @<span style="color: #a0522d; text-decoration: underline;">_</span>;
+    <span style="color: #a020f0;">return</span> scalar(@$<span style="color: #a0522d;">table</span>);
+}
+
+<span style="color: #a020f0;">for</span> (<span style="color: #228b22;">my</span> $<span style="color: #a0522d;">i</span>=0;$<span style="color: #a0522d;">i</span>&lt;org_columns($<span style="color: #a0522d;">data</span>); $<span style="color: #a0522d;">i</span>++) {
+    <span style="color: #a020f0;">for</span> (<span style="color: #228b22;">my</span> $<span style="color: #a0522d;">j</span>=0;$<span style="color: #a0522d;">j</span>&lt;org_rows($<span style="color: #a0522d;">data</span>); $<span style="color: #a0522d;">j</span>++) {
+        print <span style="color: #8b2252;">"| $$data[$j][$i] "</span>;
+    }
+    print <span style="color: #8b2252;">"|\n"</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Using literate programming features</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Another beauty of org is that you can reuse code snippets. In org, if
+you use the option <code>:noweb yes</code>, then the special sequence <code><<name>></code> is
+expanded to the source snippet called <code>name</code>. For example, let us
+assume we want to transpose again the result of our previous
+script. First, let us deal with a problem with org. First, remove the
+<code>+begin_example</code>, <code>+end_example</code> from the table example2usingTable, to create a new one:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="right"/>
+
+<col class="right"/>
+
+<col class="right"/>
+
+<col class="right"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+<td class="right">4</td>
+</tr>
+
+<tr>
+<td class="right">a</td>
+<td class="right">b</td>
+<td class="right">c</td>
+<td class="right">d</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Now, let us use this as input in the same script example2usingTable:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-perl" id="example3usingTable-data-example2usingTableClean"><span style="color: #b22222;"># </span><span style="color: #b22222;">first we need to define two functions that will make your life easier</span>
+<span style="color: #a020f0;">sub</span> <span style="color: #0000ff;">org_columns</span>
+{
+    <span style="color: #228b22;">my</span> ($<span style="color: #a0522d;">table</span>) = @<span style="color: #a0522d; text-decoration: underline;">_</span>;
+    <span style="color: #228b22;">my</span> $<span style="color: #a0522d;">y</span> = $$<span style="color: #a0522d;">table</span>[0];
+    <span style="color: #a020f0;">return</span> scalar(@$<span style="color: #a0522d;">y</span>);
+}
+
+<span style="color: #a020f0;">sub</span> <span style="color: #0000ff;">org_rows</span>
+{
+    <span style="color: #228b22;">my</span> ($<span style="color: #a0522d;">table</span>) = @<span style="color: #a0522d; text-decoration: underline;">_</span>;
+    <span style="color: #a020f0;">return</span> scalar(@$<span style="color: #a0522d;">table</span>);
+}
+
+<span style="color: #a020f0;">for</span> (<span style="color: #228b22;">my</span> $<span style="color: #a0522d;">i</span>=0;$<span style="color: #a0522d;">i</span>&lt;org_columns($<span style="color: #a0522d;">data</span>); $<span style="color: #a0522d;">i</span>++) {
+    <span style="color: #a020f0;">for</span> (<span style="color: #228b22;">my</span> $<span style="color: #a0522d;">j</span>=0;$<span style="color: #a0522d;">j</span>&lt;org_rows($<span style="color: #a0522d;">data</span>); $<span style="color: #a0522d;">j</span>++) {
+        print <span style="color: #8b2252;">"| $$data[$j][$i] "</span>;
+    }
+    print <span style="color: #8b2252;">"|\n"</span>;
+}
+</pre>
+</div>
+
+<p>
+Voilá, by transposing the transposed table, we have recreated the original:
+</p>
+</div>
+</div>
+
+</div><div id="postamble">
+<p class="date">Date: </p>
+<p class="author">Author : daniel m german</p>
+<p class="creator">Generated by <a href="http://orgmode.org">Org</a> mode 7.9.3f in <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.1.1.</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+</div>
+</body>
+</html>

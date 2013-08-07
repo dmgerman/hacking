@@ -1,0 +1,33 @@
+ABC COUNTRY RESTAURANT
+
+   Facility Location:
+   2900 Douglas Street
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64006761
+   Facility Type:                   Food (Restaurant)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Routine Inspection      7-Apr-2010
+   [2]Follow-Up Inspection   11-Dec-2009
+   [3]Routine Inspection      8-Dec-2009
+   [4]Follow-Up Inspection   13-Aug-2009
+   [5]Routine Inspection      6-Aug-2009
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A362E628AE94C694882577020028A4A3?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/44DF2F2C77C716968825768F00483418?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/E725847D8080588F8825768900481A44?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/BC8EF5A9CD73B17388257614007A86DF?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/0A7E817CA29F46A68825760D007A87F6?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm

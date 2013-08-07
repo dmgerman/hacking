@@ -1,0 +1,5 @@
+#!/bin/sh
+keyfuzz -s -d /dev/input/by-id/usb-Apple_Inc._Apple_Keyboard-event-kbd < /etc/keyfuzz/apple_aluminium.keyfuzz
+date >> /tmp/done-apple-key.txt
+xset r rate 250 100
+echo done >> /tmp/done-apple-key.txt

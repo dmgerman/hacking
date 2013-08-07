@@ -1,0 +1,33 @@
+BARCODE
+
+   Facility Location:
+   603 Pandora Avenue
+   Victoria
+
+   Facility Information:
+
+   Facility Number:                 64004203
+   Facility Type:                   Food (Licensed Premises)
+   Months Open:                     All year long
+   FOODSAFE Excellence Certified:   No
+
+   Facility History and Documents:
+   Click on an inspection link below to see additional details
+
+   Type                      Document Details
+   [1]Routine Inspection     18-Sep-2008
+   [2]Routine Inspection     18-Sep-2007
+   [3]Routine Inspection     14-Mar-2007
+   [4]Follow-Up Inspection    9-Mar-2006
+   [5]Routine Inspection      2-Mar-2006
+
+   [6]Disclaimer | Copyright © 2000-2010 Vancouver Island Health Authority
+
+References
+
+   1. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/1100EF1EE7464E37882574CB00423181?OpenDocument
+   2. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/055FE2DE2CC97FB78825735D004234D5?OpenDocument
+   3. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/5211DEFE072DA0FA882572A100424A03?OpenDocument
+   4. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/A1606FEF342EFEAC8825712E004CAC7E?OpenDocument
+   5. http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/0/4AC8E703EDE4B36488257128004E87B2?OpenDocument
+   6. http://www.viha.ca/disclaimer.htm
