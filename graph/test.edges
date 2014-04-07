@@ -1,0 +1,5 @@
+#a,b,label,width,color
+a;b;10;5;
+a;c;25;1;
+a;d;Label a-d;4;
+b;c;Not;red;3

@@ -1,0 +1,228 @@
+%!PS-Adobe-1.0
+%%Title: pointed-paper
+%%Pages:1
+%%BoundingBox: 0 0 421 596
+%%DocumentPaperSizes: a5
+%%CreationDate: 2010/10/08
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 1
+%%EndComments
+%%BeginProlog
+% Copyright (C) 2010 Elena Grandi
+% All rights reserved.
+%
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions are met:
+%
+% * Redistributions of source code must retain the above copyright
+%   notice, this list of conditions and the following disclaimer.
+% * Redistributions in binary form must reproduce the above copyright
+%   notice, this list of conditions and the following disclaimer in the
+%   documentation and/or other materials provided with the distribution.
+% * Neither the name of the author nor the
+%   names of its contributors may be used to endorse or promote products
+%   derived from this software without specific prior written permission.
+%
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+% AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+% IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+% DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+% DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+% (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+% LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+% ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+% (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+% SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+% ------ Usage ----------------------------------------------------------------
+ 
+% To use this file either send it to a postscript printer, or use your
+% favourite postscript interpreter to visualize and print it.
+ 
+% You can customize the result by changing the values in the Settings
+% section below (see the comments for details)
+ 
+% ------ sizes ----------------------------------------------------------------
+% This will allow you to give measurements in inches or millimiters
+% do not change
+/inch {72 mul} def
+/mm {0.03937 inch mul} def
+ 
+% ------ Settings -------------------------------------------------------------
+ 
+% ------ Basic settings
+
+/SquaXLen   4 mm def           % hor spacing between points
+/SquaYLen   4 mm  def           % ver spacing between points
+
+/SquaXStr   5 def              % hor number of thin points between strong ones
+/SquaYStr   5 def              % ver number of thin points  between strong ones
+
+/PointSizeThin 0.5 def
+/PointSizeStro 0.2 def
+
+% line width and color for thin lines
+/LineSizeThin 0.5 def
+/LineColoThin { 0.5 0.5 0.5 } def
+% line width and color for strong lines
+/LineSizeStro 1 def
+/LineColoStro { 0.5 0.5 0.5 } def
+% line width and color for border
+/LineSizeBord 0.5 def
+/LineColoBord { 0.6 0.6 0.6 } def
+
+/BackColo { 1.0 1.0 1.0 } def  % background color
+
+% page size: if you change this, you should change the BoundingBox
+% in line 4 accordingly (you CAN'T use mm or inch over there)
+% Default is A4 paper ( BoundingBox: 0 0 596 842 )
+/PageWidth  148.5 mm def
+/PageHeight 210   mm def
+% alternate page sizes (with BoundingBox values) may be
+% A3 paper ( BoundingBox: 0 0 842 1192)
+%/PageWidth  297 mm def
+%/PageHeight 420 mm def
+% Letter paper ( BoundingBox: 0 0 612 792)
+%/PageWidth  8.5 inch def
+%/PageHeight 11 inch def
+ 
+% white margins
+/BorderTop 20 mm def
+/BorderBottom 4 mm def
+/BorderLeft 10 mm def
+/BorderRight 10 mm def
+
+% ------ Advanced settings
+
+% translation of the starting point of the pattern
+/PattTrasX 0.05 inch def
+/PattTrasY 0.05 inch def
+
+% ------ Behaviour
+ 
+% Whether to print a line around the margins (1) or not (0)
+/WillPrintBorder 0 def
+ 
+% From here on you shouldn't worry about changing or configuring anything
+% ------ Procedures -----------------------------------------------------------
+ 
+% Describes the printable area (does NOT print anything)
+/UsedArea {
+  newpath
+  BorderLeft BorderBottom moveto
+  BorderLeft PageHeight BorderTop sub lineto
+  PageWidth BorderRight sub PageHeight BorderTop sub lineto
+  PageWidth BorderRight sub BorderBottom lineto
+  closepath
+} def
+
+/PrintPointThin { %stk: x y
+    newpath
+        1 index
+        1 index
+        moveto
+        PointSizeThin 0 rmoveto
+        PointSizeThin 0 360 arc
+    closepath
+    fill
+    LineSizeThin setlinewidth
+    LineColoThin setrgbcolor
+    stroke
+} def
+
+/PrintPointStro { %stk: x y
+    newpath
+        1 index
+        1 index
+        moveto
+        PointSizeStro 0 rmoveto
+        PointSizeStro 0 360 arc
+    closepath
+    fill
+    LineSizeStro setlinewidth
+    LineColoStro setrgbcolor
+    stroke
+} def
+
+%%EndProlog
+%%Page: 1
+
+
+%%%/Helvetica findfont
+%%%12 scalefont
+%%%setfont
+%%%newpath
+%%%280 570 moveto
+%%%(Date:) show
+%%%
+
+% set printing area
+UsedArea clip
+ 
+% print background
+BackColo setrgbcolor
+UsedArea fill
+
+% Print thin points
+BorderLeft PattTrasX add SquaXLen sub % x starting position
+SquaXLen % step
+PageWidth % stop
+{ % for
+    BorderBottom PattTrasY add SquaYLen sub % y starting position
+    SquaYLen % step
+    PageHeight % stop
+    { %for
+        1 index exch PrintPointThin
+    } for
+} for
+
+%%%% Print strong points
+%%%BorderLeft PattTrasX add SquaXLen sub % x starting position
+%%%SquaXLen SquaXStr mul % step
+%%%PageWidth % stop
+%%%{ % for
+%%%    BorderBottom PattTrasY add SquaYLen sub % y starting position
+%%%    SquaYLen SquaYStr mul % step
+%%%    PageHeight % stop
+%%%    { %for
+%%%        1 index exch PrintPointStro
+%%%    } for
+%%%} for
+%%%
+% print border (if WillPrintBorder is not 0 )
+WillPrintBorder 0 ne {
+  LineSizeBord setlinewidth
+  LineColoBord setrgbcolor
+  UsedArea stroke
+} if
+
+showpage
+
+%%Page: 2
+
+
+UsedArea clip
+ 
+% print background
+BackColo setrgbcolor
+UsedArea fill
+
+% Print thin points
+BorderLeft PattTrasX add SquaXLen sub % x starting position
+SquaXLen % step
+PageWidth % stop
+{ % for
+    BorderBottom PattTrasY add SquaYLen sub % y starting position
+    SquaYLen % step
+    PageHeight % stop
+    { %for
+        1 index exch PrintPointThin
+    } for
+} for
+
+
+
+showpage
+
+%%Trailer

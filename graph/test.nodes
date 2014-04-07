@@ -1,0 +1,5 @@
+#nodeid;label;color;shape
+a;Label A;1;note
+b;Label B;2;rectangle
+c;Label C;3;box3d
+d;Label D;4

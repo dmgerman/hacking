@@ -202,6 +202,7 @@ USERCTL=no
 | Canon printer       |        |            |       |    |             |          |                   |          |      |
 | PC Server           |        | Titanium   | Ti    |    | PC Linux    | Basement |                   |          |      |
 | Phone               |        | Nitrogen   | N     |    | N900        |          |                   |          |      |
+| Note 8              |      8 | Oxygen     | O     |    | N5120       | dmg      | 04:1B:BA:34:F7:0A |          |      |
 
 
 00:26:4A:0B:3A:B4	192.168.1.203
