@@ -5,6 +5,7 @@
 # Input Format:
 # Two files
 # Nodes: nodeid;label
+# Nodes: id;label;color;shape;size;fill
 # Edges: nodeid1;nodeid2;label;width;color
 
 
@@ -36,7 +37,7 @@ my $format = <<END;
 The input format is:
 
 Nodes:
-nodeid;label;color;shape
+nodeid;label;color;shape;size;fill
 
 Edges:
 nodeid1;nodeid2;label;weight;color
