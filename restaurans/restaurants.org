@@ -1,3 +1,11 @@
+* Start by visiting
+
+http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/Food-Frameset
+
+http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/Food-List-ByName?OpenView&Count=1000&RestrictToCategory=0C8F6F469D6A3E56964B3A748CB4DD94
+
+http://www.healthspace.ca/Clients/VIHA/VIHA_Website.nsf/Food-List-ByName?OpenView&Count=1000&RestrictToCategory=0C8F6F469D6A3E56964B3A748CB4DD94
+
 * The ones I could not parse
 
 dmg@phosphorus:~/w/courses/2010/seng265s/unix$ cat  restaurantsVictoria.txt | cut -d ';' -f 2 | sed "s/'/\\\\'/g" | xargs -n1 -I@ sh saveRestInfo.sh '@'
@@ -7,3 +15,647 @@ saveRestInfo.sh: 3: cannot create SHARE ORGANICS/FOOD ROOTS.txt: Directory nonex
 saveRestInfo.sh: 3: cannot create THRIFTY FOODS #6, MEAT/SEAFOOD.txt: Directory nonexistent
 saveRestInfo.sh: 3: cannot create TRAFALGAR/PRO PATRIA BRANCH #292.txt: Directory nonexistent
 saveRestInfo.sh: 3: cannot create TRAFALGAR/PRO PATRIA BRANCH #292, KITCHEN.txt: Directory nonexistent
+
+
+#+begin_src R :results table  :exports both :cache yes 
+r<-read.csv('restaurants20140716.csv',sep=';') 
+#s<-r[r$type=='Food (Licensed Premises)',c(1,3,4,6)]
+s<-r[r$type=='Food (Take Out)',c(1,3,4,6)]
+#s<-r[r$type=='Food (Mobile)',c(1,3,4,6)]
+s
+#+end_src
+
+#+RESULTS[743528416c6ffe40bd02e8fc68f79353b4e5ef0b]:
+| 7-ELEVEN                                     | 904 Yates Street                     |  6010677 | All year long                       |
+| 7-ELEVEN                                     | 1327 Douglas Street                  |  6012853 | All year long                       |
+| 7-ELEVEN                                     | 910 Government Street                | 64004857 | All year long                       |
+| 7-ELEVEN #34579                              | 813 Douglas Street                   | 64007719 | All year long                       |
+| 7-ELEVEN #34998                              | 811 Bay Street                       | 64007875 | All year long                       |
+| A & W                                        | FC7 - 3147 Douglas Street            | 64006239 | All year long                       |
+| A & W RESTAURANT                             | 208 - 1644 Hillside Avenue           | 64006036 | All year long                       |
+| A & W RESTAURANT                             | 432 - 1150 Douglas Street            | 64006042 | All year long                       |
+| ALI BABA PIZZA                               | 775 Fort Street                      | 64005081 | All year long                       |
+| ALI BABA PIZZA MAYFAIR                       | FC-6 3147 Douglas Street             | 64008426 | All year long                       |
+| ALPINE FLORIST & FOOD MARKET, TAKE OUT       | 821 Fort Street                      | 64008771 | All year long                       |
+| AMBROSIA                                     | 638 Fisgard Street                   | 64009147 | All year long                       |
+| AUBERGINE FOODS                              | 1308 Gladstone Avenue                | 64007509 | All year long                       |
+| AWESOME COFFEE                               | 717 Douglas Street                   | 64009202 | All year long                       |
+| AYO EAT                                      | 140 - 560 Johnson Street             | 64007431 | All year long                       |
+| BEACON HILL LITTLE LEAGUE CONCESSION         | 1594 Fairfield Road                  | 64000122 | Apr May Jun Jul                     |
+| BENTO NOUVEAU                                | 670 Fort Street                      | 64005172 | All year long                       |
+| BIG ORANGE                                   | 312 - 3147 Douglas Street            | 64008689 | All year long                       |
+| BIG ORANGE                                   | 410 - 1150 Douglas Street            | 64008911 | All year long                       |
+| BLAIR MART                                   | 924 Pandora Avenue                   | 64002855 | All year long                       |
+| BOND BOND'S BAKERY                           | 1010 Blanshard Street                | 64005393 | All year long                       |
+| BOOSTER JUICE                                | 102 - 240 Cook Street                | 64007405 | All year long                       |
+| BOULANGERIE FOL EPI                          | 101 - 398 Harbour Road               | 64006770 | All year long                       |
+| BOWS & ARROWS COFFEE ROASTERS                | 483 Garbally Road                    | 64008221 | All year long                       |
+| CASA CONVENIENCE STORE - TAKE OUT            | 102 1483 Douglas Street              | 64008966 | All year long                       |
+| CLEOPATRA HOOKAH LOUNGE                      | 101 - 732 Broughton Street           | 64008281 | All year long                       |
+| COSMOS 2 FOR 1 PIZZA & PASTA                 | 1557 Pandora Avenue                  | 64001531 | All year long                       |
+| COTTAGE BAKERY & CAFE                        | E & F - 1267 Fairfield Road          | 64008903 | All year long                       |
+| CROWN PALACE/CHICKEN ON THE RUN              | 405 Craigflower Road                 |  6011941 | All year long                       |
+| CURRY POINT                                  | FCI - 3147 Douglas Street            | 64009944 | All year long                       |
+| DAVIDS TEA, #46                              | 96 - 1644 Hillside Avenue            | 64007874 | All year long                       |
+| DAVIDS TEA, #55                              | 606 Johnson Street                   | 64008040 | All year long                       |
+| DOMINO'S PIZZA                               | 102 1420 Quadra Street               | 64006333 | All year long                       |
+| EDO JAPAN                                    | 431 - 1150 Douglas Street            | 64007382 | All year long                       |
+| EDO JAPAN                                    | #21 Unit FC12 - 1644 Hillside Avenue | 64008978 | All year long                       |
+| FAIRFIELD MARKET                             | 1275 Oscar Street                    | 64008835 | All year long                       |
+| FAIRMONT EMPRESS - BENGAL KITCHEN            | 721 Government Street                | 64008739 | All year long                       |
+| FAIRWAY MARKET - SUSHI VILLAGE FOODS         | 2635 Quadra Street                   | 64007774 | All year long                       |
+| FISH STORE, TAKE OUT                         | 310 St. Lawrence Close               | 64007083 | All year long                       |
+| FORT CAFE                                    | 1310 Douglas Street                  | 64009083 | All year long                       |
+| FRY'S BAKERY                                 | 416 Craigflower Road                 | 64008485 | All year long                       |
+| GLEN'S FABULOUS SANDWICHES                   | 414 - 1150 Douglas Street            |  6011268 | All year long                       |
+| GOOD EARTH CAFE                              | 1952 Bay Street                      | 64008088 | All year long                       |
+| GRILLIGANS BBQ                               | 310 St. Lawrence Street              | 64005804 | Feb Mar Apr May Jun Aug Sep Oct Nov |
+| GROCERY PLUS, TAKE OUT                       | 1126 Quadra Street                   | 64009287 | All year long                       |
+| HECKLERS BAR & GRILL (KITCHEN)               | 123 Gorge Road East                  | 64006362 | All year long                       |
+| HERITAGE STARBUCKS COFFEE                    | 470 Belleville Street                | 64009250 | All year long                       |
+| HOOK FINE FOODS                              | 805 Fort Street                      | 64008832 | All year long                       |
+| HOT HOUSE PIZZA                              | 110 - 180 Wilson Street              | 64004204 | All year long                       |
+| ISLAND MEAT & SEAFOOD                        | 307 Cook Street                      | 64007348 | All year long                       |
+| JACKSON'S ICE CREAM FLOAT                    | 310 St. Lawrence Street              | 64005363 | Mar Apr May Jun Jul Aug Sep Oct     |
+| JOE'S SEAFOOD BAR                            | 101 - 1208 Wharf Street              | 64007423 | May Jun Jul Aug Sep Oct             |
+| JUGO JUICE                                   | 101 - 1150 Douglas Street            | 64008593 | All year long                       |
+| KENTUCKY FRIED CHICKEN                       | FC 8 - 3147 Douglas Street           | 64001886 | All year long                       |
+| KERNELS POPCORN                              | 115A - 1644 Hillside Avenue          | 64009200 | All year long                       |
+| KFC #1861                                    | 3140 Douglas Street                  | 64007999 | All year long                       |
+| KORYO KOREAN BARBEQUE                        | 413 - 1150 Douglas Street            | 64007895 | All year long                       |
+| LA COCINA DE MAMA OLI                        | 6 - Kiosk 5 1701 Douglas Street      | 64008972 | All year long                       |
+| LA FOGATA LATINA RESTAURANTS                 | 749 View Street                      | 64009425 | All year long                       |
+| LE PETIT DAKAR                               | 711 Douglas Street                   | 64008101 | All year long                       |
+| LITTLE CAESARS                               | 1627 Hillside Avenue                 | 64008104 | All year long                       |
+| LOGANS PUB, KITCHEN                          | 1821 Cook Street                     | 64004534 | All year long                       |
+| LOY SING MEAT MARKET & DELI                  | 554 Fisgard Street                   |  6010689 | All year long                       |
+| MAC'S CONVENIENCE STORE                      | 324 Cook Street                      | 64000526 | All year long                       |
+| MAC'S #11213                                 | 1300 Douglas Street                  | 64008527 | All year long                       |
+| MACCHIATO                                    | 1002 Broad Street                    | 64005501 | All year long                       |
+| MALEA COFFEE                                 | 769 Fort Street                      | 64008578 | All year long                       |
+| MANCHU WOK                                   | FC9 - 3147 Douglas Street            | 64009212 | All year long                       |
+| MARBLE SLAB CREAMERY                         | 200C - 1150 Douglas Street           | 64008766 | All year long                       |
+| MARKET ON YATES, DELI                        | 903 Yates Street                     |  6012772 | All year long                       |
+| MCDONALD PARK MEN'S FASTBALL LEAGUE          | Niagara & Oswego Street              |  6012878 | May Jun Jul Aug                     |
+| MESSOB ETHIOPIAN CUISINE                     | 8 - 1109 McKenzie Street             | 64001200 | All year long                       |
+| MINATO EXPRESS SUSHI                         | E - 1109 McKenzie Street             | 64008390 | All year long                       |
+| MOTHER NATURE'S MARKET & DELI                | 103 - 240 Cook Street                | 64008475 | All year long                       |
+| MOUNT ROYAL BAGEL FACTORY                    | 6 - 1115 North Park Street           |  6011420 | All year long                       |
+| MRS. VANELLI'S                               | 433 - 1150 Douglas Street            | 64005427 | All year long                       |
+| NATIONAL GEOGRAPHIC THEATER                  | 675 Belleville Street                |  6012530 | All year long                       |
+| NATIONAL LITTLE LEAGUE CLUBHOUSE             | 1280 Hillside Avenue                 | 64003883 | Mar Apr May Jun Jul                 |
+| NEW YORK FRIES                               | FC209 - 1670 Hillside Avenue         |  6012003 | All year long                       |
+| NEW YORK FRIES                               | FC 5 3147 Douglas Street             | 64001907 | All year long                       |
+| NEW YORK FRIES                               | 411 - 1150 Douglas Street            | 64002578 | All year long                       |
+| NIAGARA GROCERY                              | 579 Niagara Street                   | 64007293 | All year long                       |
+| NPC TRUST UNIT 32                            | 850 Burdett Avenue                   | 64000354 | All year long                       |
+| ODEON THEATRE                                | 780 Yates Street                     | 64003154 | All year long                       |
+| OH GELATO                                    | 1013 Government Street               | 64003547 | All year long                       |
+| OPA SOUVLAKI OF GREECE                       | FC204 - 1644 Hillside Avenue         | 64008292 | All year long                       |
+| OPA! SOUVLAKI                                | 435 - 1150 Douglas Street            | 64006613 | All year long                       |
+| OPA! SOUVLAKI                                | F. C. 10 3147 Douglas Street         | 64007621 | All year long                       |
+| ORANGE JULIUS                                | FC 12 - 3147 Douglas Street          | 64006580 | All year long                       |
+| ORANGE JULIUS DQ                             | 134 - 1644 Hillside Avenue           | 64000278 | All year long                       |
+| ORCHARD ON VIEW                              | 205A - 1150 Douglas Street           | 64003228 | All year long                       |
+| ORIGIN GLUTEN-FREE BAKERY                    | 1525 Pandora Avenue                  | 64007398 | All year long                       |
+| OUR PLACE SOCIETY, NUTRITION BAR             | 919 Pandora Avenue                   | 64006483 | All year long                       |
+| PALAGIO                                      | 165 - 2950 Douglas Street            | 64006903 | All year long                       |
+| PALAGIO                                      | 2637 Quadra Street                   | 64005912 | All year long                       |
+| PALATE                                       | 851 Johnson Street                   | 64008908 | All year long                       |
+| PATISSERIE DANIEL                            | 1729 Cook Street                     |  6011769 | All year long                       |
+| PHO BOI RESTAURANT                           | FC11 - 3147 Douglas Street           | 64008886 | All year long                       |
+| PIZZA AL FORNO                               | 456G Gorge Road East                 | 64009932 | All year long                       |
+| PIZZA ALLNITE                                | 106 - 2714 Quadra Street             | 64007378 | All year long                       |
+| PIZZA HUT                                    | 182 - 911 Yates Street               | 64005578 | All year long                       |
+| PUERTO VALLARTA AMIGOS                       | Dock C-39 - 12 Erie Street           | 64008190 | All year long                       |
+| PURDY'S CHOCOLATES                           | 369 3147 Douglas Street              |  6010145 | All year long                       |
+| PURDY'S CHOCOLATES                           | 3184 Shelbourne Street               |  6010929 | All year long                       |
+| PURDY'S CHOCOLATES                           | 102 - 1150 Douglas Street            |  6011208 | All year long                       |
+| QOOLA FROZEN YOGURT BAR                      | CRU 98 - 1644 Hillside Avenue        | 64008800 | All year long                       |
+| QUONLEY'S MARKET, ICE CREAM                  | 1628 Government Street               |  6012832 | All year long                       |
+| RAVENSTONE FARM ARTISAN MEATS                | 6 1701 Douglas Street                | 64009242 | All year long                       |
+| RED FISH BLUE FISH                           | 1006 Wharf Street                    | 64006050 | All year long                       |
+| RICA SALSA                                   | 1109 McKenzie Street                 | 64007951 | All year long                       |
+| ROAST CARVERY                                | 6 - 1701 Douglas Street              | 64008867 | All year long                       |
+| ROCK N' ROLLS                                | C1 - 1 Dallas Road                   | 64009886 | All year long                       |
+| ROCKY MOUNTAIN CHOCOLATE FACTORY             | 909 Government Street                | 64008708 | All year long                       |
+| ROYAL ATHLETIC PARK CONCESSION 1 & 2         | 1014 Caledonia Avenue                |  6010582 | Apr May Jun Jul Aug Sep             |
+| ROYAL ATHLETIC PARK CONCESSION 4, 5 & 6      | 1014 Caledonia Avenue                |  6011045 | All year long                       |
+| SALT SPRING ISLAND CHEESE                    | 14 - 1701 Douglas Street             | 64009107 | All year long                       |
+| SAN REMO MARKET DELI                         | 1002 Hillside Avenue                 | 64004998 | All year long                       |
+| SAVE-ON-FOODS - 921 - DELI                   | 1950 Foul Bay Road                   | 64009553 | All year long                       |
+| SAVE-ON-FOODS - 921 - TIM HORTONS            | 1950 Foul Bay Road                   | 64009544 | All year long                       |
+| SAVE ON FOODS MEMORIAL CENTRE - CONCESSION 1 | 1925 Blanshard Street                | 64004331 | All year long                       |
+| SAVE ON FOODS MEMORIAL CENTRE - CONCESSION 2 | 1925 Blanshard Street                | 64004332 | All year long                       |
+| SAVE ON FOODS MEMORIAL CENTRE - CONCESSION 3 | 1925 Blanshard Street                | 64004333 | All year long                       |
+| SAVE ON FOODS #973, DELI                     | 100 - 172 Wilson Street              |  6012679 | All year long                       |
+| SHANGHAI NOODLE                              | 2224 Quadra Street                   | 64003804 | All year long                       |
+| SHATTERBOX COFFEE BAR                        | 950 Yates Street                     | 64008581 | All year long                       |
+| SIZZLING WOK                                 | # 434 - 1150 Douglas Street          | 64007395 | All year long                       |
+| SOLSTICE CAFE LIMITED                        | 529 Pandora Avenue                   | 64000276 | All year long                       |
+| SOUPED UP FOODS                              | 450 Beta Street                      | 64007047 | All year long                       |
+| STARBUCKS COFFEE CO. #4223                   | 97 - 1644 Hillside Avenue            |  6012112 | All year long                       |
+| STIR IT UP                                   | G1 - 1284 Gladstone Avenue           | 64006421 | All year long                       |
+| SUB STOP SHOP                                | 680 Gorge Road East                  | 64008052 | All year long                       |
+| SUBWAY                                       | FC4 - 3147 Douglas Street            | 64001872 | All year long                       |
+| SUBWAY                                       | 4 - 1952 Bay Street                  | 64007827 | All year long                       |
+| SUBWAY                                       | FC11 - 21 - 1644 Hillside Avenue     | 64009027 | All year long                       |
+| SUMERIA CAFFE BAR TO GO                      | 1329 Cook Street                     | 64007191 | All year long                       |
+| SUPERIOR PIZZA                               | 1B - 425 Simcoe Street               | 64008064 | All year long                       |
+| TABOO GOURMET CHEESECAKE                     | 400 - 2950 Douglas Street            | 64007984 | All year long                       |
+| TACO TIME                                    | FC3 3147 Douglas Street              | 64005208 | All year long                       |
+| TACO TIME                                    | 412 - 1150 Douglas Street            | 64005211 | All year long                       |
+| TACO TIME                                    | 207 - 1644 Hillside Avenue           | 64005210 | All year long                       |
+| TEA L C  CAFE                                | 2410 Lee Avenue                      | 64000997 | All year long                       |
+| TEAVANA #836                                 | 125 3147 Douglas Street              | 64008792 | All year long                       |
+| THE APPLE BOX                                | 2 - 1725 Cook Street                 | 64009520 | All year long                       |
+| THE BAKED POTATO                             | 69 - 560 Johnson Street              | 64009268 | All year long                       |
+| THE FRENCH OVEN                              | 6 - 1701 Douglas Street              | 64009099 | All year long                       |
+| THE LITTLE CHEESE SHOP                       | 1034 Fort Street                     | 64008977 | All year long                       |
+| THRIFTY FOODS #17, DELI                      | 1580 Hillside Avenue                 | 64006170 | All year long                       |
+| THRIFTY FOODS #17, SUSHI BAR                 | 1580 Hillside Avenue                 | 64007708 | All year long                       |
+| THRIFTY FOODS #1, DELI                       | 1590 Fairfield Road                  | 64006174 | All year long                       |
+| THRIFTY FOODS #6, DELI                       | 475 Simcoe Street                    | 64006201 | All year long                       |
+| THRIFTY FOODS, SUSHI BAR                     | 475 Simcoe Street                    | 64007709 | All year long                       |
+| THRIFTY FOODS, SUSHI BAR                     | 1590 Fairfield Road                  | 64007837 | All year long                       |
+| TIM HORTONS                                  | 280 - 3147 Douglas Street            | 64006735 | All year long                       |
+| TIM HORTONS                                  | FF201 - 1644 Hillside Avenue         | 64003307 | All year long                       |
+| TIM HORTONS                                  | 1700 Hillside Avenue                 | 64009181 | All year long                       |
+| TODAY'S LUNCH CO.                            | 361 Burnside Road East               | 64000457 | All year long                       |
+| UMI SUSHI EXPRESS                            | FC2 - 3147 Douglas Street            | 64007534 | All year long                       |
+| UMI SUSHI EXPRESS - BAY CENTRE               | 2 - 1150 Douglas Street              | 64007017 | All year long                       |
+| UNION PACIFIC COFFEE COMPANY                 | 537 Herald Street                    | 64005151 | All year long                       |
+| VEGAS CONVENIENCE STORE                      | 113 - 864 Pembroke Street            | 64009260 | All year long                       |
+| VICTORIA BBQ HOUSE & BAKERY                  | 1714 Government Street               | 64000218 | All year long                       |
+| VICTORIA ICE CREAM & FUDGE FACTORY           | 905 Government Street                | 64005907 | All year long                       |
+| VIHA - ROYAL JUBILEE TIM'S #63244            | 1952 Bay Street                      | 64003795 | All year long                       |
+| VIHA ROYAL JUBILEE, 2.MATO #63252            | PCC Room #160A - 1952 Bay Street     | 64008505 | All year long                       |
+| VOODOO COFFEE                                | 2950 Douglas Street                  | 64007985 | All year long                       |
+| WANNAWAFEL                                   | 102 560 Johnson Street               | 64007345 | All year long                       |
+| WELLBURN'S, DELI                             | 1058 Pandora Avenue                  |  6011416 | All year long                       |
+| WILLIE'S BAKERY & CAFE                       | 537 Johnson Street                   | 64002413 | All year long                       |
+| WRAP N ROLL PIZZA                            | 1885 Fort Street                     | 64009426 | All year long                       |
+| YOKA'S COFFEE & HONEY                        | 5 - 1046 Mason Street                | 64007700 | All year long                       |
+
+
+
+* Restaurants
+
+|                            | PARIDISO DI STELLE                            |                 10 | Bastion Square    |        | 64009759 | All year long                                   |   |   |
+|                            | RE-BAR MODERN FOODS                           |                 50 | Bastion Square    |        |  6011356 | All year long                                   |   |   |
+|                            | SAVOURY CAFE, THE                             |           106 1841 | Oak Bay Avenue    |        | 64007805 | All year long                                   |   |   |
+|                            | THE WHITE HEATHER TEA ROOM                    |               1885 | Oak Bay Avenue    |        | 64007099 | All year long                                   |   |   |
+|                            | MEE WAH RESTAURANT                            |             A 1950 | Oak Bay Avenue    |        | 64007511 | All year long                                   |   |   |
+|                            | OSAKA SUSHI VICTORIA                          |               1951 | Oak Bay Avenue    | Jap    | 64008112 | All year long                                   |   |   |
+|                            | KISSAKO GREEN TEA CAFE                        |               2027 | Oak Bay Avenue    |        | 64005499 | All year long                                   |   |   |
+|                            | WHEELIES MOTORCYCLES                          |               2620 | Rock Bay Avenue   |        | 64009237 | Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec |   |   |
+| *                          | HERNANDE'Z (ON BAY)                           |         101 - 1600 | Bay Street        |        | 64006745 | All year long                                   |   |   |
+|                            | JOHN'S NOODLE VILLAGE                         |                823 | Bay Street        |        | 64008095 | All year long                                   |   |   |
+|                            | COURTYARD CAFE                                |                463 | Belleville Street |        | 64000139 | All year long                                   |   |   |
+|                            | GATSBY MANSION                                |                309 | Belleville Street |        | 64009405 | All year long                                   |   |   |
+| *                          | HOTEL GRAND PACIFIC MAIN KITCHEN              |                463 | Belleville Street |        |  6012256 | All year long                                   |   |   |
+|                            | PACIFIC RESTAURANT                            |                463 | Belleville Street |        |  6012255 | All year long                                   |   |   |
+| *                          | PARLIAMENTARY DINING ROOM                     |       Room 6 - 501 | Belleville Street |        |  6010196 | All year long                                   |   |   |
+|                            | STEAMSHIP GRILL & TAP HOUSE                   |                470 | Belleville Street |        | 64009031 | All year long                                   |   |   |
+|                            | SWIFTSURE RESTAURANT                          |                427 | Belleville Street |        |  6012466 | All year long                                   |   |   |
+|                            | EAST GARDEN RESTAURANT                        |               2888 | Belmont Avenue    |        | 64009708 | All year long                                   |   |   |
+|                            | SMITH'S GREEN ROOM RESTAURANT                 |                850 | Blanshard Street  |        | 64005511 | All year long                                   |   |   |
+|                            | XIANG RUI RESTAURANT                          |                980 | Blanshard Street  | Chi    | 64009208 | All year long                                   |   |   |
+|                            | CAFFE TEATRO                                  |                990 | Blanshard Street  |        | 64009716 | All year long                                   |   |   |
+|                            | THE CLAY PIGEON                               |               1002 | Blanshard Street  |        | 64008371 | All year long                                   |   |   |
+|                            | THE PINK BICYCLE GOURMET BURGER JOINT         |               1008 | Blanshard Street  |        | 64006796 | All year long                                   |   |   |
+|                            | SAIGON HARBOUR RESTAURANT                     |               1012 | Blanshard Street  | Vie    | 64009518 | All year long                                   |   |   |
+|                            | LA TAQUISA                                    |               1017 | Blanshard Street  | Mex    | 64008990 | All year long                                   |   |   |
+|                            | NOODLECART                                    |               1018 | Blanshard Street  |        | 64008009 | All year long                                   |   |   |
+|                            | BE LOVE                                       |               1019 | Blanshard Street  | Veg    | 64008901 | All year long                                   |   |   |
+|                            | ZAZU                                          |               1028 | Blanshard Street  |        | 64008515 | All year long                                   |   |   |
+|                            | SHIKI SUSHI                                   |               1113 | Blanshard Street  | Jap    | 64007229 | All year long                                   |   |   |
+|                            | ITALIAN FOOD IMPORTS                          |               1114 | Blanshard Street  |        |  6010378 | All year long                                   |   |   |
+|                            | BAAN THAI RESTAURANT                          |               1117 | Blanshard Street  |        | 64000156 | All year long                                   |   |   |
+|                            | ROMEO'S                                       |               1703 | Blanshard Street  |        | 64008109 | All year long                                   |   |   |
+|                            | FOUNTAIN RESTAURANT                           |           4 - 2680 | Blanshard Street  |        | 64009307 | All year long                                   |   |   |
+|                            | CAFE CASABLANCA                               |               2524 | Bridge Street     |        | 64004952 | All year long                                   |   |   |
+|                            | PIZZERIA PRIMA STRADA                         |              2960C | Bridge Street     |        | 64007256 | All year long                                   |   |   |
+|                            | RED KETTLE RESTAURANT                         |               2630 | Bridge Street     |        | 64001078 | All year long                                   |   |   |
+|                            | PAGLIACCI'S                                   |               1011 | Broad Street      |        |  6010290 | All year long                                   |   |   |
+|                            | BAGELS ON BROAD                               |               1294 | Broad Street      |        | 64005833 | All year long                                   |   |   |
+|                            | OLD VIC FISH & CHIPS                          |               1316 | Broad Street      |        | 64008747 | All year long                                   |   |   |
+|                            | LACEY-LOU TAPAS LOUNGE                        |               1320 | Broad Street      |        | 64009119 | All year long                                   |   |   |
+|                            | EBIZO JAPANESE RESTAURANT                     |                604 | Broughton Street  | Jap    |  6012021 | All year long                                   |   |   |
+|                            | BROUGHTON STREET DELI                         |                648 | Broughton Street  |        | 64005122 | All year long                                   |   |   |
+|                            | TIBETAN KITCHEN CAFE                          |                680 | Broughton Street  |        | 64007285 | All year long                                   |   |   |
+|                            | BEAN BANDITS ON BROUGHTON                     |               711B | Broughton Street  |        | 64002404 | All year long                                   |   |   |
+|                            | THE JAPANESE VILLAGE RESTAURANT               |                734 | Broughton Street  | Jap    | 64008882 | All year long                                   |   |   |
+| www.fooramenbar.ca         | FOO RAMEN BAR                                 |                762 | Broughton Street  |        | 64009602 | All year long                                   |   |   |
+|                            | BAGELS ON BROUGHTON                           |                851 | Broughton Street  |        | 64008663 | All year long                                   |   |   |
+|                            | CHATEAU VICTORIA VISTA 18                     |                740 | Burdett Avenue    |        |  6010291 | All year long                                   |   |   |
+|                            | CLIVES CLASSIC LOUNGE                         |                740 | Burdett Avenue    |        |  6010366 | All year long                                   |   |   |
+|                            | MILLOS RESTAURANT                             |                716 | Burdett Avenue    | Greek  | 64009442 | All year long                                   |   |   |
+|                            | SZECHUAN RESTAURANT                           |                853 | Caledonia Avenue  | Chi    |  6011647 | All year long                                   |   |   |
+|                            | WHITE SPOT RESTAURANT                         |                710 | Caledonia Avenue  |        |  6012916 | All year long                                   |   |   |
+|                            | SPINNAKER'S                                   |                308 | Catherine Street  |        |  6010069 | All year long                                   |   |   |
+|                            | PRIMA STRADA PIZZERIA                         |          105 - 230 | Cook Street       |        | 64006576 | All year long                                   |   |   |
+|                            | ROSIE'S DINER                                 |                253 | Cook Street       |        | 64004861 | All year long                                   |   |   |
+|                            | BEAGLE PUB                                    |                301 | Cook Street       |        | 64000421 | All year long                                   |   |   |
+|                            | THE HOT & COLD CAFE                           |            1 - 313 | Cook Street       |        | 64008627 | All year long                                   |   |   |
+|                            | HOT HOUSE PIZZA                               |                351 | Cook Street       |        | 64007908 | All year long                                   |   |   |
+|                            | BUBBY'S KITCHEN                               |                355 | Cook Street       |        | 64007791 | All year long                                   |   |   |
+|                            | MY THAI CAFE                                  |               1020 | Cook Street       | Thai   | 64006930 | All year long                                   |   |   |
+|                            | BUBBY ROSE'S BAKERY & CAFE SHOP               |               1022 | Cook Street       |        | 64009519 | All year long                                   |   |   |
+|                            | TOOKS ON COOK                                 |               1031 | Cook Street       |        |  6012277 | All year long                                   |   |   |
+|                            | COOKS CAFE                                    |         104 - 1175 | Cook Street       |        | 64009284 | All year long                                   |   |   |
+|                            | PLUTO'S RESTAURANT                            |               1150 | Cook Street       |        |  6010187 | All year long                                   |   |   |
+|                            | SUN WAH RESTAURANT                            |               1515 | Cook Street       | Chi    | 64006222 | All year long                                   |   |   |
+|                            | ARRIBA COFFEE HOUSE                           |               1610 | Cook Street       |        | 64008606 | All year long                                   |   |   |
+|                            | COOK N' PAN POLISH DELICATESSEN               |           4 - 1725 | Cook Street       |        | 64007292 | All year long                                   |   |   |
+|                            | LITTLE THAI PLACE                             |               1839 | Cook Street       | Thai   | 64005546 | All year long                                   |   |   |
+|                            | GATHERING PLACE CAFE, THE                     |                832 | Cormorant Street  |        |  6012275 | All year long                                   |   |   |
+|                            | SANDWICH CORNER CAFE                          |                610 | Courtney Street   |        | 64009055 | All year long                                   |   |   |
+|                            | 10 ACRES BISTRO & BAR & FARM                  |                611 | Courtney Street   |        | 64005984 | All year long                                   |   |   |
+| www.catalanorestaurant.com | CATALANO                                      |                619 | Courtney Street   |        | 64008831 | All year long                                   |   |   |
+|                            | UCHIDA EATERY                                 |          A22 - 633 | Courtney Street   | Jap    | 64008463 | All year long                                   |   |   |
+|                            | JAGASILK                                      |          A17 - 633 | Courtney Street   |        | 64007102 | All year long                                   |   |   |
+|                            | HEIST COFFEE COMPANY                          |                727 | Courtney Street   |        | 64008029 | All year long                                   |   |   |
+|                            | SPIRAL CAFE                                   |                418 | Craigflower Road  |        | 64001483 | All year long                                   |   |   |
+|                            | BREAKWATER CAFE & BISTRO                      |                199 | Dallas Road       |        | 64008452 | All year long                                   |   |   |
+|                            | BEACON DRIVE-IN                               |                126 | Douglas Street    |        | 64004279 | All year long                                   |   |   |
+|                            | THE GLENSHIEL                                 |                606 | Douglas Street    |        |  6011600 | All year long                                   |   |   |
+|                            | OLD SPAGHETTI FACTORY                         |                703 | Douglas Street    |        |  6012695 | All year long                                   |   |   |
+|                            | LE PETIT DAKAR                                |                711 | Douglas Street    |        | 64008101 | All year long                                   |   |   |
+|                            | BROWNS SOCIAL HOUSE                           |                809 | Douglas Street    |        | 64007379 | All year long                                   |   |   |
+|                            | THE NOODLE BOX                                |                818 | Douglas Street    |        | 64004523 | All year long                                   |   |   |
+|                            | CORA BREAKFAST & LUNCH                        |                850 | Douglas Street    |        | 64008577 | All year long                                   |   |   |
+|                            | ROOF TOP KITCHEN                              |                919 | Douglas Street    |        |  6012819 | May Jun Jul Aug Sep                             |   |   |
+|                            | STRATHCONA HOTEL MAIN FLOOR KITCHEN           |                919 | Douglas Street    |        |  6012090 | All year long                                   |   |   |
+|                            | BLENZ COFFEE HOUSE                            |          G1 - 1001 | Douglas Street    |        | 64006773 | All year long                                   |   |   |
+| *                          | HANK'S UNTRADITIONAL BBQ                      |         62A - 1001 | Douglas Street    |        | 64009160 | All year long                                   |   |   |
+|                            | LA FIESTA CAFE                                |        G-12 - 1001 | Douglas Street    |        | 64005443 | All year long                                   |   |   |
+|                            | CACTUS CLUB CAFE                              |               1125 | Douglas Street    |        | 64003627 | All year long                                   |   |   |
+|                            | THE BAY - BON APPETIT #63182                  |           1 - 1150 | Douglas Street    |        | 64008021 | All year long                                   |   |   |
+|                            | COWICHAN BAY SEAFOOD                          |           6 - 1701 | Douglas Street    |        | 64008876 | All year long                                   |   |   |
+|                            | DAMN FINE CAKE COMPANY                        |           6 - 1701 | Douglas Street    |        | 64009135 | All year long                                   |   |   |
+|                            | VICTORIA PIE COMPANY                          |           6 - 1701 | Douglas Street    |        | 64008848 | All year long                                   |   |   |
+|                            | SMOKEN BONES COOKSHACK                        |           7 - 1701 | Douglas Street    |        | 64008219 | All year long                                   |   |   |
+|                            | EARL'S RESTAURANT                             |         100 - 1150 | Douglas Street    |        | 64005195 | All year long                                   |   |   |
+|                            | SAMMICH CAFE                                  |        200A - 1150 | Douglas Street    |        | 64008810 | All year long                                   |   |   |
+|                            | PEACOCK BILLIARDS & JAMES JOYCE BISTRO        |              1175C | Douglas Street    |        | 64005722 | All year long                                   |   |   |
+|                            | FRIENDS OF BEARS                              |               1310 | Douglas Street    |        | 64008913 | All year long                                   |   |   |
+|                            | HOPE KEY RESTAURANT                           |               1313 | Douglas Street    |        | 64004791 | All year long                                   |   |   |
+|                            | TASTE OF EUROPE                               |              1412A | Douglas Street    |        | 64009368 | All year long                                   |   |   |
+|                            | THE MINT RESTAURANT FOR LUNCH                 |              1412B | Douglas Street    |        | 64007880 | All year long                                   |   |   |
+|                            | MINT RESTAURANT                               |              1414B | Douglas Street    |        | 64000269 | All year long                                   |   |   |
+|                            | CAFE VENETO                                   |               1450 | Douglas Street    |        | 64007023 | All year long                                   |   |   |
+|                            | VENETO TAPA LOUNGE                            |               1450 | Douglas Street    |        | 64007022 | All year long                                   |   |   |
+|                            | SECOND SLICE PIZZA                            |               1680 | Douglas Street    |        | 64001711 | All year long                                   |   |   |
+|                            | GREEN LEAF VIETNAMESE BISTRO                  |               1684 | Douglas Street    | Viet   | 64007481 | All year long                                   |   |   |
+|                            | THE COZY PLACE                                |               1692 | Douglas Street    |        | 64009694 | All year long                                   |   |   |
+|                            | SURA KOREAN RESTAURANT                        |               1696 | Douglas Street    | Korean | 64006689 | All year long                                   |   |   |
+|                            | SUTRA                                         |               1701 | Douglas Street    | Indian | 64009053 | All year long                                   |   |   |
+|                            | SHAHRAZAD RESTAURANT                          |               1813 | Douglas Street    |        | 64008531 | All year long                                   |   |   |
+|                            | PAUL'S RESTAURANT                             |               1900 | Douglas Street    |        | 64009826 | All year long                                   |   |   |
+|                            | KITTY'S CAFE                                  |               1961 | Douglas Street    |        | 64009735 | All year long                                   |   |   |
+|                            | SPLASH POOLSIDE LOUNGE                        |               1961 | Douglas Street    |        | 64009737 | All year long                                   |   |   |
+|                            | SEVEN VALLEYS FINE FOOD & DELI                |               2506 | Douglas Street    |        | 64005323 | All year long                                   |   |   |
+|                            | SHARK CLUB BAR & GRILL                        |               2852 | Douglas Street    |        |  6012785 | All year long                                   |   |   |
+|                            | ABC COUNTRY RESTAURANT                        |               2900 | Douglas Street    |        | 64006761 | All year long                                   |   |   |
+|                            | SPOONS DINER                                  |               2915 | Douglas Street    |        | 64006417 | All year long                                   |   |   |
+|                            | LIFESTYLE MARKETS, DELI                       |         180 - 2950 | Douglas Street    |        |  6011950 | All year long                                   |   |   |
+|                            | CHIKARA SUSHI JAPANESE RESTAURANT             |         280 - 2950 | Douglas Street    | Jap    | 64000488 | All year long                                   |   |   |
+|                            | HIDEAWAY RESTAURANT                           |               3020 | Douglas Street    |        | 64009089 | All year long                                   |   |   |
+|                            | DENNY'S RESTAURANT                            |               3100 | Douglas Street    | Chain  | 64000772 | All year long                                   |   |   |
+|                            | BUTTERDELL CAFE 2000                          |               3110 | Douglas Street    |        |  6012822 | All year long                                   |   |   |
+|                            | JUGO JUICE                                    |          K4 - 3147 | Douglas Street    |        | 64005594 | All year long                                   |   |   |
+|                            | FRESH                                         |              1 415 | Dunedin Street    |        | 64006854 | All year long                                   |   |   |
+|                            | FAIRFIELD FISH & CHIPS                        |               1277 | Fairfield Road    |        | 64005180 | All year long                                   |   |   |
+|                            | OREGANO'S PIZZA AND BISTRO                    |           1 - 1516 | Fairfield Road    |        | 64006780 | All year long                                   |   |   |
+|                            | ROSS BAY PUB KITCHEN                          |           7 - 1516 | Fairfield Road    |        | 64004638 | All year long                                   |   |   |
+|                            | SUSHI FIELD                                   |           5 - 1594 | Fairfield Road    |        | 64008521 | All year long                                   |   |   |
+|                            | THE TEAHOUSE AT ABKHAZI GARDEN                |               1964 | Fairfield Road    |        | 64008863 | All year long                                   |   |   |
+|                            | THE BUBBLE TEA PLACE                          |                532 | Fisgard Street    |        |  6012836 | All year long                                   |   |   |
+|                            | DON MEE RESTAURANT                            |                538 | Fisgard Street    |        |  6010492 | All year long                                   |   |   |
+|                            | VENUS SOPHIA TEA ROOM & VEGETARIAN EATERY     |                540 | Fisgard Street    |        | 64007863 | All year long                                   |   |   |
+|                            | DYNASTY VICTORIA RESTAURANT                   |                546 | Fisgard Street    |        | 64007516 | All year long                                   |   |   |
+|                            | SHANGHAI CITY SEAFOOD RESTAURANT              |                548 | Fisgard Street    |        |  6010614 | All year long                                   |   |   |
+|                            | FAN TAN CAFE                                  |                549 | Fisgard Street    |        |  6010499 | All year long                                   |   |   |
+|                            | WAH LAI YUEN RESTAURANT & BAKERY              |                560 | Fisgard Street    |        | 64005355 | All year long                                   |   |   |
+|                            | I KYU NOODLES                                 |                564 | Fisgard Street    |        | 64006944 | All year long                                   |   |   |
+|                            | OCEAN GARDEN RESTAURANT                       |                568 | Fisgard Street    |        | 64008301 | All year long                                   |   |   |
+|                            | FORUM SEAFOOD RESTAURANT                      |                612 | Fisgard Street    |        | 64008618 | All year long                                   |   |   |
+|                            | PHO VUONG RESTAURANT                          |                622 | Fisgard Street    |        | 64008520 | All year long                                   |   |   |
+|                            | NOODLE BOX                                    |                626 | Fisgard Street    |        | 64001875 | All year long                                   |   |   |
+|                            | GOLDEN CITY RESTAURANT                        |                721 | Fisgard Street    |        |  6010510 | All year long                                   |   |   |
+|                            | KEG STEAKHOUSE AT THE HARBOUR                 |                500 | Fort Street       |        |  6010263 | All year long                                   |   |   |
+|                            | KOTO JAPANESE RESTAURANT                      |                510 | Fort Street       |        | 64008573 | All year long                                   |   |   |
+| Bad                        | SIAM THAI RESTAURANT                          |                512 | Fort Street       |        |  6011841 | All year long                                   |   |   |
+|                            | DUTCH BAKERY COFFEE SHOP                      |                718 | Fort Street       |        |  6010221 | All year long                                   |   |   |
+|                            | CRUST BAKERY                                  |                730 | Fort Street       |        | 64009142 | All year long                                   |   |   |
+|                            | PHO BOI A TASTE OF VIETNAM                    |                765 | Fort Street       | Viet   | 64000038 | All year long                                   |   |   |
+|                            | THE KING'S DELI & FINE FOODS                  |                773 | Fort Street       |        | 64009137 | All year long                                   |   |   |
+|                            | LA TEA AH! TEA HOUSE                          |                774 | Fort Street       |        | 64007913 | All year long                                   |   |   |
+|                            | THE BINGE EATERY                              |                787 | Fort Street       |        | 64008987 | All year long                                   |   |   |
+|                            | SPECIAL TEAS                                  |                803 | Fort Street       |        | 64000300 | All year long                                   |   |   |
+|                            | CHORIZO & CO. DELICATESSEN                    |                807 | Fort Street       |        | 64008427 | All year long                                   |   |   |
+| *                          | CHOUX CHOUX CHARCUTERIE                       |                830 | Fort Street       |        | 64004805 | All year long                                   |   |   |
+|                            | SPICE JAMMER RESTAURANT                       |                852 | Fort Street       |        |  6011748 | All year long                                   |   |   |
+|                            | CAPRICORN CAFE                                |                888 | Fort Street       |        | 64008198 | All year long                                   |   |   |
+|                            | SOOKJAI THAI RESTAURANT                       |                893 | Fort Street       | Thai   | 64008918 | All year long                                   |   |   |
+|                            | THE BLUE FOX CAFE                             |          101 - 919 | Fort Street       |        |  6010967 | All year long                                   |   |   |
+|                            | SAIGON NIGHT                                  |          102 - 915 | Fort Street       |        | 64004979 | All year long                                   |   |   |
+|                            | DA TANDOOR                                    |               1010 | Fort Street       |        |  6012141 | All year long                                   |   |   |
+|                            | J & J WONTON NOODLE HOUSE                     |               1012 | Fort Street       |        | 64000502 | All year long                                   |   |   |
+| masalabites.ca             | MASALA BITES                                  |               1015 | Fort Street       |        | 64009704 | All year long                                   |   |   |
+|                            | SALLY BUN                                     |               1030 | Fort Street       |        | 64007567 | All year long                                   |   |   |
+|                            | AVALON RESTAURANT                             |               1075 | Fort Street       |        | 64004790 | All year long                                   |   |   |
+| -                          | DRAGON GATE RESTAURANT                        |              1609D | Fort Street       |        | 64005283 | All year long                                   |   |   |
+|                            | O'BEANS CAFE                                  |               1609 | Fort Street       |        | 64008692 | All year long                                   |   |   |
+|                            | CHRISTIE'S CARRIAGE HOUSE                     |               1739 | Fort Street       |        | 64001125 | All year long                                   |   |   |
+|                            | VICTORIA CYBER CAFE                           |               1803 | Fort Street       |        | 64009709 | All year long                                   |   |   |
+|                            | HONG KONG WEST                                |               1807 | Fort Street       |        | 64006579 | All year long                                   |   |   |
+|                            | WHITE SPOT # 643                              |               1871 | Fort Street       |        | 64006931 | All year long                                   |   |   |
+|                            | COOKS DAY OFF FINE FOODS & CATERING           |               1883 | Fort Street       |        | 64008288 | All year long                                   |   |   |
+|                            | EUGENE'S GREEK RESTAURANT                     |         103 - 1990 | Fort Street       |        | 64009618 | All year long                                   |   |   |
+|                            | CA VA                                         |               1296 | Gladstone Avenue  |        | 64008702 | All year long                                   |   |   |
+|                            | FERNWOOD INN                                  |               1302 | Gladstone Avenue  |        | 64005883 | All year long                                   |   |   |
+|                            | STAGE WINE BAR                                |               1307 | Gladstone Avenue  |        | 64005779 | All year long                                   |   |   |
+|                            | SOUNDS LIKE COFFEE                            |                915 | Gordon Street     |        | 64007243 | All year long                                   |   |   |
+|                            | UNION CLUB OF BRITISH COLUMBIA                |                805 | Gordon Street     |        |  6010322 | All year long                                   |   |   |
+|                            | CECELIA CREEK EATERY                          |                123 | Gorge Road East   |        | 64008992 | All year long                                   |   |   |
+|                            | GOLDEN GATE CHINESE RESTAURANT                |               456D | Gorge Road East   |        | 64003696 | All year long                                   |   |   |
+|                            | MY BAR & GRILL                                |                310 | Gorge Road East   |        | 64008250 | All year long                                   |   |   |
+|                            | THE OLD COACHMAN EATERY                       |                229 | Gorge Road East   |        | 64010000 | All year long                                   |   |   |
+|                            | TRAFALGAR/PRO PATRIA BRANCH #292, KITCHEN     |                411 | Gorge Road East   |        |  6011290 | All year long                                   |   |   |
+|                            | COLONIAL CAFE                                 |                270 | Government Street |        |  6011515 | All year long                                   |   |   |
+|                            | FAIRMONT EMPRESS - THE EMPRESS ROOM           |                721 | Government Street |        | 64008741 | All year long                                   |   |   |
+|                            | FAIRMONT EMPRESS - BENGAL LOUNGE              |                721 | Government Street |        | 64008740 | All year long                                   |   |   |
+|                            | SAM'S DELI                                    |                805 | Government Street |        | 64007495 | All year long                                   |   |   |
+|                            | BURGER KING                                   |          105 - 910 | Government Street |        | 64008690 | All year long                                   |   |   |
+|                            | IRISH TIMES PUB                               |               1200 | Government Street |        | 64002830 | All year long                                   |   |   |
+|                            | WOW! SUSHI & SALAD BAR                        |               1012 | Government Street |        | 64009295 | All year long                                   |   |   |
+| Never again                | THE BARD & BANKER PUB                         |         208 - 1022 | Government Street |        | 64006452 | All year long                                   |   |   |
+| www.varsha.ca              | VARSHA                                        |         101 - 1600 | Government Street |        | 64006963 | All year long                                   |   |   |
+|                            | QV CAFE & BAKERY                              |               1701 | Government Street |        | 64004992 | All year long                                   |   |   |
+|                            | SHIZEN JAPANESE RESTAURANT                    |               1706 | Government Street | Jap    | 64005376 | All year long                                   |   |   |
+|                            | CASCADIA BAKERY                               |               1812 | Government Street |        |  6011691 | All year long                                   |   |   |
+|                            | TOUCH OF EUROPA DELI                          |         105 - 2504 | Government Street |        |  6011366 | All year long                                   |   |   |
+|                            | CHIBA SUSHI                                   |               2706 | Government Street | Jap    | 64006231 | All year long                                   |   |   |
+|                            | GP DONAIR & PIZZA                             |        3009 & 3011 | Gosworth Road     |        | 64009526 | All year long                                   |   |   |
+|                            | BON SUSHI                                     |               1467 | Hampshire Road    | Jap    | 64008302 | All year long                                   |   |   |
+|                            | HAULTAIN FISH & CHIP CAFE                     |               1127 | Haultain Street   |        |  6010762 | All year long                                   |   |   |
+| *                          | JAM CAFE                                      |                542 | Herald Street     |        | 64008402 | All year long                                   |   |   |
+|                            | THE GRINDSTONE CAFE                           |                504 | Herald Street     |        | 64009094 | All year long                                   |   |   |
+|                            | BOSTON PIZZA #005                             |           10 - 797 | Hillside Avenue   |        |  6010470 | All year long                                   |   |   |
+|                            | TACO TIME                                     |                942 | Hillside Avenue   |        | 64005218 | All year long                                   |   |   |
+|                            | CRIDGE VILLAGE SENIORS CENTRE                 |               1307 | Hillside Avenue   |        | 64005576 | All year long                                   |   |   |
+|                            | FIFTH STREET BAR & WOODFIRED GRILL, KITCHEN   |               1028 | Hillside Avenue   |        | 64008416 | All year long                                   |   |   |
+|                            | NORWAY HOUSE                                  |               1110 | Hillside Avenue   |        |  6010554 | All year long                                   |   |   |
+|                            | KFC #1860                                     |               1555 | Hillside Avenue   |        | 64007996 | All year long                                   |   |   |
+|                            | ROMEO'S                                       |               1581 | Hillside Avenue   |        |  6010801 | All year long                                   |   |   |
+|                            | HILLSIDE COFFEE & TEA                         |         103 - 1633 | Hillside Avenue   |        | 64007887 | All year long                                   |   |   |
+|                            | BOOSTER JUICE                                 | FCU#27, #21 - 1644 | Hillside Avenue   |        | 64009019 | All year long                                   |   |   |
+|                            | KUNG PAO WOK                                  |        FCU3 - 1644 | Hillside Avenue   |        | 64008920 | All year long                                   |   |   |
+|                            | SUSHI ISLAND JAPANESE RESTAURANT              |         105 - 1633 | Hillside Avenue   |        | 64009133 | All year long                                   |   |   |
+|                            | FIRE & WATER FISH AND CHOP HOUSE              |                728 | Humboldt Street   |        | 64001633 | All year long                                   |   |   |
+|                            | PESCATORE'S FISH HOUSE                        |                614 | Humboldt Street   |        |  6011664 | All year long                                   |   |   |
+|                            | THE OYSTER AT PESCATORES                      |                614 | Humboldt Street   |        | 64007139 | All year long                                   |   |   |
+|                            | THE PARKSIDE HOTEL & SPA                      |                810 | Humboldt Street   |        | 64009022 | All year long                                   |   |   |
+|                            | GREEN CUISINE                                 |            5 - 560 | Johnson Street    |        |  6010602 | All year long                                   |   |   |
+|                            | FAMOSO MARKET SQUARE                          |          128 - 560 | Johnson Street    |        | 64008277 | All year long                                   |   |   |
+|                            | CAFE MEXICO                                   |            130 560 | Johnson Street    |        |  6010474 | All year long                                   |   |   |
+|                            | CAFE MEXIGO                                   |          134 - 560 | Johnson Street    |        | 64008691 | All year long                                   |   |   |
+|                            | IL TERRAZZO                                   |                555 | Johnson Street    |        |  6011444 | All year long                                   |   |   |
+|                            | LADY MARMALADE                                |                608 | Johnson Street    |        | 64004416 | All year long                                   |   |   |
+|                            | SKINNYTATO                                    |                615 | Johnson Street    |        | 64007746 | All year long                                   |   |   |
+|                            | LOTUS POND VEGETARIAN RESTAURANT              |                617 | Johnson Street    |        |  6012506 | All year long                                   |   |   |
+|                            | SIZZLING TANDOOR RESTAURANT                   |                637 | Johnson Street    |        | 64007701 | All year long                                   |   |   |
+|                            | SOCKEYE SUSHI                                 |                726 | Johnson Street    | Jap    | 64005772 | All year long                                   |   |   |
+|                            | KIM'S VIETNAMESE RESTAURANT                   |                748 | Johnson Street    |        |  6012394 | All year long                                   |   |   |
+|                            | STONE'S THROW                                 |                642 | Johnson Street    |        | 64008377 | All year long                                   |   |   |
+|                            | CAFÉ 932                                      |          101 - 932 | Johnson Street    |        | 64003782 | All year long                                   |   |   |
+|                            | CARAVANA CAFÉ                                 |               2984 | Jutland Road      |        | 64007590 | All year long                                   |   |   |
+|                            | CATALYST WATERFRONT                           |           115 2940 | Jutland Road      |        | 64009156 | All year long                                   |   |   |
+|                            | GLO EURO PUB & GRILL RESTAURANT               |         104 - 2940 | Jutland Road      |        | 64005141 | All year long                                   |   |   |
+|                            | SANDWICH CORNER CAFE & BISTRO                 |              2960C | Jutland Road      |        | 64007532 | All year long                                   |   |   |
+|                            | SOL FOOD DELI CAFE CATERING                   |         100 - 2955 | Jutland Road      |        |  6012807 | All year long                                   |   |   |
+|                            | BLUE CRAB GRILL                               |                146 | Kingston Street   |        |  6011331 | All year long                                   |   |   |
+|                            | CAMELOT                                       |                455 | Kingston Street   |        |  6012849 | All year long                                   |   |   |
+| *                          | NORTH FORTY-EIGHT RESTAURANT                  |               1005 | Langley Street    |        | 64009750 | All year long                                   |   |   |
+| *                          | SIDE DISH RESTAURANT                          |               1008 | Langley Street    |        | 64004378 | All year long                                   |   |   |
+|                            | LE PETIT SAIGON VIETNAMESE RESTAURANT         |               1010 | Langley Street    |        | 64005899 | All year long                                   |   |   |
+|                            | BARB'S PLACE                                  |            310 St. | Lawrence Street   |        | 64005519 | Feb Mar Apr May Jun Jul Aug Sep Oct             |   |   |
+|                            | ABIGAIL'S HOTEL                               |                906 | McClure Street    |        | 64003843 | All year long                                   |   |   |
+|                            | CUP OF JOE CAFE                               |            1 - 230 | Menzies Street    |        | 64006855 | All year long                                   |   |   |
+|                            | JAMES BAY FISH & CHIPS                        |                211 | Menzies Street    |        | 64002030 | All year long                                   |   |   |
+|                            | JAMES BAY TEA ROOM & RESTAURANT               |                332 | Menzies Street    |        | 64008979 | All year long                                   |   |   |
+|                            | SUSHI MATSURI                                 |          100 - 239 | Menzies Street    |        | 64007961 | All year long                                   |   |   |
+|                            | ROSEWOOD INN                                  |                595 | Michigan Street   |        | 64008649 | All year long                                   |   |   |
+| *                          | AURA                                          |                680 | Montreal Street   |        |  6010352 | All year long                                   |   |   |
+|                            | CHRISTIAN BOOK & MUSIC                        |               3090 | Nanaimo Street    |        | 64008957 | All year long                                   |   |   |
+|                            | O BISTRO                                      |                500 | Oswego Street     |        | 64005174 | All year long                                   |   |   |
+|                            | SANTIAGO'S CAFE                               |                660 | Oswego Street     |        |  6011911 | All year long                                   |   |   |
+|                            | VICTORIA HARBOUR HOUSE RESTAURANT             |                607 | Oswego Street     |        | 64006125 | All year long                                   |   |   |
+|                            | SWAN'S PUB KITCHEN                            |                506 | Pandora Avenue    |        |  6011136 | All year long                                   |   |   |
+| *                          | MO:LÉ RESTAURANT                              |                554 | Pandora Avenue    |        | 64007506 | All year long                                   |   |   |
+|                            | CAFE BLISS                                    |              A 556 | Pandora Avenue    |        | 64006482 | All year long                                   |   |   |
+|                            | JOHN'S PLACE                                  |                723 | Pandora Avenue    |        |  6010525 | All year long                                   |   |   |
+|                            | BLACK OLIVE                                   |          737 - 739 | Pandora Avenue    |        | 64000196 | All year long                                   |   |   |
+|                            | RELISH FOOD AND COFFEE                        |                920 | Pandora Avenue    |        | 64007617 | All year long                                   |   |   |
+|                            | TARTAN TOQUE                                  |               1507 | Pandora Avenue    |        | 64008763 | All year long                                   |   |   |
+|                            | PARSONAGE CAFE                                |     1 - 1115 North | Park Street       |        | 64005573 | All year long                                   |   |   |
+|                            | THE TIN ROOF                                  |               1075 | Pendergast Street |        | 64007944 | All year long                                   |   |   |
+|                            | POINT ELLICE HOUSE                            |               2616 | Pleasant Street   |        | 64007018 | May Jun Jul Aug Sep Dec                         |   |   |
+|                            | FUTABA JAPANESE RESTAURANT                    |               1205 | Quadra Street     | Jap    | 64001813 | All year long                                   |   |   |
+|                            | MING'S RESTAURANT                             |               1321 | Quadra Street     | Chi    |  6011492 | All year long                                   |   |   |
+|                            | WILDFIRE BREAD & PASTRY                       |         101 - 1420 | Quadra Street     |        | 64005423 | All year long                                   |   |   |
+|                            | RATHSKELLER RESTAURANT                        |               1517 | Quadra Street     |        |  6012784 | All year long                                   |   |   |
+| *                          | NAANRAJ COFFEE & CURRY                        |               1921 | Quadra Street     |        | 64009125 | All year long                                   |   |   |
+|                            | SANTE GLUTEN-FREE CAFE                        |               2630 | Quadra Street     |        | 64007841 | All year long                                   |   |   |
+|                            | YOUNG'S RESTAURANT                            |               2638 | Quadra Street     |        |  6010613 | All year long                                   |   |   |
+|                            | CARIBBEAN VILLAGE                             |              2646C | Quadra Street     |        |  6012760 | All year long                                   |   |   |
+|                            | SAN REMO                                      |               2709 | Quadra Street     |        |  6010585 | All year long                                   |   |   |
+|                            | VIETNAM HOUSE RESTAURANT                      |               3189 | Quadra Street     |        | 64008936 | All year long                                   |   |   |
+|                            | BEST WESTERN PLUS INNER HARBOUR               |                412 | Quebec Street     |        | 64009037 | All year long                                   |   |   |
+|                            | JONATHAN'S RESTAURANT                         |                425 | Quebec Street     |        | 64008451 | All year long                                   |   |   |
+|                            | VIC'S STEAKHOUSE & BAR                        |                345 | Quebec Street     |        | 64006869 | All year long                                   |   |   |
+|                            | BENT MAST RESTAURANT                          |                512 | Simcoe Street     |        |  6011877 | All year long                                   |   |   |
+|                            | HERON ROCK BISTRO                             |            4 - 435 | Simcoe Street     |        | 64004595 | All year long                                   |   |   |
+| *                          | LURE SEAFOOD RESTAURANT                       |                 45 | Songhees Road     |        |  6011379 | All year long                                   |   |   |
+|                            | OCEAN POINTE RESORT, KITCHEN 1ST              |                 45 | Songhees Road     |        |  6011381 | All year long                                   |   |   |
+|                            | INGREDIENTS HEALTH FOOD & CAFE                |               2031 | Store Street      |        | 64008089 | All year long                                   |   |   |
+|                            | SENZUSHI JAPANESE RESTAURANT                  |         100 - 1619 | Store Street      | Jap    | 64009943 | All year long                                   |   |   |
+|                            | SOUR PICKLE CAFE                              |               1623 | Store Street      |        | 64003897 | All year long                                   |   |   |
+|                            | IL COVO TRATTORIA                             |                106 | Superior Street   |        | 64009776 | All year long                                   |   |   |
+| *                          | CANOE BREW PUB MARINA RESTAURANT              |                450 | Swift Street      |        | 64001159 | All year long                                   |   |   |
+| *                          | SO-YA JAPANESE BAR & DINING                   |                606 | Trounce Alley     | Jap    | 64008997 | All year long                                   |   |   |
+|                            | TAPA BAR RESTAURANT                           |                620 | Trounce Alley     |        |  6012513 | All year long                                   |   |   |
+|                            | CAFE SPRESSO                                  |          110 - 645 | Tyee Road         |        | 64008257 | All year long                                   |   |   |
+|                            | ITAMI RESTAURANT                              |                708 | View Street       | Jap    | 64008634 | All year long                                   |   |   |
+|                            | SOUPED UP FOODS                               |          145 - 736 | View Street       |        | 64007002 | All year long                                   |   |   |
+| *                          | LA FOGATA LATINA RESTAURANTS                  |                749 | View Street       |        | 64009425 | All year long                                   |   |   |
+|                            | MILESTONE'S - THE DECK                        |                812 | Wharf Street      |        | 64001006 | All year long                                   |   |   |
+|                            | MILESTONE'S OPEN WATER GRILL                  |                812 | Wharf Street      |        | 64005224 | Jun Jul Aug Sep                                 |   |   |
+|                            | MILESTONE'S RESTAURANT                        |                812 | Wharf Street      |        | 64001005 | All year long                                   |   |   |
+|                            | THE FLYING OTTER GRILL                        |                950 | Wharf Street      |        | 64007008 | All year long                                   |   |   |
+|                            | NAUTICAL NELLIES RESTAURANT & OYSTER BAR      |               1001 | Wharf Street      |        |  6012276 | All year long                                   |   |   |
+|                            | DARCY'S PUB                                   |               1127 | Wharf Street      |        | 64007383 | All year long                                   |   |   |
+|                            | THE LOCAL BAR & GRILL                         |               1205 | Wharf Street      |        | 64005915 | All year long                                   |   |   |
+|                            | THE DOCKS                                     |         203 - 1208 | Wharf Street      |        | 64009610 | All year long                                   |   |   |
+|                            | SHIMA VILLAGE JAPANESE RESTAURANT             |               1218 | Wharf Street      |        | 64009460 | All year long                                   |   |   |
+|                            | JOINT PIZZERIA & DELI                         |               1219 | Wharf Street      |        | 64000356 | All year long                                   |   |   |
+|                            | LIDO WATERFRONT BISTRO                        |               1234 | Wharf Street      |        | 64006958 | All year long                                   |   |   |
+|                            | VICTORIA REGENT HOTEL                         |               1234 | Wharf Street      |        |  6010325 | All year long                                   |   |   |
+| *                          | INDIA BISTRO                                  |               1245 | Wharf Street      |        | 64008980 | All year long                                   |   |   |
+|                            | THE GUILD FREEHOUSE                           |               1250 | Wharf Street      |        | 64008950 | All year long                                   |   |   |
+|                            | BOOSTER JUICE                                 |          110 - 176 | Wilson Street     |        | 64005152 | All year long                                   |   |   |
+|                            | LA TAQUISA                                    |          120 - 176 | Wilson Street     |        | 64007855 | All year long                                   |   |   |
+|                            | RESTAURANT MATISSE                            |                512 | Yates Street      |        |  6012565 | All year long                                   |   |   |
+|                            | FIAMO ITALIAN KITCHEN                         |                515 | Yates Street      |        | 64003882 | All year long                                   |   |   |
+|                            | PODIUM SPORTS GRILL                           |                531 | Yates Street      |        | 64007063 | All year long                                   |   |   |
+|                            | REEF RESTAURANT                               |                533 | Yates Street      |        | 64001874 | All year long                                   |   |   |
+| *                          | SAAZ RESTAURANT LOUNGE                        |          103 - 535 | Yates Street      |        | 64009221 | All year long                                   |   |   |
+|                            | FERRIS' GRILL                                 |                536 | Yates Street      |        |  6010533 | All year long                                   |   |   |
+|                            | FERRIS' OYSTER BAR                            |                536 | Yates Street      |        | 64004830 | All year long                                   |   |   |
+|                            | SITKA CAFE                                    |                570 | Yates Street      |        | 64008173 | All year long                                   |   |   |
+|                            | FRANK'S HONEYBUN CAFE                         |                605 | Yates Street      |        |  6012834 | All year long                                   |   |   |
+|                            | AZUMA SUSHI                                   |                615 | Yates Street      | Jap    | 64000328 | All year long                                   |   |   |
+|                            | WEST COAST WAFFLES                            |                631 | Yates Street      |        | 64007531 | All year long                                   |   |   |
+|                            | FRESKO FINE FOODS                             |               642B | Yates Street      |        | 64007263 | All year long                                   |   |   |
+|                            | KING SEJONG RESTAURANT                        |                650 | Yates Street      | Kor    | 64005059 | All year long                                   |   |   |
+|                            | AMART, SUSHI                                  |                652 | Yates Street      | Jap    | 64008717 | All year long                                   |   |   |
+|                            | INTERACTIVITY BOARDGAME CAFE                  |                723 | Yates Street      |        | 64008965 | All year long                                   |   |   |
+|                            | SUSHI TIME EXPRESS                            |          120 - 735 | Yates Street      | Jap    | 64009262 | All year long                                   |   |   |
+|                            | HERNANDE'Z                                    |            130 737 | Yates Street      | Mex    | 64005340 | All year long                                   |   |   |
+|                            | THE YATES ST. TAPHOUSE BAR & GRILLE - KITCHEN |                759 | Yates Street      |        | 64008696 | All year long                                   |   |   |
+|                            | SUSHI PLUS RESTAURANT                         |                766 | Yates Street      | Jap| 64000036 | All year long                                   |   |   |
+|                            | CENOTE RESTAURANT & LOUNGE                    |                768 | Yates Street      |        | 64008375 | All year long                                   |   |   |
+|                            | FOO ASIAN STREET FOOD                         |                769 | Yates Street      |        | 64007006 | All year long                                   |   |   |
+|                            | THE BRICKYARD RESTAURANT                      |                784 | Yates Street      |        |  6012298 | All year long                                   |   |   |
+| *                          | EFES RESTAURANT                               |                788 | Yates Street      |        | 64009085 | All year long                                   |   |   |
+| *                          | ZAMBRI'S RESTAURANT                           |                820 | Yates Street      |        | 64007493 | All year long                                   |   |   |
+|                            | FLOYD'S DINER                                 |                866 | Yates Street      |        | 64004098 | All year long                                   |   |   |
+|                            | BIN 4 BURGER LOUNGE                           |          180 - 911 | Yates Street      |        | 64008133 | All year long                                   |   |   |
+|                            | MOXIE'S                                       |           1 - 1010 | Yates Street      |        | 64008507 | All year long                                   |   |   |
+|                            | ITHAKA GREEK RESTAURANT                       |               1102 | Yates Street      |        | 64009400 | All year long                                   |   |   |
+|                            | PANAGOPOULOS PIZZA PLACE                      |               1108 | Yates Street      |        |  6011963 | All year long                                   |   |   |
+|                            | KEN'S CAFE                                    |         105 - 1120 | Yates Street      |        | 64006793 | All year long                                   |   |   |
+
+
+* Coffee
+
+| 2% JAZZ COFFEE                |     1 1701 | Douglas Street    | 64008295 | All year long |   |   |   |
+| 2% JAZZ ESPRESSO BAR          |       2631 | Douglas Street    | 64001352 | All year long |   |   |   |
+| AJ'S ORGANIC CAFE             |    109 800 | Yates Street      | 64007501 | All year long |   |   |   |
+| BEAN AROUND THE WORLD         |        533 | Fisgard Street    |  6012142 | All year long |   |   |   |
+| CAFE MELA                     |        784 | Humboldt Street   | 64009825 | All year long |   |   |   |
+| CAFFE FANTASTICO              |        965 | Kings Road        |  6012515 | All year long |   |   |   |
+| CAFFE FANTASTICO              |  102 - 398 | Harbour Road      | 64006800 | All year long |   |   |   |
+| CAFFE FANTASTICO              | B601 - 810 | Humboldt Street   | 64007674 | All year long |   |   |   |
+| DISCOVERY COFFEE              |        281 | Menzies Street    | 64008035 | All year long |   |   |   |
+| DISCOVERY COFFEE              |        660 | Discovery Street  | 64006620 | All year long |   |   |   |
+| DISCOVERY COFFEE              |   1964 Oak | Bay Avenue        | 64007076 | All year long |   |   |   |
+| DOLCE VITA COFFEE ART         |       1213 | Douglas Street    | 64005368 | All year long |   |   |   |
+| DOLCE VITA COFFEE ART         |  160 - 911 | Yates Street      |  6011675 | All year long |   |   |   |
+| MACCHIATO CAFFE               |        780 | Johnson Street    | 64008284 | All year long |   |   |   |
+| MIRAGE COFFEE                 |        733 | Yates Street      | 64008263 | All year long |   |   |   |
+| MIRAGE COFFEE                 |        817 | Government Street | 64009272 | All year long |   |   |   |
+| MIRAGE COFFEE ON BLANSHARD    |       1122 | Blanshard Street  | 64008937 | All year long |   |   |   |
+| MOKA HOUSE                    |        345 | Cook Street       | 64006849 | All year long |   |   |   |
+| MOKA HOUSE                    |   110 - 19 | Dallas Road       | 64006091 | All year long |   |   |   |
+| MOKA HOUSE JUBILEE            |       1769 | Fort Street       | 64008967 | All year long |   |   |   |
+| MURCHIE'S TEA & COFFEE        |       1110 | Government Street | 64006485 | All year long |   |   |   |
+| MUSEUM CAFE                   |        675 | Belleville Street | 64009267 | All year long |   |   |   |
+| PICNIC                        |       1019 | Fort Street       | 64008777 | All year long |   |   |   |
+| PICNIC                        |  103 - 506 | Fort Street       | 64006924 | All year long |   |   |   |
+| SERIOUS COFFEE                |   4 - 3075 | Douglas Street    | 64005010 | All year long |   |   |   |
+| SERIOUS COFFEE                |  103 - 225 | Menzies Street    | 64009275 | All year long |   |   |   |
+| SERIOUS COFFEE # 3            |       1280 | Broad Street      | 64007306 | All year long |   |   |   |
+| SERIOUS COFFEE #06            |  107 - 230 | Cook Street       | 64009407 | All year long |   |   |   |
+| SERIOUS COFFEE - BLANSHARD    | 100 - 1609 | Blanshard Street  | 64008477 | All year long |   |   |   |
+| SHINE CAFE                    |       1320 | Blanshard Street  | 64008053 | All year long |   |   |   |
+| SHINE CAFE                    |       1548 | Fort Street       | 64003226 | All year long |   |   |   |
+| STARBUCKS COFFEE #4936        |   1 - 1689 | Government Street | 64006422 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #132     |        320 | Cook Street       |  6011920 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #190     |        801 | Fort Street       |  6011596 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #192     | 316 - 3147 | Douglas Street    |  6011595 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4234    |       1959 | Fort Street       |  6012188 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4326    |       1301 | Government Street |  6012531 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4328    |  140 - 176 | Wilson Street     |  6012661 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4500    | 230 - 1150 | Douglas Street    | 64002628 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4545    |        425 | Simcoe Street     | 64004027 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4569    |  10 - 1548 | Fairfield Road    | 64004050 | All year long |   |   |   |
+| STARBUCKS COFFEE CO. #4708    |        865 | Yates Street      | 64005420 | All year long |   |   |   |
+| STREET LEVEL ESPRESSO         |        714 | Fort Street       | 64009134 | All year long |   |   |   |
+| TIM HORTON'S                  |   2 - 2680 | Blanshard Street  | 64007925 | All year long |   |   |   |
+| TIM HORTONS                   |       1410 | Blanshard Street  | 64006758 | All year long |   |   |   |
+| TIM HORTONS                   |       456A | Gorge Road East   |  6011598 | All year long |   |   |   |
+| THE SODA SHOPPE               |        801 | Government Street | 64007494 | All year long |   |   |   |
+| CORNERSTONE CAFE              |       1301 | Gladstone Avenue  | 64005426 | All year long |   |   |   |
+| WILD COFFEE                   |        632 | Yates Street      | 64008718 | All year long |   |   |   |
+| KOFFI                         |       1441 | Haultain Street   | 64005990 | All year long |   |   |   |
+| LIBERTY CAFE                  |        708 | Douglas Street    | 64008146 | All year long |   |   |   |
+| CHAPTERS STARBUCKS            |       1212 | Douglas Street    | 64000561 | All year long |   |   |   |
+| CASTELLO COFFEE               |       1802 | Douglas Street    | 64006300 | All year long |   |   |   |
+| JAMES BAY COFFEE & BOOKS ETC. |        143 | Menzies Street    | 64006119 | All year long |   |   |   |
+| TEAVANA, #837                 |        616 | Fort Street       | 64008767 | All year long |   |   |   |
+
+
+
+* Fast food
+
+| WENDY'S                        |        776 | Bay Street       |  6010611 | All year long |   |   |   |
+| SUBWAY                         |    1 - 774 | Bay Street       |  6012778 | All year long |   |   |   |
+| SUBWAY                         | 101 - 1111 | Blanshard Street |  6011742 | All year long |   |   |   |
+| PIG BBQ JOINT                  |       1325 | Blanshard Street | 64007474 | All year long |   |   |   |
+| SUBWAY                         |       1106 | Cook Street      | 64008242 | All year long |   |   |   |
+| SUBWAY                         |  103 - 230 | Cook Street      | 64009627 | All year long |   |   |   |
+| BIG WHEEL BURGER               |        341 | Cook Street      | 64008075 | All year long |   |   |   |
+| SUBWAY SANDWICHES              |       1324 | Douglas Street   | 64006873 | All year long |   |   |   |
+| QUIZNO'S SUB                   | 170 - 2950 | Douglas Street   | 64007878 | All year long |   |   |   |
+| MCDONALD'S                     |       1200 | Douglas Street   | 64007397 | All year long |   |   |   |
+| FATBURGER                      |       1209 | Douglas Street   | 64007844 | All year long |   |   |   |
+| SUBWAY                         |       1568 | Fort Street      |  6012509 | All year long |   |   |   |
+| SUBWAY                         |       1964 | Fort Street      | 64003402 | All year long |   |   |   |
+| SUBWAY SANDWICHES & SALADS     |       456B | Gorge Road East  | 64003351 | All year long |   |   |   |
+| SUBWAY                         | 100 - 1633 | Hillside Avenue  | 64005153 | All year long |   |   |   |
+| MCDONALD'S                     | 102 - 1581 | Hillside Avenue  | 64007400 | All year long |   |   |   |
+| SUBWAY                         |        239 | Menzies Street   |  6011778 | All year long |   |   |   |
+| MCDONALD'S                     |        980 | Pandora Avenue   | 64007396 | All year long |   |   |   |
+| SUBWAY                         | 104 - 1420 | Quadra Street    | 64009088 | All year long |   |   |   |
+| PITA PIT                       |       1221 | Wharf Street     |  6012675 | All year long |   |   |   |
+| QUIZNOS                        |  210 - 172 | Wilson Street    | 64009149 | All year long |   |   |   |
+| SECOND SLICE PIZZA #1          |       1322 | Douglas Street   | 64005349 | All year long |   |   |   |
+| BURGER KING                    |       1328 | Douglas Street   | 64007977 | All year long |   |   |   |
+| DAIRY QUEEN                    |       2350 | Douglas Street   |  6010496 | All year long |   |   |   |
+| TARGET STORE T3548 - STARBUCKS |       1610 | Hillside Avenue  | 64009473 | All year long |   |   |   |
+| DAIRY QUEEN                    |       1605 | Hillside Avenue  |  6010743 | All year long |   |   |   |
+
+
+
+* Other
+
+| AIDS VANCOUVER ISLAND             | 3rd Floor 713 | Johnson Street   | 64007341 | All year long                           |   |   |
+| CANADIAN CANCER SOCIETY LODGE     |          2202 | Richmond Road    |  6010730 | All year long                           |   |   |
+| OCEAN ISLAND BACKPACKER'S INN     |           791 | Pandora Avenue   |  6012667 | All year long                           |   |   |
+| TEMPLE EVENT & CATERING CENTRE    |           525 | Fort Street      | 64008149 | All year long                           |   |   |
+| QOOLA FROZEN YOGURT BAR           |           550 | Yates Street     | 64008018 | All year long                           |   |   |
+| HERMANN'S JAZZ CLUB               |           753 | View Street      |  6010190 | All year long                           |   |   |
+| VICTORIA CURLING CLUB, KITCHEN    |          1952 | Quadra Street    |  6010608 | All year long                           |   |   |
+| EMBASSY MOTOR INN                 |           520 | Menzies Street   |  6010225 | All year long                           |   |   |
+| THE LONDON CHEF                   |           947 | Fort Street      | 64007733 | All year long                           |   |   |
+| CHOCOLAT CHOCOLATIÉRE DE VICTORIA |           703 | Fort Street      | 64008293 | All year long                           |   |   |
+| SAKURA JAPANESE PRODUCTS          |          1213 | Quadra Street    |  6012508 | All year long                           |   |   |
+| JAMES BAY COMMUNITY CAFE          |           140 | Oswego Street    |  6010254 | All year long                           |   |   |
+| JAMES BAY COMMUNITY SCHOOL, LUNCH |           140 | Oswego Street    |  6011576 | Jan Feb Mar Apr May Jun Sep Oct Nov Dec |   |   |
+| MCCALL BROS., RECEPTION ROOM      |          1400 | Vancouver Street |  6012915 | All year long                           |   |   |
+| FAIRWAY MARKET #11 DELI           |          2635 | Quadra Street    | 64005428 | All year long                           |   |   |
+
+
+* Dinner only
+
+| CHONGO'S RESTAURANT     |  225 | Quebec Street     | 64009049 | All year long |   |   |   |
+| WILD SAFFRON BISTRO     |  506 | Pandora Avenue    | 64000123 | All year long |   |   |   |
+| CAMILLE'S RESTAURANT    |   45 | Bastion Square    |  6010200 | All year long |   |   |   |
+| BRASSERIE L'ECOLE       | 1715 | Government Street | 64000415 | All year long |   |   |   |
+| ULLA RESTAURANT         |  509 | Fisgard Street    | 64007604 | All year long |   |   |   |
+| CHEZ MICHEL RESTAURANT  | 1871 | Oak Bay Avenue    | 64002629 | All year long |   |   |   |
+| LITTLE JUMBO RESTAURANT |  506 | Fort Street       | 64009021 | All year long |   |   |   |
+| CAFE BRIO               |  944 | Fort Street       |  6012205 | All year long |   |   |   |

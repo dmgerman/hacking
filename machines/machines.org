@@ -220,8 +220,8 @@ http://dns323.kood.org/howto:ffp
 
 - replace hosts in /mnt/HD_a2/ffp/etc
 - copy hosts to /etc
+- make sure files are own by root and globally readable!
 - restart 
-
 
 #+begin_src perl :results output :var data=machines :file hosts
   # first we need to define two functions that will make your life easier
@@ -318,4 +318,5 @@ generate dnsmasq.dmg
 
 #+RESULTS:
 [[file:dnsmasq.dmg]]
+
 

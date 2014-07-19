@@ -34,7 +34,13 @@ sub start {
 
 my $p = new HTMLStrip;
 # parse line-by-line, rather than the whole 			file at once
+
+while(<>) {
+  last if /<\!\-\- content \-\->/;
+}
+
 while (<>) {
+  last if /<\/table>/;
     $p->parse($_);
 }
 # flush and parse remaining unparsed HTML

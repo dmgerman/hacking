@@ -1,0 +1,18 @@
+{
+   "description": {
+      "description": "This is the description of the app that must declared in manifest.json",
+      "message": "Use the 'tab' keyword in Chrome's omnibox to search your tabs! (fork of 'switch to tab')"
+   },
+   "name": {
+      "description": "This is the long name of the app in Chrome's Webstore",
+      "message": "Search Tab in Chrome's Omnibox"
+   },
+   "search_string": {
+      "description": "The string we search for. Put %20 between words that go together.",
+      "message": "hello%20world"
+   },
+   "short_name": {
+      "description": "This is the long name of the app in Chrome's Webstore",
+      "message": "Search Tab"
+   }
+}
