@@ -1,0 +1,43 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
+      "move-tab-first": {
+         "description": "Move Tab to first position",
+         "suggested_key": {
+            "default": "Alt+Shift+1"
+         }
+      },
+      "move-tab-last": {
+         "description": "Move Tab to last position",
+         "suggested_key": {
+            "default": "Alt+Shift+0"
+         }
+      },
+      "move-tab-left": {
+         "description": "Move Tab to the left",
+         "suggested_key": {
+            "default": "Alt+Shift+8"
+         }
+      },
+      "move-tab-right": {
+         "description": "Move Tab to the right",
+         "suggested_key": {
+            "default": "Alt+Shift+9"
+         }
+      }
+   },
+   "description": "Keyboard Shortcuts to Reorder Tabs",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0FCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLY2lOemhjyxoe0rlcZmbfFJfhpzANPXOUUhueigiT2/ZVEeBPY0E5ECY/ZPPccfSdAAgl4hiMb1lnwj279Tjsg476C1/Ewhk0ISmrnofgbnS/3I8qxOwefMWPtsrz9xGv0kcZbh8IbGezpk1OpEU/xVeRr/ITC/U/21crtYbOAQIDAQAB",
+   "manifest_version": 2,
+   "name": "Keyboard Shortcuts to Reorder Tabs",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}
