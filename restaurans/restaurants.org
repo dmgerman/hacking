@@ -438,7 +438,7 @@ s
 |                            | SOL FOOD DELI CAFE CATERING                   |         100 - 2955 | Jutland Road      |        |  6012807 | All year long                                   |   |   |
 |                            | BLUE CRAB GRILL                               |                146 | Kingston Street   |        |  6011331 | All year long                                   |   |   |
 |                            | CAMELOT                                       |                455 | Kingston Street   |        |  6012849 | All year long                                   |   |   |
-| *                          | NORTH FORTY-EIGHT RESTAURANT                  |               1005 | Langley Street    |        | 64009750 | All year long                                   |   |   |
+| * T-S                      | NORTH FORTY-EIGHT RESTAURANT                  |               1005 | Langley Street    |        | 64009750 | All year long                                   |   |   |
 | *                          | SIDE DISH RESTAURANT                          |               1008 | Langley Street    |        | 64004378 | All year long                                   |   |   |
 |                            | LE PETIT SAIGON VIETNAMESE RESTAURANT         |               1010 | Langley Street    |        | 64005899 | All year long                                   |   |   |
 |                            | BARB'S PLACE                                  |            310 St. | Lawrence Street   |        | 64005519 | Feb Mar Apr May Jun Jul Aug Sep Oct             |   |   |

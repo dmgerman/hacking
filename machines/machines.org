@@ -13,29 +13,29 @@
 
 ** Network speed
 
-*** DLink 
+*** DLink
 
 - rsync is around 1.7-2 MB/s
 - ftp is around 4 MB/s
 
 ** Uvic
 
-|-----------+-------+----------------+--------------+-------------------------+----------------|
-| DNS       | Alias |             IP | Machine      | Machine type            | Location       |
-|-----------+-------+----------------+--------------+-------------------------+----------------|
-| Bismuth   | Bi    |  142.104.68.25 | Student 1    |                         | Anthony        |
-| Gold      | Au    |  142.104.69.28 | Lab 2        | Linux Debian Lenny      | Lab            |
-| Helium    | He    |  142.104.68.87 | Student 3    | Linux                   | Peter's Office |
-| Manganese | Mn    | 142.104.68.218 | Lab 1        | Linux Debian Etch       | Lab            |
-| Oxygen    | O     | 142.104.68.221 | New          | Linux                   | My  office     |
-| Potassium | K     | 142.104.68.178 |              |                         |                |
-| Silicon   | Si    |  142.104.69.72 | My Laptop    | Linux Ubuntu 11.10      | My office      |
-| Silver    | Ag    |  142.104.69.27 | Lab 1a       | Ubuntu Server 10.04 LTS | Lab            |
-| Sulfur    | S     | 142.104.68.220 | svn server   | Virtual on Lab 1        | Lab (virtual)  |
-| Thallium  | Tl    | 142.104.68.213 | Julius       | Linux                   | Lab            |
-| Tungsten  | W     | 142.104.68.122 | Web server   | Virtual on Lab 2        | Lab (virtual)  |
-| Xenon     | Xe    | 142.104.68.241 | CISCO Router |                         | My office      |
-|-----------+-------+----------------+--------------+-------------------------+----------------|
+|-----------+-------+----------------+-----------------+-------------------------+----------------|
+| DNS       | Alias |             IP | Machine         | Machine type            | Location       |
+|-----------+-------+----------------+-----------------+-------------------------+----------------|
+| Bismuth   | Bi    |  142.104.68.25 | Student 1       |                         | Anthony        |
+| Gold      | Au    |  142.104.69.28 | Lab 2           | Linux Debian Lenny      | Lab            |
+| Helium    | He    |  142.104.68.87 | Student 3       | Linux                   | Peter's Office |
+| Manganese | Mn    | 142.104.68.218 | Virtual to Gold | Linux Debian Etch       | Lab            |
+| Oxygen    | O     | 142.104.68.221 | New             | Linux                   | My  office     |
+| Potassium | K     | 142.104.68.178 |                 |                         |                |
+| Silicon   | Si    |  142.104.69.72 | My Laptop       | Linux Ubuntu 11.10      | My office      |
+| Silver    | Ag    |  142.104.69.27 | Lab 1a          | Ubuntu Server 10.04 LTS | Lab            |
+| Sulfur    | S     | 142.104.68.220 | Lab 1           | Virtual on Lab 1        | Lab (virtual)  |
+| Thallium  | Tl    | 142.104.68.213 | Julius          | Linux                   | Lab            |
+| Tungsten  | W     | 142.104.68.122 | Web server      | Virtual on Lab 2        | Lab (virtual)  |
+| Xenon     | Xe    | 142.104.68.241 | CISCO Router    |                         | My office      |
+|-----------+-------+----------------+-----------------+-------------------------+----------------|
 
 *** Oxygen
 
@@ -76,7 +76,7 @@ iface eth0 inet static
     dns-search cs.uvic.ca
 
 #   dns-nameservers 64.59.160.13 64.59.160.15
- 
+
 *** silver
 
 Last login: Tue Mar 13 18:20:29 2012 from s0106602ad07fa0dd.gv.shawcable.net
@@ -102,7 +102,10 @@ iface eth1 inet static
 
 *** gold
 
-if-down.d/      if-post-down.d/ if-pre-up.d/    if-up.d/        interfaces      interfaces~     run/            
+- <2015-01-29 Thu> Moved mn to it. Running mn with postfix and dovecot
+
+
+if-down.d/      if-post-down.d/ if-pre-up.d/    if-up.d/        interfaces      interfaces~     run/
 dmg@gold:~$ more /etc/network/interfaces
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -155,7 +158,7 @@ ONBOOT='yes'
 GATEWAY=142.104.127.254
 TYPE=Ethernet
 USERCTL=no
-[dmg@manganese ~]$ 
+[dmg@manganese ~]$
 
 [dmg@manganese ~]$ more /etc/sysconfig/network-scripts/ifcfg-eth0:1
 DEVICE='eth0:1'
@@ -168,7 +171,7 @@ ONBOOT='yes'
 GATEWAY=142.104.127.254
 TYPE=Ethernet
 USERCTL=no
-[dmg@manganese ~]$ 
+[dmg@manganese ~]$
 
 
 
@@ -182,8 +185,6 @@ USERCTL=no
 | Router              |      1 | Hydrogen   | H     |    | Cisco       | dmgO     | 00:1C:10:46:0E:F5 | cusadmin | No   |
 | Wireless Router     |     33 | Arsenic    | As    |    | Asus        | dmgO     |                   | admin    | No   |
 | Desktop             |     77 | Iridium    | Ir    |    | MacPro      | dmgO     | 00:1D:4F:46:C2:68 |          | No   |
-| X220                |     53 | Iodine     | I     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      |
-| X220-wired          |    153 | Iodine2    | I2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      |
 | Air                 |     18 | Argon      | Ar    |    | OS X        | dmg      | D0:E1:40:8A:0A:54 |          |      |
 | Macbook             |        |            |       |    |             |          |                   |          |      |
 | Toshiba NB525       |      8 | Oxygen     | O     |    | Android     | dmg      |                   |          |      |
@@ -203,7 +204,11 @@ USERCTL=no
 | PC Server           |        | Titanium   | Ti    |    | PC Linux    | Basement |                   |          |      |
 | Phone               |        | Nitrogen   | N     |    | N900        |          |                   |          |      |
 | Note 8              |      8 | Oxygen     | O     |    | N5120       | dmg      | 04:1B:BA:34:F7:0A |          |      |
-
+| vivotab note 8      |     23 | Vanadiaum  | V     |    | Vivotab8    | dmg      | e0:3f:49:db:4a:ab |          |      |
+| X220                |     53 | Iodine     | I     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      |
+| X220-wired          |    153 | Iodine2    | I2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      |
+| yoga                |     39 | Yttrium    | Y     |    | Linux       | dmg      | f8:16:54:67:e7:1a |          |      |
+| mac pro2013         |     54 | Xenon      | Xe    |    | Mac os      | dmg      | 00:3e:e1:c4:8f:27 |          | No   |
 
 00:26:4A:0B:3A:B4	192.168.1.203
 00:26:08:E4:BE:18	192.168.1.205
@@ -218,10 +223,22 @@ F0:DE:F1:C2:3F:1B	1
 
 http://dns323.kood.org/howto:ffp
 
+#+BEGIN_SRC bash
+rsync -a -v hosts dnsmasq.* root@hg:/mnt/HD_a2/ffp/etc/
+#+END_SRC
+
+#+RESULTS:
+| sending     | incremental | file  | list     |         |       |        |           |
+| dnsmasq.dmg |             |       |          |         |       |        |           |
+| hosts       |             |       |          |         |       |        |           |
+|             |             |       |          |         |       |        |           |
+| sent        | 2,439       | bytes | received |      90 | bytes | 722.57 | bytes/sec |
+| total       | size        | is    | 22,192   | speedup | is    |   8.78 |           |
+
 - replace hosts in /mnt/HD_a2/ffp/etc
 - copy hosts to /etc
 - make sure files are own by root and globally readable!
-- restart 
+- restart
 
 #+begin_src perl :results output :var data=machines :file hosts
   # first we need to define two functions that will make your life easier
@@ -231,7 +248,7 @@ http://dns323.kood.org/howto:ffp
       my $y = $$table[0];
       return scalar(@$y);
   }
-  
+
   sub org_rows
   {
       my ($table) = @_;
@@ -239,7 +256,7 @@ http://dns323.kood.org/howto:ffp
   }
   $COL_MACHINE= 0;
   $COL_NUMBER = 1;
-  $COL_DNS    = 2; 
+  $COL_DNS    = 2;
   $COL_ALIAS  = 3;
   $COL_IP     = 4;
   $COL_TYPE   = 5;
@@ -262,7 +279,7 @@ http://dns323.kood.org/howto:ffp
     print "# $machine Type: $type Location: $location\n";
     print "192.168.1.$number $alias ${alias}.dmg $dns ${dns}.dmg \n\n";
   }
-  
+
 #+end_src
 
 #+RESULTS:
@@ -280,7 +297,7 @@ generate dnsmasq.dmg
       my $y = $$table[0];
       return scalar(@$y);
   }
-  
+
   sub org_rows
   {
       my ($table) = @_;
@@ -288,7 +305,7 @@ generate dnsmasq.dmg
   }
   $COL_MACHINE= 0;
   $COL_NUMBER = 1;
-  $COL_DNS    = 2; 
+  $COL_DNS    = 2;
   $COL_ALIAS  = 3;
   $COL_IP     = 4;
   $COL_TYPE   = 5;
@@ -313,10 +330,8 @@ generate dnsmasq.dmg
     print "# $machine Type: $type Location: $location\n";
     print "dhcp-host=$mac,$dns\n\n";
   }
-  
+
 #+end_src
 
 #+RESULTS:
 [[file:dnsmasq.dmg]]
-
-

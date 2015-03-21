@@ -4,8 +4,7 @@ install the PSQL-R thing
 
 execute this in the corresponding database
 
-/usr/share/postgresql/8.4/plr.sql
-
+/usr/share/postgresql/9.3/extension/plr.sql 
 test:
 
 SELECT * FROM plr_environ();
@@ -27,17 +26,10 @@ CREATE AGGREGATE median (
 
 CREATE OR REPLACE FUNCTION f_graph() RETURNS text AS
 $BODY$
-mov <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr is null order by rank;");
-epi <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr = 'TVEpisode' order by rank;");
-tvm <<- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 100 and attr = 'TV' order by rank;");
-mov2 <<- as.numeric(mov$rank)
-epi2 <<- as.numeric(epi$rank)
-movies<-density(mov$rank)
-episodes<-density(epi$rank)
-pdf("/tmp/myplot.pdf");
-hist(mov2,col="blue");
-hist(epi2,add=T,col="red");
-line
+
+mov <- pg.spi.exec ("select rank  from roles natural join productions natural join ratings where votes > 10 order by rank;");
+pdf("/tmp/myplot.pdf",width=4, height=8);
+boxplot(mov$rank)
 dev.off();
 print("done");
 $BODY$
@@ -66,7 +58,7 @@ $$
 $$
 LANGUAGE 'sql' IMMUTABLE;
  
-CREATE AGGREGATE median(interval) (
+CREATE AGGREGATE median2(interval) (
   SFUNC=array_append,
   STYPE=interval[],
   FINALFUNC=_final_median_i,
