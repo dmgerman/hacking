@@ -335,3 +335,15 @@ generate dnsmasq.dmg
 
 #+RESULTS:
 [[file:dnsmasq.dmg]]
+
+
+* Asus RT
+
+Info: Congratulations!
+Info: If there are no errors above then Entware.arm successfully initialized.
+Info: Add /opt/bin & /opt/sbin to your PATH variable
+Info: Add '/opt/etc/init.d/rc.unslung start' to startup script for Entware.arm services to start
+Info: Found a Bug? Please report at https://github.com/zyxmon/entware-arm/issues
+admin@RT-AC68U:/tmp/home/root# ls /opt/
+bin      etc      include  lib      sbin     share    tmp      usr      var
+admin@RT-AC68U:/tmp/home/root# ls
