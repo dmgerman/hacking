@@ -1,5 +1,0 @@
-# simply run
-
-sh install.sh as root
-
-prereqs: keyfuzz

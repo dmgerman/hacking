@@ -93,7 +93,7 @@
 %%%city:Mandalay:21.95:96.07:1:Comment ignored by AZ_PROJ
 %%%city:Manila:14.62:120.97:1:Comment ignored by AZ_PROJ
 %%%city:Mawson:-67.60:62.87:1:Comment ignored by AZ_PROJ
-city:Mecca:21.43:39.82:1:Comment ignored by AZ_PROJ
+%%%city:Mecca:21.43:39.82:1:Comment ignored by AZ_PROJ
 %%%city:Melbourne:-37.75:144.97:1:Comment ignored by AZ_PROJ
 %%%city:Mexico City:19.42:-99.17:1:Comment ignored by AZ_PROJ
 %%%city:Miami:25.75:-80.25:1:Comment ignored by AZ_PROJ

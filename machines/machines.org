@@ -37,6 +37,57 @@
 | Xenon     | Xe    | 142.104.68.241 | CISCO Router    |                         | My office      |
 |-----------+-------+----------------+-----------------+-------------------------+----------------|
 
+
+Computer name Supervisor MAC  IP address
+
+
+Student machines:
+
+|--------------------+------------+-------------------+----------------+--------------------------------|
+| student            | shusaku    | 98:90:96:a7:5e:1f | 142.104.69.139 | German's desktop               |
+| student            | sai        | f0:de:f1:ae:3a:42 |  142.104.68.94 | German's laptop                |
+| student            | arturo‐mex | 98:90:96:a7:52:27 | 142.104.69.146 | Arturo laptop?                 |
+| student            | arturo     | 38:ea:a7:f3:9b:ef | 142.104.69.203 | Arturo Desktop                 |
+| student            | garauv     | 98:90:96:a7:4c:e5 |  142.104.69.45 | Gaurav laptop                  |
+| student            | weiliangpc | 00:1a:92:09:1c:34 | 142.104.69.224 | Weiliang laptop                |
+| student            | weilang‐pc | 00:26:22:db:c7:57 | 142.104.69.177 | Weiliang desktop               |
+|--------------------+------------+-------------------+----------------+--------------------------------|
+| dmg laptop         | xenon      | 00:1b:d3:88:3f:56 | 142.104.68.241 | my laptop in my office         |
+|--------------------+------------+-------------------+----------------+--------------------------------|
+| server             | gold       | 00:50:ba:c0:c3:62 |  142.104.69.28 | desktop in my office, main web |
+| server             | oxygen     | 00:40:f4:1d:38:81 | 142.104.68.221 | My office                      |
+| server, virtual IP | tungsten   | 00:50:ba:c0:c3:62 | 142.104.68.122 | Virtual IP for web server      |
+| server, virtual IP | manganese  | 00:40:f4:1d:38:81 | 142.104.68.218 | Virtual IP for mail server     |
+|--------------------+------------+-------------------+----------------+--------------------------------|
+| off                | bismuth    | 00:50:ba:c0:bb:93 |  142.104.68.25 | Desktop for co-op              |
+| off                | thallium   | 00:50:56:10:20:97 | 142.104.68.213 | Maven server                   |
+|--------------------+------------+-------------------+----------------+--------------------------------|
+
+
+Would it be possible to keep this IP address for any need to have a computer connected to the internet?
+
+| silver      | 00:1d:72:8e:1d:ba |  142.104.69.27 | Backup for gold |
+
+No longer needed:
+
+| helium    | 00:e0:18:d2:5b:7a |  142.104.68.87 |
+| silicon   | f0:de:f1:02:d0:87 |  142.104.69.72 |
+| potassium | 00:50:ba:1d:6b:03 | 142.104.68.178 |
+| sulfur    | 00:40:f4:1d:38:81 | 142.104.68.220 |
+
+I don't recognize these names:
+
+| jsgdell     | 18:03:73:3b:31:18 | 142.104.68.48 |
+| wwl‐pc dmg. | 28:d2:44:5f:5d:c0 | 142.104.69.84 |
+
+
+
+
+
+
+
+
+
 *** Oxygen
 
 # This file describes the network interfaces available on your system
@@ -57,6 +108,73 @@ iface eth0 inet static
 	# dns-* options are implemented by the resolvconf package, if installed
 	dns-nameservers 142.104.68.1
 	dns-search cs.uvic.ca
+
+P3 Intel SSD120
+P5: ST4000
+P5: ST2000
+P6: ST4000
+/dev/sdc P4: Samsung 250
+
+md0: sdd1
+md1: sda2
+
+
+|          | P3 | Intel SSD120 |
+|          | P4 | Samsung 250  |
+|          | P5 | ST4000       |
+|          | P5 | ST2000       |
+|          | P6 | ST4000       |
+
+dmg@oxygen:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0        1.8T  1.7T   28G  99% /
+udev            7.8G  4.0K  7.8G   1% /dev
+tmpfs           1.6G  508K  1.6G   1% /run
+none            5.0M     0  5.0M   0% /run/lock
+none            7.8G     0  7.8G   0% /run/shm
+/dev/sdd1       230G  125G   93G  58% /speed
+/dev/sdc2        96G   42G   50G  46% /speed2
+/dev/md1        3.6T  671G  2.8T  20% /big2
+dmg@oxygen:~$ cat /proc/mdstat 
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10] 
+md0 : active raid1 sde1[1]
+      1953513408 blocks [2/1] [_U]
+      
+md1 : active raid1 sdb2[0]
+      3906885440 blocks super 1.2 [2/1] [U_]
+      
+unused devices: <none>
+
+|     |     |     |                 |                            | Serial Number   | Bought           | Link to purchase                                                      |
+|-----+-----+-----+-----------------+----------------------------+-----------------+------------------+-----------------------------------------------------------------------|
+| sda | md0 | 2TB |                 | Seagate                    | Z4Z11WZF        | <2014-12-31 Wed> |                                                                       |
+| sdb | md1 | 4TB |                 | Seagate                    | Z300KLTX        | 8/22/13          | https://mail.google.com/mail/u/0/#search/seagate+4tb/140a8828704a43b4 |
+| sdc |     |     |                 | ssd, Samsung               | S1DBNSBDC00214J |                  |                                                                       |
+| sdd |     | 4TB |                 | Seagate                    | W1F5BWEK        |                  |                                                                       |
+| sde | md0 | 2TB | lower front bay | WD, WDC WD2003FZEX-00Z4SA0 | WD-WMC5C0D7JZSL | <2015-09-01 Tue> | https://mail.google.com/mail/u/0/#search/ncix+/14f88281bb3ad528       |
+
+
+/dev/sda:
+	Model Number:       ST2000DM001-1ER164                      
+	device size with M = 1000*1000:     2000398 MBytes (2000 GB)
+/dev/sdb:
+        Serial number: 
+	Model Number:       ST4000DM000-1F2168                      
+	device size with M = 1000*1000:     4000787 MBytes (4000 GB)
+/dev/sdc:
+	Model Number:       Samsung SSD 840 EVO 250GB               
+	device size with M = 1000*1000:      250059 MBytes (250 GB)
+/dev/sdd:
+	Model Number:       ST3000DM001-1CH166                      
+	device size with M = 1000*1000:     3000592 MBytes (3000 GB)
+/dev/sde:
+	Model Number:       WDC WD2003FZEX-00Z4SA0
+	device size with M = 1000*1000:     2000398 MBytes (2000 GB)
+/dev/sdf:
+	Model Number:       ST4000DM000-1F2168                      
+	device size with M = 1000*1000:     4000787 MBytes (4000 GB)
+
+
 
 *** thallium
 
@@ -170,7 +288,7 @@ NETWORK='142.104.96.0'
 ONBOOT='yes'
 GATEWAY=142.104.127.254
 TYPE=Ethernet
-USERCTL=no
+USERCTL=non
 [dmg@manganese ~]$
 
 
@@ -178,37 +296,49 @@ USERCTL=no
 ** Home Network
 
 
-
 #+name: machines
-| Machine             | Number | DNS        | Alias | IP | MachineType | Location | MAC               | Notes    | DHCP |
-|---------------------+--------+------------+-------+----+-------------+----------+-------------------+----------+------|
-| Router              |      1 | Hydrogen   | H     |    | Cisco       | dmgO     | 00:1C:10:46:0E:F5 | cusadmin | No   |
-| Wireless Router     |     33 | Arsenic    | As    |    | Asus        | dmgO     |                   | admin    | No   |
-| Desktop             |     77 | Iridium    | Ir    |    | MacPro      | dmgO     | 00:1D:4F:46:C2:68 |          | No   |
-| Air                 |     18 | Argon      | Ar    |    | OS X        | dmg      | D0:E1:40:8A:0A:54 |          |      |
-| Macbook             |        |            |       |    |             |          |                   |          |      |
-| Toshiba NB525       |      8 | Oxygen     | O     |    | Android     | dmg      |                   |          |      |
-| Nexus 7             |     10 | Neon       | N     |    | Android     | dmg      | 08:60:6E:2C:8E:7F |          |      |
-| TP2                 |      6 | Carbon     | C     |    | Windows     | dmg      | 1C:3E:84:2F:F8:A7 |          |      |
-| galaxyTab           |     73 | Tantallum  | Ta    |    | Android     | dmg      | 60:a1:0a:81:7b:74 |          |      |
-| Galaxy note         |    102 | Nobellium  | No    |    |             | rose     |                   |          |      |
-| galaxynote 10       |        |            |       |    |             |          |                   |          |      |
-| Li                  |        |            |       |    |             |          |                   | 3        |      |
-| X201                |    119 | Potassium2 | K2    |    |             |          | 00:1d:72:8e:1d:ba |          |      |
-| N900                |      7 | Nitrogen   | N     |    | Maemo       | dmg      | 34:7e:39:42:b1:d0 |          |      |
-| Lr                  |    103 | lawrencium | Lr    |    | OS X        | rose     | A0:ED:CD:7F:42:2D |          |      |
-| Nas Server          |     80 | Mercury    | Hg    |    | DLink 232   | dmg      | F0:7D:68:6A:02:BE | admin    |      |
-| Printer/Scanner     |     82 | Lead       | Pb    |    | Brother     | dmg      | 00:1B:A9:72:FD:1B |          |      |
-| Media player/server |     88 | Radium     | Ra    |    | WDLive...   | dmg      | 00:90:A9:A2:67:07 |          |      |
-| Canon printer       |        |            |       |    |             |          |                   |          |      |
-| PC Server           |        | Titanium   | Ti    |    | PC Linux    | Basement |                   |          |      |
-| Phone               |        | Nitrogen   | N     |    | N900        |          |                   |          |      |
-| Note 8              |      8 | Oxygen     | O     |    | N5120       | dmg      | 04:1B:BA:34:F7:0A |          |      |
-| vivotab note 8      |     23 | Vanadiaum  | V     |    | Vivotab8    | dmg      | e0:3f:49:db:4a:ab |          |      |
-| X220                |     53 | Iodine     | I     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      |
-| X220-wired          |    153 | Iodine2    | I2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      |
-| yoga                |     39 | Yttrium    | Y     |    | Linux       | dmg      | f8:16:54:67:e7:1a |          |      |
-| mac pro2013         |     54 | Xenon      | Xe    |    | Mac os      | dmg      | 00:3e:e1:c4:8f:27 |          | No   |
+| Machine              | Number | DNS        | Alias | IP | MachineType | Location | MAC               | Notes    | DHCP | Type       |
+|----------------------+--------+------------+-------+----+-------------+----------+-------------------+----------+------+------------|
+| PC Server            |        | Titanium   | Ti    |    |             | Basement |                   |          |      |            |
+| Anthem MRX-510       |     78 | Platinum   | Pt    |    |             | dmgO     | 7c:b7:7b:01:39:a2 |          |      | Amp        |
+| Teac #1              |        |            |       |    |             |          |                   |          |      | Amp        |
+| Teac #1 Wireless     |     45 | Rhodium    | Rh    |    |             | lrO      | 00:02:2e:70:7c:60 |          |      | Amp        |
+| Teac #2              |        |            |       |    |             |          |                   |          |      | Amp        |
+| Teac #2 Wireless     |     46 | Palladium  | Pd    |    | Teac rec    | dmgO     | 00:02:2e:70:7b:d5 |          |      | Amp        |
+| Mac pro Desktop      |     77 | Iridium    | Ir    |    | OS X        | dmgO     | 00:1D:4F:46:C2:68 |          |      | Desktop    |
+| mac pro2013          |     54 | Xenon      | Xe    |    | OS X        | dmg      | 00:3e:e1:c4:8f:27 |          |      | Desktop    |
+| Air                  |     18 | Argon      | Ar    |    | OS X        | dmg      | 84:38:35:44:32:56 |          |      | Laptop     |
+| AirTv                |     25 | Manganese  | Mn    |    | OS X        | dmg      | D0:E1:40:8A:0A:54 |          |      | Laptop     |
+| MacBook pro          |     27 | Cobalt     | Co    |    | OS X 10.9   | livingR  | 00:26:08:E4:BE:18 |          |      | Laptop     |
+| Toshiba NB525        |        |            |       |    |             | dmg      |                   |          |      | Laptop     |
+| X201                 |    119 | Potassium2 | K2    |    |             |          | 00:1d:72:8e:1d:ba |          |      | Laptop     |
+| X220                 |     53 | Iodine     | I     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      | Laptop     |
+| X220-wired           |    153 | Iodine2    | I2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      | Laptop2    |
+| yoga                 |     39 | Yttrium    | Y     |    | Linux       | dmg      | f8:16:54:67:e7:1a |          |      | Laptop     |
+| yoga wired           |    139 | Yttrium2   | Y2    |    | Linux       | dmg      | 00:50:b6:76:27:5b |          |      | Laptop2    |
+| Media player/server  |     88 | Radium     | Ra    |    | WDLive...   | dmg      | 00:90:A9:A2:67:07 |          |      | Media      |
+| DLink 232 Nas Server |     30 | Zinc       | Zn    |    | NAS         | dmg      | F0:7D:68:6A:02:BE | admin    |      | NAS        |
+| Galaxy note          |    102 | Nobellium  | No    |    |             | dmg      | 14:7D:C5:BB:AE:5C |          |      | Phone      |
+| N900 phone           |      7 | Nitrogen   | N     |    | Maemo       | dmg      | 34:7e:39:42:b1:d0 |          |      | Phone      |
+| BW Printer/Scanner   |     82 | Lead       | Pb    |    | Brother     | dmg      | 00:1B:A9:72:FD:1B |          |      | Printer    |
+| Color printer        |      6 | Carbon     | C     |    | Brother     | roseOff  | 3C:77:E6:58:77:B1 |          |      | Printer    |
+| lr-phone             |        |            |       |    |             |          | a0:ed:cd:7f:42:2d |          |      | rosePhone  |
+| lr-air               |    103 | lawrencium | Lr    |    | Os X        | rose     | 48:d7:05:ca:b8:d3 |          |      | roseLaptop |
+| Asus Wireless Router |     33 | Arsenic    | As    |    | Router      | dmgO     | d8:50:e6:d0:8d:80 | admin    |      | Router     |
+| Cisco Router         |      1 | Hydrogen   | H     |    | Router      | dmgO     | 00:1C:10:46:0E:F5 | cusadmin |      | Router     |
+| Linksys WRT54GL      |     87 | Francium   | Fr    |    | dd-wrt      | tv       | 68:7f:74:1b:84:26 |          |      | Router     |
+| galaxynote 10        |        |            |       |    | Android     |          |                   |          |      | Tablet     |
+| galaxyTab            |     73 | Tantallum  | Ta    |    | Android     | dmg      | 60:a1:0a:81:7b:74 |          |      | Tablet     |
+| Nexus 7              |     10 | Neon       | Ne    |    | Android     | dmg      | 08:60:6E:2C:8E:7F |          |      | Tablet     |
+| Note 8               |      8 | Oxygen     | O     |    | Android     | dmg      | 04:1B:BA:34:F7:0A |          |      | Tablet     |
+| Surface 3            |     16 | Sulphur    | S     |    | Windows     | dmg      | c0:33:5e:28:c1:0f |          |      | Tablet     |
+| TP2                  |     52 | Tellurium  | Te    |    | Windows     | dmg      | 1C:3E:84:2F:F8:A7 |          |      | Tablet     |
+| vivotab note 8       |     34 | Selenium   | Se    |    | Windows     | dmg      | e0:3f:49:db:4a:ab |          |      | Tablet     |
+| Asustor NAS          |     80 | Mercury    | Hg    |    |             | base     | 10:BF:48:8A:EB:1F |          |      | NAS        |
+| Chromecast           |     24 | Chromium   | Cr    |    |             | tv       | 6c:ad:f8:4a:59:9c |          |      | other      |
+| TV                   |     23 | Vanadiaum  | V     |    | Samsung     | tv       | 00:e0:4c:36:31:27 |          |      | TV         |
+| Virtual machine xe   |     36 | kripton    | kr    |    | virtual     | virtual  | 08:00:27:ea:91:f0 |          |      | virtual    |
+| bismuth              |     83 | bismuth    | bi    |    | linux       | dmg-offf | 60:a4:4c:b0:d7:d0 |          |      | desktop    |
 
 00:26:4A:0B:3A:B4	192.168.1.203
 00:26:08:E4:BE:18	192.168.1.205
@@ -224,21 +354,21 @@ F0:DE:F1:C2:3F:1B	1
 http://dns323.kood.org/howto:ffp
 
 #+BEGIN_SRC bash
-rsync -a -v hosts dnsmasq.* root@hg:/mnt/HD_a2/ffp/etc/
+rsync -a -v hosts dnsmasq.dmg root@192.168.1.80:/tmp/
 #+END_SRC
 
 #+RESULTS:
-| sending     | incremental | file  | list     |         |       |        |           |
-| dnsmasq.dmg |             |       |          |         |       |        |           |
-| hosts       |             |       |          |         |       |        |           |
-|             |             |       |          |         |       |        |           |
-| sent        | 2,439       | bytes | received |      90 | bytes | 722.57 | bytes/sec |
-| total       | size        | is    | 22,192   | speedup | is    |   8.78 |           |
+| sending     | incremental | file  | list     |         |       |          |           |
+| dnsmasq.dmg |             |       |          |         |       |          |           |
+|             |             |       |          |         |       |          |           |
+| sent        | 2,813       | bytes | received |      58 | bytes | 1,914.00 | bytes/sec |
+| total       | size        | is    | 6,055    | speedup | is    |     2.11 |           |
 
 - replace hosts in /mnt/HD_a2/ffp/etc
 - copy hosts to /etc
 - make sure files are own by root and globally readable!
 - restart
+
 
 #+begin_src perl :results output :var data=machines :file hosts
   # first we need to define two functions that will make your life easier
@@ -259,11 +389,12 @@ rsync -a -v hosts dnsmasq.* root@hg:/mnt/HD_a2/ffp/etc/
   $COL_DNS    = 2;
   $COL_ALIAS  = 3;
   $COL_IP     = 4;
-  $COL_TYPE   = 5;
+  $COL_MTYPE   = 5;
   $COL_LOC    = 6;
   $COL_MAC    = 7;
   $COL_NOTES  = 8;
   $COL_DHCP   = 9;
+  $COL_TYPE   = 10;
 
   print "# automatically generated by machines.org\n\n127.0.0.1 localhost.localdomain localhost\n\n";
 
@@ -272,11 +403,11 @@ rsync -a -v hosts dnsmasq.* root@hg:/mnt/HD_a2/ffp/etc/
     next if $$data[$row][$COL_NUMBER] eq "";
     # skip itself
     my $t = $$data[$row];
-    my ($machine, $number, $dns, $alias, $xxxd, $type, $location, $mac) = @$t;
+    my ($machine, $number, $dns, $alias, $xxxd, $mtype, $location, $mac, $notes, $dhcp, $type) = @$t;
     my $dns = lc($dns);
     my $alias = lc($alias);
 
-    print "# $machine Type: $type Location: $location\n";
+    print "# $machine Type: [$type] MType: [$mtype] Location: $location\n";
     print "192.168.1.$number $alias ${alias}.dmg $dns ${dns}.dmg \n\n";
   }
 
@@ -308,11 +439,12 @@ generate dnsmasq.dmg
   $COL_DNS    = 2;
   $COL_ALIAS  = 3;
   $COL_IP     = 4;
-  $COL_TYPE   = 5;
+  $COL_MTYPE   = 5;
   $COL_LOC    = 6;
   $COL_MAC    = 7;
   $col_notes  = 8;
   $COL_DHCP   = 9;
+  $COL_TYPE   = 10;
 
   print "# automatically generated by machines.org\n\n";
 
@@ -321,13 +453,13 @@ generate dnsmasq.dmg
     next if $$data[$row][$COL_NUMBER] eq "";
     # skip itself
     my $t = $$data[$row];
-    my ($machine, $number, $dns, $alias, $ip, $type, $location, $mac) = @$t;
+    my ($machine, $number, $dns, $alias, $ip, $mtype, $location, $mac, $type) = @$t;
     my $dns = lc($dns);
     my $alias = lc($alias);
     next if $number == 80;
     next if $mac eq '';
 
-    print "# $machine Type: $type Location: $location\n";
+    print "# $machine Type: $type Location: $location MType: $mtype\n";
     print "dhcp-host=$mac,$dns\n\n";
   }
 
@@ -347,3 +479,103 @@ Info: Found a Bug? Please report at https://github.com/zyxmon/entware-arm/issues
 admin@RT-AC68U:/tmp/home/root# ls /opt/
 bin      etc      include  lib      sbin     share    tmp      usr      var
 admin@RT-AC68U:/tmp/home/root# ls
+
+* Teac
+
+#1: dmgerman@uvic.ca for wired interface
+
+** #2:
+
+vtuner dmg@uvic.ca for wireless interface
+
+
+00022e707bd5
+
+
+* Users/passwords :crypt:
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+hQIMA2iyP9k1lsSuAQ//c//rc0PPg35mcAdPuoB6aqCscUhF461WcujdfWixkkc/
+Pqmd1GL/LUYQOfdM4VBlC2jXswTxsrW35yIkpHZOKrH1KTDbGcpbVL4HNvgnI+48
+TEEj70YPD8s0vXPQr0wj/TE0Xbj+hc4MfrRVSIp25QoHLsKDHlg5OgLjiqOprS44
+FJScf77ZF3ZavF8QJFdY2YVOLpmeoc0nT+VTDq2j1/gqWD1ZYLHBfP5tjzIgmAsT
+LfvnvbPRn9i67eeD2ALI6OEdryL64QoK+UWTqSRf8+5/vAcypNpmvHgw2XcPLLrh
+n94mCwjpDsvRAWqXLMYjtEYDBY0x0XyxycjLN+LHhub3+FDpCnjvnTqr3qhE4wK1
++akAKpU/KKG8oZ56HyKh85FkFlM+GlQdnENCr+5vSTXQ2Mx5DD0xL4KmL7GRuP9J
+/mgOBOFaRP+WCwLpQEYaI6EM3E2+78AtDpLYfrnyQjSXLjbgf77a+HHzjJncmTAq
+L9VY0Wd4YXIrYUhv2+bXaaSf6nSBktmaj5qv65gMgYO1Yxg0+k7nv6WRxvKobPLr
+8cCZWiTx61N5wtWl3ZWnvRnoNSmuXsLPw2STdYxD/N4VdvDDNEuGnHYrAgO2jC9h
+V+HdVISH3c21Cbp6h+8NysfL4OFe6i/RfRjQVxiFFgeAbKVBKmQCnW0QPNeoz5TS
+qwFmYFU4HEQL2cJxQ4Xu9oJHlumXsCLZh3W2Un/bqvPmbyKS84aWu40Xie7sI1Mg
+jC62Osaq6cbnqQgNfcbJZ+7NGZJJJuosIXExCHuqMBBdcQ+2vGlXV8uvaDtzhALH
+0MG1YHXOAlNgzcVCfBWYseUhYQvwtSuS2OL/YHMJlJhwrP10Y3yIvb9OeKovPhby
+zpOzv+0Tf3kCXD7waZAC2KW+nGb7KQ2z8IA1aQ==
+=CL9b
+-----END PGP MESSAGE-----
+
+* Asustor
+
+- usr/etc can hold local etc files, but these are not copied to /etc, init.d scripts use them!
+- not sure which script is responsible of creating the /etc at boot time
+- /volume0 is a 2gig partition that is raided 1 in all disks. It is the booting partition. 300M are used by asustor
+- /volume1 hosts the actual home directories, including root
+- admin user is the root account
+- /opt is in /volume1
+
+** How to add a service
+
+/etc is rebuilt all the time
+/usr/local/etc seems to be for local configuration
+
+1. Add init.d service file as a symlink at /usr/local/etc/init.d
+2. These services are executed once, and never again, no entries created in /usr/init.d
+
+** dns and hosts
+
+/usr/etc/rc.local
+
+- Hosts is copied from my location (/opt/dmg/hosts) to /etc/hosts by /usr/etc/rc.local (/etc/rc.local)
+- it also restarts dnsmasq
+
+- copy files to
+  /volume1/.@plugins/AppCentral/optware/opt/etc/dmg/dnsmasq.dmg
+  /volume1/.@plugins/AppCentral/optware/opt/etc/dmg/hosts
+
+Simply run:
+
+#+BEGIN_SRC bash
+chmod 0644 hosts dnsmasq.dmg
+rsync -a hosts dnsmasq.dmg root@192.168.1.80:/opt/etc/dmg/
+ssh root@192.168.1.80 <<ENDSSH
+  chown root.root /opt/etc/dmg/*
+  /usr/etc/rc.local
+ENDSSH
+#+END_SRC
+
+** Installing services
+
+- modify /volume0/dmg/conf/rc.local
+
+** Installing packages
+
+ipkg and apkg
+
+
+
+* Macs
+
+
+| A0:ED:CD:7F:42:2D | rose-iphone    |
+| 48:D7:05:CA:B8:D3 | vague          |
+| F8:16:54:67:E7:1A | yttrium        |
+| 14:7D:C5:BB:AE:5C | note2          |
+| 84:38:35:44:32:56 | macair         |
+| 1C:3E:84:2F:F8:A7 | tp2            |
+| 08:60:6E:2C:8E:7F | nexus 7        |
+| 04:1B:BA:34:F7:0A | note8          |
+|-------------------+----------------|
+| B4:52:7D:F0:42:33 | katsuro phone  |
+| 0C:8B:FD:4F:24:C3 | katsuro laptop |
+
+
