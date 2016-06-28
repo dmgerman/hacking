@@ -408,7 +408,7 @@ rsync -a -v hosts dnsmasq.dmg root@192.168.1.80:/tmp/
     my $alias = lc($alias);
 
     print "# $machine Type: [$type] MType: [$mtype] Location: $location\n";
-    print "192.168.1.$number $alias ${alias}.dmg $dns ${dns}.dmg \n\n";
+    print "192.168.1.$number ${alias}.dmg $alias  $dns ${dns}.dmg \n\n";
   }
 
 #+end_src
@@ -544,7 +544,7 @@ zpOzv+0Tf3kCXD7waZAC2KW+nGb7KQ2z8IA1aQ==
 
 Simply run:
 
-#+BEGIN_SRC bash
+#+BEGIN_SRC sh
 chmod 0644 hosts dnsmasq.dmg
 rsync -a hosts dnsmasq.dmg root@192.168.1.80:/opt/etc/dmg/
 ssh root@192.168.1.80 <<ENDSSH
@@ -552,6 +552,8 @@ ssh root@192.168.1.80 <<ENDSSH
   /usr/etc/rc.local
 ENDSSH
 #+END_SRC
+
+#+RESULTS:
 
 ** Installing services
 

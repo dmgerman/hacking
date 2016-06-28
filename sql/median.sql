@@ -58,7 +58,7 @@ $$
 $$
 LANGUAGE 'sql' IMMUTABLE;
  
-CREATE AGGREGATE median2(interval) (
+CREATE AGGREGATE median_i(interval) (
   SFUNC=array_append,
   STYPE=interval[],
   FINALFUNC=_final_median_i,
