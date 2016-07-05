@@ -1,0 +1,16 @@
+commit ba3f35c7ce443c829bd806202ce29fa36d322ff3 6a89d71078dad9b1c49ccdf1ffa656fbe36ccd1e 783ee43118dc773bc8b0342c5b230e017d5a04d0
+Merge: 6a89d71 783ee43
+Author:     H. Peter Anvin <hpa@zytor.com>
+AuthorDate: Fri Jun 27 07:55:24 2014 -0700
+Commit:     H. Peter Anvin <hpa@zytor.com>
+CommitDate: Fri Jun 27 07:55:24 2014 -0700
+
+    Merge tag 'efi-urgent' into x86/urgent
+    
+     * Fix a few compiler warnings (one being a real bug) in the arm64 EFI
+       code that lots of people are running into and reporting - Catalin Marinas
+    
+     * Use a cast to avoid a 32-bit overflow issue when generating pstore
+       filenames - Andrzej Zaborowski
+    
+    Signed-off-by: H. Peter Anvin <hpa@zytor.com>

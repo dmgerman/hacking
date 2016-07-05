@@ -1,0 +1,8 @@
+commit fdc2e267a4c13f4d975c044ea63ca84b26bfb508 ba979a80444537778b673065eba93d11e87753c8 8bccf5b313180faefce38e0d1140f76e0f327d28
+Merge: ba979a8 8bccf5b
+Author:     Stephen Rothwell <sfr@canb.auug.org.au>
+AuthorDate: Thu Aug 14 10:51:35 2014 +1000
+Commit:     Stephen Rothwell <sfr@canb.auug.org.au>
+CommitDate: Thu Aug 14 10:51:35 2014 +1000
+
+    Merge remote-tracking branch 'sparc/master'
