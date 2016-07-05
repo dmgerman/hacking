@@ -312,10 +312,11 @@ USERCTL=non
 | MacBook pro          |     27 | Cobalt     | Co    |    | OS X 10.9   | livingR  | 00:26:08:E4:BE:18 |          |      | Laptop     |
 | Toshiba NB525        |        |            |       |    |             | dmg      |                   |          |      | Laptop     |
 | X201                 |    119 | Potassium2 | K2    |    |             |          | 00:1d:72:8e:1d:ba |          |      | Laptop     |
-| X220                 |     53 | Iodine     | I     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      | Laptop     |
-| X220-wired           |    153 | Iodine2    | I2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      | Laptop2    |
+| X220                 |      9 | Flourine   | F     |    | Linux       | dmg      | 10:0B:A9:A1:C8:C8 |          |      | Laptop     |
+| X220-wired           |    209 | Flourine   | F2    |    | Linux       | dmg      | f0:de:f1:c2:3f:1b |          |      | Laptop2    |
 | yoga                 |     39 | Yttrium    | Y     |    | Linux       | dmg      | f8:16:54:67:e7:1a |          |      | Laptop     |
 | yoga wired           |    139 | Yttrium2   | Y2    |    | Linux       | dmg      | 00:50:b6:76:27:5b |          |      | Laptop2    |
+| x1 yoga              |     53 | Iodine     | I     |    | Linux       | dm       | e4:b3:18:78:4d:b2 |          |      | Laptop0    |
 | Media player/server  |     88 | Radium     | Ra    |    | WDLive...   | dmg      | 00:90:A9:A2:67:07 |          |      | Media      |
 | DLink 232 Nas Server |     30 | Zinc       | Zn    |    | NAS         | dmg      | F0:7D:68:6A:02:BE | admin    |      | NAS        |
 | Galaxy note          |    102 | Nobellium  | No    |    |             | dmg      | 14:7D:C5:BB:AE:5C |          |      | Phone      |
@@ -347,6 +348,7 @@ MACBOOKAIR-0A54	        192.168.1.221
 A0:ED:CD:7F:42:2D	192.168.1.202
 00:26:08:DE:55:40	192.168.1.230
 F0:DE:F1:C2:3F:1B	1
+
 
 
 * DNS tables
