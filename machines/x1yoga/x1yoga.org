@@ -1,0 +1,12 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS:
+#+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
+#+DRAWERS: HIDDEN STATE
+#+TITLE: Thinkpad X1 Yoga
+#+CATEGORY: 
+#+PROPERTY: header-args: lang           :varname value
+
+* <2016-06-27 Mon> Named Iodine again
+
+- Installed linux on it, removed windows

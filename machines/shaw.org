@@ -1,0 +1,18 @@
+* <2015-12-08 Tue> Changed to Shaw Business 20
+
+- Shaw Internet 20 was providing us with 512 kbps upload 
+- we were paying 68 + tax => 77.20
+
+- Shaw business is 1.5 kbps upload, but we lose 2 wifi computers
+- cost is 64.95 + tax
+- better quality of service
+
+Contact numbers:
+
+- Christine in Victoria: 250 940 39 40
+- Technical support: 1 877 742 92 49
+
+Differences:
+- In practice, we were getting 225 gigs of download
+- According to website, we were entitled to 200 gigs
+- We went from 8 shaw wifi to 6 

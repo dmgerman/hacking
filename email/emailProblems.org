@@ -1,0 +1,35 @@
+
+* old dmg emails back
+
+-  2015-03-03
+- all emails by myself back into my mailbox
+- all unread
+
+At the end it was a matter of finding files created since the last login and removing everything that look suspicious.
+
+
+
+* Labels
+
+No label no action
+F: Marked
+R: Replied
+S: Seen
+lowercase... scheduled for deletion, I think
+
+     31 2,
+     68 2,F
+      2 2,FR
+      8 2,FRS
+    113 2,FS
+   1721 2,RS
+      1 2,RSb
+      1 2,RSgi
+     17 2,RSh
+  23892 2,S
+    247 2,Sa
+      6 2,Sb
+      3 2,Se
+      1 2,Sf
+      9 2,Sgi
+    197 2,Sh

@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS:
+#+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
+#+DRAWERS: HIDDEN STATE
+#+TITLE: Thinkpad Tablet 2
+#+CATEGORY: todo
+
+
+* TP2
+
+Type:	3679CTO
+Serial number: PK0B9AE
+
+https://ovp.lenovo.com/lenovo-ovp/public/showDetail!showPublicOrderDetail.action?orderNumber=4242967968&email=dmg@uvic.ca
+
+
